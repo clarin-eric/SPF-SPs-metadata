@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Revision: $Rev$ -->
+
 <EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="https://www.aai.dfn.de/DFN-AAI"
     validUntil="2010-02-06T15:00:06Z"
