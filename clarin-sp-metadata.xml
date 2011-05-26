@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Revision: $Rev$ -->
+<!-- CLARIN Service Providers, see http://www.clarin.eu/spf for details -->
 
 <EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="https://www.aai.dfn.de/DFN-AAI"
@@ -10,7 +11,7 @@
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:saml1md="urn:mace:shibboleth:metadata:1.0">
 
-    <!-- BBAW -->
+    <!-- BBAW (via CLARIN) -->
     <EntityDescriptor entityID="https://shibboleth.bbaw.de/shibboleth">
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
@@ -148,7 +149,7 @@
         </ContactPerson>
     </EntityDescriptor>
 
-    <!-- CSC -->
+    <!-- CSC (via CLARIN) -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_12cbf407fe505a39c30657de0296c1cc" entityID="https://hotpage.csc.fi/">
 
@@ -254,7 +255,7 @@
 
     </md:EntityDescriptor>
 
-    <!-- IDS -->
+    <!-- IDS (via CLARIN) -->
     <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
@@ -391,7 +392,7 @@
         </ContactPerson>
     </EntityDescriptor>
 
-    <!-- MPI -->
+    <!-- MPI (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.lux17.mpi.nl">
 
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -492,7 +493,7 @@
 
     </EntityDescriptor>
 
-    <!-- catalog.clarin.eu -->
+    <!-- catalog.clarin.eu (via CLARIN) -->
 
     <EntityDescriptor entityID="https://sp.catalog.clarin.eu">
 
@@ -577,7 +578,7 @@
 
     </EntityDescriptor>
 
-    <!-- INL -->
+    <!-- INL (via CLARIN) -->
 
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://sp.dev.clarin.inl.nl/shibboleth">
@@ -668,7 +669,7 @@
 
     </md:EntityDescriptor>
 
-    <!-- Charles University, ufal-point.mff.cuni.cz -->
+    <!-- Charles University, ufal-point.mff.cuni.cz (via CLARIN) -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_96a493d661ef7a6cd9ec1a70c533b8cc"
         entityID="https://ufal-point.mff.cuni.cz/shibboleth/eduid/sp">
@@ -795,7 +796,7 @@
 
     </md:EntityDescriptor>
 
-<!-- University of Tübingen -->
+    <!-- University of Tübingen (via CLARIN) -->
     
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://weblicht.sfs.uni-tuebingen.de">
         
@@ -890,7 +891,7 @@
     </md:EntityDescriptor>
 
 
-<!-- CNRS-ATILF -->
+    <!-- CNRS-ATILF (via CLARIN) -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://cnrtl-sp.inist.fr">
         
         <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
