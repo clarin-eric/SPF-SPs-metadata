@@ -150,110 +150,81 @@
     </EntityDescriptor>
 
     <!-- CSC (via CLARIN) -->
-    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-        ID="_12cbf407fe505a39c30657de0296c1cc" entityID="https://hotpage.csc.fi/">
-
-        <md:SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <md:Extensions>
-                <DiscoveryResponse
-                    xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://hotpage.csc.fi/Shibboleth.sso/DS" index="1"/>
-            </md:Extensions>
-            <md:KeyDescriptor use="signing">
+    <EntityDescriptor entityID="https://aai.csc.fi">
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:2.0:protocol">
+            <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>hotpage.csc.fi</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509SubjectName>emailAddress=ca-mgr@csc.fi,CN=hotpage.csc.fi,O=CSC -
-                            Tieteellinen laskenta Oy,L=Espoo,C=FI</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIDozCCAougAwIBAgIRAMqH9L+BIEnA6KhuGtFtdUIwDQYJKoZIhvcNAQEFBQAw
-                            OTELMAkGA1UEBhMCRkkxDzANBgNVBAoTBlNvbmVyYTEZMBcGA1UEAxMQU29uZXJh
-                            IENsYXNzMiBDQTAeFw0wOTA0MjkwODUwMTlaFw0xMTA0MjkwODUwMTlaMH0xCzAJ
-                            BgNVBAYTAkZJMQ4wDAYDVQQHEwVFc3BvbzEnMCUGA1UEChMeQ1NDIC0gVGlldGVl
-                            bGxpbmVuIGxhc2tlbnRhIE95MRcwFQYDVQQDEw5ob3RwYWdlLmNzYy5maTEcMBoG
-                            CSqGSIb3DQEJARYNY2EtbWdyQGNzYy5maTCBnzANBgkqhkiG9w0BAQEFAAOBjQAw
-                            gYkCgYEA3X/zvDDpgDKsFjHQ9Ajq7HX0vJvlyJqVS+CLjk3GInaZrVSvfKflgQ2n
-                            NuSqS0uEDwTwnQSCJ5rnglix3wjr/rLhwcBvgDNUZlAUdVl+DMJmrR9PC+SuirXq
-                            Bw0td2v+v0O5opHXz0xktcMYUGif30Ej4r7sxuN7jgKXryEsRfkCAwEAAaOB5TCB
-                            4jATBgNVHSMEDDAKgAhKoKpYhNNePDAZBgNVHSAEEjAQMA4GDCsGAQQBgg8CAwEB
-                            AjByBgNVHR8EazBpMGegZaBjhmFsZGFwOi8vMTk0LjI1Mi4xMjQuMjQxOjM4OS9j
-                            bj1Tb25lcmElMjBDbGFzczIlMjBDQSxvPVNvbmVyYSxjPUZJP2NlcnRpZmljYXRl
-                            cmV2b2NhdGlvbmxpc3Q7YmluYXJ5MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEF
-                            BQcDAjAdBgNVHQ4EFgQUCaN9uZ2yUiKyFOPeqxNZF2sLNgUwDQYJKoZIhvcNAQEF
-                            BQADggEBAEw6G4BZDJxN2QF41BPGUXDCgCX+4xVUeWth6JTiCStN/JbQeI7E9DSw
-                            z9kiLSJTf70S/MuvzZs2nS+loV+sFGmAO4PQKwqUatL+LgI+568eRLVpc3Pww9dG
-                            cUdbIDgiEniad6nITOKVj7NkSZafwvzFfnJ4yMCvrWZpeLXXxzq7ZeNIGbJaLrXG
-                            UaYCRCC3GHl7jLKcfaNAXwHV8f8tni3thGrK+Bh4brBA7EZhdAos96XMa2UcZVHU
-                            a0ITxKtDXxMmE8rZya6INu9/DQDwCNi7tAZ3UVXePfavrvJkQkyrMRF3L7EkZcbz
-                            IJwvp1J3YrwOz1WJzn+1SidAdqI5B7E= </ds:X509Certificate>
+                        <ds:X509Certificate>MIIEMzCCAxugAwIBAgIQZVL9Z7sVloWk90pzKJnHQTANBgkqhkiG9w0BAQUFADA2
+                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+                            U1NMIENBMB4XDTEwMDIxNzAwMDAwMFoXDTEzMDIxNjIzNTk1OVowgZcxCzAJBgNV
+                            BAYTAkZJMQ4wDAYDVQQREwUwMjEwMTEQMA4GA1UECBMHVXVzaW1hYTEOMAwGA1UE
+                            BxMFRXNwb28xFjAUBgNVBAkTDUtlaWxhcmFudGEgMTQxKTAnBgNVBAoTIENTQyAt
+                            IElUIENlbnRlciBmb3IgU2NpZW5jZSBMdGQuMRMwEQYDVQQDEwphYWkuY3NjLmZp
+                            MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDgp0eKogkBh5709swM/XCZlpty
+                            9iANER18jL69a3/SlyyxI9ez2dOpwLu72tm0tXbiVdpj9Gjt8/dVYkN7LHDV7mOu
+                            bWAtN2ZMMJqdYg9X7y1Zv+Xu3Zaj9eqMKF2V8QhBnLnXMfqRJbiwoRP+l8RQEdRs
+                            1Ju4ZPlOBOTWNeyQQwIDAQABo4IBXTCCAVkwHwYDVR0jBBgwFoAUDL2TaAzz3quj
+                            SWsrN1dH6pDjue0wHQYDVR0OBBYEFNPMFGfBam2umfu9+wPOi8wn+zxiMA4GA1Ud
+                            DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+                            BgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQBsjEBAgIdMDoGA1UdHwQzMDEwL6At
+                            oCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3JsMG0G
+                            CCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0cDovL2NydC50Y3MudGVyZW5h
+                            Lm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3NwLnRj
+                            cy50ZXJlbmEub3JnMBUGA1UdEQQOMAyCCmFhaS5jc2MuZmkwDQYJKoZIhvcNAQEF
+                            BQADggEBACIPxYBjl20Dy7TnVbTnJ8rxiIv5Qxw12ExeNMUjNF6LvMk9TsitVNHx
+                            ML4AVPE15r3DxUb597vmkoFFSLzIXPlRkiFRrsx3S7S1Pbt0c3tmyN3OLc4yBrFV
+                            t5xlY2Mn1xlZic/d04dfDfmLg8775/aS0Cl/qpYegOEBwrHTSkCw2IbjL4xxNQgl
+                            dw4jSaYr/Mli/B+7LeQVMjmruKYwqV9Sb4jHtDeM/2DJK05WjjWJTCu8ogaC+l+G
+                            Z1Za6rMU2E/Raw3t8qatdoKDjROSD92v84fWQU8HLFDfokHksaub31is3oT0gKyK
+                            rIzI2ITQoInc4nkGcX0Ysk4DBLUOIUk=</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>hotpage.csc.fi</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>emailAddress=ca-mgr@csc.fi,CN=hotpage.csc.fi,O=CSC -
-                            Tieteellinen laskenta Oy,L=Espoo,C=FI</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIDozCCAougAwIBAgIRAMqH9L+BIEnA6KhuGtFtdUIwDQYJKoZIhvcNAQEFBQAw
-                            OTELMAkGA1UEBhMCRkkxDzANBgNVBAoTBlNvbmVyYTEZMBcGA1UEAxMQU29uZXJh
-                            IENsYXNzMiBDQTAeFw0wOTA0MjkwODUwMTlaFw0xMTA0MjkwODUwMTlaMH0xCzAJ
-                            BgNVBAYTAkZJMQ4wDAYDVQQHEwVFc3BvbzEnMCUGA1UEChMeQ1NDIC0gVGlldGVl
-                            bGxpbmVuIGxhc2tlbnRhIE95MRcwFQYDVQQDEw5ob3RwYWdlLmNzYy5maTEcMBoG
-                            CSqGSIb3DQEJARYNY2EtbWdyQGNzYy5maTCBnzANBgkqhkiG9w0BAQEFAAOBjQAw
-                            gYkCgYEA3X/zvDDpgDKsFjHQ9Ajq7HX0vJvlyJqVS+CLjk3GInaZrVSvfKflgQ2n
-                            NuSqS0uEDwTwnQSCJ5rnglix3wjr/rLhwcBvgDNUZlAUdVl+DMJmrR9PC+SuirXq
-                            Bw0td2v+v0O5opHXz0xktcMYUGif30Ej4r7sxuN7jgKXryEsRfkCAwEAAaOB5TCB
-                            4jATBgNVHSMEDDAKgAhKoKpYhNNePDAZBgNVHSAEEjAQMA4GDCsGAQQBgg8CAwEB
-                            AjByBgNVHR8EazBpMGegZaBjhmFsZGFwOi8vMTk0LjI1Mi4xMjQuMjQxOjM4OS9j
-                            bj1Tb25lcmElMjBDbGFzczIlMjBDQSxvPVNvbmVyYSxjPUZJP2NlcnRpZmljYXRl
-                            cmV2b2NhdGlvbmxpc3Q7YmluYXJ5MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEF
-                            BQcDAjAdBgNVHQ4EFgQUCaN9uZ2yUiKyFOPeqxNZF2sLNgUwDQYJKoZIhvcNAQEF
-                            BQADggEBAEw6G4BZDJxN2QF41BPGUXDCgCX+4xVUeWth6JTiCStN/JbQeI7E9DSw
-                            z9kiLSJTf70S/MuvzZs2nS+loV+sFGmAO4PQKwqUatL+LgI+568eRLVpc3Pww9dG
-                            cUdbIDgiEniad6nITOKVj7NkSZafwvzFfnJ4yMCvrWZpeLXXxzq7ZeNIGbJaLrXG
-                            UaYCRCC3GHl7jLKcfaNAXwHV8f8tni3thGrK+Bh4brBA7EZhdAos96XMa2UcZVHU
-                            a0ITxKtDXxMmE8rZya6INu9/DQDwCNi7tAZ3UVXePfavrvJkQkyrMRF3L7EkZcbz
-                            IJwvp1J3YrwOz1WJzn+1SidAdqI5B7E= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/Artifact/SOAP" index="1"/>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SLO/SOAP"/>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SLO/Redirect"/>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SLO/POST"/>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SLO/Artifact"/>
-            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/NIM/Artifact"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML2/POST" index="1"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML/POST" index="5"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://hotpage.csc.fi/Shibboleth.sso/SAML/Artifact" index="6"/>
-        </md:SPSSODescriptor>
-
-    </md:EntityDescriptor>
+            </KeyDescriptor>
+            <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aai.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"></AssertionConsumerService>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://aai.csc.fi/Shibboleth.sso/SAML/POST" index="2" isDefault="false"></AssertionConsumerService>
+            <AttributeConsumingService index="1" isDefault="true">
+                <ServiceName xml:lang="fi">Kieliaineistojen käyttöoikeusjärjestelmä</ServiceName>
+                <ServiceName xml:lang="en">Finnish language resources AAI system</ServiceName>
+                <ServiceDescription xml:lang="fi">Kieliaineistojen käyttöoikeuksien hallinnan tietojärjestelmä.</ServiceDescription>
+                <ServiceDescription xml:lang="en">Controlled authentication and authorisation infrastructure for the Language Bank of Finland users.</ServiceDescription>
+                <RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+                <RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+                <RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+                <RequestedAttribute FriendlyName="schacHomeOrganizationType" Name="urn:oid:1.3.6.1.4.1.25178.1.2.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+                <RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"></RequestedAttribute>
+            </AttributeConsumingService>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
+            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
+            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
+            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
+            <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="administrative">
+            <GivenName>Tero</GivenName>
+            <SurName>Aalto</SurName>
+            <EmailAddress>ling@csc.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="technical">
+            <GivenName>Pekka</GivenName>
+            <SurName>Järveläinen</SurName>
+            <EmailAddress>pj@csc.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="support">
+            <GivenName>Tero</GivenName>
+            <SurName>Aalto</SurName>
+            <EmailAddress>ling@csc.fi</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
     <!-- IDS (via CLARIN) -->
     <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
