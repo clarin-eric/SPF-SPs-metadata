@@ -639,6 +639,91 @@
 
 
     </md:EntityDescriptor>
+	
+	<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://portal.clarin.inl.nl/">
+		<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<md:Extensions>
+				<DiscoveryResponse xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://portal.clarin.inl.nl/Shibboleth.sso/DS" index="1"/>
+			</md:Extensions>
+		<md:KeyDescriptor>
+			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+			<ds:X509Data>
+			<ds:X509Certificate>
+				MIIFwTCCBKmgAwIBAgIQYT/URYqjuNs5Wvey06PWozANBgkqhkiG9w0BAQUFADCB
+				iTELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+				A1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxLzAtBgNV
+				BAMTJkNPTU9ETyBIaWdoLUFzc3VyYW5jZSBTZWN1cmUgU2VydmVyIENBMB4XDTEx
+				MDgyNTAwMDAwMFoXDTE2MDgyNDIzNTk1OVowgdIxCzAJBgNVBAYTAk5MMRAwDgYD
+				VQQREwcyMzExIEJaMRUwEwYDVQQIEwxadWlkLUhvbGxhbmQxDzANBgNVBAcTBkxl
+				aWRlbjEhMB8GA1UECRMYTWF0dGhpYXMgZGUgVnJpZXNob2YgMi0zMTIwMAYDVQQK
+				EylTdCBJbnN0aXR1dXQgdm9vciBOZWRlcmxhbmRzZSBMZXhpY29sb2dpZTETMBEG
+				A1UECxMKSW5zdGFudFNTTDEdMBsGA1UEAxMUcG9ydGFsLmNsYXJpbi5pbmwubmww
+				ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+faM4kQs7smclVpmqWzzX
+				ZbhhPBW4ulwloBRQY7iR0unaMAGbxobpHvar28sASdvZ7W8IL+Az2J714pceJpit
+				s/1Q10cJBzmcopvHtR4Hp6PZxjdEUljrCifQt+IZeZw99TMH4gpeC9zhAdzyubFs
+				d452dy8+oljTOlTumbr1zACGU5ZGUInru467GJtMHYTJDDS1/BGuVx0XKwo0idCC
+				goGF8ZIxyHQq/2Q37Py10238nKx614U6KtE//dHP5KkLEHow1Vfm90N+czIkRt+4
+				4jl91Cel58jfvjXF3I/Cspi7vFDjRMaeBHsrxtDBWVUOo9GSMWRUiCOeQvGASXcb
+				AgMBAAGjggHYMIIB1DAfBgNVHSMEGDAWgBQ/1bXQ1kR5UEoXo5uMSty4sCJkazAd
+				BgNVHQ4EFgQUbmgntbNatGZ2IBRNLqazqtbpwGAwDgYDVR0PAQH/BAQDAgWgMAwG
+				A1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEYGA1Ud
+				IAQ/MD0wOwYMKwYBBAGyMQECAQMEMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2Vj
+				dXJlLmNvbW9kby5jb20vQ1BTME8GA1UdHwRIMEYwRKBCoECGPmh0dHA6Ly9jcmwu
+				Y29tb2RvY2EuY29tL0NPTU9ET0hpZ2gtQXNzdXJhbmNlU2VjdXJlU2VydmVyQ0Eu
+				Y3JsMIGABggrBgEFBQcBAQR0MHIwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jcnQuY29t
+				b2RvY2EuY29tL0NPTU9ET0hpZ2gtQXNzdXJhbmNlU2VjdXJlU2VydmVyQ0EuY3J0
+				MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wOQYDVR0RBDIw
+				MIIUcG9ydGFsLmNsYXJpbi5pbmwubmyCGHd3dy5wb3J0YWwuY2xhcmluLmlubC5u
+				bDANBgkqhkiG9w0BAQUFAAOCAQEARI37zQIk6P0aQkSMyambDpkm+ciyvWTur0Z4
+				wVaPQRJ8CAJ75BRokKozs/dbRFsK7nykWIz4ryP8ygPDVVOxVdvweTZY6iRrMhhm
+				ipw6JOA9+S12wS4ZVDTw1Lnqx55zhvZufKE/IcYUtXQG9zIThXvkSaZsbl81PeiJ
+				JzPwUvRo8xI+nUirIcO80HN9FlZJ2MUHnt5EJNvdzWMOrwVyvIkSPllFsVLwRIih
+				EYedRymWuO/OSGWReWSkDjCXxPNrqd4aaZSZH67bOcYLz4FUMR64+4JXSN8/gchW
+				zq4XJzocDxUe2X15eEg+Nw6f/ORaY9V9249atYZCavmDX/4vXw==
+			</ds:X509Certificate>
+			</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+			<!--
+			<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/SOAP"/>
+			<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/Redirect"/>
+			<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/POST"/>
+			<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/Artifact"/>
+			<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/SOAP"/>
+			<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/Redirect"/>
+			<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/POST"/>
+			<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/Artifact"/>
+			-->
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/POST" index="5"/>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+		</md:SPSSODescriptor>
+  
+		<md:Organization>
+			<md:OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</md:OrganizationName>
+			<md:OrganizationDisplayName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</md:OrganizationDisplayName>
+			<md:OrganizationURL xml:lang="en">portal.clarin.inl.nl</md:OrganizationURL>
+		</md:Organization>
+		<md:ContactPerson contactType="administrative">
+			<md:GivenName>servicedesk@inl.nl</md:GivenName>
+			<md:SurName>INL</md:SurName>
+			<md:EmailAddress>servicedesk@inl.nl</md:EmailAddress>
+		</md:ContactPerson>
+		<md:ContactPerson contactType="support">
+			<md:GivenName>servicedesk@inl.nl</md:GivenName>
+			<md:SurName>INL</md:SurName>
+			<md:EmailAddress>servicedesk@inl.nl</md:EmailAddress>
+		</md:ContactPerson>
+		<md:ContactPerson contactType="technical">
+			<md:GivenName>systeembeheer@inl.nl</md:GivenName>
+			<md:SurName>INL</md:SurName>
+			<md:EmailAddress>systeembeheer@inl.nl</md:EmailAddress>
+		</md:ContactPerson>
+	</md:EntityDescriptor>
+	
 
     <!-- Charles University, ufal-point.mff.cuni.cz (via CLARIN) -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
