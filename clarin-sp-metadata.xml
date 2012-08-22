@@ -1193,13 +1193,13 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact" index="5"/>
 
 
     <!-- Universität Leipzig //-->
-    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_a423ad5163a8068fb6e3a6e815666f70" entityID="https://asvsp.informatik.uni-leipzig.de/">
+    <EntityDescriptor ID="_a423ad5163a8068fb6e3a6e815666f70" entityID="https://asvsp.informatik.uni-leipzig.de/">
 
-  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-    <md:Extensions>
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <Extensions>
       <DiscoveryResponse xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/DS" index="1"/>
-    </md:Extensions>
-    <md:KeyDescriptor use="signing">
+    <Extensions>
+    <KeyDescriptor use="signing">
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>asvsp.informatik.uni-leipzig.de</ds:KeyName>
         <ds:X509Data>
@@ -1235,8 +1235,8 @@ ZtVcIdg=
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:KeyDescriptor use="encryption">
+    <KeyDescriptor>
+    <KeyDescriptor use="encryption">
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>asvsp.informatik.uni-leipzig.de</ds:KeyName>
         <ds:X509Data>
@@ -1272,25 +1272,25 @@ ZtVcIdg=
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/SOAP"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Redirect"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/POST"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
-    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
-    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
-    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
-    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST" index="1"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/ECP" index="4"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML/POST" index="5"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML/Artifact" index="6"/>
-  </md:SPSSODescriptor>
+    <KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML/POST" index="5"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML/Artifact" index="6"/>
+  <SPSSODescriptor>
 
-</md:EntityDescriptor>
+<EntityDescriptor>
 
 
 </EntitiesDescriptor>
