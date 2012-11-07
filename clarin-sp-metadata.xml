@@ -858,123 +858,86 @@
 
     <!-- Charles University, ufal-point.mff.cuni.cz (via CLARIN) -->
     <EntityDescriptor entityID="https://ufal-point.mff.cuni.cz/shibboleth/eduid/sp">
-        <SPSSODescriptor AuthnRequestsSigned="1"
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <KeyDescriptor use="signing">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=ufal-point.mff.cuni.cz,O=Charles University in
-                            Prague,C=CZ</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIEgTCCA2mgAwIBAgIRAKjpp7DA4H2hg++pA+mOlMgwDQYJKoZIhvcNAQEFBQAw
-                            NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
-                            IFNTTCBDQTAeFw0wOTExMTIwMDAwMDBaFw0xMjExMTEyMzU5NTlaMFUxCzAJBgNV
-                            BAYTAkNaMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNpdHkgaW4gUHJhZ3VlMR8w
-                            HQYDVQQDExZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEF
-                            AAOCAQ8AMIIBCgKCAQEA1Xo+J8TeS6GO73Qxr9EmVkcsblx6731iPj5CzANbEWr5
-                            61cecUEXpI2ajO7eWp8jRR1rxrd35i/Stlv1WZcP3jnXTz0mU6CHDBepJsYPfVGe
-                            Fg+ILOrHD+CpbRVF2Wo8AM3M9eOmZgoUIRYobWXfUHiNAYyQcenJBwwia2nPC2Ib
-                            JjD0FF/wNgj+rEvn8lgedspB3XeDNWTQ5F9H6qedaU5XT1WfjXhy96/RZPlwwNmF
-                            zidSxBIlaEb7+wFPudDlza8cE4JgY+he+2dDKMIkunktD2DhonXsV6ZpIFSGxP2b
-                            rYZeiYbr88fp5GayFXJN9KUqbl1ARTXalVxAJ7V0pwIDAQABo4IBaTCCAWUwHwYD
-                            VR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFAwsaQOpPlaf
-                            JXrSwflMCBtMEBk6MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1Ud
-                            JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQBsjEB
-                            AgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcv
-                            VEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0
-                            cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUH
-                            MAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMCEGA1UdEQQaMBiCFnVmYWwt
-                            cG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBACdkrEzn+hTfTX6C
-                            LSQy8a8UpuSnGt/DNsOZHItRg7OECskaB8NcDhWKukcCDHjDDlmTEC3Eje55tZVG
-                            E1p1ke4EKUwNSHLUCEMB5mFUh9/eFfrkywFhIkjG8Wohg+SS0XR8ZR9+gYK2Sep0
-                            0xj1J343h8MGXDGTlQWVmPN+a8t2Zu2kSy1d/rjyQ4DYNA6fDdmRlYz/+MWiNblM
-                            Y65ck8X2GhA2cvKX+jgIe7nvqwl6qbxaViRz6L+t180pKlej1FFKl3Cn2yYi7Qg3
-                            YDWak/DBKct67w4jOIYCFnTzxNS6JQ5snC1ambBZdOi6Tqejx51iThFYfCzegsXk
-                            qw/X0vc= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
-            <KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=ufal-point.mff.cuni.cz,O=Charles University in
-                            Prague,C=CZ</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIEgTCCA2mgAwIBAgIRAKjpp7DA4H2hg++pA+mOlMgwDQYJKoZIhvcNAQEFBQAw
-                            NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
-                            IFNTTCBDQTAeFw0wOTExMTIwMDAwMDBaFw0xMjExMTEyMzU5NTlaMFUxCzAJBgNV
-                            BAYTAkNaMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNpdHkgaW4gUHJhZ3VlMR8w
-                            HQYDVQQDExZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEF
-                            AAOCAQ8AMIIBCgKCAQEA1Xo+J8TeS6GO73Qxr9EmVkcsblx6731iPj5CzANbEWr5
-                            61cecUEXpI2ajO7eWp8jRR1rxrd35i/Stlv1WZcP3jnXTz0mU6CHDBepJsYPfVGe
-                            Fg+ILOrHD+CpbRVF2Wo8AM3M9eOmZgoUIRYobWXfUHiNAYyQcenJBwwia2nPC2Ib
-                            JjD0FF/wNgj+rEvn8lgedspB3XeDNWTQ5F9H6qedaU5XT1WfjXhy96/RZPlwwNmF
-                            zidSxBIlaEb7+wFPudDlza8cE4JgY+he+2dDKMIkunktD2DhonXsV6ZpIFSGxP2b
-                            rYZeiYbr88fp5GayFXJN9KUqbl1ARTXalVxAJ7V0pwIDAQABo4IBaTCCAWUwHwYD
-                            VR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFAwsaQOpPlaf
-                            JXrSwflMCBtMEBk6MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1Ud
-                            JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQBsjEB
-                            AgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcv
-                            VEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0
-                            cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUH
-                            MAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMCEGA1UdEQQaMBiCFnVmYWwt
-                            cG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBACdkrEzn+hTfTX6C
-                            LSQy8a8UpuSnGt/DNsOZHItRg7OECskaB8NcDhWKukcCDHjDDlmTEC3Eje55tZVG
-                            E1p1ke4EKUwNSHLUCEMB5mFUh9/eFfrkywFhIkjG8Wohg+SS0XR8ZR9+gYK2Sep0
-                            0xj1J343h8MGXDGTlQWVmPN+a8t2Zu2kSy1d/rjyQ4DYNA6fDdmRlYz/+MWiNblM
-                            Y65ck8X2GhA2cvKX+jgIe7nvqwl6qbxaViRz6L+t180pKlej1FFKl3Cn2yYi7Qg3
-                            YDWak/DBKct67w4jOIYCFnTzxNS6JQ5snC1ambBZdOi6Tqejx51iThFYfCzegsXk
-                            qw/X0vc= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
-            <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/Artifact/SOAP" index="1"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/Artifact"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/POST" index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/POST-SimpleSign"
-                index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML/POST" index="5"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML/Artifact" index="6"/>
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of
-                Mathematics and Physics, Charles University in Prague, Czech
-                Republic</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics,
-                Faculty of Mathematics and Physics, Charles University in
-                Prague</OrganizationDisplayName>
-            <OrganizationURL xml:lang="en">http://ufal.mff.cuni.cz/</OrganizationURL>
-        </Organization>
-        <ContactPerson contactType="technical">
-            <GivenName>Karel</GivenName>
-            <SurName>Vandas</SurName>
-            <EmailAddress>vandas@ufal.mff.cuni.cz</EmailAddress>
-        </ContactPerson>
+	<SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+	    <Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+		    <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+			<mdui:DisplayName xml:lang="en">LINDAT-Clarin repository</mdui:DisplayName>
+			<mdui:DisplayName xml:lang="cs">Repozitář LINDAT-Clarin</mdui:DisplayName>
+			<mdui:Description xml:lang="en">Repository of LINDAT-Clarin project at Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</mdui:Description>
+			<mdui:Description xml:lang="cs">Repozitář projektu LINDAT-Clarin Ústavu formální a aplikované lingvistiky Matematicko-fyzikální fakulty Univerzity Karlovy v Praze</mdui:Description>
+			<mdui:InformationURL xml:lang="en">http://ufal.mff.cuni.cz/</mdui:InformationURL>
+			<mdui:InformationURL xml:lang="cs">http://ufal.mff.cuni.cz/</mdui:InformationURL>
+		    </mdui:UIInfo>
+		<init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/DS"/>
+	      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/DS" index="1"/>
+	      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/Login"/>
+	      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/Login" index="2"/>
+	    </Extensions>
+	    <KeyDescriptor>
+	      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<ds:KeyName>Active</ds:KeyName>
+		<ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
+		<ds:X509Data>
+		  <ds:X509SubjectName>CN=ufal-point.mff.cuni.cz,O=Charles University in Prague,C=CZ</ds:X509SubjectName>
+		  <ds:X509Certificate>MIIEgTCCA2mgAwIBAgIRANAZM0fxIWg+DEEhaZlreVowDQYJKoZIhvcNAQEFBQAw
+	NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+	IFNTTCBDQTAeFw0xMjEwMjQwMDAwMDBaFw0xNTEwMjQyMzU5NTlaMFUxCzAJBgNV
+	BAYTAkNaMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNpdHkgaW4gUHJhZ3VlMR8w
+	HQYDVQQDExZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEF
+	AAOCAQ8AMIIBCgKCAQEAz4nCZa/xBh1ebd2+99GEqRMSqSkCEVfFi4Tndz6v87Iv
+	ZMvLY40OJg3lIEzngOz8tnn/ft6xcLxGwr+IbY6raHT08Xu8lQMd8Rj8Gmdi3Ov3
+	XuCgjVpAID+GGfNkahzxebWORNfHyqEGSx2oFgRe8HD9BbT8mqheBPF8FIy6mYvs
+	495IEkQVc0BvPvTwqEw+qOHKBX+AWQQIHDJDQQnjoteXplHugOFDJiJYH0T/80u3
+	DO7h6oyiLlnyDywOVCQdiJPXNOtPMyM9rMT3Vw9SO4iIaMUkF5EafFFdEPLsi+FO
+	2Z3r7pBxv1/LkK9AWuzAYSnjK/szHym25FWroxJZOwIDAQABo4IBaTCCAWUwHwYD
+	VR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFKKMnXN92GaN
+	5uyL8cZdchPl9NpQMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1Ud
+	JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQBsjEB
+	AgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcv
+	VEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0
+	cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUH
+	MAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMCEGA1UdEQQaMBiCFnVmYWwt
+	cG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBAKWQZsd0zZBi+hz6
+	3LBx49MOoCXkpUkIdqecMhz0bpIhC+2Q3Uxp97lpfB/9CIMoI5tq+PRXDXQt2D6A
+	fk90Maa8HYp1OQagBlY9jhs4ImbPbsHM5Aa3f4ycxhXs+hecaJBD4WiaxeWpOWes
+	k5Q+FdJCZoPqHRD2chNwhBErztJgujEarVtMBCUpCEpy5lwgFFFc2oekH8CkhWLw
+	sv6GENdYGamg5HfRAq57+mGW3FUnox3gkqTWDuVzOaMfDlHvfqRVtC7n4mhHVAqz
+	adGmTo4VvqYQsi0gVzrts5HDZAQBI13mpxua74rU8XyluKEyjS4gkVXLnlRjwXeF
+	IhAZYQU=
+	</ds:X509Certificate>
+		</ds:X509Data>
+	      </ds:KeyInfo>
+	    </KeyDescriptor>    
+	    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/Artifact/SOAP" index="1"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/SOAP"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/Redirect"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/POST"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SLO/Artifact"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/SOAP"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/Redirect"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/POST"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/NIM/Artifact"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/POST" index="1"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/Artifact" index="3"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML2/ECP" index="4"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML/POST" index="5"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://ufal-point.mff.cuni.cz/Shibboleth.sso/SAML/Artifact" index="6"/>
+	  </SPSSODescriptor>
+	 
+	  <Organization>
+	    <OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech Republic</OrganizationName>
+	    <OrganizationName xml:lang="cs">Ústav formální a aplikované lingvistiky, Matematicko-fyzikální fakulta, Univerzita Karlova v Praze</OrganizationName>
+	    <OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</OrganizationDisplayName>
+	    <OrganizationDisplayName xml:lang="cs">ÚFAL MFF UK</OrganizationDisplayName>
+	    <OrganizationURL xml:lang="en">http://ufal.mff.cuni.cz/</OrganizationURL>
+	    <OrganizationURL xml:lang="cs">http://ufal.mff.cuni.cz/</OrganizationURL>
+	  </Organization>
+	  <ContactPerson contactType="technical">
+	    <GivenName>Pavel</GivenName>
+	    <SurName>Straňák</SurName>
+	    <EmailAddress>stranak@ufal.mff.cuni.cz</EmailAddress>
+	  </ContactPerson>
     </EntityDescriptor>
 
     <!--  RZG Garching  -->
