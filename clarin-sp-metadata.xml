@@ -243,6 +243,15 @@
 
     <!-- IDS clarin.ids-mannheim.de (via CLARIN) -->
     <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
+        <Extensions>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
             <Extensions>
                 <idpdisc:DiscoveryResponse
@@ -252,6 +261,9 @@
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN services</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Dienste des Institut für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</mdui:Description>
+                    <mdui:Description xml:lang="en">Services provided by the Institute for the German Language (IDS) in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor use="signing">
@@ -285,7 +297,8 @@
                             +HXk4df5XPRrMMUu3WkOkZ+ea+ZWehS+AIrfVGz0+eoJraxF4B20571PFlamI7K7
                             /zGhNTTHgB6d74dCcS9qCqP7hBaDqTDnN4DAm+gv+wFLVECh13YZyDlkvWKk7RZP
                             kcFj6qC0guBXN8wZN7fSiOZUxTAxhD5Z04yjCiMcoXQKg5VMlCR+eLE/W/9gc58P
-                            sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB Ew==
+                            sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB
+                            Ew==
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
@@ -321,7 +334,8 @@
                             +HXk4df5XPRrMMUu3WkOkZ+ea+ZWehS+AIrfVGz0+eoJraxF4B20571PFlamI7K7
                             /zGhNTTHgB6d74dCcS9qCqP7hBaDqTDnN4DAm+gv+wFLVECh13YZyDlkvWKk7RZP
                             kcFj6qC0guBXN8wZN7fSiOZUxTAxhD5Z04yjCiMcoXQKg5VMlCR+eLE/W/9gc58P
-                            sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB Ew==
+                            sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB
+                            Ew==
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
@@ -383,6 +397,15 @@
 
     <!-- IDS repos.ids-mannheim.de (via CLARIN) -->
     <EntityDescriptor entityID="https://repos.ids-mannheim.de/shibboleth">
+        <Extensions>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
             <Extensions>
                 <idpdisc:DiscoveryResponse
@@ -392,6 +415,8 @@
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Respository</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Services provided by the Institute for the German Language (IDS) in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
