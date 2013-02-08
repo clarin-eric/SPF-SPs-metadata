@@ -128,8 +128,10 @@
         <Organization>
             <OrganizationName xml:lang="de">Berlin-Brandenburgische Akademie der
                 Wissenschaften</OrganizationName>
+            <OrganizationName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationName>
             <OrganizationDisplayName xml:lang="de">Berlin-Brandenburgische Akademie der
                 Wissenschaften</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationDisplayName> 
             <OrganizationURL xml:lang="de">http://www.bbaw.de</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
