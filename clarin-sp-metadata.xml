@@ -416,8 +416,9 @@
                     Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login" index="1"/>
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Respository</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Services provided by the Institute for the German Language (IDS) in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Repository</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Das Forschungsprimärdetenrepository des Institut für Deutsche Sprache (IDS).</mdui:Description>
+                    <mdui:Description xml:lang="en">Language resources repository of the Institute for the German Language (IDS)</mdui:Description>
                     <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
@@ -484,7 +485,7 @@
         </SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</OrganizationName>
-            <OrganizationName xml:lang="en">Institute for the German Language (IDS) - Respository</OrganizationName>
+            <OrganizationName xml:lang="en">Institute for the German Language (IDS) - Repository</OrganizationName>
             <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache - Forschungsprimärdatenrepository</OrganizationDisplayName>
             <OrganizationDisplayName xml:lang="en">Institute for the German Language - Repository</OrganizationDisplayName>
             <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
