@@ -668,23 +668,35 @@
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
-            <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
+            <EmailAddress>latadmin@mpi.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
     <!-- MPI catalog.clarin.eu (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.catalog.clarin.eu">
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0: protocol">
             <Extensions>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://catalog.clarin.eu/Shibboleth.sso/DS" index="1"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://catalog.clarin.eu/Shibboleth.sso/DS" index="2"/>
+                <!-- start : required for terena CoC -->
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">Clarin Catalog Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Clarin Catalog Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Clarin Catalog Service Provider</mdui:Description>
+                    <mdui:Description xml:lang="en">Clarin Catalog Service Provider</mdui:Description>
+                    <mdui:Keywords xml:lang="nl">Clarin Catalog Service Provider</mdui:Keywords>
+                    <mdui:Keywords xml:lang="en">Clarin Catalog Service Provider</mdui:Keywords>
+                    <!--<mdui:Logo height="498" width="176">https://catalog.clarin.eu/clarin.gif</mdui:Logo>-->
+                    <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.html</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
+                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                           Name="http://macedir.org/entity-category">
+                        <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
+                    </Attribute>
+                </EntityAttributes>
+                <!-- end : required for terena CoC -->
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://catalog.clarin.eu/Shibboleth.sso/DS" index="1"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://catalog.clarin.eu/Shibboleth.sso/DS" index="2"/>
             </Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -715,73 +727,81 @@
                             fPO0WLU0KduZtyfl1QGnYZcIpBAN53M+EvMk0Q9ruOP3FZazLPscULJnqW8Ks8/v
                             ijthUt3XZFCR66qbNf7HeyS7zzYYMkyRDJN9PixRyiEAWHifqXJQzNI9dlqcy+Aq
                             nnDbttGYLUyhuuT+CqcBRWJButW9x4BFUDNHrgfcPWwFhUGx3hqI2U6zqrTgesWg
-                            hSpV3QIescvTSt7Z39lTi6xXr6rXJMxwwpfBn292RbTvgwtTd+yxU0eOLu+3J8tI
+                            hSpV3QIescvTSt7Z39lTi6xXr6rXJMxwwpfBn292RbTvgwtTd+yxU0eOLu+3J8tI                        
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/POST"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
             <!--
             <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
             <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
             -->
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Artifact"/>
-
-
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                      Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST" index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                      Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                      Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                                      Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/POST" index="5"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                                      Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/SOAP"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Redirect"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/POST"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Artifact"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST" index="1"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/POST" index="5"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <AttributeConsumingService index="1">
+                <ServiceName xml:lang="en">CLARIN Catalog Service Provider</ServiceName>
+                <ServiceDescription xml:lang="en">CLARIN Catalog Service Provider.</ServiceDescription>
+                <!-- SAML1 -->
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>                
+                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>            
+                <!-- SAML2 -->
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+            </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">CATALOG CLARIN SP</OrganizationDisplayName>
-            <OrganizationURL xml:lang="en">http://www.clarin.eu</OrganizationURL>
+            <OrganizationName xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">MPI</OrganizationName>
+            <OrganizationDisplayName xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">CATALOG CLARIN SP</OrganizationDisplayName>
+            <OrganizationURL xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">http://www.clarin.eu</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
-            <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
+            <EmailAddress>latadmin@mpi.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
     <!-- MPI corpus1.mpi.nl (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.corpus1.mpi.nl">
-
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:
-            protocol">
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+                <!-- start : required for terena CoC -->
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">MPI Corpus1 Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">MPI Corpus1 Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider</mdui:Description>
+                    <mdui:Description xml:lang="en">Max Planck Institue for Psycholinguistics Corpus1 Service Provider</mdui:Description>
+                    <mdui:Keywords xml:lang="nl">MPI Corpus1 Service Provider</mdui:Keywords>
+                    <mdui:Keywords xml:lang="en">MPI Corpus1 Service Provider</mdui:Keywords>
+                    <mdui:Logo height="194" width="189">https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://corpus1.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
+                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                           Name="http://macedir.org/entity-category">
+                        <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
+                    </Attribute>
+                </EntityAttributes>
+                <!-- end : required for terena CoC -->
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                       index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                       Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                       index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                       Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
             </Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -817,59 +837,44 @@
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
-
-            <!-- <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>-->
-
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                 Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
-
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                      Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                      Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                      Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                                      Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                                      Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
-
-
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/POST"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
+            <!--
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+            <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+            -->
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/POST"/>
+            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <!-- start : required for terena CoC -->
+            <AttributeConsumingService index="1">
+                <ServiceName xml:lang="en">MPI Corpus1 Service Provider</ServiceName>
+                <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1 Service Provider.</ServiceDescription>
+                <!-- SAML1 -->
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>            
+            </AttributeConsumingService>
+            <!-- end : required for terena CoC -->    
         </SPSSODescriptor>
-
         <Organization>
             <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">MPI corpus1 SP</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">MPI corpus1 Service Provider</OrganizationDisplayName>
             <OrganizationURL xml:lang="en">http://www.mpi.nl</OrganizationURL>
         </Organization>
-
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
             <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
         </ContactPerson>
-
-
     </EntityDescriptor>
-
-
 
     <!-- INL (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.dev.clarin.inl.nl/shibboleth">
