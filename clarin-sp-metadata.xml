@@ -1700,11 +1700,12 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
 
     </EntityDescriptor>
 
-	<EntityDescriptor  ID="_08babe0a12e4f4ab418f3ef83e302460" entityID="https://asvsp.informatik.uni-leipzig.de/">
+
+	<EntityDescriptor ID="_3eb30c7696ed09541c2523661723d5ad" entityID="https://clarintest.informatik.uni-leipzig.de/">
 
 	  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
 	    <Extensions>
-	      <DiscoveryResponse xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://localhost/Shibboleth.sso/DiscoJuice" index="1"/>
+	      <DiscoveryResponse xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/DiscoJuice" index="1"/>
 	    </Extensions>
 	    <KeyDescriptor use="signing">
 	      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -1800,21 +1801,21 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
 	        </ds:X509Data>
 	      </ds:KeyInfo>
 	    </KeyDescriptor>
-	    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://localhost/Shibboleth.sso/Artifact/SOAP" index="1"/>
-	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://localhost/Shibboleth.sso/SLO/SOAP"/>
-	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/Shibboleth.sso/SLO/Redirect"/>
-	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/Shibboleth.sso/SLO/POST"/>
-	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://localhost/Shibboleth.sso/SLO/Artifact"/>
-	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://localhost/Shibboleth.sso/NIM/SOAP"/>
-	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost/Shibboleth.sso/NIM/Redirect"/>
-	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/Shibboleth.sso/NIM/POST"/>
-	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://localhost/Shibboleth.sso/NIM/Artifact"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost/Shibboleth.sso/SAML2/POST" index="1"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://localhost/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://localhost/Shibboleth.sso/SAML2/Artifact" index="3"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://localhost/Shibboleth.sso/SAML2/ECP" index="4"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://localhost/Shibboleth.sso/SAML/POST" index="5"/>
-	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://localhost/Shibboleth.sso/SAML/Artifact" index="6"/>
+	    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/SOAP"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Redirect"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/POST"/>
+	    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
+	    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST" index="1"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML/POST" index="5"/>
+	    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML/Artifact" index="6"/>
 	  </SPSSODescriptor>
 
 	</EntityDescriptor>
