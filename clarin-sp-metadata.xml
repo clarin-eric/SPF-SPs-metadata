@@ -1898,23 +1898,80 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
         
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
-                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login"/>
-                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login" index="1"/>
+                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login" index="1"/>
             </Extensions>
-            <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Artifact/SOAP" index="0"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/Artifact"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/POST" index="0"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/Artifact" index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/ECP" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML/POST" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="http://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML/Artifact" index="5"/>
+            <KeyDescriptor use="signing">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIDWDCCAkCgAwIBAgIJAIbjC1itPZWcMA0GCSqGSIb3DQEBBQUAMDExLzAtBgNV
+                            BAMTJnZpcnQtZmVkb3JhLm11bHRpbGluZ3VhLnVuaS1oYW1idXJnLmRlMB4XDTEz
+                            MDIyNDAwNDAxMFoXDTIzMDIyMjAwNDAxMFowMTEvMC0GA1UEAxMmdmlydC1mZWRv
+                            cmEubXVsdGlsaW5ndWEudW5pLWhhbWJ1cmcuZGUwggEiMA0GCSqGSIb3DQEBAQUA
+                            A4IBDwAwggEKAoIBAQChVVQWguRXsIL9gidRGRO746BY4CaJq19TyFxe6oqVwqAM
+                            xdxWsWWAlxM1p0XfKiZUXOoaxUWZOP7kudhGfn9JyfjHU/GGe6D9aVI/fdOZgmWA
+                            kkfFxpQtu2u5HChNL8wv3iHxc3TFHchy/c1E6bcEkEL74W6P4gNQP5AnDpnqrrRt
+                            saFawECuZ29cC+i1O/xh5ny4yheMOanebh/ngMpboszQNyvunXxqhjH4Mc/HMLb1
+                            91wJXahThxv+jociXMs2eZ6AK1+KlUd+jRlMIrAJiAHOrNPiLANn6noRkpRMQMXg
+                            NtHCdlX6A5hWrc1XseRNowqGHJcx6yFPdp/L6GbbAgMBAAGjczBxMFAGA1UdEQRJ
+                            MEeCJnZpcnQtZmVkb3JhLm11bHRpbGluZ3VhLnVuaS1oYW1idXJnLmRlhh1odHRw
+                            Oi8vY29ycG9yYS51bmktaGFtYnVyZy5kZTAdBgNVHQ4EFgQUWIL4iCl3CBuU8d2h
+                            7sHrPfyxkkQwDQYJKoZIhvcNAQEFBQADggEBABO37ZVi/YZ+VQOQZrIkUHSMdtKk
+                            NTrR00YemKI2zBaD2NChJLqgf7HXqswMGL+4VTVgqpLC3OV55wNuZc4szK2Sdgpf
+                            LP5p60gzwsgBavvYiHaslASheqBdYoDntotrMeABg7qWVsiED2+y37w5Co7X2Id1
+                            aQ7OjyvMoCybeY7Ysy0foNcMZ1v0Hre6imyYFYqTJPM52FgeFBLmosGU/wy9mtlw
+                            f6tp8rOvQphEY2HXPlk6Z0ReoFJOySykPaq0JEiz6G6TpvMsDXAmXC8oPdkJKtN/
+                            gDEPz+5cha1IQeCbZGJ9vrFENCLjEUbzd7LOW0K2qJmND/5U6+N3P8RDSIk=
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>
+            <KeyDescriptor use="encryption">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIDWDCCAkCgAwIBAgIJAIbjC1itPZWcMA0GCSqGSIb3DQEBBQUAMDExLzAtBgNV
+                            BAMTJnZpcnQtZmVkb3JhLm11bHRpbGluZ3VhLnVuaS1oYW1idXJnLmRlMB4XDTEz
+                            MDIyNDAwNDAxMFoXDTIzMDIyMjAwNDAxMFowMTEvMC0GA1UEAxMmdmlydC1mZWRv
+                            cmEubXVsdGlsaW5ndWEudW5pLWhhbWJ1cmcuZGUwggEiMA0GCSqGSIb3DQEBAQUA
+                            A4IBDwAwggEKAoIBAQChVVQWguRXsIL9gidRGRO746BY4CaJq19TyFxe6oqVwqAM
+                            xdxWsWWAlxM1p0XfKiZUXOoaxUWZOP7kudhGfn9JyfjHU/GGe6D9aVI/fdOZgmWA
+                            kkfFxpQtu2u5HChNL8wv3iHxc3TFHchy/c1E6bcEkEL74W6P4gNQP5AnDpnqrrRt
+                            saFawECuZ29cC+i1O/xh5ny4yheMOanebh/ngMpboszQNyvunXxqhjH4Mc/HMLb1
+                            91wJXahThxv+jociXMs2eZ6AK1+KlUd+jRlMIrAJiAHOrNPiLANn6noRkpRMQMXg
+                            NtHCdlX6A5hWrc1XseRNowqGHJcx6yFPdp/L6GbbAgMBAAGjczBxMFAGA1UdEQRJ
+                            MEeCJnZpcnQtZmVkb3JhLm11bHRpbGluZ3VhLnVuaS1oYW1idXJnLmRlhh1odHRw
+                            Oi8vY29ycG9yYS51bmktaGFtYnVyZy5kZTAdBgNVHQ4EFgQUWIL4iCl3CBuU8d2h
+                            7sHrPfyxkkQwDQYJKoZIhvcNAQEFBQADggEBABO37ZVi/YZ+VQOQZrIkUHSMdtKk
+                            NTrR00YemKI2zBaD2NChJLqgf7HXqswMGL+4VTVgqpLC3OV55wNuZc4szK2Sdgpf
+                            LP5p60gzwsgBavvYiHaslASheqBdYoDntotrMeABg7qWVsiED2+y37w5Co7X2Id1
+                            aQ7OjyvMoCybeY7Ysy0foNcMZ1v0Hre6imyYFYqTJPM52FgeFBLmosGU/wy9mtlw
+                            f6tp8rOvQphEY2HXPlk6Z0ReoFJOySykPaq0JEiz6G6TpvMsDXAmXC8oPdkJKtN/
+                            gDEPz+5cha1IQeCbZGJ9vrFENCLjEUbzd7LOW0K2qJmND/5U6+N3P8RDSIk=
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>        
+            <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Artifact/SOAP" index="0"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/SOAP"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/Redirect"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/POST"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SLO/Artifact"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/POST" index="0"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/Artifact" index="2"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML/POST" index="4"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML/Artifact" index="5"/>
         </SPSSODescriptor>
         
     </EntityDescriptor>
+    
 
 
 </EntitiesDescriptor>
