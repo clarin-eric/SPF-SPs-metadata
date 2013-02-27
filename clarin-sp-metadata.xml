@@ -1498,8 +1498,7 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
     </EntityDescriptor>
 
     <!-- BAS (via CLARIN) -->
-    <EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-	    ID="_f8eb7e2feeffdff03d26adc5d66963159978b95d" entityID="https://sp.phonetik.uni-muenchen.de">
+    <EntityDescriptor ID="_f8eb7e2feeffdff03d26adc5d66963159978b95d" entityID="https://sp.phonetik.uni-muenchen.de">
     
 	    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 		    <ds:SignedInfo>
