@@ -1498,174 +1498,128 @@ https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
     </EntityDescriptor>
 
     <!-- BAS (via CLARIN) -->
+    
     <EntityDescriptor ID="_f8eb7e2feeffdff03d26adc5d66963159978b95d" entityID="https://sp.phonetik.uni-muenchen.de">
-	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-		<ds:SignedInfo>
-			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-			<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-			<ds:Reference URI="#_f8eb7e2feeffdff03d26adc5d66963159978b95d">
-				<ds:Transforms>
-					<ds:Transform
-						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-					<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-				</ds:Transforms>
-				<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-				<ds:DigestValue>oqwnqv8iYjDPG7BKMucBF1KNE9A=</ds:DigestValue>
-			</ds:Reference>
-		</ds:SignedInfo>
-		<ds:SignatureValue>jiGAQAJXfbLdOqxxSm4uKBzqlEhSBOJdA0dZAkRM6zVZfuKYboVafjWKuKLVYb8g
-			VcX32QZ/K34RhfDcBtDDItty+NxNkETBmkE7YtKIdxVnmTbyjl0Qo+3kbn8K1MYz
-			dptNEI2R1PbUkTPK8mmGKnqWbaOWUCTayQ/LyomtHxAAt48cBQp8s9qWswy3ar4A
-			cURW6x7F43GJLf04sunuXzOHf4JN9XPNeJ7sFN51Uir5qss+AOiMCJn2JqAk6Tog
-			aPK9trYTV2WCrI4wwc3gDlnuaYXjlhOYi9iHQkZ6aYlEFyXBSkrfM+dGRe0hO9AQ
-			aRIjyrVcvwUpSD/u2Oia2Q==
-		</ds:SignatureValue>
-		<ds:KeyInfo>
-			<ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
-			<ds:X509Data>
-				<ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut
-					fuer Phonetik und
-					Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet
-					Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
-				<ds:X509Certificate>MIIGRzCCBS+gAwIBAgIHFTmQd1qamTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
-					BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
-					BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
-					BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMzAy
-					MTIxMDAxMTFaFw0xNTAyMTIwMDAwMDBaMIHGMQswCQYDVQQGEwJERTEPMA0GA1UE
-					CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
-					eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjE2MDQGA1UECxMtSW5zdGl0
-					dXQgZnVlciBQaG9uZXRpayB1bmQgU3ByYWNodmVyYXJiZWl0dW5nMSgwJgYDVQQD
-					Ex9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0B
-					AQEFAAOCAQ8AMIIBCgKCAQEAzAfqCn5gcUQSS0Cab3wM+LuWpFmGfbPJtN2f6SRh
-					tp6p/TR9YMku+nfTH4UGuS+FcJDu8XvzugKDAc/DtyHD7h5evFRQQIRM3wBYN5K8
-					bJy1LTPwwVfB4UpsO+xSem2kV6vhNG3F1oX+R8d4g4ZgrLhSgx7op4Jg+NfmAn5J
-					1I21a5bpbG3iTXYOY+0vjEKlicAK2XY+FQl4DvWKrO2VCakfNbTQkAmP3/uoDblv
-					R20ZJrHJmo0NNYrD2jXwTE1AbU+jjoPvkd0vuT/FoQp/LgLTzj27XEb+9uR6vNNK
-					iJwe2aMYJeuwbNwNRtKr/4ZzYsEfeZCQXpPaklYQIbiAYQIDAQABo4ICbDCCAmgw
-					OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwAwEQYPKwYBBAGBrSGCLAIBBAMA
-					MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
-					BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFJTCcPu3bgjNcGGnCzqYBDkPkatv
-					MB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3HR4OlIAPMEoGA1UdEQRDMEGCH2Ns
-					YXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGWBHmFkbWluQHBob25ldGlrLnVu
-					aS1tdWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5w
-					Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDyg
-					OoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2Ny
-					bC9jYWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRw
-					Oi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKG
-					PGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNl
-					cnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5k
-					ZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3
-					DQEBBQUAA4IBAQCMq+Z5aZtriud/w7ykQIVpBRbiT8f18CMs3A4K/BKJa2eTFE1L
-					Gi5FJk6pTPSI1hR62An1luqXtcsHdsdjxPT999AoR1EKK92vAmxVCE6ehzifN0L6
-					HYYmS9AL8vtb2cDITqYv92HI/xYn6zSH4aomWIjgX15qGMoNORtzeMo+QMmZ5Suw
-					RRWgVyfHtHOjmt6plkzrW5n1k1cn4q/ceC2PH/M/5aElLGVBp6Rny3DEOv3QQuIk
-					xbWjYmNe3yOLIWUslF7UfG3vdrdONiMdgV8ZemUIfw2EhwDqA9KiinNSoV9IfWYR
-					9kFSGJp48QNgtsW3NkdqyRkaELMRVbwPumMX
-				</ds:X509Certificate>
-			</ds:X509Data>
-		</ds:KeyInfo>
-	</ds:Signature>
 
-	<SPSSODescriptor
-		protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-		<Extensions>
-			<init:RequestInitiator
-				xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-				Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-				Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login" />
-			<idpdisc:DiscoveryResponse
-				xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-				Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-				Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"
-				index="1" />
-		</Extensions>
-		<KeyDescriptor>
-			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-				<ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
-				<ds:X509Data>
-					<ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut
-						fuer Phonetik und
-						Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet
-						Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
-					<ds:X509Certificate>MIIGRzCCBS+gAwIBAgIHFTmQd1qamTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
-						BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
-						BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
-						BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMzAy
-						MTIxMDAxMTFaFw0xNTAyMTIwMDAwMDBaMIHGMQswCQYDVQQGEwJERTEPMA0GA1UE
-						CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
-						eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjE2MDQGA1UECxMtSW5zdGl0
-						dXQgZnVlciBQaG9uZXRpayB1bmQgU3ByYWNodmVyYXJiZWl0dW5nMSgwJgYDVQQD
-						Ex9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0B
-						AQEFAAOCAQ8AMIIBCgKCAQEAzAfqCn5gcUQSS0Cab3wM+LuWpFmGfbPJtN2f6SRh
-						tp6p/TR9YMku+nfTH4UGuS+FcJDu8XvzugKDAc/DtyHD7h5evFRQQIRM3wBYN5K8
-						bJy1LTPwwVfB4UpsO+xSem2kV6vhNG3F1oX+R8d4g4ZgrLhSgx7op4Jg+NfmAn5J
-						1I21a5bpbG3iTXYOY+0vjEKlicAK2XY+FQl4DvWKrO2VCakfNbTQkAmP3/uoDblv
-						R20ZJrHJmo0NNYrD2jXwTE1AbU+jjoPvkd0vuT/FoQp/LgLTzj27XEb+9uR6vNNK
-						iJwe2aMYJeuwbNwNRtKr/4ZzYsEfeZCQXpPaklYQIbiAYQIDAQABo4ICbDCCAmgw
-						OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwAwEQYPKwYBBAGBrSGCLAIBBAMA
-						MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
-						BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFJTCcPu3bgjNcGGnCzqYBDkPkatv
-						MB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3HR4OlIAPMEoGA1UdEQRDMEGCH2Ns
-						YXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGWBHmFkbWluQHBob25ldGlrLnVu
-						aS1tdWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5w
-						Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDyg
-						OoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2Ny
-						bC9jYWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRw
-						Oi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKG
-						PGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNl
-						cnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5k
-						ZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3
-						DQEBBQUAA4IBAQCMq+Z5aZtriud/w7ykQIVpBRbiT8f18CMs3A4K/BKJa2eTFE1L
-						Gi5FJk6pTPSI1hR62An1luqXtcsHdsdjxPT999AoR1EKK92vAmxVCE6ehzifN0L6
-						HYYmS9AL8vtb2cDITqYv92HI/xYn6zSH4aomWIjgX15qGMoNORtzeMo+QMmZ5Suw
-						RRWgVyfHtHOjmt6plkzrW5n1k1cn4q/ceC2PH/M/5aElLGVBp6Rny3DEOv3QQuIk
-						xbWjYmNe3yOLIWUslF7UfG3vdrdONiMdgV8ZemUIfw2EhwDqA9KiinNSoV9IfWYR
-						9kFSGJp48QNgtsW3NkdqyRkaELMRVbwPumMX
-					</ds:X509Certificate>
-				</ds:X509Data>
-			</ds:KeyInfo>
-		</KeyDescriptor>
-		<ArtifactResolutionService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Artifact/SOAP"
-			index="0" />
-		<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/SOAP" />
-		<SingleLogoutService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Redirect" />
-		<SingleLogoutService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/POST" />
-		<SingleLogoutService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Artifact" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST"
-			index="0" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign"
-			index="1" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/Artifact"
-			index="2" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/ECP"
-			index="3" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/POST"
-			index="4" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-			Location="http://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/Artifact"
-			index="5" />
-	</SPSSODescriptor>
-    </EntityDescriptor>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#_f8eb7e2feeffdff03d26adc5d66963159978b95d">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>Jr8D80+hPaPWqKr0m+NvlaEo3xI=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>bkmZSLt+bf7TZwA9Yofat58N0shQJ6bMRTUeBhb9FC7mgW+ga8fsWhbccEP4MwiK
+TF/fpU2pVXAkJ+5jzKhwQvN7a7zZlz6L5E6TxXOdOJv2axtbTC8EATD3j5urm3bL
+W7fvz6jAQCjj2M+on0yxB9vg8nMuS7cj3TPCPqxiKs3WNXhniuGn9tNn539a2DBT
+FbxwXTyuUlvs59KkKLzcOQxqiAO7+76dCt3A0UPxQdBBIoyd6H14gGzDD/A4QXLo
+ZQki0seEAyTSnDgmWdc1N4s5Av0UfgUHYB1W7qFm/iKERhsFI0xTgibsq0r0bo7G
++tFCXbyqddLWw/6c4H6ZfQ==</ds:SignatureValue>
+<ds:KeyInfo><ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName><ds:X509Data><ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut fuer Phonetik und Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName><ds:X509Certificate>MIIGRzCCBS+gAwIBAgIHFTmQd1qamTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMzAy
+MTIxMDAxMTFaFw0xNTAyMTIwMDAwMDBaMIHGMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjE2MDQGA1UECxMtSW5zdGl0
+dXQgZnVlciBQaG9uZXRpayB1bmQgU3ByYWNodmVyYXJiZWl0dW5nMSgwJgYDVQQD
+Ex9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEAzAfqCn5gcUQSS0Cab3wM+LuWpFmGfbPJtN2f6SRh
+tp6p/TR9YMku+nfTH4UGuS+FcJDu8XvzugKDAc/DtyHD7h5evFRQQIRM3wBYN5K8
+bJy1LTPwwVfB4UpsO+xSem2kV6vhNG3F1oX+R8d4g4ZgrLhSgx7op4Jg+NfmAn5J
+1I21a5bpbG3iTXYOY+0vjEKlicAK2XY+FQl4DvWKrO2VCakfNbTQkAmP3/uoDblv
+R20ZJrHJmo0NNYrD2jXwTE1AbU+jjoPvkd0vuT/FoQp/LgLTzj27XEb+9uR6vNNK
+iJwe2aMYJeuwbNwNRtKr/4ZzYsEfeZCQXpPaklYQIbiAYQIDAQABo4ICbDCCAmgw
+OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwAwEQYPKwYBBAGBrSGCLAIBBAMA
+MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
+BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFJTCcPu3bgjNcGGnCzqYBDkPkatv
+MB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3HR4OlIAPMEoGA1UdEQRDMEGCH2Ns
+YXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGWBHmFkbWluQHBob25ldGlrLnVu
+aS1tdWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDyg
+OoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2Ny
+bC9jYWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRw
+Oi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKG
+PGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNl
+cnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5k
+ZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3
+DQEBBQUAA4IBAQCMq+Z5aZtriud/w7ykQIVpBRbiT8f18CMs3A4K/BKJa2eTFE1L
+Gi5FJk6pTPSI1hR62An1luqXtcsHdsdjxPT999AoR1EKK92vAmxVCE6ehzifN0L6
+HYYmS9AL8vtb2cDITqYv92HI/xYn6zSH4aomWIjgX15qGMoNORtzeMo+QMmZ5Suw
+RRWgVyfHtHOjmt6plkzrW5n1k1cn4q/ceC2PH/M/5aElLGVBp6Rny3DEOv3QQuIk
+xbWjYmNe3yOLIWUslF7UfG3vdrdONiMdgV8ZemUIfw2EhwDqA9KiinNSoV9IfWYR
+9kFSGJp48QNgtsW3NkdqyRkaELMRVbwPumMX
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
+
+<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login" index="1"/>
+    </Extensions>
+    <KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut fuer Phonetik und Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIGRzCCBS+gAwIBAgIHFTmQd1qamTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMzAy
+MTIxMDAxMTFaFw0xNTAyMTIwMDAwMDBaMIHGMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjE2MDQGA1UECxMtSW5zdGl0
+dXQgZnVlciBQaG9uZXRpayB1bmQgU3ByYWNodmVyYXJiZWl0dW5nMSgwJgYDVQQD
+Ex9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEAzAfqCn5gcUQSS0Cab3wM+LuWpFmGfbPJtN2f6SRh
+tp6p/TR9YMku+nfTH4UGuS+FcJDu8XvzugKDAc/DtyHD7h5evFRQQIRM3wBYN5K8
+bJy1LTPwwVfB4UpsO+xSem2kV6vhNG3F1oX+R8d4g4ZgrLhSgx7op4Jg+NfmAn5J
+1I21a5bpbG3iTXYOY+0vjEKlicAK2XY+FQl4DvWKrO2VCakfNbTQkAmP3/uoDblv
+R20ZJrHJmo0NNYrD2jXwTE1AbU+jjoPvkd0vuT/FoQp/LgLTzj27XEb+9uR6vNNK
+iJwe2aMYJeuwbNwNRtKr/4ZzYsEfeZCQXpPaklYQIbiAYQIDAQABo4ICbDCCAmgw
+OQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwAwEQYPKwYBBAGBrSGCLAIBBAMA
+MAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggr
+BgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFJTCcPu3bgjNcGGnCzqYBDkPkatv
+MB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3HR4OlIAPMEoGA1UdEQRDMEGCH2Ns
+YXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGWBHmFkbWluQHBob25ldGlrLnVu
+aS1tdWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5w
+Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDyg
+OoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2Ny
+bC9jYWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRw
+Oi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKG
+PGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNl
+cnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5k
+ZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3
+DQEBBQUAA4IBAQCMq+Z5aZtriud/w7ykQIVpBRbiT8f18CMs3A4K/BKJa2eTFE1L
+Gi5FJk6pTPSI1hR62An1luqXtcsHdsdjxPT999AoR1EKK92vAmxVCE6ehzifN0L6
+HYYmS9AL8vtb2cDITqYv92HI/xYn6zSH4aomWIjgX15qGMoNORtzeMo+QMmZ5Suw
+RRWgVyfHtHOjmt6plkzrW5n1k1cn4q/ceC2PH/M/5aElLGVBp6Rny3DEOv3QQuIk
+xbWjYmNe3yOLIWUslF7UfG3vdrdONiMdgV8ZemUIfw2EhwDqA9KiinNSoV9IfWYR
+9kFSGJp48QNgtsW3NkdqyRkaELMRVbwPumMX
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Artifact/SOAP" index="0"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST" index="0"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/Artifact" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/POST" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/Artifact" index="5"/>
+  </SPSSODescriptor></EntityDescriptor>
+    
+    
+    
+   
     
     <!-- Universität Leipzig //-->
     <EntityDescriptor ID="_a423ad5163a8068fb6e3a6e815666f70"
