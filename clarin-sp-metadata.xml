@@ -573,62 +573,29 @@
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
                 <!-- start : required for terena CoC -->
-                <mdui:UIInfo>
-                    <mdui:DisplayName xml:lang="en">Lux17 Service Provider</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">Lux17 Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Lux17 Service Provider</mdui:Description>
-                    <mdui:Description xml:lang="en">Max Planck Institue for Psycholinguistics Lux17 Service Provider</mdui:Description>
-                    <mdui:Keywords xml:lang="nl">Lux17 Service Provider</mdui:Keywords>
-                    <mdui:Keywords xml:lang="en">Lux17 Service Provider</mdui:Keywords>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek tweede Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider for Linguistic Services aimed at researchers</mdui:Description>
+                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek tweede Service Provider voor Taalkundige Services gericht op onderzoekers</mdui:Description>
+                    <mdui:Keywords xml:lang="en">Max Planck Institute for Psycholinguistics Lux17 Service Provider Linguistic Services</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Lux17 Service Provider Taalkundige Services</mdui:Keywords>
                     <mdui:Logo height="90" width="90">https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
                     <mdui:PrivacyStatementURL xml:lang="en">https://lux17.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
-                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
-                               NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                               Name="http://macedir.org/entity-category">
+                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
                         <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
                     </Attribute>
                 </EntityAttributes>
                 <!-- end : required for terena CoC -->
-                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                           index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                           Location="http://lux17.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                           index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                           Location="https://lux17.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="http://lux17.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://lux17.mpi.nl/Shibboleth.sso/DS"/>
             </Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>
-                            MIIE1zCCA7+gAwIBAgIEDeB5KTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE
-                            RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q
-                            RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxMzQ4
-                            MTBaFw0xNDAzMTcxMzQ4MTBaMHoxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt
-                            UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1
-                            dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFTATBgNVBAMTDGx1eDE3Lm1waS5ubDCC
-                            ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL0wTdnMTgPC8/x6+0reirYB
-                            bifyQwbOLHE0bOtHD6et5oT9WPRosJFpFxnxs2aF/SqR7Kar4Z/7lMBFbL3vdgrJ
-                            h6fCNVofBI/Zs7d8aCwfcc6aMJORJPlTtFElmNvZD8TE035qzRNfkwqPOYkmwqlC
-                            CP9pJwebt3kEJSHHOVngydBJaVzSDayJLp1WzQ2FyEVfbPyUaQ2z2RyPGG0C1yX4
-                            Thin64YaRlBH78INIlCf8NpQwc+CCG7SgVSuDq1DEZXbm7z789kUJtqnlNe2Nahj
-                            inYfMr4Jtc27TwD+We9cs14LjSst4L3gd0kT511Wycs53+BpMWRWVKD4tFMva+EC
-                            AwEAAaOCAX8wggF7MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQMMAoG
-                            CCsGAQUFBwMBMB0GA1UdDgQWBBRY3hAzheVZXJug0vL3ndQWl8CAjTAfBgNVHSME
-                            GDAWgBQC1h5uCau/WGWnCjxIM2HRzn3DWzB3BgNVHR8EcDBuMDWgM6Axhi9odHRw
-                            Oi8vY2RwMS5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDA1oDOg
-                            MYYvaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NybC9jYWNybC5j
-                            cmwwgZIGCCsGAQUFBwEBBIGFMIGCMD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMS5w
-                            Y2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwPwYIKwYBBQUH
-                            MAKGM2h0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2Fj
-                            ZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbTiXJjoL5ulDq6yP3g2cBE4tpXN/
-                            LMe2gNgvBmzWIuvoMtI/qf5CWZI2Z/3T8uPHrzcrhWxjazhcrdMsdCrFEp1YCdUv
-                            3+ielpse2O+k7ZF/OKZtP2yBBrPqfn46K2luYs7omROhkzfKU76inhSn7aMDH8sp
-                            A483fjEFPdYorFjq087bpHkXqJuDKHm7Jz91+vjMZMJ5v5IH5oec84pT6yPO1f0k
-                            7v7NeAtHCybR2fYZnSGrjUOEOPCJx5ufyE5EOzATp5BVLXSLa2H4B0Ws2IOv9ORw
-                            0cYjl0hBJw+lYT0LPIUaE0SU1jtoOKUHevuygdjyiG0JPNgUks8Ow3+v/A==
-                        </ds:X509Certificate>
+                        <ds:X509Certificate>MIIE1zCCA7+gAwIBAgIEDeB5KTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxMzQ4 MTBaFw0xNDAzMTcxMzQ4MTBaMHoxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1 dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFTATBgNVBAMTDGx1eDE3Lm1waS5ubDCC ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL0wTdnMTgPC8/x6+0reirYB bifyQwbOLHE0bOtHD6et5oT9WPRosJFpFxnxs2aF/SqR7Kar4Z/7lMBFbL3vdgrJ h6fCNVofBI/Zs7d8aCwfcc6aMJORJPlTtFElmNvZD8TE035qzRNfkwqPOYkmwqlC CP9pJwebt3kEJSHHOVngydBJaVzSDayJLp1WzQ2FyEVfbPyUaQ2z2RyPGG0C1yX4 Thin64YaRlBH78INIlCf8NpQwc+CCG7SgVSuDq1DEZXbm7z789kUJtqnlNe2Nahj inYfMr4Jtc27TwD+We9cs14LjSst4L3gd0kT511Wycs53+BpMWRWVKD4tFMva+EC AwEAAaOCAX8wggF7MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQMMAoG CCsGAQUFBwMBMB0GA1UdDgQWBBRY3hAzheVZXJug0vL3ndQWl8CAjTAfBgNVHSME GDAWgBQC1h5uCau/WGWnCjxIM2HRzn3DWzB3BgNVHR8EcDBuMDWgM6Axhi9odHRw Oi8vY2RwMS5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDA1oDOg MYYvaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NybC9jYWNybC5j cmwwgZIGCCsGAQUFBwEBBIGFMIGCMD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMS5w Y2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwPwYIKwYBBQUH MAKGM2h0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2Fj ZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbTiXJjoL5ulDq6yP3g2cBE4tpXN/ LMe2gNgvBmzWIuvoMtI/qf5CWZI2Z/3T8uPHrzcrhWxjazhcrdMsdCrFEp1YCdUv 3+ielpse2O+k7ZF/OKZtP2yBBrPqfn46K2luYs7omROhkzfKU76inhSn7aMDH8sp A483fjEFPdYorFjq087bpHkXqJuDKHm7Jz91+vjMZMJ5v5IH5oec84pT6yPO1f0k 7v7NeAtHCybR2fYZnSGrjUOEOPCJx5ufyE5EOzATp5BVLXSLa2H4B0Ws2IOv9ORw 0cYjl0hBJw+lYT0LPIUaE0SU1jtoOKUHevuygdjyiG0JPNgUks8Ow3+v/A==</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -652,45 +619,42 @@
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
             <!-- start : required for terena CoC -->
             <AttributeConsumingService index="1">
-                <ServiceName xml:lang="en">Lux17 Service Provider</ServiceName>
-                <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics Lux17 Service Provider.</ServiceDescription>
+                <ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider</ServiceName>
+                <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider for Linguistic Services aimed at researchers</ServiceDescription>
                 <!-- SAML1 -->
                 <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
                 <!-- SAML2 -->
                 <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
             </AttributeConsumingService>
-            <!-- end : required for terena CoC -->    
+            <!-- end : required for terena CoC -->
         </SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">MPI lux17 Test-Service Provider</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</OrganizationDisplayName>
             <OrganizationURL xml:lang="en">http://www.mpi.nl</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
-            <EmailAddress>latadmin@mpi.nl</EmailAddress>
+            <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
-
+    
     <!-- MPI catalog.clarin.eu (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.catalog.clarin.eu">
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0: protocol">
             <Extensions>
                 <!-- start : required for terena CoC -->
-                <mdui:UIInfo>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Clarin Catalog Service Provider</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Clarin Catalog Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Clarin Catalog Service Provider</mdui:Description>
-                    <mdui:Description xml:lang="en">Clarin Catalog Service Provider</mdui:Description>
-                    <mdui:Keywords xml:lang="nl">Clarin Catalog Service Provider</mdui:Keywords>
-                    <mdui:Keywords xml:lang="en">Clarin Catalog Service Provider</mdui:Keywords>
-                    <!--<mdui:Logo height="498" width="176">https://catalog.clarin.eu/clarin.gif</mdui:Logo>-->
+                    <mdui:Description xml:lang="nl">Clarin Catalog Service Provider, verstrekt toegang tot de Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) en meer</mdui:Description>
+                    <mdui:Description xml:lang="en">Clarin Catalog Service Provider, providing services like the Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) and more</mdui:Description>
+                    <mdui:Keywords xml:lang="en">Clarin Catalog Service Provider Data Category Registry ISOcat Component Registry Virtual Language Observatory VLO</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">Clarin Catalog Service Provider Data Category Registry ISOcat Component Registry Virtual Language Observatory VLO</mdui:Keywords>
                     <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
-                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
-                           NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                           Name="http://macedir.org/entity-category">
+                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
                         <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
                     </Attribute>
                 </EntityAttributes>
@@ -701,34 +665,7 @@
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>
-                            MIIE3DCCA8SgAwIBAgIED+aV9jANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE
-                            RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q
-                            RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xMDA0MTUxMzQ1
-                            MTFaFw0xNTA0MTQxMzQ1MTFaMH8xCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt
-                            UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1
-                            dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxGjAYBgNVBAMTEWNhdGFsb2cuY2xhcmlu
-                            LmV1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0SxoF+pHBBTzECbn
-                            IK3k+WuiRpZCv/ECHgUqSq5mw+5x1ZOrP3qW1c/BL+mh8rPM3twPw1zh7faycCzb
-                            Wg6xjkzbvfnidFq394JdJ8OYHHd4629vF/QQlDiPU/WXNL1PWqh+JNoVbBeZI8Uz
-                            +xglMyPaLn2rOTcVm5fqk6Do8DrubkZ7fxZ/4CkzJ8rTlFNOCcN8x5G2rWtcJYHa
-                            xS0ZBhmMt1AmqzWh7ZJCvgS9Wma4ZOhuh3xZSlaEB8o3HWAYprR6g7L+HFvmKdfK
-                            8oGbBViHUqsslr80Mtli15ZzxkkBH95fzYPdJTCAMccaqLhvQfjuChy7FsDYI5cV
-                            fvhaJQIDAQABo4IBfzCCAXswCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0l
-                            BAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYEFPV/s0egKEIbVq/6uW/GqGNX3RInMB8G
-                            A1UdIwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMHcGA1UdHwRwMG4wNaAzoDGG
-                            L2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3Js
-                            MDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2Nh
-                            Y3JsLmNybDCBkgYIKwYBBQUHAQEEgYUwgYIwPwYIKwYBBQUHMAKGM2h0dHA6Ly9j
-                            ZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDA/Bggr
-                            BgEFBQcwAoYzaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2Vy
-                            dC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQCyMBGsYojEQdaSJnym2OQQ
-                            s6fNqdPrhNcEN8KweZh9HyOgNpTEJPJpfwb4XR3pzfSRyPotr2GL80NVXTDA+YQs
-                            fPO0WLU0KduZtyfl1QGnYZcIpBAN53M+EvMk0Q9ruOP3FZazLPscULJnqW8Ks8/v
-                            ijthUt3XZFCR66qbNf7HeyS7zzYYMkyRDJN9PixRyiEAWHifqXJQzNI9dlqcy+Aq
-                            nnDbttGYLUyhuuT+CqcBRWJButW9x4BFUDNHrgfcPWwFhUGx3hqI2U6zqrTgesWg
-                            hSpV3QIescvTSt7Z39lTi6xXr6rXJMxwwpfBn292RbTvgwtTd+yxU0eOLu+3J8tI                        
-                        </ds:X509Certificate>
+                        <ds:X509Certificate>MIIE3DCCA8SgAwIBAgIED+aV9jANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xMDA0MTUxMzQ1 MTFaFw0xNTA0MTQxMzQ1MTFaMH8xCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1 dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxGjAYBgNVBAMTEWNhdGFsb2cuY2xhcmlu LmV1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0SxoF+pHBBTzECbn IK3k+WuiRpZCv/ECHgUqSq5mw+5x1ZOrP3qW1c/BL+mh8rPM3twPw1zh7faycCzb Wg6xjkzbvfnidFq394JdJ8OYHHd4629vF/QQlDiPU/WXNL1PWqh+JNoVbBeZI8Uz +xglMyPaLn2rOTcVm5fqk6Do8DrubkZ7fxZ/4CkzJ8rTlFNOCcN8x5G2rWtcJYHa xS0ZBhmMt1AmqzWh7ZJCvgS9Wma4ZOhuh3xZSlaEB8o3HWAYprR6g7L+HFvmKdfK 8oGbBViHUqsslr80Mtli15ZzxkkBH95fzYPdJTCAMccaqLhvQfjuChy7FsDYI5cV fvhaJQIDAQABo4IBfzCCAXswCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0l BAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYEFPV/s0egKEIbVq/6uW/GqGNX3RInMB8G A1UdIwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMHcGA1UdHwRwMG4wNaAzoDGG L2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3Js MDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2Nh Y3JsLmNybDCBkgYIKwYBBQUHAQEEgYUwgYIwPwYIKwYBBQUHMAKGM2h0dHA6Ly9j ZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDA/Bggr BgEFBQcwAoYzaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2Vy dC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQCyMBGsYojEQdaSJnym2OQQ s6fNqdPrhNcEN8KweZh9HyOgNpTEJPJpfwb4XR3pzfSRyPotr2GL80NVXTDA+YQs fPO0WLU0KduZtyfl1QGnYZcIpBAN53M+EvMk0Q9ruOP3FZazLPscULJnqW8Ks8/v ijthUt3XZFCR66qbNf7HeyS7zzYYMkyRDJN9PixRyiEAWHifqXJQzNI9dlqcy+Aq nnDbttGYLUyhuuT+CqcBRWJButW9x4BFUDNHrgfcPWwFhUGx3hqI2U6zqrTgesWg hSpV3QIescvTSt7Z39lTi6xXr6rXJMxwwpfBn292RbTvgwtTd+yxU0eOLu+3J8tI</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -751,21 +688,21 @@
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/POST" index="5"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
             <AttributeConsumingService index="1">
-                <ServiceName xml:lang="en">CLARIN Catalog Service Provider</ServiceName>
-                <ServiceDescription xml:lang="en">CLARIN Catalog Service Provider.</ServiceDescription>
+                <ServiceName xml:lang="en">Clarin Catalog Service Provider</ServiceName>
+                <ServiceDescription xml:lang="en">Clarin Catalog Service Provider, providing services like the Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) and more</ServiceDescription>
                 <!-- SAML1 -->
                 <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-                <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>                
-                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>            
+                <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
                 <!-- SAML2 -->
                 <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
                 <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
             </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">CATALOG CLARIN SP</OrganizationDisplayName>
-            <OrganizationURL xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">http://www.clarin.eu</OrganizationURL>
+            <OrganizationName xml:lang="en">CLARIN</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">Clarin Catalog Service Provider</OrganizationDisplayName>
+            <OrganizationURL xml:lang="en">http://www.clarin.eu</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
@@ -778,62 +715,29 @@
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
                 <!-- start : required for terena CoC -->
-                <mdui:UIInfo>
-                    <mdui:DisplayName xml:lang="en">MPI Corpus1 Service Provider</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">MPI Corpus1 Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider</mdui:Description>
-                    <mdui:Description xml:lang="en">Max Planck Institue for Psycholinguistics Corpus1 Service Provider</mdui:Description>
-                    <mdui:Keywords xml:lang="nl">MPI Corpus1 Service Provider</mdui:Keywords>
-                    <mdui:Keywords xml:lang="en">MPI Corpus1 Service Provider</mdui:Keywords>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1 Service Provider for Linguistic Services aimed at researchers</mdui:Description>
+                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider voor Taalkundige Services gericht op onderzoekers</mdui:Description>
+                    <mdui:Keywords xml:lang="en">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider Taalkundige Services</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">Max Planck Institute for Psycholinguistics Corpus1 Service Provider Linguistic Services</mdui:Keywords>
                     <mdui:Logo height="194" width="189">https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://corpus1.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">http://corpus1.mpi.nl/IMDI/info/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
-                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
-                           NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                           Name="http://macedir.org/entity-category">
+                    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
                         <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
                     </Attribute>
                 </EntityAttributes>
                 <!-- end : required for terena CoC -->
-                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                       index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                       Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                       index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                       Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
             </Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>
-                            MIIE2TCCA8GgAwIBAgIEDeB+jDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE
-                            RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q
-                            RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxNDEx
-                            MDlaFw0xNDAzMTcxNDExMDlaMHwxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt
-                            UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1
-                            dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFzAVBgNVBAMTDmNvcnB1czEubXBpLm5s
-                            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvwvTzVbiFe7HH/LuUoYp
-                            n27Y2YuxPlXkiLFdMWCvSQVm4jPC1CIZmfJXB/khvySo/Ir/gjoe5gnvMj5co3zJ
-                            3S6dpgSjaWNZTYtl2cAfzMm5IbMKoAEsG+m3QWE1Zlbc9wT079CJe7YoqYYrHcFX
-                            Qy9ID7VFt9VQf8tCP86uRF9bxXO4wUvRlzzs65oGDMUS5u/+1bcge/xOrFFfUqVU
-                            Ebjtoh8L/cVtc4bEME5lVXxF26qrLCWSEDl8c+ULyrHMngRu/+utSSBQUJyqmEMd
-                            RLngB5GkB3Dvczd2d/NZy2XiqfjLFDA9Ok2HuJtSlYofeH/BwPM4dMgXB/lo16lY
-                            dwIDAQABo4IBfzCCAXswCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAww
-                            CgYIKwYBBQUHAwEwHQYDVR0OBBYEFHxqV98GFaGyiUNK+C8zDnIYm5FxMB8GA1Ud
-                            IwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMHcGA1UdHwRwMG4wNaAzoDGGL2h0
-                            dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWg
-                            M6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3Js
-                            LmNybDCBkgYIKwYBBQUHAQEEgYUwgYIwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jZHAx
-                            LnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDA/BggrBgEF
-                            BQcwAoYzaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9j
-                            YWNlcnQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQCvd62K/i554VZfOW9HtmKPKNdT
-                            Fe56uOS8p57Gg+HY+CUYMbmoL+rZqaYl+Uli8X5R5Pi4JU8Z88ttKSQ/+XISPP5/
-                            OE3022obFJ0ZUct2AWYgckmie10Kd5vXOxfw0Mn/cdZqCJAO64tzwk5el120LA1w
-                            rwtNxwRiR5VinZDirrm78RNC8wlr9iKFkVl3whTW6sdtE7AlZ0r9XaaigKS2wjNd
-                            4QC9LVo0aBpxR3ryo7+I31uKXQpNwLJSZXnD9pII4iKjmVDc1ndiu6rhO2TKF6lq
-                            yZtIZ9oG/5n1qef1ClZ+7d3uAl7ssvsV67Uj4JcTlR0UfYykUlPONDdsYqiu
-                        </ds:X509Certificate>
+                        <ds:X509Certificate>MIIE2TCCA8GgAwIBAgIEDeB+jDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxNDEx MDlaFw0xNDAzMTcxNDExMDlaMHwxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1 dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFzAVBgNVBAMTDmNvcnB1czEubXBpLm5s MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvwvTzVbiFe7HH/LuUoYp n27Y2YuxPlXkiLFdMWCvSQVm4jPC1CIZmfJXB/khvySo/Ir/gjoe5gnvMj5co3zJ 3S6dpgSjaWNZTYtl2cAfzMm5IbMKoAEsG+m3QWE1Zlbc9wT079CJe7YoqYYrHcFX Qy9ID7VFt9VQf8tCP86uRF9bxXO4wUvRlzzs65oGDMUS5u/+1bcge/xOrFFfUqVU Ebjtoh8L/cVtc4bEME5lVXxF26qrLCWSEDl8c+ULyrHMngRu/+utSSBQUJyqmEMd RLngB5GkB3Dvczd2d/NZy2XiqfjLFDA9Ok2HuJtSlYofeH/BwPM4dMgXB/lo16lY dwIDAQABo4IBfzCCAXswCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAww CgYIKwYBBQUHAwEwHQYDVR0OBBYEFHxqV98GFaGyiUNK+C8zDnIYm5FxMB8GA1Ud IwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMHcGA1UdHwRwMG4wNaAzoDGGL2h0 dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWg M6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3Js LmNybDCBkgYIKwYBBQUHAQEEgYUwgYIwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jZHAx LnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDA/BggrBgEF BQcwAoYzaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9j YWNlcnQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQCvd62K/i554VZfOW9HtmKPKNdT Fe56uOS8p57Gg+HY+CUYMbmoL+rZqaYl+Uli8X5R5Pi4JU8Z88ttKSQ/+XISPP5/ OE3022obFJ0ZUct2AWYgckmie10Kd5vXOxfw0Mn/cdZqCJAO64tzwk5el120LA1w rwtNxwRiR5VinZDirrm78RNC8wlr9iKFkVl3whTW6sdtE7AlZ0r9XaaigKS2wjNd 4QC9LVo0aBpxR3ryo7+I31uKXQpNwLJSZXnD9pII4iKjmVDc1ndiu6rhO2TKF6lq yZtIZ9oG/5n1qef1ClZ+7d3uAl7ssvsV67Uj4JcTlR0UfYykUlPONDdsYqiu</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -857,22 +761,22 @@
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
             <!-- start : required for terena CoC -->
             <AttributeConsumingService index="1">
-                <ServiceName xml:lang="en">MPI Corpus1 Service Provider</ServiceName>
+                <ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics Service Provider</ServiceName>
                 <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1 Service Provider.</ServiceDescription>
                 <!-- SAML1 -->
                 <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
-                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>            
+                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
             </AttributeConsumingService>
-            <!-- end : required for terena CoC -->    
+            <!-- end : required for terena CoC -->
         </SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">MPI corpus1 Service Provider</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistisc</OrganizationDisplayName>
             <OrganizationURL xml:lang="en">http://www.mpi.nl</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
-            <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
+            <EmailAddress>latadmin@mpi.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
