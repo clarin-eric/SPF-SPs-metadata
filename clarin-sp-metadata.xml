@@ -127,11 +127,9 @@
                                       Location="https://shibboleth.bbaw.de/Shibboleth.sso/SAML/Artifact" index="6"/>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="de">Berlin-Brandenburgische Akademie der
-                Wissenschaften</OrganizationName>
+            <OrganizationName xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften</OrganizationName>
             <OrganizationName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationName>
-            <OrganizationDisplayName xml:lang="de">Berlin-Brandenburgische Akademie der
-                Wissenschaften</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften</OrganizationDisplayName>
             <OrganizationDisplayName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationDisplayName> 
             <OrganizationURL xml:lang="de">http://www.bbaw.de</OrganizationURL>
         </Organization>
@@ -212,17 +210,12 @@
             </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
-                Oy</OrganizationName>
+            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
             <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
-            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
-                Oy</OrganizationName>
-            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
-                Oy</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science
-                Ltd.</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
-                Oy</OrganizationDisplayName>
+            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
+            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
             <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
             <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
             <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
@@ -853,8 +846,7 @@
         </SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="en">INL</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Institute for Dutch Lexicology
-                Test-SP</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Institute for Dutch Lexicology Test-SP</OrganizationDisplayName>
             <OrganizationURL xml:lang="en">http://www.inl.nl</OrganizationURL>
         </Organization>
         <ContactPerson contactType="technical">
@@ -940,10 +932,8 @@
                                          Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie
-                (INL)</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Instituut voor Nederlandse Lexicologie
-                (INL)</OrganizationDisplayName>
+            <OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationDisplayName>
             <OrganizationURL xml:lang="en">portal.clarin.inl.nl</OrganizationURL>
         </Organization>
         <ContactPerson contactType="administrative">
