@@ -2211,4 +2211,85 @@ izpjIrY=
 
 </md:EntityDescriptor>
 
+<!-- CLARIN-DK-UCPH Developement SSO Test -->
+<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_a6f3a28a5e8039966fe0fe39c4b6fb72ac71fee1" entityID="https://devtools.clarin.dk/shibboleth">
+
+  <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </Extensions>
+
+  <SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="http://devtools.clarin.dk/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="http://devtools.clarin.dk/Shibboleth.sso/Login" index="1"/>
+    </Extensions>
+    <KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>*.clarin.dk</ds:KeyName>
+        <ds:KeyName>clarin.dk</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=*.clarin.dk,OU=Domain Control Validated - RapidSSL(R),OU=See www.rapidssl.com/resources/cps (c)12,OU=GT34880783,serialNumber=EcwbWbwzDYZ8BnehURBDbYlNjOBZ6LQd</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFJzCCBA+gAwIBAgIDB0D/MA0GCSqGSIb3DQEBBQUAMDwxCzAJBgNVBAYTAlVT
+MRcwFQYDVQQKEw5HZW9UcnVzdCwgSW5jLjEUMBIGA1UEAxMLUmFwaWRTU0wgQ0Ew
+HhcNMTIwNzA0MTQxMjIwWhcNMTQwODA2MjI0MTM2WjCBujEpMCcGA1UEBRMgRWN3
+Yldid3pEWVo4Qm5laFVSQkRiWWxOak9CWjZMUWQxEzARBgNVBAsTCkdUMzQ4ODA3
+ODMxMTAvBgNVBAsTKFNlZSB3d3cucmFwaWRzc2wuY29tL3Jlc291cmNlcy9jcHMg
+KGMpMTIxLzAtBgNVBAsTJkRvbWFpbiBDb250cm9sIFZhbGlkYXRlZCAtIFJhcGlk
+U1NMKFIpMRQwEgYDVQQDDAsqLmNsYXJpbi5kazCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAKWFQg5RfX02fJXSdsBWjqTX095yrlfEaLXa9VUwmzsaWK4n
+KGeyLKF3Hnb7/825ctOGJG0gZeFTt2x09SMJiYUxM6ZGRyIr6Su3Q4ckejofDiUQ
+2WR4Q0i32QYyQztJAGOJzlUykuVsIWGq552kN0nhNHgnpF5DMYWWaEwTOHi/6qUY
++Bok0Uub8xAxqiNVCB63m8hyU4AoR2toA70X7CSP6d2rrg9M29XUEKc7pCmibCJ7
+XtlfVJCi14lvioBZPULY1jreZSr/HxbaWQedqTSrEHob9+Gy0pRk4/EmgrMqQ8R8
+gQjn3dLDMbgkM3rPtAU+PXhhG1+7laApLk6gidECAwEAAaOCAbEwggGtMB8GA1Ud
+IwQYMBaAFGtpPWoYQkrdjwJlOf01JIZ4kRYwMA4GA1UdDwEB/wQEAwIFoDAdBgNV
+HSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIQYDVR0RBBowGIILKi5jbGFyaW4u
+ZGuCCWNsYXJpbi5kazBDBgNVHR8EPDA6MDigNqA0hjJodHRwOi8vcmFwaWRzc2wt
+Y3JsLmdlb3RydXN0LmNvbS9jcmxzL3JhcGlkc3NsLmNybDAdBgNVHQ4EFgQUZZKh
+DWswhyVjmpk74BdHP2jo/uwwDAYDVR0TAQH/BAIwADB4BggrBgEFBQcBAQRsMGow
+LQYIKwYBBQUHMAGGIWh0dHA6Ly9yYXBpZHNzbC1vY3NwLmdlb3RydXN0LmNvbTA5
+BggrBgEFBQcwAoYtaHR0cDovL3JhcGlkc3NsLWFpYS5nZW90cnVzdC5jb20vcmFw
+aWRzc2wuY3J0MEwGA1UdIARFMEMwQQYKYIZIAYb4RQEHNjAzMDEGCCsGAQUFBwIB
+FiVodHRwOi8vd3d3Lmdlb3RydXN0LmNvbS9yZXNvdXJjZXMvY3BzMA0GCSqGSIb3
+DQEBBQUAA4IBAQCqMtLsQdJUHPk7X037Ok+FrcKI4f7js/8ryclCLsUEglAIJhEx
+byQcHcGp5GZMwjbshY82nRdq8Kaxor8QWGdF3spTJDU0zP9k39vIl0unzAjnKt+A
+oFizLMulYMZhH/MjKamfkvIJ850naDD5ses9eE2Pi/RsRjhR1o34z2qmNIT1Fxn+
+Inbk1Z+f/XNpuwv8UvcGLhgoCgBFW+aEHd1sa0aez9Abnpm1KkVHvsl3vryNObRq
+dLCsVBzqiMeldSSksTYBrxMnev6pTyX0y/tc5o69zjrpk+Uwcul/mG+vZlr14T+C
+c6dXVBNgjVPO39XeFrIeCQ0WnB4TnRXyOq/N
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://devtools.clarin.dk/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://devtools.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://devtools.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://devtools.clarin.dk/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://devtools.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML2/ECP" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML/POST" index="5"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="http://devtools.clarin.dk/Shibboleth.sso/SAML/Artifact" index="6"/>
+  </SPSSODescriptor>
+
+</EntityDescriptor>
+
 </EntitiesDescriptor>
