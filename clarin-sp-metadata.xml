@@ -2211,8 +2211,8 @@ izpjIrY=
 
 </md:EntityDescriptor>
 
-<!-- CLARIN-DK-UCPH Developement SSO Test -->
-<EntityDescriptor ID="_a6f3a28a5e8039966fe0fe39c4b6fb72ac71fee1" entityID="https://devtools.clarin.dk/shibboleth">
+<!-- CLARIN-DK-UCPH SP -->
+<EntityDescriptor ID="_78e4557169289f8f65e453bfcf5c5ebd18a665be" entityID="https://infra.clarin.dk/shibboleth">
 
   <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
     <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -2230,8 +2230,7 @@ izpjIrY=
 
   <SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
     <Extensions>
-      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://devtools.clarin.dk/Shibboleth.sso/Login"/>
-      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://devtools.clarin.dk/Shibboleth.sso/Login" index="1"/>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://infra.clarin.dk/Shibboleth.sso/Login"/>
     </Extensions>
     <KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -2277,17 +2276,21 @@ c6dXVBNgjVPO39XeFrIeCQ0WnB4TnRXyOq/N
       <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
       <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
     </KeyDescriptor>
-    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://devtools.clarin.dk/Shibboleth.sso/Artifact/SOAP" index="1"/>
-    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://devtools.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
-    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://devtools.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
-    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://devtools.clarin.dk/Shibboleth.sso/SLO/POST"/>
-    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://devtools.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML2/POST" index="1"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="3"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML2/ECP" index="4"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML/POST" index="5"/>
-    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://devtools.clarin.dk/Shibboleth.sso/SAML/Artifact" index="6"/>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://infra.clarin.dk/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://infra.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://infra.clarin.dk/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://infra.clarin.dk/Shibboleth.sso/NIM/SOAP"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Redirect"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://infra.clarin.dk/Shibboleth.sso/NIM/POST"/>
+    <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/ECP" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://infra.clarin.dk/Shibboleth.sso/SAML/POST" index="5"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://infra.clarin.dk/Shibboleth.sso/SAML/Artifact" index="6"/>
   </SPSSODescriptor>
 
 </EntityDescriptor>
