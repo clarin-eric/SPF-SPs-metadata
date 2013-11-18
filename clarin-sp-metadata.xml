@@ -160,6 +160,33 @@
             <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        
+            <idpdisc:DiscoveryResponse
+                xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Location="https://lat.csc.fi/Shibboleth.sso/Login" index="1"/>
+            <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                <mdui:DisplayName xml:lang="en">LAT – Language Archive Tools</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="fi">LAT – Language Archive Tools</mdui:DisplayName>
+                <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja käsitellä
+                    video- ja äänimateriaalia.</mdui:Description>
+                <mdui:Description xml:lang="en">LAT is a user interface for language researchers to
+                    deposit and process audiovisual material.</mdui:Description>
+                <mdui:Logo height="41" width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
+                <mdui:InformationURL xml:lang="en">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                <mdui:InformationURL xml:lang="sv">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                <mdui:InformationURL xml:lang="fi">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                <mdui:PrivacyStatementURL xml:lang="en"
+                    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="sv"
+                    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="fi"
+                    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+            </mdui:UIInfo>
+        
+           
+        
+        
         </md:Extensions>
         
         <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -218,6 +245,22 @@
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://lat.csc.fi/Shibboleth.sso/SAML/POST" index="5"/>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://lat.csc.fi/Shibboleth.sso/SAML/Artifact" index="6"/>
         </md:SPSSODescriptor>
+        
+        
+        <Organization>
+            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
+            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
+            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
+            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
+            <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="administrative"><GivenName>Tero</GivenName><SurName>Aalto</SurName><EmailAddress>ling@csc.fi</EmailAddress></ContactPerson>
+        <ContactPerson contactType="technical"><GivenName>Pekka</GivenName><SurName>Järveläinen</SurName><EmailAddress>pj@csc.fi</EmailAddress></ContactPerson>
+        <ContactPerson contactType="support"><GivenName>Tero</GivenName><SurName>Aalto</SurName><EmailAddress>ling@csc.fi</EmailAddress></ContactPerson>
         
     </md:EntityDescriptor>
 
