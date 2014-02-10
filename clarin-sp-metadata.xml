@@ -1751,6 +1751,149 @@ xbWjYmNe3yOLIWUslF7UfG3vdrdONiMdgV8ZemUIfw2EhwDqA9KiinNSoV9IfWYR
 
     </EntityDescriptor>
 
+    <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+        ID="_af80a5dba6c58ebb32350ce01f39c551cab82702" entityID="https://acdh.oeaw.ac.at/shibboleth">
+        
+        <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        </Extensions>
+        
+        <SPSSODescriptor
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            <Extensions>
+                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://acdh.oeaw.ac.at/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://acdh.oeaw.ac.at/Shibboleth.sso/Login" index="1"/>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="de">ACDH-ÖAW Dienste für Digitale Geisteswissenschaften </mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">ACDH-ÖAW Services for Digital Humanities</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Verschiedene Dienste des österreichischen Zentrums für
+                        Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW)
+                        (primr im Rahmen der CLARIN-Initiative).</mdui:Description>
+                    <mdui:Description xml:lang="en">Various services provided by the Austrian Centre for Digital
+                        Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the
+                        CLARIN initiative).</mdui:Description>
+                    <mdui:InformationURL xml:lang="de">http://acdh.oeaw.ac.at</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">http://acdh.oeaw.ac.at</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >http://acdh.oeaw.ac.at/privacy</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </Extensions>
+            <KeyDescriptor>
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>clarin.arz.oeaw.ac.at</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=clarin.arz.oeaw.ac.at</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAI3rKBVKUcUJMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
+                            BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0xNDAxMjAxNDU3MThaFw0yNDAx
+                            MTgxNDU3MThaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
+                            DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMJ8B6WyydvbvIHJ1Cb34h8838G5
+                            JItPpmJC+D/K+6MI3YiydVKKlhaGh/GqcWcz0Qw30W7WYilUZ5IkzZA12QY1CF1g
+                            cJPNUmYibzP3sAZ9KrvaCEMxlseoldh0yc+8Q8eplQH9id4u5G+J8SvTBejt261y
+                            ATb6pIANsRQkOLMvxtq7/NrEnAmZQOM5obsshHxLlXlJ0qixakaYXWKCIuUUOEFY
+                            FT13vhWrUC4BWW0OGimoR1cBnyEJtS9kRNWQ85+03VVVvLk9AssoHWxOJVJ7HE1m
+                            5/xgMrmpOv1vbqDKDljrY19zheNOoFr3RdaSCb1Eh8lWCNigUgOwK8Mm7VECAwEA
+                            AaNDMEEwIAYDVR0RBBkwF4IVY2xhcmluLmFyei5vZWF3LmFjLmF0MB0GA1UdDgQW
+                            BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQUFAAOCAQEAhdcxQ+7/
+                            1WYPCTVz2HOk8J3eM3ZJylGdTnfgNDDGkBo0CGmyiulX8m+nimBKh7UNMkRkU8cH
+                            NUldSGR70wi0iQlx7t868V5pmkqxnaDu4+lo1QU59s5c7MRJXZ6OcbKB57O/d5l+
+                            +kX3/YW9WAQkmwcyVWDbcmk4DZK5kqqTk+u3fS48cLqai5YVcj8pDDoUx6/ZkwDv
+                            Yqvva2v4+vhzX9SW3QyiChOgFo9sP/UD1U8JAZG0sds5ugwjwiXPPB41hwHdbdEj
+                            QZRW2NR0HHMFp0FZeSziXOeaap21wc/W1Nk7wpRI7jYdzLRJHmzhvWz95p0WSnt+ rI8v6OTvibpLrg==
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+                <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+                <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+                <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+                <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </KeyDescriptor>
+            <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/Artifact/SOAP" index="1"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SLO/SOAP"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SLO/Redirect"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SLO/POST"/>
+            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SLO/Artifact"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML2/POST" index="1"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML/POST" index="5"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                Location="https://acdh.oeaw.ac.at/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <AttributeConsumingService index="1">
+                <ServiceName xml:lang="de">ACDH-ÖAW Dienste für Digitale Geisteswissenschaften </ServiceName>
+                <ServiceName xml:lang="en">ACDH-ÖAW Services for Digital Humanities</ServiceName>
+                <ServiceDescription xml:lang="de">Verschiedene Dienste des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW) (primär im Rahmen der CLARIN-Initiative)</ServiceDescription>
+                <ServiceDescription xml:lang="en">Various services provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the CLARIN initiative)</ServiceDescription>
+                <RequestedAttribute isRequired="false" FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute isRequired="true" FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute isRequired="false" FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute isRequired="false" FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute isRequired="false" FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute isRequired="false" FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>      
+                <RequestedAttribute isRequired="false" FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+            </AttributeConsumingService>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="de">Österreichisches Zentrum für Digitale Geisteswissenschaften der
+                Österreichischen Akademie der Wissenschaften (ACDH-ÖAW)</OrganizationName>
+            <OrganizationName xml:lang="en">Austrian Centre for Digital Humanities of the Austrian Academy
+                of Sciences (ACDH-ÖAW)</OrganizationName>
+            <OrganizationDisplayName xml:lang="de">Österreichisches Zentrum für Digitale Geisteswissenschaften der
+                ÖAW (ACDH-ÖAW)</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Austrian Centre for Digital Humanities of the Austrian
+                Academy of Sciences (ACDH-ÖAW)</OrganizationDisplayName>
+            <OrganizationURL xml:lang="de">http://acdh.oeaw.ac.at/</OrganizationURL>
+            <OrganizationURL xml:lang="de">http://www.oeaw.ac.at/</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="technical">
+            <GivenName>Matej</GivenName>
+            <SurName>Durco</SurName>
+            <EmailAddress>matej.durco@oeaw.ac.at</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="administrative">
+            <GivenName>Karlheinz</GivenName>
+            <SurName>Mrth</SurName>
+            <EmailAddress>karlheinz.moerth@oeaw.ac.at</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="support">
+            <GivenName>ACDH</GivenName>
+            <SurName>Office</SurName>
+            <EmailAddress>acdh-tech@oeaw.ac.at</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="support">
+            <GivenName>Akademie-Rechenzentrum</GivenName>
+            <SurName>Helpdesk</SurName>
+            <EmailAddress>helpdesk@oeaw.ac.at</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
+    
 
 	<EntityDescriptor  ID="_336fc4004e1c79fd5b973bca6c88d1d8" entityID="https://clarinoai.informatik.uni-leipzig.de/">
 
