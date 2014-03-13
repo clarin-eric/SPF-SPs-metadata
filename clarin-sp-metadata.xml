@@ -153,197 +153,251 @@
     </EntityDescriptor>
 
     <!-- CSC (via CLARIN) -->
-<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://sp.lat.csc.fi">
-    <Extensions>
-      <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" registrationAuthority="http://www.csc.fi/haka">
-        <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
-      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
-          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-        </saml:Attribute>
-      </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://lat.csc.fi/Shibboleth.sso/Login" index="1"/>
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="fi">LAT – Language Archive Tools</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">LAT – Language Archive Tools</mdui:DisplayName>
-          <mdui:Description xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</mdui:Description>
-          <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja käsitellä video- ja äänimateriaalia.</mdui:Description>
-          <mdui:Logo height="41" width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="fi">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="sv">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="sv">http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
-      </Extensions>
-      <KeyDescriptor>
-        <ds:KeyInfo>
-          <ds:X509Data>
-            <ds:X509Certificate>
-MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
-MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
-CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
-4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
-w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
-veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
-WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
-M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
-6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
-HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
-BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
-HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
-hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
-BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
-cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
-dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
-A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
-11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
-jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
-rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
-CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
-TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </KeyDescriptor>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
-      <AttributeConsumingService index="1" isDefault="true">
-        <ServiceName xml:lang="fi">LAT – Language Archive Tools</ServiceName>
-        <ServiceName xml:lang="en">LAT – Language Archive Tools</ServiceName>
-        <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja kasitella video- ja aanimateriaalia.</ServiceDescription>
-        <ServiceDescription xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-      </AttributeConsumingService>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-      <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
-      <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-      <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="administrative">
-      <GivenName>Tero</GivenName>
-      <SurName>Aalto</SurName>
-      <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="technical">
-      <GivenName>Martin</GivenName>
-      <SurName>Matthiesen</SurName>
-      <EmailAddress>mailto:martin.matthiesen@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Tero</GivenName>
-      <SurName>Aalto</SurName>
-      <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+    <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://sp.lat.csc.fi">
+        <Extensions>
+            <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                registrationAuthority="http://www.csc.fi/haka">
+                <mdrpi:RegistrationPolicy xml:lang="en"
+                    >http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+            </mdrpi:RegistrationInfo>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <Extensions>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://lat.csc.fi/Shibboleth.sso/Login" index="1"/>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="fi">LAT – Language Archive Tools</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">LAT – Language Archive Tools</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">LAT is a user interface for language researchers
+                        to deposit and process audiovisual material.</mdui:Description>
+                    <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja
+                        käsitellä video- ja äänimateriaalia.</mdui:Description>
+                    <mdui:Logo height="41" width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="fi"
+                        >http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="sv"
+                        >http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en"
+                        >http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="sv"
+                        >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="fi"
+                        >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </Extensions>
+            <KeyDescriptor>
+                <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>
+                            MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
+                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+                            U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
+                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
+                            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
+                            4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
+                            w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
+                            veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
+                            WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
+                            M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
+                            6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
+                            HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
+                            BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
+                            HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
+                            hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
+                            BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
+                            cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
+                            dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
+                            A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
+                            11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
+                            jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
+                            rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
+                            CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
+                            TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+            <AttributeConsumingService index="1" isDefault="true">
+                <ServiceName xml:lang="fi">LAT – Language Archive Tools</ServiceName>
+                <ServiceName xml:lang="en">LAT – Language Archive Tools</ServiceName>
+                <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja
+                    kasitella video- ja aanimateriaalia.</ServiceDescription>
+                <ServiceDescription xml:lang="en">LAT is a user interface for language researchers
+                    to deposit and process audiovisual material.</ServiceDescription>
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </AttributeConsumingService>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationName>
+            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
+            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationName>
+            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science
+                Ltd.</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationDisplayName>
+            <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="administrative">
+            <GivenName>Tero</GivenName>
+            <SurName>Aalto</SurName>
+            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="technical">
+            <GivenName>Martin</GivenName>
+            <SurName>Matthiesen</SurName>
+            <EmailAddress>mailto:martin.matthiesen@csc.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="support">
+            <GivenName>Tero</GivenName>
+            <SurName>Aalto</SurName>
+            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
-<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://sp.korp.csc.fi/">
-    <Extensions>
-      <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" registrationAuthority="http://www.csc.fi/haka">
-        <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
-      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
-          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-        </saml:Attribute>
-      </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://korp.csc.fi/Shibboleth.sso/Login" index="1"/>
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma tekstiaineistolle</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">Concordance search service for text corpora</mdui:DisplayName>
-          <mdui:Description xml:lang="en">With this service you can study text corpora.</mdui:Description>
-          <mdui:Description xml:lang="fi">Tällä työkalulla voit tutkia tekstikorpuksia.</mdui:Description>
-          <mdui:Logo height="66" width="168">https://korp.csc.fi/img/korplogo.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
-      </Extensions>
-      <KeyDescriptor>
-        <ds:KeyInfo>
-          <ds:X509Data>
-            <ds:X509Certificate>MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
-MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
-CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
-aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
-e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
-js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
-IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
-zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
-VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
-Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
-MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
-DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
-VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
-K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
-KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
-b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
-LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
-BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
-vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
-v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
-eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
-eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
-5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </KeyDescriptor>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
-      <AttributeConsumingService index="1" isDefault="true">
-        <ServiceName xml:lang="fi">Korp – hakuohjelma tekstiaineistoille</ServiceName>
-        <ServiceName xml:lang="en">Korp – search service for text material</ServiceName>
-        <ServiceDescription xml:lang="fi">Korp on kielitutkijoille tarkoitettu tyokalu, jolla voi tutkia tekstiaineistoja.</ServiceDescription>
-        <ServiceDescription xml:lang="en">Korp is a user interface for language researchers to examine text material.</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-      </AttributeConsumingService>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-      <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
-      <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-      <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="administrative">
-      <GivenName>Fin-Clarin</GivenName>
-      <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="technical">
-      <GivenName>Martin</GivenName>
-      <SurName>Matthiesen</SurName>
-      <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Jyrki</GivenName>
-      <SurName>Niemi</SurName>
-      <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+    <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://sp.korp.csc.fi/">
+        <Extensions>
+            <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                registrationAuthority="http://www.csc.fi/haka">
+                <mdrpi:RegistrationPolicy xml:lang="en"
+                    >http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+            </mdrpi:RegistrationInfo>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <Extensions>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://korp.csc.fi/Shibboleth.sso/Login" index="1"/>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma
+                        tekstiaineistolle</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">Concordance search service for text
+                        corpora</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">With this service you can study text
+                        corpora.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tällä työkalulla voit tutkia
+                        tekstikorpuksia.</mdui:Description>
+                    <mdui:Logo height="66" width="168"
+                        >https://korp.csc.fi/img/korplogo.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en"
+                        >http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="fi"
+                        >https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </Extensions>
+            <KeyDescriptor>
+                <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
+                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+                            U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
+                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
+                            aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
+                            e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
+                            js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
+                            IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
+                            zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
+                            VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
+                            Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
+                            MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
+                            DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
+                            VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
+                            K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
+                            KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
+                            b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
+                            LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
+                            BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
+                            vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
+                            v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
+                            eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
+                            eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
+                            5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+            <AttributeConsumingService index="1" isDefault="true">
+                <ServiceName xml:lang="fi">Korp – hakuohjelma tekstiaineistoille</ServiceName>
+                <ServiceName xml:lang="en">Korp – search service for text material</ServiceName>
+                <ServiceDescription xml:lang="fi">Korp on kielitutkijoille tarkoitettu tyokalu,
+                    jolla voi tutkia tekstiaineistoja.</ServiceDescription>
+                <ServiceDescription xml:lang="en">Korp is a user interface for language researchers
+                    to examine text material.</ServiceDescription>
+                <RequestedAttribute FriendlyName="eduPersonAffiliation"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </AttributeConsumingService>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationName>
+            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
+            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationName>
+            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science
+                Ltd.</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
+                Oy</OrganizationDisplayName>
+            <OrganizationURL xml:lang="fi">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="en">http://www.csc.fi</OrganizationURL>
+            <OrganizationURL xml:lang="sv">http://www.csc.fi</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="administrative">
+            <GivenName>Fin-Clarin</GivenName>
+            <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="technical">
+            <GivenName>Martin</GivenName>
+            <SurName>Matthiesen</SurName>
+            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+        </ContactPerson>
+        <ContactPerson contactType="support">
+            <GivenName>Jyrki</GivenName>
+            <SurName>Niemi</SurName>
+            <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
 
     <!-- IDS clarin.ids-mannheim.de (via CLARIN) -->
@@ -742,32 +796,7 @@ eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE1zCCA7+gAwIBAgIEDeB5KTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE
-                            RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q
-                            RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxMzQ4
-                            MTBaFw0xNDAzMTcxMzQ4MTBaMHoxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt
-                            UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1
-                            dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFTATBgNVBAMTDGx1eDE3Lm1waS5ubDCC
-                            ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL0wTdnMTgPC8/x6+0reirYB
-                            bifyQwbOLHE0bOtHD6et5oT9WPRosJFpFxnxs2aF/SqR7Kar4Z/7lMBFbL3vdgrJ
-                            h6fCNVofBI/Zs7d8aCwfcc6aMJORJPlTtFElmNvZD8TE035qzRNfkwqPOYkmwqlC
-                            CP9pJwebt3kEJSHHOVngydBJaVzSDayJLp1WzQ2FyEVfbPyUaQ2z2RyPGG0C1yX4
-                            Thin64YaRlBH78INIlCf8NpQwc+CCG7SgVSuDq1DEZXbm7z789kUJtqnlNe2Nahj
-                            inYfMr4Jtc27TwD+We9cs14LjSst4L3gd0kT511Wycs53+BpMWRWVKD4tFMva+EC
-                            AwEAAaOCAX8wggF7MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQMMAoG
-                            CCsGAQUFBwMBMB0GA1UdDgQWBBRY3hAzheVZXJug0vL3ndQWl8CAjTAfBgNVHSME
-                            GDAWgBQC1h5uCau/WGWnCjxIM2HRzn3DWzB3BgNVHR8EcDBuMDWgM6Axhi9odHRw
-                            Oi8vY2RwMS5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDA1oDOg
-                            MYYvaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NybC9jYWNybC5j
-                            cmwwgZIGCCsGAQUFBwEBBIGFMIGCMD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMS5w
-                            Y2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwPwYIKwYBBQUH
-                            MAKGM2h0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2Fj
-                            ZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAbTiXJjoL5ulDq6yP3g2cBE4tpXN/
-                            LMe2gNgvBmzWIuvoMtI/qf5CWZI2Z/3T8uPHrzcrhWxjazhcrdMsdCrFEp1YCdUv
-                            3+ielpse2O+k7ZF/OKZtP2yBBrPqfn46K2luYs7omROhkzfKU76inhSn7aMDH8sp
-                            A483fjEFPdYorFjq087bpHkXqJuDKHm7Jz91+vjMZMJ5v5IH5oec84pT6yPO1f0k
-                            7v7NeAtHCybR2fYZnSGrjUOEOPCJx5ufyE5EOzATp5BVLXSLa2H4B0Ws2IOv9ORw
-                            0cYjl0hBJw+lYT0LPIUaE0SU1jtoOKUHevuygdjyiG0JPNgUks8Ow3+v/A==</ds:X509Certificate>
+                        <ds:X509Certificate>MIIFxTCCBK2gAwIBAgIHFy/hnqc8wTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJERTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1QRyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xNDAyMjgxMDI1MThaFw0xOTAyMjcxMDI1MThaMIGkMQswCQYDVQQGEwJOTDETMBEGA1UECBMKR2VsZGVybGFuZDERMA8GA1UEBxMITmlqbWVnZW4xIDAeBgNVBAoTF01heC1QbGFuY2stR2VzZWxsc2NoYWZ0MTIwMAYDVQQLEylNYXgtUGxhbmNrLUluc3RpdHV0IGZ1ZXIgUHN5Y2hvbGluZ3Vpc3RpazEXMBUGA1UEAxMOY29ycHVzMS5tcGkubmwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGbPWbCx1FfjX9sh831NEW6MHNVSd9DElQH+1eAqevdt5g6sLCK4HTsigUkl94MdiaLzDwVngYoJ/QwycncE0bFFxgH0YHs8URXAOfkO9RmKy4x6TkuYElF8AmBnnEhoF58O1b/0DG8TdSpmWsMBrw+lyBgV++v15+WjuHn4DdXbG3AaaUMNYWPSk4fIvjPX19U9ys0euYcKa/kTU8nFuOJzVyWmUyNWjcgwImszfwwKaumIGDHGKSJ9eME/idNczuUhihY/kgU30+x4yfQ0PPJ6y1YLd+E2xAOmbjEbBnytkbRPVxHAPqw0py80meld2s70Cxxklj739+oP+++PwhAgMBAAGjggI/MIICOzA5BgNVHSAEMjAwMBEGDysGAQQBga0hgiwBAQQDATARBg8rBgEEAYGtIYIsAgEEAwEwCAYGZ4EMAQICMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUE8+HM0pUcvXN4uBiDV/q2xwu2O8wHwYDVR0jBBgwFoAUAtYebgmrv1hlpwo8SDNh0c59w1swRAYDVR0RBD0wO4IOY29ycHVzMS5tcGkubmyCDGx1eDA3Lm1waS5ubIEbdG9iaWFzLnZhbnZhbGtlbmhvZWZAbXBpLm5sMHcGA1UdHwRwMG4wNaAzoDGGL2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDCBxwYIKwYBBQUHAQEEgbowgbcwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDA/BggrBgEFBQcwAoYzaHR0cDovL2NkcDEucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAAGH5IPCi3tfYwo+CN357NdkGav1KQT2T0sjZ2chg//8SNucof42LXWvMlRIaRXjFP2bTW8sPt3hNwPyVLLAUFE/ogRz955Ya4Fbx/0bS1XZSCCneQ+pP+gnfad0AA3PJ2fDb/LUQ43q8xu8B1tm9GyTz6sE2mjUc0GOYUp4wvC/Hu3Wr1/80KbebBX5QxQPg9CVqXaz8yECpZwrTJsa3d+pY8WVA6Fr/0vQmp9LyYl9II3xrP5KMkLFWfusAqfDQbO+l0q44mGImEee3G4Wkg7VAcwDgKBaLHbuhlrBzMoxQBZGyW4eOToiuysyE37dSKtUgCs4vDN4S4EWz90Y6xY=</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -830,7 +859,7 @@ eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
         </Organization>
         <ContactPerson contactType="technical">
             <SurName>Technical Support</SurName>
-            <EmailAddress>tobias.vanvalkenhoef@mpi.nl</EmailAddress>
+            <EmailAddress>latadmin@mpi.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
@@ -1023,32 +1052,7 @@ eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
             <KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE2TCCA8GgAwIBAgIEDeB+jDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJE
-                            RTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1Q
-                            RyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0wOTAzMTgxNDEx
-                            MDlaFw0xNDAzMTcxNDExMDlaMHwxCzAJBgNVBAYTAk5MMSAwHgYDVQQKExdNYXgt
-                            UGxhbmNrLUdlc2VsbHNjaGFmdDEyMDAGA1UECxMpTWF4LVBsYW5jay1JbnN0aXR1
-                            dCBmdWVyIFBzeWNob2xpbmd1aXN0aWsxFzAVBgNVBAMTDmNvcnB1czEubXBpLm5s
-                            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvwvTzVbiFe7HH/LuUoYp
-                            n27Y2YuxPlXkiLFdMWCvSQVm4jPC1CIZmfJXB/khvySo/Ir/gjoe5gnvMj5co3zJ
-                            3S6dpgSjaWNZTYtl2cAfzMm5IbMKoAEsG+m3QWE1Zlbc9wT079CJe7YoqYYrHcFX
-                            Qy9ID7VFt9VQf8tCP86uRF9bxXO4wUvRlzzs65oGDMUS5u/+1bcge/xOrFFfUqVU
-                            Ebjtoh8L/cVtc4bEME5lVXxF26qrLCWSEDl8c+ULyrHMngRu/+utSSBQUJyqmEMd
-                            RLngB5GkB3Dvczd2d/NZy2XiqfjLFDA9Ok2HuJtSlYofeH/BwPM4dMgXB/lo16lY
-                            dwIDAQABo4IBfzCCAXswCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAww
-                            CgYIKwYBBQUHAwEwHQYDVR0OBBYEFHxqV98GFaGyiUNK+C8zDnIYm5FxMB8GA1Ud
-                            IwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMHcGA1UdHwRwMG4wNaAzoDGGL2h0
-                            dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWg
-                            M6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3Js
-                            LmNybDCBkgYIKwYBBQUHAQEEgYUwgYIwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jZHAx
-                            LnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDA/BggrBgEF
-                            BQcwAoYzaHR0cDovL2NkcDIucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9j
-                            YWNlcnQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQCvd62K/i554VZfOW9HtmKPKNdT
-                            Fe56uOS8p57Gg+HY+CUYMbmoL+rZqaYl+Uli8X5R5Pi4JU8Z88ttKSQ/+XISPP5/
-                            OE3022obFJ0ZUct2AWYgckmie10Kd5vXOxfw0Mn/cdZqCJAO64tzwk5el120LA1w
-                            rwtNxwRiR5VinZDirrm78RNC8wlr9iKFkVl3whTW6sdtE7AlZ0r9XaaigKS2wjNd
-                            4QC9LVo0aBpxR3ryo7+I31uKXQpNwLJSZXnD9pII4iKjmVDc1ndiu6rhO2TKF6lq
-                            yZtIZ9oG/5n1qef1ClZ+7d3uAl7ssvsV67Uj4JcTlR0UfYykUlPONDdsYqiu</ds:X509Certificate>
+                        <ds:X509Certificate>MIIFxTCCBK2gAwIBAgIHFy/hnqc8wTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJERTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1QRyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xNDAyMjgxMDI1MThaFw0xOTAyMjcxMDI1MThaMIGkMQswCQYDVQQGEwJOTDETMBEGA1UECBMKR2VsZGVybGFuZDERMA8GA1UEBxMITmlqbWVnZW4xIDAeBgNVBAoTF01heC1QbGFuY2stR2VzZWxsc2NoYWZ0MTIwMAYDVQQLEylNYXgtUGxhbmNrLUluc3RpdHV0IGZ1ZXIgUHN5Y2hvbGluZ3Vpc3RpazEXMBUGA1UEAxMOY29ycHVzMS5tcGkubmwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGbPWbCx1FfjX9sh831NEW6MHNVSd9DElQH+1eAqevdt5g6sLCK4HTsigUkl94MdiaLzDwVngYoJ/QwycncE0bFFxgH0YHs8URXAOfkO9RmKy4x6TkuYElF8AmBnnEhoF58O1b/0DG8TdSpmWsMBrw+lyBgV++v15+WjuHn4DdXbG3AaaUMNYWPSk4fIvjPX19U9ys0euYcKa/kTU8nFuOJzVyWmUyNWjcgwImszfwwKaumIGDHGKSJ9eME/idNczuUhihY/kgU30+x4yfQ0PPJ6y1YLd+E2xAOmbjEbBnytkbRPVxHAPqw0py80meld2s70Cxxklj739+oP+++PwhAgMBAAGjggI/MIICOzA5BgNVHSAEMjAwMBEGDysGAQQBga0hgiwBAQQDATARBg8rBgEEAYGtIYIsAgEEAwEwCAYGZ4EMAQICMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUE8+HM0pUcvXN4uBiDV/q2xwu2O8wHwYDVR0jBBgwFoAUAtYebgmrv1hlpwo8SDNh0c59w1swRAYDVR0RBD0wO4IOY29ycHVzMS5tcGkubmyCDGx1eDA3Lm1waS5ubIEbdG9iaWFzLnZhbnZhbGtlbmhvZWZAbXBpLm5sMHcGA1UdHwRwMG4wNaAzoDGGL2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDCBxwYIKwYBBQUHAQEEgbowgbcwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDA/BggrBgEFBQcwAoYzaHR0cDovL2NkcDEucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAAGH5IPCi3tfYwo+CN357NdkGav1KQT2T0sjZ2chg//8SNucof42LXWvMlRIaRXjFP2bTW8sPt3hNwPyVLLAUFE/ogRz955Ya4Fbx/0bS1XZSCCneQ+pP+gnfad0AA3PJ2fDb/LUQ43q8xu8B1tm9GyTz6sE2mjUc0GOYUp4wvC/Hu3Wr1/80KbebBX5QxQPg9CVqXaz8yECpZwrTJsa3d+pY8WVA6Fr/0vQmp9LyYl9II3xrP5KMkLFWfusAqfDQbO+l0q44mGImEee3G4Wkg7VAcwDgKBaLHbuhlrBzMoxQBZGyW4eOToiuysyE37dSKtUgCs4vDN4S4EWz90Y6xY=</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -1516,8 +1520,8 @@ eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
 
     <!-- University of Tübingen (via CLARIN) -->
     <EntityDescriptor entityID="https://weblicht.sfs.uni-tuebingen.de">
-   
-    
+
+
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
@@ -1821,136 +1825,201 @@ eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
 
     </EntityDescriptor>
 
-	<!-- CLARIN-NL Meertens institute -->
-	<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_b789a3a174a0187c848e235a7ead39f90a4608c0" entityID="https://www.meertens.knaw.nl/Shibboleth.sso/Metadata">
-	  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-		<mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-						<saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-							<saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-						</saml:Attribute>
-					</mdattr:EntityAttributes><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-	  </md:Extensions>
+    <!-- CLARIN-NL Meertens institute -->
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+        ID="_b789a3a174a0187c848e235a7ead39f90a4608c0"
+        entityID="https://www.meertens.knaw.nl/Shibboleth.sso/Metadata">
+        <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        </md:Extensions>
 
-	  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-		<md:Extensions>
-		  <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-						<mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
-						<mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
-						<mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot het Meertens Archief en geselecteerde diensten ten behoeve van geesteswetenschappelijk onderzoek op het terrein van Nederlandse taalvariatie en cultuur</mdui:Description>
-						<mdui:Description xml:lang="en">This Service Provider regulates access to the Meertens Institute Archive and selected services for humanities research activities in the domain of Dutch language variation and culture</mdui:Description>
-						<mdui:InformationURL xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
-						<mdui:InformationURL xml:lang="en">http://www.meertens.knaw.nl/cms/en</mdui:InformationURL>
-						<mdui:Keywords xml:lang="nl">Meertens onderzoek documentatie taal cultuur geesteswetenschappen archief</mdui:Keywords>
-						<mdui:Keywords xml:lang="en">Meertens research documentation language culture humanities archive</mdui:Keywords>
-						<mdui:PrivacyStatementURL xml:lang="en">https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
-						<mdui:Logo height="135" width="200">http://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
-					</mdui:UIInfo><init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.meertens.knaw.nl/Shibboleth.sso/Login"/>
-		  <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.meertens.knaw.nl/Shibboleth.sso/Login" index="1"/>
-		</md:Extensions>
-		<md:KeyDescriptor>
-		  <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-			<ds:KeyName>www.meertens.knaw.nl</ds:KeyName>
-			<ds:X509Data>
-			  <ds:X509SubjectName>CN=www.meertens.knaw.nl,OU=Meertens Instituut,O=KNAW,C=NL</ds:X509SubjectName>
-			  <ds:X509Certificate>MIIEgjCCA2qgAwIBAgIRAOmcTE0k6Yoag8eNrOUGhicwDQYJKoZIhvcNAQEFBQAw
-	NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
-	IFNTTCBDQTAeFw0xMjEyMTcwMDAwMDBaFw0xNTEyMTcyMzU5NTlaMFgxCzAJBgNV
-	BAYTAk5MMQ0wCwYDVQQKEwRLTkFXMRswGQYDVQQLExJNZWVydGVucyBJbnN0aXR1
-	dXQxHTAbBgNVBAMTFHd3dy5tZWVydGVucy5rbmF3Lm5sMIIBIjANBgkqhkiG9w0B
-	AQEFAAOCAQ8AMIIBCgKCAQEAtqF1CkCgz6bB3dv5bTYBRCSwWqgoZActFvigdJsa
-	DopFIIh+3agGBfmCI4WCb3rAluCw2LYl8mdUaRIXNDr3TkkGQP5Q+pKDHFTd1n0L
-	TLs7PdTWOG61E/ExIfwTmphUvcrshazJk5xCbFBRbrWFNf/349Anf2ze1mUDBSdl
-	vRTTyuYcckJKV7OHMnOh3+EsCHOkX1KsOwyhQKfmtpL7n/meIPkF9KwFocsxTjNx
-	inZDHxTmikjzr6kguu5grEIeXbbA1mfO0AHVGiaXRyvNDl+EoX7IqEKJQbbIKwpd
-	h1t/CHvZ/PFWdyM8K4IuDdImD3sjoYCg78yLHnR0lJJ8twIDAQABo4IBZzCCAWMw
-	HwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFOPgQ/s6
-	AVKL7kI1LBCGTOSGGWk0MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0G
-	A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQB
-	sjEBAgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5v
-	cmcvVEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYp
-	aHR0cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYB
-	BQUHMAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMB8GA1UdEQQYMBaCFHd3
-	dy5tZWVydGVucy5rbmF3Lm5sMA0GCSqGSIb3DQEBBQUAA4IBAQA9ZZaYfsUQ5/9d
-	uqDpjUaKPkXOfyKUNllh8mInY/LE8hWp+M3L4i5iiAkFkyp+v/d07AZDR0r0F7Jp
-	+8hEY6HdP5+sdcTzlk6E3QezOmTAIUVcSNYLPuqyvyx0hmGZR1S4z+vYqTNyQMW1
-	2L/MYOCTUdwruEmqyBR2goNyq0k6K3l5vh6TqV20E45SzpB2JEGRTIPWt46cRJNx
-	wmpzyA4aXLGH97Z8DFjC2hi1bazaVr9E109r0NMXO/8yaLtc0Ok/vWHLUPB4TLCP
-	HI6pYTwazmo1x3l7TmGhmhEcVc1JCN0ByVLWB+DvzXsCxYtDItsHPXj2MVPnqMJo
-	GTLw7jCk
-	</ds:X509Certificate>
-			</ds:X509Data>
-		  </ds:KeyInfo>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-		</md:KeyDescriptor>
-		<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="1"/>
-		<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="2"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/SOAP"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/Redirect"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/POST"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
-		<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/SOAP"/>
-		<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/Redirect"/>
-		<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/POST"/>
-		<md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/Artifact"/>
-		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="5"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="7"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="8"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="9"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="10"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="11"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="12"/>
-		<md:AttributeConsumingService index="1">
-		  <md:ServiceName xml:lang="en">https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</md:ServiceName>
-		  <md:RequestedAttribute Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		  <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		  <md:RequestedAttribute Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		</md:AttributeConsumingService>
-	  </md:SPSSODescriptor>
+        <md:SPSSODescriptor
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            <md:Extensions>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot
+                        het Meertens Archief en geselecteerde diensten ten behoeve van
+                        geesteswetenschappelijk onderzoek op het terrein van Nederlandse
+                        taalvariatie en cultuur</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider regulates access to the
+                        Meertens Institute Archive and selected services for humanities research
+                        activities in the domain of Dutch language variation and
+                        culture</mdui:Description>
+                    <mdui:InformationURL xml:lang="nl"
+                        >http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en"
+                        >http://www.meertens.knaw.nl/cms/en</mdui:InformationURL>
+                    <mdui:Keywords xml:lang="nl">Meertens onderzoek documentatie taal cultuur
+                        geesteswetenschappen archief</mdui:Keywords>
+                    <mdui:Keywords xml:lang="en">Meertens research documentation language culture
+                        humanities archive</mdui:Keywords>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="135" width="200"
+                        >http://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
+                </mdui:UIInfo>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://www.meertens.knaw.nl/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://www.meertens.knaw.nl/Shibboleth.sso/Login" index="1"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>www.meertens.knaw.nl</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=www.meertens.knaw.nl,OU=Meertens
+                            Instituut,O=KNAW,C=NL</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIEgjCCA2qgAwIBAgIRAOmcTE0k6Yoag8eNrOUGhicwDQYJKoZIhvcNAQEFBQAw
+                            NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+                            IFNTTCBDQTAeFw0xMjEyMTcwMDAwMDBaFw0xNTEyMTcyMzU5NTlaMFgxCzAJBgNV
+                            BAYTAk5MMQ0wCwYDVQQKEwRLTkFXMRswGQYDVQQLExJNZWVydGVucyBJbnN0aXR1
+                            dXQxHTAbBgNVBAMTFHd3dy5tZWVydGVucy5rbmF3Lm5sMIIBIjANBgkqhkiG9w0B
+                            AQEFAAOCAQ8AMIIBCgKCAQEAtqF1CkCgz6bB3dv5bTYBRCSwWqgoZActFvigdJsa
+                            DopFIIh+3agGBfmCI4WCb3rAluCw2LYl8mdUaRIXNDr3TkkGQP5Q+pKDHFTd1n0L
+                            TLs7PdTWOG61E/ExIfwTmphUvcrshazJk5xCbFBRbrWFNf/349Anf2ze1mUDBSdl
+                            vRTTyuYcckJKV7OHMnOh3+EsCHOkX1KsOwyhQKfmtpL7n/meIPkF9KwFocsxTjNx
+                            inZDHxTmikjzr6kguu5grEIeXbbA1mfO0AHVGiaXRyvNDl+EoX7IqEKJQbbIKwpd
+                            h1t/CHvZ/PFWdyM8K4IuDdImD3sjoYCg78yLHnR0lJJ8twIDAQABo4IBZzCCAWMw
+                            HwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFOPgQ/s6
+                            AVKL7kI1LBCGTOSGGWk0MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0G
+                            A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQB
+                            sjEBAgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5v
+                            cmcvVEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYp
+                            aHR0cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYB
+                            BQUHMAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMB8GA1UdEQQYMBaCFHd3
+                            dy5tZWVydGVucy5rbmF3Lm5sMA0GCSqGSIb3DQEBBQUAA4IBAQA9ZZaYfsUQ5/9d
+                            uqDpjUaKPkXOfyKUNllh8mInY/LE8hWp+M3L4i5iiAkFkyp+v/d07AZDR0r0F7Jp
+                            +8hEY6HdP5+sdcTzlk6E3QezOmTAIUVcSNYLPuqyvyx0hmGZR1S4z+vYqTNyQMW1
+                            2L/MYOCTUdwruEmqyBR2goNyq0k6K3l5vh6TqV20E45SzpB2JEGRTIPWt46cRJNx
+                            wmpzyA4aXLGH97Z8DFjC2hi1bazaVr9E109r0NMXO/8yaLtc0Ok/vWHLUPB4TLCP
+                            HI6pYTwazmo1x3l7TmGhmhEcVc1JCN0ByVLWB+DvzXsCxYtDItsHPXj2MVPnqMJo
+                            GTLw7jCk </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </md:KeyDescriptor>
+            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="1"/>
+            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="2"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/SOAP"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/Redirect"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/POST"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/Artifact"/>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
+                index="2"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="5"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="7"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
+                index="8"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="9"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="10"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="11"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="12"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en"
+                    >https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</md:ServiceName>
+                <md:RequestedAttribute
+                    Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
 
-	  <md:Organization>
-			<md:OrganizationName xml:lang="nl">Meertens Instituut</md:OrganizationName>
-			<md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
-			<md:OrganizationDisplayName xml:lang="nl">Meertens Instituut</md:OrganizationDisplayName>
-			<md:OrganizationDisplayName xml:lang="en">Meertens Institute</md:OrganizationDisplayName>
-			<md:OrganizationURL xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</md:OrganizationURL>
-			<md:OrganizationURL xml:lang="en">http://www.meertens.knaw.nl/cms/en</md:OrganizationURL>
-		</md:Organization><md:ContactPerson contactType="support">
-			<md:GivenName>KNAW</md:GivenName>
-			<md:SurName>Support</md:SurName>
-			<md:EmailAddress>servicedesk@knaw.nl</md:EmailAddress>
-		</md:ContactPerson><md:ContactPerson contactType="technical">
-			<md:GivenName>Marc</md:GivenName>
-			<md:SurName>Kemps-Snijders</md:SurName>
-			<md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
-		</md:ContactPerson><md:ContactPerson contactType="administrative">
-			<md:GivenName>Marc</md:GivenName>
-			<md:SurName>Kemps-Snijders</md:SurName>
-			<md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
-		</md:ContactPerson>
-	</md:EntityDescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="nl">Meertens Instituut</md:OrganizationName>
+            <md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="nl">Meertens
+                Instituut</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="en">Meertens
+                Institute</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="nl"
+                >http://www.meertens.knaw.nl/cms/nl</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en"
+                >http://www.meertens.knaw.nl/cms/en</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>KNAW</md:GivenName>
+            <md:SurName>Support</md:SurName>
+            <md:EmailAddress>servicedesk@knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Marc</md:GivenName>
+            <md:SurName>Kemps-Snijders</md:SurName>
+            <md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>Marc</md:GivenName>
+            <md:SurName>Kemps-Snijders</md:SurName>
+            <md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 
-<!-- start of SPs that are not yet an official part of the Service Provider Federation. These will only have access to the CLARIN IdP! -->
+    <!-- start of SPs that are not yet an official part of the Service Provider Federation. These will only have access to the CLARIN IdP! -->
 
     <!-- CLARIN-PL -->
     <EntityDescriptor ID="_145ee1e0d4a7860c36b0c98e559d10a370d4ab56"
@@ -2532,7 +2601,8 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
                 index="2"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
                 Location="https:/
-                /ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+                /ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/ECP"
+                index="3"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
                 Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/POST" index="4"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
@@ -2541,7 +2611,7 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
                 index="5"/>
         </SPSSODescriptor>
     </EntityDescriptor>
-    
+
     <!-- BAS (via CLARIN) -->
     <EntityDescriptor ID="_f8eb7e2feeffdff03d26adc5d66963159978b95d"
         entityID="https://clarin.phonetik.uni-muenchen.de">
@@ -2703,7 +2773,7 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
     <!-- Austrian Academy (CLARIN-AT) -->
     <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_af80a5dba6c58ebb32350ce01f39c551cab82702" entityID="https://acdh.oeaw.ac.at/shibboleth">
-        
+
         <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -2717,7 +2787,7 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
         </Extensions>
-        
+
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
@@ -2867,7 +2937,7 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <EmailAddress>helpdesk@oeaw.ac.at</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
-    
+
     <!-- Universität Leipzig //-->
     <EntityDescriptor ID="_a423ad5163a8068fb6e3a6e815666f70"
         entityID="https://asvsp.informatik.uni-leipzig.de/">
@@ -3641,113 +3711,162 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
     </EntityDescriptor>
 
 
-	<!-- OpenSKOS Meertens | KNAW  -->
-	<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_f8e1e427cb18d23d8ca924d2c01604c05969033f" entityID="https://openskos.meertens.knaw.nl/shibboleth">
+    <!-- OpenSKOS Meertens | KNAW  -->
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+        ID="_f8e1e427cb18d23d8ca924d2c01604c05969033f"
+        entityID="https://openskos.meertens.knaw.nl/shibboleth">
 
-	  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-		<mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-						<saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-							<saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-						</saml:Attribute>
-					</mdattr:EntityAttributes><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-		<alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-		<alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-	  </md:Extensions>
+        <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        </md:Extensions>
 
-	  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-		<md:Extensions>
-		  <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-						<mdui:DisplayName xml:lang="nl">OpenSKOS | Meertens</mdui:DisplayName>
-						<mdui:DisplayName xml:lang="en">OpenSKOS | Meertens</mdui:DisplayName>
-						<mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de Simple Knowledge Organization System Repository die gehost wordt vanuit het Meertens Instituut</mdui:Description>
-						<mdui:Description xml:lang="en">This Service Provider provides access to the Meertens Institute's Simple Knowledge Organization System Repository</mdui:Description>
-						<mdui:InformationURL xml:lang="nl">https://openskos.meertens.knaw.nl</mdui:InformationURL>
-						<mdui:InformationURL xml:lang="en">https://openskos.meertens.knaw.nl</mdui:InformationURL>
-						<mdui:Keywords xml:lang="nl">Meertens onderzoek documentatie taal cultuur geesteswetenschappen CLAVAS CLARIN OpenSKOS Vocabulary Service</mdui:Keywords>
-						<mdui:Keywords xml:lang="en">Meertens research documentation language culture humanities CLAVAS CLARIN OpenSKOS Vocabulary Service </mdui:Keywords>
-						<mdui:PrivacyStatementURL xml:lang="en">https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
-						<mdui:Logo height="64" width="44">https://openskos.meertens.knaw.nl/assets/images/logo-open-skos.png</mdui:Logo>
-					</mdui:UIInfo><init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Login"/>
-		  <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Login" index="1"/>
-		</md:Extensions>
-		<md:KeyDescriptor>
-		  <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-			<ds:KeyName>twww11</ds:KeyName>
-			<ds:X509Data>
-			  <ds:X509SubjectName>CN=twww11</ds:X509SubjectName>
-			  <ds:X509Certificate>MIIC2TCCAcGgAwIBAgIJAOJ/2Z9fcxVXMA0GCSqGSIb3DQEBBQUAMBExDzANBgNV
-	BAMTBnR3d3cxMTAeFw0xMzA0MTYxNTA3MzhaFw0yMzA0MTQxNTA3MzhaMBExDzAN
-	BgNVBAMTBnR3d3cxMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAP4a
-	E7gfLARdAbSMy3ntWsCqI0M4uXkeN8vZe2aiBUGi0hN9TuN9DO8mr4P8EXjhT0qQ
-	/tfff3FOJggFQwT8xXjSxevD3/fQfc31cc19W48xLzZ2299w0GlT6ABVeykixnT/
-	2N4BUFwlGKKSYZ25VvF7HStpO8PoqoOU+vTxxOSHv+k8r/E+e8/Yqy1x+tYwjtCp
-	mRTuej2AEg7EvCPez4+63GcSkSFJDTkAdUkIsQwBvBjceeeNjPrfDdcVriYq8zEq
-	aHlAM88NOWqkzhFn7RDDQ9I40Km2sv+zEwHn+cYe8RQktx+7kTocNfttlc6Gj3cx
-	wBo6gLCYlDtE9Bp4Hg0CAwEAAaM0MDIwEQYDVR0RBAowCIIGdHd3dzExMB0GA1Ud
-	DgQWBBTEKetHu5XysV19YPdBXllRdGy+0jANBgkqhkiG9w0BAQUFAAOCAQEAIRi/
-	IZLuNXS7kk8e6Hj4QW0eeqNBpHRHVPC/J2/2C9GpRVEPCmsYTRhIDc6y1XDEpJlW
-	u6J75jXhfSisrzaVYvDTLymYV2qhob3hqlM39PGcyXWvnyT8HWQA6nhOGIIq2K2c
-	M+dr9RBlPlv+0rJq07ZbkNJqfxu4tigKOP/+sJiMuORso9uk4Ak+0cX+yb/48zqE
-	6qUUo3jx8o3Uv51YiYTaPeMacxDH4TcMEZOttUmY7SH7jkZCoRlpFnozCB6QwfA/
-	5D7JsQ/vElBegBrNmdrIoZyI+ezREelVATJURfgJu+47mmhVWIK0St6S1y+pgPQ4
-	1bxBV69YDJSB5BjVPA==
-	</ds:X509Certificate>
-			</ds:X509Data>
-		  </ds:KeyInfo>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-		  <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-		</md:KeyDescriptor>
-		<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="1"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/SOAP"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Redirect"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/POST"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
-		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="5"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
-		<md:AttributeConsumingService index="1">
-		  <md:ServiceName xml:lang="en">https://openskos.meertens.knaw.nl/shibboleth</md:ServiceName>
-		  <md:RequestedAttribute Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		  <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		  <md:RequestedAttribute Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-		</md:AttributeConsumingService>
-	  </md:SPSSODescriptor>
+        <md:SPSSODescriptor
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            <md:Extensions>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="nl">OpenSKOS | Meertens</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">OpenSKOS | Meertens</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de
+                        Simple Knowledge Organization System Repository die gehost wordt vanuit het
+                        Meertens Instituut</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider provides access to the
+                        Meertens Institute's Simple Knowledge Organization System
+                        Repository</mdui:Description>
+                    <mdui:InformationURL xml:lang="nl"
+                        >https://openskos.meertens.knaw.nl</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en"
+                        >https://openskos.meertens.knaw.nl</mdui:InformationURL>
+                    <mdui:Keywords xml:lang="nl">Meertens onderzoek documentatie taal cultuur
+                        geesteswetenschappen CLAVAS CLARIN OpenSKOS Vocabulary
+                        Service</mdui:Keywords>
+                    <mdui:Keywords xml:lang="en">Meertens research documentation language culture
+                        humanities CLAVAS CLARIN OpenSKOS Vocabulary Service </mdui:Keywords>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="64" width="44"
+                        >https://openskos.meertens.knaw.nl/assets/images/logo-open-skos.png</mdui:Logo>
+                </mdui:UIInfo>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Login" index="1"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>twww11</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=twww11</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIC2TCCAcGgAwIBAgIJAOJ/2Z9fcxVXMA0GCSqGSIb3DQEBBQUAMBExDzANBgNV
+                            BAMTBnR3d3cxMTAeFw0xMzA0MTYxNTA3MzhaFw0yMzA0MTQxNTA3MzhaMBExDzAN
+                            BgNVBAMTBnR3d3cxMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAP4a
+                            E7gfLARdAbSMy3ntWsCqI0M4uXkeN8vZe2aiBUGi0hN9TuN9DO8mr4P8EXjhT0qQ
+                            /tfff3FOJggFQwT8xXjSxevD3/fQfc31cc19W48xLzZ2299w0GlT6ABVeykixnT/
+                            2N4BUFwlGKKSYZ25VvF7HStpO8PoqoOU+vTxxOSHv+k8r/E+e8/Yqy1x+tYwjtCp
+                            mRTuej2AEg7EvCPez4+63GcSkSFJDTkAdUkIsQwBvBjceeeNjPrfDdcVriYq8zEq
+                            aHlAM88NOWqkzhFn7RDDQ9I40Km2sv+zEwHn+cYe8RQktx+7kTocNfttlc6Gj3cx
+                            wBo6gLCYlDtE9Bp4Hg0CAwEAAaM0MDIwEQYDVR0RBAowCIIGdHd3dzExMB0GA1Ud
+                            DgQWBBTEKetHu5XysV19YPdBXllRdGy+0jANBgkqhkiG9w0BAQUFAAOCAQEAIRi/
+                            IZLuNXS7kk8e6Hj4QW0eeqNBpHRHVPC/J2/2C9GpRVEPCmsYTRhIDc6y1XDEpJlW
+                            u6J75jXhfSisrzaVYvDTLymYV2qhob3hqlM39PGcyXWvnyT8HWQA6nhOGIIq2K2c
+                            M+dr9RBlPlv+0rJq07ZbkNJqfxu4tigKOP/+sJiMuORso9uk4Ak+0cX+yb/48zqE
+                            6qUUo3jx8o3Uv51YiYTaPeMacxDH4TcMEZOttUmY7SH7jkZCoRlpFnozCB6QwfA/
+                            5D7JsQ/vElBegBrNmdrIoZyI+ezREelVATJURfgJu+47mmhVWIK0St6S1y+pgPQ4
+                            1bxBV69YDJSB5BjVPA== </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </md:KeyDescriptor>
+            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP" index="1"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
+                index="2"/>
+            <md:AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="5"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en"
+                    >https://openskos.meertens.knaw.nl/shibboleth</md:ServiceName>
+                <md:RequestedAttribute
+                    Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
 
-	  <md:Organization>
-						<md:OrganizationName xml:lang="nl">Meertens Instituut</md:OrganizationName>
-						<md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
-						<md:OrganizationDisplayName xml:lang="nl">Meertens Instituut</md:OrganizationDisplayName>
-						<md:OrganizationDisplayName xml:lang="en">Meertens Institute</md:OrganizationDisplayName>
-						<md:OrganizationURL xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</md:OrganizationURL>
-						<md:OrganizationURL xml:lang="en">http://www.meertens.knaw.nl/cms/en</md:OrganizationURL>
-					</md:Organization><md:ContactPerson contactType="support">
-						<md:GivenName>KNAW</md:GivenName>
-						<md:SurName>Support</md:SurName>
-						<md:EmailAddress>servicedesk@knaw.nl</md:EmailAddress>
-					</md:ContactPerson><md:ContactPerson contactType="technical">
-						<md:GivenName>Marc</md:GivenName>
-						<md:SurName>Kemps-Snijders</md:SurName>
-						<md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
-					</md:ContactPerson><md:ContactPerson contactType="administrative">
-						<md:GivenName>Marc</md:GivenName>
-						<md:SurName>Kemps-Snijders</md:SurName>
-						<md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
-					</md:ContactPerson>
-	</md:EntityDescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="nl">Meertens Instituut</md:OrganizationName>
+            <md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="nl">Meertens
+                Instituut</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="en">Meertens
+                Institute</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="nl"
+                >http://www.meertens.knaw.nl/cms/nl</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en"
+                >http://www.meertens.knaw.nl/cms/en</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>KNAW</md:GivenName>
+            <md:SurName>Support</md:SurName>
+            <md:EmailAddress>servicedesk@knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Marc</md:GivenName>
+            <md:SurName>Kemps-Snijders</md:SurName>
+            <md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>Marc</md:GivenName>
+            <md:SurName>Kemps-Snijders</md:SurName>
+            <md:EmailAddress>marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 </EntitiesDescriptor>
