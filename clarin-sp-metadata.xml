@@ -3838,59 +3838,60 @@ urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
     </md:EntityDescriptor>
 
 <!-- CELR -->
-  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp">
+  <md:Extensions>
+    <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" registrationAuthority="http://taat.edu.ee">
+      <mdrpi:RegistrationPolicy xml:lang="en">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</mdrpi:RegistrationPolicy>
+    </mdrpi:RegistrationInfo>
+  </md:Extensions>
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
     <md:Extensions>
-      <mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" registrationAuthority="http://taat.edu.ee/">
-        <mdrpi:RegistrationPolicy xml:lang="en">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+        <mdui:DisplayName xml:lang="en">CELR Services</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="et">EKRK teenused</mdui:DisplayName>
+        <mdui:InformationURL xml:lang="en">http://keeleressursid.ee/en/</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="et">http://keeleressursid.ee/et/</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">https://wiki.ut.ee/display/keeleressursid/Privacy+Policy+of+Center+of+Estonian+Language+Resources</mdui:PrivacyStatementURL>
+      </mdui:UIInfo>
     </md:Extensions>
-    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
-      <md:Extensions>
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="en">CELR Services</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="et">EKRK teenused</mdui:DisplayName>
-          <mdui:InformationURL xml:lang="en">http://keeleressursid.ee/en/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="et">http://keeleressursid.ee/et/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://wiki.ut.ee/display/keeleressursid/Privacy+Policy+of+Center+of+Estonian+Language+Resources</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
-      </md:Extensions>
-      <md:KeyDescriptor use="signing">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>MIIEfzCCA2egAwIBAgIQEHEZOlxMPA1OJ+5lCLnyNTANBgkqhkiG9w0BAQUFADA2MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEgU1NMIENBMB4XDTEzMTIwNjAwMDAwMFoXDTE2MTIwNTIzNTk1OVowRzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSIwIAYDVQQDExlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDXZTjKFPgzC8w22Bfp7cvTj3cRFBACW4i5yhCG+oK+sT69WDhlMq1chr2tOUhgXu9ASJvS2ZZ2qKp+vX28GqQFQbyLARF4Lr93tA0if8NYPm5oi9ZLB9iPUvRHrdiEAA3jjMZ2TNqHEIsxJdJUWg4mtuaorwqjZn8qZ3mT8ia3qgIRJsAXzcO2MimvGmbWIl0l1u8bDD316+r3YZH6UkgASjAsv6iOsUE1VNU8Qd4cOG60BseupUFAAwK20zj8iupV4gXr8F+n+CFiLFui8pFXPrVND5SHPltWjlTprOaUv7aNaSUMMtetFsjvHQXQZln43JTlb12uZes+Oe9524wIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFJqexvFu3FAXf3v9yEN07/a3hEbdMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3MudGVyZW5hLm9yZzAkBgNVHREEHTAbghlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMA0GCSqGSIb3DQEBBQUAA4IBAQCuuAWKbmr7yefGwYa1MvN/4O8L40d8SD5AF9GcRjjh7Azgf76xwG4wDtU41NFnBd+glWBUEYwM/YLzODwQWx46wW1FTRRwvmhId84J4AY+lFN/8Nv+iqQtS3PrdJu80wO9Lv8E7vWoi8yvL3bPmqBGjE3i4Pu03DisLwOZkGsrc8ngz5y/MWTLyZTkkBfalnaeusTzOeD36BV9xdtbnbjONxJYVASTlEUjqsj+Q2duXJw/ORjMlQ4bSi7fFNp0aM6RLXRNIMUNevkzz/Sv93XHII/BZkp4Tc6bqqZc8oQzV737EHHj49GvG6xVjQ2gY0E6K++MhI+3H31o24ib+w26</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor use="encryption">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>MIIEfzCCA2egAwIBAgIQEHEZOlxMPA1OJ+5lCLnyNTANBgkqhkiG9w0BAQUFADA2MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEgU1NMIENBMB4XDTEzMTIwNjAwMDAwMFoXDTE2MTIwNTIzNTk1OVowRzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSIwIAYDVQQDExlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDXZTjKFPgzC8w22Bfp7cvTj3cRFBACW4i5yhCG+oK+sT69WDhlMq1chr2tOUhgXu9ASJvS2ZZ2qKp+vX28GqQFQbyLARF4Lr93tA0if8NYPm5oi9ZLB9iPUvRHrdiEAA3jjMZ2TNqHEIsxJdJUWg4mtuaorwqjZn8qZ3mT8ia3qgIRJsAXzcO2MimvGmbWIl0l1u8bDD316+r3YZH6UkgASjAsv6iOsUE1VNU8Qd4cOG60BseupUFAAwK20zj8iupV4gXr8F+n+CFiLFui8pFXPrVND5SHPltWjlTprOaUv7aNaSUMMtetFsjvHQXQZln43JTlb12uZes+Oe9524wIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFJqexvFu3FAXf3v9yEN07/a3hEbdMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3MudGVyZW5hLm9yZzAkBgNVHREEHTAbghlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMA0GCSqGSIb3DQEBBQUAA4IBAQCuuAWKbmr7yefGwYa1MvN/4O8L40d8SD5AF9GcRjjh7Azgf76xwG4wDtU41NFnBd+glWBUEYwM/YLzODwQWx46wW1FTRRwvmhId84J4AY+lFN/8Nv+iqQtS3PrdJu80wO9Lv8E7vWoi8yvL3bPmqBGjE3i4Pu03DisLwOZkGsrc8ngz5y/MWTLyZTkkBfalnaeusTzOeD36BV9xdtbnbjONxJYVASTlEUjqsj+Q2duXJw/ORjMlQ4bSi7fFNp0aM6RLXRNIMUNevkzz/Sv93XHII/BZkp4Tc6bqqZc8oQzV737EHHj49GvG6xVjQ2gY0E6K++MhI+3H31o24ib+w26</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-logout.php/ekrk-sp"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-acs.php/ekrk-sp" index="0"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml1-acs.php/ekrk-sp" index="1"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-acs.php/ekrk-sp" index="2"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml1-acs.php/ekrk-sp/artifact" index="3"/>
-      <md:AttributeConsumingService index="0">
-        <md:ServiceName xml:lang="en">CELR services</md:ServiceName>
-        <md:ServiceName xml:lang="et">EKRK teenused</md:ServiceName>
-        <md:RequestedAttribute Name="eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
-        <md:RequestedAttribute Name="eduPersonTargetedId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="sn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="displayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="mail" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-      </md:AttributeConsumingService>
-    </md:SPSSODescriptor>
-    <md:ContactPerson contactType="technical">
-      <md:GivenName>Lauri</md:GivenName>
-      <md:SurName>Jesmin</md:SurName>
-      <md:EmailAddress>lauri.jesmin@ut.ee</md:EmailAddress>
-    </md:ContactPerson>
-  </md:EntityDescriptor>
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEfzCCA2egAwIBAgIQEHEZOlxMPA1OJ+5lCLnyNTANBgkqhkiG9w0BAQUFADA2MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEgU1NMIENBMB4XDTEzMTIwNjAwMDAwMFoXDTE2MTIwNTIzNTk1OVowRzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSIwIAYDVQQDExlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDXZTjKFPgzC8w22Bfp7cvTj3cRFBACW4i5yhCG+oK+sT69WDhlMq1chr2tOUhgXu9ASJvS2ZZ2qKp+vX28GqQFQbyLARF4Lr93tA0if8NYPm5oi9ZLB9iPUvRHrdiEAA3jjMZ2TNqHEIsxJdJUWg4mtuaorwqjZn8qZ3mT8ia3qgIRJsAXzcO2MimvGmbWIl0l1u8bDD316+r3YZH6UkgASjAsv6iOsUE1VNU8Qd4cOG60BseupUFAAwK20zj8iupV4gXr8F+n+CFiLFui8pFXPrVND5SHPltWjlTprOaUv7aNaSUMMtetFsjvHQXQZln43JTlb12uZes+Oe9524wIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFJqexvFu3FAXf3v9yEN07/a3hEbdMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3MudGVyZW5hLm9yZzAkBgNVHREEHTAbghlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMA0GCSqGSIb3DQEBBQUAA4IBAQCuuAWKbmr7yefGwYa1MvN/4O8L40d8SD5AF9GcRjjh7Azgf76xwG4wDtU41NFnBd+glWBUEYwM/YLzODwQWx46wW1FTRRwvmhId84J4AY+lFN/8Nv+iqQtS3PrdJu80wO9Lv8E7vWoi8yvL3bPmqBGjE3i4Pu03DisLwOZkGsrc8ngz5y/MWTLyZTkkBfalnaeusTzOeD36BV9xdtbnbjONxJYVASTlEUjqsj+Q2duXJw/ORjMlQ4bSi7fFNp0aM6RLXRNIMUNevkzz/Sv93XHII/BZkp4Tc6bqqZc8oQzV737EHHj49GvG6xVjQ2gY0E6K++MhI+3H31o24ib+w26</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEfzCCA2egAwIBAgIQEHEZOlxMPA1OJ+5lCLnyNTANBgkqhkiG9w0BAQUFADA2MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEgU1NMIENBMB4XDTEzMTIwNjAwMDAwMFoXDTE2MTIwNTIzNTk1OVowRzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSIwIAYDVQQDExlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDXZTjKFPgzC8w22Bfp7cvTj3cRFBACW4i5yhCG+oK+sT69WDhlMq1chr2tOUhgXu9ASJvS2ZZ2qKp+vX28GqQFQbyLARF4Lr93tA0if8NYPm5oi9ZLB9iPUvRHrdiEAA3jjMZ2TNqHEIsxJdJUWg4mtuaorwqjZn8qZ3mT8ia3qgIRJsAXzcO2MimvGmbWIl0l1u8bDD316+r3YZH6UkgASjAsv6iOsUE1VNU8Qd4cOG60BseupUFAAwK20zj8iupV4gXr8F+n+CFiLFui8pFXPrVND5SHPltWjlTprOaUv7aNaSUMMtetFsjvHQXQZln43JTlb12uZes+Oe9524wIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFJqexvFu3FAXf3v9yEN07/a3hEbdMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3MudGVyZW5hLm9yZzAkBgNVHREEHTAbghlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMA0GCSqGSIb3DQEBBQUAA4IBAQCuuAWKbmr7yefGwYa1MvN/4O8L40d8SD5AF9GcRjjh7Azgf76xwG4wDtU41NFnBd+glWBUEYwM/YLzODwQWx46wW1FTRRwvmhId84J4AY+lFN/8Nv+iqQtS3PrdJu80wO9Lv8E7vWoi8yvL3bPmqBGjE3i4Pu03DisLwOZkGsrc8ngz5y/MWTLyZTkkBfalnaeusTzOeD36BV9xdtbnbjONxJYVASTlEUjqsj+Q2duXJw/ORjMlQ4bSi7fFNp0aM6RLXRNIMUNevkzz/Sv93XHII/BZkp4Tc6bqqZc8oQzV737EHHj49GvG6xVjQ2gY0E6K++MhI+3H31o24ib+w26</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-logout.php/ekrk-sp"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-acs.php/ekrk-sp" index="0"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml1-acs.php/ekrk-sp" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml2-acs.php/ekrk-sp" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/saml1-acs.php/ekrk-sp/artifact" index="3"/>
+    <md:AttributeConsumingService index="0">
+      <md:ServiceName xml:lang="en">CELR services</md:ServiceName>
+      <md:ServiceName xml:lang="et">EKRK teenused</md:ServiceName>
+      <md:RequestedAttribute Name="eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
+      <md:RequestedAttribute Name="eduPersonTargetedId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+      <md:RequestedAttribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+      <md:RequestedAttribute Name="sn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+      <md:RequestedAttribute Name="o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+      <md:RequestedAttribute Name="displayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+      <md:RequestedAttribute Name="mail" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+    </md:AttributeConsumingService>
+  </md:SPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Lauri</md:GivenName>
+    <md:SurName>Jesmin</md:SurName>
+    <md:EmailAddress>lauri.jesmin@ut.ee</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
 
 <!-- CMU CHILDES -->
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_e73581dabbb136967b5a4b0c3a507491f7804e04" entityID="https://childes.talkbank.org/shibboleth">
