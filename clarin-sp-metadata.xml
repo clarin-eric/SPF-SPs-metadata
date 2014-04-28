@@ -399,6 +399,26 @@
         </ContactPerson>
     </EntityDescriptor>
 
+    <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
+    <EntityDescriptor entityID="https://secure.huygens.knaw.nl">
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+            WantAssertionsSigned="true">
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://test.secure.huygens.knaw.nl/saml2/acs" index="1"/>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="en">Huygens Instituut (KNAW)</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">Huygens Instituut (KNAW)</OrganizationDisplayName>
+            <OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="technical">
+            <GivenName>Support</GivenName>
+            <SurName>Huygens Instituut (KNAW)</SurName>
+            <EmailAddress>sso@huygens.knaw.nl</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
     <!-- IDS clarin.ids-mannheim.de (via CLARIN) -->
     <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
