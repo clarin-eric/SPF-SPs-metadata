@@ -401,8 +401,30 @@
 
     <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
     <EntityDescriptor entityID="https://secure.huygens.knaw.nl">
+        <Extensions>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
             WantAssertionsSigned="true">
+            <Extensions>
+                <!-- start : required for terena CoC -->
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">Huygens ING (KNAW) - CLARIN services</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Various services provided by Huygens ING
+                        in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:InformationURL xml:lang="nl">http://www.huygens.knaw.nl</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en"
+                        >http://www.huygens.knaw.nl/wp-content/uploads/2013/10/20140327-privacy-policy-HIRE2.pdf</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <!-- end : required for terena CoC -->
+            </Extensions>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
