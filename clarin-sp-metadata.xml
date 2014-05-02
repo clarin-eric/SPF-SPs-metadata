@@ -793,117 +793,100 @@
     </EntityDescriptor>
 
     <!-- MPI lux17.mpi.nl (via CLARIN) -->
-    <EntityDescriptor entityID="https://sp.lux17.mpi.nl">
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <Extensions>
+    <md:EntityDescriptor entityID="https://sp.lux17.mpi.nl" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            <md:Extensions>
                 <!-- start : required for terena CoC -->
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics
-                        second Service Provider</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek
-                        tweede Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics
-                        second Service Provider for Linguistic Services aimed at
-                        researchers</mdui:Description>
-                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek
-                        tweede Service Provider voor Taalkundige Services gericht op
-                        onderzoekers</mdui:Description>
-                    <mdui:Keywords xml:lang="en">Max Planck Institute for Psycholinguistics Lux17
-                        Service Provider Linguistic Services</mdui:Keywords>
-                    <mdui:Keywords xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Lux17
-                        Service Provider Taalkundige Services</mdui:Keywords>
-                    <mdui:Logo height="90" width="90"
-                        >https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
-                    <mdui:PrivacyStatementURL xml:lang="en"
-                        >https://lux17.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek tweede Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider for Linguistic Services aimed at researchers</mdui:Description>
+                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek tweede Service Provider voor Taalkundige Services gericht op onderzoekers</mdui:Description>
+                    <mdui:Keywords xml:lang="en">Max Planck Institute for Psycholinguistics Lux17 Service Provider Linguistic Services</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Lux17 Service Provider Taalkundige Services</mdui:Keywords>
+                    <mdui:Logo height="90" width="90">https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://lux17.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
                     <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
+                               NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                               Name="http://macedir.org/entity-category">
                         <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
                     </Attribute>
                 </EntityAttributes>
                 <!-- end : required for terena CoC -->
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://lux17.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://lux17.mpi.nl/Shibboleth.sso/DS"/>
-            </Extensions>
-            <KeyDescriptor>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           Location="http://lux17.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           Location="https://lux17.mpi.nl/Shibboleth.sso/DS"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIFszCCBJugAwIBAgIHFy/fQCmDdDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJERTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1QRyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xNDAyMjgxMDE1MTNaFw0xOTAyMjcxMDE1MTNaMIGiMQswCQYDVQQGEwJOTDETMBEGA1UECBMKR2VsZGVybGFuZDERMA8GA1UEBxMITmlqbWVnZW4xIDAeBgNVBAoTF01heC1QbGFuY2stR2VzZWxsc2NoYWZ0MTIwMAYDVQQLEylNYXgtUGxhbmNrLUluc3RpdHV0IGZ1ZXIgUHN5Y2hvbGluZ3Vpc3RpazEVMBMGA1UEAxMMbHV4MTcubXBpLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsJhlBpssTOOtNvBbnzE7VWsQfaOALrwBcSNZbH928rPC75slLQpYTFeiHFhZ0ua3P7HzrHG/L4xxIYbmxBik2wI10xDQsa+6lfOIOhttOTBoeciMni6eesRtPL1sVoBit6IHpthmL9+o0/t/erB+JOwAKnY76eqCEO1Vx7gepyYAJEvXsIStPVQDhOGilTNlaRMykx89op97oQEwD1k/9sm9aGoUvVOiEuMVVfvRteboaJcC/MRNWQtRrN3lw9u3J77We5HTNcMESTLe7cTA7zY10pV1L4SwpraLaWtntQ7jtvgnmrCQF4UEjNuoyGdFqK1Cp0OU93oVsLCRJfNe/wIDAQABo4ICLzCCAiswOQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEwEQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYEFDo9I15dgi4VQw2gGDI0mzvjmtVrMB8GA1UdIwQYMBaAFALWHm4Jq79YZacKPEgzYdHOfcNbMDQGA1UdEQQtMCuCDGx1eDE3Lm1waS5ubIEbdG9iaWFzLnZhbnZhbGtlbmhvZWZAbXBpLm5sMHcGA1UdHwRwMG4wNaAzoDGGL2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDCBxwYIKwYBBQUHAQEEgbowgbcwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDA/BggrBgEFBQcwAoYzaHR0cDovL2NkcDEucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAMkKEc7OA0faJhU0gBJPc6BOb069aYUKYRWY0wfaLdGh/thMzdJQRC8ZYMN3BmqHUJukCcSPgxNKpd3KsiqxWODNpv3w7cOEDfJkOpWijbw+qRMvF83Tg9Bm9TuH80hWEn0AI+ECaWw7Lz8sSaPdEb+Qe4532JcLfDLiFo44RdFA8dFZepvwoKIgscv6u9W6FYUcQPEo9x0SmXMbC1Z8TEwXbICB/jp6w163B9zZ62o75gr0SJdlQvp62tUUynz9p6HP8Qss2Ic1hyVjgSqzS3mcbbQvYOKWoQnWDKoZ0I5VTsP3pbrL4QItIYFUWnGAtIjYcIIj3qFP/fJDyuZx9sA=</ds:X509Certificate>
+                        <ds:X509Certificate>
+    MIIDaDCCAlACCQD2mDCAJYMG3jANBgkqhkiG9w0BAQUFADB2MQswCQYDVQQGEwJO
+    TDEMMAoGA1UECBMDR0xEMREwDwYDVQQHEwhOaWptZWdlbjEPMA0GA1UEChMGTVBJ
+    LVBMMRUwEwYDVQQDEwxsdXgxNy5tcGkubmwxHjAcBgkqhkiG9w0BCQEWD2xhdGFk
+    bWluQG1waS5ubDAeFw0xNDA1MDIxMTI2MDZaFw0xOTA1MDExMTI2MDZaMHYxCzAJ
+    BgNVBAYTAk5MMQwwCgYDVQQIEwNHTEQxETAPBgNVBAcTCE5pam1lZ2VuMQ8wDQYD
+    VQQKEwZNUEktUEwxFTATBgNVBAMTDGx1eDE3Lm1waS5ubDEeMBwGCSqGSIb3DQEJ
+    ARYPbGF0YWRtaW5AbXBpLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+    AQEA3QaSP0LJ0mVZZIdEh7zFJW8lnkVGQFuueAiDfVVvGtGvJ5iz7CRoyrdTQDco
+    oJjQDFub/uU6v0i+saVgI+LuzUlq28hrKF5hIjhWCLMRgYZzsnArcGK3etcChsNE
+    OPfWNCOCGi90sIqNmJcVRoDw36tLiHXmIkhcy4ZE06SYXvT+qAwo4h30Z/IH2de/
+    QlYEpkqF131p2lJGWx1Bi5l7IMeZtlwIzbJn08htAT/T8h6g9XvDfmQxS4xuiXGr
+    uRwVhTTkTP9OsdrXkktJEkSE2p+qP0tYekb+ZPd4LzlSjnDWf3V1T/DrbL071eiC
+    rx2iDW3n5Wy7so0iwmU5nr9QhwIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAFSrqi
+    HOMohDd4JXB3rjX8npCSTTeam84LTI1Twd8GXOmDQ8izcwsfUIILusEqd+66V/kh
+    iwnBgmrwgw0CVEZjgwkbVdZH68RGO4i6n5hZwmzr5jx4yNkfLZ5uwfHLIkqgJjj0
+    DvsA6Saom/5BD6dln6TuQ9cwFu+9pOxaWjfEeD2Rm5HFP+VF9GPxM19Gs6xcYi2L
+    GlEfBQvH/6vp65r3ciw760KPeO1ITxaIfqX5fOxOaA0NLOIGLjX0G11vf/i3n1OQ
+    MZTR7RMV+bjZiLNoPOJ/Ezz5lr+k0V12yVJ35J2J6TIz6lcB9M1tCFDY7tS89nYf
+    HFhkY9jzkGrcHMME</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </KeyDescriptor>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
+            </md:KeyDescriptor>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
             <!--
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
             -->
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/POST"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
             <!-- start : required for terena CoC -->
-            <AttributeConsumingService index="1">
-                <ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics second Service
-                    Provider</ServiceName>
-                <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics second
-                    Service Provider for Linguistic Services aimed at
-                    researchers</ServiceDescription>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics second Service Provider for Linguistic Services aimed at researchers</md:ServiceDescription>
                 <!-- SAML1 -->
-                <RequestedAttribute FriendlyName="eduPersonPrincipalName"
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
                 <!-- SAML2 -->
-                <RequestedAttribute FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-            </AttributeConsumingService>
-            <!-- end : required for terena CoC -->
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Max Planck Institute for
-                Psycholinguistics</OrganizationDisplayName>
-            <OrganizationURL xml:lang="en">http://www.mpi.nl</OrganizationURL>
-        </Organization>
-        <ContactPerson contactType="technical">
-            <SurName>Technical Support</SurName>
-            <EmailAddress>latadmin@mpi.nl</EmailAddress>
-        </ContactPerson>
-    </EntityDescriptor>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </md:AttributeConsumingService>
+            <!-- end : required for terena CoC -->    
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">MPI</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="technical">
+            <md:SurName>Technical Support</md:SurName>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 
     <!-- MPI catalog.clarin.eu (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.catalog.clarin.eu">
@@ -1044,114 +1027,99 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
     </EntityDescriptor>
 
     <!-- MPI corpus1.mpi.nl (via CLARIN) -->
-    <EntityDescriptor entityID="https://sp.corpus1.mpi.nl">
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <Extensions>
+    <md:EntityDescriptor entityID="https://sp.corpus1.mpi.nl" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            <md:Extensions>
                 <!-- start : required for terena CoC -->
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics
-                        Service Provider</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek
-                        Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics
-                        Corpus1 Service Provider for Linguistic Services aimed at
-                        researchers</mdui:Description>
-                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek
-                        Corpus1 Service Provider voor Taalkundige Services gericht op
-                        onderzoekers</mdui:Description>
-                    <mdui:Keywords xml:lang="en">Max Planck Instituut voor Psycholinguistiek Corpus1
-                        Service Provider Taalkundige Services</mdui:Keywords>
-                    <mdui:Keywords xml:lang="nl">Max Planck Institute for Psycholinguistics Corpus1
-                        Service Provider Linguistic Services</mdui:Keywords>
-                    <mdui:Logo height="194" width="189"
-                        >https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
-                    <mdui:PrivacyStatementURL xml:lang="en"
-                        >http://corpus1.mpi.nl/IMDI/info/privacy_statement.html</mdui:PrivacyStatementURL>
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1 Service Provider for Linguistic Services aimed at researchers</mdui:Description>
+                    <mdui:Description xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider voor Taalkundige Services gericht op onderzoekers</mdui:Description>
+                    <mdui:Keywords xml:lang="en">Max Planck Instituut voor Psycholinguistiek Corpus1 Service Provider Taalkundige Services</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">Max Planck Institute for Psycholinguistics Corpus1 Service Provider Linguistic Services</mdui:Keywords>
+                    <mdui:Logo height="194" width="189">https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
+                    <mdui:PrivacyStatementURL xml:lang="en">http://corpus1.mpi.nl/IMDI/info/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <EntityAttributes xmlns="urn:oasis:names:tc:SAML:metadata:attribute">
                     <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
+                                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                   Name="http://macedir.org/entity-category">
                         <AttributeValue>http://www.edugain.org/dataprotection/coc-eu-01-draft</AttributeValue>
                     </Attribute>
                 </EntityAttributes>
                 <!-- end : required for terena CoC -->
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
-            </Extensions>
-            <KeyDescriptor>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                               index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                               Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                               index="2" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                               Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIFxTCCBK2gAwIBAgIHFy/hnqc8wTANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJERTEgMB4GA1UEChMXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxDzANBgNVBAMTBk1QRyBDQTEcMBoGCSqGSIb3DQEJARYNbXBnLWNhQG1wZy5kZTAeFw0xNDAyMjgxMDI1MThaFw0xOTAyMjcxMDI1MThaMIGkMQswCQYDVQQGEwJOTDETMBEGA1UECBMKR2VsZGVybGFuZDERMA8GA1UEBxMITmlqbWVnZW4xIDAeBgNVBAoTF01heC1QbGFuY2stR2VzZWxsc2NoYWZ0MTIwMAYDVQQLEylNYXgtUGxhbmNrLUluc3RpdHV0IGZ1ZXIgUHN5Y2hvbGluZ3Vpc3RpazEXMBUGA1UEAxMOY29ycHVzMS5tcGkubmwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGbPWbCx1FfjX9sh831NEW6MHNVSd9DElQH+1eAqevdt5g6sLCK4HTsigUkl94MdiaLzDwVngYoJ/QwycncE0bFFxgH0YHs8URXAOfkO9RmKy4x6TkuYElF8AmBnnEhoF58O1b/0DG8TdSpmWsMBrw+lyBgV++v15+WjuHn4DdXbG3AaaUMNYWPSk4fIvjPX19U9ys0euYcKa/kTU8nFuOJzVyWmUyNWjcgwImszfwwKaumIGDHGKSJ9eME/idNczuUhihY/kgU30+x4yfQ0PPJ6y1YLd+E2xAOmbjEbBnytkbRPVxHAPqw0py80meld2s70Cxxklj739+oP+++PwhAgMBAAGjggI/MIICOzA5BgNVHSAEMjAwMBEGDysGAQQBga0hgiwBAQQDATARBg8rBgEEAYGtIYIsAgEEAwEwCAYGZ4EMAQICMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUE8+HM0pUcvXN4uBiDV/q2xwu2O8wHwYDVR0jBBgwFoAUAtYebgmrv1hlpwo8SDNh0c59w1swRAYDVR0RBD0wO4IOY29ycHVzMS5tcGkubmyCDGx1eDA3Lm1waS5ubIEbdG9iaWFzLnZhbnZhbGtlbmhvZWZAbXBpLm5sMHcGA1UdHwRwMG4wNaAzoDGGL2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvbXBnLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMDWgM6Axhi9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY3JsL2NhY3JsLmNybDCBxwYIKwYBBQUHAQEEgbowgbcwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDA/BggrBgEFBQcwAoYzaHR0cDovL2NkcDEucGNhLmRmbi5kZS9tcGctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MD8GCCsGAQUFBzAChjNodHRwOi8vY2RwMi5wY2EuZGZuLmRlL21wZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAAGH5IPCi3tfYwo+CN357NdkGav1KQT2T0sjZ2chg//8SNucof42LXWvMlRIaRXjFP2bTW8sPt3hNwPyVLLAUFE/ogRz955Ya4Fbx/0bS1XZSCCneQ+pP+gnfad0AA3PJ2fDb/LUQ43q8xu8B1tm9GyTz6sE2mjUc0GOYUp4wvC/Hu3Wr1/80KbebBX5QxQPg9CVqXaz8yECpZwrTJsa3d+pY8WVA6Fr/0vQmp9LyYl9II3xrP5KMkLFWfusAqfDQbO+l0q44mGImEee3G4Wkg7VAcwDgKBaLHbuhlrBzMoxQBZGyW4eOToiuysyE37dSKtUgCs4vDN4S4EWz90Y6xY=</ds:X509Certificate>
+                        <ds:X509Certificate>
+    MIIDbDCCAlQCCQDcydJCAWzKeDANBgkqhkiG9w0BAQUFADB4MQswCQYDVQQGEwJO
+    TDEMMAoGA1UECBMDR0xEMREwDwYDVQQHEwhOaWptZWdlbjEPMA0GA1UEChMGTVBJ
+    LVBMMRcwFQYDVQQDEw5jb3JwdXMxLm1waS5ubDEeMBwGCSqGSIb3DQEJARYPbGF0
+    YWRtaW5AbXBpLm5sMB4XDTE0MDUwMjExMjkwNVoXDTE5MDUwMTExMjkwNVoweDEL
+    MAkGA1UEBhMCTkwxDDAKBgNVBAgTA0dMRDERMA8GA1UEBxMITmlqbWVnZW4xDzAN
+    BgNVBAoTBk1QSS1QTDEXMBUGA1UEAxMOY29ycHVzMS5tcGkubmwxHjAcBgkqhkiG
+    9w0BCQEWD2xhdGFkbWluQG1waS5ubDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+    AQoCggEBAMFrApun/KXB9YtFiT49PHz7uV9EoVmrFsCBNqVWYhM+msq2dkM7rNVe
+    eZdy2hHID72ILMeqeXKX+hFQPyX18eN4L6lfJzzJJI2HGdIuGPyKZXCsVrCqnIWo
+    VPRi5dnTlCpCEPhebt05L9TMQJrLWue2qDhhdwkaYrVfm+tsYGK9yiy3Gbsoa10L
+    kEpd2oJZLDGHXSZJ6GL4oUMbQ+Z9bIjCelQWC4tU/u6qFGIzyoabaJbAlnFAxFSq
+    DIQ9+27JObXMnVH/6iK0mhHTooB72Gd0LQHVHGiCrFyxmbhMp7tIX0vU3Qn4/U8F
+    kt/Kep3+Wam/1h1NmmOJzTux2NuRurcCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEA
+    YPPRnb1/92C/Si/V5I15TfFSTdOeMcVHQ0DY0ohUw8B4fEbr9htjZoW7Umyco5pF
+    kf+2Jm0GRVEJKjBxFEsbNbY8vusnP25u88vJa4Qy3JJZbsYGcPZiFOKffZWg/xqW
+    t5F3i+akH5ihUn910/5l85SDUnDS1VvHVdOGwsedRNW4Yi9eEWjiEGQwjlhH0sWh
+    uxjCIgYajcptpsZ8N8g+bR7ysVk61E5tcmScA5Pnu1fwu6+76mTF6gZO57jzWK93
+    FlSHA6c7bCPMo+r4EZVccHBdrTRe6ZdD+OSOuEV4i0iI7IONOE1/ClWKUyueTsA/
+    vKRir2Cb6A/NaScKNHBBhg==</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </KeyDescriptor>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
+            </md:KeyDescriptor>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
             <!--
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
             -->
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/POST"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
             <!-- start : required for terena CoC -->
-            <AttributeConsumingService index="1">
-                <ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics Service
-                    Provider</ServiceName>
-                <ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1
-                    Service Provider.</ServiceDescription>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics Service Provider</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1 Service Provider.</md:ServiceDescription>
                 <!-- SAML1 -->
-                <RequestedAttribute FriendlyName="eduPersonPrincipalName"
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
-                <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-            </AttributeConsumingService>
-            <!-- end : required for terena CoC -->
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="en">MPI</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Max Planck Institute for
-                Psycholinguistisc</OrganizationDisplayName>
-            <OrganizationURL xml:lang="en">http://www.mpi.nl</OrganizationURL>
-        </Organization>
-        <ContactPerson contactType="technical">
-            <SurName>Technical Support</SurName>
-            <EmailAddress>latadmin@mpi.nl</EmailAddress>
-        </ContactPerson>
-    </EntityDescriptor>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>            
+            </md:AttributeConsumingService>
+            <!-- end : required for terena CoC -->    
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">MPI</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistisc</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="technical">
+            <md:SurName>Technical Support</md:SurName>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 
     <!-- INL (via CLARIN) -->
     <EntityDescriptor entityID="https://sp.dev.clarin.inl.nl/shibboleth">
