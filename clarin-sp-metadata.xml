@@ -3185,7 +3185,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
 
     <!-- Hamburger Zentrum für Sprachkorpora (HZSK)-->
     <EntityDescriptor ID="_a3c7e7cd0142650256d6d9582b9703a2633aac22"
-        entityID="http://corpora.uni-hamburg.de">
+        entityID="http://www.corpora.uni-hamburg.de">
 
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -3202,7 +3202,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             </Extensions>
             <KeyDescriptor use="signing">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>http://www.corpora.uni-hamburg.de</ds:KeyName>
                     <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
@@ -3230,7 +3230,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             </KeyDescriptor>
             <KeyDescriptor use="encryption">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>http://www.corpora.uni-hamburg.de</ds:KeyName>
                     <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
