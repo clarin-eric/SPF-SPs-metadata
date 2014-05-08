@@ -1791,37 +1791,37 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
         <ds:X509Data>
           <ds:X509SubjectName>emailAddress=servicedesk@knaw.nl,CN=www.meertens.knaw.nl,OU=I&amp;A,O=KNAW,L=Amsterdam,ST=NH,C=NL</ds:X509SubjectName>
           <ds:X509Certificate>MIIF8TCCA9mgAwIBAgIJAPS1Y07BXsRDMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYD
-		              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
+                              VQQGEwJOTDELMAkGA1UECAwCTkgxEjAQBgNVBAcMCUFtc3RlcmRhbTENMAsGA1UE
+                              CgwES05BVzEMMAoGA1UECwwDSSZBMR0wGwYDVQQDDBR3d3cubWVlcnRlbnMua25h
+                              dy5ubDEiMCAGCSqGSIb3DQEJARYTc2VydmljZWRlc2tAa25hdy5ubDAeFw0xNDA1
+                              MDYxMDQxMzJaFw0yNDA1MDMxMDQxMzJaMIGOMQswCQYDVQQGEwJOTDELMAkGA1UE
+                              CAwCTkgxEjAQBgNVBAcMCUFtc3RlcmRhbTENMAsGA1UECgwES05BVzEMMAoGA1UE
+                              CwwDSSZBMR0wGwYDVQQDDBR3d3cubWVlcnRlbnMua25hdy5ubDEiMCAGCSqGSIb3
+                              DQEJARYTc2VydmljZWRlc2tAa25hdy5ubDCCAiIwDQYJKoZIhvcNAQEBBQADggIP
+                              ADCCAgoCggIBAN0PojgkCqamdv1KflImeJwSTai6yEQv1lVchZsKhtw/eNQrGgFz
+                              2iC2p/hpQXoa32W76jXYfG9gK59N2Y22HQcjbw4azfMRyrorDXI9ruAjq9KY0l+q
+                              PibNODH4lXUEcJtQ5tgckCZnHtHJHGMrqIUZmgMDWI91GhmKb9qI5OucuHi4dFw0
+                              9gvWy2MW/wVejBAuWimQhlDvIzLNF3nesS/mawyXAAIgnyzT5sMEcTDifKuuF/Dq
+                              DyrIrlbFcUR9063SGtsbi32Qzk43VXZobD1GiMaah/jtlkZvvHx7x9HRXkjsROsy
+                              T0fqPSGsuH1USF4Ll0ctfmjKZdSU1DXoYefnFGah2+vu5x8+aSHyeIAABoNLzaPj
+                              NMI+Dt99IuLfSiRKi51HBcgI+uNScJuir/1qxjqxiAzJmXNiKOhPf2ATgsYWeP40
+                              Q7Q0AFDIdvFMaRBy+apmHcoE6C8DEnf2ejHaeZBm8T50z/2x1yvGd2EvLKB4Vonq
+                              CH/tdiPDRTEgcNjUMD+ZKDsZS3RhqaXJwWyRms0hHEnLPKsLK0JU9pAVEd15nGyg
+                              ziL7QpdNpD08UYCjhIoWR/byMPAvU794n/SAYorLs7DpKEinwm4lYeMo1JglhHLa
+                              9KFuOBMy5iyQyCijxqSjWfzTgmUf0V0SJMY4283ctufsccPiPbBymSQjAgMBAAGj
+                              UDBOMB0GA1UdDgQWBBTvJnIYoaUYRuUSgD1dejg/rypgajAfBgNVHSMEGDAWgBTv
+                              JnIYoaUYRuUSgD1dejg/rypgajAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUA
+                              A4ICAQC7ki6eHoRyFUVoPK+A9aDfarOnLqujQDk8s775ZcNeSZwza47MgX4HVtxB
+                              bfRO4HRTp0huXVbfldV60Fo/OjoQb4hS7bZjTq0m2zy1XoEmlM9rykMS8UnUsVzr
+                              BfC4Tq3mF3hBkiTSYkp5EekBr7PVkQK8G3XW8Jfbaf9AMbgOnEiSztHR8VKhgu2H
+                              6cxEj6K2il1ge/kbvYJWoxHLAhSkxOhnMs225COGoQt8Gb6pWXIIMo5QkVuZwlQE
+                              AKDXeuthjxa/DtxDN3SYw5MMw9qZN1RPbkwEkJpRzHceq7hQbmL0KlwPKXqqKT90
+                              o/+9ZTdR/6xptba73E1YtG1Iq5pQBxK6SU3HPLpCBcei6XGdi7QdDFPFfrPLg7RK
+                              KpxjeDWUTpopH0JEVvSgX0Tn9pVFVq5F4cial+yOpwDxZvAOwjJlWotoqnyVsDOn
+                              uESSSj1tVqW+2zqLTdzOpWaP0kWlu7wrL5PzqWhaPVChL+KYs40TNd2XK1rlOtNe
+                              WWcZ8uJ+ftZDNEGNvaTnRZLhxGxE9OWThvwL0iyOw8vEcWHm2JNRy3VkSvguFDcM
+                              MXWm4sBAe8iEXXkAxrflHdBubei1FTexa+Kl9lQ/ICrpmT+V1Jyi4DrdvS0+2ijb
+                              SF7hTs3mZvR2FPh5VJ0vBUC7QOXB5RBcP6vy4H25WiovevzKOg==
 	  </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
@@ -1849,12 +1849,6 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="5"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="7"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="8"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="9"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/ECP" index="10"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/POST" index="11"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="12"/>
     <md:AttributeConsumingService index="1">
       <md:ServiceName xml:lang="en">https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</md:ServiceName>
       <md:RequestedAttribute Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
