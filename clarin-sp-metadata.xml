@@ -1536,88 +1536,40 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                     Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/Login" index="1"
                 />
             </Extensions>
-            <KeyDescriptor use="signing">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>weblicht.sfs.uni-tuebingen.de</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>emailAddress=eh@sfs.uni-tuebingen.de,CN=weblicht.sfs.uni-tuebingen.de,OU=WebLicht,OU=DSPIN,OU=Seminar
-                            fuer Sprachwissenschaft,O=Universitaet
-                            Tuebingen,C=DE</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIFpzCCBI+gAwIBAgIED+vXfzANBgkqhkiG9w0BAQUFADB3MQswCQYDVQQGEwJE
-                            RTEfMB0GA1UEChMWVW5pdmVyc2l0YWV0IFR1ZWJpbmdlbjEcMBoGA1UEAxMTR2xv
-                            YmFsLVVOSVRVRS1DQSAwMTEpMCcGCSqGSIb3DQEJARYadW5pdHVlLWNhQHVuaS10
-                            dWViaW5nZW4uZGUwHhcNMTAwNDE5MTMyNjA3WhcNMTUwNDE4MTMyNjA3WjCByzEL
-                            MAkGA1UEBhMCREUxHzAdBgNVBAoTFlVuaXZlcnNpdGFldCBUdWViaW5nZW4xKDAm
-                            BgNVBAsTH1NlbWluYXIgZnVlciBTcHJhY2h3aXNzZW5zY2hhZnQxDjAMBgNVBAsT
-                            BURTUElOMREwDwYDVQQLEwhXZWJMaWNodDEmMCQGA1UEAxMdd2VibGljaHQuc2Zz
-                            LnVuaS10dWViaW5nZW4uZGUxJjAkBgkqhkiG9w0BCQEWF2VoQHNmcy51bmktdHVl
-                            YmluZ2VuLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnJJ+lISL
-                            liCGHMdtC5EKdkSPkZIEfGf6u0I2YT+u/bX37XL4yOvmMxJxRLQM4oEvnE67n8k8
-                            4qe06B8xErFh3KqgC5Q5keUlQmXJu4wvABnk9AuxlwJKuGXI3PetBYfhid10A7Iu
-                            3Ki0s3j7+7yYTG6xXJt4qrE7rV/v79zBQcoKOwu1AMdfV9q8GRShEXCQ82P4IITT
-                            Q4z513p1e0mscDdBIunH6aThNCJA9rUBwEVX90HX5KHaOPSksHISylhjl/++XJFy
-                            /0wBpiZ4+7pN2S/go9J8A153NZSPhF2M5deyWgjT/K2LSudLnegIlRFTq1Kv89eE
-                            bF/ZaHuNvakbqQIDAQABo4IB5DCCAeAwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAw
-                            HQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBRmWkIAb3Vr
-                            zkTtELxvwSx4nngcUDAfBgNVHSMEGDAWgBSwwbtoNX/i1kGcGnGv4PxBNM3DqDAi
-                            BgNVHREEGzAZgRdlaEBzZnMudW5pLXR1ZWJpbmdlbi5kZTCBkwYDVR0fBIGLMIGI
-                            MEKgQKA+hjxodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2NsYXNzaWMtdW5pdHVlLWNh
-                            L3B1Yi9jcmwvZ19jYWNybC5jcmwwQqBAoD6GPGh0dHA6Ly9jZHAyLnBjYS5kZm4u
-                            ZGUvY2xhc3NpYy11bml0dWUtY2EvcHViL2NybC9nX2NhY3JsLmNybDCBrAYIKwYB
-                            BQUHAQEEgZ8wgZwwTAYIKwYBBQUHMAKGQGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUv
-                            Y2xhc3NpYy11bml0dWUtY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwTAYIKwYB
-                            BQUHMAKGQGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0dWUtY2Ev
-                            cHViL2NhY2VydC9nX2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAGxJyokA
-                            uUwUFzvszzutQNicSlWWHmrB6g63cRkbgBMsNGFwIyhrizCJtPYTDAbJ1lG2PrYj
-                            YpbhHR4892JIAm1IkyR4sJvAKXgnzNHtTy1ZTmlP7BjekPb6pcSRWAra84A+bOWY
-                            +Q3KRITfEcUfsFw/PWYO8qwDurTWGBK3ReWkwLJ9y89XZDXQZt4A9RQnnBvnC7RU
-                            kLkAmxRV27neEuG8eh0tuFXStHuLbClnNnHaAt1c8m2awjWCWShG5cTR99muSJTc
-                            NGifdwt0qWax50ASplgOtT/GZAw2E7HEEgbDA+6JcKpVlh+UMnk2JN+nkkKUjgnD
-                            wN2yHSwHNNMiiGY= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
-            <KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>weblicht.sfs.uni-tuebingen.de</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>emailAddress=eh@sfs.uni-tuebingen.de,CN=weblicht.sfs.uni-tuebingen.de,OU=WebLicht,OU=DSPIN,OU=Seminar
-                            fuer Sprachwissenschaft,O=Universitaet
-                            Tuebingen,C=DE</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIFpzCCBI+gAwIBAgIED+vXfzANBgkqhkiG9w0BAQUFADB3MQswCQYDVQQGEwJE
-                            RTEfMB0GA1UEChMWVW5pdmVyc2l0YWV0IFR1ZWJpbmdlbjEcMBoGA1UEAxMTR2xv
-                            YmFsLVVOSVRVRS1DQSAwMTEpMCcGCSqGSIb3DQEJARYadW5pdHVlLWNhQHVuaS10
-                            dWViaW5nZW4uZGUwHhcNMTAwNDE5MTMyNjA3WhcNMTUwNDE4MTMyNjA3WjCByzEL
-                            MAkGA1UEBhMCREUxHzAdBgNVBAoTFlVuaXZlcnNpdGFldCBUdWViaW5nZW4xKDAm
-                            BgNVBAsTH1NlbWluYXIgZnVlciBTcHJhY2h3aXNzZW5zY2hhZnQxDjAMBgNVBAsT
-                            BURTUElOMREwDwYDVQQLEwhXZWJMaWNodDEmMCQGA1UEAxMdd2VibGljaHQuc2Zz
-                            LnVuaS10dWViaW5nZW4uZGUxJjAkBgkqhkiG9w0BCQEWF2VoQHNmcy51bmktdHVl
-                            YmluZ2VuLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnJJ+lISL
-                            liCGHMdtC5EKdkSPkZIEfGf6u0I2YT+u/bX37XL4yOvmMxJxRLQM4oEvnE67n8k8
-                            4qe06B8xErFh3KqgC5Q5keUlQmXJu4wvABnk9AuxlwJKuGXI3PetBYfhid10A7Iu
-                            3Ki0s3j7+7yYTG6xXJt4qrE7rV/v79zBQcoKOwu1AMdfV9q8GRShEXCQ82P4IITT
-                            Q4z513p1e0mscDdBIunH6aThNCJA9rUBwEVX90HX5KHaOPSksHISylhjl/++XJFy
-                            /0wBpiZ4+7pN2S/go9J8A153NZSPhF2M5deyWgjT/K2LSudLnegIlRFTq1Kv89eE
-                            bF/ZaHuNvakbqQIDAQABo4IB5DCCAeAwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAw
-                            HQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBRmWkIAb3Vr
-                            zkTtELxvwSx4nngcUDAfBgNVHSMEGDAWgBSwwbtoNX/i1kGcGnGv4PxBNM3DqDAi
-                            BgNVHREEGzAZgRdlaEBzZnMudW5pLXR1ZWJpbmdlbi5kZTCBkwYDVR0fBIGLMIGI
-                            MEKgQKA+hjxodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2NsYXNzaWMtdW5pdHVlLWNh
-                            L3B1Yi9jcmwvZ19jYWNybC5jcmwwQqBAoD6GPGh0dHA6Ly9jZHAyLnBjYS5kZm4u
-                            ZGUvY2xhc3NpYy11bml0dWUtY2EvcHViL2NybC9nX2NhY3JsLmNybDCBrAYIKwYB
-                            BQUHAQEEgZ8wgZwwTAYIKwYBBQUHMAKGQGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUv
-                            Y2xhc3NpYy11bml0dWUtY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwTAYIKwYB
-                            BQUHMAKGQGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0dWUtY2Ev
-                            cHViL2NhY2VydC9nX2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAGxJyokA
-                            uUwUFzvszzutQNicSlWWHmrB6g63cRkbgBMsNGFwIyhrizCJtPYTDAbJ1lG2PrYj
-                            YpbhHR4892JIAm1IkyR4sJvAKXgnzNHtTy1ZTmlP7BjekPb6pcSRWAra84A+bOWY
-                            +Q3KRITfEcUfsFw/PWYO8qwDurTWGBK3ReWkwLJ9y89XZDXQZt4A9RQnnBvnC7RU
-                            kLkAmxRV27neEuG8eh0tuFXStHuLbClnNnHaAt1c8m2awjWCWShG5cTR99muSJTc
-                            NGifdwt0qWax50ASplgOtT/GZAw2E7HEEgbDA+6JcKpVlh+UMnk2JN+nkkKUjgnD
-                            wN2yHSwHNNMiiGY= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
+            <KeyDescriptor><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:KeyName>weblicht.sfs.uni-tuebingen.de</ds:KeyName><ds:X509Data><ds:X509SubjectName>emailAddress=wladmin@sfs.uni-tuebingen.de,CN=weblicht.sfs.uni-tuebingen.de,OU=SfS,O=Universitaet Tuebingen,L=Tuebingen,ST=Baden-Wuerttemberg,C=DE</ds:X509SubjectName><ds:X509Certificate>MIIGKzCCBROgAwIBAgIHF3iUXPRQADANBgkqhkiG9w0BAQUFADB3MQswCQYDVQQG
+EwJERTEfMB0GA1UEChMWVW5pdmVyc2l0YWV0IFR1ZWJpbmdlbjEcMBoGA1UEAxMT
+R2xvYmFsLVVOSVRVRS1DQSAwMTEpMCcGCSqGSIb3DQEJARYadW5pdHVlLWNhQHVu
+aS10dWViaW5nZW4uZGUwHhcNMTQwNDI0MTM1MTA4WhcNMTkwMjA0MDAwMDAwWjCB
+wjELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzESMBAG
+A1UEBxMJVHVlYmluZ2VuMR8wHQYDVQQKExZVbml2ZXJzaXRhZXQgVHVlYmluZ2Vu
+MQwwCgYDVQQLEwNTZlMxJjAkBgNVBAMTHXdlYmxpY2h0LnNmcy51bmktdHVlYmlu
+Z2VuLmRlMSswKQYJKoZIhvcNAQkBFhx3bGFkbWluQHNmcy51bmktdHVlYmluZ2Vu
+LmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2KsTGSUCY/epaymY
+W3kqRl84RcNArc5w05x0rEi1qQUpAL1V7K7rJ/p5ZnjxqEhXEqYZXWh0ebkYWgzZ
+jr1Bs3mV1XVJ/9HrwRSFcNdyyFPmmP3Glsaculyn3zIQ4UcPyLk/kRlg37rx5nKj
+m3DZdrk345mjHO6MknFMSuh2TosI0tNhaa4rrRMJTlcOVJpiVlAF/DSZgwPjI6Yl
+5aHKes43tkCx1LJxDRAz9i/DaW4HdYNcwW3A0qlkRKRZqqVwRCG3Z5b9qdSry6t0
+UmmXMLYAxaStHVBx8d3eYWURfMLbvnpGKwWl0XGZQcevA9SzWswdmF/3X7zAmVAQ
+4L2qUQIDAQABo4ICbjCCAmowOQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEw
+EQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQE
+AwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4EFgQU9cQi9vwBJfcH9+Ae
+ytdTniex90EwHwYDVR0jBBgwFoAUsMG7aDV/4tZBnBpxr+D8QTTNw6gwRgYDVR0R
+BD8wPYIdd2VibGljaHQuc2ZzLnVuaS10dWViaW5nZW4uZGWBHHdsYWRtaW5Ac2Zz
+LnVuaS10dWViaW5nZW4uZGUwgZMGA1UdHwSBizCBiDBCoECgPoY8aHR0cDovL2Nk
+cDEucGNhLmRmbi5kZS9jbGFzc2ljLXVuaXR1ZS1jYS9wdWIvY3JsL2dfY2Fjcmwu
+Y3JsMEKgQKA+hjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2NsYXNzaWMtdW5pdHVl
+LWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgeEGCCsGAQUFBwEBBIHUMIHRMDMGCCsG
+AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw
+TAYIKwYBBQUHMAKGQGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0
+dWUtY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwTAYIKwYBBQUHMAKGQGh0dHA6
+Ly9jZHAyLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0dWUtY2EvcHViL2NhY2VydC9n
+X2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAGZ9bLdCBVw1Txf0f59QvfPe
+Ic02a/QJieoXre844zW5ISZwp14vGy+yzk4BK1tSovtxwf/FHiC7Uoqi+T9cL7E5
+yBbP2Y6cBHJuxy4YyXLimJoO7NWBDW+MOQRN1HjI5KXTMhhzmI81iofZbBlZwCSe
+pUzeHCt4KF3LDrrvNy4YiziDuojh23MHEv8W1/aNhX4F0T+MvwO2dGxAbax7XgLL
+ndO3/u6io4gRQiXZrrAS+1ZXGybrr6gUBN6popli1bR148tWwZNzwe1NjbGBIA5a
+ydKuf18CBYHeixW6XzkCMEdcRTec/qVTn7stpLtuuC5TCblNKGDKmhx9Mec+1Jo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/SAML2/POST" index="1"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
