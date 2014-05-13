@@ -3137,7 +3137,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
 
     <!-- Hamburger Zentrum für Sprachkorpora (HZSK)-->
     <EntityDescriptor ID="_a3c7e7cd0142650256d6d9582b9703a2633aac22"
-        entityID="http://www.corpora.uni-hamburg.de">
+        entityID="http://corpora.uni-hamburg.de">
 
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -3154,7 +3154,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             </Extensions>
             <KeyDescriptor use="signing">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>http://www.corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
                     <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
@@ -3182,7 +3182,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             </KeyDescriptor>
             <KeyDescriptor use="encryption">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>http://www.corpora.uni-hamburg.de</ds:KeyName>
+                    <ds:KeyName>http://corpora.uni-hamburg.de</ds:KeyName>
                     <ds:KeyName>virt-fedora.multilingua.uni-hamburg.de</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=virt-fedora.multilingua.uni-hamburg.de</ds:X509SubjectName>
@@ -3239,8 +3239,57 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
                 Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/SAML/Artifact"
                 index="5"/>
         </SPSSODescriptor>
-
     </EntityDescriptor>
+	
+	<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_8599a4043cf9ca62c366fd77cc7c7b296a6ae9d3" entityID="https://sp.vs1.corpora.uni-hamburg.de/shibboleth">
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>sp.vs1.corpora.uni-hamburg.de</ds:KeyName>
+        <ds:KeyName>vs1.corpora.uni-hamburg.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=vs1.corpora.uni-hamburg.de</ds:X509SubjectName>
+          <ds:X509Certificate>MIIDNDCCAhygAwIBAgIJANuIbKBKwh2kMA0GCSqGSIb3DQEBBQUAMCUxIzAhBgNV
+			BAMTGnZzMS5jb3Jwb3JhLnVuaS1oYW1idXJnLmRlMB4XDTE0MDUwNzEwMTUxMFoX
+			DTI0MDUwNDEwMTUxMFowJTEjMCEGA1UEAxMadnMxLmNvcnBvcmEudW5pLWhhbWJ1
+			cmcuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDu+569Sk8uO4aX
+			4zcU6YwHbOgUW92ynGU8JbV0WqLIVRuUkwVBeKI0UCumsxjXE7ynFwv7YPXhAO4b
+			m425NMCmvG/xf8HxofD1+i1FqsjLgYa46C7LchDRTdYArBzf4ZqzlBWPmS+GVqKV
+			8KJZmH1ZY5NkQmq5FokV3bXesiULKPMSznY4RImqrWn8HEb2IjZwpaeAoFckR7kY
+			HUtUmvsreaWwRarPY9CTPzSFKqX5Jjtwt3/Xk6A72HM5qR7mOa/MdMshrTaS/+ML
+			yxW92FpT0Tb72/lFYs97jMpDvDNEJVl++xw5+7lPL9iqPgVKgLhZggLrXR4CYyt2
+			hNAbIStNAgMBAAGjZzBlMEQGA1UdEQQ9MDuCGnZzMS5jb3Jwb3JhLnVuaS1oYW1i
+			dXJnLmRlhh1zcC52czEuY29ycG9yYS51bmktaGFtYnVyZy5kZTAdBgNVHQ4EFgQU
+			V4XXOnZkJqO/CxOzgzCw5RFWih8wDQYJKoZIhvcNAQEFBQADggEBACKcSAQd2bO/
+			bZcS2wvGCENGebMueDwISTvvyGW3hUoA94K28T5WCr/WNPwDty3yBFvn/wboztZ0
+			6jEuhFQ1xo/7zMBdjHSkHFLs2kp0DIfzRgWBJUVpCCV9lkxO7rhN6abiAmonvu2+
+			gQcIJWAcCh//HW4fi7LPZ9DG8OjiK00DinEqm901uznyK0e/NziN/5ExP1d3onxi
+			k1oLIeAl0snOKGd1Cw2MfQYh7QaJdXpM2W3aG6UVLNbzjAvInTjMT6rVJIxxGSdE
+			00Ev3tKPZ6iDZDjawwChLxAlfAby3JLylUJ4Lg/bh8/fY0SUFHAYpS8+ZPvdO6iR
+			LPhJPdKT3mM=
+			</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/Artifact/SOAP" index="0"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML2/POST" index="0"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML2/Artifact" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML/POST" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://vs1.corpora.uni-hamburg.de/Shibboleth.sso/SAML/Artifact" index="5"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor>
 
     <!-- IMS, University of Stuttgart -->
     <EntityDescriptor ID="_2b11c64ae972d1db978cc09e6cdea4ac3ea2fb30"
