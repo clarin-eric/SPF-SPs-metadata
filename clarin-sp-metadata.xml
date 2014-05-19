@@ -2463,6 +2463,14 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+            
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>            
         </Extensions>
         
         <SPSSODescriptor
