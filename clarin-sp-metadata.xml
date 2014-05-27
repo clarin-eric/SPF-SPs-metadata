@@ -1711,6 +1711,7 @@ ydKuf18CBYHeixW6XzkCMEdcRTec/qVTn7stpLtuuC5TCblNKGDKmhx9Mec+1Jo=
     <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/POST"/>
     <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/NIM/Artifact"/>
     <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
@@ -3430,6 +3431,7 @@ pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C
             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SAML2/POST" index="1"/>
             <md:AssertionConsumerService
