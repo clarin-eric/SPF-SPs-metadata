@@ -4087,11 +4087,11 @@
           </ds:X509Data>
 	</ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarino.uib.no/feide/single-logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarino.uib.no/clarin/single-logout"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
       <md:AssertionConsumerService index="0" 
 				   Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
-				   Location="https://clarino.uib.no/feide/assertion-consumer"/>
+				   Location="https://clarino.uib.no/clarin/assertion-consumer"/>
     </md:SPSSODescriptor>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Paul</md:GivenName>
