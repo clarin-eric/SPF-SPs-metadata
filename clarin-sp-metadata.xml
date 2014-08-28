@@ -1215,11 +1215,22 @@
     <SPSSODescriptor
        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
-        <idpdisc:DiscoveryResponse
-           xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-           Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-           Location="https://portal.clarin.inl.nl/Shibboleth.sso/DS" index="1"/>
+    		   
+	    <!-- SAML Code of Conduct -->
+        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+        <mdui:DisplayName xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) - CLARIN services</mdui:DisplayName>
+		<mdui:DisplayName xml:lang="en"> Institute for Dutch Lexicology (INL) - CLARIN services</mdui:DisplayName>
+        <mdui:Description xml:lang="en"> Several projects attached to the CLARIN infrastructure</mdui:Description>
+		<mdui:Description xml:lang="nl"> INL diensten en projecten verbonden aan het CLARIN project</mdui:Description>
+        <mdui:InformationURL xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+        <!-- Einde CoC -->
+		   
       </Extensions>
+	  
+	  
       <KeyDescriptor>
         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
           <ds:X509Data>
