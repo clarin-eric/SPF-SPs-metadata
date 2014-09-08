@@ -2220,7 +2220,7 @@ Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU
   </md:EntityDescriptor>
 
 
-  <!--  RZG Garching centre registry -->
+  <!--  RZG Garching: Centre Registry -->
   <EntityDescriptor entityID="https://centerregistry-clarin.esc.rzg.mpg.de/shibboleth-sp">
     <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -2309,6 +2309,98 @@ Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
 				Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
 				index="6"/>
+    </SPSSODescriptor>
+  </EntityDescriptor>
+  
+  <!--  RZG Garching: Centre Registry (staging) -->
+  <EntityDescriptor entityID="https://centres-staging.clarin.eu:4430/shibboleth-sp">
+    <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+    </Extensions>
+    <SPSSODescriptor
+      protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <Extensions>
+        <init:RequestInitiator
+          xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+          Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+          Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/Login"/>
+      </Extensions>
+      <KeyDescriptor>
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:KeyName>centerregistry-clarin</ds:KeyName>
+          <ds:X509Data>
+            <ds:X509SubjectName>CN=centerregistry-clarin</ds:X509SubjectName>
+            <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAJuota9ITNc3MA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
+              BAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjAeFw0xMjA5MjAxNTAyNDdaFw0yMjA5
+              MTgxNTAyNDdaMCAxHjAcBgNVBAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjCCASIw
+              DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANBEv1ALXWSf467nGOdTfB0viTIy
+              c1vjvwf4Qhtg8n5bN3CL7nhJ6dBSlv/l5U0GcZqUI2h8nnIxdAqKGGV1cA45yESl
+              b7HT9FFcd0dFJ8BCCjZOe5ggu4NGdl+vzD6ymOYdJuk0uDUSCLvAHSdYX2ECXePZ
+              FlFCrBZKMNlvcImlJuTexkvVFDVIjvBy6p3qLLdJSSS/UBKGp14qrkVCXCSltPx5
+              9cyYLvjNudEfXea2wvM1luC+3NGnqesrByE1pItolteB2cesWFFmsCzWseqLK2vV
+              hzKby9CStLHmyV1WsZX7vErn/a3T8SCHKeIJM/O2Bw8MlgBqeYcE+ILxGVcCAwEA
+              AaNDMEEwIAYDVR0RBBkwF4IVY2VudGVycmVnaXN0cnktY2xhcmluMB0GA1UdDgQW
+              BBSheCRqJ2tbwkRLF3mdHOF2OQR44DANBgkqhkiG9w0BAQUFAAOCAQEAwyB6xS9o
+              RS3jXf67JKb+r5KYjxQW2UT2IZNArxueeHEFkkWtA0A4vhSI8iRgygEzX0ypK4Mj
+              VMRFyZ4F93X+9hz5Qgfskj6HCbIM7dpmwF1arwAqndU4Ia9l0IThf5tyysmwZC61
+              devhYYCpjhRqww8pUBTzWvpSJNK4QQtHHLHZfeRV+oOcOtyQFx/Y5rCMOhK44FMY
+              QJyElwE6v1cBMmQnsU4TxHZkNm1yfbJfO6XyJl9j3xKtHIzPsBMKOwklAxSrI1Fa
+              KHTuiDqi2iJaZ7qU2JRf5AK4COoyLCmI+VdG+qggNgHQFuGjHz0VZdjyfGCnYxq6
+              xe0qZuTLNHLOFw== </ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+        <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+        <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+        <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+        <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </KeyDescriptor>
+      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/Artifact/SOAP"
+        index="1"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/SOAP"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/Redirect"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/POST"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/Artifact"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/POST"
+        index="1"/>
+      <AssertionConsumerService
+        Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/POST-SimpleSign"
+        index="2"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/Artifact"
+        index="3"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/ECP"
+        index="4"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML/POST"
+        index="5"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+        Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML/Artifact"
+        index="6"/>
     </SPSSODescriptor>
   </EntityDescriptor>
 
