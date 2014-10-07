@@ -409,52 +409,50 @@
     </ContactPerson>
   </EntityDescriptor>
 
-  <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
-  <EntityDescriptor entityID="https://secure.huygens.knaw.nl">
-    <Extensions>
-      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-			Name="http://macedir.org/entity-category">
-          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-        </saml:Attribute>
-      </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
-		     WantAssertionsSigned="true">
-      <Extensions>
-        <!-- start : required for terena CoC -->
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="en">Huygens ING (KNAW) - CLARIN
-            services</mdui:DisplayName>
-          <mdui:Description xml:lang="en">Various services provided by Huygens ING in the
-            context of the CLARIN initiative.</mdui:Description>
-          <mdui:InformationURL xml:lang="nl"
-                               >http://www.huygens.knaw.nl</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en"
-                               >http://www.huygens.knaw.nl/?lang=en</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en"
-				    >http://www.huygens.knaw.nl/wp-content/uploads/2013/10/20140327-privacy-policy-HIRE2.pdf</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
-        <!-- end : required for terena CoC -->
-      </Extensions>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-				Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-				Location="https://test.secure.huygens.knaw.nl/saml2/acs" index="1"/>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="en">Huygens Instituut (KNAW)</OrganizationName>
-      <OrganizationDisplayName xml:lang="en">Huygens Instituut
-        (KNAW)</OrganizationDisplayName>
-      <OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="technical">
-      <GivenName>Support</GivenName>
-      <SurName>Huygens Instituut (KNAW)</SurName>
-      <EmailAddress>sso@huygens.knaw.nl</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+    <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
+    <EntityDescriptor entityID="https://secure.huygens.knaw.nl">
+        <Extensions>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
+        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAssertionsSigned="true">
+            <Extensions>
+                <!-- start : required for terena CoC -->
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+					<mdui:DisplayName xml:lang="en">Huygens ING (CLARIN services)</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Various services provided by Huygens ING in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:InformationURL xml:lang="nl">http://www.huygens.knaw.nl</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="nl">http://www.huygens.knaw.nl/privacy-policy/</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">http://www.huygens.knaw.nl/privacy-policy/?lang=en</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="16" width="16">https://www.huygens.knaw.nl/logo/HuygensING16x16.png</mdui:Logo>
+                    <mdui:Logo height="64" width="96">https://www.huygens.knaw.nl/logo/HuygensING64x96.png</mdui:Logo>
+                    <mdui:Logo height="64" width="150">https://www.huygens.knaw.nl/logo/HuygensING64x150.png</mdui:Logo>
+                </mdui:UIInfo>
+                <!-- end : required for terena CoC -->
+            </Extensions>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
+            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://test.secure.huygens.knaw.nl/saml2/acs" index="1"/>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="en">Huygens Instituut (KNAW)</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">Huygens Instituut (KNAW)</OrganizationDisplayName>
+            <OrganizationURL xml:lang="nl">http://www.huygens.knaw.nl</OrganizationURL>
+            <OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</OrganizationURL>
+        </Organization>
+        <ContactPerson contactType="technical">
+            <GivenName>Support</GivenName>
+            <SurName>Huygens Instituut (KNAW)</SurName>
+            <EmailAddress>sso@huygens.knaw.nl</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
   <!-- IDS clarin.ids-mannheim.de (via CLARIN) -->
   <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
