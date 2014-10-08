@@ -424,7 +424,7 @@
             <Extensions>
                 <!-- start : required for terena CoC -->
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-					<mdui:DisplayName xml:lang="en">Huygens ING (CLARIN services)</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">Huygens ING (CLARIN services)</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Various services provided by Huygens ING in the context of the CLARIN initiative.</mdui:Description>
                     <mdui:InformationURL xml:lang="nl">http://www.huygens.knaw.nl</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</mdui:InformationURL>
@@ -436,6 +436,67 @@
                 </mdui:UIInfo>
                 <!-- end : required for terena CoC -->
             </Extensions>
+            <KeyDescriptor use="signing">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=secure.huygens.knaw.nl,C=NL,ST=ZH,L=Den Haag,O=KNAW,OU=Huygens ING,emailAddress=sso@huygens.knaw.nl</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIJrDCCBZQCCQDDazlLOi5yzDANBgkqhkiG9w0BAQUFADCBlzELMAkGA1UEBhMC
+                        TkwxCzAJBgNVBAgMAlpIMREwDwYDVQQHDAhEZW4gSGFhZzENMAsGA1UECgwES05B
+                        VzEUMBIGA1UECwwLSHV5Z2VucyBJTkcxHzAdBgNVBAMMFnNlY3VyZS5odXlnZW5z
+                        LmtuYXcubmwxIjAgBgkqhkiG9w0BCQEWE3Nzb0BodXlnZW5zLmtuYXcubmwwHhcN
+                        MTQxMDA4MTEzMzM0WhcNMjQxMDA1MTEzMzM0WjCBlzELMAkGA1UEBhMCTkwxCzAJ
+                        BgNVBAgMAlpIMREwDwYDVQQHDAhEZW4gSGFhZzENMAsGA1UECgwES05BVzEUMBIG
+                        A1UECwwLSHV5Z2VucyBJTkcxHzAdBgNVBAMMFnNlY3VyZS5odXlnZW5zLmtuYXcu
+                        bmwxIjAgBgkqhkiG9w0BCQEWE3Nzb0BodXlnZW5zLmtuYXcubmwwggQiMA0GCSqG
+                        SIb3DQEBAQUAA4IEDwAwggQKAoIEAQDbeFOJdcZvpLnTRRTrPd/OuUz4+3+sK6Y8
+                        7amETcJgc9qJBtjEBwb0XAMTawY6gxcYuAx78IO5J8jeEf7fNdrqLH6+W285zJkx
+                        TT0Asz9jYykghW7QVlJCEpa4K+dlJkxQvg3ciU+nULIxG2QpM4Sy89LSHkCwLdR4
+                        i4unYe3AbTHBzMYXZGXLsuz3NyAcByT0osb6EzbyW9YcvWvPba+2hiZCsx6mUPXr
+                        DG07TQebTG/u4zjDadyO4RNKQGKA3maKUfpGU62Mo/IzUQZjCs+XPuan/lpZt3SR
+                        tqZnTyzo6WCuBXOtez3RQglpOkr7rFgptKfZgA/6zMKI/7OWEey2QoIhSZ6XV4bQ
+                        anD0f56ajoS/ZLUabAFXJe7qxPDmMKr8Oo3GLJ8OoYRpytmwE3j4PKrTSQtnNkxt
+                        I/fCzmjUYbGGZbePMxVdlTqE6/ctAMpnXXldS9VTeJcyxMLbqUhRkFlioNmuFfQE
+                        Hts2FLWhYeCYtkUlSys7mVWhSkCcU+6jPwTfyH+pWaUuNoLVBeS/OtstCB6Okl1Y
+                        hsG1ov76xm8U7docFdRCCRTXEAMuryxl7ub114OdECfppbCQyE8a1IB6MFlZ1QGE
+                        x1qVNCwIDY+QPREr1eI4FDNDjYWGe6JOBmGbsm4vyuPEccW1ePbsNWDyzNBCxygJ
+                        ci5zVbxlRE1xWtmWIY3OJOzx0YKLJxCA0dsiPriqLcTVb6RWqejt1XbXjGi2NoYF
+                        N1KOVonIddJim0QYG3QzxOwmNdqV35m7wvPLsClRe3mOSberBe/c7rJyXaYw3A9A
+                        nasOf0G8DiGdptmu7pBOOBtraiEDbz4+KvtIovX5xMP8tG3ynIaCUn4EvDuwgB0n
+                        gHAUzY5qcU2N21a92t6GHbXYG58wzZKv4OAUZkGeVP5XKuRz6npFj4zpXl1YhOaW
+                        h1DyRCOj5xbv0DtI3Zhu9wcjEDb/2BeXWHdzXqi03TRYNQC1b8ioXB7PoTzP4HgX
+                        hFH+KRxbDCa3MKk3iKAM6uhwmMckLqVUlg7qfouQIJoB6gbz8VQV1W6flAgQrM6B
+                        5kjBCqlJAFjeFZuG8LgIAFxdJ9M35MyyeraTw3a18YCmsWzKlc85ApdS8Rs8DoHe
+                        Ac1SYtQCHLqhGfeTJ5y9XgF22Zux3aET08l5l6KgffZUpmXKPwsG2SxvSnR2GeEH
+                        a/6rXXG81kSspowiRplAKTR+bO/fZDRenm3L81dcQpemWXvAikSbowA8yzUTLmoo
+                        uwqI5YYuOGyxddYc2KLcmQc/GJWGhjpRU3nQgFcisBPJtI/2F/hDewg6kcZuTrJ/
+                        LVjzhBzzYjMbQvuZ4zBEprMt6nz4V+rvT0rDezvfLxaowsYKwTfBAgMBAAEwDQYJ
+                        KoZIhvcNAQEFBQADggQBALh7iiCiJF28DDUOrOIaoWEahiJjZxzZnQv+p2P/ogBF
+                        Wgo+V0wvvZnV+NvqDCWtIe5Ge2Wboi1XNtLD9lzQDzV8h8kVR8ZA4ZRLVfMWqxZy
+                        jYTFOjZf6gbt/OvX3Io+ErqlrC4wsY9UW7ilO48JllgfyFVkd5KRTV6VOHRpCGWY
+                        pH2V+cWFfj4IPRWLoJRFBvGyRatoWkKWrbhtm9QWJiO/aJ6mPMu/p5BVVCxOZN7s
+                        gjw25RxhnKgTb6NK5CwMhJVFLbzG+08FcdRhGLf/VRWWrkK4F3cV5p7nKJZ+AHy7
+                        Mi4T3Txlz+D0SlT7pnicgbE4S/bTl2FBgVq3hJLGo6vvXEeJVL0Fj/vex0LJjNHg
+                        i5i5Ii9huINElZeaLCZbd85/gQpOhNo7zVl028vWGvuArU1ipCkI0auiL7/toDRA
+                        KoSoA0wg22jxz8beJHPtZV+uGbPswqssu+wECacfLajmeoZXeu/l6qwcHTFHJgSk
+                        gxNL5aJBawZ3fDf0MHbYNQH2yqeyK8syY2hzEspTlY1LLB2kucXXCqy5ORjdkDCy
+                        SpqmLG0l/vjyrSDOeoBFkpqW8mBogtEf+0DZY3+sz6dqqLWheFitt3ub5e6dYZgJ
+                        kBElPgEmRd8iWIKMeQzdGIwF/bg9r3uUesXmsKvnCxN8AtDmScoi17bngfXe0R9W
+                        E+HNvjK3XJMAV4mhpFOfqrP4IB/P2+GeQr9xaBgLMpXieohb+svqF6Y1Ftrzz4oW
+                        FAe1IIVzcje2Sv+GFxMDrWzPqsESloeXaVbHJh6UJqeNSDWJRwa2KQFk0Os635OA
+                        /bNRgwSxDTXCOPyoKbAVEuD+x9vPzSiZfZM21KXlktP8qGfIDuhbWjDJ9Umnhjdf
+                        ikHxvr4tA9AgZau708pgj/eIGV/xSnubKZ3lI78xDKfCvvTS3ZhA9D/Q8qkzOXZ0
+                        6pDo4GaectfT/saO5eQkUyfqbiHUxDzvy4kOPVdXVmTmtSXLHIl2Mw22xbQyKGyx
+                        wiQLqNk4jM+u1+lFdnx/7HF9im5K+fE3NLt67GjSomKfltIdWrTm/5VrP/V+7bUY
+                        6e63WH67NaC87SJmvq9+6SK/ex+WILAcRe6c4tPQIWouagpdoLhnDB3gxL2ap2ep
+                        WFAybLEjPAs0yviXJXUm7KO+aDytE5qtFxp/7nQ53t8TSOITnJ7lOG6MLItwFJv7
+                        +XmRUdmsE5uVQ66+ER0qeSsaMLjYjfW3bsDeMjFbezc/T+bfZPuUW6J5cB+K9S2C
+                        sIyG57313sdj9AsKPiInNsKOpF+E3SOGKRafqycWUmbflSo1VMsqBBffgeDeavQv
+                        hab7DAIb7F4F0ucrgyqoXBbmbezmumunxaTbv+NZa5Q=
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
             <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
@@ -449,7 +510,7 @@
         </Organization>
         <ContactPerson contactType="technical">
             <GivenName>Support</GivenName>
-            <SurName>Huygens Instituut (KNAW)</SurName>
+            <SurName>Huygens ING (KNAW)</SurName>
             <EmailAddress>sso@huygens.knaw.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
