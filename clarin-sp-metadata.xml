@@ -410,8 +410,8 @@
   </EntityDescriptor>
 
     <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
-    <EntityDescriptor entityID="https://secure.huygens.knaw.nl">
-        <Extensions>
+    <md:EntityDescriptor entityID="https://secure.huygens.knaw.nl" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+        <md:Extensions>
             <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
@@ -419,9 +419,9 @@
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
-        </Extensions>
-        <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAssertionsSigned="true">
-            <Extensions>
+        </md:Extensions>
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAssertionsSigned="true">
+            <md:Extensions>
                 <!-- start : required for terena CoC -->
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Huygens ING (CLARIN services)</mdui:DisplayName>
@@ -435,8 +435,8 @@
                     <mdui:Logo height="64" width="150">https://www.huygens.knaw.nl/logo/HuygensING64x150.png</mdui:Logo>
                 </mdui:UIInfo>
                 <!-- end : required for terena CoC -->
-            </Extensions>
-            <KeyDescriptor use="signing">
+            </md:Extensions>
+            <md:KeyDescriptor use="signing">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
                     <ds:X509Data>
@@ -496,8 +496,8 @@
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </KeyDescriptor>
-            <KeyDescriptor use="encryption">
+            </md:KeyDescriptor>
+            <md:KeyDescriptor use="encryption">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
                     <ds:X509Data>
@@ -557,24 +557,24 @@
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </KeyDescriptor>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            </md:KeyDescriptor>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://secure.huygens.knaw.nl/saml2/acs" index="0"/>
-            <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://test.secure.huygens.knaw.nl/saml2/acs" index="1"/>
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="en">Huygens Instituut (KNAW)</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">Huygens Instituut (KNAW)</OrganizationDisplayName>
-            <OrganizationURL xml:lang="nl">http://www.huygens.knaw.nl</OrganizationURL>
-            <OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</OrganizationURL>
-        </Organization>
-        <ContactPerson contactType="technical">
-            <GivenName>Support</GivenName>
-            <SurName>Huygens ING (KNAW)</SurName>
-            <EmailAddress>sso@huygens.knaw.nl</EmailAddress>
-        </ContactPerson>
-    </EntityDescriptor>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">Huygens Instituut (KNAW)</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">Huygens Instituut (KNAW)</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="nl">http://www.huygens.knaw.nl</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Support</md:GivenName>
+            <md:SurName>Huygens ING (KNAW)</md:SurName>
+            <md:EmailAddress>sso@huygens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 
   <!-- IDS clarin.ids-mannheim.de (via CLARIN) -->
   <EntityDescriptor entityID="https://clarin.ids-mannheim.de/shibboleth">
