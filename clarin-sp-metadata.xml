@@ -754,6 +754,7 @@
       <OrganizationDisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN
         Services</OrganizationDisplayName>
       <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
+      <OrganizationURL xml:lang="en">http://www.ids-mannheim.de</OrganizationURL>
     </Organization>
     <ContactPerson contactType="technical">
       <GivenName>Oliver</GivenName>
@@ -908,6 +909,7 @@
       <OrganizationDisplayName xml:lang="en">Institute for the German Language -
         Repository</OrganizationDisplayName>
       <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
+      <OrganizationURL xml:lang="en">http://www.ids-mannheim.de</OrganizationURL>
     </Organization>
     <ContactPerson contactType="administrative">
       <GivenName>Andreas</GivenName>
