@@ -4452,6 +4452,14 @@ Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU
 	<md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </md:AttributeConsumingService>
     </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="no">Universitetet i Bergen</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">University of Bergen</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="no">Universitetet i Bergen</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">University of Bergen</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="no">http://www.uib.no</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.uib.no</md:OrganizationURL>
+    </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Paul</md:GivenName>
       <md:SurName>Meurer</md:SurName>
