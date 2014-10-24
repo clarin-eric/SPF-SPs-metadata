@@ -435,6 +435,12 @@
                     <mdui:Logo height="64" width="150">https://www.huygens.knaw.nl/logo/HuygensING64x150.png</mdui:Logo>
                 </mdui:UIInfo>
                 <!-- end : required for terena CoC -->
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://secure.huygens.knaw.nl/saml2/login" index="0"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://test.secure.huygens.knaw.nl/saml2/login" index="1"/>
             </md:Extensions>
             <md:KeyDescriptor use="signing">
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -600,6 +606,11 @@
             <md:OrganizationURL xml:lang="en">http://www.huygens.knaw.nl/?lang=en</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="technical">
+            <md:GivenName>Support</md:GivenName>
+            <md:SurName>Huygens ING (KNAW)</md:SurName>
+            <md:EmailAddress>sso@huygens.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
             <md:GivenName>Support</md:GivenName>
             <md:SurName>Huygens ING (KNAW)</md:SurName>
             <md:EmailAddress>sso@huygens.knaw.nl</md:EmailAddress>
