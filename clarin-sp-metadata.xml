@@ -1378,9 +1378,13 @@
     <SPSSODescriptor
        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
-    		   
 	    <!-- SAML Code of Conduct -->
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+		<mdattr:EntityAttributes>
+			<saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
+				<saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+			</saml:Attribute>
+		</mdattr:EntityAttributes>
+    	<mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
         <mdui:DisplayName xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) - CLARIN services</mdui:DisplayName>
 		<mdui:DisplayName xml:lang="en"> Institute for Dutch Lexicology (INL) - CLARIN services</mdui:DisplayName>
         <mdui:Description xml:lang="en"> Several projects attached to the CLARIN infrastructure</mdui:Description>
