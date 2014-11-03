@@ -708,83 +708,49 @@
           <mdui:Description xml:lang="en">Various services provided by the Institut für
             Deutsche Sprache (IDS) in the context of the CLARIN
             initiative.</mdui:Description>
-          <mdui:InformationURL xml:lang="de"
-                               >http://www.ids-mannheim.de</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en"
-                               >http://www.ids-mannheim.de</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en"
-				    >https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="de">http://www.ids-mannheim.de</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">http://www.ids-mannheim.de</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
-      <KeyDescriptor use="signing">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <KeyDescriptor>
+        <ds:KeyInfo>
           <ds:KeyName>clarin.ids-mannheim.de</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=clarin.ids-mannheim.de,OU=DFN-PKI,O=DFN-Verein,C=DE</ds:X509SubjectName>
-            <ds:X509Certificate>MIIFDTCCA/WgAwIBAgIEEGkCyTANBgkqhkiG9w0BAQUFADBVMQswCQYDVQQGEwJE
-              RTETMBEGA1UEChMKREZOLVZlcmVpbjEQMA4GA1UECxMHREZOLVBLSTEfMB0GA1UE
-              AxMWREZOLVZlcmVpbiBDQSBTZXJ2aWNlczAeFw0xMDA3MjMxMjA0MDlaFw0xNTA3
-              MjIxMjA0MDlaMFUxCzAJBgNVBAYTAkRFMRMwEQYDVQQKEwpERk4tVmVyZWluMRAw
-              DgYDVQQLEwdERk4tUEtJMR8wHQYDVQQDExZjbGFyaW4uaWRzLW1hbm5oZWltLmRl
-              MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2HSq1u4QtWz4jz2ZsYrw
-              HLTxxq3PIxmkC/byX/fcdo68NYovgdpHmp1FzR2ZTSULPOvRUf/sgwgRcoSwu2Ar
-              7qYuMg8BJx/tKkN1kL4UYSI5eNuENw6tsdLm0HVbuszMCAgQaMHouFa5d0jHMdsG
-              sh/UKzztdaUE9CiYQ2s6pbNse5A0f0c8tU8OqQdxRDHgmSLCEsUO7MRz8x2y8gST
-              uroXAyqgw177Gj+HEyRDLiOciJRP1Mo9k9WlqQKd0NkozGfa9l/cHGkgx4bRscoh
-              G+KssEE6zZ4lgeMHp6gCZrIq6xuhmSMb5+LTjbLcRT1B3SCUMmldleDlfCNjCD+i
-              mQIDAQABo4IB4zCCAd8wCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwHQYDVR0lBBYw
-              FAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBSpwD4M10rk6JzMwjRV+pON
-              rTYX0TAfBgNVHSMEGDAWgBQdqfGGJnZNz139UKNu6/G8InVt6zAlBgNVHREEHjAc
-              gRpzY2hvbmVmZWxkQGlkcy1tYW5uaGVpbS5kZTCBkQYDVR0fBIGJMIGGMEGgP6A9
-              hjtodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2dsb2JhbC1zZXJ2aWNlcy1jYS9wdWIv
-              Y3JsL2NhY3JsLmNybDBBoD+gPYY7aHR0cDovL2NkcDIucGNhLmRmbi5kZS9nbG9i
-              YWwtc2VydmljZXMtY2EvcHViL2NybC9jYWNybC5jcmwwgaoGCCsGAQUFBwEBBIGd
-              MIGaMEsGCCsGAQUFBzAChj9odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2dsb2JhbC1z
-              ZXJ2aWNlcy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSwYIKwYBBQUHMAKGP2h0
-              dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXNlcnZpY2VzLWNhL3B1Yi9jYWNl
-              cnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAIfABIseLPXh8WgPco+Pk
-              uDdU8lbUkY7mwTUd2hOYz/uLAUcqXu24TPUlw2PR++EkoHpM6ocoRHrV/Pz9RcdK
-              +HXk4df5XPRrMMUu3WkOkZ+ea+ZWehS+AIrfVGz0+eoJraxF4B20571PFlamI7K7
-              /zGhNTTHgB6d74dCcS9qCqP7hBaDqTDnN4DAm+gv+wFLVECh13YZyDlkvWKk7RZP
-              kcFj6qC0guBXN8wZN7fSiOZUxTAxhD5Z04yjCiMcoXQKg5VMlCR+eLE/W/9gc58P
-              sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB Ew==
-            </ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </KeyDescriptor>
-      <KeyDescriptor use="encryption">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:KeyName>clarin.ids-mannheim.de</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=clarin.ids-mannheim.de,OU=DFN-PKI,O=DFN-Verein,C=DE</ds:X509SubjectName>
-            <ds:X509Certificate>MIIFDTCCA/WgAwIBAgIEEGkCyTANBgkqhkiG9w0BAQUFADBVMQswCQYDVQQGEwJE
-              RTETMBEGA1UEChMKREZOLVZlcmVpbjEQMA4GA1UECxMHREZOLVBLSTEfMB0GA1UE
-              AxMWREZOLVZlcmVpbiBDQSBTZXJ2aWNlczAeFw0xMDA3MjMxMjA0MDlaFw0xNTA3
-              MjIxMjA0MDlaMFUxCzAJBgNVBAYTAkRFMRMwEQYDVQQKEwpERk4tVmVyZWluMRAw
-              DgYDVQQLEwdERk4tUEtJMR8wHQYDVQQDExZjbGFyaW4uaWRzLW1hbm5oZWltLmRl
-              MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2HSq1u4QtWz4jz2ZsYrw
-              HLTxxq3PIxmkC/byX/fcdo68NYovgdpHmp1FzR2ZTSULPOvRUf/sgwgRcoSwu2Ar
-              7qYuMg8BJx/tKkN1kL4UYSI5eNuENw6tsdLm0HVbuszMCAgQaMHouFa5d0jHMdsG
-              sh/UKzztdaUE9CiYQ2s6pbNse5A0f0c8tU8OqQdxRDHgmSLCEsUO7MRz8x2y8gST
-              uroXAyqgw177Gj+HEyRDLiOciJRP1Mo9k9WlqQKd0NkozGfa9l/cHGkgx4bRscoh
-              G+KssEE6zZ4lgeMHp6gCZrIq6xuhmSMb5+LTjbLcRT1B3SCUMmldleDlfCNjCD+i
-              mQIDAQABo4IB4zCCAd8wCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwHQYDVR0lBBYw
-              FAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBSpwD4M10rk6JzMwjRV+pON
-              rTYX0TAfBgNVHSMEGDAWgBQdqfGGJnZNz139UKNu6/G8InVt6zAlBgNVHREEHjAc
-              gRpzY2hvbmVmZWxkQGlkcy1tYW5uaGVpbS5kZTCBkQYDVR0fBIGJMIGGMEGgP6A9
-              hjtodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2dsb2JhbC1zZXJ2aWNlcy1jYS9wdWIv
-              Y3JsL2NhY3JsLmNybDBBoD+gPYY7aHR0cDovL2NkcDIucGNhLmRmbi5kZS9nbG9i
-              YWwtc2VydmljZXMtY2EvcHViL2NybC9jYWNybC5jcmwwgaoGCCsGAQUFBwEBBIGd
-              MIGaMEsGCCsGAQUFBzAChj9odHRwOi8vY2RwMS5wY2EuZGZuLmRlL2dsb2JhbC1z
-              ZXJ2aWNlcy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSwYIKwYBBQUHMAKGP2h0
-              dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXNlcnZpY2VzLWNhL3B1Yi9jYWNl
-              cnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAQEAIfABIseLPXh8WgPco+Pk
-              uDdU8lbUkY7mwTUd2hOYz/uLAUcqXu24TPUlw2PR++EkoHpM6ocoRHrV/Pz9RcdK
-              +HXk4df5XPRrMMUu3WkOkZ+ea+ZWehS+AIrfVGz0+eoJraxF4B20571PFlamI7K7
-              /zGhNTTHgB6d74dCcS9qCqP7hBaDqTDnN4DAm+gv+wFLVECh13YZyDlkvWKk7RZP
-              kcFj6qC0guBXN8wZN7fSiOZUxTAxhD5Z04yjCiMcoXQKg5VMlCR+eLE/W/9gc58P
-              sYKNO2ByhVB/TVmh+1gYoPCId/EM4DmonEQXRp3wEm6n+vhIqRShGjbi7FWDPimB Ew==
-            </ds:X509Certificate>
+            <ds:X509Data>
+              <ds:X509SubjectName>emailAddress=aai@ids-mannheim.de,CN=clarin.ids-mannheim.de,O=Institut fuer Deutsche Sprache,L=Mannheim,ST=Baden-Wuerttemberg,C=DE</ds:X509SubjectName>
+                <ds:X509Certificate>MIIGKTCCBRGgAwIBAgIHGHGxHhl3eDANBgkqhkiG9w0BAQsFADCBoDELMAkGA1UE
+BhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzERMA8GA1UEBxMITWFu
+bmhlaW0xJzAlBgNVBAoTHkluc3RpdHV0IGZ1ZXIgRGV1dHNjaGUgU3ByYWNoZTEV
+MBMGA1UEAxMMSURTLUNBIC0gRzAxMSEwHwYJKoZIhvcNAQkBFhJjYUBpZHMtbWFu
+bmhlaW0uZGUwHhcNMTQxMDMwMTI0ODE0WhcNMTkwNzA5MjM1OTAwWjCBqzELMAkG
+A1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzERMA8GA1UEBxMI
+TWFubmhlaW0xJzAlBgNVBAoTHkluc3RpdHV0IGZ1ZXIgRGV1dHNjaGUgU3ByYWNo
+ZTEfMB0GA1UEAxMWY2xhcmluLmlkcy1tYW5uaGVpbS5kZTEiMCAGCSqGSIb3DQEJ
+ARYTYWFpQGlkcy1tYW5uaGVpbS5kZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAPBHBwHybL+pnuoQ+qOxbST/qG8T6exmzZ13g89kmKXtzP6cO+brndpB
+85fNxcMSMXeY96bOXjkcz9kbADXKGlKcG2yKuM9XASMKU/DeeW9n1+n3DGyp+Ria
+mFa6hlTHx7b5701g/r2l1P3Ewn16G8JqIELNN4896stjTLC1M9c85tXNnnFdTMny
+UFn3UbmOzKSxYKGr+5uNbp/1M/kw6khz6uU5xSJebq8V4naIEk3FwK9gXVkkZqip
+Xj0FbALDqIrZrw6fwgXflMC6spn4obQyyjpK41TZ+uV6KVtfvfc0rAzsSjsAOzn3
+iMrW9KIYtib96Q7ia8xFkG5Kg+4yrn8CAwEAAaOCAlkwggJVMAkGA1UdEwQCMAAw
+CwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNV
+HQ4EFgQU5kub0+uOc+qRct4/IqqPyj2/XZwwHwYDVR0jBBgwFoAUVrqWhZ2xhKhz
+keH2OZ+hhjBEDs4wIQYDVR0RBBowGIIWY2xhcmluLmlkcy1tYW5uaGVpbS5kZTCB
+iwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2lkcy1t
+YW5uaGVpbS1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDygOoY4aHR0cDovL2NkcDIu
+cGNhLmRmbi5kZS9pZHMtbWFubmhlaW0tY2EvcHViL2NybC9jYWNybC5jcmwwgdkG
+CCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZu
+LmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKGPGh0dHA6Ly9jZHAxLnBj
+YS5kZm4uZGUvaWRzLW1hbm5oZWltLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDBI
+BggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS9pZHMtbWFubmhlaW0t
+Y2EvcHViL2NhY2VydC9jYWNlcnQuY3J0ME8GA1UdIARIMEYwEQYPKwYBBAGBrSGC
+LAEBBAMCMBEGDysGAQQBga0hgiwCAQQDATAPBg0rBgEEAYGtIYIsAQEEMA0GCysG
+AQQBga0hgiweMA0GCSqGSIb3DQEBCwUAA4IBAQBYx2fB/U6Dp5Q8sf46nRTxd2Pe
+ABUoJ1obWyY9SigpZd9CB/VoXuLVlNumJhdE8pblkmiuQoPMjANXqSJxXTc3VoaM
+Hgk+0Pprizij1Ay8rR6gS02YjZqh0AFcxfRtgf0WDJpU73m0WLdinZ2/9WEF4HeX
+4kZ8oRe3FrE90Nk79pA+/ghhQWJey5ryo2+RZY/ST5PIhyNVonJxN24nHttUmC+x
+nEIJAu56xR9tXHpXpZbsdp6tGG7Q1lkVH3o/8UNzCtWDcSN1p9zjFU11jO79bgJo
+VElur4XCJuT+L7n7C+jsguSkQEbspfoJ7w0a5ADsE/Hqi20yLQtPgB6VuWfo</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
       </KeyDescriptor>
@@ -849,14 +815,10 @@
       </AttributeConsumingService>
     </SPSSODescriptor>
     <Organization>
-      <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN
-        Dienste</OrganizationName>
-      <OrganizationName xml:lang="en">Institute for the German Language (IDS) - CLARIN
-        Services</OrganizationName>
-      <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN
-        Dienste</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN
-        Services</OrganizationDisplayName>
+      <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</OrganizationName>
+      <OrganizationName xml:lang="en">Institute for the German Language (IDS) - CLARIN Services</OrganizationName>
+      <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</OrganizationDisplayName>
+      <OrganizationDisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN Services</OrganizationDisplayName>
       <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
       <OrganizationURL xml:lang="en">http://www.ids-mannheim.de</OrganizationURL>
     </Organization>
@@ -896,59 +858,55 @@
            Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
            Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login" index="1"/>
         <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) -
-            Forschungsprimärdatenrepository</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) -
-            Repository</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Repository</mdui:DisplayName>
           <mdui:Description xml:lang="de">Das Forschungsprimärdetenrepository des Institut
             für Deutsche Sprache (IDS).</mdui:Description>
           <mdui:Description xml:lang="en">Language resources repository of the Institute
             for the German Language (IDS).</mdui:Description>
-          <mdui:InformationURL xml:lang="de"
-                               >https://repos.ids-mannheim.de</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en"
-                               >https://repos.ids-mannheim.de</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en"
-				    >https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor>
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyInfo>
           <ds:KeyName>repos.ids-mannheim.de</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=repos.ids-mannheim.de,O=Institut fuer Deutsche
-              Sprache,L=Mannheim,ST=Baden-Wuerttemberg,C=DE</ds:X509SubjectName>
-            <ds:X509Certificate>MIIFrTCCBJWgAwIBAgIHFSoBfvFYgTANBgkqhkiG9w0BAQUFADBVMQswCQYDVQQG
-              EwJERTETMBEGA1UEChMKREZOLVZlcmVpbjEQMA4GA1UECxMHREZOLVBLSTEfMB0G
-              A1UEAxMWREZOLVZlcmVpbiBDQSBTZXJ2aWNlczAeFw0xMzAxMzExNDQ3MTFaFw0x
-              ODAxMzAxNDQ3MTFaMIGGMQswCQYDVQQGEwJERTEbMBkGA1UECBMSQmFkZW4tV3Vl
-              cnR0ZW1iZXJnMREwDwYDVQQHEwhNYW5uaGVpbTEnMCUGA1UEChMeSW5zdGl0dXQg
-              ZnVlciBEZXV0c2NoZSBTcHJhY2hlMR4wHAYDVQQDExVyZXBvcy5pZHMtbWFubmhl
-              aW0uZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCef4ups838DAB9
-              AFeOl3+K4nADphpeElH6iRY41C+o9dOQ+m5N9Twmpp7K0EjZGObwvmESRry07pL6
-              72mO0pTV7lTiE9USv3CIRMxCplv4bzaCphv2veXFYKUXU/nuo8CT5i6y6GLS/k7q
-              0mTVIxOk12thQLcV3mRfvY88OP4yGeWDMmo/Nvefaha3TxrNt5iIilZ9UWstnPSp
-              u3pV3uX+l8gUNVRHAretThJyyj2bBNJwxZ2P16nzQZL68hrJOBf4wruJOp743/c+
-              X3lKLtapFo/XHfwylwC+V1FIHFKvgVNdAv28d0rtwoQcEJXfHlaHiPTyu+YQMRmn
-              MpUcInV3AgMBAAGjggJOMIICSjA5BgNVHSAEMjAwMBEGDysGAQQBga0hgiwBAQQD
-              ADARBg8rBgEEAYGtIYIsAgEEAwAwCAYGZ4EMAQICMAkGA1UdEwQCMAAwCwYDVR0P
-              BAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNVHQ4EFgQU
-              ESD/k/Bc7kTRJc0rsugmsX+uy+EwHwYDVR0jBBgwFoAUHanxhiZ2Tc9d/VCjbuvx
-              vCJ1beswIAYDVR0RBBkwF4IVcmVwb3MuaWRzLW1hbm5oZWltLmRlMIGRBgNVHR8E
-              gYkwgYYwQaA/oD2GO2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZ2xvYmFsLXNlcnZp
-              Y2VzLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMEGgP6A9hjtodHRwOi8vY2RwMi5wY2Eu
-              ZGZuLmRlL2dsb2JhbC1zZXJ2aWNlcy1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3wYI
-              KwYBBQUHAQEEgdIwgc8wMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4u
-              ZGUvT0NTUC1TZXJ2ZXIvT0NTUDBLBggrBgEFBQcwAoY/aHR0cDovL2NkcDEucGNh
-              LmRmbi5kZS9nbG9iYWwtc2VydmljZXMtY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0
-              MEsGCCsGAQUFBzAChj9odHRwOi8vY2RwMi5wY2EuZGZuLmRlL2dsb2JhbC1zZXJ2
-              aWNlcy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEB
-              AJjBPxcfPIjEor07OUrgzTSup6qh4auvTaQzmLj/Q7N5lA2oLElqIm8kmmW+630f
-              BK0p0LeExeOmpNI5rIR34qY6sIA99hdYYMwGrxEnNqPIo7PEfrY0naSIHp8nykJk
-              n3zsRY/eskpYdUKhbYLdm23mcp9aitQ2cHp4Li+X599Jwew/epXKpkPs+X5n7Vl6
-              WDdN1kceolQ/2UKi/eO4P7DoEh5R5EPZCJzCnekVCaAUgz8zXrbdJp9Ctzk03rgH
-              b1xeN6QBnOlltEeOTtUV2b/KADXu1eNF41dVN2ofSWAn1zx321gHv/fb0hEhTbUE
-              hoWgvpRdJLO3MqO0sMEedQE= </ds:X509Certificate>
+            <ds:X509SubjectName>emailAddress=aai@ids-mannheim.de,CN=repos.ids-mannheim.de,O=Institut fuer Deutsche Sprache,L=Mannheim,ST=Baden-Wuerttemberg,C=DE</ds:X509SubjectName>
+            <ds:X509Certificate>MIIGJzCCBQ+gAwIBAgIHGHGxH2MWmjANBgkqhkiG9w0BAQsFADCBoDELMAkGA1UE
+BhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzERMA8GA1UEBxMITWFu
+bmhlaW0xJzAlBgNVBAoTHkluc3RpdHV0IGZ1ZXIgRGV1dHNjaGUgU3ByYWNoZTEV
+MBMGA1UEAxMMSURTLUNBIC0gRzAxMSEwHwYJKoZIhvcNAQkBFhJjYUBpZHMtbWFu
+bmhlaW0uZGUwHhcNMTQxMDMwMTI0ODE1WhcNMTkwNzA5MjM1OTAwWjCBqjELMAkG
+A1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzERMA8GA1UEBxMI
+TWFubmhlaW0xJzAlBgNVBAoTHkluc3RpdHV0IGZ1ZXIgRGV1dHNjaGUgU3ByYWNo
+ZTEeMBwGA1UEAxMVcmVwb3MuaWRzLW1hbm5oZWltLmRlMSIwIAYJKoZIhvcNAQkB
+FhNhYWlAaWRzLW1hbm5oZWltLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuIe/YlfRcV1xLv2I83Lg41HXIaQLoj5Ab02GfHcHC6x31VLVzQMykrFq
+MWYUBbeF3M8ovDv7oVwOHSA27LVXggDeMZoBhqFnpPcJQKL7cK3v+oWISAyriqTf
+dB/oNRsEujMgHIkhrRuuosjJENNcv81nWtpyavvg4lOZC4yds2ahzXU8Tbx9t3Nw
+conk8HM9ZhAeRPojASHHO35nXSRiI7ikqoQpGrXSeJZ8eJGBme+vmNGi+pHxniGP
+H1KnwQnLZKd9VoFj63rw9voF+0ZaSxm7ClkkC1Xs/1RhIPgU1csJagD5FB7wiDYD
+tmu/wy06p9bVMst6gyR30shL7RBwbQIDAQABo4ICWDCCAlQwCQYDVR0TBAIwADAL
+BgNVHQ8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1Ud
+DgQWBBTxsDInhd3RoonFHLodHlu/LRjdWDAfBgNVHSMEGDAWgBRWupaFnbGEqHOR
+4fY5n6GGMEQOzjAgBgNVHREEGTAXghVyZXBvcy5pZHMtbWFubmhlaW0uZGUwgYsG
+A1UdHwSBgzCBgDA+oDygOoY4aHR0cDovL2NkcDEucGNhLmRmbi5kZS9pZHMtbWFu
+bmhlaW0tY2EvcHViL2NybC9jYWNybC5jcmwwPqA8oDqGOGh0dHA6Ly9jZHAyLnBj
+YS5kZm4uZGUvaWRzLW1hbm5oZWltLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMIHZBggr
+BgEFBQcBAQSBzDCByTAzBggrBgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5k
+ZS9PQ1NQLVNlcnZlci9PQ1NQMEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMS5wY2Eu
+ZGZuLmRlL2lkcy1tYW5uaGVpbS1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSAYI
+KwYBBQUHMAKGPGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvaWRzLW1hbm5oZWltLWNh
+L3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDBPBgNVHSAESDBGMBEGDysGAQQBga0hgiwB
+AQQDAjARBg8rBgEEAYGtIYIsAgEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEE
+AYGtIYIsHjANBgkqhkiG9w0BAQsFAAOCAQEARo2svVONUwfGY5GtC2B23GtDJj9Z
+Qac7iOiqrpszdbdXFtIVuZBWaZpeeei/0ZHNEzByrEIqCsgwrMat5CkjURt7uBLw
+T4i6DwZIlHs/RRr1euCJszIc25Pco/JCHf+UCNaWmXi8tWbM+RbvP14lGpgMqtEU
+2JPXOJVaUapaUeeWCx2WNpjvZQ3l7KIm3Mzz80P9gL3oMEkFZYkSaNjAV2AQwNoH
+6DYCJd/I407y24ykEwvD8HQjyERNEDJFz2P5IyH4kmsIOwXNQEoOhSFt/cvvSplt
+PZjG46BQGsou6pJHmLhC/+tMXlY0jVRn6uQ4yFjtazWE24EYG+Q7dJ5yMw==</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
       </KeyDescriptor>
@@ -975,10 +933,8 @@
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
 				Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML/Artifact" index="6"/>
       <AttributeConsumingService index="1">
-        <ServiceName xml:lang="de">Institut für Deutsche Sprache (IDS) -
-          Forschungsprimärdatenrepository</ServiceName>
-        <ServiceName xml:lang="en">Institute for the German Language (IDS) -
-          Repository</ServiceName>
+        <ServiceName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</ServiceName>
+        <ServiceName xml:lang="en">Institute for the German Language (IDS) - Repository</ServiceName>
         <ServiceDescription xml:lang="de">Das Forschungsprimärdetenrepository des Institut
           für Deutsche Sprache (IDS).</ServiceDescription>
         <ServiceDescription xml:lang="en">Language resources repository of the Institute for
@@ -1004,14 +960,10 @@
       </AttributeConsumingService>
     </SPSSODescriptor>
     <Organization>
-      <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) -
-        Forschungsprimärdatenrepository</OrganizationName>
-      <OrganizationName xml:lang="en">Institute for the German Language (IDS) -
-        Repository</OrganizationName>
-      <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache -
-        Forschungsprimärdatenrepository</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">Institute for the German Language -
-        Repository</OrganizationDisplayName>
+      <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</OrganizationName>
+      <OrganizationName xml:lang="en">Institute for the German Language (IDS) - Repository</OrganizationName>
+      <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache - Forschungsprimärdatenrepository</OrganizationDisplayName>
+      <OrganizationDisplayName xml:lang="en">Institute for the German Language - Repository</OrganizationDisplayName>
       <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
       <OrganizationURL xml:lang="en">http://www.ids-mannheim.de</OrganizationURL>
     </Organization>
