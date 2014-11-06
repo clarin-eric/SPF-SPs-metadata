@@ -1931,6 +1931,29 @@ Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
 				Location="https://infra.clarin.dk/Shibboleth.sso/SAML/Artifact" index="6"/>
     </SPSSODescriptor>
+    
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Center for Language Technology, Faculty of Humanities, University of Copenhagen</md:OrganizationName>
+      <md:OrganizationName xml:lang="dk">Center for Sprogteknologi, Det Humanistiske Fakultet, Københavns Universitet</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Center for Language Technology, University of Copenhagen</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="dk">Center for Sprogteknologi, Københavns Universitet</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.clarin.dk</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="dk">http://www.clarin.dk</md:OrganizationURL>
+    </md:Organization>
+
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Mitchell</md:GivenName>
+      <md:SurName>Seaton</md:SurName>
+      <md:EmailAddress>seaton@hum.ku.dk</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Support</md:GivenName>
+      <md:EmailAddress>info@clarin.dk</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>Administration</md:GivenName>
+      <md:EmailAddress>admin@clarin.dk</md:EmailAddress>
+    </md:ContactPerson>
 
   </EntityDescriptor>
 
