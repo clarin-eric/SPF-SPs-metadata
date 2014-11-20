@@ -3793,7 +3793,7 @@ Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU
     <!-- Hamburger Zentrum für Sprachkorpora (HZSK) -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_8599a4043cf9ca62c366fd77cc7c7b296a6ae9d3"
-        entityID="https://sp.vs1.corpora.uni-hamburg.de/shibboleth">
+        entityID="https://sp.vs1.corpora.uni-hamburg.de">
         <md:Extensions>
             <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute Name="http://macedir.org/entity-category"
