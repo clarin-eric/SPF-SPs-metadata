@@ -153,12 +153,9 @@
                                >http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
           <mdui:InformationURL xml:lang="en"
                                >http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="sv"
-				    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en"
-				    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi"
-				    >http://www.csc.fi/english/research/sciences/linguistics/lat-privacypolicy</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="sv">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="fi">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor>
