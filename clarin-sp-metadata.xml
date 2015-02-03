@@ -2144,12 +2144,22 @@
     <!-- CNRS-ATILF (via CLARIN), temporarily disabled due to non-fixed Heartbleed vulnerability. -->
 
     <!-- CLARIN-DK-UCPH SP -->
-    <EntityDescriptor
+    <md:EntityDescriptor
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_78e4557169289f8f65e453bfcf5c5ebd18a665be"
         entityID="https://infra.clarin.dk/shibboleth">
 
-        <Extensions
+        <md:Extensions
             xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
             <alg:DigestMethod
                 Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
             <alg:DigestMethod
@@ -2172,12 +2182,32 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-        </Extensions>
+        </md:Extensions>
 
-        <SPSSODescriptor
+        <md:SPSSODescriptor
             AuthnRequestsSigned="1"
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <Extensions>
+            <md:Extensions>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="de">CLARIN-DK-UCPH</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="da">CLARIN-DK-UCPH</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">CLARIN-DK-UCPH</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das Clarin Zentrum an der Universität Kopenhagen und seine Dienstleistungen für sprachbasierte Materialien und Werkzeuge.</mdui:Description>
+                    <mdui:Description xml:lang="da">Denne serviceudbyder giver adgang til CLARIN centret på Københavns Universitet og dets services for sprogbaserede materialer og værktøjer.</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider enables access to The Clarin center at University of Copenhagen and its services for language-based materials and tools.</mdui:Description>
+                    <mdui:Keywords xml:lang="en">
+                      CLARIN Copenhagen Humanities research language archive tools
+                    </mdui:Keywords>
+                    <mdui:Keywords xml:lang="da">
+                      CLARIN København Humaniora forskning sprog arkiv applikationer
+                    </mdui:Keywords>
+                    <mdui:Logo
+                        height="250"
+                        width="53">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en">http://info.clarin.dk/en/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">http://info.clarin.dk/en/overview/privacypolicy/</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -2187,8 +2217,9 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://infra.clarin.dk/Shibboleth.sso/Login"
                     index="1"/>
-            </Extensions>
-            <KeyDescriptor>
+            </md:Extensions>
+
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:KeyName>*.clarin.dk</ds:KeyName>
@@ -2225,82 +2256,112 @@
                             Dee7ok/CEtNYwb4SmOS9SwLJl9WgcUNtnJrU </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-                <EncryptionMethod
+                <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-            </KeyDescriptor>
-            <ArtifactResolutionService
+            </md:KeyDescriptor>
+            <md:ArtifactResolutionService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://infra.clarin.dk/Shibboleth.sso/Artifact/SOAP"
                 index="1"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://infra.clarin.dk/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
                 Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://infra.clarin.dk/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Artifact"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST"
                 index="1"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign"
                 index="2"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/Artifact"
                 index="3"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/ECP"
                 index="4"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML/POST"
                 index="5"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
-        </SPSSODescriptor>
+            <md:AttributeConsumingService
+                index="1">
+                <md:ServiceName xml:lang="en">CLARIN-DK-UCPH</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">This Service Provider enables access to The Clarin center at University of Copenhagen and its services for language-based materials and tools.</md:ServiceDescription>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrimaryAffiliation"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrimaryAffiliation"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
+                    Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:mace:terena.org:attribute-def:mail"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="displayName"
+                    Name="urn:mace:terena.org:attribute-def:displayName"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
 
         <md:Organization>
             <md:OrganizationName xml:lang="en">Center for Language Technology, Faculty of Humanities, University of Copenhagen</md:OrganizationName>
-            <md:OrganizationName xml:lang="dk">Center for Sprogteknologi, Det Humanistiske Fakultet, Københavns Universitet</md:OrganizationName>
+            <md:OrganizationName xml:lang="da">Center for Sprogteknologi, Det Humanistiske Fakultet, Københavns Universitet</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Center for Language Technology, University of Copenhagen</md:OrganizationDisplayName>
-            <md:OrganizationDisplayName xml:lang="dk">Center for Sprogteknologi, Københavns Universitet</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="da">Center for Sprogteknologi, Københavns Universitet</md:OrganizationDisplayName>
             <md:OrganizationURL
                 xml:lang="en">http://www.clarin.dk</md:OrganizationURL>
             <md:OrganizationURL
-                xml:lang="dk">http://www.clarin.dk</md:OrganizationURL>
+                xml:lang="da">http://www.clarin.dk</md:OrganizationURL>
         </md:Organization>
 
         <md:ContactPerson
@@ -2319,7 +2380,7 @@
             <md:GivenName>Administration</md:GivenName>
             <md:EmailAddress>admin@clarin.dk</md:EmailAddress>
         </md:ContactPerson>
-    </EntityDescriptor>
+    </md:EntityDescriptor>
 
     <!-- CLARIN-NL Meertens institute -->
     <md:EntityDescriptor
