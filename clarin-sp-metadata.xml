@@ -2202,8 +2202,8 @@
                       CLARIN København Humaniora forskning sprog arkiv applikationer
                     </mdui:Keywords>
                     <mdui:Logo
-                        height="250"
-                        width="53">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
+                        height="53"
+                        width="250">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
                     <mdui:InformationURL xml:lang="en">http://info.clarin.dk/en/</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
                     <mdui:PrivacyStatementURL xml:lang="en">http://info.clarin.dk/en/overview/privacypolicy/</mdui:PrivacyStatementURL>
