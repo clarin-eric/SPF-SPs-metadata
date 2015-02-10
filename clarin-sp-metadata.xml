@@ -3364,12 +3364,23 @@
     </EntityDescriptor>
 
     <!-- BAS (via CLARIN) -->
-    <md:EntityDescriptor
+    <EntityDescriptor
         entityID="https://clarin.phonetik.uni-muenchen.de">
-
-        <md:SPSSODescriptor
+	<Extensions>
+		<mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+		    <!-- The CoC-DP entity category -->
+		    <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+		                    Name="http://macedir.org/entity-category"
+		                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+		        <saml:AttributeValue>
+		            http://www.geant.net/uri/dataprotection-code-of-conduct/v1
+		        </saml:AttributeValue>
+		    </saml:Attribute>
+		</mdattr:EntityAttributes>
+    	</Extensions>
+        <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <md:Extensions>
+            <Extensions>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -3379,7 +3390,7 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"
                     index="1"/>
-                <mdui:UIInfo>
+                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (for accessing academic use restricted resources).</mdui:Description>
                     <mdui:Keywords
@@ -3388,7 +3399,7 @@
                         height="150"
                         width="356">http://www.en.phonetik.uni-muenchen.de/research/bav_arch_spsig/bas_logo_englisch.jpg</mdui:Logo>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">http://www.en.phonetik.uni-muenchen.de/funktionen/privacy/index.html</mdui:PrivacyStatementURL>
+                        xml:lang="en">http://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <mdattr:EntityAttributes>
                     <saml:Attribute
@@ -3397,8 +3408,8 @@
                         <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                     </saml:Attribute>
                 </mdattr:EntityAttributes>
-            </md:Extensions>
-            <md:KeyDescriptor>
+            </Extensions>
+            <KeyDescriptor>
                 <ds:KeyInfo>
                     <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
                     <ds:X509Data>
@@ -3440,89 +3451,83 @@
                             cdriseFaC9wD+9FMZhAznUg= </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:ArtifactResolutionService
+            </KeyDescriptor>
+            <ArtifactResolutionService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Artifact/SOAP"
                 index="0"/>
-            <md:SingleLogoutService
+            <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/SOAP"/>
-            <md:SingleLogoutService
+            <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Redirect"/>
-            <md:SingleLogoutService
+            <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/POST"/>
-            <md:SingleLogoutService
+            <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Artifact"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST"
                 index="0"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign"
                 index="1"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/Artifact"
                 index="2"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/ECP"
                 index="3"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/POST"
                 index="4"/>
-            <md:AssertionConsumerService
+            <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/Artifact"
                 index="5"/>
-            <md:AttributeConsumingService
+            <AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">Bavarian Archive for Speech Signals Service Provider that allows the user to access various resources through the BASRepository that are restricted to academic use.</md:ServiceDescription>
-                <!-- SAML1 -->
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="true"/>
-                <!-- SAML2 -->
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-            </md:AttributeConsumingService>
-        </md:SPSSODescriptor>
-        <md:Organization>
-            <md:OrganizationName xml:lang="en">BAS</md:OrganizationName>
-            <md:OrganizationDisplayName xml:lang="en">Bavarian Archive for Speech Signals</md:OrganizationDisplayName>
-            <md:OrganizationURL
+                <ServiceName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</ServiceName>
+                <ServiceDescription xml:lang="en">Bavarian Archive for Speech Signals Service Provider that allows the user to access various resources through the BASRepository that are restricted to academic use.</ServiceDescription>
+		<RequestedAttribute FriendlyName="entitlement"
+			Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			isRequired="false"/>
+		    <RequestedAttribute FriendlyName="mail"
+			Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			isRequired="true"/>
+            </AttributeConsumingService>
+        </SPSSODescriptor>
+        <Organization>
+            <OrganizationName xml:lang="en">BAS</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">Bavarian Archive for Speech Signals</OrganizationDisplayName>
+            <OrganizationURL
                 xml:lang="en">
                 http://www.en.phonetik.uni-muenchen.de/research/bav_arch_spsig/index.html
-            </md:OrganizationURL>
-        </md:Organization>
-        <md:ContactPerson
+            </OrganizationURL>
+        </Organization>
+        <ContactPerson
             contactType="technical">
-            <md:SurName>Technical Support</md:SurName>
-            <md:EmailAddress>admin@phonetik.uni-muenchen.de</md:EmailAddress>
-        </md:ContactPerson>
-        <md:ContactPerson
+            <SurName>Technical Support</SurName>
+            <EmailAddress>admin@phonetik.uni-muenchen.de</EmailAddress>
+        </ContactPerson>
+        <ContactPerson
             contactType="administrative">
-            <md:SurName>Administration</md:SurName>
-            <md:EmailAddress>admin@phonetik.uni-muenchen.de</md:EmailAddress>
-        </md:ContactPerson>
-        <md:ContactPerson
+            <SurName>Administration</SurName>
+            <EmailAddress>admin@phonetik.uni-muenchen.de</EmailAddress>
+        </ContactPerson>
+        <ContactPerson
             contactType="support">
-            <md:SurName>User Support</md:SurName>
-            <md:EmailAddress>kisler@phonetik.uni-muenchen.de</md:EmailAddress>
-        </md:ContactPerson>
-    </md:EntityDescriptor>
+            <SurName>User Support</SurName>
+            <EmailAddress>kisler@phonetik.uni-muenchen.de</EmailAddress>
+        </ContactPerson>
+    </EntityDescriptor>
 
     <!-- Austrian Academy (CLARIN-AT) -->
     <EntityDescriptor
