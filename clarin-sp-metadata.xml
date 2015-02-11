@@ -5232,8 +5232,10 @@
                 xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                 <mdui:DisplayName xml:lang="en">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving young children.</mdui:Description>
-                <mdui:PrivacyStatementURL
-                    xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
+                <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
             </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -5405,8 +5407,10 @@
                 xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                 <mdui:DisplayName xml:lang="en">TalkBank</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</mdui:Description>
-                <mdui:PrivacyStatementURL
-                    xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
+                <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
             </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
