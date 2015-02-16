@@ -1935,11 +1935,9 @@
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
-            <md:OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech
-        Republic</md:OrganizationName>
+            <md:OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech         Republic</md:OrganizationName>
             <md:OrganizationName xml:lang="cs">Ústav formální a aplikované lingvistiky, Matematicko-fyzikální fakulta, Univerzita Karlova v Praze</md:OrganizationName>
-            <md:OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in
-        Prague</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in         Prague</md:OrganizationDisplayName>
             <md:OrganizationDisplayName xml:lang="cs">ÚFAL MFF UK</md:OrganizationDisplayName>
             <md:OrganizationURL
                 xml:lang="en">http://ufal.mff.cuni.cz/</md:OrganizationURL>
@@ -1970,8 +1968,7 @@
                 <saml:Attribute
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue> http://www.geant.net/uri/dataprotection-code-of-conduct/v1
-                    </saml:AttributeValue>
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
@@ -2188,25 +2185,31 @@
             AuthnRequestsSigned="1"
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
-                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">CLARIN-DK-UCPH</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="da">CLARIN-DK-UCPH</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">CLARIN-DK-UCPH</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das Clarin Zentrum an der Universität Kopenhagen und seine Dienstleistungen für sprachbasierte Materialien und Werkzeuge.</mdui:Description>
                     <mdui:Description xml:lang="da">Denne serviceudbyder giver adgang til CLARIN centret på Københavns Universitet og dets services for sprogbaserede materialer og værktøjer.</mdui:Description>
                     <mdui:Description xml:lang="en">This Service Provider enables access to The Clarin center at University of Copenhagen and its services for language-based materials and tools.</mdui:Description>
-                    <mdui:Keywords xml:lang="en">
+                    <mdui:Keywords
+                        xml:lang="en">
                       CLARIN Copenhagen Humanities research language archive tools
                     </mdui:Keywords>
-                    <mdui:Keywords xml:lang="da">
+                    <mdui:Keywords
+                        xml:lang="da">
                       CLARIN København Humaniora forskning sprog arkiv applikationer
                     </mdui:Keywords>
                     <mdui:Logo
                         height="53"
                         width="250">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
-                    <mdui:InformationURL xml:lang="en">http://info.clarin.dk/en/</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">http://info.clarin.dk/en/overview/privacypolicy/</mdui:PrivacyStatementURL>
+                    <mdui:InformationURL
+                        xml:lang="en">http://info.clarin.dk/en/</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">http://info.clarin.dk/en/overview/privacypolicy/</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -2744,28 +2747,47 @@
         </SPSSODescriptor>
     </EntityDescriptor>
 
-    <!-- CLARIN NL test server UU (From Daan.Broeder@mpi.nl 2014-01-26 CN=dev.clarin.nl) -->
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-        ID="_74e72425e12ba8aa1cabea1cdf919165"
+        xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+        xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0"
+        xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+        xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+        ID="_dbeca94d4c543f5fb97fa995f02bdf86"
         entityID="https://dev.clarin.nl/shibboleth">
         <md:SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol  urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
-                <DiscoveryResponse
-                    xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://dev.clarin.nl/Shibboleth.sso/DS"
-                    index="1"/>
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">CLARIN NL Portal</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">The Web Portal of the Dutch CLARIN Project</mdui:Description>
+                    <mdui:Description xml:lang="nl">Het web portaal van het Nederlands CLARIN project</mdui:Description>
+                    <mdui:Keywords
+                        xml:lang="en">The web portal of the Dutch CLARIN project</mdui:Keywords>
+                    <mdui:Logo
+                        height="102"
+                        width="169">https://dev.clarin.nl/sites/default/files/clarin-nl_logo_169x102.png</mdui:Logo>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">http://dev.clarin.nl/privacy%20policy</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <mdattr:EntityAttributes>
+                    <saml:Attribute
+                        Name="http://macedir.org/entity-category"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    </saml:Attribute>
+                </mdattr:EntityAttributes>
             </md:Extensions>
-            <md:KeyDescriptor
-                use="signing">
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:KeyName>dev.clarin.nl</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=dev.clarin.nl</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIC7jCCAdagAwIBAgIJAIS5kN0UFuPyMA0GCSqGSIb3DQEBBQUAMBgxFjAUBgNV
+                        <ds:X509Certificate>
+                            MIIC7jCCAdagAwIBAgIJAIS5kN0UFuPyMA0GCSqGSIb3DQEBBQUAMBgxFjAUBgNV
                             BAMTDWRldi5jbGFyaW4ubmwwHhcNMTQwMTIwMjAwMzAyWhcNMjQwMTE4MjAwMzAy
                             WjAYMRYwFAYDVQQDEw1kZXYuY2xhcmluLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOC
                             AQ8AMIIBCgKCAQEAtwI+RsC5q8PEiWAEI66kc8I4sHF7Yg/zyKf/X7Z+Qjm19mcx
@@ -2780,33 +2802,8 @@
                             l1xyupEIzha7W6TxCyI1OvBj7CrqDX6LBPJXV4Gw2nzJxL+1WBgqqcaPpdU0LpBs
                             XODzb4uGQLrBr1CgvW+aUHC+sYPUmL/llu+JCcyB+1QqnP/csDaAh70ZjM3RV2sG
                             rK0uZktZErJjDbAeWRjUNGsmXvaXAdDMEZHZ8p+nbbM7zS/Cy0yORzAcYvQQVo1I
-                            fRWZ2B3NwYzRMZxKIoyAG2Ow0PRSCxhclqwyw8KIVZJI5A== </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor
-                use="encryption">
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>dev.clarin.nl</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=dev.clarin.nl</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIC7jCCAdagAwIBAgIJAIS5kN0UFuPyMA0GCSqGSIb3DQEBBQUAMBgxFjAUBgNV
-                            BAMTDWRldi5jbGFyaW4ubmwwHhcNMTQwMTIwMjAwMzAyWhcNMjQwMTE4MjAwMzAy
-                            WjAYMRYwFAYDVQQDEw1kZXYuY2xhcmluLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOC
-                            AQ8AMIIBCgKCAQEAtwI+RsC5q8PEiWAEI66kc8I4sHF7Yg/zyKf/X7Z+Qjm19mcx
-                            Ix+7L8d854vjXFx4Azq4oZh2xgOnIK1BWl0FRaMkGg//iwtcS9lYRzIoPeubWTAQ
-                            UPkDnMHTGqOKpUzelwKPW7vMSLGwlIObDtdNQYMi+TnTqaZeFP+8ttUsieHjgaEJ
-                            fblADuBQ/Q0AxY6zzn2d0Zb/+5NY2XJJ7jqR8k+eJfwixqVrKReY1avzp2zT+P+Z
-                            UXAJ4J8dDtttLe3kcOChqgNaqYPnzz7l9bHG9hkLzO2quDiHJGqTVVRIVt1KVGCb
-                            3TI5ng5A7nxmr+fuac0i+S2mvCUQ/DevWFG6pQIDAQABozswOTAYBgNVHREEETAP
-                            gg1kZXYuY2xhcmluLm5sMB0GA1UdDgQWBBQe0sCHuSNk8a96farCbVZgfWgyjjAN
-                            BgkqhkiG9w0BAQUFAAOCAQEANeCYW2LEXGFvQoYWk40ZHrYGvSSXlouSZHbMqS6U
-                            WdbGHBaXrWLlTGD3nT6MdHIBRhb3By834MG5lnIGu22lHXv28nd5Ztv+ZkER9p6Y
-                            l1xyupEIzha7W6TxCyI1OvBj7CrqDX6LBPJXV4Gw2nzJxL+1WBgqqcaPpdU0LpBs
-                            XODzb4uGQLrBr1CgvW+aUHC+sYPUmL/llu+JCcyB+1QqnP/csDaAh70ZjM3RV2sG
-                            rK0uZktZErJjDbAeWRjUNGsmXvaXAdDMEZHZ8p+nbbM7zS/Cy0yORzAcYvQQVo1I
-                            fRWZ2B3NwYzRMZxKIoyAG2Ow0PRSCxhclqwyw8KIVZJI5A== </ds:X509Certificate>
+                            fRWZ2B3NwYzRMZxKIoyAG2Ow0PRSCxhclqwyw8KIVZJI5A==
+                        </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
@@ -2862,8 +2859,43 @@
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://dev.clarin.nl/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
+            <md:AttributeConsumingService
+                index="1">
+                <md:ServiceName xml:lang="en">CLAPOP</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">The CLARIN NL Portal</md:ServiceDescription>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:mace:dir:attribute-def:mail"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="false"/>
+                <RequestedAttribute
+                    isRequired="true"
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <RequestedAttribute
+                    isRequired="false"
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+            </md:AttributeConsumingService>
         </md:SPSSODescriptor>
-
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">Utrecht University, CLARIN NL</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">Utrecht University, Dutch CLARIN Project</md:OrganizationDisplayName>
+            <md:OrganizationURL
+                xml:lang="en">http://www.uu.nl</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson
+            contactType="technical">
+            <md:SurName>Technical Support</md:SurName>
+            <md:EmailAddress>helpdesk@clarin.nl</md:EmailAddress>
+        </md:ContactPerson>
     </md:EntityDescriptor>
 
     <!-- JSC, Juelich Supercomputing Centre -->
@@ -2906,7 +2938,6 @@
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
         </md:Extensions>
-
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
@@ -3021,136 +3052,7 @@
                 Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
         </md:SPSSODescriptor>
-
     </md:EntityDescriptor>
-
-
-    <!--  RZG Garching: Centre Registry -->
-    <EntityDescriptor
-        entityID="https://centerregistry-clarin.esc.rzg.mpg.de/shibboleth-sp">
-        <Extensions
-            xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-        </Extensions>
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <Extensions>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/Login"/>
-            </Extensions>
-            <KeyDescriptor>
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>centerregistry-clarin</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=centerregistry-clarin</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAJuota9ITNc3MA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
-                            BAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjAeFw0xMjA5MjAxNTAyNDdaFw0yMjA5
-                            MTgxNTAyNDdaMCAxHjAcBgNVBAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjCCASIw
-                            DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANBEv1ALXWSf467nGOdTfB0viTIy
-                            c1vjvwf4Qhtg8n5bN3CL7nhJ6dBSlv/l5U0GcZqUI2h8nnIxdAqKGGV1cA45yESl
-                            b7HT9FFcd0dFJ8BCCjZOe5ggu4NGdl+vzD6ymOYdJuk0uDUSCLvAHSdYX2ECXePZ
-                            FlFCrBZKMNlvcImlJuTexkvVFDVIjvBy6p3qLLdJSSS/UBKGp14qrkVCXCSltPx5
-                            9cyYLvjNudEfXea2wvM1luC+3NGnqesrByE1pItolteB2cesWFFmsCzWseqLK2vV
-                            hzKby9CStLHmyV1WsZX7vErn/a3T8SCHKeIJM/O2Bw8MlgBqeYcE+ILxGVcCAwEA
-                            AaNDMEEwIAYDVR0RBBkwF4IVY2VudGVycmVnaXN0cnktY2xhcmluMB0GA1UdDgQW
-                            BBSheCRqJ2tbwkRLF3mdHOF2OQR44DANBgkqhkiG9w0BAQUFAAOCAQEAwyB6xS9o
-                            RS3jXf67JKb+r5KYjxQW2UT2IZNArxueeHEFkkWtA0A4vhSI8iRgygEzX0ypK4Mj
-                            VMRFyZ4F93X+9hz5Qgfskj6HCbIM7dpmwF1arwAqndU4Ia9l0IThf5tyysmwZC61
-                            devhYYCpjhRqww8pUBTzWvpSJNK4QQtHHLHZfeRV+oOcOtyQFx/Y5rCMOhK44FMY
-                            QJyElwE6v1cBMmQnsU4TxHZkNm1yfbJfO6XyJl9j3xKtHIzPsBMKOwklAxSrI1Fa
-                            KHTuiDqi2iJaZ7qU2JRf5AK4COoyLCmI+VdG+qggNgHQFuGjHz0VZdjyfGCnYxq6
-                            xe0qZuTLNHLOFw== </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-            </KeyDescriptor>
-            <ArtifactResolutionService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/Artifact/SOAP"
-                index="1"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SLO/Artifact"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML2/POST"
-                index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML2/POST-SimpleSign"
-                index="2"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML2/Artifact"
-                index="3"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML2/ECP"
-                index="4"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML/POST"
-                index="5"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://centerregistry-clarin.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
-                index="6"/>
-        </SPSSODescriptor>
-    </EntityDescriptor>
 
     <!--  RZG Garching: Centre Registry (staging) -->
     <EntityDescriptor
@@ -3366,18 +3268,17 @@
     <!-- BAS (via CLARIN) -->
     <EntityDescriptor
         entityID="https://clarin.phonetik.uni-muenchen.de">
-	<Extensions>
-		<mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-		    <!-- The CoC-DP entity category -->
-		    <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-		                    Name="http://macedir.org/entity-category"
-		                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-		        <saml:AttributeValue>
-		            http://www.geant.net/uri/dataprotection-code-of-conduct/v1
-		        </saml:AttributeValue>
-		    </saml:Attribute>
-		</mdattr:EntityAttributes>
-    	</Extensions>
+        <Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
@@ -3390,7 +3291,8 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"
                     index="1"/>
-                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (for accessing academic use restricted resources).</mdui:Description>
                     <mdui:Keywords
@@ -3496,12 +3398,16 @@
                 index="1">
                 <ServiceName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</ServiceName>
                 <ServiceDescription xml:lang="en">Bavarian Archive for Speech Signals Service Provider that allows the user to access various resources through the BASRepository that are restricted to academic use.</ServiceDescription>
-		<RequestedAttribute FriendlyName="entitlement"
-			Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-			isRequired="false"/>
-		    <RequestedAttribute FriendlyName="mail"
-			Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-			isRequired="true"/>
+                <RequestedAttribute
+                    FriendlyName="entitlement"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
+                <RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
             </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
@@ -3585,8 +3491,7 @@
                     <mdui:DisplayName xml:lang="de">CLARIN Centre Vienna</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">CLARIN Centre Vienna</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Ein Repositorium für Archivieren und Publizieren von Sprachressourcen und Technologien und andere Dienste für digitale Geisteswissenschaften.</mdui:Description>
-                    <mdui:Description xml:lang="en">A repository for depositing and publishing of language resources and technology and other infrastructure services for
-            digital humanities. </mdui:Description>
+                    <mdui:Description xml:lang="en">A repository for depositing and publishing of language resources and technology and other infrastructure services for digital humanities. </mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">http://clarin.oeaw.ac.at/ccv</mdui:InformationURL>
                     <mdui:PrivacyStatementURL
@@ -5232,10 +5137,17 @@
                 xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                 <mdui:DisplayName xml:lang="en">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving young children.</mdui:Description>
-                <mdui:PrivacyStatementURL xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
-                <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
-                <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
-                <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
+                <mdui:PrivacyStatementURL
+                    xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
+                <mdui:Logo
+                    height="300"
+                    width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                <mdui:Logo
+                    height="60"
+                    width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                <mdui:Logo
+                    height="16"
+                    width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
             </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -5348,7 +5260,8 @@
         <md:Organization>
             <md:OrganizationName xml:lang="en">Carnegie Mellon University</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Carnegie Mellon University</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">http://www.cmu.edu</md:OrganizationURL>
+            <md:OrganizationURL
+                xml:lang="en">http://www.cmu.edu</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
@@ -5407,10 +5320,17 @@
                 xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                 <mdui:DisplayName xml:lang="en">TalkBank</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</mdui:Description>
-                <mdui:PrivacyStatementURL xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
-                <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
-                <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
-                <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
+                <mdui:PrivacyStatementURL
+                    xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
+                <mdui:Logo
+                    height="300"
+                    width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                <mdui:Logo
+                    height="60"
+                    width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                <mdui:Logo
+                    height="16"
+                    width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
             </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -5518,7 +5438,8 @@
         <md:Organization>
             <md:OrganizationName xml:lang="en">Carnegie Mellon University</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Carnegie Mellon University</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">http://www.cmu.edu</md:OrganizationURL>
+            <md:OrganizationURL
+                xml:lang="en">http://www.cmu.edu</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
