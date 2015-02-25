@@ -31,6 +31,17 @@
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_3d1ecacb2c185bc44e49178b381130e6bb0d052d"
         entityID="https://shibboleth.bbaw.de/shibboleth">
+        <Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
@@ -43,6 +54,26 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://shibboleth.bbaw.de/Shibboleth.sso/Login"
                     index="1"/>
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="de">BBAW - CLARIN Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">BBAW - CLARIN services</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Verschiedene Dienste der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) im Rahmen der CLARIN-Initiative.</mdui:Description>
+                    <mdui:Description xml:lang="en">Various services provided by the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) in the context of the CLARIN initiative.</mdui:Description>
+                    <mdui:Keywords
+                        xml:lang="en">BBAW Linguistic Services</mdui:Keywords>
+                    <mdui:Keywords
+                        xml:lang="nl">BBAW Linguistische Dienste</mdui:Keywords>
+                    <mdui:Logo
+                        height="104"
+                        width="234">https://shibboleth.bbaw.de/bbaw_logo.png</mdui:Logo>
+                    <mdui:InformationURL
+                        xml:lang="de">http://www.bbaw.de</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="en">http://www.bbaw.de</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">http://shibboleth.bbaw.de/privacy.html</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo
@@ -139,9 +170,9 @@
         </md:SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften</OrganizationName>
-            <OrganizationName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationName>
+            <OrganizationName xml:lang="en">Berlin-Brandenburg Academy of Sciences and Humanities</OrganizationName>
             <OrganizationDisplayName xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="en">Berlin-Brandenburg Academy of Sciences</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="en">Berlin-Brandenburg Academy of Sciences and Humanities</OrganizationDisplayName>
             <OrganizationURL
                 xml:lang="de">http://www.bbaw.de</OrganizationURL>
             <OrganizationURL
