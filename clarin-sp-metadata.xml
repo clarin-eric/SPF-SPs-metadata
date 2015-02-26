@@ -942,12 +942,7 @@
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
             <Extensions>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login"
-                    index="1"/>
-                <mdui:UIInfo
+                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Repository</mdui:DisplayName>
@@ -1568,28 +1563,37 @@
     <EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://portal.clarin.inl.nl/">
+        <Extensions>
+              <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </Extensions>
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <Extensions>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"
+                    index="1"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) - CLARIN services</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en"> Institute for Dutch Lexicology (INL) - CLARIN services</mdui:DisplayName>
-                    <mdui:Description xml:lang="en"> Several projects attached to the CLARIN infrastructure.</mdui:Description>
-                    <mdui:Description xml:lang="nl"> INL diensten en projecten verbonden aan het CLARIN project.</mdui:Description>
-                    <mdui:InformationURL
-                        xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+                    <mdui:DisplayName xml:lang="nl">INL portaal - CLARIN diensten</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">INL portal - CLARIN services</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Institute for Dutch Lexicology (INL) projects attached to the CLARIN infrastructure</mdui:Description>
+                    <mdui:Description xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
+                    <mdui:InformationURL xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="281" width="500">https://portal.clarin.inl.nl/images/logo_portal.jpg</mdui:Logo>
+                    <mdui:Logo height="9" width="16">https://portal.clarin.inl.nl/images/logo_portal_verysmall.jpg</mdui:Logo>
+                    <mdui:Logo height="85" width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>                    
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -1632,16 +1636,6 @@
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
-            <!--
-         <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/SOAP"/>
-         <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/Redirect"/>
-         <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/POST"/>
-         <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://portal.clarin.inl.nl/Shibboleth.sso/SLO/Artifact"/>
-         <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/SOAP"/>
-         <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/Redirect"/>
-         <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/POST"/>
-         <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://portal.clarin.inl.nl/Shibboleth.sso/NIM/Artifact"/>
-         -->
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/POST"
@@ -1666,6 +1660,23 @@
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
+            <md:AttributeConsumingService
+                index="1">
+                <md:ServiceName xml:lang="en">Autosearch</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Corpus indexing service</md:ServiceDescription>
+                <!-- SAML1 -->
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <!-- SAML2 -->
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+            </md:AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
             <OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationName>
