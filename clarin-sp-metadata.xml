@@ -326,19 +326,19 @@
             contactType="administrative">
             <GivenName>Tero</GivenName>
             <SurName>Aalto</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+            <EmailAddress>ling@csc.fi</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="technical">
             <GivenName>Martin</GivenName>
             <SurName>Matthiesen</SurName>
-            <EmailAddress>mailto:martin.matthiesen@csc.fi</EmailAddress>
+            <EmailAddress>martin.matthiesen@csc.fi</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="support">
             <GivenName>Tero</GivenName>
             <SurName>Aalto</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+            <EmailAddress>ling@csc.fi</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
@@ -462,19 +462,19 @@
         <ContactPerson
             contactType="administrative">
             <GivenName>Fin-Clarin</GivenName>
-            <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
+            <EmailAddress>fin-clarin@helsinki.fi</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="technical">
             <GivenName>Martin</GivenName>
             <SurName>Matthiesen</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
+            <EmailAddress>ling@csc.fi</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="support">
             <GivenName>Jyrki</GivenName>
             <SurName>Niemi</SurName>
-            <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
+            <EmailAddress>jyrki.niemi@helsinki.fi</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
 
