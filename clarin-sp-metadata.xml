@@ -530,70 +530,7 @@
                     Location="https://test.secure.huygens.knaw.nl/saml2/login"
                     index="1"/>
             </md:Extensions>
-            <md:KeyDescriptor
-                use="signing">
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=secure.huygens.knaw.nl,C=NL,ST=ZH,L=Den Haag,O=KNAW,OU=Huygens ING,emailAddress=sso@huygens.knaw.nl</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIJrDCCBZQCCQDDazlLOi5yzDANBgkqhkiG9w0BAQUFADCBlzELMAkGA1UEBhMC
-                            TkwxCzAJBgNVBAgMAlpIMREwDwYDVQQHDAhEZW4gSGFhZzENMAsGA1UECgwES05B
-                            VzEUMBIGA1UECwwLSHV5Z2VucyBJTkcxHzAdBgNVBAMMFnNlY3VyZS5odXlnZW5z
-                            LmtuYXcubmwxIjAgBgkqhkiG9w0BCQEWE3Nzb0BodXlnZW5zLmtuYXcubmwwHhcN
-                            MTQxMDA4MTEzMzM0WhcNMjQxMDA1MTEzMzM0WjCBlzELMAkGA1UEBhMCTkwxCzAJ
-                            BgNVBAgMAlpIMREwDwYDVQQHDAhEZW4gSGFhZzENMAsGA1UECgwES05BVzEUMBIG
-                            A1UECwwLSHV5Z2VucyBJTkcxHzAdBgNVBAMMFnNlY3VyZS5odXlnZW5zLmtuYXcu
-                            bmwxIjAgBgkqhkiG9w0BCQEWE3Nzb0BodXlnZW5zLmtuYXcubmwwggQiMA0GCSqG
-                            SIb3DQEBAQUAA4IEDwAwggQKAoIEAQDbeFOJdcZvpLnTRRTrPd/OuUz4+3+sK6Y8
-                            7amETcJgc9qJBtjEBwb0XAMTawY6gxcYuAx78IO5J8jeEf7fNdrqLH6+W285zJkx
-                            TT0Asz9jYykghW7QVlJCEpa4K+dlJkxQvg3ciU+nULIxG2QpM4Sy89LSHkCwLdR4
-                            i4unYe3AbTHBzMYXZGXLsuz3NyAcByT0osb6EzbyW9YcvWvPba+2hiZCsx6mUPXr
-                            DG07TQebTG/u4zjDadyO4RNKQGKA3maKUfpGU62Mo/IzUQZjCs+XPuan/lpZt3SR
-                            tqZnTyzo6WCuBXOtez3RQglpOkr7rFgptKfZgA/6zMKI/7OWEey2QoIhSZ6XV4bQ
-                            anD0f56ajoS/ZLUabAFXJe7qxPDmMKr8Oo3GLJ8OoYRpytmwE3j4PKrTSQtnNkxt
-                            I/fCzmjUYbGGZbePMxVdlTqE6/ctAMpnXXldS9VTeJcyxMLbqUhRkFlioNmuFfQE
-                            Hts2FLWhYeCYtkUlSys7mVWhSkCcU+6jPwTfyH+pWaUuNoLVBeS/OtstCB6Okl1Y
-                            hsG1ov76xm8U7docFdRCCRTXEAMuryxl7ub114OdECfppbCQyE8a1IB6MFlZ1QGE
-                            x1qVNCwIDY+QPREr1eI4FDNDjYWGe6JOBmGbsm4vyuPEccW1ePbsNWDyzNBCxygJ
-                            ci5zVbxlRE1xWtmWIY3OJOzx0YKLJxCA0dsiPriqLcTVb6RWqejt1XbXjGi2NoYF
-                            N1KOVonIddJim0QYG3QzxOwmNdqV35m7wvPLsClRe3mOSberBe/c7rJyXaYw3A9A
-                            nasOf0G8DiGdptmu7pBOOBtraiEDbz4+KvtIovX5xMP8tG3ynIaCUn4EvDuwgB0n
-                            gHAUzY5qcU2N21a92t6GHbXYG58wzZKv4OAUZkGeVP5XKuRz6npFj4zpXl1YhOaW
-                            h1DyRCOj5xbv0DtI3Zhu9wcjEDb/2BeXWHdzXqi03TRYNQC1b8ioXB7PoTzP4HgX
-                            hFH+KRxbDCa3MKk3iKAM6uhwmMckLqVUlg7qfouQIJoB6gbz8VQV1W6flAgQrM6B
-                            5kjBCqlJAFjeFZuG8LgIAFxdJ9M35MyyeraTw3a18YCmsWzKlc85ApdS8Rs8DoHe
-                            Ac1SYtQCHLqhGfeTJ5y9XgF22Zux3aET08l5l6KgffZUpmXKPwsG2SxvSnR2GeEH
-                            a/6rXXG81kSspowiRplAKTR+bO/fZDRenm3L81dcQpemWXvAikSbowA8yzUTLmoo
-                            uwqI5YYuOGyxddYc2KLcmQc/GJWGhjpRU3nQgFcisBPJtI/2F/hDewg6kcZuTrJ/
-                            LVjzhBzzYjMbQvuZ4zBEprMt6nz4V+rvT0rDezvfLxaowsYKwTfBAgMBAAEwDQYJ
-                            KoZIhvcNAQEFBQADggQBALh7iiCiJF28DDUOrOIaoWEahiJjZxzZnQv+p2P/ogBF
-                            Wgo+V0wvvZnV+NvqDCWtIe5Ge2Wboi1XNtLD9lzQDzV8h8kVR8ZA4ZRLVfMWqxZy
-                            jYTFOjZf6gbt/OvX3Io+ErqlrC4wsY9UW7ilO48JllgfyFVkd5KRTV6VOHRpCGWY
-                            pH2V+cWFfj4IPRWLoJRFBvGyRatoWkKWrbhtm9QWJiO/aJ6mPMu/p5BVVCxOZN7s
-                            gjw25RxhnKgTb6NK5CwMhJVFLbzG+08FcdRhGLf/VRWWrkK4F3cV5p7nKJZ+AHy7
-                            Mi4T3Txlz+D0SlT7pnicgbE4S/bTl2FBgVq3hJLGo6vvXEeJVL0Fj/vex0LJjNHg
-                            i5i5Ii9huINElZeaLCZbd85/gQpOhNo7zVl028vWGvuArU1ipCkI0auiL7/toDRA
-                            KoSoA0wg22jxz8beJHPtZV+uGbPswqssu+wECacfLajmeoZXeu/l6qwcHTFHJgSk
-                            gxNL5aJBawZ3fDf0MHbYNQH2yqeyK8syY2hzEspTlY1LLB2kucXXCqy5ORjdkDCy
-                            SpqmLG0l/vjyrSDOeoBFkpqW8mBogtEf+0DZY3+sz6dqqLWheFitt3ub5e6dYZgJ
-                            kBElPgEmRd8iWIKMeQzdGIwF/bg9r3uUesXmsKvnCxN8AtDmScoi17bngfXe0R9W
-                            E+HNvjK3XJMAV4mhpFOfqrP4IB/P2+GeQr9xaBgLMpXieohb+svqF6Y1Ftrzz4oW
-                            FAe1IIVzcje2Sv+GFxMDrWzPqsESloeXaVbHJh6UJqeNSDWJRwa2KQFk0Os635OA
-                            /bNRgwSxDTXCOPyoKbAVEuD+x9vPzSiZfZM21KXlktP8qGfIDuhbWjDJ9Umnhjdf
-                            ikHxvr4tA9AgZau708pgj/eIGV/xSnubKZ3lI78xDKfCvvTS3ZhA9D/Q8qkzOXZ0
-                            6pDo4GaectfT/saO5eQkUyfqbiHUxDzvy4kOPVdXVmTmtSXLHIl2Mw22xbQyKGyx
-                            wiQLqNk4jM+u1+lFdnx/7HF9im5K+fE3NLt67GjSomKfltIdWrTm/5VrP/V+7bUY
-                            6e63WH67NaC87SJmvq9+6SK/ex+WILAcRe6c4tPQIWouagpdoLhnDB3gxL2ap2ep
-                            WFAybLEjPAs0yviXJXUm7KO+aDytE5qtFxp/7nQ53t8TSOITnJ7lOG6MLItwFJv7
-                            +XmRUdmsE5uVQ66+ER0qeSsaMLjYjfW3bsDeMjFbezc/T+bfZPuUW6J5cB+K9S2C
-                            sIyG57313sdj9AsKPiInNsKOpF+E3SOGKRafqycWUmbflSo1VMsqBBffgeDeavQv
-                            hab7DAIb7F4F0ucrgyqoXBbmbezmumunxaTbv+NZa5Q= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor
-                use="encryption">
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
@@ -3096,133 +3033,6 @@
         </md:SPSSODescriptor>
     </md:EntityDescriptor>
 
-    <!--  RZG Garching: Centre Registry (staging) -->
-    <EntityDescriptor
-        entityID="https://centres-staging.clarin.eu:4430/shibboleth-sp">
-        <Extensions
-            xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-            <alg:DigestMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-            <alg:SigningMethod
-                Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-        </Extensions>
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <Extensions>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/Login"/>
-            </Extensions>
-            <KeyDescriptor>
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>centerregistry-clarin</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=centerregistry-clarin</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAJuota9ITNc3MA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
-                            BAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjAeFw0xMjA5MjAxNTAyNDdaFw0yMjA5
-                            MTgxNTAyNDdaMCAxHjAcBgNVBAMTFWNlbnRlcnJlZ2lzdHJ5LWNsYXJpbjCCASIw
-                            DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANBEv1ALXWSf467nGOdTfB0viTIy
-                            c1vjvwf4Qhtg8n5bN3CL7nhJ6dBSlv/l5U0GcZqUI2h8nnIxdAqKGGV1cA45yESl
-                            b7HT9FFcd0dFJ8BCCjZOe5ggu4NGdl+vzD6ymOYdJuk0uDUSCLvAHSdYX2ECXePZ
-                            FlFCrBZKMNlvcImlJuTexkvVFDVIjvBy6p3qLLdJSSS/UBKGp14qrkVCXCSltPx5
-                            9cyYLvjNudEfXea2wvM1luC+3NGnqesrByE1pItolteB2cesWFFmsCzWseqLK2vV
-                            hzKby9CStLHmyV1WsZX7vErn/a3T8SCHKeIJM/O2Bw8MlgBqeYcE+ILxGVcCAwEA
-                            AaNDMEEwIAYDVR0RBBkwF4IVY2VudGVycmVnaXN0cnktY2xhcmluMB0GA1UdDgQW
-                            BBSheCRqJ2tbwkRLF3mdHOF2OQR44DANBgkqhkiG9w0BAQUFAAOCAQEAwyB6xS9o
-                            RS3jXf67JKb+r5KYjxQW2UT2IZNArxueeHEFkkWtA0A4vhSI8iRgygEzX0ypK4Mj
-                            VMRFyZ4F93X+9hz5Qgfskj6HCbIM7dpmwF1arwAqndU4Ia9l0IThf5tyysmwZC61
-                            devhYYCpjhRqww8pUBTzWvpSJNK4QQtHHLHZfeRV+oOcOtyQFx/Y5rCMOhK44FMY
-                            QJyElwE6v1cBMmQnsU4TxHZkNm1yfbJfO6XyJl9j3xKtHIzPsBMKOwklAxSrI1Fa
-                            KHTuiDqi2iJaZ7qU2JRf5AK4COoyLCmI+VdG+qggNgHQFuGjHz0VZdjyfGCnYxq6
-                            xe0qZuTLNHLOFw== </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-                <EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-            </KeyDescriptor>
-            <ArtifactResolutionService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/Artifact/SOAP"
-                index="1"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SLO/Artifact"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/POST"
-                index="1"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/POST-SimpleSign"
-                index="2"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/Artifact"
-                index="3"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML2/ECP"
-                index="4"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML/POST"
-                index="5"/>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://centres-staging.clarin.eu:4430/Shibboleth.sso/SAML/Artifact"
-                index="6"/>
-        </SPSSODescriptor>
-    </EntityDescriptor>
-
     <!-- RZ Garching  ws1-clarind.esc.rzg.mpg.de (via CLARIN) -->
     <EntityDescriptor
         entityID="https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp">
@@ -5053,17 +4863,7 @@
                         xml:lang="en">https://wiki.ut.ee/display/keeleressursid/Privacy+Policy+of+Center+of+Estonian+Language+Resources</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-            <md:KeyDescriptor
-                use="signing">
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIEfzCCA2egAwIBAgIQEHEZOlxMPA1OJ+5lCLnyNTANBgkqhkiG9w0BAQUFADA2MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEgU1NMIENBMB4XDTEzMTIwNjAwMDAwMFoXDTE2MTIwNTIzNTk1OVowRzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMSIwIAYDVQQDExlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDXZTjKFPgzC8w22Bfp7cvTj3cRFBACW4i5yhCG+oK+sT69WDhlMq1chr2tOUhgXu9ASJvS2ZZ2qKp+vX28GqQFQbyLARF4Lr93tA0if8NYPm5oi9ZLB9iPUvRHrdiEAA3jjMZ2TNqHEIsxJdJUWg4mtuaorwqjZn8qZ3mT8ia3qgIRJsAXzcO2MimvGmbWIl0l1u8bDD316+r3YZH6UkgASjAsv6iOsUE1VNU8Qd4cOG60BseupUFAAwK20zj8iupV4gXr8F+n+CFiLFui8pFXPrVND5SHPltWjlTprOaUv7aNaSUMMtetFsjvHQXQZln43JTlb12uZes+Oe9524wIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFJqexvFu3FAXf3v9yEN07/a3hEbdMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3MudGVyZW5hLm9yZzAkBgNVHREEHTAbghlla3Jrc3NvLmtlZWxlcmVzc3Vyc2lkLmVlMA0GCSqGSIb3DQEBBQUAA4IBAQCuuAWKbmr7yefGwYa1MvN/4O8L40d8SD5AF9GcRjjh7Azgf76xwG4wDtU41NFnBd+glWBUEYwM/YLzODwQWx46wW1FTRRwvmhId84J4AY+lFN/8Nv+iqQtS3PrdJu80wO9Lv8E7vWoi8yvL3bPmqBGjE3i4Pu03DisLwOZkGsrc8ngz5y/MWTLyZTkkBfalnaeusTzOeD36BV9xdtbnbjONxJYVASTlEUjqsj+Q2duXJw/ORjMlQ4bSi7fFNp0aM6RLXRNIMUNevkzz/Sv93XHII/BZkp4Tc6bqqZc8oQzV737EHHj49GvG6xVjQ2gY0E6K++MhI+3H31o24ib+w26</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor
-                use="encryption">
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
@@ -5513,40 +5313,7 @@
                     <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til det europeiske CLARIN-initiativet.</mdui:Description>
                 </mdui:UIInfo>
             </md:Extensions>
-            <md:KeyDescriptor
-                use="signing">
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIEdzCCA1+gAwIBAgIQCA4E94tJ3rEzJC1noMhpNzANBgkqhkiG9w0BAQUFADA2
-                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-                            U1NMIENBMB4XDTEzMDUwODAwMDAwMFoXDTE2MDUwNzIzNTk1OVowPDEhMB8GA1UE
-                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRcwFQYDVQQDEw5jbGFyaW5vLnVp
-                            Yi5ubzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALIQNT7Lca7R0tFZ
-                            mm4Fes8xdGlJrbxiuA/A1e/dMXaHm/C65zZ2ZFbUXnIe+bq+9AlJPO1gr7vyMaiX
-                            DsEYGlBBL/oNeroJfv+DAInweaOkatmOGMCBDAmCY76M89Vshk0qDNTEbZwc15fr
-                            hNGCJTUiHSToCFtvwDI4/0dbsUwNfCML0jRvi2QFnrgXh0QxTTNfcFdh72uL2WCh
-                            sbteCE2P4/T1H5yL1P3YJvpDX0iAMszaG+ZntYmATVMm91ivcE6mRCDI+qcHJdDW
-                            dy2E8NOBNCr8aQle2P6txXC9w5hzoE49Bw0oAF49EHx3MroBEA47ECGbOJ0Hpb8R
-                            piXnX6ECAwEAAaOCAXkwggF1MB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ
-                            47ntMB0GA1UdDgQWBBR5vbqCMC3rno6VxasCvrYHZy/fkDAOBgNVHQ8BAf8EBAMC
-                            BaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
-                            IgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAv
-                            oC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmww
-                            bQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJl
-                            bmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3Au
-                            dGNzLnRlcmVuYS5vcmcwJwYDVR0RBCAwHoIOY2xhcmluby51aWIubm+CDGluZXNz
-                            LnVpYi5ubzANBgkqhkiG9w0BAQUFAAOCAQEAOjOxk+g90GHRP56AovDdtglU77Xx
-                            9Cd7Xx5hvbGMQRVFshLn4YXpbi4UFnGru0A+k0Cy+7tfQ4i82ITL3f0epz9N5JB8
-                            20waQRPTT55gk0iSAOSO5MhKeE6e+gf8RlDwF/p2y3RmalvxY/D+G6NKcwwbTe60
-                            Qd0b3DGOyN710RHzBLwtbIF3JmFw1M6m6w4Z433+XY/KiGMwpEGIw1J7I6XV1QeB
-                            7L7gZLFe+cry47IAqstheKHR0iUyR3+YgTVgS6pszAlhl46YYthpqSUiN0vpKB7E
-                            zRhPjli9gmQycjHS4iXBKe2aeFPsV5Cd7njw2oa9cmxMysqK+zjWJ4F1vQ==</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor
-                use="encryption">
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
