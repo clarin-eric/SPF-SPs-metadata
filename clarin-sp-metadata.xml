@@ -7,6 +7,7 @@
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
@@ -865,7 +866,7 @@
     <!-- IDS repos.ids-mannheim.de (via CLARIN) -->
     <EntityDescriptor
         entityID="https://repos.ids-mannheim.de/shibboleth">
-        <Extensions>
+        <md:Extensions>
             <mdattr:EntityAttributes
                 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute
@@ -875,11 +876,11 @@
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
-        </Extensions>
+        </md:Extensions>
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
             <Extensions>
-                 <mdui:UIInfo
+                <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Repository</mdui:DisplayName>
@@ -1041,6 +1042,17 @@
     <md:EntityDescriptor
         entityID="https://sp.lux17.mpi.nl"
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
@@ -1059,14 +1071,7 @@
                         width="90">https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://lux17.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
+                </mdui:UIInfo>                
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     index="1"
@@ -1183,8 +1188,11 @@
                 xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
+            contactType="administrative">
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="technical">
-            <md:SurName>Technical Support</md:SurName>
             <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
@@ -1192,9 +1200,20 @@
     <!-- MPI catalog.clarin.eu (via CLARIN) -->
     <EntityDescriptor
         entityID="https://sp.catalog.clarin.eu">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0: protocol">
-            <Extensions>
+            <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">CLARIN Catalog</mdui:DisplayName>
@@ -1208,13 +1227,7 @@
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://catalog.clarin.eu/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
+                
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
@@ -1225,7 +1238,7 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://catalog.clarin.eu/Shibboleth.sso/DS"
                     index="2"/>
-            </Extensions>
+            </md:Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -1335,16 +1348,19 @@
             </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="en">CLARIN</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">CLARIN</OrganizationDisplayName>
+            <OrganizationName xml:lang="en">CLARIN ERIC</OrganizationName>
+            <OrganizationDisplayName xml:lang="en">CLARIN ERIC</OrganizationDisplayName>
             <OrganizationURL
                 xml:lang="en">http://www.clarin.eu</OrganizationURL>
         </Organization>
-        <ContactPerson
+        <md:ContactPerson
+            contactType="administrative">
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="technical">
-            <SurName>Technical Support</SurName>
-            <EmailAddress>latadmin@mpi.nl</EmailAddress>
-        </ContactPerson>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
     </EntityDescriptor>
 
     <!-- MPI corpus1.mpi.nl (via CLARIN) -->
@@ -1490,8 +1506,11 @@
                 xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
+            contactType="administrative">
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="technical">
-            <md:SurName>Technical Support</md:SurName>
             <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
@@ -1501,7 +1520,7 @@
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://portal.clarin.inl.nl/">
         <Extensions>
-              <mdattr:EntityAttributes
+            <mdattr:EntityAttributes
                 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute
                     Name="http://macedir.org/entity-category"
@@ -1525,12 +1544,21 @@
                     <mdui:DisplayName xml:lang="en">INL portal - CLARIN services</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Institute for Dutch Lexicology (INL) projects attached to the CLARIN infrastructure</mdui:Description>
                     <mdui:Description xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
-                    <mdui:InformationURL xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
-                    <mdui:Logo height="281" width="500">https://portal.clarin.inl.nl/images/logo_portal.jpg</mdui:Logo>
-                    <mdui:Logo height="9" width="16">https://portal.clarin.inl.nl/images/logo_portal_verysmall.jpg</mdui:Logo>
-                    <mdui:Logo height="85" width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>                    
+                    <mdui:InformationURL
+                        xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="281"
+                        width="500">https://portal.clarin.inl.nl/images/logo_portal.jpg</mdui:Logo>
+                    <mdui:Logo
+                        height="9"
+                        width="16">https://portal.clarin.inl.nl/images/logo_portal_verysmall.jpg</mdui:Logo>
+                    <mdui:Logo
+                        height="85"
+                        width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -4975,26 +5003,26 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-            <mdui:UIInfo
-                xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                <mdui:DisplayName xml:lang="en">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
-                <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving young children.</mdui:Description>
-                <mdui:PrivacyStatementURL
-                    xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
-                <mdui:Logo
-                    height="300"
-                    width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
-                <mdui:Logo
-                    height="60"
-                    width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
-                <mdui:Logo
-                    height="16"
-                    width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
-            </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving young children.</mdui:Description>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="300"
+                        width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                    <mdui:Logo
+                        height="60"
+                        width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                    <mdui:Logo
+                        height="16"
+                        width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
+                </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -5158,30 +5186,35 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-            <mdui:UIInfo
-                xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                <mdui:DisplayName xml:lang="en">TalkBank</mdui:DisplayName>
-                <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</mdui:Description>
-                <mdui:PrivacyStatementURL
-                    xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
-                <mdui:Logo
-                    height="300"
-                    width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
-                <mdui:Logo
-                    height="60"
-                    width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
-                <mdui:Logo
-                    height="16"
-                    width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
-            </mdui:UIInfo>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://talkbank.talkbank.org/Shibboleth.sso/Login"
+                    index="1"/>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Location="https://talkbank.talkbank.org/Shibboleth.sso/Login"/>
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">TalkBank</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</mdui:Description>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="300"
+                        width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
+                    <mdui:Logo
+                        height="60"
+                        width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
+                    <mdui:Logo
+                        height="16"
+                        width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
+                </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo
