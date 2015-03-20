@@ -692,18 +692,21 @@
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://clarin.ids-mannheim.de/Shibboleth.sso/Login"
                     index="1"/>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://clarin.ids-mannheim.de/Shibboleth.sso/Login"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN services</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">CLARIN Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">CLARIN services</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Verschiedene Dienste des Institut für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</mdui:Description>
                     <mdui:Description xml:lang="en">Various services provided by the Institut für Deutsche Sprache (IDS) in the context of the CLARIN initiative.</mdui:Description>
-                    <mdui:InformationURL
-                        xml:lang="de">http://www.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="en">http://www.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="16" width="16">https://clarin.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
+                    <mdui:Logo height="63" width="318">https://clarin.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="de">http://www.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">http://www.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -880,18 +883,26 @@
         <SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
             <Extensions>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login"
+                    index="1"/>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Institute for the German Language (IDS) - Repository</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Forschungsprimärdatenrepository</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">Research Data Respository</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Institut für Deutsche Sprache (IDS).</mdui:Description>
                     <mdui:Description xml:lang="en">Language resources repository of the Institute for the German Language (IDS).</mdui:Description>
-                    <mdui:InformationURL
-                        xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo height="16" width="16">https://repos.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
+                    <mdui:Logo height="63" width="318">https://repos.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
