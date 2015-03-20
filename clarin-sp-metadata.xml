@@ -3173,15 +3173,15 @@
                     index="1"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (for accessing academic use restricted resources).</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">BAS Service Provider</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (access to resources restricted to academia).</mdui:Description>
                     <mdui:Keywords
                         xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:Keywords>
                     <mdui:Logo
                         height="150"
-                        width="356">http://www.en.phonetik.uni-muenchen.de/research/bav_arch_spsig/bas_logo_englisch.jpg</mdui:Logo>
+                        width="356">https://www.phonetik.uni-muenchen.de/forschung/bay_arch_sprsig/bas_logo_german.jpg</mdui:Logo>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">http://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
+                        xml:lang="en">https://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <mdattr:EntityAttributes>
                     <saml:Attribute
