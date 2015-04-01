@@ -41,6 +41,12 @@
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
         <md:SPSSODescriptor
@@ -219,6 +225,12 @@
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
         <SPSSODescriptor
@@ -363,6 +375,12 @@
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
         <SPSSODescriptor
@@ -491,6 +509,12 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
@@ -682,6 +706,12 @@
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
         <SPSSODescriptor
@@ -702,11 +732,18 @@
                     <mdui:DisplayName xml:lang="en">CLARIN services</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Verschiedene Dienste des Institut für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</mdui:Description>
                     <mdui:Description xml:lang="en">Various services provided by the Institut für Deutsche Sprache (IDS) in the context of the CLARIN initiative.</mdui:Description>
-                    <mdui:Logo height="16" width="16">https://clarin.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
-                    <mdui:Logo height="63" width="318">https://clarin.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
-                    <mdui:InformationURL xml:lang="de">http://www.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="en">http://www.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="16"
+                        width="16">https://clarin.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
+                    <mdui:Logo
+                        height="63"
+                        width="318">https://clarin.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
+                    <mdui:InformationURL
+                        xml:lang="de">http://www.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="en">http://www.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">https://clarin.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -898,11 +935,18 @@
                     <mdui:DisplayName xml:lang="en">Research Data Respository</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Institut für Deutsche Sprache (IDS).</mdui:Description>
                     <mdui:Description xml:lang="en">Language resources repository of the Institute for the German Language (IDS).</mdui:Description>
-                    <mdui:Logo height="16" width="16">https://repos.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
-                    <mdui:Logo height="63" width="318">https://repos.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
-                    <mdui:InformationURL xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="16"
+                        width="16">https://repos.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
+                    <mdui:Logo
+                        height="63"
+                        width="318">https://repos.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
+                    <mdui:InformationURL
+                        xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -1062,6 +1106,12 @@
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -1069,28 +1119,27 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics Lux17</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Lux17</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Linguistic Services aimed at researchers</mdui:Description>
-                    <mdui:Description xml:lang="nl">Taalkundige Services gericht op onderzoekers</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics - lux17 (dev)</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek - lux17 (dev)</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
+                    <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Keywords
-                        xml:lang="en">MPI-PL Lux17 Linguistic Services</mdui:Keywords>
+                        xml:lang="en">MPI-PL lux17 linguistics Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="nl">MPI-PL Lux17 Taalkundige Services</mdui:Keywords>
+                        xml:lang="nl">MPI-PL corpus1 taalwetenschap Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
                     <mdui:Logo
                         height="90"
                         width="90">https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://lux17.mpi.nl/privacy_statement.html</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>                
+                </mdui:UIInfo>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://lux17.mpi.nl/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     index="1"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://lux17.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="2"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://lux17.mpi.nl/Shibboleth.sso/DS"/>
             </md:Extensions>
@@ -1134,9 +1183,9 @@
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
             <!--
-         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-         <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
-         -->
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+            -->
             <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
@@ -1173,44 +1222,52 @@
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://lux17.mpi.nl/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
-            <!-- start : required for terena CoC -->
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics Lux17</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">Linguistic Services aimed at researchers</md:ServiceDescription>
-                <!-- SAML1 -->
-                <md:RequestedAttribute
+                <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics - lux17 (dev)</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</md:ServiceDescription>
+                <RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
                     NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="true"/>
+                <RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:mace:dir:attribute-def:mail"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="false"/>
                 <!-- SAML2 -->
-                <md:RequestedAttribute
+                <RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
+                <RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
             <md:OrganizationName xml:lang="en">MPI-PL</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
             <md:OrganizationURL
-                xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
+                xml:lang="en">http://www.mpi.nl/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
-    <!-- MPI catalog.clarin.eu (via CLARIN) -->
-    <EntityDescriptor
-        entityID="https://sp.catalog.clarin.eu">
+    <md:EntityDescriptor
+        entityID="https://sp.catalog.clarin.eu"
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
         <md:Extensions>
             <mdattr:EntityAttributes
                 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
@@ -1220,37 +1277,41 @@
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
-        <SPSSODescriptor
+        <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0: protocol">
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">CLARIN Catalog</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">CLARIN Catalog</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Verstrekt toegang tot de Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) en meer</mdui:Description>
-                    <mdui:Description xml:lang="en">Providing services like the Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) and more</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">CLARIN - catalog</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">CLARIN - catalog</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">CMDI metadata services: Component Registry, Virtual Language Observatory.</mdui:Description>
+                    <mdui:Description xml:lang="en">CMDI metadata services: Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:Keywords
-                        xml:lang="en">CLARIN Catalog Data Category Registry ISOcat Component Registry Virtual Language Observatory VLO</mdui:Keywords>
+                        xml:lang="en">CLARIN catalog Component Registry Virtual Language Observatory VLO</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="nl">CLARIN Catalog Data Category Registry ISOcat Component Registry Virtual Language Observatory VLO</mdui:Keywords>
+                        xml:lang="nl">CLARIN catalog Component Registry Virtual Language Observatory VLO</mdui:Keywords>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://catalog.clarin.eu/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
-                
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://catalog.clarin.eu/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://catalog.clarin.eu/Shibboleth.sso/DS"
                     index="1"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://catalog.clarin.eu/Shibboleth.sso/DS"
-                    index="2"/>
             </md:Extensions>
-            <KeyDescriptor>
+            <md:KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
@@ -1277,141 +1338,159 @@
                             gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </KeyDescriptor>
-            <SingleLogoutService
+            </md:KeyDescriptor>
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/POST"/>
-            <SingleLogoutService
+            <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
-            <!--
+         <!--
          <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
          <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
          -->
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
+            <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Artifact"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST"
                 index="1"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign"
                 index="2"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/Artifact"
                 index="3"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/ECP"
                 index="4"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/POST"
                 index="5"/>
-            <AssertionConsumerService
+            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML/Artifact"
                 index="6"/>
-            <AttributeConsumingService
+            <md:AttributeConsumingService
                 index="1">
-                <ServiceName xml:lang="en">CLARIN Catalog</ServiceName>
-                <ServiceDescription xml:lang="en">Providing services like the Data Category Registry (ISOcat), Component Registry, Virtual Language Observatory (VLO) and more</ServiceDescription>
+                <md:ServiceName xml:lang="en">CLARIN - catalog</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">CMDI metadata services: Component Registry, Virtual Language Observatory.</md:ServiceDescription>
                 <!-- SAML1 -->
-                <RequestedAttribute
+                <md:RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-                <RequestedAttribute
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
                     FriendlyName="eduPersonTargetedID"
                     Name="urn:mace:dir:attribute-def:eduPersonTargetedID"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-                <RequestedAttribute
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
                     FriendlyName="mail"
                     Name="urn:mace:dir:attribute-def:mail"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="false"/>
                 <!-- SAML2 -->
-                <RequestedAttribute
+                <md:RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
-                <RequestedAttribute
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
                     FriendlyName="eduPersonTargetedID"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
-            </AttributeConsumingService>
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="en">CLARIN ERIC</OrganizationName>
-            <OrganizationDisplayName xml:lang="en">CLARIN ERIC</OrganizationDisplayName>
-            <OrganizationURL
-                xml:lang="en">http://www.clarin.eu</OrganizationURL>
-        </Organization>
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">CLARIN ERIC</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">CLARIN</md:OrganizationDisplayName>
+            <md:OrganizationURL
+                xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
+        </md:Organization>
         <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>clarin@clarin.eu</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>sysops@clarin.eu</md:EmailAddress>
         </md:ContactPerson>
-    </EntityDescriptor>
+    </md:EntityDescriptor>
 
-    <!-- MPI corpus1.mpi.nl (via CLARIN) -->
     <md:EntityDescriptor
         entityID="https://sp.corpus1.mpi.nl"
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics Corpus1</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguistiek Corpus1</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Linguistic Services aimed at researchers.</mdui:Description>
-                    <mdui:Description xml:lang="nl">Taalkundige Services gericht op onderzoekers.</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Max Planck Institute for Psycholinguistics - corpus1</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek - corpus1</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
+                    <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Keywords
-                        xml:lang="en">MPI-PL Corpus1 Taalkundige Services</mdui:Keywords>
+                        xml:lang="en">MPI-PL corpus1 linguistics Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="nl">MPI-PL Corpus1 Linguistic Services</mdui:Keywords>
+                        xml:lang="nl">MPI-PL corpus1 taalwetenschap Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
                     <mdui:Logo
                         height="194"
                         width="189">https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">http://corpus1.mpi.nl/IMDI/info/privacy_statement.html</mdui:PrivacyStatementURL>
+                        xml:lang="en">https://corpus1.mpi.nl/IMDI/info/privacy_statement.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://corpus1.mpi.nl/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     index="1"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="http://corpus1.mpi.nl/Shibboleth.sso/DS"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    index="2"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://corpus1.mpi.nl/Shibboleth.sso/DS"/>
             </md:Extensions>
@@ -1455,9 +1534,9 @@
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
             <!--
-         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-         <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
-         -->
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+            -->
             <md:ManageNameIDService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
@@ -1496,33 +1575,45 @@
                 index="6"/>
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">MPI-PL Corpus1</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">Linguistic Services aimed at researchers.</md:ServiceDescription>
+                <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics - corpus1</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</md:ServiceDescription>
                 <!-- SAML1 -->
-                <md:RequestedAttribute
+                <RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
                     NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="true"/>
-                <md:RequestedAttribute
+                <RequestedAttribute
                     FriendlyName="mail"
                     Name="urn:mace:dir:attribute-def:mail"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="false"/>
+                <!-- SAML2 -->
+                <RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <RequestedAttribute
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
             <md:OrganizationName xml:lang="en">MPI-PL</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
             <md:OrganizationURL
-                xml:lang="en">http://www.mpi.nl</md:OrganizationURL>
+                xml:lang="en">http://www.mpi.nl/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
@@ -1538,6 +1629,12 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
@@ -1695,6 +1792,12 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod
                 xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
@@ -1752,14 +1855,19 @@
                 xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                <mdui:DisplayName xml:lang="en">LINDAT/CLARIN services</mdui:DisplayName>
-                <mdui:DisplayName xml:lang="cs">Repozitář a služby LINDAT/CLARIN</mdui:DisplayName>
-                <mdui:Description xml:lang="en">LINDAT/CLARIN digital repository and services focused on language research infrastructure</mdui:Description>
-                <mdui:Description xml:lang="cs">Repozitář a služby projektu LINDAT/CLARIN zaměřené na podporu výzkumu jazyka</mdui:Description>
-                <mdui:InformationURL xml:lang="en">http://ufal.mff.cuni.cz/</mdui:InformationURL>
-                <mdui:InformationURL xml:lang="cs">http://ufal.mff.cuni.cz/</mdui:InformationURL>
-                <mdui:PrivacyStatementURL xml:lang="en">https://lindat.mff.cuni.cz/privacypolicy.html</mdui:PrivacyStatementURL>
-                <mdui:Logo height="29" width="29">https://lindat.mff.cuni.cz/favicon.ico</mdui:Logo>
+                    <mdui:DisplayName xml:lang="en">LINDAT/CLARIN services</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="cs">Repozitář a služby LINDAT/CLARIN</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">LINDAT/CLARIN digital repository and services focused on language research infrastructure</mdui:Description>
+                    <mdui:Description xml:lang="cs">Repozitář a služby projektu LINDAT/CLARIN zaměřené na podporu výzkumu jazyka</mdui:Description>
+                    <mdui:InformationURL
+                        xml:lang="en">http://ufal.mff.cuni.cz/</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="cs">http://ufal.mff.cuni.cz/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">https://lindat.mff.cuni.cz/privacypolicy.html</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="29"
+                        width="29">https://lindat.mff.cuni.cz/favicon.ico</mdui:Logo>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -1769,7 +1877,7 @@
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Location="https://lindat.mff.cuni.cz/Shibboleth.sso/Login"
-                index="1"/>
+                    index="1"/>
             </Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo
@@ -1870,7 +1978,7 @@
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName xml:lang="en">LINDAT/CLARIN digital repository and services</md:ServiceName>
-            <md:ServiceDescription xml:lang="en">Repository and services of LINDAT/CLARIN project at Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">Repository and services of LINDAT/CLARIN project at Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</md:ServiceDescription>
                 <md:RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
@@ -1927,13 +2035,13 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="false"/>
                 <md:RequestedAttribute
-                FriendlyName="eduPersonScopedAffiliation" 
-                Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation" 
+                    FriendlyName="eduPersonScopedAffiliation"
+                    Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation"
                     NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="false"/>
                 <md:RequestedAttribute
-                FriendlyName="eduPersonScopedAffiliation" 
-                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" 
+                    FriendlyName="eduPersonScopedAffiliation"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="false"/>
             </md:AttributeConsumingService>
@@ -1943,8 +2051,10 @@
             <md:OrganizationName xml:lang="cs">Ústav formální a aplikované lingvistiky, Matematicko-fyzikální fakulta, Univerzita Karlova v Praze</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in         Prague</md:OrganizationDisplayName>
             <md:OrganizationDisplayName xml:lang="cs">ÚFAL MFF UK</md:OrganizationDisplayName>
-        <md:OrganizationURL xml:lang="en">http://ufal.mff.cuni.cz/</md:OrganizationURL>
-        <md:OrganizationURL xml:lang="cs">http://ufal.mff.cuni.cz/</md:OrganizationURL>
+            <md:OrganizationURL
+                xml:lang="en">http://ufal.mff.cuni.cz/</md:OrganizationURL>
+            <md:OrganizationURL
+                xml:lang="cs">http://ufal.mff.cuni.cz/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
@@ -1957,11 +2067,11 @@
             <md:GivenName>Authentication Support</md:GivenName>
             <md:EmailAddress>lindat-technical@ufal.mff.cuni.cz</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson 
-            contactType="administrative"> 
-            <md:GivenName>Administrative Support</md:GivenName> 
-            <md:EmailAddress>lindat-technical@ufal.mff.cuni.cz</md:EmailAddress> 
-        </md:ContactPerson>  
+        <md:ContactPerson
+            contactType="administrative">
+            <md:GivenName>Administrative Support</md:GivenName>
+            <md:EmailAddress>lindat-technical@ufal.mff.cuni.cz</md:EmailAddress>
+        </md:ContactPerson>
     </md:EntityDescriptor>
 
     <!-- University of Tübingen (via CLARIN) -->
@@ -1976,6 +2086,12 @@
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
@@ -2162,6 +2278,12 @@
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod
@@ -2395,6 +2517,12 @@
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod
@@ -2764,6 +2892,21 @@
         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
         ID="_dbeca94d4c543f5fb97fa995f02bdf86"
         entityID="https://dev.clarin.nl/shibboleth">
+        <md:Extensions>
+            <mdattr:EntityAttributes>
+                <saml:Attribute
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
@@ -2779,13 +2922,6 @@
                     <mdui:PrivacyStatementURL
                         xml:lang="en">http://dev.clarin.nl/privacy%20policy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        Name="http://macedir.org/entity-category"
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo
@@ -2900,7 +3036,10 @@
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
-            <md:SurName>Technical Support</md:SurName>
+            <md:EmailAddress>helpdesk@clarin.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
+            contactType="support">
             <md:EmailAddress>helpdesk@clarin.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
@@ -2944,6 +3083,21 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -3157,6 +3311,12 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
         <SPSSODescriptor
@@ -3183,13 +3343,6 @@
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute
-                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                        Name="http://macedir.org/entity-category">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
             </Extensions>
             <KeyDescriptor>
                 <ds:KeyInfo>
@@ -3351,6 +3504,12 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </Extensions>
@@ -4674,6 +4833,13 @@
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod
@@ -4869,12 +5035,18 @@
         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
         entityID="https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp">
         <md:Extensions>
-            <mdrpi:RegistrationInfo
-                xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
-                registrationAuthority="http://taat.edu.ee">
-                <mdrpi:RegistrationPolicy
-                    xml:lang="en">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</mdrpi:RegistrationPolicy>
-            </mdrpi:RegistrationInfo>
+            <saml:Attribute
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            </saml:Attribute>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
@@ -5003,6 +5175,12 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+            <saml:Attribute
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            </saml:Attribute>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -5186,6 +5364,12 @@
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
             <alg:SigningMethod
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+            <saml:Attribute
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            </saml:Attribute>
         </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -5335,6 +5519,14 @@
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
         entityID="https://clarino.uib.no/">
+        <md:Extensions>
+            <saml:Attribute
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            </saml:Attribute>
+        </md:Extensions>
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions>
