@@ -1294,6 +1294,9 @@
                     <mdui:DisplayName xml:lang="nl">CLARIN - catalog</mdui:DisplayName>
                     <mdui:Description xml:lang="nl">CMDI metadata services: Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:Description xml:lang="en">CMDI metadata services: Component Registry, Virtual Language Observatory.</mdui:Description>
+                    <mdui:Logo
+                        height="220"
+                        width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
                     <mdui:Keywords
                         xml:lang="en">CLARIN catalog Component Registry Virtual Language Observatory VLO</mdui:Keywords>
                     <mdui:Keywords
@@ -5298,6 +5301,7 @@
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName xml:lang="en">CHILDES - Child Language Data Exchange System</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Transcript corpora of conversational interactions involving young children.</md:ServiceDescription>
                 <md:RequestedAttribute
                     isRequired="true"
                     FriendlyName="eduPersonPrincipalName"
@@ -5487,6 +5491,7 @@
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName xml:lang="en">TalkBank</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</md:ServiceDescription>
                 <md:RequestedAttribute
                     isRequired="true"
                     FriendlyName="eduPersonPrincipalName"
