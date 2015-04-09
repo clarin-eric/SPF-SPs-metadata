@@ -30,16 +30,7 @@
             publisher="https://www.clarin.eu/spf"
             publicationId="$Header$"/>
         <mdrpi:RegistrationInfo
-            registrationAuthority="https://www.clarin.eu/spf"
-            registrationInstant="2006-05-29T11:34:27Z">
-            <mdrpi:RegistrationPolicy
-                xml:lang="en">
-                http://www.switch.ch/aai/metadata/en_registration.html
-            </mdrpi:RegistrationPolicy>
-            <mdrpi:RegistrationPolicy
-                xml:lang="de">
-                http://www.switch.ch/aai/metadata/de_registration.html
-            </mdrpi:RegistrationPolicy>
+            registrationAuthority="https://www.clarin.eu/spf">
         </mdrpi:RegistrationInfo>
     </Extensions>
     <!-- BBAW (via CLARIN) -->
