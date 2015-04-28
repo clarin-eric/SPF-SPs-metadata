@@ -1125,11 +1125,13 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">CLARIN CMDI metadata applications and services - catalog</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="nl">CLARIN CMDI metadata toepassingen en diensten - catalog</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">CLARIN CMDI metatiedot sovellukset ja palvelut - catalog</mdui:DisplayName>
                     <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
-                    <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
+                    <mdui:DisplayName xml:lang="de">CLARIN CMDI Metadaten Anwendungen und Dienste - catalog</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Für die Component Registry, Virtual Language Observatory.</mdui:Description>
+                    <mdui:DisplayName xml:lang="fi">CLARIN CMDI metatiedot sovellukset ja palvelut - catalog</mdui:DisplayName>
                     <mdui:Description xml:lang="fi">Component rekisterin, Virtual Language observatorio.</mdui:Description>
+                    <mdui:DisplayName xml:lang="nl">CLARIN CMDI metadata toepassingen en diensten - catalog</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
                     <mdui:Logo
@@ -5177,7 +5179,6 @@
                     isRequired="true"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
-
         <md:Organization>
             <md:OrganizationName xml:lang="nl">Meertens Instituut</md:OrganizationName>
             <md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
