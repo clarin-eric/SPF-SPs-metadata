@@ -1178,7 +1178,7 @@
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
-            <!--
+         <!--
          <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
          <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
          -->
@@ -1448,12 +1448,16 @@
                 xml:lang="de">http://www.mpi.nl/deutsch</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
+            contactType="support">
+            <md:EmailAddress>shibboleth@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
@@ -1630,12 +1634,16 @@
                 xml:lang="de">http://www.mpi.nl/deutsch</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson
+            contactType="support">
+            <md:EmailAddress>shibboleth@mpi.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:EmailAddress>Sander.Maijers@mpi.nl</md:EmailAddress>
+            <md:EmailAddress>latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
