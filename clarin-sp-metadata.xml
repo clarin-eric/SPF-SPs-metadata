@@ -6048,8 +6048,7 @@
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName xml:lang="en">https://www.nederlab.nl/shibboleth</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">
-		    This Service Provider regulates access to the Nederlab research environment and selected services for humanities research activities in the domain of Dutch language variation and culture
+                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services for humanities research activities in the domain of Dutch language variation and culture
                 </md:ServiceDescription>
                 <md:RequestedAttribute
                     Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
