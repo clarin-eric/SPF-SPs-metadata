@@ -4701,7 +4701,7 @@
         </md:ContactPerson>
     </md:EntityDescriptor>
 
-    <!-- Hamburger Zentrum für Sprachkorpora (HZSK) -->
+    <!-- Hamburger Zentrum für Sprachkorpora (HZSK) -->   
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_8599a4043cf9ca62c366fd77cc7c7b296a6ae9d3"
@@ -4715,12 +4715,6 @@
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -4728,12 +4722,10 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Hamburg Centre for Language Corpora</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Hampuri keskus Kieli Oyj</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository, in dem hauptsächlich Sprachkorpora vorgehalten werden</mdui:Description>
-                    <mdui:Description xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)</mdui:Description>
-                    <mdui:Description xml:lang="fi">Hampurin keskus Kieli Oyj (HZSK) tarjoaa HZSK Repository (lähinnä lukien puhutun kielen corpora)</mdui:Description>
+                    <mdui:DisplayName xml:lang="de">CLARIN Repositorium und Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">CLARIN repository and services</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Zugang zum Diensten und dem Repositorium des Hamburger Zentrums für Sprachkprpora (HZSK)</mdui:Description>
+                    <mdui:Description xml:lang="en">Access to services and the repository of the Hamburg Center for Language Corpora (HZSK)</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
                     <mdui:InformationURL
@@ -4748,9 +4740,9 @@
                         height="15"
                         width="35">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
                     <mdui:PrivacyStatementURL
-                        xml:lang="de">https://corpora.uni-hamburg.de/drupal/de/korpusanfragen-lizenzen</mdui:PrivacyStatementURL>
+                        xml:lang="de">https://corpora.uni-hamburg.de/drupal/en/privacy-policy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/corpus-enquiries-licenses</mdui:PrivacyStatementURL>
+                        xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/privacy-policy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -4832,6 +4824,64 @@
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://corpora.uni-hamburg.de/Shibboleth.sso/SAML/Artifact"
                 index="5"/>
+            <md:AttributeConsumingService
+                index="1">
+                <md:ServiceName xml:lang="de">Hamburger Zentrum für Sprachkorpora (HZSK) - CLARIN Repositorium und Dienste</md:ServiceName>
+                <md:ServiceName xml:lang="en">Hamburg Center for Language Corpora (HZSK) - CLARIN repository and services</md:ServiceName>
+                <md:ServiceDescription xml:lang="de">Forschungsdatenreppsitorium und Dienste des Hamburger Zentrum für Sprachkorpora (HZSK) im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">Language data repository and services provided by the Hamburg Center for Language Corpora (HZSK) in the context of the CLARIN initiative.</md:ServiceDescription>
+                <md:RequestedAttribute
+                    isRequired="true"
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                <md:RequestedAttribute
+                    isRequired="true"
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <md:RequestedAttribute
+                    isRequired="true"
+                    FriendlyName="mail"
+                    Name="urn:mace:dir:attribute-def:mail"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                <md:RequestedAttribute
+                    isRequired="true"
+                    FriendlyName="mail"
+                    Name="urn:oid:0.9.2342.19200300.100.1.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                <md:RequestedAttribute
+                    FriendlyName="cn"
+                    Name="urn:mace:dir:attribute-def:cn"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="cn"
+                    Name="urn:oid:2.5.4.3"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonScopedAffiliation"
+                    Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="false"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonScopedAffiliation"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="false"/>
+                <md:RequestedAttribute
+                    isRequired="false"
+                    FriendlyName="displayName"
+                    Name="urn:mace:dir:attribute-def:displayName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+                <md:RequestedAttribute
+                    isRequired="false"
+                    FriendlyName="displayName"
+                    Name="urn:oid:2.16.840.1.113730.3.1.241"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+                
+            </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
             <md:OrganizationName xml:lang="de">Hamburger Zentrum für Sprachkorpora (HZSK)</md:OrganizationName>
@@ -4862,7 +4912,8 @@
             <md:EmailAddress>corpora@uni-hamburg.de</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-
+    
+    
     <!-- IMS, University of Stuttgart -->
     <EntityDescriptor
         ID="_2b11c64ae972d1db978cc09e6cdea4ac3ea2fb30"
