@@ -4722,10 +4722,12 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">CLARIN Repositorium und Dienste</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">CLARIN repository and services</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Zugang zum Diensten und dem Repositorium des Hamburger Zentrums für Sprachkprpora (HZSK)</mdui:Description>
-                    <mdui:Description xml:lang="en">Access to services and the repository of the Hamburg Center for Language Corpora (HZSK)</mdui:Description>
+                    <mdui:DisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="en">Hamburg Centre for Language Corpora</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Hampuri keskus Kieli Oyj</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository, in dem hauptsächlich Sprachkorpora vorgehalten werden</mdui:Description>
+                    <mdui:Description xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)</mdui:Description>
+                    <mdui:Description xml:lang="fi">Hampurin keskus Kieli Oyj (HZSK) tarjoaa HZSK Repository (lähinnä lukien puhutun kielen corpora)</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
                     <mdui:InformationURL
