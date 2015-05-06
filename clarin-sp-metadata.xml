@@ -2318,8 +2318,20 @@
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Weblicht Technical Support</md:GivenName>
-            <md:SurName>SfS, University of Tübingen</md:SurName>
+            <md:GivenName>Marie</md:GivenName>
+            <md:SurName>Hinrichs</md:SurName>
+            <md:EmailAddress>wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
+            contactType="administrative">
+            <md:GivenName>Marie</md:GivenName>
+            <md:SurName>Hinrichs</md:SurName>
+            <md:EmailAddress>wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
+            contactType="support">
+            <md:GivenName>Marie</md:GivenName>
+            <md:SurName>Hinrichs</md:SurName>
             <md:EmailAddress>wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
         </md:ContactPerson>
     </EntityDescriptor>
