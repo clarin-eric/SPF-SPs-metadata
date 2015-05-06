@@ -2110,9 +2110,9 @@
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
-            <md:OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech         Republic</md:OrganizationName>
+            <md:OrganizationName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech Republic</md:OrganizationName>
             <md:OrganizationName xml:lang="cs">Ústav formální a aplikované lingvistiky, Matematicko-fyzikální fakulta, Univerzita Karlova v Praze</md:OrganizationName>
-            <md:OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in         Prague</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="en">Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</md:OrganizationDisplayName>
             <md:OrganizationDisplayName xml:lang="cs">ÚFAL MFF UK</md:OrganizationDisplayName>
             <md:OrganizationURL
                 xml:lang="en">http://ufal.mff.cuni.cz/</md:OrganizationURL>
