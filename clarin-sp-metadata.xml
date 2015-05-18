@@ -68,7 +68,7 @@
                     index="1"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">BBAW - CLARIN Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">BBAW - CLARIN-Dienste</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">BBAW - CLARIN services</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Verschiedene Dienste der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) im Rahmen der CLARIN-Initiative.</mdui:Description>
                     <mdui:Description xml:lang="en">Various services provided by the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) in the context of the CLARIN initiative.</mdui:Description>
@@ -211,288 +211,269 @@
     </md:EntityDescriptor>
 
     <!-- CSC lat (via CLARIN) -->
-    <EntityDescriptor
-        xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-        entityID="http://sp.lat.csc.fi">
-        <Extensions>
-            <mdattr:EntityAttributes
-                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-                <saml:Attribute
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
-                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                </saml:Attribute>
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                </saml:Attribute>
-            </mdattr:EntityAttributes>
-        </Extensions>
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-            <Extensions>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://lat.csc.fi/Shibboleth.sso/Login"
-                    index="1"/>
-                <mdui:UIInfo
-                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">LAT – Language Archive Tools</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">LAT – Language Archive Tools</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">LAT – Language Archive Tools</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</mdui:Description>
-                    <mdui:Description xml:lang="de">LAT ist eine Benutzerschnittstelle für Sprachforscher zur Abscheidung und Verarbeitung von audiovisuellen Materials.</mdui:Description>
-                    <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja käsitellä video- ja äänimateriaalia.</mdui:Description>
-                    <mdui:Logo
-                        height="41"
-                        width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
-                    <mdui:InformationURL
-                        xml:lang="fi">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="sv">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="en">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="sv">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="fi">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>
-            </Extensions>
-            <KeyDescriptor>
-                <ds:KeyInfo>
-                    <ds:X509Data>
-                        <ds:X509Certificate>
-                            MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
-                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-                            U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
-                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
-                            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
-                            4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
-                            w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
-                            veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
-                            WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
-                            M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
-                            6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
-                            HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
-                            BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
-                            HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
-                            hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
-                            BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
-                            cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
-                            dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
-                            A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
-                            11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
-                            jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
-                            rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
-                            CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
-                            TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST"
-                index="1"
-                isDefault="true"/>
-            <AttributeConsumingService
-                index="1"
-                isDefault="true">
-                <ServiceName xml:lang="fi">LAT – Language Archive Tools</ServiceName>
-                <ServiceName xml:lang="en">LAT – Language Archive Tools</ServiceName>
-                <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja kasitella video- ja aanimateriaalia.</ServiceDescription>
-                <ServiceDescription xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</ServiceDescription>
-                <RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-            </AttributeConsumingService>
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
-        Oy</OrganizationName>
-            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
-            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
-        Oy</OrganizationName>
-            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus
-        Oy</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science
-        Ltd.</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus
-        Oy</OrganizationDisplayName>
-            <OrganizationURL
-                xml:lang="fi">http://www.csc.fi</OrganizationURL>
-            <OrganizationURL
-                xml:lang="en">http://www.csc.fi</OrganizationURL>
-            <OrganizationURL
-                xml:lang="sv">http://www.csc.fi</OrganizationURL>
-        </Organization>
-        <ContactPerson
-            contactType="administrative">
-            <GivenName>Tero</GivenName>
-            <SurName>Aalto</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-        </ContactPerson>
-        <ContactPerson
-            contactType="technical">
-            <GivenName>Martin</GivenName>
-            <SurName>Matthiesen</SurName>
-            <EmailAddress>mailto:martin.matthiesen@csc.fi</EmailAddress>
-        </ContactPerson>
-        <ContactPerson
-            contactType="support">
-            <GivenName>Tero</GivenName>
-            <SurName>Aalto</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-        </ContactPerson>
-    </EntityDescriptor>
+
+<EntityDescriptor entityID="http://sp.lat.csc.fi">
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+    <Extensions>
+      <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+      Location="https://lat.csc.fi/Shibboleth.sso/Login"
+      index="1" />
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">LAT &#226;&#8364;&#8220;
+        Language Archive Tools</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="fi">LAT &#226;&#8364;&#8220;
+        Language Archive Tools</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="de">LAT &#226;&#8364;&#8220;
+        Language Archive Tools</mdui:DisplayName>
+        <mdui:Description xml:lang="en">LAT is a user interface for
+        language researchers to deposit and process audiovisual
+        material.</mdui:Description>
+        <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat
+        voivat tallentaa ja k&#195;&#164;sitell&#195;&#164; video-
+        ja
+        &#195;&#164;&#195;&#164;nimateriaalia.</mdui:Description>
+<mdui:Description xml:lang="de">LAT ist eine Benutzerschnittstelle für Sprachforscher zur Speicherung und Verarbeitung audiovisuellen Materials.</mdui:Description>
+        <mdui:Logo height="41" width="100">
+        https://lat.csc.fi/gif/LA.png</mdui:Logo>
+        <mdui:InformationURL xml:lang="en">
+        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="fi">
+        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="sv">
+        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="sv">
+        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="fi">
+        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="en">
+        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+          MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
+          MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+          U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
+          CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
+          4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
+          w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
+          veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
+          WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
+          M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
+          6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
+          HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
+          BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
+          HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
+          hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
+          BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
+          cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
+          dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
+          A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
+          11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
+          jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
+          rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
+          CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
+          TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <NameIDFormat>
+    urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <NameIDFormat>
+    urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+    Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST"
+    index="1" isDefault="true" />
+    <AttributeConsumingService index="1" isDefault="true">
+      <ServiceName xml:lang="fi">LAT &#226;&#8364;&#8220; Language
+      Archive Tools</ServiceName>
+      <ServiceName xml:lang="en">LAT &#226;&#8364;&#8220; Language
+      Archive Tools</ServiceName>
+      <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat
+      voivat tallentaa ja kasitella video- ja
+      aanimateriaalia.</ServiceDescription>
+      <ServiceDescription xml:lang="en">LAT is a user interface for
+      language researchers to deposit and process audiovisual
+      material.</ServiceDescription>
+      <RequestedAttribute FriendlyName="eduPersonPrincipalName"
+      Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+      NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" />
+    </AttributeConsumingService>
+  </SPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan
+    keskus Oy</OrganizationName>
+    <OrganizationName xml:lang="en">CSC - IT Center for Science
+    Ltd.</OrganizationName>
+    <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan
+    keskus Oy</OrganizationName>
+    <OrganizationDisplayName xml:lang="fi">CSC - Tieteen
+    tietotekniikan keskus Oy</OrganizationDisplayName>
+    <OrganizationDisplayName xml:lang="en">CSC - IT Center for
+    Science Ltd.</OrganizationDisplayName>
+    <OrganizationDisplayName xml:lang="sv">CSC - Tieteen
+    tietotekniikan keskus Oy</OrganizationDisplayName>
+    <OrganizationURL xml:lang="fi">
+    http://www.csc.fi</OrganizationURL>
+    <OrganizationURL xml:lang="en">
+    http://www.csc.fi</OrganizationURL>
+    <OrganizationURL xml:lang="sv">
+    http://www.csc.fi</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="administrative">
+    <GivenName>Krister</GivenName>
+    <SurName>Lind&#195;&#169;n</SurName>
+    <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Martin</GivenName>
+    <SurName>Matthiesen</SurName>
+    <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>Tero</GivenName>
+    <SurName>Aalto</SurName>
+    <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+
 
     <!-- CSC korp (via CLARIN) -->
-    <EntityDescriptor
-        xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-        entityID="https://sp.korp.csc.fi/">
-        <Extensions>
-            <mdattr:EntityAttributes
-                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-                <saml:Attribute
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
-                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                </saml:Attribute>
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                </saml:Attribute>
-            </mdattr:EntityAttributes>
-        </Extensions>
-        <SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-            <Extensions>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://korp.csc.fi/Shibboleth.sso/Login"
-                    index="1"/>
-                <mdui:UIInfo
-                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma tekstiaineistolle</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Concordance search service for text corpora</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="de">Konkordanzsuche Service für Textkorpora</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">With this service you can study text corpora.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tällä työkalulla voit tutkia tekstikorpuksia.</mdui:Description>
-                    <mdui:Description xml:lang="de">Mit diesem Service können Sie Textkorpora zu studieren..</mdui:Description>
-                    <mdui:Logo
-                        height="66"
-                        width="168">https://korp.csc.fi/img/korplogo.png</mdui:Logo>
-                    <mdui:InformationURL
-                        xml:lang="en">http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>
-            </Extensions>
-            <KeyDescriptor>
-                <ds:KeyInfo>
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
-                            MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-                            U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
-                            CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
-                            aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
-                            e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
-                            js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
-                            IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
-                            zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
-                            VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
-                            Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
-                            MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
-                            DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
-                            VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
-                            K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
-                            KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
-                            b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
-                            LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
-                            BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
-                            vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
-                            v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
-                            eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
-                            eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
-                            5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-            <AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST"
-                index="1"
-                isDefault="true"/>
-            <AttributeConsumingService
-                index="1"
-                isDefault="true">
-                <ServiceName xml:lang="fi">Korp – hakuohjelma tekstiaineistoille</ServiceName>
-                <ServiceName xml:lang="en">Korp – search service for text material</ServiceName>
-                <ServiceDescription xml:lang="fi">Korp on kielitutkijoille tarkoitettu tyokalu, jolla voi tutkia tekstiaineistoja.</ServiceDescription>
-                <ServiceDescription xml:lang="en">Korp is a user interface for language researchers to examine text material.</ServiceDescription>
-                <RequestedAttribute
-                    FriendlyName="eduPersonAffiliation"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-            </AttributeConsumingService>
-        </SPSSODescriptor>
-        <Organization>
-            <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-            <OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationName>
-            <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationName>
-            <OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</OrganizationDisplayName>
-            <OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</OrganizationDisplayName>
-            <OrganizationURL
-                xml:lang="fi">http://www.csc.fi</OrganizationURL>
-            <OrganizationURL
-                xml:lang="en">http://www.csc.fi</OrganizationURL>
-            <OrganizationURL
-                xml:lang="sv">http://www.csc.fi</OrganizationURL>
-        </Organization>
-        <ContactPerson
-            contactType="administrative">
-            <GivenName>Fin-Clarin</GivenName>
-            <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
-        </ContactPerson>
-        <ContactPerson
-            contactType="technical">
-            <GivenName>Martin</GivenName>
-            <SurName>Matthiesen</SurName>
-            <EmailAddress>mailto:ling@csc.fi</EmailAddress>
-        </ContactPerson>
-        <ContactPerson
-            contactType="support">
-            <GivenName>Jyrki</GivenName>
-            <SurName>Niemi</SurName>
-            <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
-        </ContactPerson>
-    </EntityDescriptor>
+
+<EntityDescriptor entityID="https://sp.korp.csc.fi/">
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+    <Extensions>
+      <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+      Location="https://korp.csc.fi/Shibboleth.sso/Login"
+      index="1" />
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma
+        tekstiaineistolle</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="en">Concordance search service
+        for text corpora</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="de">Konkordanzsuche für Textkorpora</mdui:DisplayName>
+        <mdui:Description xml:lang="en">With this service you can
+        study text corpora.</mdui:Description>
+        <mdui:Description xml:lang="fi">T&#195;&#164;ll&#195;&#164;
+        ty&#195;&#182;kalulla voit tutkia
+        tekstikorpuksia.</mdui:Description>
+        <mdui:Description xml:lang="de">Mit diesem Service können Sie Textkorpora untersuchen.</mdui:Description>
+        <mdui:Logo height="66" width="168">
+        https://korp.csc.fi/img/korplogo.png</mdui:Logo>
+        <mdui:InformationURL xml:lang="en">
+        http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="sv">
+        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="fi">
+        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="en">
+        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+          MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
+          MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+          U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
+          CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
+          aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
+          e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
+          js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
+          IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
+          zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
+          VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
+          Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
+          MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
+          DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
+          VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
+          K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
+          KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
+          b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
+          LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
+          BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
+          vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
+          v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
+          eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
+          eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
+          5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <NameIDFormat>
+    urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <NameIDFormat>
+    urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+    Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST"
+    index="1" isDefault="true" />
+    <AttributeConsumingService index="1" isDefault="true">
+      <ServiceName xml:lang="fi">Korp &#226;&#8364;&#8220;
+      hakuohjelma tekstiaineistoille</ServiceName>
+      <ServiceName xml:lang="en">Korp &#226;&#8364;&#8220; search
+      service for text material</ServiceName>
+      <ServiceDescription xml:lang="fi">Korp on kielitutkijoille
+      tarkoitettu tyokalu, jolla voi tutkia
+      tekstiaineistoja.</ServiceDescription>
+      <ServiceDescription xml:lang="en">Korp is a user interface
+      for language researchers to examine text
+      material.</ServiceDescription>
+      <RequestedAttribute FriendlyName="eduPersonAffiliation"
+      Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+      NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" />
+      <RequestedAttribute FriendlyName="eduPersonPrincipalName"
+      Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+      NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" />
+    </AttributeConsumingService>
+  </SPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan
+    keskus Oy</OrganizationName>
+    <OrganizationName xml:lang="en">CSC - IT Center for Science
+    Ltd.</OrganizationName>
+    <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan
+    keskus Oy</OrganizationName>
+    <OrganizationDisplayName xml:lang="fi">CSC - Tieteen
+    tietotekniikan keskus Oy</OrganizationDisplayName>
+    <OrganizationDisplayName xml:lang="en">CSC - IT Center for
+    Science Ltd.</OrganizationDisplayName>
+    <OrganizationDisplayName xml:lang="sv">CSC - Tieteen
+    tietotekniikan keskus Oy</OrganizationDisplayName>
+    <OrganizationURL xml:lang="fi">
+    http://www.csc.fi</OrganizationURL>
+    <OrganizationURL xml:lang="en">
+    http://www.csc.fi</OrganizationURL>
+    <OrganizationURL xml:lang="sv">
+    http://www.csc.fi</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="administrative">
+    <GivenName>Krister</GivenName>
+    <SurName>Lind&#195;&#169;n</SurName>
+    <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Martin</GivenName>
+    <SurName>Matthiesen</SurName>
+    <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>Tero</GivenName>
+    <SurName>Aalto</SurName>
+    <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>Jyrki</GivenName>
+    <SurName>Niemi</SurName>
+    <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+
 
     <!-- Huygens ING huygens.knaw.nl (via CLARIN) -->
     <md:EntityDescriptor
@@ -521,12 +502,12 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Huygens ING (CLARIN Dienste)</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Huygens ING (CLARIN-Dienste)</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Huygens ING (CLARIN services)</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">Huygens ING (CLARIN palvelut)</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Verschiedene Dienste, die von Huygens ING im Rahmen des CLARIN-Initiative zur Verfügung gestellt.</mdui:Description>
+                    <mdui:Description xml:lang="de">Verschiedene Dienste, die von Huygens ING im Rahmen der CLARIN-Initiative zur Verfügung gestellt werden.</mdui:Description>
                     <mdui:Description xml:lang="en">Various services provided by Huygens ING in the context of the CLARIN initiative.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Erilaiset palvelut Huygens ING yhteydessä CLARIN aloitteen.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Huygens ING:n tarjoamat CLARIN-palvelut</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.huygens.knaw.nl</mdui:InformationURL>
                     <mdui:InformationURL
@@ -729,13 +710,13 @@
                     Location="https://clarin.ids-mannheim.de/Shibboleth.sso/Login"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">CLARIN Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">CLARIN-Dienste</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">CLARIN services</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">CLARIN palvelut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Verschiedene Dienste des Institut für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</mdui:Description>
+                    <mdui:Description xml:lang="de">Verschiedene Dienste des Instituts für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</mdui:Description>
                     <mdui:Description xml:lang="en">Various services provided by the Institut für Deutsche Sprache (IDS) in the context of the CLARIN initiative.</mdui:Description>
 
-                    <mdui:Description xml:lang="fi">Erilaiset palvelut Institut für Deutsche Sprache (IDS) yhteydessä CLARIN aloitteen.</mdui:Description>
+                    <mdui:Description xml:lang="fi">"Institut für Deutsche Sprache (IDS)":n tarjoamat CLARIN-palvelut </mdui:Description>
                     <mdui:Logo
                         height="16"
                         width="16">https://clarin.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
@@ -841,9 +822,9 @@
                 index="6"/>
             <AttributeConsumingService
                 index="1">
-                <ServiceName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</ServiceName>
+                <ServiceName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN-Dienste</ServiceName>
                 <ServiceName xml:lang="en">Institute for the German Language (IDS) - CLARIN services</ServiceName>
-                <ServiceDescription xml:lang="de">Verschiedene Dienste des Institut für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</ServiceDescription>
+                <ServiceDescription xml:lang="de">Verschiedene Dienste des Instituts für Deutsche Sprache (IDS) im Rahmen der CLARIN-Initiative.</ServiceDescription>
                 <ServiceDescription xml:lang="en">Various services provided by the Institut für Deutsche Sprache (IDS) in the context of the CLARIN initiative.</ServiceDescription>
                 <RequestedAttribute
                     isRequired="true"
@@ -878,9 +859,9 @@
             </AttributeConsumingService>
         </SPSSODescriptor>
         <Organization>
-            <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</OrganizationName>
+            <OrganizationName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN-Dienste</OrganizationName>
             <OrganizationName xml:lang="en">Institute for the German Language (IDS) - CLARIN Services</OrganizationName>
-            <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN Dienste</OrganizationDisplayName>
+            <OrganizationDisplayName xml:lang="de">Institut für Deutsche Sprache (IDS) - CLARIN-Dienste</OrganizationDisplayName>
             <OrganizationDisplayName xml:lang="en">Institute for the German Language (IDS) - CLARIN Services</OrganizationDisplayName>
             <OrganizationURL
                 xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
@@ -937,10 +918,10 @@
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Forschungsprimärdatenrepository</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Research data repository</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Tutkimus datataltiosta</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Institut für Deutsche Sprache (IDS).</mdui:Description>
+                    <mdui:DisplayName xml:lang="fi">Tutkimusaineistojen säilytyspaikka</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Instituts für Deutsche Sprache (IDS).</mdui:Description>
                     <mdui:Description xml:lang="en">Language resources repository of the Institute for the German Language (IDS).</mdui:Description>
-                    <mdui:Description xml:lang="fi">Kieli resursseja arkisto instituutin saksan kieli (IDS).</mdui:Description>
+                    <mdui:Description xml:lang="fi">"Institut für Deutsche Sprache (IDS)":n kielivarojen säilytyspaikka.</mdui:Description>
                     <mdui:Logo
                         height="16"
                         width="16">https://repos.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
@@ -1036,7 +1017,7 @@
                 index="1">
                 <ServiceName xml:lang="de">Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</ServiceName>
                 <ServiceName xml:lang="en">Institute for the German Language (IDS) - Repository</ServiceName>
-                <ServiceDescription xml:lang="de">Das Forschungsprimärdatenrepository des Institut für Deutsche Sprache (IDS).</ServiceDescription>
+                <ServiceDescription xml:lang="de">Das Forschungsprimärdatenrepository des Instituts für Deutsche Sprache (IDS).</ServiceDescription>
                 <ServiceDescription xml:lang="en">Language resources repository of the Institute for the German Language (IDS).</ServiceDescription>
                 <RequestedAttribute
                     isRequired="true"
@@ -1126,10 +1107,10 @@
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">CLARIN CMDI metadata applications and services - catalog</mdui:DisplayName>
                     <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
-                    <mdui:DisplayName xml:lang="de">CLARIN CMDI Metadaten Anwendungen und Dienste - catalog</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Für die Component Registry, Virtual Language Observatory.</mdui:Description>
-                    <mdui:DisplayName xml:lang="fi">CLARIN CMDI metatiedot sovellukset ja palvelut - catalog</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Component rekisterin, Virtual Language observatorio.</mdui:Description>
+                    <mdui:DisplayName xml:lang="de">CLARIN CMDI Metadaten: Anwendungen und Dienste - Catalog</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
+                    <mdui:DisplayName xml:lang="fi">CLARIN CMDI metadatan sovellukset ja palvelut - catalog</mdui:DisplayName>
+                    <mdui:Description xml:lang="fi">Component rekisterille, "Virtual Language Observatory".</mdui:Description>
                     <mdui:DisplayName xml:lang="nl">CLARIN CMDI metadata toepassingen en diensten - catalog</mdui:DisplayName>
                     <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:InformationURL
@@ -1316,12 +1297,12 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Corpus linguistics and language documentation applications - lux17 (dev)</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="de">Korpuslinguistik und Sprachdokumentation Anwendungen - lux17 (dev)</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Korpuslingvistiikan ja kielen dokumentaatio sovellukset - lux17 (dev)</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Korpuslinguistik- und Sprachdokumentationsanwendungen - lux17 (dev)</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Korpuslingvistiikan ja kielendokumentaation sovellukset - lux17 (dev)</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - lux17 (dev)</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
-                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Kielellinen sovellukset tutkijoille: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
+                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadatabrowser.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Kielellisiä sovelluksia tutkijoille: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">https://tla.mpi.nl/tools/tla-tools/</mdui:InformationURL>
@@ -1507,11 +1488,11 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">Corpus linguistics and language documentation applications - corpus1</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="de">Korpuslinguistik und Sprachdokumentation Anwendungen - corpus1</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Korpuslinguistik- und Sprachdokumentationsanwendungen - corpus1</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">Korpuslingvistiikan ja kielen dokumentaatio sovellukset - corpus1</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - corpus1</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
-                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
+                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadatabrowser.</mdui:Description>
                     <mdui:Description xml:lang="fi">Kielellinen sovellukset tutkijoille: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:InformationURL
@@ -1707,8 +1688,8 @@
                     <mdui:DisplayName xml:lang="fi">INL portaali - CLARIN palvelut</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">INL portaal - CLARIN diensten</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Institute for Dutch Lexicology (INL) projects attached to the CLARIN infrastructure.</mdui:Description>
-                    <mdui:Description xml:lang="de">Institut für Niederländische Lexikologie (INL) Vorhaben, die CLARIN-Infrastruktur angeschlossen.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Institute for Dutch Leksikologia (INL) hankkeista kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
+                    <mdui:Description xml:lang="de">Institut für Niederländische Lexikologie (INL) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Institute for Dutch Lexicology (INL) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
                     <mdui:Description xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
@@ -1918,9 +1899,9 @@
                     <mdui:DisplayName xml:lang="en">LINDAT/CLARIN services</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">LINDAT / CLARIN palvelut</mdui:DisplayName>
                     <mdui:Description xml:lang="cs">Repozitář a služby projektu LINDAT/CLARIN zaměřené na podporu výzkumu jazyka</mdui:Description>
-                    <mdui:Description xml:lang="de">LINDAT / CLARIN digitale Langzeitarchiv und Dienste auf die Sprache konzentriert Forschungsinfrastruktur</mdui:Description>
+                    <mdui:Description xml:lang="de">LINDAT / CLARIN Digitales Langzeitarchiv und Dienste für die Sprachforschungsinfrastruktur</mdui:Description>
                     <mdui:Description xml:lang="en">LINDAT/CLARIN digital repository and services focused on language research infrastructure</mdui:Description>
-                    <mdui:Description xml:lang="fi">LINDAT / CLARIN digitaalisten arkistoon ja palvelut keskittyvät kielen tutkimusinfrastruktuurin</mdui:Description>
+                    <mdui:Description xml:lang="fi">LINDAT / CLARIN digitaalinen arkisto ja palvelut kielelliseen tutkimusinfrastruktuurin</mdui:Description>
                     <mdui:DisplayName xml:lang="da">CLARIN-DK-UCPH</mdui:DisplayName>
                     <mdui:InformationURL
                         xml:lang="en">http://ufal.mff.cuni.cz/</mdui:InformationURL>
@@ -2397,7 +2378,7 @@
                     <mdui:Description xml:lang="da">Denne serviceudbyder giver adgang til CLARIN centret på Københavns Universitet og dets services for sprogbaserede materialer og værktøjer.</mdui:Description>
                     <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das CLARIN Zentrum an der Universität Kopenhagen und seine Dienstleistungen für sprachbasierte Materialien und Werkzeuge.</mdui:Description>
                     <mdui:Description xml:lang="en">This Service Provider enables access to the CLARIN center at University of Copenhagen and its services for language-based materials and tools.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja mahdollistaa pääsyn CLARIN keskustan Kööpenhaminan yliopistossa ja sen palveluja kielen materiaalit ja työkalut.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja mahdollistaa pääsyn Kööpenhaminan yliopiston CLARIN keskukseen ja käyttää keskuksen palveluja, kielivaroja ja työkaluja.</mdui:Description>
                     <mdui:Keywords
                         xml:lang="en">
                       CLARIN Copenhagen Humanities research language archive tools
@@ -2631,11 +2612,11 @@
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Meertens instituutin</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Meertens Instituuti</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zu den Meertens Institut Archive und ausgewählte Dienstleistungen für Geisteswissenschaften Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur..</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zu den Meertens Institut Archive und ausgewählte Dienstleistungen für Geisteswissenschaften Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur.</mdui:Description>
                     <mdui:Description xml:lang="en">This Service Provider regulates access to the Meertens Institute Archive and selected services for humanities research activities in the domain of Dutch language variation and culture.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja säätelee pääsyä Meertens instituutin arkisto ja asiantuntijapalvelut humanististen tutkimustoiminnan alalla hollannin kielen vaihtelua ja kulttuuri.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja kontrolloi pääsyä Meertens Instituutin arkistoon ja asiantuntijapalveluihin. Erikoisala on hollannin kielen variaatio ja kulttuuri.</mdui:Description>
                     <mdui:Description xml:lang="nl">Deze Service Provider reguleert de toegang tot het Meertens Archief en geselecteerde diensten ten behoeve van geesteswetenschappelijk onderzoek op het terrein van Nederlandse taalvariatie en cultuur.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
@@ -3085,8 +3066,8 @@
                     <mdui:DisplayName xml:lang="fi">CLARIN NL Portal</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">CLARIN NL Portal</mdui:DisplayName>
                     <mdui:Description xml:lang="en">The Web Portal of the Dutch CLARIN Project</mdui:Description>
-                    <mdui:Description xml:lang="de">Das Web Portal der niederländischen CLARIN Projekt</mdui:Description>
-                    <mdui:Description xml:lang="fi">Web Portal Alankomaiden CLARIN-projekti</mdui:Description>
+                    <mdui:Description xml:lang="de">Das Webportal des niederländischen CLARIN-Projekts</mdui:Description>
+                    <mdui:Description xml:lang="fi">Alankomaiden CLARIN-projektin webportaali </mdui:Description>
                     <mdui:Description xml:lang="nl">Het web portaal van het Nederlands CLARIN project</mdui:Description>
                     <mdui:Keywords
                         xml:lang="en">web+portal Dutch Dutch+CLARIN+project</mdui:Keywords>
@@ -3511,7 +3492,7 @@
                     <mdui:DisplayName xml:lang="en">BAS Service Provider</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">BAS Service Provider</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (access to resources restricted to academia).</mdui:Description>
-                    <mdui:Description xml:lang="fi">Baijerin Arkisto puhesignaaleille Palveluntarjoaja (voimavarojen rajoitettu akateemisen).</mdui:Description>
+                    <mdui:Description xml:lang="fi">"Bavarian Archive for Speech Signals (BAS)":n palveluntarjoaja (vain akateemiseen käyttöön).</mdui:Description>
                     <mdui:Keywords
                         xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:Keywords>
                     <mdui:Logo
@@ -3712,7 +3693,7 @@
                     <mdui:DisplayName xml:lang="fi">CLARIN Centre Vienna</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Ein Repositorium für Archivieren und Publizieren von Sprachressourcen und Technologien und andere Dienste für digitale Geisteswissenschaften. </mdui:Description>
                     <mdui:Description xml:lang="en">A repository for depositing and publishing of language resources and technology and other infrastructure services for digital humanities. </mdui:Description>
-                    <mdui:Description xml:lang="fi">Säilytyspaikkana tallettaminen ja julkaiseminen kielen resurssien ja teknologian ja muut infrastruktuuripalvelut digitaalisen humanististen. </mdui:Description>
+                    <mdui:Description xml:lang="fi">Säilytyspaikka kielivarojen ja teknologioiden tallettamiseen ja julkaisemiseen ja muita palveluita digitaalisille ihmistieteille.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">http://clarin.oeaw.ac.at/ccv</mdui:InformationURL>
                     <mdui:PrivacyStatementURL
@@ -4023,13 +4004,13 @@
                 index="6"/>
             <AttributeConsumingService
                 index="1">
-                <ServiceName xml:lang="de">Universität Leipzig - CLARIN Dienste</ServiceName>
+                <ServiceName xml:lang="de">Universität Leipzig - CLARIN-Dienste</ServiceName>
                 <ServiceName xml:lang="en">University of Leipzig - CLARIN services</ServiceName>
-                <ServiceName xml:lang="fi">Leipzigin yliopiston - CLARIN palvelut</ServiceName>
+                <ServiceName xml:lang="fi">Leipzigin yliopisto - CLARIN-palvelut</ServiceName>
 
                 <ServiceDescription xml:lang="de">Verschiedene Dienste der Universität Leipzig im Rahmen der CLARIN-Initiative.</ServiceDescription>
                 <ServiceDescription xml:lang="en">Various services provided by the University of Leipzig in the context of the CLARIN initiative.</ServiceDescription>
-                <ServiceDescription xml:lang="fi">Erilaiset palvelut Leipzigin yliopiston yhteydessä CLARIN aloitteen.</ServiceDescription>
+                <ServiceDescription xml:lang="fi">Leipzigin yliopiston tarjoamat erilaiset CLARIN-palvelut.</ServiceDescription>
                 <RequestedAttribute
                     isRequired="true"
                     FriendlyName="eduPersonPrincipalName"
@@ -4554,10 +4535,10 @@
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Hamburg Centre for Language Corpora</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Hampuri keskus Kieli Oyj</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Hampurin Kielivarakeskus (Hamburger Zentrum für Sprachkorpora)</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository, in dem hauptsächlich Sprachkorpora vorgehalten werden</mdui:Description>
                     <mdui:Description xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)</mdui:Description>
-                    <mdui:Description xml:lang="fi">Hampurin keskus Kieli Oyj (HZSK) tarjoaa HZSK Repository (lähinnä lukien puhutun kielen corpora)</mdui:Description>
+                    <mdui:Description xml:lang="fi">Hampurin Kielivarakeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon. (Arkisto sisältää ennimäkseen puhutun kielen korpuksia.)</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
                     <mdui:InformationURL
@@ -4738,12 +4719,12 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
+					<mdui:DisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">Hamburg Centre for Language Corpora</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Hampuri keskus Kieli Oyj</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Hampurin Kielivarakeskus (Hamburger Zentrum für Sprachkorpora)</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository, in dem hauptsächlich Sprachkorpora vorgehalten werden</mdui:Description>
                     <mdui:Description xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)</mdui:Description>
-                    <mdui:Description xml:lang="fi">Hampurin keskus Kieli Oyj (HZSK) tarjoaa HZSK Repository (lähinnä lukien puhutun kielen corpora)</mdui:Description>
+                    <mdui:Description xml:lang="fi">Hampurin Kielivarakeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon. (Arkisto sisältää ennimäkseen puhutun kielen korpuksia.)</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
                     <mdui:InformationURL
@@ -4844,7 +4825,7 @@
                 index="5"/>
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="de">Hamburger Zentrum für Sprachkorpora (HZSK) - CLARIN Repositorium und Dienste</md:ServiceName>
+                <md:ServiceName xml:lang="de">Hamburger Zentrum für Sprachkorpora (HZSK) - CLARIN-Repositorium und -Dienste</md:ServiceName>
                 <md:ServiceName xml:lang="en">Hamburg Center for Language Corpora (HZSK) - CLARIN repository and services</md:ServiceName>
                 <md:ServiceDescription xml:lang="de">Forschungsdatenreppsitorium und Dienste des Hamburger Zentrum für Sprachkorpora (HZSK) im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
                 <md:ServiceDescription xml:lang="en">Language data repository and services provided by the Hamburg Center for Language Corpora (HZSK) in the context of the CLARIN initiative.</md:ServiceDescription>
@@ -5128,9 +5109,9 @@
                     <mdui:DisplayName xml:lang="en">OpenSKOS | Meertens</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="fi">OpenSKOS | Meertens</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">OpenSKOS | Meertens</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf Simple Knowledge Organisation System Repository des Meertens Institut</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das Simple Knowledge Organisation System Repository des Meertens Instituts</mdui:Description>
                     <mdui:Description xml:lang="en">This Service Provider provides access to the Meertens Institute's Simple Knowledge Organization System Repository</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja tarjoaa pääsyn Meertens instituutin Simple Knowledge Organization System Arkiston</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja tarjoaa pääsyn Meertens Instituutin "Simple Knowledge Organization System"-arkistoon</mdui:Description>
                     <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de Simple Knowledge Organization System Repository die gehost wordt vanuit het Meertens Instituut</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">https://openskos.meertens.knaw.nl</mdui:InformationURL>
@@ -5309,14 +5290,14 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">CELR Dienste</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">CELR-Dienste</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="en">CELR services</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="et">EKRK teenused</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">CELR palvelut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">CELR Dienste</mdui:Description>
+                    <mdui:DisplayName xml:lang="fi">CELR-palvelut</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">CELR-Dienste</mdui:Description>
                     <mdui:Description xml:lang="en">CELR services</mdui:Description>
                     <mdui:Description xml:lang="et">EKRK teenused</mdui:Description>
-                    <mdui:Description xml:lang="fi">CELR palvelut</mdui:Description>
+                    <mdui:Description xml:lang="fi">CELR-palvelut</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">http://keeleressursid.ee/en/</mdui:InformationURL>
                     <mdui:InformationURL
@@ -5452,9 +5433,9 @@
                     <mdui:DisplayName xml:lang="en">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving young children.</mdui:Description>
                     <mdui:DisplayName xml:lang="de">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Transcript Korpora Gesprächs Wechselwirkungen mit kleinen Kindern.</mdui:Description>
+                    <mdui:Description xml:lang="de">Transkribierte Korpora von Konversationen mit kleinen Kindern.</mdui:Description>
                     <mdui:DisplayName xml:lang="fi">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Transcript korpuksia puhekielen yhteisvaikutukset pikkulapsille.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Transkriptoituja korpuksia puhekielen yhteisvaikutuksista pikkulapsille.</mdui:Description>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
                     <mdui:Logo
@@ -5655,9 +5636,9 @@
                     <mdui:DisplayName xml:lang="en">TalkBank</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Transcript corpora of conversational interactions involving older children and adults.</mdui:Description>
                     <mdui:DisplayName xml:lang="de">TalkBank</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Transcript Korpora Gesprächs Wechselwirkungen mit älteren Kindern und Erwachsenen.</mdui:Description>
+                    <mdui:Description xml:lang="de">Transkribierte Korpora von Konversationen mit älteren Kindern und Erwachsenen.</mdui:Description>
                     <mdui:DisplayName xml:lang="fi">TalkBank</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Transcript korpuksia puhekielen yhteisvaikutukset vanhemmat lapset ja aikuiset.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Transkriptoituja korpuksia puhekielen yhteisvaikutuksista (vanhemmat lapset ja aikuiset).</mdui:Description>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
                     <mdui:Logo
@@ -5807,11 +5788,11 @@
                     <mdui:DisplayName xml:lang="de">Clarino, UiB</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
                     <mdui:DisplayName xml:lang="en">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Norwegischen Forschungsinfrastruktur für Sprachdaten und Dienstleistungen, für die Europäische Initiative CLARIN verbunden.</mdui:Description>
+                    <mdui:Description xml:lang="en">Norwegischen Forschungsinfrastruktur für Sprachdaten und Dienstleistungen im Rahmen der europäischen CLARIN-Initiative.</mdui:Description>
                     <mdui:DisplayName xml:lang="no">Clarino, UiB</mdui:DisplayName>
                     <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til det europeiske CLARIN-initiativet.</mdui:Description>
                     <mdui:DisplayName xml:lang="fi">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Norjan tutkimusinfrastruktuuri CLARINiin liittyville kielivaroille ja palveluille.</mdui:Description>
                 </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor>
@@ -5961,12 +5942,11 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zu den Nederlab Forschungsumfeld und ausgewählte Dienstleistungen für Geisteswissenschaften Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur..</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zur Nederlab-Forschungsumgebung und zu ausgewählten Dienstleistungen für Geisteswissenschafte Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur.</mdui:Description>
                     <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
                     <mdui:Description xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services for humanities research activities in the domain of Dutch language variation and culture.</mdui:Description>
                     <mdui:DisplayName xml:lang="fi">Meertens instituutin</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">
-                        Tämä Palveluntarjoaja säätelee pääsyä Nederlab tutkimusympäristö ja asiantuntijapalvelut humanististen tutkimustoiminnan alalla hollannin kielen vaihtelua ja kulttuuria.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja kontrolloi pääsyä "Nederlab"-tutkimusympäristöön ja asiantuntijapalveluhin. Erikoisala on hollannin kielen variaatio ja kulttuuri.</mdui:Description>
                     <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
                     <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving en geselecteerde diensten ten behoeve van geesteswetenschappelijk onderzoek op het terrein van Nederlandse taalvariatie en cultuur.</mdui:Description>
                     <mdui:InformationURL
@@ -6235,8 +6215,8 @@
                     <mdui:Description xml:lang="si">Digitalni repozitorij in storitve projekta CLARIN na področju jezikovno-tehnoloških raziskav, Institut »Jožef Stefan«, Ljubljana, Slovenija</mdui:Description>
                     <mdui:DisplayName xml:lang="fr">CLARIN.si Repositoire</mdui:DisplayName>
                     <mdui:Description xml:lang="fr">CLARIN.si: Repositoire de documents numériques et des services liés aux recherches de technologie linguistique et le projet CLARIN, Institut Jožef Stefan, Slovénie</mdui:Description>
-                    <mdui:DisplayName xml:lang="de">CLARIN.si Dienste</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">CLARIN.si: digitale Langzeitarchiv und Dienste auf die Sprache konzentriert Forschungsinfrastruktur und CLARIN</mdui:Description>
+                    <mdui:DisplayName xml:lang="de">CLARIN.si-Dienste</mdui:DisplayName>
+                    <mdui:Description xml:lang="de">CLARIN.si: Digitales Archiv und Dienste des Jožef-Stefan-Instituts in Ljubljana, Slovenien im Rahmen des CLARIN-Infrastrukturprojekts für Sprachdaten.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">http://www.clarin.si/</mdui:InformationURL>
                     <mdui:Logo
