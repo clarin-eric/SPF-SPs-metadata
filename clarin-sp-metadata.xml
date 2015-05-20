@@ -2845,6 +2845,22 @@
         <md:SPSSODescriptor
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
             <md:Extensions>
+                <mdui:UIInfo
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">CLARIN-PL repository</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="pl">Repozytorum CLARIN-PL</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">CLARIN-PL digital repository - Polish section of CLARIN ERIC</mdui:Description>
+                    <mdui:Description xml:lang="pl">Repozytorium CLARIN-PL - Polska część infrastruktury naukowej CLARIN ERIC</mdui:Description>
+                    <mdui:InformationURL
+                        xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
+                    <mdui:InformationURL
+                        xml:lang="pl">http://clarin-pl.eu/pl/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL
+                        xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mdui:PrivacyStatementURL>
+                    <mdui:Logo
+                        height="32"
+                        width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
+                </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
