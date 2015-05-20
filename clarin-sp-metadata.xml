@@ -2808,37 +2808,66 @@
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_2d4990d19e4519095ee99737af161554557b69df"
         entityID="http://www.clarin-pl.eu/shibboleth">
-        <md:Extensions
-            xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-            <alg:DigestMethod
+        <md:Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-            <alg:DigestMethod
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-            <alg:DigestMethod
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <alg:DigestMethod
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-            <alg:DigestMethod
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-            <alg:SigningMethod
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
                 Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
         </md:Extensions>
 
