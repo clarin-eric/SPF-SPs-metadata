@@ -187,19 +187,19 @@
                     <mdui:Description xml:lang="de">LAT ist eine Benutzerschnittstelle für Sprachforscher zur Speicherung und Verarbeitung audiovisuellen Materials.</mdui:Description>
                     <mdui:Logo
                         height="41"
-                        width="100"> https://lat.csc.fi/gif/LA.png</mdui:Logo>
+                        width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
                     <mdui:InformationURL
-                        xml:lang="en"> http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                        xml:lang="en">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
                     <mdui:InformationURL
-                        xml:lang="fi"> http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                        xml:lang="fi">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
                     <mdui:InformationURL
-                        xml:lang="sv"> http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+                        xml:lang="sv">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="sv"> https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+                        xml:lang="sv">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="fi"> https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+                        xml:lang="fi">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en"> https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+                        xml:lang="en">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
@@ -209,8 +209,8 @@
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
-            <NameIDFormat> urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-            <NameIDFormat> urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+            <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST"
@@ -221,7 +221,7 @@
                 isDefault="true">
                 <ServiceName xml:lang="fi">LAT - Language Archive Tools</ServiceName>
                 <ServiceName xml:lang="en">LAT - Language Archive Tools</ServiceName>
-                <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja kasitella video- ja aanimateriaalia.</ServiceDescription>
+                <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja käsitellä video-ja äänimateriaalia.</ServiceDescription>
                 <ServiceDescription xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</ServiceDescription>
                 <RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
