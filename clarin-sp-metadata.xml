@@ -860,11 +860,6 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                </saml:Attribute>
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
@@ -1009,10 +1004,20 @@
         </md:Organization>
         <md:ContactPerson
             contactType="administrative">
+            <md:GivenName>Dieter</md:GivenName>
+            <md:SurName>Van Uytvanck</md:SurName>
             <md:EmailAddress>mailto:clarin@clarin.eu</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
+            contactType="support">
+            <md:GivenName>Dieter</md:GivenName>
+            <md:SurName>Van Uytvanck</md:SurName>
+            <md:EmailAddress>mailto:vlw@clarin.eu</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson
             contactType="technical">
+            <md:GivenName>Dieter</md:GivenName>
+            <md:SurName>Van Uytvanck</md:SurName>
             <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
@@ -1046,15 +1051,15 @@
                     <mdui:DisplayName xml:lang="fi">Korpuslingvistiikan ja kielendokumentaation sovellukset - lux17 (dev)</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - lux17 (dev)</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
-                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadatabrowser.</mdui:Description>
+                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="fi">Kielellisiä sovelluksia tutkijoille: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">https://tla.mpi.nl/tools/tla-tools/</mdui:InformationURL>
                     <mdui:Keywords
-                        xml:lang="en">MPI-PL lux17 linguistics Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
+                        xml:lang="en">MPI-PL lux17 linguistics Annex IMDI+Browser Lamus Metadata+Browser</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="nl">MPI-PL corpus1 corpustaalkunde Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
+                        xml:lang="nl">MPI-PL corpus1 corpustaalkunde Annex IMDI+Browser Lamus Metadata+Browser</mdui:Keywords>
                     <mdui:Logo
                         height="90"
                         width="90">https://lux17.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
@@ -1173,14 +1178,20 @@
         </md:Organization>
         <md:ContactPerson
             contactType="support">
+            <md:GivenName>André</md:GivenName>
+            <md:SurName>Moreira</md:SurName>
             <md:EmailAddress>mailto:shibboleth@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>mailto:latadmin@mpi.nl</md:EmailAddress>
+            <md:GivenName>Paul</md:GivenName>
+            <md:SurName>Trilsbeek</md:SurName>
+            <md:EmailAddress>mailto:Paul.Trilsbeek@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
+            <md:GivenName>André</md:GivenName>
+            <md:SurName>Moreira</md:SurName>
             <md:EmailAddress>mailto:latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
@@ -1214,15 +1225,15 @@
                     <mdui:DisplayName xml:lang="fi">Korpuslingvistiikan ja kielen dokumentaatio sovellukset - corpus1</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - corpus1</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
-                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadatabrowser.</mdui:Description>
+                    <mdui:Description xml:lang="de">Sprachanwendungen für Forscher: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="fi">Kielellinen sovellukset tutkijoille: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">https://tla.mpi.nl/tools/tla-tools/</mdui:InformationURL>
                     <mdui:Keywords
-                        xml:lang="en">MPI-PL corpus1 linguistics Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
+                        xml:lang="en">MPI-PL linguistics Annex IMDI+Browser Lamus Metadata+Browser</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="nl">MPI-PL corpus1 taalwetenschap Annex IMDI Browser Lamus Metadata Browser</mdui:Keywords>
+                        xml:lang="nl">MPI-PL taalwetenschap Annex IMDI+Browser Lamus Metadata+Browser</mdui:Keywords>
                     <mdui:Logo
                         height="194"
                         width="189">https://corpus1.mpi.nl/gif/mpg-logo-90x90-grey.gif</mdui:Logo>
@@ -1329,8 +1340,8 @@
             <md:OrganizationName xml:lang="nl">MPI-PL</md:OrganizationName>
             <md:OrganizationName xml:lang="de">MPI-PL</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
-            <md:OrganizationDisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek </md:OrganizationDisplayName>
-            <md:OrganizationDisplayName xml:lang="de">Max Planck Institut für Psycholinguistik </md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="de">Max Planck Institut für Psycholinguistik</md:OrganizationDisplayName>
             <md:OrganizationURL
                 xml:lang="en">http://www.mpi.nl/</md:OrganizationURL>
             <md:OrganizationURL
@@ -1340,14 +1351,20 @@
         </md:Organization>
         <md:ContactPerson
             contactType="support">
+            <md:GivenName>André</md:GivenName>
+            <md:SurName>Moreira</md:SurName>
             <md:EmailAddress>mailto:shibboleth@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:EmailAddress>mailto:latadmin@mpi.nl</md:EmailAddress>
+            <md:GivenName>Paul</md:GivenName>
+            <md:SurName>Trilsbeek</md:SurName>
+            <md:EmailAddress>mailto:Paul.Trilsbeek@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
+            <md:GivenName>André</md:GivenName>
+            <md:SurName>Moreira</md:SurName>
             <md:EmailAddress>mailto:latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
