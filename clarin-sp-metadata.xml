@@ -1482,20 +1482,20 @@
         </Organization>
         <ContactPerson
             contactType="administrative">
-            <GivenName>servicedesk@inl.nl</GivenName>
-            <SurName>INL</SurName>
+            <GivenName>Jan Theo</GivenName>
+            <SurName>Bakker</SurName>
             <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="support">
-            <GivenName>servicedesk@inl.nl</GivenName>
-            <SurName>INL</SurName>
+            <GivenName>Jan Theo</GivenName>
+            <SurName>Bakker</SurName>
             <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
         </ContactPerson>
         <ContactPerson
             contactType="technical">
-            <GivenName>systeembeheer@inl.nl</GivenName>
-            <SurName>INL</SurName>
+            <GivenName>Marco</GivenName>
+            <SurName>van der Laan</SurName>
             <EmailAddress>mailto:systeembeheer@inl.nl</EmailAddress>
         </ContactPerson>
     </EntityDescriptor>
