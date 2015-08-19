@@ -21,7 +21,7 @@
         <mdrpi:RegistrationInfo
             registrationAuthority="https://www.clarin.eu/spf"> </mdrpi:RegistrationInfo>
     </Extensions>
-    
+
     <!-- BBAW (via CLARIN) -->
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
@@ -5027,11 +5027,11 @@
                     <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
                     <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zur Nederlab-Forschungsumgebung und zu ausgewählten Dienstleistungen für Geisteswissenschafte Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur.</mdui:Description>
                     <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services for humanities research activities in the domain of Dutch language variation and culture.</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services</mdui:Description>
                     <mdui:DisplayName xml:lang="fi">Meertens instituutin</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja kontrolloi pääsyä "Nederlab"-tutkimusympäristöön ja asiantuntijapalveluhin. Erikoisala on hollannin kielen variaatio ja kulttuuri.</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja kontrolloi pääsyä "Nederlab"-tutkimusympäristöön ja asiantuntijapalveluhin.</mdui:Description>
                     <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving en geselecteerde diensten ten behoeve van geesteswetenschappelijk onderzoek op het terrein van Nederlandse taalvariatie en cultuur.</mdui:Description>
+                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving en geselecteerde diensten</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
                     <mdui:InformationURL
@@ -5050,6 +5050,11 @@
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Location="https://www.nederlab.nl/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://www.nederlab.nl/Shibboleth.sso/Login"
+                    index="1"/>
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo
@@ -5150,7 +5155,7 @@
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName xml:lang="en">https://www.nederlab.nl/shibboleth</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services for humanities research activities in the domain of Dutch language variation and culture </md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services</md:ServiceDescription>
                 <md:RequestedAttribute
                     Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
