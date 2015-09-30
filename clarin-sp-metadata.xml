@@ -2207,14 +2207,14 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Meertens Instituuti</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zu den Meertens Institut Archive und ausgewählte Dienstleistungen für Geisteswissenschaften Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur.</mdui:Description>
-                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Meertens Institute Archive and selected services for humanities research activities in the domain of Dutch language variation and culture.</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja kontrolloi pääsyä Meertens Instituutin arkistoon ja asiantuntijapalveluihin. Erikoisala on hollannin kielen variaatio ja kulttuuri.</mdui:Description>
-                    <mdui:Description xml:lang="nl">Deze Service Provider reguleert de toegang tot het Meertens Archief en geselecteerde diensten ten behoeve van geesteswetenschappelijk onderzoek op het terrein van Nederlandse taalvariatie en cultuur.</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Meertens Instituuti</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Deze Service Provider reguleert de toegang tot het Meertens Archief en geselecteerde diensten</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Meertens Institute Archive and selected services</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zu den Meertens Institut Archive und Diensten</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja kontrolloi pääsyä Meertens Instituutin arkistoon ja asiantuntijapalveluihin</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
                     <mdui:InformationURL
@@ -2227,7 +2227,7 @@
                         xml:lang="en">https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
                     <mdui:Logo
                         height="135"
-                        width="200">http://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
+                        width="200">https://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -2265,10 +2265,6 @@
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP"
                 index="1"/>
-            <md:ArtifactResolutionService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP"
-                index="2"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://www.meertens.knaw.nl/Shibboleth.sso/SLO/SOAP"/>
@@ -2321,17 +2317,40 @@
                 index="6"/>
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</md:ServiceName>
+                <md:ServiceName xml:lang="nl">Meertens Instituut</md:ServiceName>
+                <md:ServiceName xml:lang="en">Meertens Institute</md:ServiceName>
+                <md:ServiceDescription xml:lang="nl">Deze Service Provider reguleert de toegang tot het Meertens Archief en geselecteerde diensten</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Meertens Institute Archive and selected services</md:ServiceDescription>
+                 <!-- SAML1 -->
                 <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
                     Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
+                    FriendlyName="uid"
                     Name="urn:mace:dir:attribute-def:uid"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <!-- SAML2 -->
+                <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
+                    Name="urn:oid:1.3.6.1.4.1.25178.1.2.9"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    FriendlyName="uid"
+                    Name="urn:oid:0.9.2342.19200300.100.1.1"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>    
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
             </md:AttributeConsumingService>
@@ -4266,14 +4285,14 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">OpenSKOS | Meertens</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="en">OpenSKOS | Meertens</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">OpenSKOS | Meertens</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="nl">OpenSKOS | Meertens</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das Simple Knowledge Organisation System Repository des Meertens Instituts</mdui:Description>
-                    <mdui:Description xml:lang="en">This Service Provider provides access to the Meertens Institute's Simple Knowledge Organization System Repository</mdui:Description>
-                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja tarjoaa pääsyn Meertens Instituutin "Simple Knowledge Organization System"-arkistoon</mdui:Description>
-                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de Simple Knowledge Organization System Repository die gehost wordt vanuit het Meertens Instituut</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">OpenSKOS | Meertens</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">OpenSKOS | Meertens</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">OpenSKOS | Meertens</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de SKOS Repository van het Meertens Instituut</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider provides access to the Meertens Institute's SKOS Repository</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das SKOS Repository des Meertens Instituts</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja tarjoaa pääsyn Meertens Instituutin "SKOS"-arkistoon</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">https://openskos.meertens.knaw.nl</mdui:InformationURL>
                     <mdui:InformationURL
@@ -4336,6 +4355,18 @@
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
+            <md:ManageNameIDService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/SOAP"/>
+            <md:ManageNameIDService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/Redirect"/>
+            <md:ManageNameIDService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/POST"/>
+            <md:ManageNameIDService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/Artifact"/>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
             <md:AssertionConsumerService
@@ -4364,17 +4395,40 @@
                 index="6"/>
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">https://openskos.meertens.knaw.nl/shibboleth</md:ServiceName>
+                <md:ServiceName xml:lang="nl">OpenSKOS | Meertens</md:ServiceName>
+                <md:ServiceName xml:lang="en">OpenSKOS | Meertens</md:ServiceName>
+                <md:ServiceDescription xml:lang="nl">Deze ServiceProvider reguleert de toegang tot de SKOS Repository van het Meertens Instituut</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">This Service Provider provides access to the Meertens Institute's SKOS Repository</md:ServiceDescription>
+                <!-- SAML1 -->
                 <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
                     Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
+                    FriendlyName="uid"
                     Name="urn:mace:dir:attribute-def:uid"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <!-- SAML2 -->
+                <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
+                    Name="urn:oid:1.3.6.1.4.1.25178.1.2.9"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    FriendlyName="uid"
+                    Name="urn:oid:0.9.2342.19200300.100.1.1"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>    
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
             </md:AttributeConsumingService>
@@ -4987,13 +5041,13 @@
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
                 <saml:Attribute
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod
@@ -5024,14 +5078,14 @@
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zur Nederlab-Forschungsumgebung und zu ausgewählten Dienstleistungen für Geisteswissenschafte Forschungsaktivitäten auf dem Gebiet der niederländischen Sprachvariation und Kultur.</mdui:Description>
-                    <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services</mdui:Description>
-                    <mdui:DisplayName xml:lang="fi">Meertens instituutin</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Tämä palveluntarjoaja kontrolloi pääsyä "Nederlab"-tutkimusympäristöön ja asiantuntijapalveluhin.</mdui:Description>
                     <mdui:DisplayName xml:lang="nl">Meertens Instituut</mdui:DisplayName>
-                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving en geselecteerde diensten</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Meertens Institute</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Meertens Institut</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Meertens Instituutti</mdui:DisplayName>
+                    <mdui:Description xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving</mdui:Description>
+                    <mdui:Description xml:lang="en">This Service Provider regulates access to the Nederlab research environment</mdui:Description>
+                    <mdui:Description xml:lang="de">Dieser Service Provider regelt den Zugang zur Nederlab-Forschungsumgebung</mdui:Description>
+                    <mdui:Description xml:lang="fi">Tämä Palveluntarjoaja säätelee pääsyäNederlab tutkimusympäristö</mdui:Description>                    
                     <mdui:InformationURL
                         xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</mdui:InformationURL>
                     <mdui:InformationURL
@@ -5044,7 +5098,7 @@
                         xml:lang="en">https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
                     <mdui:Logo
                         height="135"
-                        width="200">http://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
+                        width="200">https://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -5082,10 +5136,6 @@
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://www.nederlab.nl/Shibboleth.sso/Artifact/SOAP"
                 index="1"/>
-            <md:ArtifactResolutionService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://www.nederlab.nl/Shibboleth.sso/Artifact/SOAP"
-                index="2"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://www.nederlab.nl/Shibboleth.sso/SLO/SOAP"/>
@@ -5129,43 +5179,49 @@
                 Location="https://www.nederlab.nl/Shibboleth.sso/SAML2/ECP"
                 index="4"/>
             <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://www.nederlab.nl/Shibboleth.sso/SAML2/POST"
-                index="5"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://www.nederlab.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
-                index="6"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://www.nederlab.nl/Shibboleth.sso/SAML2/Artifact"
-                index="7"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://www.nederlab.nl/Shibboleth.sso/SAML2/ECP"
-                index="8"/>
-            <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
                 Location="https://www.nederlab.nl/Shibboleth.sso/SAML/POST"
-                index="9"/>
+                index="5"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                 Location="https://www.nederlab.nl/Shibboleth.sso/SAML/Artifact"
-                index="10"/>
+                index="6"/>
             <md:AttributeConsumingService
                 index="1">
-                <md:ServiceName xml:lang="en">https://www.nederlab.nl/shibboleth</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Nederlab research environment and selected services</md:ServiceDescription>
+                <md:ServiceName xml:lang="nl">Meertens Instituut</md:ServiceName>
+                <md:ServiceName xml:lang="en">Meertens Institute</md:ServiceName>
+                <md:ServiceDescription xml:lang="nl">Deze ServiceProvider reguleert de toegang tot Nederlab onderzoeksomgeving</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="en">This Service Provider regulates access to the Nederlab research environment</md:ServiceDescription>
+                <!-- SAML1 -->
                 <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
                     Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
+                    FriendlyName="uid"
                     Name="urn:mace:dir:attribute-def:uid"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                    isRequired="true"/>
+                <!-- SAML2 -->
+                <md:RequestedAttribute
+                    FriendlyName="schacHomeOrganization"
+                    Name="urn:oid:1.3.6.1.4.1.25178.1.2.9"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                    FriendlyName="uid"
+                    Name="urn:oid:0.9.2342.19200300.100.1.1"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    isRequired="true"/>    
+                <md:RequestedAttribute
+                    FriendlyName="eduPersonPrincipalName"
+                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
             </md:AttributeConsumingService>
