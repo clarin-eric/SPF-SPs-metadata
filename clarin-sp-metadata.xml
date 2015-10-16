@@ -5036,14 +5036,14 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
             <md:Extensions>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="fi">Clarino, UiB</mdui:DisplayName>
+                    <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
                     <mdui:DisplayName xml:lang="de">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description xml:lang="de">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
-                    <mdui:DisplayName xml:lang="en">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Norwegischen Forschungsinfrastruktur für Sprachdaten und Dienstleistungen im Rahmen der europäischen CLARIN-Initiative.</mdui:Description>
+                    <mdui:Description xml:lang="de">Norwegischen Forschungsinfrastruktur für Sprachdaten und Dienstleistungen im Rahmen der europäischen CLARIN-Initiative.</mdui:Description>
                     <mdui:DisplayName xml:lang="no">Clarino, UiB</mdui:DisplayName>
                     <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til det europeiske CLARIN-initiativet.</mdui:Description>
-                    <mdui:DisplayName xml:lang="fi">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description xml:lang="fi">Norjan tutkimusinfrastruktuuri CLARINiin liittyville kielivaroille ja palveluille.</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">Clarino, UiB</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Norwegian research infrastructure for language data and services, linked to the European CLARIN initiative.</mdui:Description>
                 </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor>
