@@ -2598,12 +2598,13 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
           <mdui:DisplayName xml:lang="en">Clarino, UiB</mdui:DisplayName>
           <mdui:DisplayName xml:lang="no">Clarino, UiB</mdui:DisplayName>
           <mdui:DisplayName xml:lang="de">Clarino, UiB</mdui:DisplayName>
-          <mdui:Description xml:lang="en">Norwegian research infrastructure for language data and services, linked to the European CLARIN initiative.</mdui:Description>
-          <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til det europeiske CLARIN-initiativet.</mdui:Description>
+          <mdui:DisplayName xml:lang="fi">Clarino, UiB</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</mdui:Description>
+          <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til CLARIN-initiativet.</mdui:Description>
           <mdui:Description xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und 
-Dienstleistungen im Rahmen der europäischen CLARIN-Initiative.</mdui:Description>
+Dienste im Rahmen der CLARIN-Initiative.</mdui:Description>
           <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja 
-palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
+palvelujen, jotka liittyvät CLARIN aloitetta.</mdui:Description>
           <mdui:Logo height="64" width="180">https://clarino.uib.no/images/clarino_duo-180.png</mdui:Logo>
           <mdui:Logo height="106" width="296">https://clarino.uib.no/images/clarino_duo-296.png</mdui:Logo>
           <mdui:Logo height="165" width="460">https://clarino.uib.no/images/clarino_duo-460.png</mdui:Logo>
@@ -2611,37 +2612,7 @@ palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
           <mdui:PrivacyStatementURL xml:lang="en">http://clarino.uib.no/iness/page?page-id=privacy_policy</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </md:Extensions>
-      <md:KeyDescriptor use="signing">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>MIIEdzCCA1+gAwIBAgIQCA4E94tJ3rEzJC1noMhpNzANBgkqhkiG9w0BAQUFADA2
-	    MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-	    U1NMIENBMB4XDTEzMDUwODAwMDAwMFoXDTE2MDUwNzIzNTk1OVowPDEhMB8GA1UE
-	    CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRcwFQYDVQQDEw5jbGFyaW5vLnVp
-	    Yi5ubzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALIQNT7Lca7R0tFZ
-	    mm4Fes8xdGlJrbxiuA/A1e/dMXaHm/C65zZ2ZFbUXnIe+bq+9AlJPO1gr7vyMaiX
-	    DsEYGlBBL/oNeroJfv+DAInweaOkatmOGMCBDAmCY76M89Vshk0qDNTEbZwc15fr
-	    hNGCJTUiHSToCFtvwDI4/0dbsUwNfCML0jRvi2QFnrgXh0QxTTNfcFdh72uL2WCh
-	    sbteCE2P4/T1H5yL1P3YJvpDX0iAMszaG+ZntYmATVMm91ivcE6mRCDI+qcHJdDW
-	    dy2E8NOBNCr8aQle2P6txXC9w5hzoE49Bw0oAF49EHx3MroBEA47ECGbOJ0Hpb8R
-	    piXnX6ECAwEAAaOCAXkwggF1MB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ
-	    47ntMB0GA1UdDgQWBBR5vbqCMC3rno6VxasCvrYHZy/fkDAOBgNVHQ8BAf8EBAMC
-	    BaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
-	    IgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAv
-	    oC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmww
-	    bQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJl
-	    bmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3Au
-	    dGNzLnRlcmVuYS5vcmcwJwYDVR0RBCAwHoIOY2xhcmluby51aWIubm+CDGluZXNz
-	    LnVpYi5ubzANBgkqhkiG9w0BAQUFAAOCAQEAOjOxk+g90GHRP56AovDdtglU77Xx
-	    9Cd7Xx5hvbGMQRVFshLn4YXpbi4UFnGru0A+k0Cy+7tfQ4i82ITL3f0epz9N5JB8
-	    20waQRPTT55gk0iSAOSO5MhKeE6e+gf8RlDwF/p2y3RmalvxY/D+G6NKcwwbTe60
-	    Qd0b3DGOyN710RHzBLwtbIF3JmFw1M6m6w4Z433+XY/KiGMwpEGIw1J7I6XV1QeB
-	    7L7gZLFe+cry47IAqstheKHR0iUyR3+YgTVgS6pszAlhl46YYthpqSUiN0vpKB7E
-	    zRhPjli9gmQycjHS4iXBKe2aeFPsV5Cd7njw2oa9cmxMysqK+zjWJ4F1vQ==</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor use="encryption">
+      <md:KeyDescriptor>
         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
           <ds:X509Data>
             <ds:X509Certificate>MIIEdzCCA1+gAwIBAgIQCA4E94tJ3rEzJC1noMhpNzANBgkqhkiG9w0BAQUFADA2
@@ -2698,17 +2669,17 @@ palvelujen, jotka liittyvät Euroopan CLARIN aloitetta.</mdui:Description>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Paul</md:GivenName>
       <md:SurName>Meurer</md:SurName>
-      <md:EmailAddress>clarino-tech@uib.no</md:EmailAddress>
+      <md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="administrative">
       <md:GivenName>Koenraad</md:GivenName>
       <md:SurName>de Smedt</md:SurName>
-      <md:EmailAddress>clarino@uib.no</md:EmailAddress>
+      <md:EmailAddress>mailto:clarino@uib.no</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
       <md:GivenName>Paul</md:GivenName>
       <md:SurName>Meurer</md:SurName>
-      <md:EmailAddress>clarino-tech@uib.no</md:EmailAddress>
+      <md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <!-- Nederlab | Meertens -->
