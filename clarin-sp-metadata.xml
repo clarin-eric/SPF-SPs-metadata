@@ -957,22 +957,6 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
       <md:KeyDescriptor>
         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
           <ds:KeyName>Active</ds:KeyName>
-          <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=ufal-point.mff.cuni.cz,O=Charles University in Prague,C=CZ</ds:X509SubjectName>
-            <ds:X509Certificate>MIIEgTCCA2mgAwIBAgIRANAZM0fxIWg+DEEhaZlreVowDQYJKoZIhvcNAQEFBQAw NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B IFNTTCBDQTAeFw0xMjEwMjQwMDAwMDBaFw0xNTEwMjQyMzU5NTlaMFUxCzAJBgNV BAYTAkNaMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNpdHkgaW4gUHJhZ3VlMR8w HQYDVQQDExZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEF AAOCAQ8AMIIBCgKCAQEAz4nCZa/xBh1ebd2+99GEqRMSqSkCEVfFi4Tndz6v87Iv ZMvLY40OJg3lIEzngOz8tnn/ft6xcLxGwr+IbY6raHT08Xu8lQMd8Rj8Gmdi3Ov3 XuCgjVpAID+GGfNkahzxebWORNfHyqEGSx2oFgRe8HD9BbT8mqheBPF8FIy6mYvs 495IEkQVc0BvPvTwqEw+qOHKBX+AWQQIHDJDQQnjoteXplHugOFDJiJYH0T/80u3 DO7h6oyiLlnyDywOVCQdiJPXNOtPMyM9rMT3Vw9SO4iIaMUkF5EafFFdEPLsi+FO 2Z3r7pBxv1/LkK9AWuzAYSnjK/szHym25FWroxJZOwIDAQABo4IBaTCCAWUwHwYD VR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0wHQYDVR0OBBYEFKKMnXN92GaN 5uyL8cZdchPl9NpQMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1Ud JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAYBgNVHSAEETAPMA0GCysGAQQBsjEB AgIdMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwudGNzLnRlcmVuYS5vcmcv VEVSRU5BU1NMQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzA1BggrBgEFBQcwAoYpaHR0 cDovL2NydC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcnQwJgYIKwYBBQUH MAGGGmh0dHA6Ly9vY3NwLnRjcy50ZXJlbmEub3JnMCEGA1UdEQQaMBiCFnVmYWwt cG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBAKWQZsd0zZBi+hz6 3LBx49MOoCXkpUkIdqecMhz0bpIhC+2Q3Uxp97lpfB/9CIMoI5tq+PRXDXQt2D6A fk90Maa8HYp1OQagBlY9jhs4ImbPbsHM5Aa3f4ycxhXs+hecaJBD4WiaxeWpOWes k5Q+FdJCZoPqHRD2chNwhBErztJgujEarVtMBCUpCEpy5lwgFFFc2oekH8CkhWLw sv6GENdYGamg5HfRAq57+mGW3FUnox3gkqTWDuVzOaMfDlHvfqRVtC7n4mhHVAqz adGmTo4VvqYQsi0gVzrts5HDZAQBI13mpxua74rU8XyluKEyjS4gkVXLnlRjwXeF IhAZYQU= </ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor>
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:KeyName>Standby</ds:KeyName>
           <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
           <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
           <ds:X509Data>
