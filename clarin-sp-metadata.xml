@@ -601,7 +601,6 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
-      <!-- <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat> <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat> -->
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/SOAP"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Redirect"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/POST"/>
