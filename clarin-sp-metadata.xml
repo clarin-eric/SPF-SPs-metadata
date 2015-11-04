@@ -2399,7 +2399,6 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
           <mdui:Description xml:lang="de">Transkribierte Korpora von Konversationen mit kleinen Kindern.</mdui:Description>
           <mdui:DisplayName xml:lang="fi">CHILDES - Child Language Data Exchange System</mdui:DisplayName>
           <mdui:Description xml:lang="fi">Transkriptoituja korpuksia puhekielen yhteisvaikutuksista pikkulapsille.</mdui:Description>
-          <mdui:PrivacyStatementURL xml:lang="en">https://childes.talkbank.org/privacy</mdui:PrivacyStatementURL>
           <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
           <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
           <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
@@ -2492,7 +2491,6 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
           <mdui:Description xml:lang="de">Transkribierte Korpora von Konversationen mit älteren Kindern und Erwachsenen.</mdui:Description>
           <mdui:DisplayName xml:lang="fi">TalkBank</mdui:DisplayName>
           <mdui:Description xml:lang="fi">Transkriptoituja korpuksia puhekielen yhteisvaikutuksista (vanhemmat lapset ja aikuiset).</mdui:Description>
-          <mdui:PrivacyStatementURL xml:lang="en">http://talkbank.org/share/irb/options.html</mdui:PrivacyStatementURL>
           <mdui:Logo height="300" width="459">https://talkbank.talkbank.org/images/clarin500.png</mdui:Logo>
           <mdui:Logo height="60" width="92">https://talkbank.talkbank.org/images/clarin80.png</mdui:Logo>
           <mdui:Logo height="16" width="25">https://talkbank.talkbank.org/images/clarin16.png</mdui:Logo>
