@@ -2362,9 +2362,19 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
       <md:OrganizationURL xml:lang="et">http://keeleressursid.ee/et/</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
-      <md:GivenName>Lauri</md:GivenName>
-      <md:SurName>Jesmin</md:SurName>
-      <md:EmailAddress>mailto:lauri.jesmin@ut.ee</md:EmailAddress>
+      <md:GivenName>Mart</md:GivenName>
+      <md:SurName>Klanberg</md:SurName>
+      <md:EmailAddress>mailto:mart.klanberg@ut.ee</md:EmailAddress>
+    </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Mart</md:GivenName>
+      <md:SurName>Klanberg</md:SurName>
+      <md:EmailAddress>mailto:mart.klanberg@ut.ee</md:EmailAddress>
+    </md:ContactPerson>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>Krista</md:GivenName>
+      <md:SurName>Liin</md:SurName>
+      <md:EmailAddress>mailto:krista.liin@ut.ee</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <!-- CMU CHILDES -->
