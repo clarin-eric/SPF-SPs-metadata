@@ -2307,8 +2307,6 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
     <md:Extensions>
       <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
         <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-      </saml:Attribute>
-      <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
         <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
       </saml:Attribute>
     </md:Extensions>
@@ -2344,12 +2342,12 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
         <md:ServiceName xml:lang="en">CELR services</md:ServiceName>
         <md:ServiceName xml:lang="et">EKRK teenused</md:ServiceName>
         <md:RequestedAttribute Name="eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="true"/>
-        <md:RequestedAttribute Name="eduPersonTargetedId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="sn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="displayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
-        <md:RequestedAttribute Name="mail" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute Name="eduPersonTargetedId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
+        <md:RequestedAttribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
+        <md:RequestedAttribute Name="sn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
+        <md:RequestedAttribute Name="o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
+        <md:RequestedAttribute Name="displayName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
+        <md:RequestedAttribute Name="mail" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" isRequired="false"/>
       </md:AttributeConsumingService>
     </md:SPSSODescriptor>
     <md:Organization>
