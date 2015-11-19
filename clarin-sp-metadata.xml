@@ -585,7 +585,7 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
           <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
           <mdui:Keywords xml:lang="en">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
           <mdui:Keywords xml:lang="nl">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
-          <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://catalog.clarin.eu/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://catalog.clarin.eu/Shibboleth.sso/Login" index="1"/>
