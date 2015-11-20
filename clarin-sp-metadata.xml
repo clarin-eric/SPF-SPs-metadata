@@ -2901,37 +2901,81 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <!-- University of Bergen/CLARINO via CLARIN-->
-  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_17a63cc2e55a9ef692cdaf15b25650d0144471c3" entityID="https://repo.clarino.uib.no/shibboleth/sp">
+  <!-- CLARINO Bergen Repository-->
+  <md:EntityDescriptor 
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_17a63cc2e55a9ef692cdaf15b25650d0144471c3" entityID="https://repo.clarino.uib.no/shibboleth/sp">
     <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
     </md:Extensions>
     <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <md:Extensions>
-        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-          <mdui:DisplayName xml:lang="en">UiB CLARINO repository</mdui:DisplayName>
-          <mdui:Description xml:lang="en">Repository of CLARINO project at University of Bergen</mdui:Description>
-          <mdui:InformationURL xml:lang="en">https://repo.clarino.uib.no/xmlui/page/about</mdui:InformationURL>
-        </mdui:UIInfo>
         <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.clarino.uib.no/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.clarino.uib.no/Shibboleth.sso/Login" index="1"/>
+        <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+          <mdui:DisplayName xml:lang="en">CLARINO Bergen Repository</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="no">CLARINO Bergen Repository</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="de">CLARINO Bergen Repository</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="fi">CLARINO Bergen Repository</mdui:DisplayName>
+          <mdui:Description xml:lang="en">The CLARINO Bergen Repository at the University of Bergen</mdui:Description>
+          <mdui:InformationURL xml:lang="en">https://repo.clarino.uib.no/xmlui/page/about</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://repo.clarino.uib.no/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+          <mdui:Logo height="64" width="180">https://clarino.uib.no/images/clarino_duo-180.png</mdui:Logo>
+          <mdui:Logo height="106" width="296">https://clarino.uib.no/images/clarino_duo-296.png</mdui:Logo>
+          <mdui:Logo height="165" width="460">https://clarino.uib.no/images/clarino_duo-460.png</mdui:Logo>
+          <mdui:Logo height="231" width="740">https://clarino.uib.no/images/clarino_duo-740.png</mdui:Logo>
+        </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
           <ds:KeyName>repo.clarino.uib.no</ds:KeyName>
           <ds:X509Data>
             <ds:X509SubjectName>CN=repo.clarino.uib.no</ds:X509SubjectName>
-            <ds:X509Certificate>MIIDADCCAeigAwIBAgIJAP5/Ri7rxa/LMA0GCSqGSIb3DQEBBQUAMB4xHDAaBgNV BAMTE3JlcG8uY2xhcmluby51aWIubm8wHhcNMTQxMjE4MDkwNTE1WhcNMjQxMjE1 MDkwNTE1WjAeMRwwGgYDVQQDExNyZXBvLmNsYXJpbm8udWliLm5vMIIBIjANBgkq hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2OVEwzYCig35Ii37Buky/t7KWlNUEkGP E2WbfBiSPM2Iw+FIYGrpZ8KIt6qloN19vKwy8m53Asbba477R8CEx0zNQEHPfq35 vPDxDj2xLN+xvRuk6s6KbZ2eKvV6Vov2vDtOt7kw8gDFUOJd+SdOe+ROdiuV/DbO jpwsW68GdDpLWHmKSqXqk8fwCdoc0Imwic5sSfc2LPjAqu95aIb7CiAh8sOg26XK ik6Fjibj48l3aVxtIMGJf30JtS1SqnKgqmQoO6opBGnaCF4huNa44JYUSF5CQZ3c 4nRxupv2tp696H7lLH3XOI81dsrAVXEwt1q2D8FzNlT+U0AeFaRhbwIDAQABo0Ew PzAeBgNVHREEFzAVghNyZXBvLmNsYXJpbm8udWliLm5vMB0GA1UdDgQWBBQaN4I1 A6h9Jlo90nhGCWfw3EpT4jANBgkqhkiG9w0BAQUFAAOCAQEADsJ1zgUqZqgnq4gU z/z3N+5bieEYEZUJnaQ78a3erdYYLETE/PBrN0QUIGR3M2DhjCi0s00QuVFa1JqX IK3dR4ndo5Yv4hV/fVhDIZ4mVIUQPBcTRk1om9/gl1fdmRD+YpvhUSzvheLRBsQO yz2syxGRIPwu6LexWb8YbZtcvtWU4ZGwm91KXDerV8J05m4X5rv4HZi0MAS349Vz tNRgm6CrMBfiQUxQw5Gqsiuyf3rpzQLslEWEmP4AuoiUvlXiWqW+fDKhDhj2vlc8 0jOCrQaG00xvCbXSg91K+Xxj1kXjArfX4R7aB1TquBqLoFbPo0lNooYBECv+bN2q rYzidg== </ds:X509Certificate>
+            <ds:X509Certificate>MIIDADCCAeigAwIBAgIJAP5/Ri7rxa/LMA0GCSqGSIb3DQEBBQUAMB4xHDAaBgNV
+              BAMTE3JlcG8uY2xhcmluby51aWIubm8wHhcNMTQxMjE4MDkwNTE1WhcNMjQxMjE1
+              MDkwNTE1WjAeMRwwGgYDVQQDExNyZXBvLmNsYXJpbm8udWliLm5vMIIBIjANBgkq
+              hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2OVEwzYCig35Ii37Buky/t7KWlNUEkGP
+              E2WbfBiSPM2Iw+FIYGrpZ8KIt6qloN19vKwy8m53Asbba477R8CEx0zNQEHPfq35
+              vPDxDj2xLN+xvRuk6s6KbZ2eKvV6Vov2vDtOt7kw8gDFUOJd+SdOe+ROdiuV/DbO
+              jpwsW68GdDpLWHmKSqXqk8fwCdoc0Imwic5sSfc2LPjAqu95aIb7CiAh8sOg26XK
+              ik6Fjibj48l3aVxtIMGJf30JtS1SqnKgqmQoO6opBGnaCF4huNa44JYUSF5CQZ3c
+              4nRxupv2tp696H7lLH3XOI81dsrAVXEwt1q2D8FzNlT+U0AeFaRhbwIDAQABo0Ew
+              PzAeBgNVHREEFzAVghNyZXBvLmNsYXJpbm8udWliLm5vMB0GA1UdDgQWBBQaN4I1
+              A6h9Jlo90nhGCWfw3EpT4jANBgkqhkiG9w0BAQUFAAOCAQEADsJ1zgUqZqgnq4gU
+              z/z3N+5bieEYEZUJnaQ78a3erdYYLETE/PBrN0QUIGR3M2DhjCi0s00QuVFa1JqX
+              IK3dR4ndo5Yv4hV/fVhDIZ4mVIUQPBcTRk1om9/gl1fdmRD+YpvhUSzvheLRBsQO
+              yz2syxGRIPwu6LexWb8YbZtcvtWU4ZGwm91KXDerV8J05m4X5rv4HZi0MAS349Vz
+              tNRgm6CrMBfiQUxQw5Gqsiuyf3rpzQLslEWEmP4AuoiUvlXiWqW+fDKhDhj2vlc8
+              0jOCrQaG00xvCbXSg91K+Xxj1kXjArfX4R7aB1TquBqLoFbPo0lNooYBECv+bN2q
+              rYzidg==
+            </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
@@ -2951,44 +2995,64 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://repo.clarino.uib.no/Shibboleth.sso/SAML/POST" index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://repo.clarino.uib.no/Shibboleth.sso/SAML/Artifact" index="6"/>
       <md:AttributeConsumingService index="1">
-        <md:ServiceName xml:lang="en">UiB CLARINO repository</md:ServiceName>
-        <md:ServiceDescription xml:lang="en">Repository of CLARINO project at University of Bergen</md:ServiceDescription>
-        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:ServiceName xml:lang="en">CLARINO Bergen Repository</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">The CLARINO Bergen Repository at the University of Bergen</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="cn" Name="urn:mace:dir:attribute-def:cn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
-        <md:RequestedAttribute FriendlyName="o" Name="urn:mace:dir:attribute-def:o" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
+        <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="o" Name="urn:mace:dir:attribute-def:o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="o" Name="urn:mace:dir:attribute-def:o" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="ou" Name="urn:mace:dir:attribute-def:ou" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
-        <md:RequestedAttribute FriendlyName="ou" Name="urn:oid:2.5.4.11" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:basic"/>
+        <md:RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="ou" Name="urn:mace:dir:attribute-def:ou" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="ou" Name="urn:mace:dir:attribute-def:ou" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <md:RequestedAttribute FriendlyName="ou" Name="urn:oid:2.5.4.11" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="ou" Name="urn:oid:2.5.4.11" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="givenName" Name="urn:mace:dir:attribute-def:givenName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="surname" Name="urn:mace:dir:attribute-def:sn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:mace:dir:attribute-def:eduPersonEntitlement" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
-        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:mace:dir:attribute-def:eduPersonAffiliation" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
-        <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+        <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+        <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </md:AttributeConsumingService>
     </md:SPSSODescriptor>
     <md:Organization>
       <md:OrganizationName xml:lang="en">University of Bergen</md:OrganizationName>
-      <md:OrganizationDisplayName xml:lang="en">Library Administration, University of Bergen</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://www.uib.no/</md:OrganizationURL>
+      <md:OrganizationDisplayName xml:lang="en">UiB</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.uib.no</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Oyvind Liland</md:GivenName>
       <md:SurName>Gjesdal</md:SurName>
-      <md:EmailAddress>mailto:Oyvind.Gjesdal@ub.uib.no</md:EmailAddress>
+      <md:EmailAddress>mailto:oyvind.gjesdal@uib.no</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Hemed</md:GivenName>
+      <md:SurName>Al Ruwehy</md:SurName>
+      <md:EmailAddress>mailto:hemed.ruwehy@uib.no</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="administrative">
-      <md:GivenName>Library</md:GivenName>
+      <md:GivenName>University of Bergen Library</md:GivenName>
       <md:SurName>UiB</md:SurName>
-      <md:EmailAddress>mailto:dst@ub.uib.no</md:EmailAddress>
+      <md:EmailAddress>mailto:dst@uib.no</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <urn:EntityDescriptor xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata">
