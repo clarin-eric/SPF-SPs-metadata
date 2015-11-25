@@ -2999,7 +2999,7 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
           <mdui:Description xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</mdui:Description>
           <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</mdui:Description>
           <mdui:InformationURL xml:lang="en">https://repo.clarino.uib.no/xmlui/page/about</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://repo.clarino.uib.no/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://clarino.uib.no/iness/page?page-id=privacy_policy</mdui:PrivacyStatementURL>
           <mdui:Logo height="64" width="180">https://clarino.uib.no/images/clarino_duo-180.png</mdui:Logo>
           <mdui:Logo height="106" width="296">https://clarino.uib.no/images/clarino_duo-296.png</mdui:Logo>
           <mdui:Logo height="165" width="460">https://clarino.uib.no/images/clarino_duo-460.png</mdui:Logo>
