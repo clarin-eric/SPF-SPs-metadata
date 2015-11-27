@@ -2992,9 +2992,9 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
         <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
           <mdui:DisplayName xml:lang="en">CLARINO Bergen Repository</mdui:DisplayName>
           <mdui:DisplayName xml:lang="no">CLARINO Bergen Repository</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="de">CLARINO Bergen Repository</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="fi">CLARINO Bergen Repository</mdui:DisplayName>
-          <mdui:Description xml:lang="en">The CLARINO Bergen Repository at the University of Bergen</mdui:Description>
+          <mdui:DisplayName xml:lang="de">CLARINO Bergen Langzeitarchiv</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="fi">CLARINO Bergen Arkistoon</mdui:DisplayName>
+          <mdui:Description xml:lang="en">The CLARINO Bergen Repository for language resources at the University of Bergen</mdui:Description>
           <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og tjenester, knyttet til CLARIN-initiativet.</mdui:Description>
           <mdui:Description xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</mdui:Description>
           <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</mdui:Description>
@@ -3055,8 +3055,8 @@ InF/qlfqDoaoTI1ZSkpyr+97qTyFYFlbC5IFJCeCjcQAzscSUA==</ds:X509Certificate>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">CLARINO Bergen Repository</md:ServiceName>
         <md:ServiceName xml:lang="no">CLARINO Bergen Repository</md:ServiceName>
-        <md:ServiceName xml:lang="de">CLARINO Bergen Repository</md:ServiceName>
-        <md:ServiceName xml:lang="fi">CLARINO Bergen Repository</md:ServiceName>
+        <md:ServiceName xml:lang="de">CLARINO Bergen Langzeitarchiv</md:ServiceName>
+        <md:ServiceName xml:lang="fi">CLARINO Bergen Arkistoon</md:ServiceName>
         <md:ServiceDescription xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</md:ServiceDescription>
         <md:ServiceDescription xml:lang="no">Norsk forskningsinfrastruktur for språkdata og tjenester, knyttet til CLARIN-initiativet.</md:ServiceDescription>
         <md:ServiceDescription xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
