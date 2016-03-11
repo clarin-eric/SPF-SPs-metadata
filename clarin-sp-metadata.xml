@@ -1229,33 +1229,49 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
     </md:ContactPerson>
   </md:EntityDescriptor>
   <!-- WebLicht at University of Tübingen (via CLARIN) -->
-  <EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://weblicht.sfs.uni-tuebingen.de">
-    <Extensions>
+  <md:EntityDescriptor
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+        xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+        xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+        xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+        xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+        entityID="https://weblicht.sfs.uni-tuebingen.de">
+    <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
-        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
-        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="11" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://weblicht-clarin.esc.rzg.mpg.de/Shibboleth.sso/Login"/>
-      </Extensions>
-      <KeyDescriptor>
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">WebLicht</mdui:DisplayName>
+          <mdui:Description xml:lang="en">WebLicht is a service orchestration and execution environment for incremental automatic annotation of text corpora.</mdui:Description>
+          <mdui:Logo height="50" width="190">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/weblicht_button2.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/WebLicht_Privacy_Policy_Document</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
           <ds:KeyName>weblicht.sfs.uni-tuebingen.de </ds:KeyName>
           <ds:X509Data>
             <ds:X509SubjectName> emailAddress=wladmin@sfs.uni-tuebingen.de,CN=weblicht.sfs.uni-tuebingen.de,OU=SfS,O=Universitaet Tuebingen,L=Tuebingen,ST=Baden-Wuerttemberg,C=DE </ds:X509SubjectName>
             <ds:X509Certificate> MIIGKzCCBROgAwIBAgIHF3iUXPRQADANBgkqhkiG9w0BAQUFADB3MQswCQYDVQQG EwJERTEfMB0GA1UEChMWVW5pdmVyc2l0YWV0IFR1ZWJpbmdlbjEcMBoGA1UEAxMT R2xvYmFsLVVOSVRVRS1DQSAwMTEpMCcGCSqGSIb3DQEJARYadW5pdHVlLWNhQHVu aS10dWViaW5nZW4uZGUwHhcNMTQwNDI0MTM1MTA4WhcNMTkwMjA0MDAwMDAwWjCB wjELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzESMBAG A1UEBxMJVHVlYmluZ2VuMR8wHQYDVQQKExZVbml2ZXJzaXRhZXQgVHVlYmluZ2Vu MQwwCgYDVQQLEwNTZlMxJjAkBgNVBAMTHXdlYmxpY2h0LnNmcy51bmktdHVlYmlu Z2VuLmRlMSswKQYJKoZIhvcNAQkBFhx3bGFkbWluQHNmcy51bmktdHVlYmluZ2Vu LmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2KsTGSUCY/epaymY W3kqRl84RcNArc5w05x0rEi1qQUpAL1V7K7rJ/p5ZnjxqEhXEqYZXWh0ebkYWgzZ jr1Bs3mV1XVJ/9HrwRSFcNdyyFPmmP3Glsaculyn3zIQ4UcPyLk/kRlg37rx5nKj m3DZdrk345mjHO6MknFMSuh2TosI0tNhaa4rrRMJTlcOVJpiVlAF/DSZgwPjI6Yl 5aHKes43tkCx1LJxDRAz9i/DaW4HdYNcwW3A0qlkRKRZqqVwRCG3Z5b9qdSry6t0 UmmXMLYAxaStHVBx8d3eYWURfMLbvnpGKwWl0XGZQcevA9SzWswdmF/3X7zAmVAQ 4L2qUQIDAQABo4ICbjCCAmowOQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEw EQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQE AwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4EFgQU9cQi9vwBJfcH9+Ae ytdTniex90EwHwYDVR0jBBgwFoAUsMG7aDV/4tZBnBpxr+D8QTTNw6gwRgYDVR0R BD8wPYIdd2VibGljaHQuc2ZzLnVuaS10dWViaW5nZW4uZGWBHHdsYWRtaW5Ac2Zz LnVuaS10dWViaW5nZW4uZGUwgZMGA1UdHwSBizCBiDBCoECgPoY8aHR0cDovL2Nk cDEucGNhLmRmbi5kZS9jbGFzc2ljLXVuaXR1ZS1jYS9wdWIvY3JsL2dfY2Fjcmwu Y3JsMEKgQKA+hjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2NsYXNzaWMtdW5pdHVl LWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgeEGCCsGAQUFBwEBBIHUMIHRMDMGCCsG AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw TAYIKwYBBQUHMAKGQGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0 dWUtY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwTAYIKwYBBQUHMAKGQGh0dHA6 Ly9jZHAyLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0dWUtY2EvcHViL2NhY2VydC9n X2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAGZ9bLdCBVw1Txf0f59QvfPe Ic02a/QJieoXre844zW5ISZwp14vGy+yzk4BK1tSovtxwf/FHiC7Uoqi+T9cL7E5 yBbP2Y6cBHJuxy4YyXLimJoO7NWBDW+MOQRN1HjI5KXTMhhzmI81iofZbBlZwCSe pUzeHCt4KF3LDrrvNy4YiziDuojh23MHEv8W1/aNhX4F0T+MvwO2dGxAbax7XgLL ndO3/u6io4gRQiXZrrAS+1ZXGybrr6gUBN6popli1bR148tWwZNzwe1NjbGBIA5a ydKuf18CBYHeixW6XzkCMEdcRTec/qVTn7stpLtuuC5TCblNKGDKmhx9Mec+1Jo= </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
-      </KeyDescriptor>
-      <AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/SAML2/POST"/>
-      <AssertionConsumerService index="6" Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/SAML/POST"/>
+      </md:KeyDescriptor>
+      <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/SAML2/POST"/>
+      <md:AssertionConsumerService index="6" Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/SAML/POST"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">Weblicht, University Tübingen</md:ServiceName>
         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
@@ -1272,7 +1288,7 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
         <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:mace:dir:attribute-def:eduPersonEntitlement" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="eduPersonEntitlement" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </md:AttributeConsumingService>
-    </SPSSODescriptor>
+    </md:SPSSODescriptor>
     <md:Organization>
       <md:OrganizationName xml:lang="en">SfS, University of Tübingen</md:OrganizationName>
       <md:OrganizationName xml:lang="de">SfS, Universität Tübingen</md:OrganizationName>
@@ -1296,36 +1312,54 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
       <md:SurName>Hinrichs</md:SurName>
       <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
-  </EntityDescriptor>
+  </md:EntityDescriptor>
   <!-- WebAnno instance at University of Tübingen (via CLARIN) -->
-  <EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://webanno.sfs.uni-tuebingen.de">
-    <Extensions>
+  <md:EntityDescriptor
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+        xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+        xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+        xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+        xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+        entityID="https://webanno.sfs.uni-tuebingen.de">
+    <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
-        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
-      </Extensions>
-      <KeyDescriptor>
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">CLARIN WebAnno instance</mdui:DisplayName>
+          <mdui:Description xml:lang="en">WebAnno is a general purpose web-based linguistic annotation tool. This instance runs at the University of Tübingen and serves the CLARIN community.</mdui:Description>
+          <mdui:Logo height="128" width="128">https://webanno.github.io/webanno/assets/img/logo.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="en">http://webanno.sfs.uni-tuebingen.de/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/WebLicht_Privacy_Policy_Document</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
           <ds:KeyName>webanno.sfs.uni-tuebingen.de </ds:KeyName>
           <ds:X509Data>
             <ds:X509SubjectName> emailAddress=wladmin@sfs.uni-tuebingen.de,CN=webanno.sfs.uni-tuebingen.de,OU=SfS,O=Universitaet Tuebingen,L=Tuebingen,ST=Baden-Wuerttemberg,C=DE </ds:X509SubjectName>
             <ds:X509Certificate> MIIGKzCCBROgAwIBAgIHF3iUXPRQADANBgkqhkiG9w0BAQUFADB3MQswCQYDVQQG EwJERTEfMB0GA1UEChMWVW5pdmVyc2l0YWV0IFR1ZWJpbmdlbjEcMBoGA1UEAxMT R2xvYmFsLVVOSVRVRS1DQSAwMTEpMCcGCSqGSIb3DQEJARYadW5pdHVlLWNhQHVu aS10dWViaW5nZW4uZGUwHhcNMTQwNDI0MTM1MTA4WhcNMTkwMjA0MDAwMDAwWjCB wjELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzESMBAG A1UEBxMJVHVlYmluZ2VuMR8wHQYDVQQKExZVbml2ZXJzaXRhZXQgVHVlYmluZ2Vu MQwwCgYDVQQLEwNTZlMxJjAkBgNVBAMTHXdlYmxpY2h0LnNmcy51bmktdHVlYmlu Z2VuLmRlMSswKQYJKoZIhvcNAQkBFhx3bGFkbWluQHNmcy51bmktdHVlYmluZ2Vu LmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2KsTGSUCY/epaymY W3kqRl84RcNArc5w05x0rEi1qQUpAL1V7K7rJ/p5ZnjxqEhXEqYZXWh0ebkYWgzZ jr1Bs3mV1XVJ/9HrwRSFcNdyyFPmmP3Glsaculyn3zIQ4UcPyLk/kRlg37rx5nKj m3DZdrk345mjHO6MknFMSuh2TosI0tNhaa4rrRMJTlcOVJpiVlAF/DSZgwPjI6Yl 5aHKes43tkCx1LJxDRAz9i/DaW4HdYNcwW3A0qlkRKRZqqVwRCG3Z5b9qdSry6t0 UmmXMLYAxaStHVBx8d3eYWURfMLbvnpGKwWl0XGZQcevA9SzWswdmF/3X7zAmVAQ 4L2qUQIDAQABo4ICbjCCAmowOQYDVR0gBDIwMDARBg8rBgEEAYGtIYIsAQEEAwEw EQYPKwYBBAGBrSGCLAIBBAMBMAgGBmeBDAECAjAJBgNVHRMEAjAAMAsGA1UdDwQE AwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAdBgNVHQ4EFgQU9cQi9vwBJfcH9+Ae ytdTniex90EwHwYDVR0jBBgwFoAUsMG7aDV/4tZBnBpxr+D8QTTNw6gwRgYDVR0R BD8wPYIdd2VibGljaHQuc2ZzLnVuaS10dWViaW5nZW4uZGWBHHdsYWRtaW5Ac2Zz LnVuaS10dWViaW5nZW4uZGUwgZMGA1UdHwSBizCBiDBCoECgPoY8aHR0cDovL2Nk cDEucGNhLmRmbi5kZS9jbGFzc2ljLXVuaXR1ZS1jYS9wdWIvY3JsL2dfY2Fjcmwu Y3JsMEKgQKA+hjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2NsYXNzaWMtdW5pdHVl LWNhL3B1Yi9jcmwvZ19jYWNybC5jcmwwgeEGCCsGAQUFBwEBBIHUMIHRMDMGCCsG AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw TAYIKwYBBQUHMAKGQGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0 dWUtY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwTAYIKwYBBQUHMAKGQGh0dHA6 Ly9jZHAyLnBjYS5kZm4uZGUvY2xhc3NpYy11bml0dWUtY2EvcHViL2NhY2VydC9n X2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAGZ9bLdCBVw1Txf0f59QvfPe Ic02a/QJieoXre844zW5ISZwp14vGy+yzk4BK1tSovtxwf/FHiC7Uoqi+T9cL7E5 yBbP2Y6cBHJuxy4YyXLimJoO7NWBDW+MOQRN1HjI5KXTMhhzmI81iofZbBlZwCSe pUzeHCt4KF3LDrrvNy4YiziDuojh23MHEv8W1/aNhX4F0T+MvwO2dGxAbax7XgLL ndO3/u6io4gRQiXZrrAS+1ZXGybrr6gUBN6popli1bR148tWwZNzwe1NjbGBIA5a ydKuf18CBYHeixW6XzkCMEdcRTec/qVTn7stpLtuuC5TCblNKGDKmhx9Mec+1Jo= </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
-      </KeyDescriptor>
-      <AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/SAML2/POST"/>
-      <AssertionConsumerService index="6" Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/SAML/POST"/>
+      </md:KeyDescriptor>
+      <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/SAML2/POST"/>
+      <md:AssertionConsumerService index="6" Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/SAML/POST"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">WebAnno instance at University of Tübingen</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">WebAnno instance at University of Tübingen</md:ServiceDescription>
         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
@@ -1337,7 +1371,7 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
         <md:RequestedAttribute FriendlyName="cn" Name="urn:mace:dir:attribute-def:cn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
         <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </md:AttributeConsumingService>
-    </SPSSODescriptor>
+    </md:SPSSODescriptor>
     <md:Organization>
       <md:OrganizationName xml:lang="en">SfS, University of Tübingen</md:OrganizationName>
       <md:OrganizationName xml:lang="de">SfS, Universität Tübingen</md:OrganizationName>
@@ -1361,7 +1395,7 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
       <md:SurName>Hinrichs</md:SurName>
       <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
-  </EntityDescriptor>
+  </md:EntityDescriptor>
   <!-- CNRS-ATILF (via CLARIN), temporarily disabled due to non-fixed Heartbleed vulnerability. -->
   <!-- CLARIN-DK-UCPH SP -->
   <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_78e4557169289f8f65e453bfcf5c5ebd18a665be" entityID="https://infra.clarin.dk/shibboleth">
