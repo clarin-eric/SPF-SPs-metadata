@@ -1889,7 +1889,7 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_01766660fc4cb4bf8abd22b8eed2b6481a44bb76"
-        entityID="https://fsd-cloud22.fz-juelich.de/shibboleth">
+        entityID="https://monitoring.clarin.eu/shibboleth">
         <md:Extensions
             xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
             <alg:DigestMethod
@@ -1932,11 +1932,11 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/Login"/>
+                    Location="https://monitoring.clarin.eu/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse
                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                     Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/Login"
+                    Location="https://monitoring.clarin.eu/Shibboleth.sso/Login"
                     index="1"/>
             </md:Extensions>
             <md:KeyDescriptor>
@@ -2009,35 +2009,35 @@ xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn
             </md:KeyDescriptor>
             <md:ArtifactResolutionService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/Artifact/SOAP"
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/Artifact/SOAP"
                 index="1"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SLO/SOAP"/>
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SLO/Redirect"/>
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SLO/POST"/>
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SLO/POST"/>
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SLO/Artifact"/>
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SAML2/POST"
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SAML2/POST"
                 index="1"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign"
                 index="2"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SAML2/Artifact"
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SAML2/Artifact"
                 index="3"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://fsd-cloud22.fz-juelich.de/Shibboleth.sso/SAML2/ECP"
+                Location="https://monitoring.clarin.eu/Shibboleth.sso/SAML2/ECP"
                 index="4"/>
         </md:SPSSODescriptor>
     </md:EntityDescriptor>
