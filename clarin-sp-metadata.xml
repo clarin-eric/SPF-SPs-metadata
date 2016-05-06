@@ -83,265 +83,281 @@
     </ContactPerson>
   </md:EntityDescriptor>
   <!-- CSC korp (via CLARIN) -->
-  <EntityDescriptor entityID="https://sp.korp.csc.fi/">
-    <Extensions>
+ <md:EntityDescriptor entityID="https://sp.korp.csc.fi/">
+    <md:Extensions>
       <mdrpi:RegistrationInfo registrationAuthority="http://www.csc.fi/haka">
-        <mdrpi:RegistrationPolicy xml:lang="en">
-      http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
       </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml:AttributeValue>
-        http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://korp.csc.fi/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://korp.csc.fi/Shibboleth.sso/Login" index="1"/>
         <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma
-        tekstiaineistolle</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">Concordance search service
-        for text corpora</mdui:DisplayName>
-          <mdui:Description xml:lang="en">With this service you can
-        study text corpora.</mdui:Description>
-          <mdui:Description xml:lang="fi">Tällä työkalulla voit
-        tutkia tekstikorpuksia.</mdui:Description>
-          <mdui:Logo height="66" width="168">
-        https://korp.csc.fi/img/korplogo.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">
-        http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="sv">
-        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">
-        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">
-        https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+          <mdui:DisplayName xml:lang="fi">Konkordanssihakuohjelma tekstiaineistolle</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">Concordance search service for text corpora</mdui:DisplayName>
+          <mdui:Description xml:lang="fi">Tällä työkalulla voit tutkia tekstikorpuksia.</mdui:Description>
+          <mdui:Description xml:lang="en">With this service you can study text corpora.</mdui:Description>
+          <mdui:Logo height="66" width="168">https://korp.csc.fi/img/korplogo.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="en">http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="sv">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
-      </Extensions>
-      <KeyDescriptor>
+      </md:Extensions>
+      <md:KeyDescriptor>
         <ds:KeyInfo>
           <ds:X509Data>
-            <ds:X509Certificate>
-          MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
-          MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-          U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
-          CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
-          aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
-          e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
-          js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
-          IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
-          zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
-          VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
-          Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
-          MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
-          DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
-          VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
-          K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
-          KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
-          b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
-          LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
-          BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
-          vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
-          v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
-          eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
-          eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
-          5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
+            <ds:X509Certificate>MIIEYzCCA0ugAwIBAgIQTmDBZrbiqJFnGKHn80dL1zANBgkqhkiG9w0BAQUFADA2
+MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+U1NMIENBMB4XDTEzMTIxMzAwMDAwMFoXDTE2MTIxMjIzNTk1OVowOTEhMB8GA1UE
+CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRQwEgYDVQQDEwtrb3JwLmNzYy5m
+aTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANU16/1jE06KKH6uErmq
+e2wE5u+8SkWqR4Gks+iH67OiPTgoPSVfx1t55FHDUl1zQjijwcvejH26lYIpS7Ts
+js1MGcjcgEt1qFDDQ/eC6931hIg1jRa0PF/cxFjP9qEcd/I7UxuyM5QJga4pfl/o
+IHSL9oPYi5iCJ6qoC3dgNy0glMiisLkKyOKOHIXYzfAdMlIfRAMGCDAnDj3Kw4wK
+zv+RCWSGPEKHxfnPZwY8fgUs0vugICJBfQkSliUQm9P9l9Pt/8PP3XoIzgfXmxKK
+VQg/3EW+u2dnAzV1OKNrbJAajCJYL4VuGejWE7y8x+ixTqFCCPBT1cFZFWgFnzsh
+Yi0CAwEAAaOCAWgwggFkMB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ47nt
+MB0GA1UdDgQWBBTkZV9BIXGhYb67UVmwNByxJxsAITAOBgNVHQ8BAf8EBAMCBaAw
+DAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwIgYD
+VR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAvoC2g
+K4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmwwbQYI
+KwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJlbmEu
+b3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3AudGNz
+LnRlcmVuYS5vcmcwFgYDVR0RBA8wDYILa29ycC5jc2MuZmkwDQYJKoZIhvcNAQEF
+BQADggEBAJClAngseLp5qnRUj2iFSlNVccoP9KZKhLaeqiUk6vvwNdyetfMu9Txi
+vllrbfIaoVMvcA3nE5lfWEAlpvoqnQO/wmDv3ObX/XLJpXqSFpNpDOllhEbVeylT
+v8qqjG84Y4OUAd46zhiFpXr+6InhbkahABizqoXs2/aLm3nutf8rWzwFQqm+8YLE
+eLvEROIn209q+8M0V95avRxK1/wTTqwTnEGlGfRU5aTct+hLpJIRQS1DsAJpVDLU
+eeQKhPUjOTj9UPCeCE8rjrLqJ3pBtqlfhwUkfbIpUeGbYh9FI3zJNDKLmwCGS0g+
+5G7muSfVNRBDgubGawMy3pYMrrCOxB4=</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
-      </KeyDescriptor>
-      <NameIDFormat>
-    urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <NameIDFormat>
-    urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
-      <AttributeConsumingService index="1" isDefault="true">
-        <ServiceName xml:lang="fi">Korp – hakuohjelma
-      tekstiaineistoille</ServiceName>
-        <ServiceName xml:lang="en">Korp – search service for text
-      material</ServiceName>
-        <ServiceDescription xml:lang="fi">Korp on kielitutkijoille
-      tarkoitettu tyokalu, jolla voi tutkia
-      tekstiaineistoja.</ServiceDescription>
-        <ServiceDescription xml:lang="en">Korp is a user interface
-      for language researchers to examine text
-      material.</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-      </AttributeConsumingService>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan
-    keskus Oy</OrganizationName>
-      <OrganizationName xml:lang="en">CSC - IT Center for Science
-    Ltd.</OrganizationName>
-      <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan
-    keskus Oy</OrganizationName>
-      <OrganizationDisplayName xml:lang="fi">CSC - Tieteen
-    tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">CSC - IT Center for
-    Science Ltd.</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="sv">CSC - Tieteen
-    tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationURL xml:lang="fi">
-    http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="en">
-    http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="sv">
-    http://www.csc.fi</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="administrative">
-      <GivenName>Krister</GivenName>
-      <SurName>Lindén</SurName>
-      <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="technical">
-      <GivenName>Martin</GivenName>
-      <SurName>Matthiesen</SurName>
-      <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Tero</GivenName>
-      <SurName>Aalto</SurName>
-      <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Jyrki</GivenName>
-      <SurName>Niemi</SurName>
-      <EmailAddress>mailto:jyrki.niemi@helsinki.fi</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIGKjCCBRKgAwIBAgIQCxa0kBsonBX338rpeuui2DANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHYxCzAJBgNVBAYT
+AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
+Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxFDASBgNVBAMT
+C2tvcnAuY3NjLmZpMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsxcs
+U2WZzYRfXQfg/wXyGP2H+ndQ/HWrMK+w+RDaHVY7taKs4Lz0v6Am/tPouQRd4W9J
+73+Qfxt7M/S6+0zU7WstqNweAVzp62np9TvgR6JwHPA+dkj6XT/hn65/Lyp9+HPO
++hj4gJPevdd3jT+rstxEmag8j59I2jqf0FBeAWkXCMVOfwWnY3f6GUTUQPYsN4/j
+0B9F8zPI81LdY+5BQ60P+hxVPiGtjJ0PUZi3SkIAFdhp359ZUMVVDbgAGyWDzFbW
+O00Uuxvcx/hViOi72UBoh8AIk+PefYZ5E/U9w5L5NWOJgFsAJ/9lZ3ueuyYpMGAf
+kjR+PtHwXu+EKGYd11md5jzM3DGFdkvKWP0PMXYY/4BROd9eDRJsb7LRn+iRNvSi
+JDgT2exQe7W+YKrNjLhd3KHnMpLFbQO5ZXv1R5WVKCJ9X4cEGX3rpmfVa6oCukdp
+ltlWgwAc1td9c22Tr9MH5NNl+W6QKY/kNTnR/n4VUHNcErLeBqdOMTXOSr308VGd
+hXnqoGi8fy3FF41EZEYwJGWLwCGOHQyVOcaV0yyNbt9ldSqBCuSlgFVEyI03DEc5
+5ol/F+zfQn6RH7HDLKWoevoT9pS/T0w5kCJ5Gwm7vTKRd4U41FddGGWHqQ0eWgDP
+ygDsbcv61VhpDxGpao51d93HeMk3V6IIZAKYee0CAwEAAaOCAcQwggHAMB8GA1Ud
+IwQYMBaAFGf9iCAUJ5jHCdIlGbvpURFjdVBiMB0GA1UdDgQWBBSctUDCsw0kngnC
+LUt9n1JjJoMcHTAWBgNVHREEDzANggtrb3JwLmNzYy5maTAOBgNVHQ8BAf8EBAMC
+BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6At
+oCuGKWh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMC+g
+LaArhilodHRwOi8vY3JsNC5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDBM
+BgNVHSAERTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3
+dy5kaWdpY2VydC5jb20vQ1BTMAgGBmeBDAECAjBuBggrBgEFBQcBAQRiMGAwJAYI
+KwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA4BggrBgEFBQcwAoYs
+aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcnQwDAYD
+VR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEADgHSFAOebn02NccLPPrpSmiS
+tHvApD8yjaF835nWDTuiVQtQbqmBnZQke6rAWTAcZAVA64rCtXzFQSYRvuA/MoWb
+AqgYgG7RO2v/SI18E4pB43C92Vb9uwgYvwgEw7yxRx2+cHIgr+Pitx8DOsD8HK4W
+R8KiGe76H96fEd3gXuv1GQhzXQDNUIuQEFssxdoTVKlYyTm81s6O2BuOe340Iuh7
+aISD7Gp+2qdKlWmO8UW60wk7w21HondpWXJBOoKNtAfG5iDAbGdnYsN+N6rCqWy5
+3k4erFdcobsBurkw/gjBwFa8fG95wh/32SdqRWJeMLH8sWBZXp8Xrckuv5sOig==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://korp.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+      <md:AttributeConsumingService index="1" isDefault="true">
+        <md:ServiceName xml:lang="fi">Korp - hakuohjelma tekstiaineistoille</md:ServiceName>
+        <md:ServiceName xml:lang="en">Korp - search service for text material</md:ServiceName>
+        <md:ServiceDescription xml:lang="fi">Korp on kielitutkijoille tarkoitettu tyokalu, jolla voi tutkia tekstiaineistoja.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">Korp is a user interface for language researchers to examine text material.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</md:OrganizationName>
+      <md:OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="fi">http://www.csc.fi</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.csc.fi</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="sv">http://www.csc.fi</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>Krister</md:GivenName>
+      <md:SurName>Lindén</md:SurName>
+      <md:EmailAddress>mailto:fin-clarin@helsinki.fi</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Martin</md:GivenName>
+      <md:SurName>Matthiesen</md:SurName>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Tero</md:GivenName>
+      <md:SurName>Aalto</md:SurName>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Jyrki</md:GivenName>
+      <md:SurName>Niemi</md:SurName>
+      <md:EmailAddress>mailto:jyrki.niemi@helsinki.fi</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
   <!-- CSC lat (via CLARIN) -->
-  <EntityDescriptor entityID="http://sp.lat.csc.fi">
-    <Extensions>
+  <md:EntityDescriptor entityID="http://sp.lat.csc.fi">
+    <md:Extensions>
       <mdrpi:RegistrationInfo registrationAuthority="http://www.csc.fi/haka">
-        <mdrpi:RegistrationPolicy xml:lang="en">
-      http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+        <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
       </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml:AttributeValue>
-        http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://lat.csc.fi/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://lat.csc.fi/Shibboleth.sso/Login" index="1"/>
         <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="en">LAT – Language Archive
-        Tools</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="fi">LAT – Language Archive
-        Tools</mdui:DisplayName>
-          <mdui:Description xml:lang="en">LAT is a user interface for
-        language researchers to deposit and process audiovisual
-        material.</mdui:Description>
-          <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat
-        voivat tallentaa ja käsitellä video- ja
-        äänimateriaalia.</mdui:Description>
-          <mdui:Logo height="41" width="100">
-        https://lat.csc.fi/gif/LA.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">
-        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="fi">
-        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="sv">
-        http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="sv">
-        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">
-        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">
-        https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+          <mdui:DisplayName xml:lang="fi">LAT – Language Archive Tools</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">LAT – Language Archive Tools</mdui:DisplayName>
+          <mdui:Description xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</mdui:Description>
+          <mdui:Description xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja käsitellä video- ja äänimateriaalia.</mdui:Description>
+          <mdui:Logo height="41" width="100">https://lat.csc.fi/gif/LA.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="sv">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="fi">http://tla.mpi.nl/a4-guides/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="sv">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="fi">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://lat.csc.fi/corpora/Info/Lat_Privacy_Policy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
-      </Extensions>
-      <KeyDescriptor>
+      </md:Extensions>
+      <md:KeyDescriptor>
         <ds:KeyInfo>
           <ds:X509Data>
-            <ds:X509Certificate>
-          MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
-          MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-          U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
-          CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
-          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
-          4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
-          w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
-          veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
-          WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
-          M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
-          6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
-          HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
-          BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
-          HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
-          hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
-          BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
-          cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
-          dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
-          A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
-          11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
-          jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
-          rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
-          CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
-          TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
+            <ds:X509Certificate>MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
+MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
+U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
+CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
+4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
+w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
+veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
+WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
+M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
+6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
+HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
+BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
+HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
+hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
+BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
+cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
+dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
+A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
+11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
+jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
+rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
+CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
+TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
-      </KeyDescriptor>
-      <NameIDFormat>
-    urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <NameIDFormat>
-    urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
-      <AttributeConsumingService index="1" isDefault="true">
-        <ServiceName xml:lang="fi">LAT – Language Archive
-      Tools</ServiceName>
-        <ServiceName xml:lang="en">LAT – Language Archive
-      Tools</ServiceName>
-        <ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat
-      voivat tallentaa ja kasitella video- ja
-      aanimateriaalia.</ServiceDescription>
-        <ServiceDescription xml:lang="en">LAT is a user interface for
-      language researchers to deposit and process audiovisual
-      material.</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-      </AttributeConsumingService>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan
-    keskus Oy</OrganizationName>
-      <OrganizationName xml:lang="en">CSC - IT Center for Science
-    Ltd.</OrganizationName>
-      <OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan
-    keskus Oy</OrganizationName>
-      <OrganizationDisplayName xml:lang="fi">CSC - Tieteen
-    tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">CSC - IT Center for
-    Science Ltd.</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="sv">CSC - Tieteen
-    tietotekniikan keskus Oy</OrganizationDisplayName>
-      <OrganizationURL xml:lang="fi">
-    http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="en">
-    http://www.csc.fi</OrganizationURL>
-      <OrganizationURL xml:lang="sv">
-    http://www.csc.fi</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="administrative">
-      <GivenName>Krister</GivenName>
-      <SurName>Lindén</SurName>
-      <EmailAddress>mailto:fin-clarin@helsinki.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="technical">
-      <GivenName>Martin</GivenName>
-      <SurName>Matthiesen</SurName>
-      <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Tero</GivenName>
-      <SurName>Aalto</SurName>
-      <EmailAddress>mailto:kielipankki@csc.fi</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIGKDCCBRCgAwIBAgIQCDaLAFllh/G6tbAenGqfPjANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHUxCzAJBgNVBAYT
+AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
+Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxEzARBgNVBAMT
+CmxhdC5jc2MuZmkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDu8pR7
+2qpd6+Thp9tGnVNmK6Un3I70VyOn8RJHPnfDrwowSkNU/XVXIDHtm2PjgNm5wa6M
+1evbY2fGO2oEKhgsukPZGqAPqXsN1lMZQLm7e/i7XU6hNSOvuLnaFpgC4AGh0+Vh
+PZT2a0RtT7KWp5oS7WCmDPrb0I3LA0PHoj0W0XfOJkXOqGwv8Z3D8egeNs/3ngBC
+/O7+5Y0NjU+OV82r4iBdVfDT01aglUGN3A9yH9m9divd8M0T25VxzdwzvAEacW/T
+Mh6nJwKNSU900CO1OEioIgBuXO7lH8QTGyLClmLKERxlQN8CnH8J9caYzCddFBYC
+/sw5n20Xc0Uft7WRm13tAxKywIk26r3gjAPIFSploIIuM/BN4u/IENy1KkCHkgCx
+2FnqhCZvboIPZkfvz7wejYmnuncCGr5nVnVWlm7t1gJ+DwEGGTaIp2bZ81I/J0jF
+UtJlmV7dukVfubt+wyQ/CxIcxx3ergynPohhl9BZ4cnrTu0n3QJKCX+1/flcvl6o
+GN6LrUepvmjplAmQjgw7VkdWeMt0dhxknKVAwmXYWNCvSt5oFtoOKcrokxaNv6bB
+n6HD75a1ij6GZdoVS896RQfOrp7AuTPbp4j/5jD2QhY9QXU5H6VkqPUhKptDXund
+O7t8/9o0ttHeDlrvQR9x1mJ3G41Swq8MUm2wJQIDAQABo4IBwzCCAb8wHwYDVR0j
+BBgwFoAUZ/2IIBQnmMcJ0iUZu+lREWN1UGIwHQYDVR0OBBYEFE3NZhcDyD8VXRHh
+1kp6mOzhlbgkMBUGA1UdEQQOMAyCCmxhdC5jc2MuZmkwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaAr
+hilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAvoC2g
+K4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwTAYD
+VR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cu
+ZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQGCCsG
+AQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKGLGh0
+dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwGA1Ud
+EwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAIPfZhgYmF5XEzM4h9fDKcgY+0Og
+OOjHTBRXCzTaIdNMFMq/eHZHGYQHbXcwhv4eayasnTLN+K31rnKNx532JKaQZWD0
+L+lvXyyP4MvRztlhWLpFoO74XBIKJjDRug+baE6rkpvDDzTDk2tUbVOCDRW71Xuy
+ALR+iipzKaxCynoPejzIwLPvckad7JUGszueVpgtH31bL2HLh7NrKnHIUpOcbgKN
+jOEqVCzeo06iawzNDcZ8T6LbMAVXFMe1GmCL8UVC69J2cEvh2IBL7RXnSrOOSu2/
+u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lat.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+      <md:AttributeConsumingService index="1" isDefault="true">
+        <md:ServiceName xml:lang="fi">LAT – Language Archive Tools</md:ServiceName>
+        <md:ServiceName xml:lang="en">LAT – Language Archive Tools</md:ServiceName>
+        <md:ServiceDescription xml:lang="fi">LAT-palvelussa tutkijat voivat tallentaa ja kasitella video- ja aanimateriaalia.</md:ServiceDescription>
+        <md:ServiceDescription xml:lang="en">LAT is a user interface for language researchers to deposit and process audiovisual material.</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">CSC - IT Center for Science Ltd.</md:OrganizationName>
+      <md:OrganizationName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="fi">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">CSC - IT Center for Science Ltd.</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="sv">CSC - Tieteen tietotekniikan keskus Oy</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="fi">http://www.csc.fi</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://www.csc.fi</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="sv">http://www.csc.fi</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>Krister</md:GivenName>
+      <md:SurName>Lindén</md:SurName>
+      <md:EmailAddress>mailto:fin-clarin@helsinki.fi</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>Martin</md:GivenName>
+      <md:SurName>Matthiesen</md:SurName>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>Tero</md:GivenName>
+      <md:SurName>Aalto</md:SurName>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
   <!-- CSC lbr (via CLARIN) -->
   <EntityDescriptor entityID="https://lbr.csc.fi/shibboleth">
     <Extensions>
