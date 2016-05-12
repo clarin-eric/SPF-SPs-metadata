@@ -1252,18 +1252,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://clarin.ids-mannheim.de/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://clarin.ids-mannheim.de/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://clarin.ids-mannheim.de/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarin.ids-mannheim.de/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://clarin.ids-mannheim.de/Shibboleth.sso/NIM/Artifact"/>
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://clarin.ids-mannheim.de/Shibboleth.sso/SAML2/POST"
@@ -1558,19 +1546,19 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="en">CLARIN CMDI metadata applications and services - catalog</mdui:DisplayName>
+                        xml:lang="en">CLARIN CMDI metadata (prod)</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:DisplayName
-                        xml:lang="de">CLARIN CMDI Metadaten: Anwendungen und Dienste - Catalog</mdui:DisplayName>
+                        xml:lang="de">CLARIN CMDI Metadaten (prod)</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
                     <mdui:DisplayName
-                        xml:lang="fi">CLARIN CMDI metadatan sovellukset ja palvelut - catalog</mdui:DisplayName>
+                        xml:lang="fi">CLARIN CMDI metadatan (prod)</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="fi">Component rekisterille, "Virtual Language Observatory".</mdui:Description>
+                        xml:lang="fi">Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:DisplayName
-                        xml:lang="nl">CLARIN CMDI metadata toepassingen en diensten - catalog</mdui:DisplayName>
+                        xml:lang="nl">CLARIN CMDI metadata (prod)</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
                     <mdui:InformationURL
@@ -1615,18 +1603,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://catalog.clarin.eu/Shibboleth.sso/NIM/Artifact"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST"
@@ -1646,13 +1622,9 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName
-                    xml:lang="en">CLARIN CMDI metadata applications and services - catalog</md:ServiceName>
-                <md:ServiceName
-                    xml:lang="nl">CLARIN CMDI metadata toepassingen en diensten - catalog</md:ServiceName>
+                    xml:lang="en">CLARIN CMDI metadata (prod)</md:ServiceName>
                 <md:ServiceDescription
                     xml:lang="en">For the Component Registry, Virtual Language Observatory.</md:ServiceDescription>
-                <md:ServiceDescription
-                    xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</md:ServiceDescription>
                 <md:RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
@@ -1667,7 +1639,7 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                     FriendlyName="mail"
                     Name="urn:oid:0.9.2342.19200300.100.1.3"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="false"/>
+                    isRequired="true"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
@@ -1723,13 +1695,13 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="en">Corpus linguistics and language documentation applications - lux17 (dev)</mdui:DisplayName>
+                        xml:lang="en">On languages (dev)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="de">Korpuslinguistik- und Sprachdokumentationsanwendungen - lux17 (dev)</mdui:DisplayName>
+                        xml:lang="de">Über Sprachen (dev)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="fi">Korpuslingvistiikan ja kielendokumentaation sovellukset - lux17 (dev)</mdui:DisplayName>
+                        xml:lang="fi">Kielistä (dev)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - lux17 (dev)</mdui:DisplayName>
+                        xml:lang="nl">Over talen (dev)</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description
@@ -1780,19 +1752,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://lux17.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
-            <!-- <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat> <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat> -->
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://lux17.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://lux17.mpi.nl/Shibboleth.sso/SAML2/POST"
@@ -1812,13 +1771,9 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName
-                    xml:lang="en">Corpus linguistics and language documentation applications - lux17 (dev)</md:ServiceName>
-                <md:ServiceName
-                    xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - lux17 (dev)</md:ServiceName>
+                    xml:lang="en">On languages (dev)</md:ServiceName>
                 <md:ServiceDescription
                     xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</md:ServiceDescription>
-                <md:ServiceDescription
-                    xml:lang="nl">Taalkundige toepassingen voor onderzoekers: Annex, IMDI Browser, Lamus, Metadata Browser.</md:ServiceDescription>
                 <RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
@@ -1896,13 +1851,13 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="en">Corpus linguistics and language documentation applications - corpus1</mdui:DisplayName>
+                        xml:lang="en">On languages (prod)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="de">Korpuslinguistik- und Sprachdokumentationsanwendungen - corpus1</mdui:DisplayName>
+                        xml:lang="de">Über Sprachen (prod)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="fi">Korpuslingvistiikan ja kielen dokumentaatio sovellukset - corpus1</mdui:DisplayName>
+                        xml:lang="fi">Kielistä (prod)</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="nl">Corpustaalkunde en taalbeschrijvingstoepassingen - corpus1</mdui:DisplayName>
+                        xml:lang="nl">Over talen (prod)</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</mdui:Description>
                     <mdui:Description
@@ -1953,19 +1908,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
-            <!-- <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat> <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat> -->
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://corpus1.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://corpus1.mpi.nl/Shibboleth.sso/SAML2/POST"
@@ -1993,7 +1935,7 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:AttributeConsumingService
                 index="1">
                 <md:ServiceName
-                    xml:lang="en">Max Planck Institute for Psycholinguistics - corpus1</md:ServiceName>
+                    xml:lang="en">On languages (prod)</md:ServiceName>
                 <md:ServiceDescription
                     xml:lang="en">Linguistic applications for researchers: Annex, IMDI Browser, Lamus, Metadata Browser.</md:ServiceDescription>
                 <!-- SAML1 -->
@@ -2995,18 +2937,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://infra.clarin.dk/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://infra.clarin.dk/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://infra.clarin.dk/Shibboleth.sso/NIM/Artifact"/>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST"
@@ -4552,18 +4482,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST"
@@ -4686,18 +4604,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST"
@@ -4775,18 +4681,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SLO/Artifact"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/SOAP"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Redirect"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/POST"/>
-            <ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/NIM/Artifact"/>
             <AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML2/POST"
@@ -5539,18 +5433,6 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/SLO/Artifact"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/SOAP"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/Redirect"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/POST"/>
-            <md:ManageNameIDService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://openskos.meertens.knaw.nl/Shibboleth.sso/NIM/Artifact"/>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
             <md:AssertionConsumerService
