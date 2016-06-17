@@ -4775,7 +4775,7 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                         height="15"
                         width="35">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
                     <mdui:PrivacyStatementURL
-                        xml:lang="de">https://corpora.uni-hamburg.de/drupal/en/privacy-policy</mdui:PrivacyStatementURL>
+                        xml:lang="de">https://corpora.uni-hamburg.de/drupal/de/datenschutz</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL
                         xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/privacy-policy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
@@ -4849,7 +4849,7 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <md:ServiceName
                     xml:lang="en">Hamburg Center for Language Corpora (HZSK) - CLARIN repository and services</md:ServiceName>
                 <md:ServiceDescription
-                    xml:lang="de">Forschungsdatenreppsitorium und Dienste des Hamburger Zentrum für Sprachkorpora (HZSK) im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
+                    xml:lang="de">Forschungsdatenrepositorium und Dienste des Hamburger Zentrum für Sprachkorpora (HZSK) im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
                 <md:ServiceDescription
                     xml:lang="en">Language data repository and services provided by the Hamburg Center for Language Corpora (HZSK) in the context of the CLARIN initiative.</md:ServiceDescription>
                 <md:RequestedAttribute
@@ -4876,12 +4876,12 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                     FriendlyName="cn"
                     Name="urn:mace:dir:attribute-def:cn"
                     NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="true"/>
+                    isRequired="false"/>
                 <md:RequestedAttribute
                     FriendlyName="cn"
                     Name="urn:oid:2.5.4.3"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
+                    isRequired="false"/>
                 <md:RequestedAttribute
                     FriendlyName="eduPersonScopedAffiliation"
                     Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation"
