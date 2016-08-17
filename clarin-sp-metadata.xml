@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- CLARIN Service Providers, see https://www.clarin.eu/spf and https://www.clarin.eu/content/guidelines-saml-metadata-about-your-sp for details. This SAML metadata batch contains both production and preproduction SPs. To ask for your SP to be given production status, please visit https://www.clarin.eu/spf for more information. Revision: $Rev$ -->
 <EntitiesDescriptor
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
@@ -1777,21 +1776,21 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="en">INL portal - CLARIN services</mdui:DisplayName>
+                        xml:lang="en">INT portal - CLARIN services</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="de">INL Portal - CLARIN Dienste</mdui:DisplayName>
+                        xml:lang="de">INT Portal - CLARIN Dienste</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="fi">INL portaali - CLARIN palvelut</mdui:DisplayName>
+                        xml:lang="fi">INT portaali - CLARIN palvelut</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="nl">INL portaal - CLARIN diensten</mdui:DisplayName>
+                        xml:lang="nl">INT portaal - CLARIN diensten</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="en">Institute for Dutch Lexicology (INL) projects attached to the CLARIN infrastructure.</mdui:Description>
+                        xml:lang="en">Institute for Dutch Language (INT) projects attached to the CLARIN infrastructure.</mdui:Description>
                     <mdui:Description
-                        xml:lang="de">Institut für Niederländische Lexikologie (INL) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
+                        xml:lang="de">Institut für Niederländische Sprache (INT) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
                     <mdui:Description
-                        xml:lang="fi">Institute for Dutch Lexicology (INL) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
+                        xml:lang="fi">Institute for Dutch Language (INT) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
                     <mdui:Description
-                        xml:lang="nl">Instituut voor Nederlandse Lexicologie (INL) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
+                        xml:lang="nl">Instituut voor de Nederlandse taal (INL) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
                     <mdui:InformationURL
@@ -1810,6 +1809,14 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 </mdui:UIInfo>
             </Extensions>
             <KeyDescriptor>
+                <ds:KeyInfo
+                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate> MIIF8zCCBNugAwIBAgIRAOmDjkikKV8bZXBlonKu/E0wDQYJKoZIhvcNAQELBQAwgZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYDVQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTYwODExMDAwMDAwWhcNMTcwOTIzMjM1OTU5WjCB1jELMAkGA1UEBhMCTkwxEDAOBgNVBBETBzIzMTEgQloxFTATBgNVBAgTDFp1aWQtSG9sbGFuZDEPMA0GA1UEBxMGTGVpZGVuMSEwHwYDVQQJExhNYXR0aGlhcyBkZSBWcmllc2hvZiAyLTMxMjAwBgNVBAoTKVN0IEluc3RpdHV1dCB2b29yIE5lZGVybGFuZHNlIExleGljb2xvZ2llMRcwFQYDVQQLEw5JbnN0YW50U1NMIFBybzEdMBsGA1UEAxMUcG9ydGFsLmNsYXJpbi5pbmwubmwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvLz7CXK+pmYsVZ5mpj+RoNjBlf3mtfi4yNCPhDkYWCnblbx9Q5YmIPuvhkf2y/U1Knaxg/2bK/k+jR65xvmPB7PYJ1rccUhhwq4W1US6HJjs4g8ZulUlN49sFKfJDa9uJZWaDx/hiZc/wYxtvm2z4sG4Wq6yZ0h/fFefWcqZmb+iTsTfKaaB/NQOQuVY13TMqb3HMTaKLLZRILeToVQXtpZlDsKZtZqKG7c/keqERwnUR0GlZf7tYildpXitXFVuBsUsaTT+E/uiCir9vNtjUjdUR37dyFnf770gtnHRjklu0S1cLYxFOi71faNvCSYJejB/wlIS1qCIIqwLXYMOvAgMBAAGjggH4MIIB9DAfBgNVHSMEGDAWgBSa8yvaz61Pti+7KkhIKhK3G0LBJDAdBgNVHQ4EFgQUZv15LjjmkGC9RlEs1kfbRdN6JA0wDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMFAGA1UdIARJMEcwOwYMKwYBBAGyMQECAQMEMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5jb20vQ1BTMAgGBmeBDAECAjBaBgNVHR8EUzBRME+gTaBLhklodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3JsMIGLBggrBgEFBQcBAQR/MH0wVQYIKwYBBQUHMAKGSWh0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET1JTQU9yZ2FuaXphdGlvblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTA5BgNVHREEMjAwghRwb3J0YWwuY2xhcmluLmlubC5ubIIYd3d3LnBvcnRhbC5jbGFyaW4uaW5sLm5sMA0GCSqGSIb3DQEBCwUAA4IBAQALmuxJdfXfi1vXZc3ebcOLCZAEcIPtoz/fGVKnBwyWLBadv3ubBZOL2qXG4b3OyfnqG1QXY9uG8iTrTq8FSTMV3d4Z5ORUMGC9Gkn964AqCccDuYnHbNqhOt4Cc5eI8PjgAvEzMs1vXyDJ9RmwbSCp7flKUQqgJQjNVGdzlwSWSNwf9RggP8V4qSYQ0Kj5ik7LUHigNbskq5pnDUkyEIiPcnrd0eknX0ntqLdav4UMegWjLcqQMyl/4drZzpa6iJ5VBoY0Tm+TyGwAE1bvrTGLFEJsWN2ognvY7hgYhaxp1bITI2kxWrJ6vSX4Gof6D0sq0npLOeO8vkfoVR0C15Xu </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </KeyDescriptor>
+            <KeyDescriptor use="signing">
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
