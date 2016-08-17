@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- CLARIN Service Providers, see https://www.clarin.eu/spf and https://www.clarin.eu/content/guidelines-saml-metadata-about-your-sp for details. This SAML metadata batch contains both production and preproduction SPs. To ask for your SP to be given production status, please visit https://www.clarin.eu/spf for more information. Revision: $Rev$ -->
 <EntitiesDescriptor
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
