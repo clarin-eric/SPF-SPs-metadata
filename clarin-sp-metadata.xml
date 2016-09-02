@@ -7131,7 +7131,8 @@ qQTazPv0mtY=
                 <md:ServiceName xml:lang="lt">CLARIN-LT talpykla ir paslaugos</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">Digital repository and services related to the CLARIN-LT project focused on language research infrastructure.</md:ServiceDescription>
                 <md:ServiceDescription xml:lang="lt">Skaitmenine talpykla ir paslaugos, susijusios su CLARIN-LT projektu ir kalbos tyrimu insfrastruktura.</md:ServiceDescription>
-                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute isRequired="false" FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"/>
             </md:AttributeConsumingService></md:SPSSODescriptor>
         <md:Organization>
             <md:OrganizationName xml:lang="en">CLARIN-LT</md:OrganizationName>
