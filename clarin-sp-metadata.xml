@@ -7276,9 +7276,18 @@ qQTazPv0mtY=
             <md:OrganizationURL xml:lang="en">https://www.clarin-lt.lt/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="administrative">
+            <GivenName>Andrius</GivenName>
+            <SurName>Utka</SurName>
             <md:EmailAddress>mailto:dspace-help@clarin.vdu.lt</md:EmailAddress>
         </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <GivenName>Martynas</GivenName>
+            <SurName>Savickis</SurName>
+            <md:EmailAddress>mailto:dspace-technical@clarin.vdu.lt</md:EmailAddress>
+        </md:ContactPerson>
         <md:ContactPerson contactType="technical">
+            <GivenName>Tomas</GivenName>
+            <SurName>Krilavicius</SurName>
             <md:EmailAddress>mailto:dspace-technical@clarin.vdu.lt</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
