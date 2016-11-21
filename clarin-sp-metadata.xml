@@ -22,7 +22,7 @@
         <mdrpi:RegistrationInfo
             registrationAuthority="https://www.clarin.eu/spf"> </mdrpi:RegistrationInfo>
     </Extensions>
-    
+
     <!-- BBAW (via CLARIN) -->
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
@@ -4877,6 +4877,12 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
         <md:SPSSODescriptor
@@ -4885,17 +4891,17 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="de">Hamburger Zentrum für Sprachkorpora</mdui:DisplayName>
+                        xml:lang="de">HZSK, Universität Hamburg</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="en">Hamburg Centre for Language Corpora</mdui:DisplayName>
+                        xml:lang="en">HZSK, University of Hamburg</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="fi">Hampurin Kielivarakeskus (Hamburger Zentrum für Sprachkorpora)</mdui:DisplayName>
+                        xml:lang="fi">HZSK, Hampurin yliopisto</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository, in dem hauptsächlich Sprachkorpora vorgehalten werden</mdui:Description>
+                        xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository</mdui:Description>
                     <mdui:Description
-                        xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)</mdui:Description>
+                        xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository</mdui:Description>
                     <mdui:Description
-                        xml:lang="fi">Hampurin Kielivarakeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon. (Arkisto sisältää ennimäkseen puhutun kielen korpuksia.)</mdui:Description>
+                        xml:lang="fi">Hampurin korpuskeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
                     <mdui:InformationURL
@@ -5055,9 +5061,9 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:Organization>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Timm</md:GivenName>
-            <md:SurName>Lehmberg</md:SurName>
-            <md:EmailAddress>mailto:timm.lehmberg@uni-hamburg.de</md:EmailAddress>
+            <md:GivenName>Tommi</md:GivenName>
+            <md:SurName>Pirinen</md:SurName>
+            <md:EmailAddress>mailto:tommi.antero.pirinen@uni-hamburg.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
