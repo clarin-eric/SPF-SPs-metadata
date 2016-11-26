@@ -7217,8 +7217,8 @@ qQTazPv0mtY=
                     <mdui:InformationURL xml:lang="en">https://clarin.vdu.lt/xmlui/</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="lt">https://clarin.vdu.lt/xmlui/?locale-attribute=lt</mdui:InformationURL>
                   <mdui:Logo height="465" width="150">https://clarin.vdu.lt/xmlui/themes/UFAL/images/lindat/clarin-lt.png</mdui:Logo>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.vdu.lt/licenses/CLARIN-LT_Privacy_Policy_17-08-2016.htm</mdui:PrivacyStatementURL>
-                  <mdui:PrivacyStatementURL xml:lang="lt">https://clarin.vdu.lt/licenses/CLARIN-LT_Privatumo_politika_2016-08-17.htm</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.vdu.lt/licenses/CLARIN-LT_Privacy_Policy_EN-LT.htm</mdui:PrivacyStatementURL>
+                  <mdui:PrivacyStatementURL xml:lang="lt">https://clarin.vdu.lt/licenses/CLARIN-LT_Privacy_Policy_EN-LT.htm</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin.vdu.lt/Shibboleth.sso/Login"/>
           <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin.vdu.lt/Shibboleth.sso/Login" index="1"/>
