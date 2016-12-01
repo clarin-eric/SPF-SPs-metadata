@@ -7178,8 +7178,8 @@ qQTazPv0mtY=
         <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions >
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">CLARIN-LT repository and services</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Repository and services of CLARIN-LT project.</mdui:Description>
+                    <mdui:DisplayName xml:lang="en">CLARIN-LT</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Repository for sharing and depositing language tools and resources.</mdui:Description>
                   <mdui:DisplayName xml:lang="lt">CLARIN-LT saugykla ir paslaugos</mdui:DisplayName>
                     <mdui:Description xml:lang="lt">CLARIN-LT projekto saugykla ir paslaugos.</mdui:Description>
                     <mdui:InformationURL xml:lang="en">https://clarin.vdu.lt/xmlui/</mdui:InformationURL>
