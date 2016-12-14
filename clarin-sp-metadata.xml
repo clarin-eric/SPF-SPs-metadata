@@ -2004,29 +2004,99 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                     index="1"/>
             </Extensions>
             <md:KeyDescriptor>
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>Active</ds:KeyName>
-                    <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
-                    <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=lindat.mff.cuni.cz,OU=Domain Control Validated</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIEijCCA3KgAwIBAgIRAJealheT4/uwZyfUIGi6scwwDQYJKoZIhvcNAQEFBQAw NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B IFNTTCBDQTAeFw0xMzEyMTgwMDAwMDBaFw0xNjEyMTcyMzU5NTlaMEAxITAfBgNV BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEbMBkGA1UEAxMSbGluZGF0Lm1m Zi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeKmDjOk one5YWIlKyQ1OeN9lgJ6yAiiiCY87Gl8o9773E1MCe8BqKF/whN9orwy54pznUFX K0kTxCVVXhVUJYqMt7w/PbY9su5x8RECYOUgHKXDVikovtTZYoQgwQNY56+C+t2T mSf1LYxEjArX4epGZ/Vy6HtKfRw2xCvaj43Z3pUjqIf2d4GDM88C4Nece2HehkjD RJ099AMDnk2eK/zyoiGNFR2RLe06FvnoS0soVFAF7vr+4MjFHnJByCKgA0WYdIz/ j7U+EqarX60Fvr8z58zK17pnB8JZAHd/qX2qJmu+JlIPYt4mBYXcsZ63M0eLIHv9 EBLqLXO5PQ3OGwIDAQABo4IBhzCCAYMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsr N1dH6pDjue0wHQYDVR0OBBYEFHy58QqIvxQw/MKvdVXYEfd5NMdrMA4GA1UdDwEB /wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEF BQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8E MzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENB LmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNz LnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8v b2NzcC50Y3MudGVyZW5hLm9yZzA1BgNVHREELjAsghJsaW5kYXQubWZmLmN1bmku Y3qCFnVmYWwtcG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBAIxj YtINQkxYADOr/MqkSmNZzGi3VhmacPQuwfP7qwi5vWZyP6DXrlWgXDQorOfl6/Rm Lzb1LHwwyJdEUknCxU1AahKDsyG3fiSMOTD/t21RI9mbTCA1rtk0d4nXdJ3bKCb0 dccRmt5CwbScCQfjsIjWvdkxoMlVIe6DgoqUlLILqSk/drjKpKGOYMZuPXS8zgNe EFw6XzWMKSgkB0QFX2WUCVuhWfejJ6OhUkH6S5Bh+p5WPKJ7bM4E6UrfaleieSr7 mfwH8VeBwoL+rL1n6xqndwwqAnzWtFPAO/hBIuOwkucYl85fBqXT0de7g8fIw7bt iALZ/UygiLnb3oX/q0Q= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+              <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyName>Active</ds:KeyName>
+                <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
+                <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
+                <ds:X509Data>
+                  <ds:X509SubjectName>CN=lindat.mff.cuni.cz,OU=Domain Control Validated</ds:X509SubjectName>
+                  <ds:X509Certificate>MIIEijCCA3KgAwIBAgIRAJealheT4/uwZyfUIGi6scwwDQYJKoZIhvcNAQEFBQAw
+        NjELMAkGA1UEBhMCTkwxDzANBgNVBAoTBlRFUkVOQTEWMBQGA1UEAxMNVEVSRU5B
+        IFNTTCBDQTAeFw0xMzEyMTgwMDAwMDBaFw0xNjEyMTcyMzU5NTlaMEAxITAfBgNV
+        BAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEbMBkGA1UEAxMSbGluZGF0Lm1m
+        Zi5jdW5pLmN6MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeKmDjOk
+        one5YWIlKyQ1OeN9lgJ6yAiiiCY87Gl8o9773E1MCe8BqKF/whN9orwy54pznUFX
+        K0kTxCVVXhVUJYqMt7w/PbY9su5x8RECYOUgHKXDVikovtTZYoQgwQNY56+C+t2T
+        mSf1LYxEjArX4epGZ/Vy6HtKfRw2xCvaj43Z3pUjqIf2d4GDM88C4Nece2HehkjD
+        RJ099AMDnk2eK/zyoiGNFR2RLe06FvnoS0soVFAF7vr+4MjFHnJByCKgA0WYdIz/
+        j7U+EqarX60Fvr8z58zK17pnB8JZAHd/qX2qJmu+JlIPYt4mBYXcsZ63M0eLIHv9
+        EBLqLXO5PQ3OGwIDAQABo4IBhzCCAYMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsr
+        N1dH6pDjue0wHQYDVR0OBBYEFHy58QqIvxQw/MKvdVXYEfd5NMdrMA4GA1UdDwEB
+        /wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEF
+        BQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8E
+        MzAxMC+gLaArhilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENB
+        LmNybDBtBggrBgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNz
+        LnRlcmVuYS5vcmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8v
+        b2NzcC50Y3MudGVyZW5hLm9yZzA1BgNVHREELjAsghJsaW5kYXQubWZmLmN1bmku
+        Y3qCFnVmYWwtcG9pbnQubWZmLmN1bmkuY3owDQYJKoZIhvcNAQEFBQADggEBAIxj
+        YtINQkxYADOr/MqkSmNZzGi3VhmacPQuwfP7qwi5vWZyP6DXrlWgXDQorOfl6/Rm
+        Lzb1LHwwyJdEUknCxU1AahKDsyG3fiSMOTD/t21RI9mbTCA1rtk0d4nXdJ3bKCb0
+        dccRmt5CwbScCQfjsIjWvdkxoMlVIe6DgoqUlLILqSk/drjKpKGOYMZuPXS8zgNe
+        EFw6XzWMKSgkB0QFX2WUCVuhWfejJ6OhUkH6S5Bh+p5WPKJ7bM4E6UrfaleieSr7
+        mfwH8VeBwoL+rL1n6xqndwwqAnzWtFPAO/hBIuOwkucYl85fBqXT0de7g8fIw7bt
+        iALZ/UygiLnb3oX/q0Q=
+        </ds:X509Certificate>
+                </ds:X509Data>
+              </ds:KeyInfo>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
             </md:KeyDescriptor>
+            <md:KeyDescriptor>
+              <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyName>Standby</ds:KeyName>
+                <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
+                <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
+                <ds:X509Data>
+                  <ds:X509SubjectName>CN=lindat.mff.cuni.cz,O=Charles University in Prague,L=Praha 1,C=CZ</ds:X509SubjectName>
+                  <ds:X509Certificate>MIIFNjCCBB6gAwIBAgIQDWW2Dr7MgrU3STou4By7YDANBgkqhkiG9w0BAQsFADBk
+        MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+        QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+        Q0EgMzAeFw0xNTEyMTgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMGMxCzAJBgNVBAYT
+        AkNaMRAwDgYDVQQHEwdQcmFoYSAxMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNp
+        dHkgaW4gUHJhZ3VlMRswGQYDVQQDExJsaW5kYXQubWZmLmN1bmkuY3owggEiMA0G
+        CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD+Bn2MB6kISGLTZsipc/aScdKbsrKg
+        9n/M1XmOYhcim5Z9cYsvKdYmz7NRqj84Zw3+PePYQKHkXh+wHcsuHsLvzWdQCUKw
+        Rlbx+On0JBt2H4pi//hbG3HKApjEo9dgBOT4siIS0wr1YE2uI4DJHwpJUEaVR8fh
+        U8Meq1SEyFuv1Ms7WMnSyCrBEEYTwQvgcoip1D3lcCPIcNu18Ruxk2b1MNZJ0GwB
+        o2cxoh7zZIdED2rto9eE6LCWFnaQsnSg0O2IBvbG/fHYM7chR3Yij34wTRSE+3jx
+        x6jQeUrVh87Ipx6ci5rBHDQCc27Jdtq7y+qF7hA2S8El4/O5XT3QjRFRAgMBAAGj
+        ggHjMIIB3zAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
+        FgQUJKDyWJPPFFVPHDXZPi33vKtyAnswNQYDVR0RBC4wLIISbGluZGF0Lm1mZi5j
+        dW5pLmN6ghZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MA4GA1UdDwEB/wQEAwIFoDAd
+        BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwawYDVR0fBGQwYjAvoC2gK4Yp
+        aHR0cDovL2NybDMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwL6AtoCuG
+        KWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMEwGA1Ud
+        IARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRp
+        Z2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMG4GCCsGAQUFBwEBBGIwYDAkBggrBgEF
+        BQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMDgGCCsGAQUFBzAChixodHRw
+        Oi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNydDAMBgNVHRMB
+        Af8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCwlL6xMv9lUqkBtG90gNqsLlI98I/t
+        S5un5NDV/2enYSDH96/TGbwRbw8l9YWY7JYgP6adoRg4ic+qdW8sk+hVhWZ+iYRn
+        fryN2ITonIWj0A/FxeMpBBiuElbkayGi1rYsmJhUJ3IPNu4GTxSQ6UoL0LV/udva
+        sWKEt3mLdsHyM0IH4B5S7/lrBsw7/EtQWC+6+o+8+iNRMxvQlw0GEazq8cuA83Hl
+        bpOzpXInsFHyabbqV4cygIebofCd+uXcYQC+EAmfWKKp/FtJtnClMudLGbqeQreY
+        zD0BnQ6nkrkTHDGYMB1yU5EgC6dHRI3Jf5fKRqrTDvvYkWyUtmY41AeM
+        </ds:X509Certificate>
+                </ds:X509Data>
+              </ds:KeyInfo>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </md:KeyDescriptor>
+            
             <md:ArtifactResolutionService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://lindat.mff.cuni.cz/Shibboleth.sso/Artifact/SOAP"
