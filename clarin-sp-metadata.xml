@@ -3904,9 +3904,13 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
+                        xml:lang="de">BAS Service Provider</mdui:DisplayName>
+                    <mdui:DisplayName
                         xml:lang="en">BAS Service Provider</mdui:DisplayName>
                     <mdui:DisplayName
                         xml:lang="fi">BAS Service Provider</mdui:DisplayName>
+                    <mdui:Description
+                        xml:lang="de">Bayerisches Archiv für Sprachsignale Service Provider (Zugriff beschränkt auf Mitglieder akademischer Einrichtungen)</mdui:Description>
                     <mdui:Description
                         xml:lang="en">Bavarian Archive for Speech Signals Service Provider (access to resources restricted to academia).</mdui:Description>
                     <mdui:Description
