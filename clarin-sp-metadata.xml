@@ -5454,7 +5454,7 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
             <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-    <!-- CELR -->
+    <!-- CELR  test -->
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
