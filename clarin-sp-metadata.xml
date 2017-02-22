@@ -2686,9 +2686,9 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                     <mdui:Description
                         xml:lang="fi">Tämä palveluntarjoaja mahdollistaa pääsyn Kööpenhaminan yliopiston CLARIN keskukseen ja käyttää keskuksen palveluja, kielivaroja ja työkaluja.</mdui:Description>
                     <mdui:Keywords
-                        xml:lang="en"> CLARIN Copenhagen Humanities research language archive tools </mdui:Keywords>
+                        xml:lang="en">CLARIN Copenhagen Humanities research language archive tools</mdui:Keywords>
                     <mdui:Keywords
-                        xml:lang="da"> CLARIN København Humaniora forskning sprog arkiv applikationer </mdui:Keywords>
+                        xml:lang="da">CLARIN København Humaniora forskning sprog arkiv applikationer</mdui:Keywords>
                     <mdui:Logo
                         height="53"
                         width="250">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
@@ -2697,7 +2697,7 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
                     <mdui:InformationURL
                         xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">http://info.clarin.dk/en/overview/privacypolicy/</mdui:PrivacyStatementURL>
+                        xml:lang="en">http://info.clarin.dk/en/the-clarin-dk-platform/overview/privacypolicy/</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
