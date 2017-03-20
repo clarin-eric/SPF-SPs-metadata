@@ -3841,9 +3841,11 @@ x1TIfhRjlcLqYwvwFOhj5b/Ecr0B2QAwHeEhMq9or7o072A=</ds:X509Certificate>
                 <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin.oeaw.ac.at/Shibboleth.sso/Login"/>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://acdh.oeaw.ac.at/Shibboleth.sso/Login"/>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://redmine.acdh.oeaw.ac.at/Shibboleth.sso/Login"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://teach.dariah.eu/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin.oeaw.ac.at/Shibboleth.sso/Login" index="1"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://acdh.oeaw.ac.at/Shibboleth.sso/Login" index="2"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://redmine.acdh.oeaw.ac.at/Shibboleth.sso/Login" index="3"/>
+                <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://teach.dariah.eu/Shibboleth.sso/Login" index="4"/>
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
@@ -3906,6 +3908,10 @@ x1TIfhRjlcLqYwvwFOhj5b/Ecr0B2QAwHeEhMq9or7o072A=</ds:X509Certificate>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://redmine.acdh.oeaw.ac.at/Shibboleth.sso/SAML2/POST-SimpleSign" index="14"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://redmine.acdh.oeaw.ac.at/Shibboleth.sso/SAML2/Artifact" index="15"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://redmine.acdh.oeaw.ac.at/Shibboleth.sso/SAML2/ECP" index="16"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teach.dariah.eu/Shibboleth.sso/SAML2/POST" index="17"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://teach.dariah.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="18"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://teach.dariah.eu/Shibboleth.sso/SAML2/Artifact" index="19"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://teach.dariah.eu/Shibboleth.sso/SAML2/ECP" index="20"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">ACDH-OeAW Services for Digital Humanities</md:ServiceName>
         <md:ServiceName xml:lang="de">ACDH-OeAW Dienste für Digitale Geisteswissenschaften</md:ServiceName>
