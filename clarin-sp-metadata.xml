@@ -7414,11 +7414,25 @@ BfEhhhE=
 	   </ds:Signature>
 	   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAssertionsSigned="true">
 		  <md:Extensions>
+			 <mdattr:EntityAttributes>
+				<saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+					<saml:AttributeValue>
+						http://www.geant.net/uri/dataprotection-code-of-conduct/v1
+					</saml:AttributeValue>
+					<saml:AttributeValue>
+						http://refeds.org/category/research-and-scholarship
+					</saml:AttributeValue>
+				</saml:Attribute>
+			 </mdattr:EntityAttributes>
 			 <mdui:UIInfo>
 				<mdui:DisplayName xml:lang="nl">CLARIAH IAA Engine</mdui:DisplayName>
 				<mdui:DisplayName xml:lang="en">CLARIAH IAA Engine</mdui:DisplayName>
-				<mdui:Description xml:lang="nl">CLARIAH SSO Proxy</mdui:Description>
-				<mdui:Description xml:lang="en">CLARIAH SSO Proxy</mdui:Description>
+				<mdui:DisplayName xml:lang="de">CLARIAH IAA Engine</mdui:DisplayName>
+				<mdui:DisplayName xml:lang="fi">CLARIAH IAA Engine</mdui:DisplayName>
+				<mdui:Description xml:lang="nl">CLARIAH SSO Proxy node</mdui:Description>
+				<mdui:Description xml:lang="en">CLARIAH SSO Proxy node</mdui:Description>
+				<mdui:Description xml:lang="de">CLARIAH SSO Proxy node</mdui:Description>
+				<mdui:Description xml:lang="fi">CLARIAH SSO Proxy node</mdui:Description>
 				<mdui:Logo height="83" width="300">https://static.proxy.clariah.nl/media/CLARIAH_logoT.png</mdui:Logo>
 			 </mdui:UIInfo>
 		  </md:Extensions>
@@ -7439,8 +7453,15 @@ BfEhhhE=
 			 <md:RequestedAttribute Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false" />
 			 <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true" />
 			 <md:RequestedAttribute Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true" />
+			 <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+			 <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
 		  </md:AttributeConsumingService>
 	   </md:SPSSODescriptor>
+	   <md:Organization>
+		  <md:OrganizationName xml:lang="en">CLARIAH IAA</md:OrganizationName>
+		  <md:OrganizationDisplayName xml:lang="en">CLARIAH IAA</md:OrganizationDisplayName>
+		  <md:OrganizationURL xml:lang="en">https://engine.proxy.clariah.nl/</md:OrganizationURL>
+	   </md:Organization>
 	   <md:ContactPerson contactType="technical">
 		  <md:GivenName>Support</md:GivenName>
 		  <md:SurName>CLARIAH IAA</md:SurName>
