@@ -7416,14 +7416,10 @@ BfEhhhE=
 		  <md:Extensions>
 			 <mdattr:EntityAttributes>
 				<saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-					<saml:AttributeValue>
-						http://www.geant.net/uri/dataprotection-code-of-conduct/v1
-					</saml:AttributeValue>
+					<saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
 				</saml:Attribute>
 				<saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-					<saml:AttributeValue>
-						http://refeds.org/category/research-and-scholarship
-					</saml:AttributeValue>
+					<saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
 				</saml:Attribute>
 			 </mdattr:EntityAttributes>
 			 <mdui:UIInfo>
@@ -7467,17 +7463,17 @@ BfEhhhE=
 	   <md:ContactPerson contactType="technical">
 		  <md:GivenName>Themistoklis</md:GivenName>
 		  <md:SurName>Karavellas</md:SurName>
-		  <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	   <md:ContactPerson contactType="support">
 		  <md:GivenName>Themistoklis</md:GivenName>
 		  <md:SurName>Karavellas</md:SurName>
-		  <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	   <md:ContactPerson contactType="administrative">
 		  <md:GivenName>Themistoklis</md:GivenName>
 		  <md:SurName>Karavellas</md:SurName>
-		  <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	</md:EntityDescriptor>
 </EntitiesDescriptor>
