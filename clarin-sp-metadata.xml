@@ -7276,6 +7276,9 @@ BfEhhhE=
 				<mdui:Description xml:lang="de">CLARIAH SSO Proxy node</mdui:Description>
 				<mdui:Description xml:lang="fi">CLARIAH SSO Proxy node</mdui:Description>
 				<mdui:Logo height="83" width="300">https://static.proxy.clariah.nl/media/CLARIAH_logoT.png</mdui:Logo>
+				<mdui:InformationURL xml:lang="en">https://www.clariah.nl/en</mdui:InformationURL>
+				<mdui:InformationURL xml:lang="nl">https://www.clariah.nl/</mdui:InformationURL>
+				<mdui:PrivacyStatementURL xml:lang="en">https://static.proxy.clariah.nl/media/CLARIAH-PrivacyPolicy.pdf</mdui:PrivacyStatementURL>
 			 </mdui:UIInfo>
 		  </md:Extensions>
 		  <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" use="signing">
@@ -7305,18 +7308,18 @@ BfEhhhE=
 		  <md:OrganizationURL xml:lang="en">https://engine.proxy.clariah.nl/</md:OrganizationURL>
 	   </md:Organization>
 	   <md:ContactPerson contactType="technical">
-		  <md:GivenName>Themistoklis</md:GivenName>
-		  <md:SurName>Karavellas</md:SurName>
+		  <md:GivenName>CLARIAH IAA</md:GivenName>
+		  <md:SurName>CLARIAH IAA</md:SurName>
 		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	   <md:ContactPerson contactType="support">
-		  <md:GivenName>Themistoklis</md:GivenName>
-		  <md:SurName>Karavellas</md:SurName>
+		  <md:GivenName>CLARIAH IAA</md:GivenName>
+		  <md:SurName>CLARIAH IAA</md:SurName>
 		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	   <md:ContactPerson contactType="administrative">
-		  <md:GivenName>Themistoklis</md:GivenName>
-		  <md:SurName>Karavellas</md:SurName>
+		  <md:GivenName>CLARIAH IAA</md:GivenName>
+		  <md:SurName>CLARIAH IAA</md:SurName>
 		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
 	</md:EntityDescriptor>
