@@ -7146,46 +7146,36 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://tekstlab.uio.no/glossa2/saml/metadata">
         <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions>
+                <mdattr:EntityAttributes>
+                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                    </saml:Attribute>
+                </mdattr:EntityAttributes>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://tekstlab.uio.no/glossa2/saml/login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://tekstlab.uio.no/glossa2/saml/login"
+                    index="1"/>
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="fi">Glossa corpus -hakujärjestelmä</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</mdui:Description>
+                    <mdui:Description xml:lang="de">Glossa ist ein Werkzeug für Forscher, die linguistisch kommentierte Corpora suchen wollen</mdui:Description>
+                    <mdui:Description xml:lang="fi">Glossa on työkalu tutkijoille, jotka haluavat etsiä kielellisesti merkityt korpukset</mdui:Description>
+                    <mdui:Logo height="83" width="300">https://repo.clarino.uib.no/xmlui/themes/CLARINO/images/lindat/clarino-logo.png</mdui:Logo>
                     <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-            <md:KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIEsTCCA5mgAwIBAgIQcsT9J80wdokp2B5hof0NwDANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMjAeFw0xNTAzMjQwMDAwMDBaFw0xODAzMjMyMzU5NTlaMEExITAfBgNVBAsT
-GERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEcMBoGA1UEAxMTd3d3LnRla3N0bGFi
-LnVpby5ubzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIZG3ZrrkHk
-kOkqw2di2cbbpWnAziyvRDTr3UVLH/P+z7Pgujc0j94AjZkZwr2KLj7VKqaX8O63
-UAgDMAfwlWsGyFagZhkqyI/k0+fnd6s4OZeKGR+AnScubU3n4FbRBy8nO2cjX7ZW
-7FpxMFozEnk5jXkOAClmni3oFZHLkzbE72nPSklKJH7UOsDLc4eXj1um3TmNMGXE
-nAzxU8bPqU6WIWe23gylqp1UmkbdIljIEZKbt5xE91gj8HIVREZJDIuH3B1PrcYI
-+KD5DmKcXFfjjmNlC2eNPykmQDWfDl6xRDMte1/Z0uK/YGML6GBXCe0qGi4hXoe4
-LSSKolUOzpcCAwEAAaOCAYAwggF8MB8GA1UdIwQYMBaAFFvQihyaMlvgtd2WVBvh
-hiiw/ba9MB0GA1UdDgQWBBQtgsIQAnQaUu7LcLGmJnii92NRuDAOBgNVHQ8BAf8E
-BAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
-AwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMw
-MTAvoC2gK4YpaHR0cDovL2NybC51c2VydHJ1c3QuY29tL1RFUkVOQVNTTENBMi5j
-cmwwbAYIKwYBBQUHAQEEYDBeMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnVzZXJ0
-cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29j
-c3AudXNlcnRydXN0LmNvbTAvBgNVHREEKDAmghN3d3cudGVrc3RsYWIudWlvLm5v
-gg90ZWtzdGxhYi51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBAEYfNI/v1a5JOdvD
-HlbwhwnWJO+9146Y583k3fVHVql7/mx1MfGCJ8uy6L+dbDGL9zn5T6xCgHL+IbBe
-AKcoNCy/4xuJS2MHlDyGDIA1/FhN6sP5TZ/d8sOwE2QaTU4MeYDDw3XXU9RN2RpO
-qI9OvvLM/QxkRIs8IaEKE0OMkUqeutQZt5+d8XvAtsVsFeJ/8BRNlAcpXZUXbSXb
-g8kKbEX3r2gMBQddi09XKliJevevmG4wPEmSeFhnRtYLFExuViJ7NbAbyS6RnJ8e
-7+K3UzrPwXhPefJ7EUR3wRHWGXwuKIxE4ZPbmdKk9kfc2MwOxsfzbRNvw8i8T7hZ
-BfEhhhE=
-                        </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor use="signing">
+            <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
                         <ds:X509Certificate>MIIEsTCCA5mgAwIBAgIQcsT9J80wdokp2B5hof0NwDANBgkqhkiG9w0BAQsFADBk
@@ -7237,7 +7227,17 @@ BfEhhhE=
         <md:ContactPerson contactType="technical">
             <md:GivenName>Anders</md:GivenName>
             <md:SurName>Nøklestad</md:SurName>
-            <md:EmailAddress>anders.noklestad@iln.uio.no</md:EmailAddress>
+            <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>Anders</md:GivenName>
+            <md:SurName>Nøklestad</md:SurName>
+            <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>Kristin</md:GivenName>
+            <md:SurName>Hagen</md:SurName>
+            <md:EmailAddress>mailto:kristin.hagen@iln.uio.no</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     
