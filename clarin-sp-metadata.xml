@@ -1471,7 +1471,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <md:EmailAddress>mailto:latadmin@mpi.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-    <!-- INL/INT portal (via CLARIN) -->
+    <!-- INL portal (via CLARIN) -->
     <EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://portal.clarin.inl.nl/">
@@ -1539,7 +1539,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                         width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>
                 </mdui:UIInfo>
             </Extensions>
-            <KeyDescriptor use="encryption">
+            <KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
@@ -1547,7 +1547,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
-            <KeyDescriptor>
+            <KeyDescriptor use="encryption">
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
