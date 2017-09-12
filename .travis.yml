@@ -1,0 +1,7 @@
+sudo: false
+script:
+- sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
+notifications:
+  email:
+    on_success: change
+on_failure: always
