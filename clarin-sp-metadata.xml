@@ -7345,7 +7345,7 @@ BfEhhhE=
 	 </md:EntityDescriptor>
 
          <!-- Språkbanken -->
-         <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_d70a32b8e133d02fa22742cb32e4c9556e253ebb" entityID="https://sp.spraakbanken.gu.se/shibboleth">
+         <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5213d67b809ca67eec1aaa1bfb494ef5b6499609" entityID="https://sp.spraakbanken.gu.se/shibboleth/clarin">
            <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
              <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
              <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -7375,14 +7375,10 @@ BfEhhhE=
                  <mdui:InformationURL xml:lang="en">https://spraakbanken.gu.se/eng/</mdui:InformationURL>
                  <mdui:Logo height="146" width="256">https://sp.spraakbanken.gu.se/logo-small.png</mdui:Logo>
                </mdui:UIInfo>
-               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Login" index="1"/>
                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login" index="2"/>
-               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/DS/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="3"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login" index="1"/>
                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="4"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="2"/>
              </md:Extensions>
              <md:KeyDescriptor>
                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -7424,24 +7420,15 @@ BfEhhhE=
                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
              </md:KeyDescriptor>
-             <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Artifact/SOAP" index="1"/>
-             <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Artifact/SOAP" index="2"/>
-             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/Artifact"/>
+             <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Artifact/SOAP" index="1"/>
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/Artifact"/>
-             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/POST"/>
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/POST"/>
-             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/Redirect"/>
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/Redirect"/>
-             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/SOAP"/>
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/SOAP"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="1"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="2"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="3"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="4"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="5"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="6"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="7"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="8"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="1"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="3"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="4"/>
            </md:SPSSODescriptor>
            <md:Organization>
              <md:OrganizationName xml:lang="sv">Språkbanken</md:OrganizationName>
