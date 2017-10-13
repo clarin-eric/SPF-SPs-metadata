@@ -7347,6 +7347,20 @@ BfEhhhE=
          <!-- Språkbanken -->
          <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5213d67b809ca67eec1aaa1bfb494ef5b6499609" entityID="https://sp.spraakbanken.gu.se/shibboleth/clarin">
            <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+             <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+               <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                 <saml:AttributeValue>http://www.swamid.se/category/research-and-education</saml:AttributeValue>
+               </saml:Attribute>
+               <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                 <saml:AttributeValue>http://www.swamid.se/category/hei-service</saml:AttributeValue>
+               </saml:Attribute>
+               <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                 <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+               </saml:Attribute>
+               <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                 <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+               </saml:Attribute>
+             </mdattr:EntityAttributes>
              <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
              <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
              <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
@@ -7375,10 +7389,8 @@ BfEhhhE=
                  <mdui:InformationURL xml:lang="en">https://spraakbanken.gu.se/eng/</mdui:InformationURL>
                  <mdui:Logo height="146" width="256">https://sp.spraakbanken.gu.se/logo-small.png</mdui:Logo>
                </mdui:UIInfo>
-               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login" index="1"/>
                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login"/>
-               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="2"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="1"/>
              </md:Extensions>
              <md:KeyDescriptor>
                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -7426,9 +7438,6 @@ BfEhhhE=
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/Redirect"/>
              <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/SOAP"/>
              <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="1"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="3"/>
-             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="4"/>
            </md:SPSSODescriptor>
            <md:Organization>
              <md:OrganizationName xml:lang="sv">Språkbanken</md:OrganizationName>
@@ -7441,12 +7450,17 @@ BfEhhhE=
            <md:ContactPerson contactType="administrative">
              <md:GivenName>Lars</md:GivenName>
              <md:SurName>Borin</md:SurName>
-             <md:EmailAddress>sb-info@svenska.gu.se</md:EmailAddress>
+             <md:EmailAddress>mailto:sb-info@svenska.gu.se</md:EmailAddress>
            </md:ContactPerson>
            <md:ContactPerson contactType="technical">
              <md:GivenName>Carl-Johan</md:GivenName>
              <md:SurName>Schenström</md:SurName>
-             <md:EmailAddress>sb-sysadmin@svenska.gu.se</md:EmailAddress>
+             <md:EmailAddress>mailto:sb-sysadmin@svenska.gu.se</md:EmailAddress>
+           </md:ContactPerson>
+           <md:ContactPerson contactType="support">
+             <md:GivenName>Carl-Johan</md:GivenName>
+             <md:SurName>Schenström</md:SurName>
+             <md:EmailAddress>mailto:sb-sysadmin@svenska.gu.se</md:EmailAddress>
            </md:ContactPerson>
          </md:EntityDescriptor>
 </EntitiesDescriptor>
