@@ -7342,5 +7342,124 @@ BfEhhhE=
 		  <md:SurName>CLARIAH IAA</md:SurName>
 		  <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
 	   </md:ContactPerson>
-	</md:EntityDescriptor>
+	 </md:EntityDescriptor>
+
+         <!-- Språkbanken -->
+         <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_d70a32b8e133d02fa22742cb32e4c9556e253ebb" entityID="https://sp.spraakbanken.gu.se/shibboleth">
+           <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+             <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+             <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+             <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+           </md:Extensions>
+           <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+             <md:Extensions>
+               <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                 <mdui:DisplayName xml:lang="sv">Språkbanken</mdui:DisplayName>
+                 <mdui:DisplayName xml:lang="en">Språkbanken</mdui:DisplayName>
+                 <mdui:Description xml:lang="sv">Inloggning till Språkbankens språkresurser för forskare och allmänheten.</mdui:Description>
+                 <mdui:Description xml:lang="en">Login to Språkbanken's language resources available to researchers and to the public.</mdui:Description>
+                 <mdui:InformationURL xml:lang="sv">https://spraakbanken.gu.se/swe/</mdui:InformationURL>
+                 <mdui:InformationURL xml:lang="en">https://spraakbanken.gu.se/eng/</mdui:InformationURL>
+                 <mdui:Logo height="146" width="256">https://sp.spraakbanken.gu.se/logo-small.png</mdui:Logo>
+               </mdui:UIInfo>
+               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Login"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Login" index="1"/>
+               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Login" index="2"/>
+               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/DS/Login"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="3"/>
+               <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login"/>
+               <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/DS/Login" index="4"/>
+             </md:Extensions>
+             <md:KeyDescriptor>
+               <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                 <ds:KeyName>sp.spraakbanken.gu.se</ds:KeyName>
+                 <ds:X509Data>
+                   <ds:X509SubjectName>CN=sp.spraakbanken.gu.se</ds:X509SubjectName>
+                   <ds:X509Certificate>MIIEBjCCAm6gAwIBAgIJANTqNGS+Meg9MA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNV
+                   BAMTFXNwLnNwcmFha2Jhbmtlbi5ndS5zZTAeFw0xNzEwMDkwOTMzNDJaFw0yNzEw
+                   MDcwOTMzNDJaMCAxHjAcBgNVBAMTFXNwLnNwcmFha2Jhbmtlbi5ndS5zZTCCAaIw
+                   DQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBALDidsS0JETlmVQttP/ZWkfHOuz5
+                   dWSo2jUSLK61yRNN1Ti7ZYrv8O4shEvKzhDxXMUKoiGWvzvKArE6ELrjBvpWciJj
+                   f5clh4NkKVrRUqQiHONO4f3XVFOJ2WGGHHK7if1YHuCdKUYbkuUjJ1f+GPVEInT2
+                   0cS2TO/BEpR859sJFghx55CH6ovg5PjvGp+apfA1Nh40Snp3Ssf6lES/Z2lLJNeF
+                   bfidkt4gkwGjnusQUcirtY4MpN6oEusyhU81Ly6pJOydcBaZzFxVkrbf1PTmfYcX
+                   8j7muuMMFKYMf+vYtL9rkx+kRtA8T0nESJCrovWVRoUJujGlq3yUFI6d8hiPYr2x
+                   xUOhia5EeLQOKevinvwvcnl51txwMtoc3WlVWHl5qv21JWupw4l5R98E+GEui2av
+                   +lpEnxluIM0fqnU/QO0j1QkmRP5o73kloms39CJMALWgLwUZXEe5M4EDnjF+4Oa4
+                   LocWuj/S1HO8SYEjUky0Rc3x1YHjz1qlNoBHrwIDAQABo0MwQTAgBgNVHREEGTAX
+                   ghVzcC5zcHJhYWtiYW5rZW4uZ3Uuc2UwHQYDVR0OBBYEFK5gYOUKyVkjcyJfveEq
+                   7qMCNF0dMA0GCSqGSIb3DQEBCwUAA4IBgQBz6Tr80qXJK3QztV4NQtns+eysSkR5
+                   MZYLA/8Au3khfvLKm851pbcNm8kIydWcHy3L/y+k4dBTurmYPNmqIJcn4V6+E8oW
+                   9RKcDbxxan8Z+epZinedR86Cl//BcGYCvd1VLnnLwC/otMaVvBJUTGKHW8AXIsoU
+                   YdaaogtWv+aMarnmggvq1op2mkLodvUvJqNU+5W3mtLRlNweQWAn0WSfSlnQb98H
+                   HINifOI9yhkw+kgayV/Vs9yhvRetSJFdxJy/RsIzsiBCB5gi/5jbCEyZKjthp1l2
+                   jJ/LCxMnNdmERg9Knn+fvYwDqAbvt5lvI0YjKHwyU/TVx4uAx/Yn0A62ZlXs1SxS
+                   quocDzbyT+8G/2hgINlcXMeffSNIxF0Bnqr7t0twwmz3jEXljt/5Xmawk63+sKnk
+                   XY2YJNAZj6iK43EuFEAVfDchxTI02c8/1RpjTipSSLbV7jzrUoz8wuY7zlLSrODG
+                   B1l+7GujpIQqv3B1RJA3m+G632LPFkBZgFM=
+                   </ds:X509Certificate>
+                 </ds:X509Data>
+               </ds:KeyInfo>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+               <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+             </md:KeyDescriptor>
+             <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/Artifact/SOAP" index="1"/>
+             <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/Artifact/SOAP" index="2"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/Artifact"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/Artifact"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/POST"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/POST"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/Redirect"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/Redirect"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SLO/SOAP"/>
+             <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SLO/SOAP"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="1"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST" index="2"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="3"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="4"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="5"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/Artifact" index="6"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="7"/>
+             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repo.spraakbanken.gu.se/Shibboleth.sso/SAML2/ECP" index="8"/>
+           </md:SPSSODescriptor>
+           <md:Organization>
+             <md:OrganizationName xml:lang="sv">Språkbanken</md:OrganizationName>
+             <md:OrganizationName xml:lang="en">Språkbanken</md:OrganizationName>
+             <md:OrganizationDisplayName xml:lang="sv">Språkbanken</md:OrganizationDisplayName>
+             <md:OrganizationDisplayName xml:lang="en">Språkbanken</md:OrganizationDisplayName>
+             <md:OrganizationURL xml:lang="sv">https://spraakbanken.gu.se/swe/</md:OrganizationURL>
+             <md:OrganizationURL xml:lang="en">https://spraakbanken.gu.se/eng/</md:OrganizationURL>
+           </md:Organization>
+           <md:ContactPerson contactType="administrative">
+             <md:GivenName>Lars</md:GivenName>
+             <md:SurName>Borin</md:SurName>
+             <md:EmailAddress>sb-info@svenska.gu.se</md:EmailAddress>
+           </md:ContactPerson>
+           <md:ContactPerson contactType="technical">
+             <md:GivenName>Carl-Johan</md:GivenName>
+             <md:SurName>Schenström</md:SurName>
+             <md:EmailAddress>sb-sysadmin@svenska.gu.se</md:EmailAddress>
+           </md:ContactPerson>
+         </md:EntityDescriptor>
 </EntitiesDescriptor>
