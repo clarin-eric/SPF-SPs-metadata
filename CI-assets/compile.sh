@@ -24,7 +24,7 @@ cd SAML_metadata_QA_validator-$QA_VALIDATOR_VERSION
 ant -v
 pwd
 rm out/SAML_metadata_QA_validator.concrete.sch out/SAML_metadata_QA_validator.xsl
-mv out ../..
+mv out/* ../../out/
 cd ../.. && rm -rf $INSTALLS_PATH
 
 
