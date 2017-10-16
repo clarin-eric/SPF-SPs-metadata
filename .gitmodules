@@ -1,3 +1,0 @@
-[submodule "check-saml-metadata"]
-	path = check-saml-metadata
-	url = https://github.com/clarin-eric/SAML-metadata-checker
