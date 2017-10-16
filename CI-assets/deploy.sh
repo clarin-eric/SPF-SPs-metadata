@@ -57,13 +57,13 @@ ssh-add ../CI-assets/deploy_key
 
 ls -Fla ..
 pwd
-cd .. && mv out ../ && rm -rf * && mv ../out . && cd out
+cd .. && mv out ../ && rm -rf * && mv ../out .
 ls -Fla ..
 pwd
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add --all .
+git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Now that we're all set up, we can push.
