@@ -55,8 +55,6 @@ chmod 600 ../CI-assets/deploy_key
 eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
-ls -Fla ..
-pwd
 cd .. && mv out ../ && rm -rf * && mv ../out .
 ls -Fla ..
 pwd
