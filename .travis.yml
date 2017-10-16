@@ -1,3 +1,7 @@
+branches:
+  only:
+  - master
+  - production
 sudo: false
 script:
 - sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
