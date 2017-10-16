@@ -6,7 +6,7 @@ env:
   - ENCRYPTION_LABEL: f641f006de37
   - COMMIT_AUTHOR_EMAIL: "spf-qa-bot@clarin.eu"
 after_success:
-- ls -Fla && pwd && bash CI-assets/deploy.sh
+- bash CI-assets/deploy.sh
 notifications:
   email:
     on_success: change

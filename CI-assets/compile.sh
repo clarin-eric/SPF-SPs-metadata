@@ -22,8 +22,10 @@ wget -O SAML_metadata_QA_validator.tar.gz https://codeload.github.com/clarin-eri
 tar xvf SAML_metadata_QA_validator.tar.gz
 cd SAML_metadata_QA_validator-$QA_VALIDATOR_VERSION
 ant -v
-pwd
-rm out/SAML_metadata_QA_validator.concrete.sch out/SAML_metadata_QA_validator.xsl
+rm out/SAML_metadata_QA_validator.concrete.sch out/SAML_metadata_QA_validator.xsl out/.gitignore
+if [ ! -d "../../out/" ]; then
+	mkdir ../../out/
+fi
 mv out/* ../../out/
 cd ../.. && rm -rf $INSTALLS_PATH
 
