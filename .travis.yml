@@ -1,6 +1,12 @@
 sudo: false
 script:
 - sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
+env:
+  global:
+  - ENCRYPTION_LABEL: f641f006de37
+  - COMMIT_AUTHOR_EMAIL: "spf-qa-bot@clarin.eu"
+after_success:
+- bash deploy.sh
 notifications:
   email:
     on_success: change
