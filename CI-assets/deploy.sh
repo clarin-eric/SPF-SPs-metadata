@@ -57,7 +57,7 @@ ssh-add ../CI-assets/deploy_key
 
 ls -Fla ..
 pwd
-mv source_md_about_spf_sps* ../ && rm -rf ./**/* && mv ../source_md_about_spf_sps* . 
+mv source_md_about_spf_sps* ../ && cd .. && rm -rf out && mkdir out && cd out && mv ../source_md_about_spf_sps* . 
 ls -Fla ..
 pwd
 
