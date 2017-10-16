@@ -6,7 +6,7 @@ SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.6/$SAXO
 SCHEMATRON_VERSION=1.0-CLARIN
 INSTALLS_PATH=qa-tmp
 
-rm -rf qa-tmp
+rm -rf *
 mkdir -p $INSTALLS_PATH/saxon
 cd $INSTALLS_PATH/saxon
 wget $SAXON_URL
