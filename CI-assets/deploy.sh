@@ -56,7 +56,8 @@ eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
 cd .. && mv out ../ && rm -rf * && mv ../out .
-ls -Fla ..
+ls -Fla
+ls -Fla out
 pwd
 
 # Commit the "changes", i.e. the new version.
