@@ -56,7 +56,7 @@ chmod 600 ../CI-assets/deploy_key
 eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
-cd .. && mv out CI-assets ../ && rm -rf * && mv ../out ../CI-assets . && cd out
+cd .. && mv out ../ && rm -rf * && mv ../out . && cd out
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
