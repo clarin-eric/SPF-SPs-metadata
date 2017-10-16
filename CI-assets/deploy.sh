@@ -55,9 +55,10 @@ chmod 600 ../CI-assets/deploy_key
 eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
-cd .. && mv out ../ && rm -rf * && mv ../out .
-ls -Fla
-ls -Fla out
+ls -Fla ..
+pwd
+mv source_md_about_spf_sps* ../ && rm -rf * && mv ../source_md_about_spf_sps* . 
+ls -Fla ..
 pwd
 
 # Commit the "changes", i.e. the new version.
