@@ -56,17 +56,13 @@ eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
 # Clean everything else but the build output
-<<<<<<< HEAD
-mv .git ../git_tmp && mv master_sps_qa_report* ../ && cd .. && rm -rf out && mkdir out && mv master_sps_qa_report* out && mv git_tmp out/.git && cd out 
-=======
 mv .git ../git_tmp && mv master_sps_qa_report* .travis.yml README.md ../ && cd .. && rm -rf out && mkdir out && mv master_sps_qa_report* .travis.yml README.md out && mv git_tmp out/.git && cd out 
->>>>>>> master
-
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 git add -A .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
+
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
