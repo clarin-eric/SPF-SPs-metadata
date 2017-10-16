@@ -55,11 +55,9 @@ chmod 600 ../CI-assets/deploy_key
 eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
-ls -Fla ..
-pwd
+# Clean everything else but the build output
 mv .git ../git_tmp && mv source_md_about_spf_sps* ../ && cd .. && rm -rf out && mkdir out && mv source_md_about_spf_sps* out && mv git_tmp out/.git && cd out 
-ls -Fla ..
-pwd
+
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
