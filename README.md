@@ -1,6 +1,9 @@
-# Notes for service provider operators
-## Do not fork or submmit pull-requests to this branch!
-### Staging metadata sources for service providers inside the CLARIN Service Provider Federation
+# Staging metadata sources for service providers inside the CLARIN Service Provider Federation
+---
+## Notes for service provider operators:
+**Do not fork or submmit pull-requests to this branch!**
+
+---
 
 This branch contains the live input for the SAML agreegation pipeline of the CLARIN SPF.
 
