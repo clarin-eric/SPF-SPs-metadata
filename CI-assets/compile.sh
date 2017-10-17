@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-QA_VALIDATOR_VERSION=travis
+QA_VALIDATOR_VERSION=1.0.0-travis
 SAXON_VERSION=SaxonHE9-6-0-10J
 SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.6/$SAXON_VERSION.zip
 SCHEMATRON_VERSION=1.0-CLARIN
