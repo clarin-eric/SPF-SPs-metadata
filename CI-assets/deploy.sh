@@ -55,7 +55,7 @@ eval `ssh-agent -s`
 ssh-add ../CI-assets/deploy_key
 
 # Clean everything else but the build output
-mv .git ../git_tmp && mv master_sps_qa_report* .travis.yml README.md ../ && cd .. && rm -rf out && mkdir out && mv master_sps_qa_report* .travis.yml README.md out && mv git_tmp out/.git && cd out 
+mv .git ../git_tmp && mv master_sps_qa_report* .travis.yml README.md page ../ && cd .. && rm -rf out && mkdir out && mv master_sps_qa_report* .travis.yml README.md page out && mv git_tmp out/.git && cd out 
 
 
 # Commit the "changes", i.e. the new version.
