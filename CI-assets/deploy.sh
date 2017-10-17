@@ -10,8 +10,7 @@ function doCompile {
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy; just doing a build."
-    doCompile
+    echo "Skipping QA report build."
     exit 0
 fi
 
@@ -62,7 +61,7 @@ mv .git ../git_tmp && mv master_sps_qa_report* .travis.yml README.md ../ && cd .
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 git add -A .
-git commit -m "Deploy to GitHub Pages: ${SHA}"
+git commit -m "Deploy SAML QA report for: ${SHA}"
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
