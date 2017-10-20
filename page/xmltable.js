@@ -27,7 +27,7 @@ function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(parse(this.responseXML.children[0]));
+      //console.log(parse(this.responseXML.children[0]));
       generateHTML(parse(this.responseXML.children[0]));
     }
   };
