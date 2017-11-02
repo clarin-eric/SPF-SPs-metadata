@@ -7488,7 +7488,7 @@ BfEhhhE=
          </md:EntityDescriptor>
 
 	<!-- Eurac Research Dev (just for testing) -->
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5d15d5a81bc952da1d34986ebc7713c0d5c9ea60" entityID="https://clarin-dev.eurac.edu/Shibboleth.sso/Metadata">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5d15d5a81bc952da1d34986ebc7713c0d5c9ea61" entityID="https://clarin-dev.eurac.edu/Shibboleth.sso/Metadata">
     <md:Extensions>
         <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
             <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
