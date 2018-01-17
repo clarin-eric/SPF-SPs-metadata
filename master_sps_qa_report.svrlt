@@ -2264,10 +2264,4 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="exists($administrative_mailto_URIs) and (every $mailto_URI in $administrative_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][54]">
-      <svrl:text>https://auth.dariah.eu/shibboleth
-                Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
-                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
 </svrl:schematron-output>

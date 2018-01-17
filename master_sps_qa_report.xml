@@ -8383,6 +8383,11 @@ keb+gnNfYWJuJWwjSHeUJ3vL
       <SurName>Support</SurName>
       <EmailAddress>mailto:register@dariah.eu</EmailAddress>
     </ContactPerson>
+    <ContactPerson contactType="administrative">
+      <GivenName>Mark</GivenName>
+      <SurName>Kaulertz</SurName>
+      <EmailAddress>mailto:mark.kaulertz@gwdg.de</EmailAddress>
+    </ContactPerson>
   </EntityDescriptor>
 
 </EntitiesDescriptor>
