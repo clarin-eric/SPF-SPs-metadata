@@ -3773,10 +3773,7 @@ x1TIfhRjlcLqYwvwFOhj5b/Ecr0B2QAwHeEhMq9or7o072A=</ds:X509Certificate>
     </md:EntityDescriptor>
     <!-- Austrian Academy (CLARIN-AT) -->
      <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://clarin.oeaw.ac.at/shibboleth">
-    <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
+        <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
@@ -3910,9 +3907,6 @@ rI8v6OTvibpLrg==
   </md:EntityDescriptor>
   <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://acdh.oeaw.ac.at/shibboleth">
     <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
@@ -4178,10 +4172,7 @@ rI8v6OTvibpLrg==
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://teach.dariah.eu/shibboleth">
-    <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
+        <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
@@ -4314,10 +4305,7 @@ rI8v6OTvibpLrg==
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://registries.clarin-dariah.eu/shibboleth">
-    <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
+        <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
@@ -4451,9 +4439,6 @@ rI8v6OTvibpLrg==
   </md:EntityDescriptor>
   <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://arche.acdh.oeaw.ac.at/shibboleth">
     <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
