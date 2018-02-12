@@ -4046,9 +4046,6 @@ rI8v6OTvibpLrg==
   </md:EntityDescriptor>
   <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://redmine.acdh.oeaw.ac.at/shibboleth">
     <md:Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="http://eduid.at" registrationInstant="2014-01-23T16:00:00Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://eduid.at/policy/mdrps-20140606</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
