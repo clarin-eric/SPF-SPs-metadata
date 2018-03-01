@@ -1163,6 +1163,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     Name="http://macedir.org/entity-category">
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
@@ -1229,6 +1230,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <md:SingleLogoutService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:AssertionConsumerService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
                 Location="https://catalog.clarin.eu/Shibboleth.sso/SAML2/POST"
@@ -1286,7 +1288,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             contactType="support">
             <md:GivenName>Dieter</md:GivenName>
             <md:SurName>Van Uytvanck</md:SurName>
-            <md:EmailAddress>mailto:vlw@clarin.eu</md:EmailAddress>
+            <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
