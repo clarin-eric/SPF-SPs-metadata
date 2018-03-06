@@ -7720,20 +7720,51 @@ qQTazPv0mtY=
     </md:EntityDescriptor>
     <!-- EUDAT B2ACCESS production -->
     <md:EntityDescriptor entityID="https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata">
-        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
+        <md:Extensions>
+            <mdattr:EntityAttributes>
+                <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <md:Extensions>
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">EUDAT B2ACCESS</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">AAI for EUDAT B2-Services</mdui:Description>
+                    <mdui:Logo height="16" width="16">https://b2access.eudat.eu/unitygw/VAADIN/files/logo-small.png</mdui:Logo>
+                    <mdui:Logo height="146" width="146">https://b2access.eudat.eu/unitygw/VAADIN/files/logo-huge.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en">https://b2access.eudat.eu/unitygw/VAADIN/files/about-b2access.html</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://b2access.eudat.eu/unitygw/VAADIN/files/data-privacy-statement.html</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </md:Extensions>
             <md:KeyDescriptor>
-                <xd:KeyInfo xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
-                    <xd:X509Data>
-                        <xd:X509Certificate>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</xd:X509Certificate>
-                    </xd:X509Data>
-                </xd:KeyInfo>
+                <ds:KeyInfo>
+                    <ds:KeyName>b2access.eudat.eu</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=b2access.eudat.eu,O=CSC - Tieteen tietotekniikan keskus Oy,L=Espoo,ST=Uusimaa,C=FI</ds:X509SubjectName>
+                        <ds:X509Certificate>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</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
             </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-            <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="true"/>
-            <md:AssertionConsumerService index="2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="false"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">EUDAT B2ACCESS</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">AAI for EUDAT B2-Services</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+            </md:AttributeConsumingService>
         </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">EUDAT</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">EUDAT</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">https://www.eudat.eu/</md:OrganizationURL>
+        </md:Organization>
         <md:ContactPerson contactType="technical">
             <md:GivenName>EUDAT</md:GivenName>
     	    <md:SurName>Support</md:SurName>
