@@ -7719,32 +7719,32 @@ qQTazPv0mtY=
   </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- EUDAT B2ACCESS production -->
-    <urn:EntityDescriptor entityID="https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata" xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata">
-        <urn:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
-            <urn:KeyDescriptor>
+    <md:EntityDescriptor entityID="https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata">
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
+            <md:KeyDescriptor>
                 <xd:KeyInfo xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
                     <xd:X509Data>
                         <xd:X509Certificate>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</xd:X509Certificate>
                     </xd:X509Data>
                 </xd:KeyInfo>
-            </urn:KeyDescriptor>
-            <urn:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</urn:NameIDFormat>
-            <urn:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</urn:NameIDFormat>
-            <urn:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</urn:NameIDFormat>
-            <urn:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="true"/>
-            <urn:AssertionConsumerService index="2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="false"/>
-        </urn:SPSSODescriptor>
-        <urn:ContactPerson contactType="technical">
-            <urn:GivenName>EUDAT</urn:GivenName>
-    	    <urn:SurName>Support</urn:SurName>
-    	    <urn:EmailAddress>mailto:b2access-support@eudat.eu</urn:EmailAddress>
-  	    </urn:ContactPerson>
-  	    <urn:ContactPerson contactType="support">
-    	    <urn:GivenName>EUDAT</urn:GivenName>
-    	    <urn:SurName>Support</urn:SurName>
-    	    <urn:EmailAddress>mailto:b2access-support@eudat.eu</urn:EmailAddress>
-  	    </urn:ContactPerson>
-    </urn:EntityDescriptor>
+            </md:KeyDescriptor>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="true"/>
+            <md:AssertionConsumerService index="2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="false"/>
+        </md:SPSSODescriptor>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>EUDAT</md:GivenName>
+    	    <md:SurName>Support</md:SurName>
+    	    <md:EmailAddress>mailto:b2access-support@eudat.eu</md:EmailAddress>
+  	    </md:ContactPerson>
+  	    <md:ContactPerson contactType="support">
+    	    <md:GivenName>EUDAT</md:GivenName>
+    	    <md:SurName>Support</md:SurName>
+    	    <md:EmailAddress>mailto:b2access-support@eudat.eu</md:EmailAddress>
+  	    </md:ContactPerson>
+    </md:EntityDescriptor>
     <!-- EUDAT B2ACCESS Staging -->
     <urn:EntityDescriptor entityID="https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata" xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata">
         <urn:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
