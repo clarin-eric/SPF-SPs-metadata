@@ -7750,7 +7750,7 @@ qQTazPv0mtY=
             </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-            <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu:8443/unitygw/spSAMLResponseConsumer" isDefault="true"/>
+            <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu/unitygw/spSAMLResponseConsumer" isDefault="true"/>
             <md:AttributeConsumingService index="1">
                 <md:ServiceName xml:lang="en">EUDAT B2ACCESS</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">AAI for EUDAT B2-Services</md:ServiceDescription>
