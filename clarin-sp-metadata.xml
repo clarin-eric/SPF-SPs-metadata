@@ -7996,25 +7996,17 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
   	    </md:ContactPerson>
     </md:EntityDescriptor>
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://tekstlab.uio.no/glossa2/saml/metadata">
+        <md:Extensions>
+            <mdattr:EntityAttributes>
+                <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://tekstlab.uio.no/glossa2/saml/login"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://tekstlab.uio.no/glossa2/saml/login"
-                    index="1"/>
                 <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
@@ -8026,36 +8018,56 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
                     <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
                     <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
+                <init:RequestInitiator
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                    Location="https://tekstlab.uio.no/glossa2/saml/login"/>
+                <idpdisc:DiscoveryResponse
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                    Location="https://tekstlab.uio.no/glossa2/saml/login"
+                    index="1"/>
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIEsTCCA5mgAwIBAgIQcsT9J80wdokp2B5hof0NwDANBgkqhkiG9w0BAQsFADBk
+                        <ds:X509Certificate>MIIGzDCCBbSgAwIBAgIQAmVze43DQ8vlzY0mx7fB0jANBgkqhkiG9w0BAQsFADBk
 MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
 QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMjAeFw0xNTAzMjQwMDAwMDBaFw0xODAzMjMyMzU5NTlaMEExITAfBgNVBAsT
-GERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEcMBoGA1UEAxMTd3d3LnRla3N0bGFi
-LnVpby5ubzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIZG3ZrrkHk
-kOkqw2di2cbbpWnAziyvRDTr3UVLH/P+z7Pgujc0j94AjZkZwr2KLj7VKqaX8O63
-UAgDMAfwlWsGyFagZhkqyI/k0+fnd6s4OZeKGR+AnScubU3n4FbRBy8nO2cjX7ZW
-7FpxMFozEnk5jXkOAClmni3oFZHLkzbE72nPSklKJH7UOsDLc4eXj1um3TmNMGXE
-nAzxU8bPqU6WIWe23gylqp1UmkbdIljIEZKbt5xE91gj8HIVREZJDIuH3B1PrcYI
-+KD5DmKcXFfjjmNlC2eNPykmQDWfDl6xRDMte1/Z0uK/YGML6GBXCe0qGi4hXoe4
-LSSKolUOzpcCAwEAAaOCAYAwggF8MB8GA1UdIwQYMBaAFFvQihyaMlvgtd2WVBvh
-hiiw/ba9MB0GA1UdDgQWBBQtgsIQAnQaUu7LcLGmJnii92NRuDAOBgNVHQ8BAf8E
-BAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
-AwIwIgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMw
-MTAvoC2gK4YpaHR0cDovL2NybC51c2VydHJ1c3QuY29tL1RFUkVOQVNTTENBMi5j
-cmwwbAYIKwYBBQUHAQEEYDBeMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnVzZXJ0
-cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29j
-c3AudXNlcnRydXN0LmNvbTAvBgNVHREEKDAmghN3d3cudGVrc3RsYWIudWlvLm5v
-gg90ZWtzdGxhYi51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBAEYfNI/v1a5JOdvD
-HlbwhwnWJO+9146Y583k3fVHVql7/mx1MfGCJ8uy6L+dbDGL9zn5T6xCgHL+IbBe
-AKcoNCy/4xuJS2MHlDyGDIA1/FhN6sP5TZ/d8sOwE2QaTU4MeYDDw3XXU9RN2RpO
-qI9OvvLM/QxkRIs8IaEKE0OMkUqeutQZt5+d8XvAtsVsFeJ/8BRNlAcpXZUXbSXb
-g8kKbEX3r2gMBQddi09XKliJevevmG4wPEmSeFhnRtYLFExuViJ7NbAbyS6RnJ8e
-7+K3UzrPwXhPefJ7EUR3wRHWGXwuKIxE4ZPbmdKk9kfc2MwOxsfzbRNvw8i8T7hZ
-BfEhhhE=
+Q0EgMzAeFw0xODAzMTkwMDAwMDBaFw0yMDAzMjMxMjAwMDBaMH4xCzAJBgNVBAYT
+Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+bzEjMCEGA1UECxMaVGVrc3RsYWJvcmF0b3JpZXQsIElMTiwgSEYxHDAaBgNVBAMT
+E3d3dy50ZWtzdGxhYi51aW8ubm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQC/dyDlAiyNQVcQh0KHXcWyDtAdppZNwDnMBOSSwxYqYSqICe1JWDDAy8L8
+AW/080Vx2crhkmPGP5vvEt6jYF3RO2KxZ8DOuHVoNFLmIUWYykah1ZWpG8T2F9JF
+9URv6dO38yjqCa16TmWT48hFmc6hfaj28txqOYE7A5xEThYZ1omUhmdxGcXch+PA
+xBtjY0Izz1Bmt66pxu23rn46kslWlq17BMjkDQXVZvEx5kkk4G+1P5OQ8ZU2frod
+WVSqvH0pQzuVB8ja45f6QUzp0MRSIOu7mv1ouKFIqsHit16K1f+MKm3Oo0BQIqlP
+g8UcMcaWh3Gi7jKjY3fhE53P56R1AgMBAAGjggNeMIIDWjAfBgNVHSMEGDAWgBRn
+/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4EFgQUE9VaTY3fn5gbrwBHRYkZe189
+xBAwLwYDVR0RBCgwJoITd3d3LnRla3N0bGFiLnVpby5ub4IPdGVrc3RsYWIudWlv
+Lm5vMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+AwIwawYDVR0fBGQwYjAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL1RF
+UkVOQVNTTENBMy5jcmwwL6AtoCuGKWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9U
+RVJFTkFTU0xDQTMuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYB
+BQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMG4G
+CCsGAQUFBwEBBGIwYDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQu
+Y29tMDgGCCsGAQUFBzAChixodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vVEVS
+RU5BU1NMQ0EzLmNydDAMBgNVHRMBAf8EAjAAMIIBfQYKKwYBBAHWeQIEAgSCAW0E
+ggFpAWcAdgCkuQmQtBhYFIe7E6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAWI9VF9Q
+AAAEAwBHMEUCIQCqlpj26Hn4nBjmAfp37uEHm2JFsD0Crzw1oqr7Gr4ErwIgcCej
+8N75vBeUZsQMQx2yEmjddhv30fFnHID4MPTltRoAdQBvU3asMfAxGdiZAKRRFf93
+FRwR2QLBACkGjbIImjfZEwAAAWI9VGCbAAAEAwBGMEQCIAuo2Y2YIV5tj2hnkvrH
+FMpwu48pfe4nPJXsOfwB2O8LAiBuPhcWYomW8lxyvgrd5ftfHeoJqb+eOB7i/hMr
+oLM3wAB2ALvZ37wfinG1k5Qjl6qSe0c4V5UKq1LoGpCWZDaOHtGFAAABYj1UYD8A
+AAQDAEcwRQIgY6dDgxThUy7ZLadHqa5YrpwYKmEqNaQfL7w1WfSR8l0CIQC5cIu/
+S+Mo67Ote0LezoQUUQyq4LKbRQEBPAiT5pelPDANBgkqhkiG9w0BAQsFAAOCAQEA
+SWThplbRdcpm4PA5QvmdJwO9F8dVwp2UZ1KWNOpgnDUnqS3PNiAC+w6Ktcz9dTYm
+NC6GtwUmw80/vULSiZ+TUeLHOVYFv9Oq4Sbtb0uR1P7/DbfBjk/f+iWW8roWysQ9
++g9GFmeBaUCO3UXXMfSwESlD6cFXHXUsddMicvc+mf0P8VBueQzyHLkmIGL0m8cy
+CvU7ONh5+1y+VCix4Ap7AggOLDux2/lHCRLDDT0a9RCQmIJDGn3N6S49pgnJwgQB
+nJeWkn/3uAAM6cBEB22B6byXZ3CPKWJHoVM9Vk5y0GpKY/ikgnYhy5xV4ivrN804
+CEzwUKPMjrzjV+Q3q+Cn5Q==
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
