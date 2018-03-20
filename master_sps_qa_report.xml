@@ -7996,35 +7996,37 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
   	    </md:ContactPerson>
     </md:EntityDescriptor>
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://tekstlab.uio.no/glossa2/saml/metadata">
+        <md:Extensions>
+            <mdattr:EntityAttributes>
+                <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <init:RequestInitiator
+                xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                Location="https://tekstlab.uio.no/glossa2/saml/login"/>
+            <idpdisc:DiscoveryResponse
+                xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Location="https://tekstlab.uio.no/glossa2/saml/login"
+                index="1"/>
+            <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="fi">Glossa corpus -hakujärjestelmä</mdui:DisplayName>
+                <mdui:Description xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</mdui:Description>
+                <mdui:Description xml:lang="de">Glossa ist ein Werkzeug für Forscher, die linguistisch kommentierte Corpora suchen wollen</mdui:Description>
+                <mdui:Description xml:lang="fi">Glossa on työkalu tutkijoille, jotka haluavat etsiä kielellisesti merkityt korpukset</mdui:Description>
+                <mdui:Logo height="83" width="300">https://repo.clarino.uib.no/xmlui/themes/CLARINO/images/lindat/clarino-logo.png</mdui:Logo>
+                <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
+                <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
+            </mdui:UIInfo>
+        </md:Extensions>
         <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-            <md:Extensions>
-                <mdattr:EntityAttributes>
-                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                    </saml:Attribute>
-                </mdattr:EntityAttributes>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://tekstlab.uio.no/glossa2/saml/login"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://tekstlab.uio.no/glossa2/saml/login"
-                    index="1"/>
-                <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
-                    <mdui:DisplayName xml:lang="fi">Glossa corpus -hakujärjestelmä</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</mdui:Description>
-                    <mdui:Description xml:lang="de">Glossa ist ein Werkzeug für Forscher, die linguistisch kommentierte Corpora suchen wollen</mdui:Description>
-                    <mdui:Description xml:lang="fi">Glossa on työkalu tutkijoille, jotka haluavat etsiä kielellisesti merkityt korpukset</mdui:Description>
-                    <mdui:Logo height="83" width="300">https://repo.clarino.uib.no/xmlui/themes/CLARINO/images/lindat/clarino-logo.png</mdui:Logo>
-                    <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>
-            </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
