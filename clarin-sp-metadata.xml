@@ -8001,8 +8001,6 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
                 <mdattr:EntityAttributes>
                     <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                         <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    </saml:Attribute>
-                    <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                         <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                     </saml:Attribute>
                 </mdattr:EntityAttributes>
