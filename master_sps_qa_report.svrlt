@@ -181,6 +181,13 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:failed-assert test="local:has_Entity_Category($DP_CoCo_EC, .)"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.
+                Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="REFEDS Research and Scholarship Entity Category"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
@@ -359,6 +366,13 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:failed-assert test="local:has_Entity_Category($REFEDS_EC, .)"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.
+                Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Logo"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
@@ -501,8 +515,16 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="exists($Logo_nodes) and (every $URL in $Logo_nodes satisfies local:is_https_URL($URL))"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme. 
+                Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Metadata Extensions for Login and Discovery User Interface: URLs"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
@@ -810,6 +832,13 @@
                 Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’). </svrl:text>
    </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="$result[1]"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘de’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.
+                Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’). </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         id="mdui_text_de"
                         name="Metadata Extensions for Login and Discovery User Interface: texts"/>
@@ -1031,6 +1060,13 @@
                 Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’). </svrl:text>
    </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="$result[1]"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.
+                Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’). </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Specification of the provided service and requested attributes"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
@@ -1185,6 +1221,13 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="exists($SAML_2_requested_attributes_nodes)"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.
+                Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Explicit specification of Discovery Response and Request Initiator URLs"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
@@ -1414,6 +1457,7 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Key duplication"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
@@ -1502,8 +1546,16 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="$n_distinct_keys = $n_keys"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.
+                Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="SAML 2 support"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
@@ -1684,6 +1736,13 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:failed-assert test="md:Organization[md:OrganizationName/@xml:lang='en' and md:OrganizationDisplayName/@xml:lang='en' and md:OrganizationURL/@xml:lang='en']"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.
+                Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.1-travis/out/master_sps_qa_report.xml"
                         name="Contact persons"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
@@ -1982,4 +2041,23 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:failed-assert test="exists($administrative_mailto_URIs) and (every $mailto_URI in $administrative_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
+                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="exists($support_mailto_URIs) and (every $mailto_URI in $support_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
+                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="exists($technical_mailto_URIs) and (every $mailto_URI in $technical_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
+                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]">
+      <svrl:text>https://sso.clarinportulan.net/module.php/saml/sp/metadata.php/portulan
+                Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
+                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
 </svrl:schematron-output>
