@@ -2419,7 +2419,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     <mdui:InformationURL
                         xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
                     <mdui:PrivacyStatementURL
-                        xml:lang="en">http://info.clarin.dk/en/the-clarin-dk-platform/overview/privacypolicy/</mdui:PrivacyStatementURL>
+                        xml:lang="en">https://info.clarin.dk/en/the-clarin-dk-infrastructure/overview/privacypolicy/</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
