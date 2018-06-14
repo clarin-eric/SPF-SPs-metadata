@@ -8384,6 +8384,9 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>          
                 <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin.eurac.edu/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin.eurac.edu/Shibboleth.sso/Login" index="1"/>
