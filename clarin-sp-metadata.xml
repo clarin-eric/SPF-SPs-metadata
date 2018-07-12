@@ -8899,6 +8899,10 @@ keb+gnNfYWJuJWwjSHeUJ3vL
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
+                <Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <AttributeValue>http://clarin.eu/category/clarin-member</AttributeValue>
+                </Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod 
                 xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
