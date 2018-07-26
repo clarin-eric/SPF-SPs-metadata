@@ -1380,7 +1380,7 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
    <svrl:failed-assert test="fn:count($RequestInitiator_nodes)=1 and (every $URL in RequestInitiator_elements satisfies local:is_https_URL($URL))"
                        location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][57]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:Extensions[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://auth.dariah.eu/shibboleth
+      <svrl:text>https://aaiproxy.de.dariah.eu/sp
                 Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’. 
                 Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html . </svrl:text>
    </svrl:failed-assert>
