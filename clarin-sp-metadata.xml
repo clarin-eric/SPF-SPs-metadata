@@ -547,8 +547,8 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
           <mdui:DisplayName xml:lang="en">Language Bank Rights</mdui:DisplayName>
           <mdui:Description xml:lang="fi">Palvelu Kielipankin kielivarojen käyttölupien hakemiseen ja hallintaan.</mdui:Description>
           <mdui:Description xml:lang="en">Service for applying for and managing access rights to language resources in the Language Bank of Finland.</mdui:Description>
-          <mdui:PrivacyStatementURL xml:lang="en">https://lbr.csc.fi/#/privacy-policy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">https://lbr.csc.fi/#/privacy-policy</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://lbr.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="fi">https://lbr.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
