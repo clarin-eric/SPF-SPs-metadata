@@ -8372,6 +8372,10 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                 <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
             <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -8403,9 +8407,6 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:InformationURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                     <mdui:Logo height="85" width="180">https://clarin.eurac.edu/repository/xmlui/themes/UFAL/lib/lindat/public/img/eurac_research.svg</mdui:Logo>                    
-                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
                     <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
@@ -8519,7 +8520,11 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
             <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                 <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
             </saml:Attribute>
-        </mdattr:EntityAttributes>
+            <saml:Attribute 
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            </saml:Attribute>
+        </mdattr:EntityAttributes>  
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
@@ -8550,9 +8555,9 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                 <mdui:InformationURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                 <mdui:InformationURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                 <mdui:Logo height="85" width="180">https://clarin-dev.eurac.edu/img/eurac.png</mdui:Logo>                    
-                <mdui:PrivacyStatementURL xml:lang="en">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
             </mdui:UIInfo>          
         <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin-dev.eurac.edu/Shibboleth.sso/Login"/>
       <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin-dev.eurac.edu/Shibboleth.sso/Login" index="1"/>
