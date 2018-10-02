@@ -9,6 +9,7 @@
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+    xmlns:remd="http://refeds.org/metadata"
     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
@@ -546,9 +547,8 @@ u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate
           <mdui:DisplayName xml:lang="en">Language Bank Rights</mdui:DisplayName>
           <mdui:Description xml:lang="fi">Palvelu Kielipankin kielivarojen käyttölupien hakemiseen ja hallintaan.</mdui:Description>
           <mdui:Description xml:lang="en">Service for applying for and managing access rights to language resources in the Language Bank of Finland.</mdui:Description>
-          <mdui:PrivacyStatementURL xml:lang="en">https://lbr.csc.fi/en_GB/web/guest/privacy-policy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fi">https://lbr.csc.fi/fi/web/guest/privacy-policy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="sv">https://lbr.csc.fi/fi/web/guest/privacy-policy</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://lbr.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="fi">https://lbr.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -6323,222 +6323,108 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- Clarino UiB, Norway -->
-    <md:EntityDescriptor
-        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-        entityID="https://clarino.uib.no/">
-        <md:Extensions>
-            <mdattr:EntityAttributes
-                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-                <!-- The CoC-DP entity category -->
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                </saml:Attribute>
-            </mdattr:EntityAttributes>
-            <mdrpi:RegistrationInfo
-                xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
-                registrationAuthority="http://feide.no/"
-                registrationInstant="2013-08-20T06:55:04Z">
-                <mdrpi:RegistrationPolicy
-                    xml:lang="en">http://www.feide.no/files/feide/metadata-registration-practice-statement.pdf</mdrpi:RegistrationPolicy>
-            </mdrpi:RegistrationInfo>
-        </md:Extensions>
-        <md:SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-            <md:Extensions>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://clarino.uib.no/feide/single-login"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://clarino.uib.no/feide/single-login"
-                    index="1"/>
-                <mdui:UIInfo
-                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName
-                        xml:lang="en">Clarino, UiB</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="no">Clarino, UiB</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="de">Clarino, UiB</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="fi">Clarino, UiB</mdui:DisplayName>
-                    <mdui:Description
-                        xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</mdui:Description>
-                    <mdui:Description
-                        xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til CLARIN-initiativet.</mdui:Description>
-                    <mdui:Description
-                        xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</mdui:Description>
-                    <mdui:Description
-                        xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</mdui:Description>
-                    <mdui:Logo
-                        height="64"
-                        width="180">https://clarino.uib.no/images/clarino_duo-180.png</mdui:Logo>
-                    <mdui:Logo
-                        height="106"
-                        width="296">https://clarino.uib.no/images/clarino_duo-296.png</mdui:Logo>
-                    <mdui:Logo
-                        height="165"
-                        width="460">https://clarino.uib.no/images/clarino_duo-460.png</mdui:Logo>
-                    <mdui:Logo
-                        height="231"
-                        width="740">https://clarino.uib.no/images/clarino_duo-740.png</mdui:Logo>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">http://clarino.uib.no/iness/page?page-id=privacy_policy</mdui:PrivacyStatementURL>
-                </mdui:UIInfo>
-            </md:Extensions>
-            <md:KeyDescriptor
-                use="signing">
-                <!-- the old certificate, kept for key rollover -->
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIEdzCCA1+gAwIBAgIQCA4E94tJ3rEzJC1noMhpNzANBgkqhkiG9w0BAQUFADA2
-	    MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-	    U1NMIENBMB4XDTEzMDUwODAwMDAwMFoXDTE2MDUwNzIzNTk1OVowPDEhMB8GA1UE
-	    CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRcwFQYDVQQDEw5jbGFyaW5vLnVp
-	    Yi5ubzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALIQNT7Lca7R0tFZ
-	    mm4Fes8xdGlJrbxiuA/A1e/dMXaHm/C65zZ2ZFbUXnIe+bq+9AlJPO1gr7vyMaiX
-	    DsEYGlBBL/oNeroJfv+DAInweaOkatmOGMCBDAmCY76M89Vshk0qDNTEbZwc15fr
-	    hNGCJTUiHSToCFtvwDI4/0dbsUwNfCML0jRvi2QFnrgXh0QxTTNfcFdh72uL2WCh
-	    sbteCE2P4/T1H5yL1P3YJvpDX0iAMszaG+ZntYmATVMm91ivcE6mRCDI+qcHJdDW
-	    dy2E8NOBNCr8aQle2P6txXC9w5hzoE49Bw0oAF49EHx3MroBEA47ECGbOJ0Hpb8R
-	    piXnX6ECAwEAAaOCAXkwggF1MB8GA1UdIwQYMBaAFAy9k2gM896ro0lrKzdXR+qQ
-	    47ntMB0GA1UdDgQWBBR5vbqCMC3rno6VxasCvrYHZy/fkDAOBgNVHQ8BAf8EBAMC
-	    BaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw
-	    IgYDVR0gBBswGTANBgsrBgEEAbIxAQICHTAIBgZngQwBAgEwOgYDVR0fBDMwMTAv
-	    oC2gK4YpaHR0cDovL2NybC50Y3MudGVyZW5hLm9yZy9URVJFTkFTU0xDQS5jcmww
-	    bQYIKwYBBQUHAQEEYTBfMDUGCCsGAQUFBzAChilodHRwOi8vY3J0LnRjcy50ZXJl
-	    bmEub3JnL1RFUkVOQVNTTENBLmNydDAmBggrBgEFBQcwAYYaaHR0cDovL29jc3Au
-	    dGNzLnRlcmVuYS5vcmcwJwYDVR0RBCAwHoIOY2xhcmluby51aWIubm+CDGluZXNz
-	    LnVpYi5ubzANBgkqhkiG9w0BAQUFAAOCAQEAOjOxk+g90GHRP56AovDdtglU77Xx
-	    9Cd7Xx5hvbGMQRVFshLn4YXpbi4UFnGru0A+k0Cy+7tfQ4i82ITL3f0epz9N5JB8
-	    20waQRPTT55gk0iSAOSO5MhKeE6e+gf8RlDwF/p2y3RmalvxY/D+G6NKcwwbTe60
-	    Qd0b3DGOyN710RHzBLwtbIF3JmFw1M6m6w4Z433+XY/KiGMwpEGIw1J7I6XV1QeB
-	    7L7gZLFe+cry47IAqstheKHR0iUyR3+YgTVgS6pszAlhl46YYthpqSUiN0vpKB7E
-	    zRhPjli9gmQycjHS4iXBKe2aeFPsV5Cd7njw2oa9cmxMysqK+zjWJ4F1vQ==</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor>
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIDBTCCAe2gAwIBAgIJAMIPQt0aWk61MA0GCSqGSIb3DQEBCwUAMBkxFzAVBgNV
-	    BAMMDmNsYXJpbm8udWliLm5vMB4XDTE2MDQyOTEwNTYzNFoXDTIxMDQyODEwNTYz
-	    NFowGTEXMBUGA1UEAwwOY2xhcmluby51aWIubm8wggEiMA0GCSqGSIb3DQEBAQUA
-	    A4IBDwAwggEKAoIBAQDQaV8AuM08Rjr+ENWQ6jzDnYTU3T4zxK5KubpCT/vTqGB4
-	    7ybNZTNdfSinA4fUVtzMSDhz5aNqFqB9n/2IPV6JjkhZwolR3BVrHhA6Eg4d8j6V
-	    Mr7NIF9ZLK47uE5jX2vxNh2y98up843m50J+uUlJ1ucCxouFv/6D+TNWGp85d96u
-	    vYsvIgLtgxoD7gnajcJhPjhzuANZfv1fuVHAWG6M2vBWidvXVhgQEZXyEbeZ8n+U
-	    +o9XiNx22RR+TADcNKFU6yrrSMPVoSw0m5lTFV2Xt0MiC7GmW8G1YMc1gcchx0KS
-	    EcBVM50vRcIflDhSt6/jzq0TQugrcS1HvjCLceEvAgMBAAGjUDBOMB0GA1UdDgQW
-	    BBR/rbOCQqrTPMsZN7JT7PmrUqk2ezAfBgNVHSMEGDAWgBR/rbOCQqrTPMsZN7JT
-	    7PmrUqk2ezAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCG040tFSoX
-	    q5+CEliWXh8XmmTt6shmOSCqfmy5jt+nExyMSecFAtQL/f+8i3MszjWGmfE7JsMi
-	    c8+U7sybyM/Ws8lmkXfW84TzqLWO1ODNu6Jz1718qQyM2XgLkPbG1aTWRw+XBycg
-	    yGXBViPopYQbTRAAY+XzccV4N2V+lBD7Z0/JU3d0hruf0lTZlmqyQ3wbMnvw1E2r
-	    aAMs/8dp5p0Lz2AZEDNvWj88dmVdnWAt5FbH+oMO6XpzTgBZaU1HhgPXXDNQPbxb
-	    eP2rq6Afo70UIhDccaQ9Jex+K2V3mqbyaWF/jDfdPLcO5TE9dT4G+ka8Yq8j0n+D
-	    tnB2XWDk7tce</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://clarino.uib.no/feide/single-logout"/>
-            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-            <md:AssertionConsumerService
-                index="0"
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarino.uib.no/feide/assertion-consumer"/>
-            <md:AttributeConsumingService
-                index="0">
-                <md:ServiceName
-                    xml:lang="en">Clarino, UiB</md:ServiceName>
-                <md:ServiceName
-                    xml:lang="no">Clarino, UiB</md:ServiceName>
-                <md:ServiceName
-                    xml:lang="de">Clarino, UiB</md:ServiceName>
-                <md:ServiceName
-                    xml:lang="fi">Clarino, UiB</md:ServiceName>
-                <md:ServiceDescription
-                    xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</md:ServiceDescription>
-                <md:ServiceDescription
-                    xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til CLARIN-initiativet.</md:ServiceDescription>
-                <md:ServiceDescription
-                    xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
-                <md:ServiceDescription
-                    xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</md:ServiceDescription>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonTargetedID"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="cn"
-                    Name="urn:oid:2.5.4.3"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="mail"
-                    Name="urn:oid:0.9.2342.19200300.100.1.3"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="o"
-                    Name="urn:oid:2.5.4.10"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonAffiliation"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-            </md:AttributeConsumingService>
-        </md:SPSSODescriptor>
-        <md:Organization>
-            <md:OrganizationName
-                xml:lang="no">Universitetet i Bergen</md:OrganizationName>
-            <md:OrganizationName
-                xml:lang="en">University of Bergen</md:OrganizationName>
-            <md:OrganizationDisplayName
-                xml:lang="no">Universitetet i Bergen</md:OrganizationDisplayName>
-            <md:OrganizationDisplayName
-                xml:lang="en">University of Bergen</md:OrganizationDisplayName>
-            <md:OrganizationURL
-                xml:lang="no">http://www.uib.no</md:OrganizationURL>
-            <md:OrganizationURL
-                xml:lang="en">http://www.uib.no</md:OrganizationURL>
-        </md:Organization>
-        <md:ContactPerson
-            contactType="technical">
-            <md:GivenName>Paul</md:GivenName>
-            <md:SurName>Meurer</md:SurName>
-            <md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
-        </md:ContactPerson>
-        <md:ContactPerson
-            contactType="administrative">
-            <md:GivenName>Koenraad</md:GivenName>
-            <md:SurName>de Smedt</md:SurName>
-            <md:EmailAddress>mailto:clarino@uib.no</md:EmailAddress>
-        </md:ContactPerson>
-        <md:ContactPerson
-            contactType="support">
-            <md:GivenName>Paul</md:GivenName>
-            <md:SurName>Meurer</md:SurName>
-            <md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
-        </md:ContactPerson>
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://clarino.uib.no/">
+      <md:Extensions>
+	<mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+          <!-- The CoC-DP entity category -->
+          <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          </saml:Attribute>
+	</mdattr:EntityAttributes>
+	<mdrpi:RegistrationInfo xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" registrationAuthority="http://feide.no/" registrationInstant="2013-08-20T06:55:04Z">
+          <mdrpi:RegistrationPolicy xml:lang="en">http://www.feide.no/files/feide/metadata-registration-practice-statement.pdf</mdrpi:RegistrationPolicy>
+	</mdrpi:RegistrationInfo>
+      </md:Extensions>
+      <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+	<md:Extensions>
+          <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarino.uib.no/feide/single-login"/>
+          <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarino.uib.no/feide/single-login" index="1"/>
+          <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+            <mdui:DisplayName xml:lang="en">Clarino, UiB</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="no">Clarino, UiB</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">Clarino, UiB</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">Clarino, UiB</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</mdui:Description>
+            <mdui:Description xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til CLARIN-initiativet.</mdui:Description>
+            <mdui:Description xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</mdui:Description>
+            <mdui:Description xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</mdui:Description>
+            <mdui:Logo height="64" width="180">https://clarino.uib.no/images/clarino_duo-180.png</mdui:Logo>
+            <mdui:Logo height="106" width="296">https://clarino.uib.no/images/clarino_duo-296.png</mdui:Logo>
+            <mdui:Logo height="165" width="460">https://clarino.uib.no/images/clarino_duo-460.png</mdui:Logo>
+            <mdui:Logo height="231" width="740">https://clarino.uib.no/images/clarino_duo-740.png</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="en">http://clarino.uib.no/iness/page?page-id=privacy_policy</mdui:PrivacyStatementURL>
+            <mdui:InformationURL xml:lang="en">http://clarino.uib.no/iness/page?page-id=refeds_info</mdui:InformationURL>
+          </mdui:UIInfo>
+	</md:Extensions>
+	<md:KeyDescriptor>
+          <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:X509Data>
+              <ds:X509Certificate>MIIDBTCCAe2gAwIBAgIJAMIPQt0aWk61MA0GCSqGSIb3DQEBCwUAMBkxFzAVBgNV
+	      BAMMDmNsYXJpbm8udWliLm5vMB4XDTE2MDQyOTEwNTYzNFoXDTIxMDQyODEwNTYz
+	      NFowGTEXMBUGA1UEAwwOY2xhcmluby51aWIubm8wggEiMA0GCSqGSIb3DQEBAQUA
+	      A4IBDwAwggEKAoIBAQDQaV8AuM08Rjr+ENWQ6jzDnYTU3T4zxK5KubpCT/vTqGB4
+	      7ybNZTNdfSinA4fUVtzMSDhz5aNqFqB9n/2IPV6JjkhZwolR3BVrHhA6Eg4d8j6V
+	      Mr7NIF9ZLK47uE5jX2vxNh2y98up843m50J+uUlJ1ucCxouFv/6D+TNWGp85d96u
+	      vYsvIgLtgxoD7gnajcJhPjhzuANZfv1fuVHAWG6M2vBWidvXVhgQEZXyEbeZ8n+U
+	      +o9XiNx22RR+TADcNKFU6yrrSMPVoSw0m5lTFV2Xt0MiC7GmW8G1YMc1gcchx0KS
+	      EcBVM50vRcIflDhSt6/jzq0TQugrcS1HvjCLceEvAgMBAAGjUDBOMB0GA1UdDgQW
+	      BBR/rbOCQqrTPMsZN7JT7PmrUqk2ezAfBgNVHSMEGDAWgBR/rbOCQqrTPMsZN7JT
+	      7PmrUqk2ezAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCG040tFSoX
+	      q5+CEliWXh8XmmTt6shmOSCqfmy5jt+nExyMSecFAtQL/f+8i3MszjWGmfE7JsMi
+	      c8+U7sybyM/Ws8lmkXfW84TzqLWO1ODNu6Jz1718qQyM2XgLkPbG1aTWRw+XBycg
+	      yGXBViPopYQbTRAAY+XzccV4N2V+lBD7Z0/JU3d0hruf0lTZlmqyQ3wbMnvw1E2r
+	      aAMs/8dp5p0Lz2AZEDNvWj88dmVdnWAt5FbH+oMO6XpzTgBZaU1HhgPXXDNQPbxb
+	      eP2rq6Afo70UIhDccaQ9Jex+K2V3mqbyaWF/jDfdPLcO5TE9dT4G+ka8Yq8j0n+D
+	      tnB2XWDk7tce</ds:X509Certificate>
+            </ds:X509Data>
+          </ds:KeyInfo>
+	</md:KeyDescriptor>
+	<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarino.uib.no/feide/single-logout"/>
+	<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+	<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:permanent</md:NameIDFormat>
+	<md:AssertionConsumerService index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarino.uib.no/feide/assertion-consumer"/>
+	<md:AttributeConsumingService index="0">
+          <md:ServiceName xml:lang="en">Clarino, UiB</md:ServiceName>
+          <md:ServiceName xml:lang="no">Clarino, UiB</md:ServiceName>
+          <md:ServiceName xml:lang="de">Clarino, UiB</md:ServiceName>
+          <md:ServiceName xml:lang="fi">Clarino, UiB</md:ServiceName>
+          <md:ServiceDescription xml:lang="en">Norwegian research infrastructure for language data and services, linked to the CLARIN initiative.</md:ServiceDescription>
+          <md:ServiceDescription xml:lang="no">Norsk forskningsinfrastruktur for språkdata og -tjenester, knyttet til CLARIN-initiativet.</md:ServiceDescription>
+          <md:ServiceDescription xml:lang="de">Norwegische Forschungsinfrastruktur für Sprachdaten und Dienste im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
+          <md:ServiceDescription xml:lang="fi">Norja tutkimusinfrastruktuurin kielen tietojen ja palvelujen, jotka liittyvät CLARIN aloitetta.</md:ServiceDescription>
+          <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+          <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+          <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+          <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+          <md:RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+          <md:RequestedAttribute FriendlyName="eduPersonAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+	</md:AttributeConsumingService>
+      </md:SPSSODescriptor>
+      <md:Organization>
+	<md:OrganizationName xml:lang="no">Universitetet i Bergen</md:OrganizationName>
+	<md:OrganizationName xml:lang="en">University of Bergen</md:OrganizationName>
+	<md:OrganizationDisplayName xml:lang="no">Universitetet i Bergen</md:OrganizationDisplayName>
+	<md:OrganizationDisplayName xml:lang="en">University of Bergen</md:OrganizationDisplayName>
+	<md:OrganizationURL xml:lang="no">http://www.uib.no</md:OrganizationURL>
+	<md:OrganizationURL xml:lang="en">http://www.uib.no</md:OrganizationURL>
+      </md:Organization>
+      <md:ContactPerson contactType="technical">
+	<md:GivenName>Paul</md:GivenName>
+	<md:SurName>Meurer</md:SurName>
+	<md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
+      </md:ContactPerson>
+      <md:ContactPerson contactType="administrative">
+	<md:GivenName>Koenraad</md:GivenName>
+	<md:SurName>de Smedt</md:SurName>
+	<md:EmailAddress>mailto:clarino@uib.no</md:EmailAddress>
+      </md:ContactPerson>
+      <md:ContactPerson contactType="support">
+	<md:GivenName>Paul</md:GivenName>
+	<md:SurName>Meurer</md:SurName>
+	<md:EmailAddress>mailto:clarino-tech@uib.no</md:EmailAddress>
+      </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- Nederlab | Meertens -->
     <md:EntityDescriptor
@@ -8372,6 +8258,10 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                 <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
+                <saml:Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
             </mdattr:EntityAttributes>
             <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
             <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -8403,9 +8293,9 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:InformationURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                     <mdui:Logo height="85" width="180">https://clarin.eurac.edu/repository/xmlui/themes/UFAL/lib/lindat/public/img/eurac_research.svg</mdui:Logo>                    
-                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                    <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="de">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="it">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>          
                 <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin.eurac.edu/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin.eurac.edu/Shibboleth.sso/Login" index="1"/>
@@ -8516,7 +8406,11 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
             <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                 <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
             </saml:Attribute>
-        </mdattr:EntityAttributes>
+            <saml:Attribute 
+                xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            </saml:Attribute>
+        </mdattr:EntityAttributes>  
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
@@ -8547,9 +8441,9 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                 <mdui:InformationURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                 <mdui:InformationURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/about</mdui:InformationURL>
                 <mdui:Logo height="85" width="180">https://clarin-dev.eurac.edu/img/eurac.png</mdui:Logo>                    
-                <mdui:PrivacyStatementURL xml:lang="en">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="de">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="it">https://clarin-dev.eurac.edu/repository/xmlui/page/registration-privacypolicy</mdui:PrivacyStatementURL>
             </mdui:UIInfo>          
         <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clarin-dev.eurac.edu/Shibboleth.sso/Login"/>
       <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin-dev.eurac.edu/Shibboleth.sso/Login" index="1"/>
@@ -8650,10 +8544,10 @@ fz/TyVDBhzzQwjo4DD5txq+2Lwlg1iNBc0HG04jRFSwwANuFaoAALFqgHH4cIIw=
 
 </md:EntityDescriptor>
 
-<!-- DARIAH AAI CLARIN Connector -->
-  <EntityDescriptor entityID="https://auth.dariah.eu/shibboleth">
+<!-- DARIAH AAI to CLARIN Connector via IdP-SP-Proxy -->
+  <EntityDescriptor entityID="https://aaiproxy.de.dariah.eu/sp">
     <Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2015-07-31T06:57:48Z">
+      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2018-06-13T11:33:07Z">
         <mdrpi:RegistrationPolicy xml:lang="en">https://www.aai.dfn.de/en/join/</mdrpi:RegistrationPolicy>
         <mdrpi:RegistrationPolicy xml:lang="de">https://www.aai.dfn.de/teilnahme/</mdrpi:RegistrationPolicy>
       </mdrpi:RegistrationInfo>
@@ -8664,92 +8558,73 @@ fz/TyVDBhzzQwjo4DD5txq+2Lwlg1iNBc0HG04jRFSwwANuFaoAALFqgHH4cIIw=
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <Extensions>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://auth.dariah.eu/Shibboleth.sso/Login" index="1"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/Login" index="1"/>
         <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="de">DARIAH Self Service</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">DARIAH Self Service</mdui:DisplayName>
-          <mdui:Description xml:lang="de">Verwaltung von DARIAH-Benutzerdaten Registrierung für DARIAH Services</mdui:Description>
-          <mdui:Description xml:lang="en">DARIAH user data management and registration for DARIAH Services</mdui:Description>
-          <mdui:Logo height="16" width="16">https://idp.de.dariah.eu/images/DARIAH_flower_icon.png</mdui:Logo>
+          <mdui:DisplayName xml:lang="de">DARIAH AAI</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">DARIAH AAI</mdui:DisplayName>
+          <mdui:Description xml:lang="de">Proxy für Dienste in der DARIAH AAI</mdui:Description>
+          <mdui:Description xml:lang="en">DARIAH AAI Services Proxy</mdui:Description>
           <mdui:Logo height="154" width="160">https://idp.de.dariah.eu/images/DARIAH_flower.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="de">http://dariah.eu/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en">http://dariah.eu/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="de">https://de.dariah.eu/ServicePrivacyPolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://de.dariah.eu/ServicePrivacyPolicy</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="de">https://www.dariah.eu/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="en">https://www.dariah.eu/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="de">https://de.dariah.eu/dariah-coc</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://de.dariah.eu/en/dariah-coc</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor>
         <ds:KeyInfo>
-          <ds:KeyName>auth.dariah.eu</ds:KeyName>
+          <ds:KeyName>aaiproxy.de.dariah.eu</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=auth.dariah.eu,O=Georg-August-Universitaet Goettingen,L=Goettingen,ST=Niedersachsen,C=DE</ds:X509SubjectName>
-            <ds:X509Certificate>MIIGDjCCBPagAwIBAgIHGFSphGu/5zANBgkqhkiG9w0BAQsFADCBrjELMAkGA1UE
-BhMCREUxFjAUBgNVBAgTDU5pZWRlcnNhY2hzZW4xEzARBgNVBAcTCkdvZXR0aW5n
-ZW4xLTArBgNVBAoTJEdlb3JnLUF1Z3VzdC1Vbml2ZXJzaXRhZXQgR29ldHRpbmdl
-bjEjMCEGA1UEAxMaVW5pdmVyc2l0YWV0LUdvZXR0aW5nZW4gQ0ExHjAcBgkqhkiG
-9w0BCQEWD2d3ZGctY2FAZ3dkZy5kZTAeFw0xNDEwMDgxMjIwMDVaFw0xOTA3MDky
-MzU5MDBaMIGCMQswCQYDVQQGEwJERTEWMBQGA1UECBMNTmllZGVyc2FjaHNlbjET
-MBEGA1UEBxMKR29ldHRpbmdlbjEtMCsGA1UEChMkR2VvcmctQXVndXN0LVVuaXZl
-cnNpdGFldCBHb2V0dGluZ2VuMRcwFQYDVQQDEw5hdXRoLmRhcmlhaC5ldTCCASIw
-DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANk/Hdv+RUK1bWw3xexSis10w4yC
-TkVez0Jq40TbiF4RSNZ+dE4P0+/Kvlm6kN/iJyxDJ/c1ZNPDBn7iDFwRCWPVx3IF
-QNJE/EkOucCbIqBAOBdZoyChn1OtK78c1oIVuVUxpSgkrdvTeFfWTJTADkaLCA/q
-t+k1v0W2W1nvLGnTlaHpyUmUDXss4ubeTTMg1AvoBorxJkrvGKO9BHH2mLV1jpOt
-68tojuVUOZ91+1TwqkM3gp2nT3v6Fh3lKgd3QrP+ODhqsuPViW7RGyKujtjbBvNd
-RShvTFi6oSl2hKvn7hevy7vCYsYoQ6Jdzp5P0ZwSi4mLNfJ1a2BOv1uh0ZcCAwEA
-AaOCAlkwggJVME8GA1UdIARIMEYwEQYPKwYBBAGBrSGCLAEBBAMCMBEGDysGAQQB
-ga0hgiwCAQQDATAPBg0rBgEEAYGtIYIsAQEEMA0GCysGAQQBga0hgiweMAkGA1Ud
-EwQCMAAwCwYDVR0PBAQDAgTwMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
-AjAdBgNVHQ4EFgQUo4dEl7xc0QyDNe70xOIt3munlrIwHwYDVR0jBBgwFoAUHb1z
-zG3ubhx0cNmjGzq6qCfevOswGQYDVR0RBBIwEIIOYXV0aC5kYXJpYWguZXUwgY8G
-A1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktZ29l
-dHRpbmdlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIu
-cGNhLmRmbi5kZS91bmktZ29ldHRpbmdlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB
-3QYIKwYBBQUHAQEEgdAwgc0wMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5k
-Zm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEFBQcwAoY+aHR0cDovL2NkcDEu
-cGNhLmRmbi5kZS91bmktZ29ldHRpbmdlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5j
-cnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLWdvZXR0
-aW5nZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IB
-AQBxZ/OEFKc5+7YkF8fPzhyWAaeWeG614E4wm3MmT9go4tsxff0adtr5cnb3fC8L
-BI7pBxqMlIIr0M4xkDkT3JlXyY1Kftz+wzNSSRr7+k3U+6/rJjN4x6DpP1ZRXZGf
-MWcgq74X8KrDkSFG+zrMZGQIxE8PhuE3maLgBTeQ/aFJgKdGnRDLpiQgZ9BRhUT9
-69oGlkmJS2PLDwi2mMHLOegp1lklQxwLTj9XXRsb+bWTboeZpT3PQupBuSgBEbRb
-fT9iDrD0x+GZweFkC8bKJtP4BGIbs11tE+cdbxmH0yoEnHevs0z/AbPxPYR/4kj9
-keb+gnNfYWJuJWwjSHeUJ3vL
+            <ds:X509SubjectName>CN=aaiproxy.de.dariah.eu</ds:X509SubjectName>
+            <ds:X509Certificate>MIIEJTCCAo2gAwIBAgIJAKAsaU9Sk32mMA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNV
+BAMTFWFhaXByb3h5LmRlLmRhcmlhaC5ldTAeFw0xNzExMDgxNDU1NDVaFw0yMDEx
+MDcxNDU1NDVaMCAxHjAcBgNVBAMTFWFhaXByb3h5LmRlLmRhcmlhaC5ldTCCAaIw
+DQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAMSkM3a5aj988qjLd5jDGWm/AQGk
+6oaVu/YJILX4X8n1h892bJ0J3m1kjEH8Uh5sxMpWU9fRO7dQAzgiQuIleHsR6Qt8
+ptl8pGOSzHU/eYEG0Jj4FBUSzR6j/zFD34rFwbPVE1rdvRZKpHyWVgdTpCNGmauQ
+68U3cGm4cAukBvipy36beV/dyVJii8ZJXr8Y1Ys/9i+5mEBrKE0zA9R2y59CSlh2
+XuOJp8H/lgQ8/Jrf7Mj8ZDnoPvW8rQjPT+HqLaRbDLf5kF/EASFExwP2Cl5qmm98
+D06jxPbeMb+WHCrTv+iiKdtqWnGod2c5Aczn/7x99fl4v1/z7xwCTs+eJH+fu0Pk
+2PhXqrRw3fbIH/ry6axwyt9wlpwDwpoaINgVNaOt9gHwv2iu4SbJtROSelRad/AQ
+1CmtUo+CqwhfmuNI7AdCanTIOS2E86YFfTlMAF6kHkSxio6bFKxMh1sB4bEz0oET
+m47s8GvVS0Jz0t3MeKeoyJqqOJKfQgjHR/+22wIDAQABo2IwYDA/BgNVHREEODA2
+ghVhYWlwcm94eS5kZS5kYXJpYWguZXWGHWh0dHBzOi8vYWFpcHJveHkuZGUuZGFy
+aWFoLmV1MB0GA1UdDgQWBBQBnyMiDmOakgOwtTHgMXMZPfPnTjANBgkqhkiG9w0B
+AQsFAAOCAYEAJyMcX2v4cA7QJXtqXeVBwehV3t9gLvx9AWPy1wGe/Qqrn3diQxnC
+HYP9GmG7DQ1DMlyuDiW4g0rAZspMWpVM/fLtInbUaH+wjLE430Qm8zSTZGQnD2/V
+yf1vpAyWae0+tO3/YgN/pd++LQHoBVTeBf/ethMZj5pMG+neu/WqwoDWW2RD7goJ
+wFUTy2YE55pC7WmZubL3vN9oYYVfSRV2DDQ9hVzeURozRxpSm7qj92wKJmYuILqc
+QB/p8CrkHNqVcwmmh9t6LLEWRLoy/i4VetqzCSYJoCyRd59GqfmEaxWvkyPpwn5x
+zVdSIQWLay4+epgjVfVBWFo6VzTPCFUWiCcYL8HKsfU0u4D0YcTrWQoIAHSdQXxy
+DBcbi1F2qS+mdub9JKi0imInrXN8UrvGEH4ZfewgRBm/RHls/OclkHeoEvUTnFtI
+oQh1tEj0q/Ty+apsFNo9ArGprOV6QF7tNU22PoOa6G1Z1mdwDT2L4waI58WJFHlq
+5PjkNbmb0O8F
 </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
       </KeyDescriptor>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth.dariah.eu/Shibboleth.sso/SLO/SOAP"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.dariah.eu/Shibboleth.sso/SLO/Redirect"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.dariah.eu/Shibboleth.sso/SLO/POST"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://auth.dariah.eu/Shibboleth.sso/SLO/Artifact"/>
-      <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
       <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.dariah.eu/Shibboleth.sso/SAML2/POST" index="1"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://auth.dariah.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://auth.dariah.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://auth.dariah.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://auth.dariah.eu/Shibboleth.sso/SAML/POST" index="5"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://auth.dariah.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/POST" index="1"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
       <AttributeConsumingService index="1">
-        <ServiceName xml:lang="de">DARIAH Self Service</ServiceName>
-        <ServiceName xml:lang="en">DARIAH Self Service</ServiceName>
-        <ServiceDescription xml:lang="de">Verwaltung von DARIAH-Benutzerdaten Registrierung für DARIAH Services</ServiceDescription>
-        <ServiceDescription xml:lang="en">DARIAH user data management and registration for DARIAH Services</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+        <ServiceName xml:lang="de">DARIAH AAI</ServiceName>
+        <ServiceName xml:lang="en">DARIAH AAI</ServiceName>
+        <ServiceDescription xml:lang="de">Proxy für Dienste in der DARIAH AAI</ServiceDescription>
+        <ServiceDescription xml:lang="en">DARIAH AAI Services Proxy</ServiceDescription>
         <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="sn" Name="urn:mace:dir:attribute-def:sn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="givenName" Name="urn:mace:dir:attribute-def:givenName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="displayName" Name="urn:mace:dir:attribute-def:displayName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+        <RequestedAttribute FriendlyName="eduPersonUniqueId" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.13" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+        <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="o" Name="urn:mace:dir:attribute-def:o" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+        <RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+        <RequestedAttribute FriendlyName="eduPersonOrcid" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.16" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
         <RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </AttributeConsumingService>
     </SPSSODescriptor>
@@ -8762,13 +8637,17 @@ keb+gnNfYWJuJWwjSHeUJ3vL
       <OrganizationURL xml:lang="en">http://www.gwdg.de</OrganizationURL>
     </Organization>
     <ContactPerson contactType="technical">
-      <GivenName>Martin</GivenName>
-      <SurName>Haase</SurName>
-      <EmailAddress>mailto:martin.haase@daasi.de</EmailAddress>
+      <GivenName>Dariah</GivenName>
+      <SurName>Support</SurName>
+      <EmailAddress>mailto:register@dariah.eu</EmailAddress>
     </ContactPerson>
     <ContactPerson contactType="support">
       <GivenName>Dariah</GivenName>
       <SurName>Support</SurName>
+      <EmailAddress>mailto:register@dariah.eu</EmailAddress>
+    </ContactPerson>
+    <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+      <GivenName>DARIAH Incident Response Team</GivenName>
       <EmailAddress>mailto:register@dariah.eu</EmailAddress>
     </ContactPerson>
     <ContactPerson contactType="administrative">
@@ -8883,5 +8762,171 @@ keb+gnNfYWJuJWwjSHeUJ3vL
             <md:EmailAddress>mailto:luis.gomes@di.fc.ul.pt</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-
+    <!-- CLARIN-DK-UCPH Repository -->
+    <md:EntityDescriptor 
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_d93a6ec9584e8e7f9bae4a265f28c0a23096589e" entityID="https://repository.clarin.dk/shibboleth">
+        <md:Extensions>
+            <mdattr:EntityAttributes 
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute 
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+            <alg:DigestMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <alg:SigningMethod 
+                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        </md:Extensions>
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <md:Extensions>
+                <mdui:UIInfo 
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">CLARIN-DK-UCPH Repository</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="da">CLARIN-DK-UCPH repositorium</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="de">CLARIN-DK-UCPH Repository</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Centre at the University of Copenhagen.</mdui:Description>
+                    <mdui:Description xml:lang="da">Den digitale infrastruktur fra CLARIN-centret på Københavns Universitet.</mdui:Description>
+                    <mdui:Description xml:lang="de">Die digitale Infrastruktur und Services des CLARIN Centers an der Universität Kopenhagen.</mdui:Description>
+                    <mdui:InformationURL xml:lang="en">http://info.clarin.dk/en/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="da">http://info.clarin.dk</mdui:InformationURL>
+                    <mdui:Logo height="53" width="265">https://clarin.dk/clarindk/img/clarin-dk.logo.jpg</mdui:Logo>
+                    <mdui:Keywords xml:lang="en">CLARIN DSpace</mdui:Keywords>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://info.clarin.dk/en/the-clarin-dk-infrastructure/overview/privacypolicy/</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <init:RequestInitiator 
+                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repository.clarin.dk/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse 
+                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repository.clarin.dk/Shibboleth.sso/Login" index="1"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
+                <ds:KeyInfo 
+                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>repository.clarin.dk</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=repository.clarin.dk</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIDETCCAfmgAwIBAgIJAOYeQSXrbgY+MA0GCSqGSIb3DQEBCwUAMB8xHTAbBgNV
+BAMMFHJlcG9zaXRvcnkuY2xhcmluLmRrMB4XDTE4MDQyNDEwMTAzNloXDTI4MDQy
+MTEwMTAzNlowHzEdMBsGA1UEAwwUcmVwb3NpdG9yeS5jbGFyaW4uZGswggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7+E3mNLuB0XB+Ox9gabzmoJ+RhXA2
+yyP/towp8Yz+v9x24xJ3tq/FhZnvhaWu4W/QY2Z0WMabBO6eAdD+hBcM/6c7tV74
+67tRmxMFjrfd3Kf4ba//+9RQ1G2IVeCy4jomxNYR/eI4I8T/Tg9KvTzYGG4LxLb0
+oWl7QpzjfVaqOdrUtJNYQdI1V/FDmHmwdVQDBvRAHfTHXQPOVkIsB3h/v48Mb9C7
+sfUnVMEibok+DtZOBu4Wc7zKYrK+64HKlF8HKv4Gswzf1YqodnttU/FwYpdazpbA
+BbcyqlPdq9hmbPMT7+vuECOhLLLQ4akwYrwpfZhsy4GdQjMoAFf79gXdAgMBAAGj
+UDBOMB0GA1UdDgQWBBQi2VvOpPiYowViTepkwUw2QiSOPjAfBgNVHSMEGDAWgBQi
+2VvOpPiYowViTepkwUw2QiSOPjAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUA
+A4IBAQCb4att02E7QG0/guUOfJLY8YUW+VWL3sVScwQHzHu7mD8LecgMQhki3Soz
+JYXnWyHTAIMVvKmcTD2/rC/TPcPTl+Ta5/BImOoI+ehIgzk7n6/x0hrqbDco/8GV
+ArsAGojRxyyVfxuPiWVmml8qqwKkI04sKDvNEQsnk6ZNScSlNgRJ4+XWhrJIRu3r
+pDLeb9u90zh6UmDe6LlVBzSPHiVq/u1ZJVU6jl388E0AoX65YvbKxgkfmXbHxYzx
+ffQdSt8YdATn5PiaCnh5TTMZgvO6UbDoZe+pjDQPhJkGAtwBOJlTuPKib1OgAQy8
+b++K2ToWg8Zs3yGyMUaPxvIzw3nt
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </md:KeyDescriptor>
+            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repository.clarin.dk/Shibboleth.sso/Artifact/SOAP" index="1"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repository.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repository.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repository.clarin.dk/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repository.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repository.clarin.dk/Shibboleth.sso/NIM/SOAP"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repository.clarin.dk/Shibboleth.sso/NIM/Redirect"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repository.clarin.dk/Shibboleth.sso/NIM/POST"/>
+            <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repository.clarin.dk/Shibboleth.sso/NIM/Artifact"/>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">CLARIN-DK-UCPH Repository</md:ServiceName>
+                <md:ServiceName xml:lang="da">CLARIN-DK-UCPH repositorie</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">Digital repository and services of the CLARIN Centre at the University of Copenhagen.</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="da">Den digitale infrastruktur fra CLARIN-centret på Københavns Universitet</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="cn" Name="urn:mace:dir:attribute-def:cn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="givenName" Name="urn:mace:dir:attribute-def:givenName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="surname" Name="urn:mace:dir:attribute-def:sn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"></md:RequestedAttribute>
+                <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"></md:RequestedAttribute>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">Center for Language Technology, Department of Nordic Studies and Linguistics, University of Copenhagen</md:OrganizationName>
+            <md:OrganizationName xml:lang="da">Center for Sprogteknologi, Institut for Nordiske Studier og Sprogvidenskab, Københavns Universitet</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">Center for Language Technology, NorS, University of Copenhagen</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="da">Center for Sprogteknologi, NorS, Københavns Universitet</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">https://www.clarin.dk</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="da">https://www.clarin.dk</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>CLARIN-DK</md:GivenName>
+            <md:SurName>Administrators</md:SurName>
+            <md:EmailAddress>mailto:admin@clarin.dk</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>CLARIN-DK</md:GivenName>
+            <md:SurName>Support</md:SurName>
+            <md:EmailAddress>mailto:info@clarin.dk</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Mitchell</md:GivenName>
+            <md:SurName>Seaton</md:SurName>
+            <md:EmailAddress>mailto:seaton@hum.ku.dk</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 </EntitiesDescriptor>
