@@ -27,6 +27,23 @@
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://ka3.uni-koeln.de">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Name="http://macedir.org/entity-category"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
         <md:SPSSODescriptor
             AuthnRequestsSigned="true"
             WantAssertionsSigned="true"
@@ -59,7 +76,8 @@
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIJejCCCGKgAwIBAgIMH9WMQ2Tna5pZoHu8MA0GCSqGSIb3DQEBCwUAMIGNMQsw
+                        <ds:X509Certificate>
+MIIJejCCCGKgAwIBAgIMH9WMQ2Tna5pZoHu8MA0GCSqGSIb3DQEBCwUAMIGNMQsw
 CQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVz
 IERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4t
 UEtJMSUwIwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE4
