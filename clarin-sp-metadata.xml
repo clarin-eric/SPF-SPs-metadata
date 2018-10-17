@@ -60,9 +60,9 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="de">KA&#xB3;</mdui:DisplayName>
+                        xml:lang="de">KA&#xB3; K&#xF6;ln</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="en">KA&#xB3;</mdui:DisplayName>
+                        xml:lang="en">KA&#xB3; Cologne</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="de">K&#xF6;lner Zentrum Archivierung und Analyse von AV-Daten</mdui:Description>
                     <mdui:Description
@@ -208,26 +208,26 @@
             contactType="technical">
             <md:GivenName>Jochen</md:GivenName>
             <md:SurName>Graf</md:SurName>
-            <md:EmailAddress>jochen.graf@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:jochen.graf@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="support">
             <md:GivenName>Diensteentwicklung</md:GivenName>
             <md:SurName>RRZK</md:SurName>
-            <md:EmailAddress>diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
             <md:GivenName>Beate</md:GivenName>
             <md:SurName>Schlesiona</md:SurName>
-            <md:EmailAddress>bschlesi@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:bschlesi@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             xmlns:remd="http://refeds.org/metadata"
             contactType="other"
             remd:contactType="http://refeds.org/metadata/contactType/security">
             <md:GivenName>Diensteentwicklung</md:GivenName>
-            <md:EmailAddress>diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- BBAW (via CLARIN) -->
