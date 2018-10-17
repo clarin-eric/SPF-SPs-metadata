@@ -248,11 +248,6 @@
       <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
    </result>
    <result>
-      <sp>https://ka3.uni-koeln.de</sp>
-      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘de’, or display name (= ‘KA³’) length (= 3) &lt; 5 or &gt; 33, or description (= ‘Kölner Zentrum Archivierung und Analyse von AV-Daten’) length (= 52) &lt; 20 or &gt; 100.</explanation>
-      <requirement>Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’).</requirement>
-   </result>
-   <result>
       <sp>https://shibboleth.bbaw.de/shibboleth</sp>
       <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘de’, or display name (= ‘BBAW - CLARIN-Dienste’) length (= 21) &lt; 5 or &gt; 33, or description (= ‘Verschiedene Dienste der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) im Rahmen der CLARIN-Initiative.’) length (= 117) &lt; 20 or &gt; 100.</explanation>
       <requirement>Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’).</requirement>
@@ -415,11 +410,6 @@
    <result>
       <sp>https://clarinportulan.net</sp>
       <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘de’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
-      <requirement>Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’).</requirement>
-   </result>
-   <result>
-      <sp>https://ka3.uni-koeln.de</sp>
-      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘KA³’) length (= 3) &lt; 5 or &gt; 33, or description (= ‘Cologne Center Archiving and Analysis of AV-Data’) length (= 48) &lt; 20 or &gt; 100.</explanation>
       <requirement>Partially a requirement for DFN-AAI registration (language code ‘de’). Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation (language code ‘en’).</requirement>
    </result>
    <result>
@@ -821,21 +811,6 @@
       <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
       <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
       <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-   </result>
-   <result>
-      <sp>https://ka3.uni-koeln.de</sp>
-      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-   </result>
-   <result>
-      <sp>https://ka3.uni-koeln.de</sp>
-      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-   </result>
-   <result>
-      <sp>https://ka3.uni-koeln.de</sp>
-      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
    </result>
    <result>
       <sp>https://secure.huygens.knaw.nl</sp>
