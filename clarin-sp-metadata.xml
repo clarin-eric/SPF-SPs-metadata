@@ -24,7 +24,7 @@
             registrationAuthority="https://www.clarin.eu/spf"> </mdrpi:RegistrationInfo>
     </Extensions>
     <!-- KA&#xB3; -->
-<md:EntityDescriptor
+    <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://ka3.uni-koeln.de">
         <md:Extensions>
