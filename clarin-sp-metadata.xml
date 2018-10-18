@@ -24,7 +24,7 @@
             registrationAuthority="https://www.clarin.eu/spf"> </mdrpi:RegistrationInfo>
     </Extensions>
     <!-- KA&#xB3; -->
-    <md:EntityDescriptor
+<md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         entityID="https://ka3.uni-koeln.de">
         <md:Extensions>
@@ -41,6 +41,12 @@
                     Name="http://macedir.org/entity-category"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        Name="http://macedir.org/entity-category"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
@@ -60,9 +66,9 @@
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName
-                        xml:lang="de">KA&#xB3;</mdui:DisplayName>
+                        xml:lang="de">KA&#xB3; K&#xF6;ln</mdui:DisplayName>
                     <mdui:DisplayName
-                        xml:lang="en">KA&#xB3;</mdui:DisplayName>
+                        xml:lang="en">KA&#xB3; Cologne</mdui:DisplayName>
                     <mdui:Description
                         xml:lang="de">K&#xF6;lner Zentrum Archivierung und Analyse von AV-Daten</mdui:Description>
                     <mdui:Description
@@ -133,7 +139,6 @@
     O9kKUjH3pkzJAzUDBQD8lk/DKuwJplv5Cc86eNeiRt0CoZhSLwotElv3zLMP4dsj
     zLGoWJjcVz6xYJoXWnxkNoVi39n62UCbYDYCSJfU2V7nY7Kwxqr9emN7dXHRAgNr
     43+kpCoOrBZsmRoM4j7s6kyuy1VtaoxoCN4BybrF
-    
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
@@ -179,8 +184,8 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
-                    FriendlyName="displayName"
-                    Name="urn:oid:2.16.840.1.113730.3.1.241"
+                    FriendlyName="cn"
+                    Name="urn:oid:2.5.4.3"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
@@ -208,26 +213,26 @@
             contactType="technical">
             <md:GivenName>Jochen</md:GivenName>
             <md:SurName>Graf</md:SurName>
-            <md:EmailAddress>jochen.graf@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:jochen.graf@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="support">
             <md:GivenName>Diensteentwicklung</md:GivenName>
             <md:SurName>RRZK</md:SurName>
-            <md:EmailAddress>diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
             <md:GivenName>Beate</md:GivenName>
             <md:SurName>Schlesiona</md:SurName>
-            <md:EmailAddress>bschlesi@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:bschlesi@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             xmlns:remd="http://refeds.org/metadata"
             contactType="other"
             remd:contactType="http://refeds.org/metadata/contactType/security">
             <md:GivenName>Diensteentwicklung</md:GivenName>
-            <md:EmailAddress>diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
+            <md:EmailAddress>mailto:diensteentwicklung-rrzk@uni-koeln.de</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- BBAW (via CLARIN) -->
