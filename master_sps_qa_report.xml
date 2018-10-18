@@ -139,7 +139,6 @@
     O9kKUjH3pkzJAzUDBQD8lk/DKuwJplv5Cc86eNeiRt0CoZhSLwotElv3zLMP4dsj
     zLGoWJjcVz6xYJoXWnxkNoVi39n62UCbYDYCSJfU2V7nY7Kwxqr9emN7dXHRAgNr
     43+kpCoOrBZsmRoM4j7s6kyuy1VtaoxoCN4BybrF
-    
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
@@ -185,8 +184,8 @@
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
-                    FriendlyName="displayName"
-                    Name="urn:oid:2.16.840.1.113730.3.1.241"
+                    FriendlyName="cn"
+                    Name="urn:oid:2.5.4.3"
                     NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                     isRequired="true"/>
                 <md:RequestedAttribute
