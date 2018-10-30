@@ -3991,6 +3991,7 @@ x1TIfhRjlcLqYwvwFOhj5b/Ecr0B2QAwHeEhMq9or7o072A=</ds:X509Certificate>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4124,6 +4125,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4257,6 +4259,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4390,6 +4393,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4523,6 +4527,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4656,6 +4661,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4789,6 +4795,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4922,6 +4929,7 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
