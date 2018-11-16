@@ -1989,16 +1989,21 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <md:OrganizationURL xml:lang="en">https://www.ru.nl/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="administrative">
+            <md:GivenName>Henk</md:GivenName>
+            <md:SurName>van den Heuvel</md:SurName>
+            <md:EmailAddress>mailto:h.vandenheuvel@let.ru.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
             <md:GivenName>Wessel</md:GivenName>
             <md:SurName>Stoop</md:SurName>
             <md:EmailAddress>mailto:admin@cls.ru.nl</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson contactType="administrative">
+        <md:ContactPerson contactType="technical">
             <md:GivenName>Maarten</md:GivenName>
             <md:SurName>van Gompel</md:SurName>
             <md:EmailAddress>mailto:admin@cls.ru.nl</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson contactType="administrative">
+        <md:ContactPerson contactType="technical">
             <md:GivenName>Micha</md:GivenName>
             <md:SurName>Hulsbosch</md:SurName>
             <md:EmailAddress>mailto:admin@cls.ru.nl</md:EmailAddress>
