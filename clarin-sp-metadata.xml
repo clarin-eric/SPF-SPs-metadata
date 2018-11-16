@@ -1881,24 +1881,6 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
     </md:EntityDescriptor>
     <!-- Radboud University: Centre for Language and Speech Technology -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_8ce263cf71718b3da4f53a24992742080e13a685" entityID="https://sp.opensonar.cls.ru.nl/shibboleth">
-        <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-            <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-        </md:Extensions>
         <md:Extensions>
             <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
