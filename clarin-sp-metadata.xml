@@ -1985,11 +1985,6 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <md:SurName>van Gompel</md:SurName>
             <md:EmailAddress>mailto:admin@cls.ru.nl</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson contactType="technical">
-            <md:GivenName>Micha</md:GivenName>
-            <md:SurName>Hulsbosch</md:SurName>
-            <md:EmailAddress>mailto:admin@cls.ru.nl</md:EmailAddress>
-        </md:ContactPerson>
     </md:EntityDescriptor>	
     <!-- INL/INT portal (via CLARIN) -->
     <EntityDescriptor
