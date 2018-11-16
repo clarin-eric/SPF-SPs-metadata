@@ -1901,7 +1901,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     <mdui:Logo height="294" width="44">https://applejack.science.ru.nl/clst.png</mdui:Logo>
                     <mdui:Keywords xml:lang="en">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Language+Technology RU Radboud+University Text+mining Computational+linguistics Corpora</mdui:Keywords>
                    <mdui:Keywords xml:lang="nl">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Taaltechnologie RU Radboud+Universiteit Text+mining Computationele+taalkunde Corpora</mdui:Keywords>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://applejack.science.ru.nl/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://opensonarplus.cls.ru.nl/Shibboleth.sso/Login"/>
                 <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://opensonarplus.cls.ru.nl/Shibboleth.sso/Login" index="1"/>
