@@ -1908,7 +1908,6 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>sp.opensonar.cls.ru.nl</ds:KeyName>
                     <ds:KeyName>opensonar.cls.ru.nl</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=opensonar.cls.ru.nl</ds:X509SubjectName>
