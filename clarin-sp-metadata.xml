@@ -1884,9 +1884,9 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
         <md:Extensions>
             <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
                 <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
@@ -1897,10 +1897,10 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     <mdui:Description xml:lang="en">Web services and web applications developed and/or maintained by the Centre of Language and Speech technology at the Radboud University.</mdui:Description>
                     <mdui:DisplayName xml:lang="nl">Centre for Language and Speech Technology webservices en webapplicaties</mdui:DisplayName>
                     <mdui:Description xml:lang="nl">Webservices en webapplicaties ontwikkeld en/of onderhouden door het Centre of Language and Speech technology, van de Radboud Universiteit</mdui:Description>
-                    <mdui:InformationURL xml:lang="en">https://webservices-lst.science.ru.nl/portal/</mdui:InformationURL>
                     <mdui:Logo height="294" width="44">https://applejack.science.ru.nl/clst.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en">https://webservices-lst.science.ru.nl/portal/</mdui:InformationURL>
                     <mdui:Keywords xml:lang="en">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Language+Technology RU Radboud+University Text+mining Computational+linguistics Corpora</mdui:Keywords>
-                   <mdui:Keywords xml:lang="nl">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Taaltechnologie RU Radboud+Universiteit Text+mining Computationele+taalkunde Corpora</mdui:Keywords>
+                    <mdui:Keywords xml:lang="nl">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Taaltechnologie RU Radboud+Universiteit Text+mining Computationele+taalkunde Corpora</mdui:Keywords>
                     <mdui:PrivacyStatementURL xml:lang="en">https://applejack.science.ru.nl/privacy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://opensonarplus.cls.ru.nl/Shibboleth.sso/Login"/>
@@ -1908,7 +1908,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             </md:Extensions>
             <md:KeyDescriptor>
                 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>https://sp.opensonar.cls.ru.nl/shibboleth</ds:KeyName>
+                    <ds:KeyName>sp.opensonar.cls.ru.nl</ds:KeyName>
                     <ds:KeyName>opensonar.cls.ru.nl</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=opensonar.cls.ru.nl</ds:X509SubjectName>
