@@ -436,10 +436,10 @@
                         xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-            <md:KeyDescriptor>
-                <ds:KeyInfo>
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIGKjCCBRKgAwIBAgIQCxa0kBsonBX338rpeuui2DANBgkqhkiG9w0BAQsFADBk
+	    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIGKjCCBRKgAwIBAgIQCxa0kBsonBX338rpeuui2DANBgkqhkiG9w0BAQsFADBk
 MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
 QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
 Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHYxCzAJBgNVBAYT
@@ -472,9 +472,47 @@ AqgYgG7RO2v/SI18E4pB43C92Vb9uwgYvwgEw7yxRx2+cHIgr+Pitx8DOsD8HK4W
 R8KiGe76H96fEd3gXuv1GQhzXQDNUIuQEFssxdoTVKlYyTm81s6O2BuOe340Iuh7
 aISD7Gp+2qdKlWmO8UW60wk7w21HondpWXJBOoKNtAfG5iDAbGdnYsN+N6rCqWy5
 3k4erFdcobsBurkw/gjBwFa8fG95wh/32SdqRWJeMLH8sWBZXp8Xrckuv5sOig==</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>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</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      </md:KeyDescriptor>
+
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:AssertionConsumerService
@@ -604,30 +642,37 @@ aISD7Gp+2qdKlWmO8UW60wk7w21HondpWXJBOoKNtAfG5iDAbGdnYsN+N6rCqWy5
             <md:KeyDescriptor>
                 <ds:KeyInfo>
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIEYTCCA0mgAwIBAgIQIp6gFDuZ6VnJilIzPrnFvzANBgkqhkiG9w0BAQUFADA2
-MQswCQYDVQQGEwJOTDEPMA0GA1UEChMGVEVSRU5BMRYwFAYDVQQDEw1URVJFTkEg
-U1NMIENBMB4XDTEzMDQxOTAwMDAwMFoXDTE2MDUxNjIzNTk1OVowODEhMB8GA1UE
-CxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRMwEQYDVQQDEwpsYXQuY3NjLmZp
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxeInti6ywHVTSkzMdVwR
-4kTkapx06RcPwTRkFNtnIgKpe5XTfWewGh/h+EwYe9Fl/MNicdxo5SxPUyisNxSi
-w4cq8WEmLL9QfPxiDCbJbNEBJUc4XMgqeoNWnp0qYHIDqIAo9rVUqvI/hbkEexvN
-veMX8OXfpFBFrj6ZveDPhwi9/gJI4TZnw92h3Oo8GLtJvcXW/f7HgBuRnrCsUbJG
-WBEaiYWkcQeoWOPny5I+xCyleRP4vTfVrIkGrhaptaC1nrY0+rO98vBM0HC/LI8o
-M860aqpaWXZofJ5VweLHaGTXsr/yQdS3eB5KxcNKSY5uHWen4JzQwkgzk9gNidmA
-6QIDAQABo4IBZzCCAWMwHwYDVR0jBBgwFoAUDL2TaAzz3qujSWsrN1dH6pDjue0w
-HQYDVR0OBBYEFDk6rvjXR1evlWyclQU4Qe/sUPF+MA4GA1UdDwEB/wQEAwIFoDAM
-BgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNV
-HSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaAr
-hilodHRwOi8vY3JsLnRjcy50ZXJlbmEub3JnL1RFUkVOQVNTTENBLmNybDBtBggr
-BgEFBQcBAQRhMF8wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudGNzLnRlcmVuYS5v
-cmcvVEVSRU5BU1NMQ0EuY3J0MCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC50Y3Mu
-dGVyZW5hLm9yZzAVBgNVHREEDjAMggpsYXQuY3NjLmZpMA0GCSqGSIb3DQEBBQUA
-A4IBAQCNbkTiCfr3bX3DWgymcCJ6bRNKxGVoGg8bq9aZrokE9GNTuBYnJuSe5XNl
-11+4pNQszc+JItNy612M55agdQrArrtzDp5MGWH0SoVCcoYv3DGkiKhaQhJeUBqV
-jC+pHnekS6zfoVTN66KDHzU/JtJK3v8Bp3tudeAUlwXs7sSuiFSiD/Ua3qfZ21/v
-rkz1YmSz4bPS+bO477WiuDDTRHo5FSifBlWe46QQfM1beNCAiiBJZh0uyB6PPrD8
-CiBkuiUynwqLsQKjfkcSZa5W9a8spV7y8LmCAEtDk8l03p45TKRvWIgMAexg/60h
-TE5WJb+s+lUOs3IoVL33fpbG+Aor</ds:X509Certificate>
+                        <ds:X509Certificate>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</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
@@ -2190,54 +2235,6 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <md:KeyDescriptor>
               <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                 <ds:KeyName>Active</ds:KeyName>
-                <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
-                <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
-                <ds:X509Data>
-                  <ds:X509SubjectName>CN=lindat.mff.cuni.cz,O=Charles University in Prague,L=Praha 1,C=CZ</ds:X509SubjectName>
-                  <ds:X509Certificate>MIIFNjCCBB6gAwIBAgIQDWW2Dr7MgrU3STou4By7YDANBgkqhkiG9w0BAQsFADBk
-        MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-        QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-        Q0EgMzAeFw0xNTEyMTgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMGMxCzAJBgNVBAYT
-        AkNaMRAwDgYDVQQHEwdQcmFoYSAxMSUwIwYDVQQKExxDaGFybGVzIFVuaXZlcnNp
-        dHkgaW4gUHJhZ3VlMRswGQYDVQQDExJsaW5kYXQubWZmLmN1bmkuY3owggEiMA0G
-        CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD+Bn2MB6kISGLTZsipc/aScdKbsrKg
-        9n/M1XmOYhcim5Z9cYsvKdYmz7NRqj84Zw3+PePYQKHkXh+wHcsuHsLvzWdQCUKw
-        Rlbx+On0JBt2H4pi//hbG3HKApjEo9dgBOT4siIS0wr1YE2uI4DJHwpJUEaVR8fh
-        U8Meq1SEyFuv1Ms7WMnSyCrBEEYTwQvgcoip1D3lcCPIcNu18Ruxk2b1MNZJ0GwB
-        o2cxoh7zZIdED2rto9eE6LCWFnaQsnSg0O2IBvbG/fHYM7chR3Yij34wTRSE+3jx
-        x6jQeUrVh87Ipx6ci5rBHDQCc27Jdtq7y+qF7hA2S8El4/O5XT3QjRFRAgMBAAGj
-        ggHjMIIB3zAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
-        FgQUJKDyWJPPFFVPHDXZPi33vKtyAnswNQYDVR0RBC4wLIISbGluZGF0Lm1mZi5j
-        dW5pLmN6ghZ1ZmFsLXBvaW50Lm1mZi5jdW5pLmN6MA4GA1UdDwEB/wQEAwIFoDAd
-        BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwawYDVR0fBGQwYjAvoC2gK4Yp
-        aHR0cDovL2NybDMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwL6AtoCuG
-        KWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMEwGA1Ud
-        IARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRp
-        Z2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMG4GCCsGAQUFBwEBBGIwYDAkBggrBgEF
-        BQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMDgGCCsGAQUFBzAChixodHRw
-        Oi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNydDAMBgNVHRMB
-        Af8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCwlL6xMv9lUqkBtG90gNqsLlI98I/t
-        S5un5NDV/2enYSDH96/TGbwRbw8l9YWY7JYgP6adoRg4ic+qdW8sk+hVhWZ+iYRn
-        fryN2ITonIWj0A/FxeMpBBiuElbkayGi1rYsmJhUJ3IPNu4GTxSQ6UoL0LV/udva
-        sWKEt3mLdsHyM0IH4B5S7/lrBsw7/EtQWC+6+o+8+iNRMxvQlw0GEazq8cuA83Hl
-        bpOzpXInsFHyabbqV4cygIebofCd+uXcYQC+EAmfWKKp/FtJtnClMudLGbqeQreY
-        zD0BnQ6nkrkTHDGYMB1yU5EgC6dHRI3Jf5fKRqrTDvvYkWyUtmY41AeM
-        </ds:X509Certificate>
-                </ds:X509Data>
-              </ds:KeyInfo>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"></md:EncryptionMethod>
-              <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"></md:EncryptionMethod>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor>
-                    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                            <ds:KeyName>Standby</ds:KeyName>
                             <ds:KeyName>https://ufal-point.mff.cuni.cz/shibboleth/eduid/sp</ds:KeyName>
                             <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
                             <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
@@ -3155,280 +3152,91 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         ID="_2d4990d19e4519095ee99737af161554557b69df"
         entityID="http://www.clarin-pl.eu/shibboleth">
-        <md:Extensions
-            xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
-            <mdattr:EntityAttributes
-                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <md:Extensions>
+            <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
                     <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-                </saml:Attribute>
-                <saml:Attribute
-                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    Name="http://macedir.org/entity-category"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                     <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
-            <alg:DigestMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-            <alg:DigestMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-            <alg:DigestMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <alg:DigestMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-            <alg:DigestMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-            <alg:SigningMethod
-                xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
-                Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
         </md:Extensions>
-        <md:SPSSODescriptor
-            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-            <md:Extensions>
-                <mdui:UIInfo
-                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName
-                        xml:lang="en">CLARIN-PL repository</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="de">CLARIN-PL Repository</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="fi">CLARIN-PL arkistoon</mdui:DisplayName>
-                    <mdui:DisplayName
-                        xml:lang="pl">Repozytorum CLARIN-PL</mdui:DisplayName>
-                    <mdui:Description
-                        xml:lang="en">CLARIN-PL digital repository - Polish section of CLARIN ERIC</mdui:Description>
-                    <mdui:Description
-                        xml:lang="de">CLARIN-PL digitale Langzeitarchiv - Polnisch Abschnitt CLARIN ERIC</mdui:Description>
-                    <mdui:Description
-                        xml:lang="fi">CLARIN-PL digitaalinen arkistoon - Polish osa CLARIN ERIC</mdui:Description>
-                    <mdui:Description
-                        xml:lang="pl">Repozytorium CLARIN-PL - Polska część infrastruktury naukowej CLARIN ERIC</mdui:Description>
-                    <mdui:InformationURL
-                        xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
-                    <mdui:InformationURL
-                        xml:lang="pl">http://clarin-pl.eu/pl/</mdui:InformationURL>
-                    <mdui:Keywords
-                        xml:lang="en">CLARIN-PL language+resources corpus linguistics repository</mdui:Keywords>
-                    <mdui:PrivacyStatementURL
-                        xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mdui:PrivacyStatementURL>
-                    <mdui:Logo
-                        height="32"
-                        width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
-                </mdui:UIInfo>
-                <init:RequestInitiator
-                    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                    Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/Login"/>
-                <idpdisc:DiscoveryResponse
-                    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                    Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/Login"
-                    index="1"/>
-            </md:Extensions>
-            <md:KeyDescriptor>
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:KeyName>Active</ds:KeyName>
-                    <ds:KeyName>https://www.clarin-pl.eu/shibboleth</ds:KeyName>
-                    <ds:KeyName>www.clarin-pl.eu</ds:KeyName>
-                    <ds:X509Data>
-                        <ds:X509SubjectName>CN=www.clarin-pl.eu</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIDHDCCAgSgAwIBAgIJAJY4k9BoCNIOMA0GCSqGSIb3DQEBBQUAMBsxGTAXBgNV BAMTEHd3dy5jbGFyaW4tcGwuZXUwHhcNMTQwMTA5MTA0ODE2WhcNMTcwMTA4MTA0 ODE2WjAbMRkwFwYDVQQDExB3d3cuY2xhcmluLXBsLmV1MIIBIjANBgkqhkiG9w0B AQEFAAOCAQ8AMIIBCgKCAQEAvBHhZZZVue2D/m6KEnfbL/wufElA6XgLs0SqfGMh VILjElWD80BG7KElkqQxrwEBf09i+z9nBbZARvVi9JnonuCa6+rHIz3e6/IoXKrA jRlUJcUJp0FKLYmG+WlTWUNO+y2OtSWWMSe7ZeHnxDkRYXwY3lLXniOClXhdplso vVc3u2BjUXPH0zCVn7ajU7IczsemoA6iy2JFKHACC4OTDxFGUPEUK0mRjyd8Ovyx Kh3QdkPrUpHZ/6aBnmiztYV1wa3mZTtk3TOrxdA+/+x4UodG6K/WSo3TIs5h9s/4 c9IZyfi/8q9V3EODO8IBTCM+zDZ8fm7g1VJ9CYFEs8et/QIDAQABo2MwYTBABgNV HREEOTA3ghB3d3cuY2xhcmluLXBsLmV1hiNodHRwczovL3d3dy5jbGFyaW4tcGwu ZXUvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUx34UwYpPZgJBTVqSl3Xfn/d+XrEwDQYJ KoZIhvcNAQEFBQADggEBAFwYzUrC7K9CpxBpnD6WjqyKiMoSR+vnoZZq3+ZUiG/O uwiTwcErddkQLonV9L2eSuY6NQn+aFebaozIS/Zj5yXjwDo8fGEKSk4tSVUc4H+f RML3XnJ25XmaSi2myy5PIh97o/NZAil8/1ArHV4PGNzMic1UNzmZymzB6AdmOrVn W3DPk2honcInege0lU7RLULmgdtMVl/QCbEWDrJ8oq0bxYwoFrVCnZXFM7SHqEba W7A4zk79hxNAxNoqlUSnX0Tk2fQQXdSTjLXEF9WLUwfW86QlQdLLkaY9hco+w8NM SvKPZd5tNDWO1hE00kzKJDPhhJZs1wFS7Tf3SJ1M1D8= </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-                <md:EncryptionMethod
-                    Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-            </md:KeyDescriptor>
-            <md:ArtifactResolutionService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/Artifact/SOAP"
-                index="1"/>
-            <md:SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/SOAP"/>
-            <md:SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/Redirect"/>
-            <md:SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/POST"/>
-            <md:SingleLogoutService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/Artifact"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/POST"
-                index="1"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/POST-SimpleSign"
-                index="2"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/Artifact"
-                index="3"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/ECP"
-                index="4"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML/POST"
-                index="5"/>
-            <md:AssertionConsumerService
-                Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML/Artifact"
-                index="6"/>
-            <md:AttributeConsumingService
-                index="1">
-                <md:ServiceName
-                    xml:lang="en">CLARIN-PL repository</md:ServiceName>
-                <md:ServiceDescription
-                    xml:lang="en">CLARIN-PL digital repository - Polish section of CLARIN ERIC</md:ServiceDescription>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonPrincipalName"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="mail"
-                    Name="urn:mace:dir:attribute-def:mail"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="mail"
-                    Name="urn:oid:0.9.2342.19200300.100.1.3"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="cn"
-                    Name="urn:mace:dir:attribute-def:cn"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="cn"
-                    Name="urn:oid:2.5.4.3"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonTargetedID"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="true"/>
-                <md:RequestedAttribute
-                    FriendlyName="givenName"
-                    Name="urn:mace:dir:attribute-def:givenName"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="false"/>
-                <md:RequestedAttribute
-                    FriendlyName="givenName"
-                    Name="urn:oid:2.5.4.42"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="false"/>
-                <md:RequestedAttribute
-                    FriendlyName="surname"
-                    Name="urn:mace:dir:attribute-def:sn"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="false"/>
-                <md:RequestedAttribute
-                    FriendlyName="surname"
-                    Name="urn:oid:2.5.4.4"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="false"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonScopedAffiliation"
-                    Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation"
-                    NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-                    isRequired="false"/>
-                <md:RequestedAttribute
-                    FriendlyName="eduPersonScopedAffiliation"
-                    Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9"
-                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-                    isRequired="false"/>
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+                <md:Extensions>
+                    <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/Login" index="1"/>
+                    <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                        <mdui:DisplayName xml:lang="en">CLARIN-PL repository</mdui:DisplayName>
+                        <mdui:DisplayName xml:lang="pl">Repozytorum CLARIN-PL</mdui:DisplayName>
+                        <mdui:DisplayName xml:lang="de">CLARIN-PL Repository</mdui:DisplayName>
+                        <mdui:Description xml:lang="en">CLARIN-PL digital repository - Polish section of CLARIN ERIC</mdui:Description>
+                        <mdui:Description xml:lang="pl">Repozytorium CLARIN-PL - Polska część infrastruktury naukowej CLARIN ERIC</mdui:Description>
+                        <mdui:Description xml:lang="de">CLARIN-PL digitale Langzeitarchiv - Polnisch Abschnitt CLARIN ERIC</mdui:Description>
+                        <mdui:Logo height="32" width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
+                        <mdui:InformationURL xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
+                        <mduiPrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mduiPrivacyStatementURL>
+                    </mdui:UIInfo>
+                </md:Extensions>
+                <md:KeyDescriptor>
+                    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                        <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
+                        <ds:X509Data>
+                            <ds:X509SubjectName>CN=https://www.clarin-pl.eu/dspace</ds:X509SubjectName>
+                            <ds:X509Certificate>MIIDWTCCAkGgAwIBAgIJAI4ikEO5CpmIMA0GCSqGSIb3DQEBBQUAMCoxKDAmBgNV BAMTH2h0dHBzOi8vd3d3LmNsYXJpbi1wbC5ldS9kc3BhY2UwHhcNMTcwMTEzMDkx MzA3WhcNMjAwMTEzMDkxMzA3WjAqMSgwJgYDVQQDEx9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA p1U2m2csfaB8Ic48iqq2PMXSkglyk6L+Wm0vf2wRDzNda3BfGBCiutJ41XGa4zQU 1H1ohFxgEQGg/O1rCKi1oQd4hvp+AkWnCGyrtjs2mMP31T3xOwZoLh7afR3DFf3v eUoFXl+d2oH3uUzYWjPBxlx6vLPc1QkKmaDYTzsjvKB38IoCVNeb0pLl+OuBOJBr 7McM5V34ewsvRdkbtYKp5IGhhRHwfrUL6T3q3N5rpy7WF59nM8CzkYMTeZZ1ewHw qysxTcbEG9T34UaOhcGrz7HHr8m9pt9MApEXepXi1EYyyBvLqzvuhw9lQYj3MGiH 7b6javsrGo9nRZpBD+XX+QIDAQABo4GBMH8wXgYDVR0RBFcwVYIfaHR0cHM6Ly93 d3cuY2xhcmluLXBsLmV1L2RzcGFjZYYyaHR0cHM6Ly9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlL3NoaWJib2xldGgwHQYDVR0OBBYEFEe6vSMjVKHRveVE wZVI5dqUW4mEMA0GCSqGSIb3DQEBBQUAA4IBAQCDiaiSRu6OXg2tBIfAXplqyApX coGLsIb1XHTinZPQItsK/+JYXggO2AWhEFi2PIMDl+RkUR6PS9zBWPcNHuNIzKVg Fh9rkvwoH8I9Gs2HbElZngdQJrfe3sos8xpruCHFa8jcrK9vWkktrTlXzmWBrerk fy+FISTJ+BkP7zmSN9z49+uEGuCot2iiudoQIqoOyyd9ziNZO2glsqSrQtQYljZI 3kRL0Meb8+yHTRkgTkWWRr9/pmTW6P20EQyNl9uZc9q8BB54itO3QWpU90KWcjB1 NTW+IX6eAxr/peOpk3HIz/osH+VeiwaBLlYUFLHOTYNQRCkwQMs3o0NevJJf</ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                </md:KeyDescriptor>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SLO/Artifact"/>
+            <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/Artifact" index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML/POST" index="5"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://clarin-pl.eu/shibboleth/Shibboleth.sso/SAML/Artifact" index="6"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">CLARIN-PL repository</md:ServiceName>
+                <md:ServiceName xml:lang="de">CLARIN-PL Repository</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">CLARIN-PL digital repository - Polish section of CLARIN ERIC</md:ServiceDescription>
+                <md:ServiceDescription xml:lang="de">CLARIN-PL digitales Langzeitarchiv - Polnische Sektion des CLARIN ERIC</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
             </md:AttributeConsumingService>
-        </md:SPSSODescriptor>
+            </md:SPSSODescriptor>
         <md:Organization>
-            <md:OrganizationName
-                xml:lang="en">CLARIN-PL, Wroclaw University of Technology, Poland</md:OrganizationName>
-            <md:OrganizationName
-                xml:lang="pl">CLARIN-PL, Politechnika Wrocławska</md:OrganizationName>
-            <md:OrganizationDisplayName
-                xml:lang="en">CLARIN-PL, Wroclaw University of Technology</md:OrganizationDisplayName>
-            <md:OrganizationDisplayName
-                xml:lang="pl">CLARIN-PL</md:OrganizationDisplayName>
-            <md:OrganizationURL
-                xml:lang="en">http://clarin-pl.eu/en/</md:OrganizationURL>
-            <md:OrganizationURL
-                xml:lang="pl">http://clarin-pl.eu/pl/</md:OrganizationURL>
+            <md:OrganizationName xml:lang="en">CLARIN-PL, Wroclaw University of Technology, Poland</md:OrganizationName>
+            <md:OrganizationName xml:lang="de">CLARIN-PL, Wroclaw University of Technology, Poland</md:OrganizationName>
+            <md:OrganizationName xml:lang="pl">CLARIN-PL, Politechnika Wrocławska</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">CLARIN-PL, Wroclaw University of Technology</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="de">CLARIN-PL, Wroclaw University of Technology</md:OrganizationDisplayName>
+            <md:OrganizationDisplayName xml:lang="pl">CLARIN-PL</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">http://clarin-pl.eu/en/</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="pl">http://clarin-pl.eu/pl/</md:OrganizationURL>
         </md:Organization>
-        <md:ContactPerson
-            contactType="technical">
+        <md:ContactPerson contactType="technical">
             <md:GivenName>Marcin</md:GivenName>
             <md:SurName>Pol</md:SurName>
             <md:EmailAddress>mailto:marcin.pol@pwr.edu.pl</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson
-            contactType="support">
+        <md:ContactPerson contactType="support">
             <md:GivenName>Marcin</md:GivenName>
             <md:SurName>Pol</md:SurName>
             <md:EmailAddress>mailto:dspace@clarin-pl.eu</md:EmailAddress>
         </md:ContactPerson>
-        <md:ContactPerson
-            contactType="administrative">
+        <md:ContactPerson contactType="administrative">
             <md:GivenName>Marcin</md:GivenName>
             <md:SurName>Pol</md:SurName>
             <md:EmailAddress>mailto:dspace@clarin-pl.eu</md:EmailAddress>
         </md:ContactPerson>
-    </md:EntityDescriptor>
+    </md:EntityDescriptor>        
     <md:EntityDescriptor
         xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
         xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
@@ -4011,40 +3819,60 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
                     <ds:X509Data>
                         <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut fuer Phonetik und Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
-                        <ds:X509Certificate>MIIGTzCCBTegAwIBAgIMHHzRtfr47eeg0ZteMA0GCSqGSIb3DQEBCwUAMIGQMQsw
-CQYDVQQGEwJERTEPMA0GA1UECBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjEx
-MC8GA1UEChMoTHVkd2lnLU1heGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hl
-bjEPMA0GA1UEAxMGTE1VLUNBMRkwFwYJKoZIhvcNAQkBFgpwa2lAbG11LmRlMB4X
-DTE2MTIyMzE2NDMxN1oXDTE4MTIyMzE2NDMxN1owgcYxCzAJBgNVBAYTAkRFMQ8w
-DQYDVQQIDAZCYXllcm4xETAPBgNVBAcMCE11ZW5jaGVuMTEwLwYDVQQKDChMdWR3
-aWctTWF4aW1pbGlhbnMtVW5pdmVyc2l0YWV0IE11ZW5jaGVuMTYwNAYDVQQLDC1J
-bnN0aXR1dCBmdWVyIFBob25ldGlrIHVuZCBTcHJhY2h2ZXJhcmJlaXR1bmcxKDAm
-BgNVBAMMH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGUwggEiMA0GCSqG
-SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnJLHMBJVacTuyDHYT3l5sY8MbLi1ODDO3
-LLOHymN0uHwqN4lo8AYVsMwtWudWLkj0QzfhcRog4az4g9DJI+REz7yRQ6l2Gsd5
-Ln79MlBE55h0AGitH3qXSfONUfIu/jOctyQqCrqmAFnYhWUF0nLnQqwWyvF+8w9e
-ZLa+F2u9k+f1SorJwrt3XpMLAVzzboSM9RrCZC3uA7QkLjdezgjbqk939vqGRUpj
-2sA5Nm74pI04A7hh3KTMXOrtUKempbBart6iXLdedFcR5pIpPXdjnnzb/YgtnWYw
-jZQQuxzwgmLxAruAS6BCJ5ziG0i+hEukXOlYLMcYBojnxFixC8j1AgMBAAGjggJv
-MIICazBZBgNVHSAEUjBQMBEGDysGAQQBga0hgiwBAQQDBTARBg8rBgEEAYGtIYIs
-AgEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjAIBgZngQwBAgIw
-CQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIG
-CCsGAQUFBwMBMB0GA1UdDgQWBBRdN6knq8YKX/hCnfEYqWydnlX/5zAfBgNVHSME
-GDAWgBR5h3hqL/qbvCNPlKajdx0eDpSADzAqBgNVHREEIzAhgh9jbGFyaW4ucGhv
-bmV0aWsudW5pLW11ZW5jaGVuLmRlMIGLBgNVHR8EgYMwgYAwPqA8oDqGOGh0dHA6
-Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jcmwvY2Fjcmwu
-Y3JsMD6gPKA6hjhodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1j
-YS9wdWIvY3JsL2NhY3JsLmNybDCB2QYIKwYBBQUHAQEEgcwwgckwMwYIKwYBBQUH
-MAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBIBggr
-BgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2Ev
-cHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5w
-Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQw
-DQYJKoZIhvcNAQELBQADggEBAKn1JHajjLMfHEaKpVlHcbRmYIUwxy/7e7iToRnY
-4HzV1xIztiXA0pXRwzL2YxkCdkFH3QJSjTIwzW4XdX2erE15oG6XtlbZycjEnHAW
-qv7j4Glw8psjHcScqq2e8P1XN+QXSwZ5aaIdys2E58qEDVde/iZmpVFwC9Ftfevq
-ZS4dA4Zjg4BdktVz5edq2qWnbsW6yMSQ34Hl0FrdoyL4j9izHGj7PkJF0G17yR9H
-mtgKt9/KfSkK8YnZO+eJtvPnut1rOIqyerfer5O5sWUFaeS4PHGpTyNdB+wZztYM
-x1TIfhRjlcLqYwvwFOhj5b/Ecr0B2QAwHeEhMq9or7o072A=</ds:X509Certificate>
+                        <ds:X509Certificate>MIIJ/jCCCOagAwIBAgIMICDzpbK/zJRVseazMA0GCSqGSIb3DQEBCwUAMIGNMQsw
+CQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVz
+IERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4t
+UEtJMSUwIwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE4
+MTEzMDE3NDA0MFoXDTIwMTEyOTE3NDA0MFowgZ0xCzAJBgNVBAYTAkRFMQ8wDQYD
+VQQIDAZCYXllcm4xETAPBgNVBAcMCE11ZW5jaGVuMTEwLwYDVQQKDChMdWR3aWct
+TWF4aW1pbGlhbnMtVW5pdmVyc2l0YWV0IE11ZW5jaGVuMQ0wCwYDVQQLDARWSS40
+MSgwJgYDVQQDDB9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4PkJx1LYdbmqQQwSw9ujOvfBBX8g
+F4flYJDG4j5Lciu+xJC+cu+1CEZhQ7RgnTLuXiyLVmfQRaralyOh4CEMmyn9a3IF
+mvqysRLU7CItX9KQ87CQ4oqxaUyeFUzg4vxb9cjukCsQ+H06LhHSf/tghn+lMBtS
+uQukQ38ZIEqJIvi0nPDPuBKnhdRPGM5PTGauOsCHnZtbAw7eFNnA7n9A4/y8cfZj
+vASu/QtAa9Yk+Vhc5gqlBzrVwLvjaU4JJmpw2291RmWYX8+pFSLhYHZaoUfW1fKA
+9IwPGIGbQeeVQU0G3IkHiAnBY+N78a46lo1H3tdWDcqc80wyRvAgpwMpoQIDAQAB
+o4IGSjCCBkYwWQYDVR0gBFIwUDAIBgZngQwBAgIwDQYLKwYBBAGBrSGCLB4wDwYN
+KwYBBAGBrSGCLAEBBDARBg8rBgEEAYGtIYIsAQEEAwgwEQYPKwYBBAGBrSGCLAIB
+BAMIMAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUF
+BwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUlbErS+pqWoRZme1BqiSAaBaxuQowHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwKgYDVR0RBCMwIYIfY2xhcmlu
+LnBob25ldGlrLnVuaS1tdWVuY2hlbi5kZTCBjQYDVR0fBIGFMIGCMD+gPaA7hjlo
+dHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NybC9j
+YWNybC5jcmwwP6A9oDuGOWh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDCB2wYIKwYBBQUHAQEEgc4wgcswMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NT
+UDBJBggrBgEFBQcwAoY9aHR0cDovL2NkcDEucGNhLmRmbi5kZS9kZm4tY2EtZ2xv
+YmFsLWcyL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDBJBggrBgEFBQcwAoY9aHR0cDov
+L2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1Yi9jYWNlcnQvY2Fj
+ZXJ0LmNydDCCA9MGCisGAQQB1nkCBAIEggPDBIIDvwO9AHYAb1N2rDHwMRnYmQCk
+URX/dxUcEdkCwQApBo2yCJo32RMAAAFnZbVhFAAABAMARzBFAiEAiBMOKXcfrNLg
+bMEhwW0bsQc2ZBDl4n2KYZYrqJkafeQCIAl0wZDBkpsHWZnPxCkpLuVclTokycP8
+sBdn6BKIjbdrAHYAVYHUwhaQNgFK6gubVzxT8MDkOHhwJQgXL6OqHQcT0wwAAAFn
+ZbViGQAABAMARzBFAiAlKjxwFOT8BEogNNY3ZPElnX178bvd4EgfipbK3oXPLQIh
+AKnYzT88u8ccZ/PMKA4MVtKP8F88+kzoP7mMN7Sd4WxdAHUAqucLfzy41WbIbC8W
+l5yfRF9pqw60U1WJsvd6AwEE880AAAFnZbVhZwAABAMARjBEAiBWOk/8W9+SuH0O
+5iup4auM3DcMbd752KSw8Jwt04hZRQIgCZ1ChpBccwA+fygPRm8Pu6CGZLwzC0Nk
+8PcK6Pz1/okAdQCkuQmQtBhYFIe7E6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAWdl
+tWEqAAAEAwBGMEQCIHNtpGm/RU534xVRGEFXLyPHlk/eMDrJZJnLBUPYBd+QAiBU
+u08AVgZ2jUrilXfOcgA44oAxd5Qn/Uj4zTLjrKcbyQB1ALvZ37wfinG1k5Qjl6qS
+e0c4V5UKq1LoGpCWZDaOHtGFAAABZ2W1YWAAAAQDAEYwRAIgOYCQ+JGa9tZaRDK9
+gwxhJN9hh7WXU/ct/ngCsoqu+NACICEX+jAG+uTYVuoqDj0ZYfLMoJ2pbmfphfEr
+GU3igzCdAHYA7ku9t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFnZbVh
+YwAABAMARzBFAiBJybdxbrSNmnNRPQevUQbXOtt2yfON3j2ce3RrUbg52wIhAP8V
+mBs3Snu5tWknfWSlmqX4+jv4fdWKK6cY+mhpU3rsAHYAXqdz+d9WwOe1Nkh90Eng
+MnqRmgyEoRIShBh1loFxRVgAAAFnZbVnUwAABAMARzBFAiEAxMVYrJ3w4yx9Z0ZZ
+xqx7LDb3vRXJ0myo9F+HPxzA0VICIA0rXoTTaZqDEVJr71E0nt2QTK9avNt8+ESO
+WTEPkKr4AHYAsh4FzIuizYogTodm+Su5iiUgZ2va+nDnsklTLe+LkF4AAAFnZbVj
+zQAABAMARzBFAiEAqXe/4Q6cLeKvBXhlcUM8KJtAnf7dri5ZT9v2ob2t0zMCIHV8
+e2Gk27GMy9GG2R8YxsbNbezblerk+VoF+fVI0hl1MA0GCSqGSIb3DQEBCwUAA4IB
+AQAmYOY6kkhmEjLLHgGuHJiYAJgFtxh9EIuuKTYDPkCMkIIZqdidz8Wgu56nklzU
+2R2Q03e4L4M+niXtaRM7Odwteuz3xJo7KhA6SVOzKSSyU/HfRHxj30jJhf+ZjxPh
+2Lt3Z/DYzOO9jtcltupvWm1cqhCbA/cQpcm+0/tYLqJ77KYRJJGCVqCPN/eLwGXL
+LKzhINSdPTPSBecdaNzXYAN957IDPzMGa+tU3mbOi+Ct18TDvryy00ZV8U0l+HDh
+GGpi2wetD/hCeRAkT0Tl9qx8iq/nJkqlRFlG8YynHVEsMpq14jO5hDdFJnnL8uIL
+rw0WrW2zJLOsFTziL7eQfXNm</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
