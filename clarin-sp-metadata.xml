@@ -2416,7 +2416,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
             <OrganizationDisplayName
                 xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationDisplayName>
             <OrganizationURL
-                xml:lang="en">portal.clarin.inl.nl</OrganizationURL>
+                xml:lang="en">https://portal.clarin.inl.nl</OrganizationURL>
         </Organization>
         <ContactPerson
             contactType="administrative">
