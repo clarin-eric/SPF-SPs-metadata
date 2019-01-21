@@ -2652,6 +2652,16 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
+            <md:KeyDescriptor>
+                <ds:KeyInfo>
+                    <ds:KeyName>webanno.sfs.uni-tuebingen.de </ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName> CN=webanno.sfs.uni-tuebingen.de
+                        </ds:X509SubjectName>
+                        <ds:X509Certificate> MIIEQTCCAqmgAwIBAgIJAOY0/FgaHFvuMA0GCSqGSIb3DQEBCwUAMCcxJTAjBgNV BAMTHHdlYmFubm8uc2ZzLnVuaS10dWViaW5nZW4uZGUwHhcNMTkwMTIxMTUzNDMz WhcNMjMwMTIwMTUzNDMzWjAnMSUwIwYDVQQDExx3ZWJhbm5vLnNmcy51bmktdHVl YmluZ2VuLmRlMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAwgKStnau VbS67V/ma351aDb1Rts/sLtkyT98jwo1oDEkcodqMz4h3AuVHNKOTjC5zTbfK7oQ 0UbkiaXL+HOT1GZKUnwvjSR6nwJky25N2+XwjiKwM6XO1RQ/VeMAA/4IPGk2FWpn 15jP+KN6lDlTS122dFQ0eUK/CHe47Euxh5699QEQ/5yknTslN9n2/Sh4Lc6AflOS WLtxDbjXxZRPpxvdMW6ZAT95kL8Kq7LeqoClqyixM4o7MjmMW843eusVrRk7OqlB wfjT9M7+c+1EuPNNCguzRY644ihXeP58HEYcSarWp1nG1h3dz9xGXet9+HrHYkeO jibiSDRnNt7GEPGPKOaHYtyZ9vByDBANuqt7PBYJLFv/N+od5xRvGePGTFP5G2LH O7JTBdDSawzjxEeWT3IdYCtRoldd2GHJw5us3StG3P+MefzM2hCbMRDpaCvkl5kp vWbXxu1SChKSuL8WbXAC+QJatv9pZolV5dj+A9NRLhz0Vjy/vHP2UUp7AgMBAAGj cDBuME0GA1UdEQRGMESCHHdlYmFubm8uc2ZzLnVuaS10dWViaW5nZW4uZGWGJGh0 dHBzOi8vd2ViYW5uby5zZnMudW5pLXR1ZWJpbmdlbi5kZTAdBgNVHQ4EFgQUzatT XInRZ1bNiXXXXEny6P/V2uswDQYJKoZIhvcNAQELBQADggGBADZJzdBQjMyny0Ku afwE5kDqaJrCQeHw8lqE8IQO4hyYQYv5kFlkDYp6YWbcDE62uu3xIC6adSPb9wcN BOhVEhWBJXnEwK69rPNSqvN4OS+cL8+NlKJBmJj+0pbFSVMG/sxVL5zK9BIRrKO/ +4jPCnN35FdMQC4SPPXj5cz35neC3+e2S6Ox/e62bmDOZjYoOKaXipGTQM4jhnl6 1+ehDpUjmj07R8s33dbMFZ3yviSMbya2yR5v1DuGlKTzdTJR/P6j3AXwfq76TadL ZeoWwsUuSqUDEIgO/JfI9l+GI/foK3WQ7fwrJZM8aPoDVgMp5Rsh3T/oAHAe35j6 1XnzdJpcuzAcm7lmrkR1SpxXTrNKrhePKNmSjPm2zieFY/4qgWy1yFCMps6gmPPM PtbP7J3R+XL2eQ1WOuqJzHc0c6XJFQjVSutLRZEOl4xzZJH/oWIoKRhTx7Li5RtV +Ja+YtKmcvPmlp9355pYGi6NTvWL7Eld7g+gyaBb5RSp7sTY+g== </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
             <md:AssertionConsumerService
                 index="1"
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
