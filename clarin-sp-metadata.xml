@@ -8749,7 +8749,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://auth.diginfra.net/Saml2/disco?foo=bar" index="1"/>
                 <mdui:UIInfo>
                     <mdui:DisplayName xml:lang="en">CLARIAH NL IdP</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">CLARIAH proxy Identity Provider</ns2:Description>
+                    <mdui:Description xml:lang="en">CLARIAH proxy Identity Provider</mdui:Description>
                     <mdui:Keywords xml:lang="en">CLARIAH</mdui:Keywords>
                     <mdui:Logo height="83" width="300">https://www.clariah.nl/images/logo/clariah/CLARIAH_logoT.png</mdui:Logo>
                     <mdui:InformationURL xml:lang="en">https://clariah.nl/</mdui:InformationURL>
