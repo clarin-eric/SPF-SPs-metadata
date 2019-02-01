@@ -8756,7 +8756,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:PrivacyStatementURL xml:lang="en">https://clariah.nl/</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-            <ds:KeyDescriptor use="signing">
+            <md:KeyDescriptor use="signing">
                 <ds:KeyInfo>
                     <ds:X509Data>
                         <ds:X509Certificate>MIIDaDCCAlCgAwIBAgIJAL3v7eafm2d/MA0GCSqGSIb3DQEBCwUAMF0xCzAJBgNV
@@ -8781,7 +8781,7 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
                         </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
-            </ds:KeyDescriptor>
+            </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.diginfra.net/Saml2/acs/post" index="1"/>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.diginfra.net/Saml2/acs/redirect" index="2"/>
