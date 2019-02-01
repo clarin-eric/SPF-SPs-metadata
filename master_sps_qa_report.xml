@@ -8730,63 +8730,76 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
     </md:EntityDescriptor>
     
     <!-- CLARIAH-IAA -->
-    <ns0:EntityDescriptor xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns1="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.diginfra.net/Saml2/proxy_saml2_backend.xml">
-    <ns0:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <ns0:Extensions>
-        <ns1:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://auth.diginfra.net/Saml2/disco?foo=bar" index="1"/>
-        <ns2:UIInfo>
-            <ns2:DisplayName xml:lang="en">CLARIAH NL</ns2:DisplayName>
-            <ns2:Description xml:lang="en">CLARIAH IDP</ns2:Description>
-            <ns2:Keywords xml:lang="en">CLARIAH</ns2:Keywords>
-            <ns2:Logo height="100" width="100">http://idp.logo.url/</ns2:Logo>
-            <ns2:InformationURL xml:lang="en">https://clariah.nl/</ns2:InformationURL>
-            <ns2:PrivacyStatementURL xml:lang="en">https://clariah.nl/</ns2:PrivacyStatementURL>
-        </ns2:UIInfo>
-        </ns0:Extensions>
-        <ns0:KeyDescriptor use="signing">
-        <ns3:KeyInfo>
-            <ns3:X509Data>
-            <ns3:X509Certificate>MIIDaDCCAlCgAwIBAgIJAL3v7eafm2d/MA0GCSqGSIb3DQEBCwUAMF0xCzAJBgNV
-    BAYTAk5MMRUwEwYDVQQKDAxzYXRvc2FfcHJveHkxFTATBgNVBAMMDHNhdG9zYV9w
-    cm94eTEgMB4GCSqGSIb3DQEJARYRaW5mb0BzYXRvc2FfcHJveHkwHhcNMTkwMjAx
-    MTA1NzQ0WhcNMjkwMTI5MTA1NzQ0WjBdMQswCQYDVQQGEwJOTDEVMBMGA1UECgwM
-    c2F0b3NhX3Byb3h5MRUwEwYDVQQDDAxzYXRvc2FfcHJveHkxIDAeBgkqhkiG9w0B
-    CQEWEWluZm9Ac2F0b3NhX3Byb3h5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
-    CgKCAQEA64Aqjpp25auuL0Sh5vYc0RrqQ/kpLqfcjo6gpzIE/GI3xiJrxygvXvKg
-    ADXgRN03PEQFAIDDH+C/STgYXcOPFvrC6Hh48Cd0t21ScLemfx/PJzHPKj94nisl
-    YhlMN5v9X/Ol3lKL1uab6UrbPXPyudKiniviiq03H9eJMXeekoD/W+dT8MNxSb9A
-    j3sjJ0KWHIW6oFcChSaG+EnWrsvi/DO0cpasgtuB6BiR3HMm4CUdj2SM8jq2oLfp
-    T8yWN4KsjYmMBAXQW8xh3fDwzq5DJ789cSwdPYX1Yp+LMxAq1TJM0oJhtrq81h9Y
-    Fyue6ILvyGvrDALL50T1OxKXNTsEaQIDAQABoyswKTAnBgNVHREEIDAeggxzYXRv
-    c2FfcHJveHmCDiouc2F0b3NhX3Byb3h5MA0GCSqGSIb3DQEBCwUAA4IBAQCI+JXI
-    Sj6Mf952RGh1uKqN+iOs4BcNW8jj7j7D8137w1seFOsI+0fB8xIgLzPLfh73vXPE
-    qmSvggAXKs1fVtOd+dg2ACbZrm1Vp4dv3LkHYpePGzw7Zu/D/xWM8aePgM/LvEdv
-    IaCUKfugi+jRD1c+fAYc72FJ7M/C7P+MDcAn6k84nQpldhx6hHKBlsYn5178lpG9
-    w2ZZ9yVqJzUBRYfQ9QauqPMTNOZhGO1BOYO4ipyonif1lxSKs3Co9bH0qFULrDf9
-    OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
-    5SVK/GQXb7xtudKZ
-    </ns3:X509Certificate>
-            </ns3:X509Data>
-        </ns3:KeyInfo>
-        </ns0:KeyDescriptor>
-        <ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
-        <ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.diginfra.net/Saml2/acs/post" index="1"/>
-        <ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.diginfra.net/Saml2/acs/redirect" index="2"/>
-    </ns0:SPSSODescriptor>
-    <ns0:Organization>
-        <ns0:OrganizationName xml:lang="en">CLARIAH NL</ns0:OrganizationName>
-        <ns0:OrganizationDisplayName xml:lang="en">CLARIAH NL</ns0:OrganizationDisplayName>
-        <ns0:OrganizationURL xml:lang="en">https://www.clariah.nl/</ns0:OrganizationURL>
-    </ns0:Organization>
-    <ns0:ContactPerson contactType="technical">
-        <ns0:GivenName>Clariah Support</ns0:GivenName>
-        <ns0:EmailAddress>login@clariah.nl</ns0:EmailAddress>
-    </ns0:ContactPerson>
-    <ns0:ContactPerson contactType="support">
-        <ns0:GivenName>Clariah Support</ns0:GivenName>
-        <ns0:EmailAddress>login@clariah.nl</ns0:EmailAddress>
-    </ns0:ContactPerson>
-    </ns0:EntityDescriptor>
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.diginfra.net/Saml2/proxy_saml2_backend.xml">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                    Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
+        <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <md:Extensions>
+                <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://auth.diginfra.net/Saml2/disco?foo=bar" index="1"/>
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">CLARIAH NL IdP</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">CLARIAH proxy Identity Provider</mdui:Description>
+                    <mdui:Keywords xml:lang="en">CLARIAH</mdui:Keywords>
+                    <mdui:Logo height="83" width="300">https://www.clariah.nl/images/logo/clariah/CLARIAH_logoT.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en">https://clariah.nl/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://clariah.nl/</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </md:Extensions>
+            <md:KeyDescriptor use="signing">
+                <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIDaDCCAlCgAwIBAgIJAL3v7eafm2d/MA0GCSqGSIb3DQEBCwUAMF0xCzAJBgNV
+BAYTAk5MMRUwEwYDVQQKDAxzYXRvc2FfcHJveHkxFTATBgNVBAMMDHNhdG9zYV9w
+cm94eTEgMB4GCSqGSIb3DQEJARYRaW5mb0BzYXRvc2FfcHJveHkwHhcNMTkwMjAx
+MTA1NzQ0WhcNMjkwMTI5MTA1NzQ0WjBdMQswCQYDVQQGEwJOTDEVMBMGA1UECgwM
+c2F0b3NhX3Byb3h5MRUwEwYDVQQDDAxzYXRvc2FfcHJveHkxIDAeBgkqhkiG9w0B
+CQEWEWluZm9Ac2F0b3NhX3Byb3h5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA64Aqjpp25auuL0Sh5vYc0RrqQ/kpLqfcjo6gpzIE/GI3xiJrxygvXvKg
+ADXgRN03PEQFAIDDH+C/STgYXcOPFvrC6Hh48Cd0t21ScLemfx/PJzHPKj94nisl
+YhlMN5v9X/Ol3lKL1uab6UrbPXPyudKiniviiq03H9eJMXeekoD/W+dT8MNxSb9A
+j3sjJ0KWHIW6oFcChSaG+EnWrsvi/DO0cpasgtuB6BiR3HMm4CUdj2SM8jq2oLfp
+T8yWN4KsjYmMBAXQW8xh3fDwzq5DJ789cSwdPYX1Yp+LMxAq1TJM0oJhtrq81h9Y
+Fyue6ILvyGvrDALL50T1OxKXNTsEaQIDAQABoyswKTAnBgNVHREEIDAeggxzYXRv
+c2FfcHJveHmCDiouc2F0b3NhX3Byb3h5MA0GCSqGSIb3DQEBCwUAA4IBAQCI+JXI
+Sj6Mf952RGh1uKqN+iOs4BcNW8jj7j7D8137w1seFOsI+0fB8xIgLzPLfh73vXPE
+qmSvggAXKs1fVtOd+dg2ACbZrm1Vp4dv3LkHYpePGzw7Zu/D/xWM8aePgM/LvEdv
+IaCUKfugi+jRD1c+fAYc72FJ7M/C7P+MDcAn6k84nQpldhx6hHKBlsYn5178lpG9
+w2ZZ9yVqJzUBRYfQ9QauqPMTNOZhGO1BOYO4ipyonif1lxSKs3Co9bH0qFULrDf9
+OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
+5SVK/GQXb7xtudKZ
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.diginfra.net/Saml2/acs/post" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.diginfra.net/Saml2/acs/redirect" index="2"/>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">CLARIAH NL</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">CLARIAH NL</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">https://www.clariah.nl/</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Clariah Support</md:GivenName>
+            <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>Clariah Support</md:GivenName>
+            <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 
          <!-- Språkbanken -->
          <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5213d67b809ca67eec1aaa1bfb494ef5b6499609" entityID="https://sp.spraakbanken.gu.se/shibboleth/clarin">
