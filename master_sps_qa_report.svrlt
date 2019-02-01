@@ -1284,12 +1284,6 @@
    </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
-   <svrl:failed-assert test="exists($SAML_2_requested_attributes_nodes)"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][59]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://auth.diginfra.net/Saml2/proxy_saml2_backend.xml
-                Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.
-                Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
