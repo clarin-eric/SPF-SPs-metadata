@@ -8789,15 +8789,22 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
         <md:Organization>
             <md:OrganizationName xml:lang="en">CLARIAH NL</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">CLARIAH NL</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">https://www.clariah.nl/</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en">mailto:https://www.clariah.nl/</md:OrganizationURL>
         </md:Organization>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>To be filled in</md:GivenName>
+            <md:SurName>To be filled in</md:SurName>
+            <md:EmailAddress>mailto:to_be_filled_in@incomplete.nl</md:EmailAddress>
+        </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Clariah Support</md:GivenName>
-            <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+            <md:SurName>Clariah Support</md:SurName>
+            <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>Clariah Support</md:GivenName>
-            <md:EmailAddress>login@clariah.nl</md:EmailAddress>
+             <md:SurName>Clariah Support</md:SurName>
+            <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
