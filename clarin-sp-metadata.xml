@@ -8197,16 +8197,94 @@ qQTazPv0mtY=
                 </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor use="signing">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo>
+                    <ds:KeyName>clarino.uio.no</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE/zCCA+egAwIBAgIRAJIQa4w218rFk4verorM7VswDQYJKoZIhvcNAQELBQAwZDELMAkGA1UEBhMCTkwxFjAUBgNVBAgTDU5vb3JkLUhvbGxhbmQxEjAQBgNVBAcTCUFtc3RlcmRhbTEPMA0GA1UEChMGVEVSRU5BMRgwFgYDVQQDEw9URVJFTkEgU1NMIENBIDIwHhcNMTUwNjMwMDAwMDAwWhcNMTgwNjI5MjM1OTU5WjA8MSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQxFzAVBgNVBAMTDmNsYXJpbm8udWlvLm5vMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzWtCRL9wf3nor/dUkG00Xg4jmr6nZX5qxOCHDX0rRJB8VWU52kfQyKWViv5BtcsnIweBqJ75sobprZuKcDILRf36F4i4D6lPcxFvDac1DA6smlfP+sMyf5ntfJkc6sMjgDQ/2CQKFvcwYlhJSXStR1Hc95+GRXK4ou30XXv6MaU98OR+laQuOqsQB6VBh60iRDXNrKhrePG3HJujn79VcLB4N79Tk5GV+BuqvZP8Mh+cTK6q/XN5EM13/CMXdPtng0Fh9RPJNBYgA/cmXHFdEM+/9HfdUOfyByeYEHOuKXUr/dLJQ7tYUds494qxCdkEckt0o92OxpRTztsvI+YcDQIDAQABo4IB0jCCAc4wHwYDVR0jBBgwFoAUW9CKHJoyW+C13ZZUG+GGKLD9tr0wHQYDVR0OBBYEFMUNIwQsUMuAUNhNsROf0SU9l2aZMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNybDBsBggrBgEFBQcBAQRgMF4wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9URVJFTkFTU0xDQTIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMIGABgNVHREEeTB3gg5jbGFyaW5vLnVpby5ub4ISZWRkLmNsYXJpbm8udWlvLm5vghVnbG9zc2EuY2xhcmluby51aW8ubm+CEmxhcC5jbGFyaW5vLnVpby5ub4ISc3ZuLmNsYXJpbm8udWlvLm5vghJ3d3cuY2xhcmluby51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBADHuVaZ2ymF0bhfypJB0w2XfTXTcO7wbkuRLcrvv+3BQgHGv5j5xTjK6AesSxXE0KCtpJnTrR8TEQFbLhuUs0m4VyHlW8DivkccYbSzGvTewkxWSuxUFQhBWKhfNX4bPV88w9aLog358lHQBiqwY+cJYW8+Y48w49noiZDTCY7Z8jMbVj8jTVqC6bMELBMeV4stgzkT/RBFc1rroBhDeyjElugiph5RUtjwP/H/tAlLO241jMtIfbzRV/CwF9aEfpe/fAj4PXAWnK+KYz3ZqG4Q9s3GRNQZQfuLoEilwGvLSfhmdDXHQdDlubsO6iCUOwH0YwVRHP2OY95WzeMuD+H8=</ds:X509Certificate>
+                        <ds:X509SubjectName>CN=clarino.uio.no,OU=USIT,O=Universitetet i Oslo,L=Oslo,C=NO</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIG6zCCBdOgAwIBAgIQB3WFWvNaxCIFBpY8X3nLfzANBgkqhkiG9w0BAQsFADBk
+                            MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+                            QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+                            Q0EgMzAeFw0xODA2MTUwMDAwMDBaFw0yMDA2MTkxMjAwMDBaMGMxCzAJBgNVBAYT
+                            Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+                            bzENMAsGA1UECxMEVVNJVDEXMBUGA1UEAxMOY2xhcmluby51aW8ubm8wggEiMA0G
+                            CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDe2VuLrv9a9LN4HBmLa4L0C8ImhRA
+                            uAdG+B6wahV7vMY5sVRm+YupfpQCImB3u1C2xbAI0j4q76sfpU6nN/x7y5YoZq/o
+                            gPuTu1Kv6i5oDhzdr6eCrRdODv2f2KSf7hAqLAu/A2J57TLZwKFWSdK55SwdgW/p
+                            cxfgYcHKM73fx78xGU+R8ng7PcRhS+cgH+zLKmuvL98s5B4FljF45ZDj7G3ucjlK
+                            3VW7nhZTn7K74K6L/X6ImLJcAWLRg8viiZ9wsMkDefIOGrErN7N8NGHDgMJuKOlO
+                            WtSxf/NtWakrtYcdsYzyzhv24/EvOxP98imXau6U6wcWwZG8zXMxo41DAgMBAAGj
+                            ggOYMIIDlDAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
+                            FgQUd9hUrbhOlvE1nbiYm8OD3a7dVSUwagYDVR0RBGMwYYIOY2xhcmluby51aW8u
+                            bm+CEnd3dy5jbGFyaW5vLnVpby5ub4ISbGFwLmNsYXJpbm8udWlvLm5vghNnb2xk
+                            LmNsYXJpbm8udWlvLm5vghJzdm4uY2xhcmluby51aW8ubm8wDgYDVR0PAQH/BAQD
+                            AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+g
+                            LaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAv
+                            oC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmww
+                            TAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93
+                            d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQG
+                            CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKG
+                            LGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwG
+                            A1UdEwEB/wQCMAAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB2AKS5CZC0GFgU
+                            h7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAABZAIwG6cAAAQDAEcwRQIgNwlusuGj
+                            pQ8NigzfpODRw0gUesVTmQ1liT7tOzsYeO8CIQDvwWRukrYv40KSK9x4In8KLg9G
+                            Ej18sraYVWOq9CnuhQB1AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMP
+                            AAABZAIwHGcAAAQDAEYwRAIgU2dY7ieBUPARnHIPCC/DqVb5/F0yj5aQYqzmZ64h
+                            mP4CIHQ/pLz2oODv7pLCZpsjeO7ExXS5CdlShjIPH7tXoQRvAHUAu9nfvB+KcbWT
+                            lCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFkAjAdEgAABAMARjBEAiBKi1cBMLsj
+                            uU9BczlHdaGuZGp8HikNZ+5UCzMTmUmXSAIgCLafYu18FWWbmg+tybzyL4wuIyI6
+                            O8/LOQUP7bNQooIwDQYJKoZIhvcNAQELBQADggEBAA5WeCn5U7uot0+MXp6pyU2C
+                            YBrjnJmMzBlLvXntP4PQSNNLxPcPEZDjbvQzFQ7uGNNMw8ujgKsP9bzuWNbipR0O
+                            5PDweRLaFrnSgzsFRi9/5Kf1j2OXiBXs0bZ0UqmSwuw5D3tKWmDsRJzZZhPq9Fty
+                            cSmIXxGI4daCavAJnWoGlanL/e+btMMtzlnjw0WOHpdbXrti3KQK5i9oSjC3o5b3
+                            rnM6FnqZBUMpxjlZdMhQS8M+yN2XSNx9MJIoJEqUJX/A/eN+Ya0uEui7F5HIG5FP
+                            DXXWWkYQv6CfXkKnAHzV5k7+uuG/ESNqJumyLp96i46SWC02x3hCJcBIWuP54PA=
+                        </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
             <md:KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo>
+                    <ds:KeyName>clarino.uio.no</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE/zCCA+egAwIBAgIRAJIQa4w218rFk4verorM7VswDQYJKoZIhvcNAQELBQAwZDELMAkGA1UEBhMCTkwxFjAUBgNVBAgTDU5vb3JkLUhvbGxhbmQxEjAQBgNVBAcTCUFtc3RlcmRhbTEPMA0GA1UEChMGVEVSRU5BMRgwFgYDVQQDEw9URVJFTkEgU1NMIENBIDIwHhcNMTUwNjMwMDAwMDAwWhcNMTgwNjI5MjM1OTU5WjA8MSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQxFzAVBgNVBAMTDmNsYXJpbm8udWlvLm5vMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzWtCRL9wf3nor/dUkG00Xg4jmr6nZX5qxOCHDX0rRJB8VWU52kfQyKWViv5BtcsnIweBqJ75sobprZuKcDILRf36F4i4D6lPcxFvDac1DA6smlfP+sMyf5ntfJkc6sMjgDQ/2CQKFvcwYlhJSXStR1Hc95+GRXK4ou30XXv6MaU98OR+laQuOqsQB6VBh60iRDXNrKhrePG3HJujn79VcLB4N79Tk5GV+BuqvZP8Mh+cTK6q/XN5EM13/CMXdPtng0Fh9RPJNBYgA/cmXHFdEM+/9HfdUOfyByeYEHOuKXUr/dLJQ7tYUds494qxCdkEckt0o92OxpRTztsvI+YcDQIDAQABo4IB0jCCAc4wHwYDVR0jBBgwFoAUW9CKHJoyW+C13ZZUG+GGKLD9tr0wHQYDVR0OBBYEFMUNIwQsUMuAUNhNsROf0SU9l2aZMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNybDBsBggrBgEFBQcBAQRgMF4wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9URVJFTkFTU0xDQTIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMIGABgNVHREEeTB3gg5jbGFyaW5vLnVpby5ub4ISZWRkLmNsYXJpbm8udWlvLm5vghVnbG9zc2EuY2xhcmluby51aW8ubm+CEmxhcC5jbGFyaW5vLnVpby5ub4ISc3ZuLmNsYXJpbm8udWlvLm5vghJ3d3cuY2xhcmluby51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBADHuVaZ2ymF0bhfypJB0w2XfTXTcO7wbkuRLcrvv+3BQgHGv5j5xTjK6AesSxXE0KCtpJnTrR8TEQFbLhuUs0m4VyHlW8DivkccYbSzGvTewkxWSuxUFQhBWKhfNX4bPV88w9aLog358lHQBiqwY+cJYW8+Y48w49noiZDTCY7Z8jMbVj8jTVqC6bMELBMeV4stgzkT/RBFc1rroBhDeyjElugiph5RUtjwP/H/tAlLO241jMtIfbzRV/CwF9aEfpe/fAj4PXAWnK+KYz3ZqG4Q9s3GRNQZQfuLoEilwGvLSfhmdDXHQdDlubsO6iCUOwH0YwVRHP2OY95WzeMuD+H8=</ds:X509Certificate>
+                        <ds:X509SubjectName>CN=clarino.uio.no,OU=USIT,O=Universitetet i Oslo,L=Oslo,C=NO</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIG6zCCBdOgAwIBAgIQB3WFWvNaxCIFBpY8X3nLfzANBgkqhkiG9w0BAQsFADBk
+                            MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+                            QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+                            Q0EgMzAeFw0xODA2MTUwMDAwMDBaFw0yMDA2MTkxMjAwMDBaMGMxCzAJBgNVBAYT
+                            Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+                            bzENMAsGA1UECxMEVVNJVDEXMBUGA1UEAxMOY2xhcmluby51aW8ubm8wggEiMA0G
+                            CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDe2VuLrv9a9LN4HBmLa4L0C8ImhRA
+                            uAdG+B6wahV7vMY5sVRm+YupfpQCImB3u1C2xbAI0j4q76sfpU6nN/x7y5YoZq/o
+                            gPuTu1Kv6i5oDhzdr6eCrRdODv2f2KSf7hAqLAu/A2J57TLZwKFWSdK55SwdgW/p
+                            cxfgYcHKM73fx78xGU+R8ng7PcRhS+cgH+zLKmuvL98s5B4FljF45ZDj7G3ucjlK
+                            3VW7nhZTn7K74K6L/X6ImLJcAWLRg8viiZ9wsMkDefIOGrErN7N8NGHDgMJuKOlO
+                            WtSxf/NtWakrtYcdsYzyzhv24/EvOxP98imXau6U6wcWwZG8zXMxo41DAgMBAAGj
+                            ggOYMIIDlDAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
+                            FgQUd9hUrbhOlvE1nbiYm8OD3a7dVSUwagYDVR0RBGMwYYIOY2xhcmluby51aW8u
+                            bm+CEnd3dy5jbGFyaW5vLnVpby5ub4ISbGFwLmNsYXJpbm8udWlvLm5vghNnb2xk
+                            LmNsYXJpbm8udWlvLm5vghJzdm4uY2xhcmluby51aW8ubm8wDgYDVR0PAQH/BAQD
+                            AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+g
+                            LaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAv
+                            oC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmww
+                            TAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93
+                            d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQG
+                            CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKG
+                            LGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwG
+                            A1UdEwEB/wQCMAAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB2AKS5CZC0GFgU
+                            h7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAABZAIwG6cAAAQDAEcwRQIgNwlusuGj
+                            pQ8NigzfpODRw0gUesVTmQ1liT7tOzsYeO8CIQDvwWRukrYv40KSK9x4In8KLg9G
+                            Ej18sraYVWOq9CnuhQB1AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMP
+                            AAABZAIwHGcAAAQDAEYwRAIgU2dY7ieBUPARnHIPCC/DqVb5/F0yj5aQYqzmZ64h
+                            mP4CIHQ/pLz2oODv7pLCZpsjeO7ExXS5CdlShjIPH7tXoQRvAHUAu9nfvB+KcbWT
+                            lCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFkAjAdEgAABAMARjBEAiBKi1cBMLsj
+                            uU9BczlHdaGuZGp8HikNZ+5UCzMTmUmXSAIgCLafYu18FWWbmg+tybzyL4wuIyI6
+                            O8/LOQUP7bNQooIwDQYJKoZIhvcNAQELBQADggEBAA5WeCn5U7uot0+MXp6pyU2C
+                            YBrjnJmMzBlLvXntP4PQSNNLxPcPEZDjbvQzFQ7uGNNMw8ujgKsP9bzuWNbipR0O
+                            5PDweRLaFrnSgzsFRi9/5Kf1j2OXiBXs0bZ0UqmSwuw5D3tKWmDsRJzZZhPq9Fty
+                            cSmIXxGI4daCavAJnWoGlanL/e+btMMtzlnjw0WOHpdbXrti3KQK5i9oSjC3o5b3
+                            rnM6FnqZBUMpxjlZdMhQS8M+yN2XSNx9MJIoJEqUJX/A/eN+Ya0uEui7F5HIG5FP
+                            DXXWWkYQv6CfXkKnAHzV5k7+uuG/ESNqJumyLp96i46SWC02x3hCJcBIWuP54PA=
+                        </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
