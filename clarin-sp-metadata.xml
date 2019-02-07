@@ -436,49 +436,10 @@
                         xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-	    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:X509Data>
-          <ds:X509Certificate>MIIGKjCCBRKgAwIBAgIQCxa0kBsonBX338rpeuui2DANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHYxCzAJBgNVBAYT
-AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
-Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxFDASBgNVBAMT
-C2tvcnAuY3NjLmZpMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsxcs
-U2WZzYRfXQfg/wXyGP2H+ndQ/HWrMK+w+RDaHVY7taKs4Lz0v6Am/tPouQRd4W9J
-73+Qfxt7M/S6+0zU7WstqNweAVzp62np9TvgR6JwHPA+dkj6XT/hn65/Lyp9+HPO
-+hj4gJPevdd3jT+rstxEmag8j59I2jqf0FBeAWkXCMVOfwWnY3f6GUTUQPYsN4/j
-0B9F8zPI81LdY+5BQ60P+hxVPiGtjJ0PUZi3SkIAFdhp359ZUMVVDbgAGyWDzFbW
-O00Uuxvcx/hViOi72UBoh8AIk+PefYZ5E/U9w5L5NWOJgFsAJ/9lZ3ueuyYpMGAf
-kjR+PtHwXu+EKGYd11md5jzM3DGFdkvKWP0PMXYY/4BROd9eDRJsb7LRn+iRNvSi
-JDgT2exQe7W+YKrNjLhd3KHnMpLFbQO5ZXv1R5WVKCJ9X4cEGX3rpmfVa6oCukdp
-ltlWgwAc1td9c22Tr9MH5NNl+W6QKY/kNTnR/n4VUHNcErLeBqdOMTXOSr308VGd
-hXnqoGi8fy3FF41EZEYwJGWLwCGOHQyVOcaV0yyNbt9ldSqBCuSlgFVEyI03DEc5
-5ol/F+zfQn6RH7HDLKWoevoT9pS/T0w5kCJ5Gwm7vTKRd4U41FddGGWHqQ0eWgDP
-ygDsbcv61VhpDxGpao51d93HeMk3V6IIZAKYee0CAwEAAaOCAcQwggHAMB8GA1Ud
-IwQYMBaAFGf9iCAUJ5jHCdIlGbvpURFjdVBiMB0GA1UdDgQWBBSctUDCsw0kngnC
-LUt9n1JjJoMcHTAWBgNVHREEDzANggtrb3JwLmNzYy5maTAOBgNVHQ8BAf8EBAMC
-BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6At
-oCuGKWh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMC+g
-LaArhilodHRwOi8vY3JsNC5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDBM
-BgNVHSAERTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3
-dy5kaWdpY2VydC5jb20vQ1BTMAgGBmeBDAECAjBuBggrBgEFBQcBAQRiMGAwJAYI
-KwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA4BggrBgEFBQcwAoYs
-aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcnQwDAYD
-VR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEADgHSFAOebn02NccLPPrpSmiS
-tHvApD8yjaF835nWDTuiVQtQbqmBnZQke6rAWTAcZAVA64rCtXzFQSYRvuA/MoWb
-AqgYgG7RO2v/SI18E4pB43C92Vb9uwgYvwgEw7yxRx2+cHIgr+Pitx8DOsD8HK4W
-R8KiGe76H96fEd3gXuv1GQhzXQDNUIuQEFssxdoTVKlYyTm81s6O2BuOe340Iuh7
-aISD7Gp+2qdKlWmO8UW60wk7w21HondpWXJBOoKNtAfG5iDAbGdnYsN+N6rCqWy5
-3k4erFdcobsBurkw/gjBwFa8fG95wh/32SdqRWJeMLH8sWBZXp8Xrckuv5sOig==</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:X509Data>
-          <ds:X509Certificate>MIIFxzCCA6+gAwIBAgIJAPpACXfu18aIMA0GCSqGSIb3DQEBDQUAMHkxCzAJBgNV
+            <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIFxzCCA6+gAwIBAgIJAPpACXfu18aIMA0GCSqGSIb3DQEBDQUAMHkxCzAJBgNV
 BAYTAkZJMRAwDgYDVQQIDAdVdXNpbWFhMQ4wDAYDVQQHDAVFc3BvbzEvMC0GA1UE
 CgwmQ1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxFzAVBgNV
 BAMMDnNwLmtvcnAuY3NjLmZpMCAXDTE4MTIyMTExNTA0MFoYDzk5OTkxMjMxMTE1
@@ -509,10 +470,9 @@ QPlnybd0Yhszo1I3ERIMtpI7luDDDTWqElZDIfM/QFt/2bD308OHm/ZmM5nS8+sm
 rt5Ms6WqmvyetYXddlZF+Lujdcl+h2rRBICt27C0640ewl5a+RYAfS1/pt1VbvAc
 LpYvAOGyEPVLJuYU5YCqqrc+YNVWj+3oWPY1l3/3zdNp0ntT1tB6ZhAiTGE/jwMD
 ajxN++AjIHvz0SxDyCbue9Ub8H4+YdK6URY9QtQGeaYTJGm/3xWFWpuyZQ==</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-      </md:KeyDescriptor>
-
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:AssertionConsumerService
@@ -673,45 +633,6 @@ tTMk+OyUzHAC7ZlQ2SPJUe4bM9jQeQSOlcs7RQWgv8EDbTLVz0ntOy92e1FH4Hnj
 lK5q6uLz0WDULxfQbmxpnJ35E8TbsH6Vw/2FQeaYYL9YRH05Xuz1+jFYtCBKaU8Q
 /LfwNJGCyVHWct8WjiuOPVeXKMSqbhYUHSdM5SC1m4glXUhSUCKlpK5HfA6iYg6+
 8ODSkffnTE1chjaGf/BpC7o61NQoqOpknf2n4CKLyGrPv5iRs+D99PA=</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor>
-                <ds:KeyInfo>
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIGKDCCBRCgAwIBAgIQCDaLAFllh/G6tbAenGqfPjANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHUxCzAJBgNVBAYT
-AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
-Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxEzARBgNVBAMT
-CmxhdC5jc2MuZmkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDu8pR7
-2qpd6+Thp9tGnVNmK6Un3I70VyOn8RJHPnfDrwowSkNU/XVXIDHtm2PjgNm5wa6M
-1evbY2fGO2oEKhgsukPZGqAPqXsN1lMZQLm7e/i7XU6hNSOvuLnaFpgC4AGh0+Vh
-PZT2a0RtT7KWp5oS7WCmDPrb0I3LA0PHoj0W0XfOJkXOqGwv8Z3D8egeNs/3ngBC
-/O7+5Y0NjU+OV82r4iBdVfDT01aglUGN3A9yH9m9divd8M0T25VxzdwzvAEacW/T
-Mh6nJwKNSU900CO1OEioIgBuXO7lH8QTGyLClmLKERxlQN8CnH8J9caYzCddFBYC
-/sw5n20Xc0Uft7WRm13tAxKywIk26r3gjAPIFSploIIuM/BN4u/IENy1KkCHkgCx
-2FnqhCZvboIPZkfvz7wejYmnuncCGr5nVnVWlm7t1gJ+DwEGGTaIp2bZ81I/J0jF
-UtJlmV7dukVfubt+wyQ/CxIcxx3ergynPohhl9BZ4cnrTu0n3QJKCX+1/flcvl6o
-GN6LrUepvmjplAmQjgw7VkdWeMt0dhxknKVAwmXYWNCvSt5oFtoOKcrokxaNv6bB
-n6HD75a1ij6GZdoVS896RQfOrp7AuTPbp4j/5jD2QhY9QXU5H6VkqPUhKptDXund
-O7t8/9o0ttHeDlrvQR9x1mJ3G41Swq8MUm2wJQIDAQABo4IBwzCCAb8wHwYDVR0j
-BBgwFoAUZ/2IIBQnmMcJ0iUZu+lREWN1UGIwHQYDVR0OBBYEFE3NZhcDyD8VXRHh
-1kp6mOzhlbgkMBUGA1UdEQQOMAyCCmxhdC5jc2MuZmkwDgYDVR0PAQH/BAQDAgWg
-MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaAr
-hilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAvoC2g
-K4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwTAYD
-VR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cu
-ZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQGCCsG
-AQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKGLGh0
-dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwGA1Ud
-EwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAIPfZhgYmF5XEzM4h9fDKcgY+0Og
-OOjHTBRXCzTaIdNMFMq/eHZHGYQHbXcwhv4eayasnTLN+K31rnKNx532JKaQZWD0
-L+lvXyyP4MvRztlhWLpFoO74XBIKJjDRug+baE6rkpvDDzTDk2tUbVOCDRW71Xuy
-ALR+iipzKaxCynoPejzIwLPvckad7JUGszueVpgtH31bL2HLh7NrKnHIUpOcbgKN
-jOEqVCzeo06iawzNDcZ8T6LbMAVXFMe1GmCL8UVC69J2cEvh2IBL7RXnSrOOSu2/
-u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
