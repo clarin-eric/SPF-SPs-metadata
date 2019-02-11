@@ -314,12 +314,6 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="local:has_Entity_Category($REFEDS_EC, .)"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][51]">
-      <svrl:text>https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata
-                There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.
-                Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:failed-assert test="local:has_Entity_Category($REFEDS_EC, .)"
                        location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][52]">
@@ -2085,12 +2079,6 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="exists($administrative_mailto_URIs) and (every $mailto_URI in $administrative_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][51]">
-      <svrl:text>https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata
-                Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
-                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:failed-assert test="exists($administrative_mailto_URIs) and (every $mailto_URI in $administrative_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
