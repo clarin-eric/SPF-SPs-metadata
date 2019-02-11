@@ -436,49 +436,10 @@
                         xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-	    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:X509Data>
-          <ds:X509Certificate>MIIGKjCCBRKgAwIBAgIQCxa0kBsonBX338rpeuui2DANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHYxCzAJBgNVBAYT
-AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
-Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxFDASBgNVBAMT
-C2tvcnAuY3NjLmZpMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsxcs
-U2WZzYRfXQfg/wXyGP2H+ndQ/HWrMK+w+RDaHVY7taKs4Lz0v6Am/tPouQRd4W9J
-73+Qfxt7M/S6+0zU7WstqNweAVzp62np9TvgR6JwHPA+dkj6XT/hn65/Lyp9+HPO
-+hj4gJPevdd3jT+rstxEmag8j59I2jqf0FBeAWkXCMVOfwWnY3f6GUTUQPYsN4/j
-0B9F8zPI81LdY+5BQ60P+hxVPiGtjJ0PUZi3SkIAFdhp359ZUMVVDbgAGyWDzFbW
-O00Uuxvcx/hViOi72UBoh8AIk+PefYZ5E/U9w5L5NWOJgFsAJ/9lZ3ueuyYpMGAf
-kjR+PtHwXu+EKGYd11md5jzM3DGFdkvKWP0PMXYY/4BROd9eDRJsb7LRn+iRNvSi
-JDgT2exQe7W+YKrNjLhd3KHnMpLFbQO5ZXv1R5WVKCJ9X4cEGX3rpmfVa6oCukdp
-ltlWgwAc1td9c22Tr9MH5NNl+W6QKY/kNTnR/n4VUHNcErLeBqdOMTXOSr308VGd
-hXnqoGi8fy3FF41EZEYwJGWLwCGOHQyVOcaV0yyNbt9ldSqBCuSlgFVEyI03DEc5
-5ol/F+zfQn6RH7HDLKWoevoT9pS/T0w5kCJ5Gwm7vTKRd4U41FddGGWHqQ0eWgDP
-ygDsbcv61VhpDxGpao51d93HeMk3V6IIZAKYee0CAwEAAaOCAcQwggHAMB8GA1Ud
-IwQYMBaAFGf9iCAUJ5jHCdIlGbvpURFjdVBiMB0GA1UdDgQWBBSctUDCsw0kngnC
-LUt9n1JjJoMcHTAWBgNVHREEDzANggtrb3JwLmNzYy5maTAOBgNVHQ8BAf8EBAMC
-BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6At
-oCuGKWh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMC+g
-LaArhilodHRwOi8vY3JsNC5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDBM
-BgNVHSAERTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3
-dy5kaWdpY2VydC5jb20vQ1BTMAgGBmeBDAECAjBuBggrBgEFBQcBAQRiMGAwJAYI
-KwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA4BggrBgEFBQcwAoYs
-aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcnQwDAYD
-VR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEADgHSFAOebn02NccLPPrpSmiS
-tHvApD8yjaF835nWDTuiVQtQbqmBnZQke6rAWTAcZAVA64rCtXzFQSYRvuA/MoWb
-AqgYgG7RO2v/SI18E4pB43C92Vb9uwgYvwgEw7yxRx2+cHIgr+Pitx8DOsD8HK4W
-R8KiGe76H96fEd3gXuv1GQhzXQDNUIuQEFssxdoTVKlYyTm81s6O2BuOe340Iuh7
-aISD7Gp+2qdKlWmO8UW60wk7w21HondpWXJBOoKNtAfG5iDAbGdnYsN+N6rCqWy5
-3k4erFdcobsBurkw/gjBwFa8fG95wh/32SdqRWJeMLH8sWBZXp8Xrckuv5sOig==</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:X509Data>
-          <ds:X509Certificate>MIIFxzCCA6+gAwIBAgIJAPpACXfu18aIMA0GCSqGSIb3DQEBDQUAMHkxCzAJBgNV
+            <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIFxzCCA6+gAwIBAgIJAPpACXfu18aIMA0GCSqGSIb3DQEBDQUAMHkxCzAJBgNV
 BAYTAkZJMRAwDgYDVQQIDAdVdXNpbWFhMQ4wDAYDVQQHDAVFc3BvbzEvMC0GA1UE
 CgwmQ1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxFzAVBgNV
 BAMMDnNwLmtvcnAuY3NjLmZpMCAXDTE4MTIyMTExNTA0MFoYDzk5OTkxMjMxMTE1
@@ -509,10 +470,9 @@ QPlnybd0Yhszo1I3ERIMtpI7luDDDTWqElZDIfM/QFt/2bD308OHm/ZmM5nS8+sm
 rt5Ms6WqmvyetYXddlZF+Lujdcl+h2rRBICt27C0640ewl5a+RYAfS1/pt1VbvAc
 LpYvAOGyEPVLJuYU5YCqqrc+YNVWj+3oWPY1l3/3zdNp0ntT1tB6ZhAiTGE/jwMD
 ajxN++AjIHvz0SxDyCbue9Ub8H4+YdK6URY9QtQGeaYTJGm/3xWFWpuyZQ==</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-      </md:KeyDescriptor>
-
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:AssertionConsumerService
@@ -673,45 +633,6 @@ tTMk+OyUzHAC7ZlQ2SPJUe4bM9jQeQSOlcs7RQWgv8EDbTLVz0ntOy92e1FH4Hnj
 lK5q6uLz0WDULxfQbmxpnJ35E8TbsH6Vw/2FQeaYYL9YRH05Xuz1+jFYtCBKaU8Q
 /LfwNJGCyVHWct8WjiuOPVeXKMSqbhYUHSdM5SC1m4glXUhSUCKlpK5HfA6iYg6+
 8ODSkffnTE1chjaGf/BpC7o61NQoqOpknf2n4CKLyGrPv5iRs+D99PA=</ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </md:KeyDescriptor>
-            <md:KeyDescriptor>
-                <ds:KeyInfo>
-                    <ds:X509Data>
-                        <ds:X509Certificate>MIIGKDCCBRCgAwIBAgIQCDaLAFllh/G6tbAenGqfPjANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xNTEyMjgwMDAwMDBaFw0xOTAxMDQxMjAwMDBaMHUxCzAJBgNVBAYT
-AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
-Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxEzARBgNVBAMT
-CmxhdC5jc2MuZmkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDu8pR7
-2qpd6+Thp9tGnVNmK6Un3I70VyOn8RJHPnfDrwowSkNU/XVXIDHtm2PjgNm5wa6M
-1evbY2fGO2oEKhgsukPZGqAPqXsN1lMZQLm7e/i7XU6hNSOvuLnaFpgC4AGh0+Vh
-PZT2a0RtT7KWp5oS7WCmDPrb0I3LA0PHoj0W0XfOJkXOqGwv8Z3D8egeNs/3ngBC
-/O7+5Y0NjU+OV82r4iBdVfDT01aglUGN3A9yH9m9divd8M0T25VxzdwzvAEacW/T
-Mh6nJwKNSU900CO1OEioIgBuXO7lH8QTGyLClmLKERxlQN8CnH8J9caYzCddFBYC
-/sw5n20Xc0Uft7WRm13tAxKywIk26r3gjAPIFSploIIuM/BN4u/IENy1KkCHkgCx
-2FnqhCZvboIPZkfvz7wejYmnuncCGr5nVnVWlm7t1gJ+DwEGGTaIp2bZ81I/J0jF
-UtJlmV7dukVfubt+wyQ/CxIcxx3ergynPohhl9BZ4cnrTu0n3QJKCX+1/flcvl6o
-GN6LrUepvmjplAmQjgw7VkdWeMt0dhxknKVAwmXYWNCvSt5oFtoOKcrokxaNv6bB
-n6HD75a1ij6GZdoVS896RQfOrp7AuTPbp4j/5jD2QhY9QXU5H6VkqPUhKptDXund
-O7t8/9o0ttHeDlrvQR9x1mJ3G41Swq8MUm2wJQIDAQABo4IBwzCCAb8wHwYDVR0j
-BBgwFoAUZ/2IIBQnmMcJ0iUZu+lREWN1UGIwHQYDVR0OBBYEFE3NZhcDyD8VXRHh
-1kp6mOzhlbgkMBUGA1UdEQQOMAyCCmxhdC5jc2MuZmkwDgYDVR0PAQH/BAQDAgWg
-MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaAr
-hilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAvoC2g
-K4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwTAYD
-VR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cu
-ZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQGCCsG
-AQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKGLGh0
-dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwGA1Ud
-EwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAIPfZhgYmF5XEzM4h9fDKcgY+0Og
-OOjHTBRXCzTaIdNMFMq/eHZHGYQHbXcwhv4eayasnTLN+K31rnKNx532JKaQZWD0
-L+lvXyyP4MvRztlhWLpFoO74XBIKJjDRug+baE6rkpvDDzTDk2tUbVOCDRW71Xuy
-ALR+iipzKaxCynoPejzIwLPvckad7JUGszueVpgtH31bL2HLh7NrKnHIUpOcbgKN
-jOEqVCzeo06iawzNDcZ8T6LbMAVXFMe1GmCL8UVC69J2cEvh2IBL7RXnSrOOSu2/
-u6rNJlWkYCvlInc3MkWPxtgF8OqCZwcqjcAlmUD9/I3ReN2J2nkBis1zTVA=</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
@@ -2350,19 +2271,11 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                         width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>
                 </mdui:UIInfo>
             </Extensions>
-            <KeyDescriptor use="encryption">
-                <ds:KeyInfo
-                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                    <ds:X509Data>
-                        <ds:X509Certificate> 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 </ds:X509Certificate>
-                    </ds:X509Data>
-                </ds:KeyInfo>
-            </KeyDescriptor>
             <KeyDescriptor>
                 <ds:KeyInfo
                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                     <ds:X509Data>
-                        <ds:X509Certificate> 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 </ds:X509Certificate>
+                        <ds:X509Certificate>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</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </KeyDescriptor>
@@ -8284,16 +8197,94 @@ qQTazPv0mtY=
                 </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor use="signing">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo>
+                    <ds:KeyName>clarino.uio.no</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE/zCCA+egAwIBAgIRAJIQa4w218rFk4verorM7VswDQYJKoZIhvcNAQELBQAwZDELMAkGA1UEBhMCTkwxFjAUBgNVBAgTDU5vb3JkLUhvbGxhbmQxEjAQBgNVBAcTCUFtc3RlcmRhbTEPMA0GA1UEChMGVEVSRU5BMRgwFgYDVQQDEw9URVJFTkEgU1NMIENBIDIwHhcNMTUwNjMwMDAwMDAwWhcNMTgwNjI5MjM1OTU5WjA8MSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQxFzAVBgNVBAMTDmNsYXJpbm8udWlvLm5vMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzWtCRL9wf3nor/dUkG00Xg4jmr6nZX5qxOCHDX0rRJB8VWU52kfQyKWViv5BtcsnIweBqJ75sobprZuKcDILRf36F4i4D6lPcxFvDac1DA6smlfP+sMyf5ntfJkc6sMjgDQ/2CQKFvcwYlhJSXStR1Hc95+GRXK4ou30XXv6MaU98OR+laQuOqsQB6VBh60iRDXNrKhrePG3HJujn79VcLB4N79Tk5GV+BuqvZP8Mh+cTK6q/XN5EM13/CMXdPtng0Fh9RPJNBYgA/cmXHFdEM+/9HfdUOfyByeYEHOuKXUr/dLJQ7tYUds494qxCdkEckt0o92OxpRTztsvI+YcDQIDAQABo4IB0jCCAc4wHwYDVR0jBBgwFoAUW9CKHJoyW+C13ZZUG+GGKLD9tr0wHQYDVR0OBBYEFMUNIwQsUMuAUNhNsROf0SU9l2aZMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNybDBsBggrBgEFBQcBAQRgMF4wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9URVJFTkFTU0xDQTIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMIGABgNVHREEeTB3gg5jbGFyaW5vLnVpby5ub4ISZWRkLmNsYXJpbm8udWlvLm5vghVnbG9zc2EuY2xhcmluby51aW8ubm+CEmxhcC5jbGFyaW5vLnVpby5ub4ISc3ZuLmNsYXJpbm8udWlvLm5vghJ3d3cuY2xhcmluby51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBADHuVaZ2ymF0bhfypJB0w2XfTXTcO7wbkuRLcrvv+3BQgHGv5j5xTjK6AesSxXE0KCtpJnTrR8TEQFbLhuUs0m4VyHlW8DivkccYbSzGvTewkxWSuxUFQhBWKhfNX4bPV88w9aLog358lHQBiqwY+cJYW8+Y48w49noiZDTCY7Z8jMbVj8jTVqC6bMELBMeV4stgzkT/RBFc1rroBhDeyjElugiph5RUtjwP/H/tAlLO241jMtIfbzRV/CwF9aEfpe/fAj4PXAWnK+KYz3ZqG4Q9s3GRNQZQfuLoEilwGvLSfhmdDXHQdDlubsO6iCUOwH0YwVRHP2OY95WzeMuD+H8=</ds:X509Certificate>
+                        <ds:X509SubjectName>CN=clarino.uio.no,OU=USIT,O=Universitetet i Oslo,L=Oslo,C=NO</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIG6zCCBdOgAwIBAgIQB3WFWvNaxCIFBpY8X3nLfzANBgkqhkiG9w0BAQsFADBk
+                            MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+                            QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+                            Q0EgMzAeFw0xODA2MTUwMDAwMDBaFw0yMDA2MTkxMjAwMDBaMGMxCzAJBgNVBAYT
+                            Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+                            bzENMAsGA1UECxMEVVNJVDEXMBUGA1UEAxMOY2xhcmluby51aW8ubm8wggEiMA0G
+                            CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDe2VuLrv9a9LN4HBmLa4L0C8ImhRA
+                            uAdG+B6wahV7vMY5sVRm+YupfpQCImB3u1C2xbAI0j4q76sfpU6nN/x7y5YoZq/o
+                            gPuTu1Kv6i5oDhzdr6eCrRdODv2f2KSf7hAqLAu/A2J57TLZwKFWSdK55SwdgW/p
+                            cxfgYcHKM73fx78xGU+R8ng7PcRhS+cgH+zLKmuvL98s5B4FljF45ZDj7G3ucjlK
+                            3VW7nhZTn7K74K6L/X6ImLJcAWLRg8viiZ9wsMkDefIOGrErN7N8NGHDgMJuKOlO
+                            WtSxf/NtWakrtYcdsYzyzhv24/EvOxP98imXau6U6wcWwZG8zXMxo41DAgMBAAGj
+                            ggOYMIIDlDAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
+                            FgQUd9hUrbhOlvE1nbiYm8OD3a7dVSUwagYDVR0RBGMwYYIOY2xhcmluby51aW8u
+                            bm+CEnd3dy5jbGFyaW5vLnVpby5ub4ISbGFwLmNsYXJpbm8udWlvLm5vghNnb2xk
+                            LmNsYXJpbm8udWlvLm5vghJzdm4uY2xhcmluby51aW8ubm8wDgYDVR0PAQH/BAQD
+                            AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+g
+                            LaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAv
+                            oC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmww
+                            TAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93
+                            d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQG
+                            CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKG
+                            LGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwG
+                            A1UdEwEB/wQCMAAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB2AKS5CZC0GFgU
+                            h7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAABZAIwG6cAAAQDAEcwRQIgNwlusuGj
+                            pQ8NigzfpODRw0gUesVTmQ1liT7tOzsYeO8CIQDvwWRukrYv40KSK9x4In8KLg9G
+                            Ej18sraYVWOq9CnuhQB1AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMP
+                            AAABZAIwHGcAAAQDAEYwRAIgU2dY7ieBUPARnHIPCC/DqVb5/F0yj5aQYqzmZ64h
+                            mP4CIHQ/pLz2oODv7pLCZpsjeO7ExXS5CdlShjIPH7tXoQRvAHUAu9nfvB+KcbWT
+                            lCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFkAjAdEgAABAMARjBEAiBKi1cBMLsj
+                            uU9BczlHdaGuZGp8HikNZ+5UCzMTmUmXSAIgCLafYu18FWWbmg+tybzyL4wuIyI6
+                            O8/LOQUP7bNQooIwDQYJKoZIhvcNAQELBQADggEBAA5WeCn5U7uot0+MXp6pyU2C
+                            YBrjnJmMzBlLvXntP4PQSNNLxPcPEZDjbvQzFQ7uGNNMw8ujgKsP9bzuWNbipR0O
+                            5PDweRLaFrnSgzsFRi9/5Kf1j2OXiBXs0bZ0UqmSwuw5D3tKWmDsRJzZZhPq9Fty
+                            cSmIXxGI4daCavAJnWoGlanL/e+btMMtzlnjw0WOHpdbXrti3KQK5i9oSjC3o5b3
+                            rnM6FnqZBUMpxjlZdMhQS8M+yN2XSNx9MJIoJEqUJX/A/eN+Ya0uEui7F5HIG5FP
+                            DXXWWkYQv6CfXkKnAHzV5k7+uuG/ESNqJumyLp96i46SWC02x3hCJcBIWuP54PA=
+                        </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
             <md:KeyDescriptor use="encryption">
-                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:KeyInfo>
+                    <ds:KeyName>clarino.uio.no</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509Certificate>MIIE/zCCA+egAwIBAgIRAJIQa4w218rFk4verorM7VswDQYJKoZIhvcNAQELBQAwZDELMAkGA1UEBhMCTkwxFjAUBgNVBAgTDU5vb3JkLUhvbGxhbmQxEjAQBgNVBAcTCUFtc3RlcmRhbTEPMA0GA1UEChMGVEVSRU5BMRgwFgYDVQQDEw9URVJFTkEgU1NMIENBIDIwHhcNMTUwNjMwMDAwMDAwWhcNMTgwNjI5MjM1OTU5WjA8MSEwHwYDVQQLExhEb21haW4gQ29udHJvbCBWYWxpZGF0ZWQxFzAVBgNVBAMTDmNsYXJpbm8udWlvLm5vMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzWtCRL9wf3nor/dUkG00Xg4jmr6nZX5qxOCHDX0rRJB8VWU52kfQyKWViv5BtcsnIweBqJ75sobprZuKcDILRf36F4i4D6lPcxFvDac1DA6smlfP+sMyf5ntfJkc6sMjgDQ/2CQKFvcwYlhJSXStR1Hc95+GRXK4ou30XXv6MaU98OR+laQuOqsQB6VBh60iRDXNrKhrePG3HJujn79VcLB4N79Tk5GV+BuqvZP8Mh+cTK6q/XN5EM13/CMXdPtng0Fh9RPJNBYgA/cmXHFdEM+/9HfdUOfyByeYEHOuKXUr/dLJQ7tYUds494qxCdkEckt0o92OxpRTztsvI+YcDQIDAQABo4IB0jCCAc4wHwYDVR0jBBgwFoAUW9CKHJoyW+C13ZZUG+GGKLD9tr0wHQYDVR0OBBYEFMUNIwQsUMuAUNhNsROf0SU9l2aZMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgIdMAgGBmeBDAECATA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVEVSRU5BU1NMQ0EyLmNybDBsBggrBgEFBQcBAQRgMF4wNQYIKwYBBQUHMAKGKWh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9URVJFTkFTU0xDQTIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMIGABgNVHREEeTB3gg5jbGFyaW5vLnVpby5ub4ISZWRkLmNsYXJpbm8udWlvLm5vghVnbG9zc2EuY2xhcmluby51aW8ubm+CEmxhcC5jbGFyaW5vLnVpby5ub4ISc3ZuLmNsYXJpbm8udWlvLm5vghJ3d3cuY2xhcmluby51aW8ubm8wDQYJKoZIhvcNAQELBQADggEBADHuVaZ2ymF0bhfypJB0w2XfTXTcO7wbkuRLcrvv+3BQgHGv5j5xTjK6AesSxXE0KCtpJnTrR8TEQFbLhuUs0m4VyHlW8DivkccYbSzGvTewkxWSuxUFQhBWKhfNX4bPV88w9aLog358lHQBiqwY+cJYW8+Y48w49noiZDTCY7Z8jMbVj8jTVqC6bMELBMeV4stgzkT/RBFc1rroBhDeyjElugiph5RUtjwP/H/tAlLO241jMtIfbzRV/CwF9aEfpe/fAj4PXAWnK+KYz3ZqG4Q9s3GRNQZQfuLoEilwGvLSfhmdDXHQdDlubsO6iCUOwH0YwVRHP2OY95WzeMuD+H8=</ds:X509Certificate>
+                        <ds:X509SubjectName>CN=clarino.uio.no,OU=USIT,O=Universitetet i Oslo,L=Oslo,C=NO</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIG6zCCBdOgAwIBAgIQB3WFWvNaxCIFBpY8X3nLfzANBgkqhkiG9w0BAQsFADBk
+                            MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+                            QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+                            Q0EgMzAeFw0xODA2MTUwMDAwMDBaFw0yMDA2MTkxMjAwMDBaMGMxCzAJBgNVBAYT
+                            Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+                            bzENMAsGA1UECxMEVVNJVDEXMBUGA1UEAxMOY2xhcmluby51aW8ubm8wggEiMA0G
+                            CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDe2VuLrv9a9LN4HBmLa4L0C8ImhRA
+                            uAdG+B6wahV7vMY5sVRm+YupfpQCImB3u1C2xbAI0j4q76sfpU6nN/x7y5YoZq/o
+                            gPuTu1Kv6i5oDhzdr6eCrRdODv2f2KSf7hAqLAu/A2J57TLZwKFWSdK55SwdgW/p
+                            cxfgYcHKM73fx78xGU+R8ng7PcRhS+cgH+zLKmuvL98s5B4FljF45ZDj7G3ucjlK
+                            3VW7nhZTn7K74K6L/X6ImLJcAWLRg8viiZ9wsMkDefIOGrErN7N8NGHDgMJuKOlO
+                            WtSxf/NtWakrtYcdsYzyzhv24/EvOxP98imXau6U6wcWwZG8zXMxo41DAgMBAAGj
+                            ggOYMIIDlDAfBgNVHSMEGDAWgBRn/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4E
+                            FgQUd9hUrbhOlvE1nbiYm8OD3a7dVSUwagYDVR0RBGMwYYIOY2xhcmluby51aW8u
+                            bm+CEnd3dy5jbGFyaW5vLnVpby5ub4ISbGFwLmNsYXJpbm8udWlvLm5vghNnb2xk
+                            LmNsYXJpbm8udWlvLm5vghJzdm4uY2xhcmluby51aW8ubm8wDgYDVR0PAQH/BAQD
+                            AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+g
+                            LaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAv
+                            oC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmww
+                            TAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93
+                            d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQG
+                            CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKG
+                            LGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwG
+                            A1UdEwEB/wQCMAAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB2AKS5CZC0GFgU
+                            h7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAABZAIwG6cAAAQDAEcwRQIgNwlusuGj
+                            pQ8NigzfpODRw0gUesVTmQ1liT7tOzsYeO8CIQDvwWRukrYv40KSK9x4In8KLg9G
+                            Ej18sraYVWOq9CnuhQB1AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMP
+                            AAABZAIwHGcAAAQDAEYwRAIgU2dY7ieBUPARnHIPCC/DqVb5/F0yj5aQYqzmZ64h
+                            mP4CIHQ/pLz2oODv7pLCZpsjeO7ExXS5CdlShjIPH7tXoQRvAHUAu9nfvB+KcbWT
+                            lCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFkAjAdEgAABAMARjBEAiBKi1cBMLsj
+                            uU9BczlHdaGuZGp8HikNZ+5UCzMTmUmXSAIgCLafYu18FWWbmg+tybzyL4wuIyI6
+                            O8/LOQUP7bNQooIwDQYJKoZIhvcNAQELBQADggEBAA5WeCn5U7uot0+MXp6pyU2C
+                            YBrjnJmMzBlLvXntP4PQSNNLxPcPEZDjbvQzFQ7uGNNMw8ujgKsP9bzuWNbipR0O
+                            5PDweRLaFrnSgzsFRi9/5Kf1j2OXiBXs0bZ0UqmSwuw5D3tKWmDsRJzZZhPq9Fty
+                            cSmIXxGI4daCavAJnWoGlanL/e+btMMtzlnjw0WOHpdbXrti3KQK5i9oSjC3o5b3
+                            rnM6FnqZBUMpxjlZdMhQS8M+yN2XSNx9MJIoJEqUJX/A/eN+Ya0uEui7F5HIG5FP
+                            DXXWWkYQv6CfXkKnAHzV5k7+uuG/ESNqJumyLp96i46SWC02x3hCJcBIWuP54PA=
+                        </ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
@@ -8367,21 +8358,63 @@ qQTazPv0mtY=
                 <ds:KeyInfo>
                     <ds:KeyName>b2access.eudat.eu</ds:KeyName>
                     <ds:X509Data>
-                        <ds:X509SubjectName>CN=b2access.eudat.eu,O=CSC - Tieteen tietotekniikan keskus Oy,L=Espoo,ST=Uusimaa,C=FI</ds:X509SubjectName>
-                        <ds:X509Certificate>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</ds:X509Certificate>
+                        <ds:X509SubjectName>CN=b2access.eudat.eu,O=CSC - Tieteen tietotekniikan keskus Oy,L=Espoo,C=FI</ds:X509SubjectName>
+                        <ds:X509Certificate>MIIHpjCCBo6gAwIBAgIQBA2aBU1Sk+bZwPY5Ixr3nDANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+Q0EgMzAeFw0xODA3MDUwMDAwMDBaFw0yMDA3MDkxMjAwMDBaMGoxCzAJBgNVBAYT
+AkZJMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMmQ1NDIC0gVGlldGVlbiB0aWV0
+b3Rla25paWthbiBrZXNrdXMgT3kxGjAYBgNVBAMTEWIyYWNjZXNzLmV1ZGF0LmV1
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAy5yKdHUPFmaLq6cGyUDH
+SrM9zibkqX8s/FVdwwpnfJdl6abNquelP6/Td0mFIqu2XNyD0HzVUxZ+DZb25dOc
+wLqBGdpBdN8Z0faVsx3acwJXofium/7D/2xdyjC31LkQE7IyZcQZiB8qU8kNwRKD
+oBFiv6D2nYouRxDkXeqYnYnl70Of6+Nt/VwNtTrtcb/gS4BsMZtCRSM3VGcHjs2l
+fxF9imBmtcmM6p27U+QtoqQCcUgDojqUkJgVNo7+KrjjWfePBOpkWlMFqm+MV3Lb
+Hyngb9KB8MKXbOL5xsDBgn0u77voLIgsEBydlNwC5oAR0t2+lcoxPRPs4g7ZCCZN
+GgAG/gkMZ52i4B0JGonSAjB5lh4VOZkvRH6sv1ipzbJ3OQEm88zYUd01qSG2ljQl
+PCL63S/Sh+m4Z+YZN9Cb4UEgOOw/E3QJRpqGonOshAFwMrjjXZsxVcVdcN9Y6HpL
+xs0gnJS/M01+cL8H0oFmIyul3swXud1vNjwuCBj/dO+NuLXYFD+bZQaJ3i5TAgVP
+/2zexEwq8i1yQikijNI7VAkIQGSG5tdhqt7buk+np7j9EULmiaB/U0evMCHlCd2t
+ttCU5zhiFuwkHbG0oMCYB5LUoRTCSzUoNLD8bmEKIQb+ScYx4cwuQZqPBPdysHbJ
+cEeTybcY1GgIDv4IRP5F7+ECAwEAAaOCA0wwggNIMB8GA1UdIwQYMBaAFGf9iCAU
+J5jHCdIlGbvpURFjdVBiMB0GA1UdDgQWBBSzYi6A2YUjF0CcM2eicXIHwORgMTAc
+BgNVHREEFTATghFiMmFjY2Vzcy5ldWRhdC5ldTAOBgNVHQ8BAf8EBAMCBaAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6AtoCuGKWh0
+dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMC+gLaArhilo
+dHRwOi8vY3JsNC5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDBMBgNVHSAE
+RTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdp
+Y2VydC5jb20vQ1BTMAgGBmeBDAECAjBuBggrBgEFBQcBAQRiMGAwJAYIKwYBBQUH
+MAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA4BggrBgEFBQcwAoYsaHR0cDov
+L2NhY2VydHMuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcnQwDAYDVR0TAQH/
+BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHcA7ku9t3XOYLrhQmkfq+Ge
+ZqMPfl+wctiDAMR7iXqo/csAAAFkakBVGwAABAMASDBGAiEAqu6Y06tWu7sHInEW
+OyFWDxqqw/6iBsh5BWkmXHtGyDYCIQCj4n0I0xH24QR0dufxxEMQ7Ph3dth1pMcm
+BGstsvXvJAB2AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMPAAABZGpA
+VRoAAAQDAEcwRQIgeNkb8rxZbS+2f5jC+QRfVB90unsmxm8A3npObQaM4zkCIQCf
+V61dvZ8armVqOVlP4Hpn/VpV/T4rU1cn5m2HEB4csgB1ALvZ37wfinG1k5Qjl6qS
+e0c4V5UKq1LoGpCWZDaOHtGFAAABZGpAVTwAAAQDAEYwRAIgbyAdkqMNhUzvKegP
+MoF5WFODcg7B2EhO0h+y9Z5tsdACIDmAqGOgGQMIm+zB/CYHE5dAFpH7UTjRf7OV
+Eez3BbS+MA0GCSqGSIb3DQEBCwUAA4IBAQAwpJdt6ym1gp3v2MagSrZRSxSyir1n
+ZLIuZOiu1fVgqZbC922mb7pyIP7xVraAL5uhigJZN0O4/1CdYUOhncvWvNs/aKzG
+lS1VEcubk2STaTCPlocZ3awEGwvkOPHYDfEuhUckEJaHEMNhsWCbRz+ctYtYZK3H
+MDdLVFD81NaSKL3gcdUP7v06W2UlbixsDyyGx5Sv0WgxFXeNLWCbw0ISwI/5yZGh
+UYx2VarmFiLCDLaK3MWCtlaXXaRuaq1kdh/tUgS/ccqfXdLYsXziGYMVlsIWqD3B
+k9E9QwfR6b/E+kHMWiclonDWYOTmRktRi7F3PLf/Ke+tnARMLn2xTurX</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
-            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-            <md:AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu/unitygw/spSAMLResponseConsumer" isDefault="true"/>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://b2access.eudat.eu/unitygw/spSAMLResponseConsumer" index="1"/>
             <md:AttributeConsumingService index="1">
                 <md:ServiceName xml:lang="en">EUDAT B2ACCESS</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">AAI for EUDAT B2-Services</md:ServiceDescription>
                 <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
                 <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
                 <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-                <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
@@ -8399,6 +8432,11 @@ qQTazPv0mtY=
     	    <md:SurName>Support</md:SurName>
     	    <md:EmailAddress>mailto:b2access-support@eudat.eu</md:EmailAddress>
   	    </md:ContactPerson>
+        <md:ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+            <md:GivenName>Security Response</md:GivenName>
+            <md:SurName>Team</md:SurName>
+            <md:EmailAddress>mailto:cert@fz-juelich.de</md:EmailAddress>
+        </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- EUDAT B2ACCESS Staging -->
     <urn:EntityDescriptor entityID="https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata" xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata">
