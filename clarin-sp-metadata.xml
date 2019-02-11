@@ -7931,7 +7931,9 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
   	<Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
       	 <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
           <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+              <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+              <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+              <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
           </saml:Attribute>
          </mdattr:EntityAttributes>
     	 <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -8064,6 +8066,11 @@ vMsMaOnszi5e8qaf5cbVOu23fQ==
     	  <md:OrganizationURL xml:lang="en">http://www.ilc.cnr.it/en</md:OrganizationURL>
     	  <md:OrganizationURL xml:lang="it">http://www.ilc.cnr.it</md:OrganizationURL>
   	</md:Organization>
+    <md:ContactPerson contactType="administrative">
+          <md:GivenName>Riccardo</md:GivenName>
+          <md:SurName>Del Gratta</md:SurName>
+          <md:EmailAddress>mailto:riccardo.delgratta@ilc.cnr.it</md:EmailAddress>
+    </md:ContactPerson>
   	<md:ContactPerson contactType="technical">
     	  <md:GivenName>Alessandro</md:GivenName>
     	  <md:SurName>Enea</md:SurName>
