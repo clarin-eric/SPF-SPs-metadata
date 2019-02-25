@@ -8905,7 +8905,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
     </md:EntityDescriptor>
 
     <!-- CLARIAH-IAA -->
-    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.diginfra.net/Saml2/proxy_saml2_backend.xml">
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://authentication.clariah.nl/Saml2/proxy_saml2_backend.xml">
         <md:Extensions>
             <mdattr:EntityAttributes
                 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
@@ -8921,7 +8921,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
         </md:Extensions>
         <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions>
-                <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://auth.diginfra.net/Saml2/disco?workaround=true" index="1"/>
+                <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://authentication.clariah.nl/Saml2/disco?workaround=true" index="1"/>
                 <mdui:UIInfo>
                     <mdui:DisplayName xml:lang="en">CLARIAH NL IdP</mdui:DisplayName>
                     <mdui:Description xml:lang="en">CLARIAH proxy Identity Provider</mdui:Description>
@@ -8959,8 +8959,8 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
             </md:KeyDescriptor>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.diginfra.net/Saml2/acs/post" index="1"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.diginfra.net/Saml2/acs/redirect" index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://authentication.clariah.nl/Saml2/acs/post" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://authentication.clariah.nl/Saml2/acs/redirect" index="2"/>
             <md:AttributeConsumingService index="1">
                 <md:ServiceName xml:lang="en">CLARIAH Test Service</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">CLARIAH Service for testing CLARIN connection</md:ServiceDescription>
@@ -8978,17 +8978,17 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
         <md:ContactPerson contactType="administrative">
             <md:GivenName>Clariah Support</md:GivenName>
             <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
+            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Clariah Support</md:GivenName>
             <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
+            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>Clariah Support</md:GivenName>
              <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:login@clariah.nl</md:EmailAddress>
+            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
