@@ -492,6 +492,11 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
       <md:OrganizationURL xml:lang="en">http://www.csc.fi</md:OrganizationURL>
       <md:OrganizationURL xml:lang="sv">http://www.csc.fi</md:OrganizationURL>
     </md:Organization>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>Krister</md:GivenName>
+      <md:SurName>Lindén</md:SurName>
+      <md:EmailAddress>mailto:fin-clarin@helsinki.fi</md:EmailAddress>
+    </md:ContactPerson>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Martin</md:GivenName>
       <md:SurName>Matthiesen</md:SurName>
