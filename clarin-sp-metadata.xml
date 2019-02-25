@@ -1802,7 +1802,7 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
                 <md:ServiceName
                     xml:lang="en">CLARIN Virtual Collection Registry (beta)</md:ServiceName>
                 <md:ServiceDescription
-                    xml:lang="en">For the Virtual Language Observatory.</md:ServiceDescription>
+                    xml:lang="en">For the Virtual Collection Registry.</md:ServiceDescription>
                 <md:RequestedAttribute
                     FriendlyName="eduPersonPrincipalName"
                     Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
