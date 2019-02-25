@@ -858,11 +858,6 @@
       <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
    </result>
    <result>
-      <sp>https://sp.www.kielipankki.fi</sp>
-      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-   </result>
-   <result>
       <sp>https://secure.huygens.knaw.nl</sp>
       <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
       <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
