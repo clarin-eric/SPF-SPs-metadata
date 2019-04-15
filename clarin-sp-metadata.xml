@@ -9115,7 +9115,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:Keywords xml:lang="en">CLARIAH</mdui:Keywords>
                     <mdui:Logo height="83" width="300">https://www.clariah.nl/images/logo/clariah/CLARIAH_logoT.png</mdui:Logo>
                     <mdui:InformationURL xml:lang="en">https://clariah.nl/</mdui:InformationURL>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://clariah.nl/</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://authentication.clariah.nl/privacy-statement</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
             <md:KeyDescriptor use="signing">
