@@ -1559,6 +1559,53 @@ Z3ZjnjzAkcZS6VU/vbowpAL9Oiic9I15BwyNXsT8lWPtOxKcmxAESMc7OtWm0o4C
 ijjjB4MNkyvUmnvJZD+7ZpYW6qI4v64a4h1kdydtuCSxFz7lQ9U80gOA+oJWKa9a
 yN2Xk8rmco4g1veIYIZ6hKrydr0QJ40WvaiR1EkO0tpPa7wkayhFaOQDRrzFNpfr
 gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
+BAMTDDg4NzExYTI4MjMwNzAeFw0xOTA0MTUxMjQ0MzFaFw0yOTA0MTIxMjQ0MzFa
+MBcxFTATBgNVBAMTDDg4NzExYTI4MjMwNzCCAaIwDQYJKoZIhvcNAQEBBQADggGP
+ADCCAYoCggGBAKTA3XtHQLhHn55smhE6B3Hhv38AfcungbDYayDb8GYFOzhFFYLd
+WR5hJCrdUOY7JxowBsKYv7dcJWt6PUz44vPfuC+YRPopOVW0PKNoXDeAYi3AFTDA
+7ZAziEEQ4PF+7f1BqEsllccaQmpSbb1v0LWehoOIznZV+LQZaEVRI+t6W6eOlox8
+c8j0cYeNUmE7aEcOVbD/a5eZxa/9K1XRthONA+4HmgHR+XmbIizMRL7NyVAvIjOL
+dXtV+cyRVgRm4/QjBM3mkfNvrXCLyQxeXRNG2sCKZqRdnVV+/61IW+IUt6iemcE9
+59waJJLoTm2y9JFH4YZM+FHqOHp7SdemKnR+UlQjvW4X3L/DB8j3xqd6U3+7NN0s
+xq/sMqKm9FzWoQ5SevFdkboG2b+aSoXIhwT1FQDhl7H1QhIadhx33kf1dkSzhCQf
+bbvFiwngfqkMOBAlv8aY6MoZYGPWTUQGKk5TdH8sFLJkFfkNPX5sf550XEpAiM+5
+NL0KQ0V7CiBG9wIDAQABozowODAXBgNVHREEEDAOggw4ODcxMWEyODIzMDcwHQYD
+VR0OBBYEFNzNA4+BU9xiCMsAYQmiYcK5wTn4MA0GCSqGSIb3DQEBCwUAA4IBgQCJ
+7GHb9cBx2/e7gyFP6huRhjIJK04CROQz6RJBuZf0MpzbOmRqkM6/NIwN13ZiagXY
+NUe0NQsDnKlpSeQFdMgj9grCJvSCseHNAMaQm2hjXLrPqdI6DiVApXkm36bB8v65
+L1SGSxIiLpT51bu/mJn7mSZcBt89ffj47jtdwy/RZhCb6qD1W2jz3NU9LS0ZLKpc
+9GsVO57j8U6rLrfRxbQHX5GXhm8Bz+8QDb6JHHkq6mdB+IlLc8jR1IUviwHAbQVz
+TQCP+EYe38XaT9q/Ecxk4OWGkoW0Y6/dBD1nKnTUG7/0CdMVM6O9njqrXUyp0gqx
+45WRdQYINE78djmT5woUEqBX1ZjNMkftE/VUow9CODW7zdGewnwdSBgKxcOpjsGo
+5zHRoTDDnAxsOc2KC4VRAWBJhbL1dDTiPW8kpT8O02sHOmrQsAhqME3IntRv0PaA
+d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
+            <md:KeyDescriptor>
+                <ds:KeyInfo
+                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIDnjCCAoYCCQCIw16p56fGnTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+TkwxDDAKBgNVBAgTA0dMRDERMA8GA1UEBxMITmlqbWVnZW4xDzANBgNVBAoTBk1Q
+SS1QTDETMBEGA1UECxMKY2F0YWxvZyBzcDEaMBgGA1UEAxMRY2F0YWxvZy5jbGFy
+aW4uZXUxHjAcBgkqhkiG9w0BCQEWD2xhdGFkbWluQG1waS5ubDAeFw0xNDA0Mjgw
+ODAyMDVaFw0xOTA0MjcwODAyMDVaMIGQMQswCQYDVQQGEwJOTDEMMAoGA1UECBMD
+R0xEMREwDwYDVQQHEwhOaWptZWdlbjEPMA0GA1UEChMGTVBJLVBMMRMwEQYDVQQL
+EwpjYXRhbG9nIHNwMRowGAYDVQQDExFjYXRhbG9nLmNsYXJpbi5ldTEeMBwGCSqG
+SIb3DQEJARYPbGF0YWRtaW5AbXBpLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA38nLf8TTeexrcqzfF5LOQ3F/9Tar+V7kNsLFUKO1ua6npX+4zgBu
+EYCm+hKrKDW09QN8yrBd+79a+slA4nCcpUymkh02rQhVbMpNiEQh8UFjqfaYv5fM
+R1OlgIWYXx2POdn60KbUYXIPGSrp2zQSXMFJMrnUOXHqxF8fxfTdbDEtcviXXwyC
+UjhXC4AJSLL/S8eftV8iioQDZMs5h1Kd95NVFsMhRC5MtD+iUyNsYR8X1PGaFg20
+bVg/Jg2eVNwPas49POr+HBOxk3BBtk8KwCAMwjCQUGL3zn7KeDLDFYsry/bWQtVn
+IbebSTysNhbrji3/VKnsPHiuOfCvYiqWEQIDAQABMA0GCSqGSIb3DQEBBQUAA4IB
+AQDTDfQr4wjJGAUo7os8PWTmKFkAH4D3oFQpxe4bvf6U9of4+fmE778S+WZc9kKs
+A0oCNgDwBaY/GdYIYloU/6GAxEu5Kql4HmB1XW5XyYZ15+zYluL86eLFe2DHnPHR
+Z3ZjnjzAkcZS6VU/vbowpAL9Oiic9I15BwyNXsT8lWPtOxKcmxAESMc7OtWm0o4C
+ijjjB4MNkyvUmnvJZD+7ZpYW6qI4v64a4h1kdydtuCSxFz7lQ9U80gOA+oJWKa9a
+yN2Xk8rmco4g1veIYIZ6hKrydr0QJ40WvaiR1EkO0tpPa7wkayhFaOQDRrzFNpfr
+gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                     </ds:X509Data>
                 </ds:KeyInfo>
             </md:KeyDescriptor>
@@ -1621,7 +1668,7 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                 xml:lang="en">CLARIN</md:OrganizationDisplayName>
             <md:OrganizationURL
                 xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
-        </md:Organization>
+                        xml:lang="de">CLARIN Virtual Collection Registry</mdui:DisplayName>
         <md:ContactPerson
             contactType="administrative">
             <md:GivenName>Dieter</md:GivenName>
@@ -1658,7 +1705,54 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                 </saml:Attribute>
             </mdattr:EntityAttributes>
         </md:Extensions>
-        <md:SPSSODescriptor
+                        <ds:X509Certificate>MIID6zCCAlOgAwIBAgIJANuz74wrvwz/MA0GCSqGSIb3DQEBCwUAMBcxFTATBgNV
+BAMTDDg4NzExYTI4MjMwNzAeFw0xOTA0MTUxMjQ0MzFaFw0yOTA0MTIxMjQ0MzFa
+MBcxFTATBgNVBAMTDDg4NzExYTI4MjMwNzCCAaIwDQYJKoZIhvcNAQEBBQADggGP
+ADCCAYoCggGBAKTA3XtHQLhHn55smhE6B3Hhv38AfcungbDYayDb8GYFOzhFFYLd
+WR5hJCrdUOY7JxowBsKYv7dcJWt6PUz44vPfuC+YRPopOVW0PKNoXDeAYi3AFTDA
+7ZAziEEQ4PF+7f1BqEsllccaQmpSbb1v0LWehoOIznZV+LQZaEVRI+t6W6eOlox8
+c8j0cYeNUmE7aEcOVbD/a5eZxa/9K1XRthONA+4HmgHR+XmbIizMRL7NyVAvIjOL
+dXtV+cyRVgRm4/QjBM3mkfNvrXCLyQxeXRNG2sCKZqRdnVV+/61IW+IUt6iemcE9
+59waJJLoTm2y9JFH4YZM+FHqOHp7SdemKnR+UlQjvW4X3L/DB8j3xqd6U3+7NN0s
+xq/sMqKm9FzWoQ5SevFdkboG2b+aSoXIhwT1FQDhl7H1QhIadhx33kf1dkSzhCQf
+bbvFiwngfqkMOBAlv8aY6MoZYGPWTUQGKk5TdH8sFLJkFfkNPX5sf550XEpAiM+5
+NL0KQ0V7CiBG9wIDAQABozowODAXBgNVHREEEDAOggw4ODcxMWEyODIzMDcwHQYD
+VR0OBBYEFNzNA4+BU9xiCMsAYQmiYcK5wTn4MA0GCSqGSIb3DQEBCwUAA4IBgQCJ
+7GHb9cBx2/e7gyFP6huRhjIJK04CROQz6RJBuZf0MpzbOmRqkM6/NIwN13ZiagXY
+NUe0NQsDnKlpSeQFdMgj9grCJvSCseHNAMaQm2hjXLrPqdI6DiVApXkm36bB8v65
+L1SGSxIiLpT51bu/mJn7mSZcBt89ffj47jtdwy/RZhCb6qD1W2jz3NU9LS0ZLKpc
+9GsVO57j8U6rLrfRxbQHX5GXhm8Bz+8QDb6JHHkq6mdB+IlLc8jR1IUviwHAbQVz
+TQCP+EYe38XaT9q/Ecxk4OWGkoW0Y6/dBD1nKnTUG7/0CdMVM6O9njqrXUyp0gqx
+45WRdQYINE78djmT5woUEqBX1ZjNMkftE/VUow9CODW7zdGewnwdSBgKxcOpjsGo
+5zHRoTDDnAxsOc2KC4VRAWBJhbL1dDTiPW8kpT8O02sHOmrQsAhqME3IntRv0PaA
+d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
+            <md:KeyDescriptor>
+                <ds:KeyInfo
+                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIDnjCCAoYCCQCIw16p56fGnTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+TkwxDDAKBgNVBAgTA0dMRDERMA8GA1UEBxMITmlqbWVnZW4xDzANBgNVBAoTBk1Q
+SS1QTDETMBEGA1UECxMKY2F0YWxvZyBzcDEaMBgGA1UEAxMRY2F0YWxvZy5jbGFy
+aW4uZXUxHjAcBgkqhkiG9w0BCQEWD2xhdGFkbWluQG1waS5ubDAeFw0xNDA0Mjgw
+ODAyMDVaFw0xOTA0MjcwODAyMDVaMIGQMQswCQYDVQQGEwJOTDEMMAoGA1UECBMD
+R0xEMREwDwYDVQQHEwhOaWptZWdlbjEPMA0GA1UEChMGTVBJLVBMMRMwEQYDVQQL
+EwpjYXRhbG9nIHNwMRowGAYDVQQDExFjYXRhbG9nLmNsYXJpbi5ldTEeMBwGCSqG
+SIb3DQEJARYPbGF0YWRtaW5AbXBpLm5sMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA38nLf8TTeexrcqzfF5LOQ3F/9Tar+V7kNsLFUKO1ua6npX+4zgBu
+EYCm+hKrKDW09QN8yrBd+79a+slA4nCcpUymkh02rQhVbMpNiEQh8UFjqfaYv5fM
+R1OlgIWYXx2POdn60KbUYXIPGSrp2zQSXMFJMrnUOXHqxF8fxfTdbDEtcviXXwyC
+UjhXC4AJSLL/S8eftV8iioQDZMs5h1Kd95NVFsMhRC5MtD+iUyNsYR8X1PGaFg20
+bVg/Jg2eVNwPas49POr+HBOxk3BBtk8KwCAMwjCQUGL3zn7KeDLDFYsry/bWQtVn
+IbebSTysNhbrji3/VKnsPHiuOfCvYiqWEQIDAQABMA0GCSqGSIb3DQEBBQUAA4IB
+AQDTDfQr4wjJGAUo7os8PWTmKFkAH4D3oFQpxe4bvf6U9of4+fmE778S+WZc9kKs
+A0oCNgDwBaY/GdYIYloU/6GAxEu5Kql4HmB1XW5XyYZ15+zYluL86eLFe2DHnPHR
+Z3ZjnjzAkcZS6VU/vbowpAL9Oiic9I15BwyNXsT8lWPtOxKcmxAESMc7OtWm0o4C
+ijjjB4MNkyvUmnvJZD+7ZpYW6qI4v64a4h1kdydtuCSxFz7lQ9U80gOA+oJWKa9a
+yN2Xk8rmco4g1veIYIZ6hKrydr0QJ40WvaiR1EkO0tpPa7wkayhFaOQDRrzFNpfr
+gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
             protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
             <md:Extensions>
                 <mdui:UIInfo
@@ -9203,10 +9297,10 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://authentication.clariah.nl/Saml2/acs/post" index="1"/>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://authentication.clariah.nl/Saml2/acs/redirect" index="2"/>
             <md:AttributeConsumingService index="1">
-                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
                 <md:ServiceName xml:lang="en">CLARIAH Identity Service</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">The application that you're logging into is part of the CLARIAH infrastructure and has delegated authentication to the CLARIAH Identity Service</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
