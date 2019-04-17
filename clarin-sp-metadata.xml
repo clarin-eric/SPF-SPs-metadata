@@ -9172,7 +9172,7 @@ CEzwUKPMjrzjV+Q3q+Cn5Q==
                     <mdui:PrivacyStatementURL xml:lang="en">https://authentication.clariah.nl/privacy-statement</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
             </md:Extensions>
-            <md:KeyDescriptor use="signing">
+            <md:KeyDescriptor>
                 <ds:KeyInfo>
                     <ds:X509Data>
                         <ds:X509Certificate>MIIDaDCCAlCgAwIBAgIJAL3v7eafm2d/MA0GCSqGSIb3DQEBCwUAMF0xCzAJBgNV
@@ -9203,33 +9203,31 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://authentication.clariah.nl/Saml2/acs/post" index="1"/>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://authentication.clariah.nl/Saml2/acs/redirect" index="2"/>
             <md:AttributeConsumingService index="1">
-                <md:ServiceName xml:lang="en">CLARIAH Test Service</md:ServiceName>
-                <md:ServiceDescription xml:lang="en">CLARIAH Service for testing CLARIN connection</md:ServiceDescription>
-                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-                <md:RequestedAttribute FriendlyName="displayName" Name="urn:mace:dir:attribute-def:displayName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-                <md:RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+                <md:ServiceName xml:lang="en">CLARIAH Identity Service</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">The application that you're logging into is part of the CLARIAH infrastructure and has delegated authentication to the CLARIAH Identity Service</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
             </md:AttributeConsumingService>
         </md:SPSSODescriptor>
         <md:Organization>
             <md:OrganizationName xml:lang="en">CLARIAH NL</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">CLARIAH NL</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">mailto:https://www.clariah.nl/</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en">https://www.clariah.nl/</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="administrative">
             <md:GivenName>Clariah Support</md:GivenName>
             <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Clariah Support</md:GivenName>
             <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>Clariah Support</md:GivenName>
-             <md:SurName>Clariah Support</md:SurName>
-            <md:EmailAddress>mailto:authenticationservice@clariah.nl</md:EmailAddress>
+            <md:SurName>Clariah Support</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 
