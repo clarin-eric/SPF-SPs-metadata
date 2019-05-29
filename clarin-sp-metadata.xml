@@ -888,6 +888,44 @@ XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate
           </ds:X509Data>
         </ds:KeyInfo>
       </KeyDescriptor>
+      <KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:X509Data>
+            <ds:X509Certificate>
+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</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </KeyDescriptor>
       <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://lbr.csc.fi/Shibboleth.sso/SLO/Redirect"/>
       <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lbr.csc.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
