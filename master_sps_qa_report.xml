@@ -3524,15 +3524,15 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- Start of pre-production SPs. See: https://www.clarin.eu/spf . These will only have access to CLARIN ERIC's own IdP! -->
@@ -6652,15 +6652,15 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- CELR  test -->
@@ -7499,15 +7499,15 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- CLARIN:SI: CLARIN Slovenia Node, Jožef Stefan Institute, Ljubljana, Slovenia (via CLARIN) -->
