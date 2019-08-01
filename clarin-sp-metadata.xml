@@ -3524,15 +3524,15 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- Start of pre-production SPs. See: https://www.clarin.eu/spf . These will only have access to CLARIN ERIC's own IdP! -->
@@ -6652,15 +6652,15 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- CELR  test -->
@@ -7499,15 +7499,15 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </md:ContactPerson>
         <md:ContactPerson
             contactType="technical">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson
             contactType="administrative">
-            <md:GivenName>Marc</md:GivenName>
-            <md:SurName>Kemps-Snijders</md:SurName>
-            <md:EmailAddress>mailto:marc.kemps.snijders@meertens.knaw.nl</md:EmailAddress>
+            <md:GivenName>Concern</md:GivenName>
+            <md:SurName>Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
     <!-- CLARIN:SI: CLARIN Slovenia Node, Jožef Stefan Institute, Ljubljana, Slovenia (via CLARIN) -->
@@ -7587,22 +7587,22 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
                 xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
                 <mdui:UIInfo
                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-                    <mdui:DisplayName
+                 <mdui:DisplayName
                         xml:lang="en">CLARIN.SI Repository</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="en">CLARIN.SI: Digital repository and services of the CLARIN language research infrastructure, hosted at Jožef Stefan Institute, Ljubljana, Slovenia</mdui:Description>
+                        xml:lang="en">CLARIN.SI: Digital repository and services of the Slovenian CLARIN RI at the Jožef Stefan Institute</mdui:Description>
                     <mdui:DisplayName
                         xml:lang="sl">CLARIN.SI repozitorij</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="sl">CLARIN.SI: Digitalni repozitorij in storitve raziskovalne infrastrukture za jezikovne vire in tehnologije CLARIN na Institutu »Jožef Stefan«, Ljubljana, Slovenija</mdui:Description>
+                        xml:lang="sl">CLARIN.SI: Digitalni repozitorij in storitve slovenske RI CLARIN na Institutu »Jožef Stefan«</mdui:Description>
                     <mdui:DisplayName
                         xml:lang="fr">CLARIN.SI Repositoire</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="fr">CLARIN.SI: Repositoire de documents numériques et des services del l'infrastructure des recherches du projet CLARIN, Institut Jožef Stefan, Slovénie</mdui:Description>
+                        xml:lang="fr">CLARIN.SI: Repositoire et services CLARIN, Institut Jožef Stefan</mdui:Description>
                     <mdui:DisplayName
                         xml:lang="de">CLARIN.SI Dienste</mdui:DisplayName>
                     <mdui:Description
-                        xml:lang="de">CLARIN.SI: digitale Langzeitarchiv und Dienste auf die Sprache konzentriert Forschungsinfrastruktur und CLARIN</mdui:Description>
+                        xml:lang="de">CLARIN.SI: Digitale Langzeitarchiv CLARIN, Institut Jožef Stefan</mdui:Description>
                     <mdui:InformationURL
                         xml:lang="en">http://www.clarin.si/</mdui:InformationURL>
                     <mdui:Logo
