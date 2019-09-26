@@ -3353,7 +3353,7 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                         xml:lang="en">https://www.meertens.knaw.nl/cms/collections/data-protection</mdui:PrivacyStatementURL>
                     <mdui:Logo
                         height="135"
-                        width="200"></mdui:Logo>
+                        width="200">https://www.meertens.knaw.nl/cms/templates/mi_hetgelaat/css/images/logo_meertens_full.png</mdui:Logo>
                 </mdui:UIInfo>
                 <init:RequestInitiator
                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"

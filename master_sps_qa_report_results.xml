@@ -168,11 +168,6 @@
       <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
    </result>
    <result>
-      <sp>https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</sp>
-      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
-      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-   </result>
-   <result>
       <sp>https://clarin.fz-juelich.de/shibboleth</sp>
       <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
       <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>

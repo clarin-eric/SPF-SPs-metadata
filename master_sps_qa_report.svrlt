@@ -389,12 +389,6 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
-   <svrl:failed-assert test="exists($Logo_nodes) and (every $URL in $Logo_nodes satisfies local:is_https_URL($URL))"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][22]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://www.meertens.knaw.nl/Shibboleth.sso/Metadata
-                Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme. 
-                Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
    <svrl:failed-assert test="exists($Logo_nodes) and (every $URL in $Logo_nodes satisfies local:is_https_URL($URL))"
