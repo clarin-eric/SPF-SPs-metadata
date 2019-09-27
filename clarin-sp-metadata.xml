@@ -9927,17 +9927,17 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
           <md:ContactPerson contactType="administrative">
             <md:GivenName>Martin</md:GivenName>
             <md:SurName>Wynne</md:SurName>
-            <md:EmailAddress>martin.wynne@bodleian.ox.ac.uk</md:EmailAddress>
+            <md:EmailAddress>mailto:martin.wynne@bodleian.ox.ac.uk</md:EmailAddress>
           </md:ContactPerson>
           <md:ContactPerson contactType="support">
             <md:GivenName>Mark</md:GivenName>
             <md:SurName>Rogerson</md:SurName>
-            <md:EmailAddress>mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
+            <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
           </md:ContactPerson>
           <md:ContactPerson contactType="technical">
             <md:GivenName>Mark</md:GivenName>
             <md:SurName>Rogerson</md:SurName>
-            <md:EmailAddress>mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
+            <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
           </md:ContactPerson>
    </md:EntityDescriptor>
 </EntitiesDescriptor>
