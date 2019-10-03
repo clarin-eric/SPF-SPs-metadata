@@ -3386,7 +3386,7 @@ gDLbA/e0dbDclBvxUIm9cemA</ds:X509Certificate>
                     Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
                 <md:EncryptionMethod
                     Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-            </md:KeyDescriptor>S
+            </md:KeyDescriptor>
             <md:ArtifactResolutionService
                 Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                 Location="https://www.meertens.knaw.nl/Shibboleth.sso/Artifact/SOAP"
