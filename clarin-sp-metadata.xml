@@ -8773,7 +8773,6 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
             <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
             <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://authentication.clariah.nl/Saml2/acs/post" index="1"/>
-            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://authentication.clariah.nl/Saml2/acs/redirect" index="2"/>
             <md:AttributeConsumingService index="1">
                 <md:ServiceName xml:lang="en">CLARIAH Identity Service</md:ServiceName>
                 <md:ServiceDescription xml:lang="en">The application that you're logging into is part of the CLARIAH infrastructure and has delegated authentication to the CLARIAH Identity Service</md:ServiceDescription>
