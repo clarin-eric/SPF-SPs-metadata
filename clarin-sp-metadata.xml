@@ -3432,7 +3432,7 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
                         <mdui:Description xml:lang="de">CLARIN-PL digitale Langzeitarchiv - Polnisch Abschnitt CLARIN ERIC</mdui:Description>
                         <mdui:Logo height="32" width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
                         <mdui:InformationURL xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
-                        <mduiPrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mduiPrivacyStatementURL>
+                        <mdui:PrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mdui:PrivacyStatementURL>
                     </mdui:UIInfo>
                 </md:Extensions>
                 <md:KeyDescriptor>
