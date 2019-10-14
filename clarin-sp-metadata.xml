@@ -8810,6 +8810,100 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
         </md:ContactPerson>
     </md:EntityDescriptor>
 
+    <!-- KNAW HuC Digital Infrastructure Test Authentication Service -->
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://testauthentication.di.huc.knaw.nl/Saml2/proxy_saml2_backend.xml">
+        <md:Extensions>
+            <mdattr:EntityAttributes
+                    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        Name="http://macedir.org/entity-category">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+        </md:Extensions>
+        <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <md:Extensions>
+                <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://testauthentication.di.huc.knaw.nl/Saml2/disco?workaround=true" index="1"/>
+                <mdui:UIInfo>
+                    <mdui:DisplayName xml:lang="en">KNAW HuC Digital Infrastructure</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">KNAW HuC Digital Infrastructure IDP</mdui:Description>
+                    <mdui:Keywords xml:lang="en">KNAW HuC</mdui:Keywords>
+                    <mdui:Logo height="238" width="300">https://di.huc.knaw.nl/wp-content/themes/huc2018/images/logo-knaw-humanities-cluster.png</mdui:Logo>
+                    <mdui:InformationURL xml:lang="en">https://di.huc.knaw.nl/</mdui:InformationURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://testauthentication.di.huc.knaw.nl/privacy-statement</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+            </md:Extensions>
+            <md:KeyDescriptor>
+                <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIIDaDCCAlCgAwIBAgIJAL3v7eafm2d/MA0GCSqGSIb3DQEBCwUAMF0xCzAJBgNV
+                            BAYTAk5MMRUwEwYDVQQKDAxzYXRvc2FfcHJveHkxFTATBgNVBAMMDHNhdG9zYV9w
+                            cm94eTEgMB4GCSqGSIb3DQEJARYRaW5mb0BzYXRvc2FfcHJveHkwHhcNMTkwMjAx
+                            MTA1NzQ0WhcNMjkwMTI5MTA1NzQ0WjBdMQswCQYDVQQGEwJOTDEVMBMGA1UECgwM
+                            c2F0b3NhX3Byb3h5MRUwEwYDVQQDDAxzYXRvc2FfcHJveHkxIDAeBgkqhkiG9w0B
+                            CQEWEWluZm9Ac2F0b3NhX3Byb3h5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+                            CgKCAQEA64Aqjpp25auuL0Sh5vYc0RrqQ/kpLqfcjo6gpzIE/GI3xiJrxygvXvKg
+                            ADXgRN03PEQFAIDDH+C/STgYXcOPFvrC6Hh48Cd0t21ScLemfx/PJzHPKj94nisl
+                            YhlMN5v9X/Ol3lKL1uab6UrbPXPyudKiniviiq03H9eJMXeekoD/W+dT8MNxSb9A
+                            j3sjJ0KWHIW6oFcChSaG+EnWrsvi/DO0cpasgtuB6BiR3HMm4CUdj2SM8jq2oLfp
+                            T8yWN4KsjYmMBAXQW8xh3fDwzq5DJ789cSwdPYX1Yp+LMxAq1TJM0oJhtrq81h9Y
+                            Fyue6ILvyGvrDALL50T1OxKXNTsEaQIDAQABoyswKTAnBgNVHREEIDAeggxzYXRv
+                            c2FfcHJveHmCDiouc2F0b3NhX3Byb3h5MA0GCSqGSIb3DQEBCwUAA4IBAQCI+JXI
+                            Sj6Mf952RGh1uKqN+iOs4BcNW8jj7j7D8137w1seFOsI+0fB8xIgLzPLfh73vXPE
+                            qmSvggAXKs1fVtOd+dg2ACbZrm1Vp4dv3LkHYpePGzw7Zu/D/xWM8aePgM/LvEdv
+                            IaCUKfugi+jRD1c+fAYc72FJ7M/C7P+MDcAn6k84nQpldhx6hHKBlsYn5178lpG9
+                            w2ZZ9yVqJzUBRYfQ9QauqPMTNOZhGO1BOYO4ipyonif1lxSKs3Co9bH0qFULrDf9
+                            OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
+                            5SVK/GQXb7xtudKZ
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+            <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testauthentication.di.huc.knaw.nl/Saml2/acs/post" index="1"/>
+            <md:AttributeConsumingService index="1">
+                <md:ServiceName xml:lang="en">KNAW HuC Digital Infrastructure Identity Service</md:ServiceName>
+                <md:ServiceDescription xml:lang="en">This identity service should only be used for testing and development purposes. Availability is not guaranteed.</md:ServiceDescription>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:mace:dir:attribute-def:eduPersonTargetedID" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="displayName" Name="urn:mace:dir:attribute-def:displayName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+                <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName xml:lang="en">KNAW HuC Digital Infrastructure</md:OrganizationName>
+            <md:OrganizationDisplayName xml:lang="en">KNAW HuC Digital Infrastructure</md:OrganizationDisplayName>
+            <md:OrganizationURL xml:lang="en">https://di.huc.knaw.nl/</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>Concern Infrastructure</md:GivenName>
+            <md:SurName>Concern Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Concern Infrastructure</md:GivenName>
+            <md:SurName>Concern Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>Concern Infrastructure</md:GivenName>
+            <md:SurName>Concern Infrastructure</md:SurName>
+            <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
+
+
          <!-- Språkbanken -->
          <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5213d67b809ca67eec1aaa1bfb494ef5b6499609" entityID="https://sp.spraakbanken.gu.se/shibboleth/clarin">
            <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
