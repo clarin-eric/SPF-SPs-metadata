@@ -852,46 +852,6 @@ lK5q6uLz0WDULxfQbmxpnJ35E8TbsH6Vw/2FQeaYYL9YRH05Xuz1+jFYtCBKaU8Q
         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
           <ds:X509Data>
             <ds:X509Certificate>
-MIIGKDCCBRCgAwIBAgIQAfIGoYstfiOJAamJxXbI8DANBgkqhkiG9w0BAQsFADBk
-MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
-QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xNjA1MjYwMDAwMDBaFw0xOTA1MzExMjAwMDBaMHUxCzAJBgNVBAYT
-AkZJMRAwDgYDVQQIEwdVdXNpbWFhMQ4wDAYDVQQHEwVFc3BvbzEvMC0GA1UEChMm
-Q1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxEzARBgNVBAMT
-Cmxici5jc2MuZmkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCokMDS
-FvhxZrxcF8dsutJBfWVEsyb2cVYfqfQO/cqdN7Iwoy4B7B0B+Yz5F9KrN6Fw5zqn
-iLyR/N/RqQwabVAD/skEKmMEWLGUsTcvr4W/HGFrVOjxHId1S1okjvWN9+a4GAcO
-5zJrzKkIC+YAkNOTcBbhGmdXw8Rt/bopSwKSKYxF2O9ORDIbP1H7IIzqubK+zoNt
-0nPaih2zsfjc0nptlUqCAsx4Fjif2lm5YgNS+CejqQmZe33vUB4gG2zeo7fKjcjF
-EuV5lCJuTGwJorYaL7wYhZRonaHMt0E2S8ZhvgiPv9a264/h9Q0sgvASQz7wR5VS
-yZ/RUDwcp+uasXeLI9hNkVhiDNSm0ln6M1ORH/xeox+dSPpWsz4YKGY8RiyVT0Nq
-/WCTKShvemGOAabGRljuyNM4sJ8ag+K+dQXLCcmlxSz4U9Xr9xs+yfFf0cDifjjD
-kHclzACBwdDchVtkv+mKcs0NDuGw3zX7vOiprZMY2ReMwfuseC2UXDXmuF1fylMA
-zO6rIONqme32L+yQAiPz4qReN3Um1ueJNEpMf7dTgdz1Zm5yXA0DiWFCOgZy+2iP
-vUuyfSEVPJwbHNAEgQpNKqxOeYjQBmSU8JWm7XZpXM3Dv0Lr1CSuTuFhur4cvYmb
-ILjvmWe8oJxP05tAeFsAzcTKQG85dwQHJfVTBwIDAQABo4IBwzCCAb8wHwYDVR0j
-BBgwFoAUZ/2IIBQnmMcJ0iUZu+lREWN1UGIwHQYDVR0OBBYEFJh4WV5gV59LRV9a
-PL8YjPLclQxhMBUGA1UdEQQOMAyCCmxici5jc2MuZmkwDgYDVR0PAQH/BAQDAgWg
-MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaAr
-hilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDAvoC2g
-K4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcmwwTAYD
-VR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cu
-ZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwbgYIKwYBBQUHAQEEYjBgMCQGCCsG
-AQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wOAYIKwYBBQUHMAKGLGh0
-dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3J0MAwGA1Ud
-EwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAB0RYCvx1BQnTAPrgeqFf7MYEs5T
-duPi/8lWNy+hXMVLuSF0OWhkiAywtxWdXDE8O1OE+N21Rb7xD2MM2erwmLsXfFu8
-uhNT+Q21YJOvIp0EsgaoiBcdUDP9vh+vDTAjpGnxfli1kREzUukKG3FURCsOVNuz
-OBi3gCxz5o9gxXAdRscMMb4cdA1FoKg4laFMwVFVevPEdCWVoZuVfGGwyDu9fkfu
-Oar4uK4ZSVFc/96VUZfv4ye5dCcZc+vO7N3xjGYd6J0Ds75Tkqn5eWhh/FgUOT8O
-XS2563DQHytAJwSGm01VkVEwGDiDotZ7QpI41XY+e4GarD8iQH9u19t8Uao=</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </KeyDescriptor>
-      <KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>
 MIIFvzCCA6egAwIBAgIJAOIdfsT10+MPMA0GCSqGSIb3DQEBDQUAMHUxCzAJBgNV
 BAYTAkZJMRAwDgYDVQQIDAdVdXNpbWFhMQ4wDAYDVQQHDAVFc3BvbzEvMC0GA1UE
 CgwmQ1NDIC0gVGlldGVlbiB0aWV0b3Rla25paWthbiBrZXNrdXMgT3kxEzARBgNV
@@ -3472,7 +3432,7 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
                         <mdui:Description xml:lang="de">CLARIN-PL digitale Langzeitarchiv - Polnisch Abschnitt CLARIN ERIC</mdui:Description>
                         <mdui:Logo height="32" width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
                         <mdui:InformationURL xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
-                        <mduiPrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mduiPrivacyStatementURL>
+                        <mdui:PrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mdui:PrivacyStatementURL>
                     </mdui:UIInfo>
                 </md:Extensions>
                 <md:KeyDescriptor>
