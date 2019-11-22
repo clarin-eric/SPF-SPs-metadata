@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-QA_VALIDATOR_VERSION=1.0.1-travis
-SAXON_VERSION=SaxonHE9-6-0-10J
-SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.6/$SAXON_VERSION.zip
-SCHEMATRON_VERSION=1.0-CLARIN
+QA_VALIDATOR_VERSION=1.0.5
+SAXON_VERSION=SaxonHE9-9-1-5J
+SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.9/$SAXON_VERSION.zip
+SCHEMATRON_VERSION=1.0.1-e16ecc4-CLARIN
 INSTALLS_PATH=qa-tmp
 
 
