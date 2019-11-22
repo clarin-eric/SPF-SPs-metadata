@@ -1,3 +1,4 @@
+[![Travis Status](https://travis-ci.org/clarin-eric/SPF-SPs-metadata.svg?branch=master)](https://travis-ci.org/clarin-eric/SPF-SPs-metadata)
 # Metadata sources for service providers inside the CLARIN Service Provider Federation
 
 ## Notes for service provider operators
