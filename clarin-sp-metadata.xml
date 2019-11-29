@@ -4681,8 +4681,8 @@ rI8v6OTvibpLrg==
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
-        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/Login"/>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/Login" index="5"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/Login" index="5"/>
         <mdui:UIInfo>
           <mdui:DisplayName xml:lang="en">DH course registry</mdui:DisplayName>
           <mdui:DisplayName xml:lang="de">DH course registry</mdui:DisplayName>
@@ -4727,14 +4727,14 @@ rI8v6OTvibpLrg==
         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
-      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/Artifact/SOAP" index="1"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/SLO/SOAP"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/SLO/Redirect"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/SLO/POST"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/SLO/Artifact"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/SLO/Artifact"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://registries.clarin-dariah.eu/Shibboleth.sso/SAML2/POST" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dhcr.clarin-dariah.eu/ops/Shibboleth.sso/SAML2/POST" index="5"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">DH course registry</md:ServiceName>
         <md:ServiceName xml:lang="de">DH course registry</md:ServiceName>
