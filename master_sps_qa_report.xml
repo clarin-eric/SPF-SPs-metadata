@@ -4653,7 +4653,7 @@ rI8v6OTvibpLrg==
       <md:EmailAddress>mailto:helpdesk@oeaw.ac.at</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
-  <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://registries.clarin-dariah.eu/shibboleth">
+  <md:EntityDescriptor xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" entityID="https://dhcr.clarin-dariah.eu/shibboleth">
         <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
