@@ -8341,27 +8341,27 @@ vMsMaOnszi5e8qaf5cbVOu23fQ==
         <md:ContactPerson contactType="technical">
             <md:GivenName>Stephan</md:GivenName>
             <md:SurName>Oepen</md:SurName>
-            <md:EmailAddress>lap-developers@ifi.uio.no</md:EmailAddress>
+            <md:EmailAddress>mailto:lap-developers@ifi.uio.no</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="administrative">
             <md:Company>University of Oslo (Norway)</md:Company>
             <md:GivenName>Stephan</md:GivenName>
             <md:SurName>Oepen</md:SurName>
-            <md:EmailAddress>lap-developers@ifi.uio.no</md:EmailAddress>
+            <md:EmailAddress>mailto:lap-developers@ifi.uio.no</md:EmailAddress>
             <md:TelephoneNumber>+47-4546 6632</md:TelephoneNumber>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:Company>University of Oslo (Norway)</md:Company>
             <md:GivenName>Stephan</md:GivenName>
             <md:SurName>Oepen</md:SurName>
-            <md:EmailAddress>lap-developers@ifi.uio.no</md:EmailAddress>
+            <md:EmailAddress>mailto:lap-developers@ifi.uio.no</md:EmailAddress>
             <md:TelephoneNumber>+47-4546 6632</md:TelephoneNumber>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:Company>University of Oslo (Norway)</md:Company>
             <md:GivenName>Stephan</md:GivenName>
             <md:SurName>Oepen</md:SurName>
-            <md:EmailAddress>lap-developers@ifi.uio.no</md:EmailAddress>
+            <md:EmailAddress>mailto:lap-developers@ifi.uio.no</md:EmailAddress>
             <md:TelephoneNumber>+47-4546 6632</md:TelephoneNumber>
         </md:ContactPerson>
     </md:EntityDescriptor>
