@@ -7000,7 +7000,7 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
 	</md:KeyDescriptor>
 	<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarino.uib.no/feide/single-logout"/>
 	<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-	<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:permanent</md:NameIDFormat>
+	<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
 	<md:AssertionConsumerService index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarino.uib.no/feide/assertion-consumer"/>
 	<md:AttributeConsumingService index="0">
           <md:ServiceName xml:lang="en">Clarino, UiB</md:ServiceName>
