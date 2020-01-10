@@ -9666,11 +9666,11 @@ CLARIN-IS
                     <mdui:DisplayName xml:lang="is">CLARIN-IS Gagnagrunnur</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Centre at the Arni Magnusson Institute.</mdui:Description>
                     <mdui:Description xml:lang="is">Rafræn skráning gagna og Clarin þjónusta við Stofnun Árna Magnússonar</mdui:Description>
-                    <mdui:InformationURL xml:lang="en">http://info.clarin.is/en/</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="is">http://info.clarin.is</mdui:InformationURL>
+		    <mdui:InformationURL xml:lang="en">https://repository.clarin.is/repository/xmlui/page/about</mdui:InformationURL>
+		    <mdui:InformationURL xml:lang="is">https://clarin.is/um-clarin</mdui:InformationURL>
                     <mdui:Logo height="209" width="300">https://repository.clarin.is/repository/xmlui/themes/UFAL/images/clarin-logo-is.png</mdui:Logo>
                     <mdui:Keywords xml:lang="en">CLARIN DSpace</mdui:Keywords>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://info.clarin.is/en/privacy.html/</mdui:PrivacyStatementURL>
+		    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.is/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
 
 
@@ -9783,17 +9783,17 @@ CLARIN-IS
         <md:ContactPerson contactType="administrative">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Administrators</md:SurName>
-            <md:EmailAddress>mailto:dspace.administrator@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace.administrator@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Support</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Samuel</md:GivenName>
             <md:SurName>Thorisson</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
 </EntitiesDescriptor>
