@@ -803,11 +803,6 @@
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
    </result>
    <result>
-      <sp>https://repository.clarin.lv/shibboleth</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
-   </result>
-   <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
       <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>

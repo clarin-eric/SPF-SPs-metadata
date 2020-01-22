@@ -1554,12 +1554,6 @@
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
-   <svrl:failed-assert test="fn:count($DiscoveryResponse_nodes)=1 and (every $URL in DiscoveryResponse_elements satisfies local:is_https_URL($URL))"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][68]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:Extensions[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://repository.clarin.lv/shibboleth
-                Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.
-                Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html . </svrl:text>
-   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.5/out/master_sps_qa_report.xml"
                         name="https endpoint URLs"/>
    <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
