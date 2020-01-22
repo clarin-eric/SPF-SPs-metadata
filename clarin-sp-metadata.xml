@@ -10031,8 +10031,7 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
                         xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
                         Name="http://macedir.org/entity-category"
                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1
-                    </saml:AttributeValue>
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
                 </saml:Attribute>
                 <saml:Attribute
                         xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
