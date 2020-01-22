@@ -187,12 +187,6 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="local:has_Entity_Category($DP_CoCo_EC, .)"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][68]">
-      <svrl:text>https://repository.clarin.lv/shibboleth
-                There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.
-                Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.5/out/master_sps_qa_report.xml"
                         name="REFEDS Research and Scholarship Entity Category"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
