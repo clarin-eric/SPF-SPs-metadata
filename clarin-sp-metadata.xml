@@ -10043,18 +10043,13 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
                         xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                     <mdui:DisplayName xml:lang="en">CLARIN Latvia Repository</mdui:DisplayName>
                     <mdui:DisplayName xml:lang="lv">CLARIN Latvija repozitorijs</mdui:DisplayName>
-                    <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Latvia.
-                    </mdui:Description>
-                    <mdui:Description xml:lang="lv">CLARIN Latvija digitālais repozitorijs un pakalpojumi.
-                    </mdui:Description>
+                    <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Latvia.</mdui:Description>
+                    <mdui:Description xml:lang="lv">CLARIN Latvija digitālais repozitorijs un pakalpojumi.</mdui:Description>
                     <mdui:InformationURL xml:lang="en">https://www.clarin.lv/en-us/</mdui:InformationURL>
                     <mdui:InformationURL xml:lang="lv">https://www.clarin.lv/lv/</mdui:InformationURL>
-                    <mdui:Logo height="209" width="300">
-                        https://repository.clarin.lv/repository/xmlui/themes/UFAL/images/lindat/clarin-logo.png
-                    </mdui:Logo>
+                    <mdui:Logo height="209" width="300">https://repository.clarin.lv/repository/xmlui/themes/UFAL/images/lindat/clarin-logo.png</mdui:Logo>
                     <mdui:Keywords xml:lang="en">CLARIN-LV DSpace</mdui:Keywords>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.lv/repository/xmlui/page/about?locale-attribute=en
-                    </mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.lv/repository/xmlui/page/about?locale-attribute=en</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
                 <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                        Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
