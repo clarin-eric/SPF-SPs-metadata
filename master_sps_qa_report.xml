@@ -9260,19 +9260,19 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
             <md:OrganizationURL xml:lang="it">http://www.eurac.edu/it</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="technical">
-            <md:GivenName>Alexander</md:GivenName>
-            <md:SurName>König</md:SurName>
-            <md:EmailAddress>mailto:Alexander.Koenig@eurac.edu</md:EmailAddress>
+            <md:GivenName>Egon</md:GivenName>
+            <md:SurName>Stemle</md:SurName>
+            <md:EmailAddress>mailto:clarin@eurac.edu</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
-            <md:GivenName>Alexander</md:GivenName>
-            <md:SurName>König</md:SurName>
-            <md:EmailAddress>mailto:Alexander.Koenig@eurac.edu</md:EmailAddress>
+            <md:GivenName>Egon</md:GivenName>
+            <md:SurName>Stemle</md:SurName>
+            <md:EmailAddress>mailto:clarin@eurac.edu</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="administrative">
             <md:GivenName>Andrea</md:GivenName>
             <md:SurName>Abel</md:SurName>
-            <md:EmailAddress>mailto:Andrea.Abel@eurac.edu</md:EmailAddress>
+            <md:EmailAddress>mailto:linguistics@eurac.edu</md:EmailAddress>
         </md:ContactPerson>
 
     </md:EntityDescriptor>
@@ -10020,7 +10020,7 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
             <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
           </md:ContactPerson>
    </md:EntityDescriptor>
-    <!-- CLARIN Latvia -->
+   <!-- CLARIN Latvia -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_31aaf669bc1cb303f7dd427f8000b44e348a3e13"
                          entityID="https://repository.clarin.lv/shibboleth">
 
