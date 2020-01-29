@@ -563,7 +563,7 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
       <md:EmailAddress>mailto:ling-admin@listat.csc.fi</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
-      
+
     <!-- CSC korp (via CLARIN) -->
     <md:EntityDescriptor
         entityID="https://sp.korp.csc.fi/">
@@ -9662,9 +9662,7 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
             <md:EmailAddress>mailto:seaton@hum.ku.dk</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-    <!--
-CLARIN-IS
- -->
+    <!-- CLARIN-IS -->
     <md:EntityDescriptor
             xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
             ID="_aae9214966fec92838e49783b86d8d2387be51ae"
@@ -9746,11 +9744,11 @@ CLARIN-IS
                     <mdui:DisplayName xml:lang="is">CLARIN-IS Gagnagrunnur</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Centre at the Arni Magnusson Institute.</mdui:Description>
                     <mdui:Description xml:lang="is">Rafræn skráning gagna og Clarin þjónusta við Stofnun Árna Magnússonar</mdui:Description>
-                    <mdui:InformationURL xml:lang="en">http://info.clarin.is/en/</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="is">http://info.clarin.is</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">https://clarin.is/en/about/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="is">https://clarin.is/um-clarin/</mdui:InformationURL>
                     <mdui:Logo height="209" width="300">https://repository.clarin.is/repository/xmlui/themes/UFAL/images/clarin-logo-is.png</mdui:Logo>
                     <mdui:Keywords xml:lang="en">CLARIN DSpace</mdui:Keywords>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://info.clarin.is/en/privacy.html/</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.is/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
 
 
@@ -9857,25 +9855,26 @@ CLARIN-IS
             <md:OrganizationName xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Arni Magnusson Institute for Icelandic Studies</md:OrganizationDisplayName>
             <md:OrganizationDisplayName xml:lang="is">Stofnun Árna Magnússonar</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">http://www.arnastofnun.is</md:OrganizationURL>
-            <md:OrganizationURL xml:lang="is">http://www.arnastofnun.is</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en">https://www.arnastofnun.is/en/front-page</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="is">https://www.arnastofnun.is/is/forsida</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="administrative">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Administrators</md:SurName>
-            <md:EmailAddress>mailto:dspace.administrator@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace.administrator@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Support</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Samuel</md:GivenName>
             <md:SurName>Thorisson</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
+
     <!-- Oxford Text Archive SP -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_02b0ed8aeb8ef925605e1afc23ef1146bfe9a02d" entityID="https://sp.ota.ox.ac.uk/shibboleth">
         <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
@@ -10020,4 +10019,214 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
             <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
           </md:ContactPerson>
    </md:EntityDescriptor>
+   <!-- CLARIN Latvia -->
+    <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_31aaf669bc1cb303f7dd427f8000b44e348a3e13"
+                         entityID="https://repository.clarin.lv/shibboleth">
+
+        <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+            <mdattr:EntityAttributes
+                    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                <saml:Attribute
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        Name="http://macedir.org/entity-category"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        Name="http://macedir.org/entity-category"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                </saml:Attribute>
+                <saml:Attribute
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        Name="http://macedir.org/entity-category"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+                </saml:Attribute>
+            </mdattr:EntityAttributes>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+            <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        </md:Extensions>
+
+        <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+            <md:Extensions>
+                <mdui:UIInfo
+                        xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                    <mdui:DisplayName xml:lang="en">CLARIN Latvia Repository</mdui:DisplayName>
+                    <mdui:DisplayName xml:lang="lv">CLARIN Latvija repozitorijs</mdui:DisplayName>
+                    <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Latvia.</mdui:Description>
+                    <mdui:Description xml:lang="lv">CLARIN Latvija digitālais repozitorijs un pakalpojumi.</mdui:Description>
+                    <mdui:InformationURL xml:lang="en">https://www.clarin.lv/en-us/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="lv">https://www.clarin.lv/lv/</mdui:InformationURL>
+                    <mdui:Logo height="209" width="300">https://repository.clarin.lv/repository/xmlui/themes/UFAL/images/lindat/clarin-logo.png</mdui:Logo>
+                    <mdui:Keywords xml:lang="en">CLARIN-LV DSpace</mdui:Keywords>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.lv/repository/xmlui/page/about?locale-attribute=en</mdui:PrivacyStatementURL>
+                </mdui:UIInfo>
+                <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                       Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                       Location="https://repository.clarin.lv/Shibboleth.sso/Login"/>
+                <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                           Location="https://repository.clarin.lv/Shibboleth.sso/Login" index="1"/>
+            </md:Extensions>
+            <md:KeyDescriptor>
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:KeyName>repository.clarin.lv</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509SubjectName>CN=repository.clarin.lv,OU=Institute of Mathematics and Computer
+                            Science,O=University of Latvia,L=Riga,ST=Latvia,C=LV
+                        </ds:X509SubjectName>
+                        <ds:X509Certificate>MIIGGzCCBAOgAwIBAgIJAP8WkO1L7bpMMA0GCSqGSIb3DQEBCwUAMIGjMQswCQYD
+                            VQQGEwJMVjEPMA0GA1UECAwGTGF0dmlhMQ0wCwYDVQQHDARSaWdhMR0wGwYDVQQK
+                            DBRVbml2ZXJzaXR5IG9mIExhdHZpYTE2MDQGA1UECwwtSW5zdGl0dXRlIG9mIE1h
+                            dGhlbWF0aWNzIGFuZCBDb21wdXRlciBTY2llbmNlMR0wGwYDVQQDDBRyZXBvc2l0
+                            b3J5LmNsYXJpbi5sdjAeFw0xOTA5MjExMjAzNThaFw0yOTA5MTgxMjAzNThaMIGj
+                            MQswCQYDVQQGEwJMVjEPMA0GA1UECAwGTGF0dmlhMQ0wCwYDVQQHDARSaWdhMR0w
+                            GwYDVQQKDBRVbml2ZXJzaXR5IG9mIExhdHZpYTE2MDQGA1UECwwtSW5zdGl0dXRl
+                            IG9mIE1hdGhlbWF0aWNzIGFuZCBDb21wdXRlciBTY2llbmNlMR0wGwYDVQQDDBRy
+                            ZXBvc2l0b3J5LmNsYXJpbi5sdjCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoC
+                            ggIBALbXeQZFaILcIM7SbCEzxsgicMw29LnI5sisg0q05Q3B6XfLVLHdHM3c9QWN
+                            ktIR64jZsoz0tC/J2jiNLZb8P48Do0irsVf6sCDdrk0ozZ/sfsMsoQeimC8Tt7P/
+                            a6TCWxNdGF4ZVQvsHK5SbRXvmpu24j3aZagUNAGJO+oww4AWCZ8KroY7c0CUNj09
+                            rvDCTNJ1f2Cy1kcvlgcXLx6tHEFIWUziV5DI9O80u8ypZL6JcUL9GarRX9jJybTY
+                            6BCKN7OeeR3XgM/tOMeWUDBD/w6PGQDrN3DAD6orwg8VwOlJFPHFGy5SXkqF4l5X
+                            yWQhp19ptOTau6pq2uCVEF7ilzd2IJ4L12H0ygI3mnlax3vlzSfCNkTwGBjs+0eV
+                            CsyWIaMCS+rcv/lTpeAHy173HoI+x7zhgRgOsYB5ttz5k7MEMtXGhQUz4mt4Tvmk
+                            ro5iM2pOtcokSO5pp9F40SkcmZk/z6FEWfCRkxNYHX3Z6QObT9MtWVDwcDvnKR5w
+                            U2lSsbWR28l69yAbTwsSyaYKMqcE37y7qWBUycUOGa0f3vRGe+NuRu9UwZJvqc2t
+                            EZrsuexYnM5Ji3PuPYr9oxfPpLDqLznf6MjfT8BobqkHYn/vROJiNpm6e9xAnTI0
+                            Fd3Yf83EnamwaFG8Oomjk1123/6m+jMnbssnAFVjhbmK5I8jAgMBAAGjUDBOMB0G
+                            A1UdDgQWBBQ/eYGp/RRPJ42fzutgFoGLuussbjAfBgNVHSMEGDAWgBQ/eYGp/RRP
+                            J42fzutgFoGLuussbjAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQBP
+                            Kdd+DWJZg/rPbesZ9YDQPHxF/jE2nyrh4gXuHFpAC00r5Yu0bfN+csTCPBB1DRMk
+                            Gtl5ck1bV6IclP+OY+9V7pQiiuXxU3py52xiNyTN465aUxIfH11/LlpQLTjMyOsq
+                            EzMvXH2niOgWhT5oFagxafReBbMLi3PsvtHLJJzE2yEuCMoEPs2xhr/vGfOlC+D7
+                            h9Hs/hetl1FhTF+2DsVmA33VWP/48YGWM77jOO1WGd/wmRYvTp+Wjq+Fp6J/s5ic
+                            z3r2LOo6HxpOasbOZ2goch2Y2t5W7I0IsUnIOqMXZWOhKDypDE46rYzyV5OEzXYh
+                            6NetOaTT3c7Su8W6as45hUI1NkCkuxJPGZR0itk6OZSGfmjLRlCAxPBXu6/7AkkG
+                            lr8WaMl5j7vMU8cf3cFDmEl9o8mQpYVdWCEB6hyvYjXwjTSC0kq5apX4Hiw8payl
+                            wZ4y2CwLoybZql3Smsfv2BJ0lH1ZEotzTPpAFiXeOl3mIMiabKUhyCEF1/RQwoaS
+                            dFs3T6k7MW9GCZit/hSHAA0IfFlOPcfB5Auf9GNAP7TaA6wJEIL0i9q8T+0avWJn
+                            oJxBnVsiuFndkVkeMEW7Agf+gidUXvLl16TkqGeE30DNvq71StSi7fy7c+7w5LZu
+                            AFwl8+9I4QrG0Oo6QCENVJzA0F6ruFqaMKi0lxAoOw==
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+            </md:KeyDescriptor>
+            <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                          Location="https://repository.clarin.lv/Shibboleth.sso/Artifact/SOAP"
+                                          index="1"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                    Location="https://repository.clarin.lv/Shibboleth.sso/SLO/SOAP"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                    Location="https://repository.clarin.lv/Shibboleth.sso/SLO/Redirect"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                    Location="https://repository.clarin.lv/Shibboleth.sso/SLO/POST"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                    Location="https://repository.clarin.lv/Shibboleth.sso/SLO/Artifact"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                         Location="https://repository.clarin.lv/Shibboleth.sso/SAML2/POST" index="1"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                         Location="https://repository.clarin.lv/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                         index="2"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                         Location="https://repository.clarin.lv/Shibboleth.sso/SAML2/Artifact"
+                                         index="3"/>
+            <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                         Location="https://repository.clarin.lv/Shibboleth.sso/SAML2/ECP" index="4"/>
+            <md:AttributeConsumingService
+                    index="1">
+                <md:ServiceName
+                        xml:lang="en">CLARIN Latvia
+                </md:ServiceName>
+                <md:ServiceDescription
+                        xml:lang="en">CLARIN Latvia
+                </md:ServiceDescription>
+                <md:RequestedAttribute
+                        FriendlyName="eduPersonPrincipalName"
+                        Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        isRequired="false"/>
+                <md:RequestedAttribute
+                        FriendlyName="mail"
+                        Name="urn:oid:0.9.2342.19200300.100.1.3"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        isRequired="true"/>
+                <md:RequestedAttribute
+                        FriendlyName="givenName"
+                        Name="urn:oid:2.5.4.42"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        isRequired="false"/>
+                <md:RequestedAttribute
+                        FriendlyName="surname"
+                        Name="urn:oid:2.5.4.4"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        isRequired="false"/>
+                <md:RequestedAttribute
+                        FriendlyName="cn"
+                        Name="urn:oid:2.5.4.3"
+                        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                        isRequired="false"/>
+            </md:AttributeConsumingService>
+        </md:SPSSODescriptor>
+        <md:Organization>
+            <md:OrganizationName
+                    xml:lang="lv">Latvijas Universitātes Matemātikas un informātikas institūts
+            </md:OrganizationName>
+            <md:OrganizationName
+                    xml:lang="en">Institute of Mathematics and Computer Science, Univeristy of Latvia
+            </md:OrganizationName>
+            <md:OrganizationDisplayName
+                    xml:lang="lv">Latvijas Universitātes Matemātikas un informātikas institūts
+            </md:OrganizationDisplayName>
+            <md:OrganizationDisplayName
+                    xml:lang="en">Institute of Mathematics and Computer Science, Univeristy of Latvia
+            </md:OrganizationDisplayName>
+            <md:OrganizationURL
+                    xml:lang="lv">http://lumii.lv/?lang=lv
+            </md:OrganizationURL>
+            <md:OrganizationURL
+                    xml:lang="en">http://lumii.lv/?lang=en
+            </md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson contactType="administrative">
+            <md:GivenName>CLARIN-LV</md:GivenName>
+            <md:SurName>Administrators</md:SurName>
+            <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="support">
+            <md:GivenName>CLARIN-LV</md:GivenName>
+            <md:SurName>Support</md:SurName>
+            <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+        </md:ContactPerson>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>CLARIN-LV</md:GivenName>
+            <md:SurName>Technical</md:SurName>
+            <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
 </EntitiesDescriptor>
