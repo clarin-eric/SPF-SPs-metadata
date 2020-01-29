@@ -563,7 +563,7 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
       <md:EmailAddress>mailto:ling-admin@listat.csc.fi</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
-      
+
     <!-- CSC korp (via CLARIN) -->
     <md:EntityDescriptor
         entityID="https://sp.korp.csc.fi/">
@@ -9662,9 +9662,7 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
             <md:EmailAddress>mailto:seaton@hum.ku.dk</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
-    <!--
-CLARIN-IS
- -->
+    <!-- CLARIN-IS -->
     <md:EntityDescriptor
             xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
             ID="_aae9214966fec92838e49783b86d8d2387be51ae"
@@ -9746,11 +9744,11 @@ CLARIN-IS
                     <mdui:DisplayName xml:lang="is">CLARIN-IS Gagnagrunnur</mdui:DisplayName>
                     <mdui:Description xml:lang="en">Digital repository and services of the CLARIN Centre at the Arni Magnusson Institute.</mdui:Description>
                     <mdui:Description xml:lang="is">Rafræn skráning gagna og Clarin þjónusta við Stofnun Árna Magnússonar</mdui:Description>
-                    <mdui:InformationURL xml:lang="en">http://info.clarin.is/en/</mdui:InformationURL>
-                    <mdui:InformationURL xml:lang="is">http://info.clarin.is</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="en">https://clarin.is/en/about/</mdui:InformationURL>
+                    <mdui:InformationURL xml:lang="is">https://clarin.is/um-clarin/</mdui:InformationURL>
                     <mdui:Logo height="209" width="300">https://repository.clarin.is/repository/xmlui/themes/UFAL/images/clarin-logo-is.png</mdui:Logo>
                     <mdui:Keywords xml:lang="en">CLARIN DSpace</mdui:Keywords>
-                    <mdui:PrivacyStatementURL xml:lang="en">https://info.clarin.is/en/privacy.html/</mdui:PrivacyStatementURL>
+                    <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.is/repository/xmlui/page/privacypolicy</mdui:PrivacyStatementURL>
                 </mdui:UIInfo>
 
 
@@ -9857,25 +9855,26 @@ CLARIN-IS
             <md:OrganizationName xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</md:OrganizationName>
             <md:OrganizationDisplayName xml:lang="en">Arni Magnusson Institute for Icelandic Studies</md:OrganizationDisplayName>
             <md:OrganizationDisplayName xml:lang="is">Stofnun Árna Magnússonar</md:OrganizationDisplayName>
-            <md:OrganizationURL xml:lang="en">http://www.arnastofnun.is</md:OrganizationURL>
-            <md:OrganizationURL xml:lang="is">http://www.arnastofnun.is</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="en">https://www.arnastofnun.is/en/front-page</md:OrganizationURL>
+            <md:OrganizationURL xml:lang="is">https://www.arnastofnun.is/is/forsida</md:OrganizationURL>
         </md:Organization>
         <md:ContactPerson contactType="administrative">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Administrators</md:SurName>
-            <md:EmailAddress>mailto:dspace.administrator@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace.administrator@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="support">
             <md:GivenName>CLARIN-IS</md:GivenName>
             <md:SurName>Support</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
         <md:ContactPerson contactType="technical">
             <md:GivenName>Samuel</md:GivenName>
             <md:SurName>Thorisson</md:SurName>
-            <md:EmailAddress>mailto:dspace-help@clarin.is</md:EmailAddress>
+            <md:EmailAddress>mailto:dspace-help@arnastofnun.is</md:EmailAddress>
         </md:ContactPerson>
     </md:EntityDescriptor>
+
     <!-- Oxford Text Archive SP -->
     <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_02b0ed8aeb8ef925605e1afc23ef1146bfe9a02d" entityID="https://sp.ota.ox.ac.uk/shibboleth">
         <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
