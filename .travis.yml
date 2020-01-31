@@ -6,7 +6,7 @@ branches:
   - master
   - production
 script:
-- sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
+- bash -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
