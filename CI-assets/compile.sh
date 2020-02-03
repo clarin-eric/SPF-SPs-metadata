@@ -46,7 +46,8 @@ fi
 for report in out/*results.xml
 do
 	set +e
-	xmllint --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) --output previous.xml
+	xmllint --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > previous.xml
+	${sed_cmd} -i "1i <?xml version=\"1.0\" encoding=\"utf-8\"?>" previous.xml
     if ! diff -wq ${report} previous.xml; then
     	set -e
     	echo "Report $(basename $report) has changed"
