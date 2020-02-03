@@ -45,13 +45,14 @@ fi
 for report in out/*results.xml
 do
 	set +e
-    if ! diff -q report ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null; then
+    if ! diff -q ${report} ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null; then
     	set -e
     	echo "Report $(basename $report) has changed"
 
     	${sed_cmd} -i "2i <report>" ${report}
     	${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
     	${sed_cmd} -i "\$a</report>" ${report}
+    	xmllint --output ${report} --format  ${report} > ${report}
     	
     	mv ${report} ../../$TARGET_BRANCH/reports/
     	filename_wo_ext="${report%_results.xml}"
