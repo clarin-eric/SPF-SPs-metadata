@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <FromCommit>efa4788c781fcc82866438f5ad453194c93ccb05</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>http://sp.lat.csc.fi</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>http://sp.lat.csc.fi</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+  </results>
+</report>
