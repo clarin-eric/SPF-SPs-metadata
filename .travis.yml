@@ -1,8 +1,6 @@
 os: 
   - linux
-language: java
-jdk:
-  - oraclejdk9
+language: minimal
 branches:
   only:
   - master
