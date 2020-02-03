@@ -5,7 +5,7 @@
 
 To update or add SAML metadata for your SP:
 1. Fork this repository.
-2. Make your changes to the *clarin-sp-metadata.xml* file.
+2. Make your changes to the file corresponding to your SP in *metadata/*. In case you are adding a new SP, add a new file
 3. Create a pull request to the *master* branch of this repository.
 4. Wait for Travis CI to finish the XSD validation on your pull request.
 5. Make sure your pull request is XSD valid. Fix your code based on the Travis CI output information and update the pull request until XSD validation passes.
