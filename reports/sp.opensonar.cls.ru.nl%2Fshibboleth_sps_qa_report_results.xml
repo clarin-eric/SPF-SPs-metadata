@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <FromCommit>efa4788c781fcc82866438f5ad453194c93ccb05</FromCommit>
-  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <result>
+<FromCommit>15096ac39d8ec17d3e586b9af84b3e8714d26109</FromCommit>
+<results xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <result>
       <sp>https://sp.opensonar.cls.ru.nl/shibboleth</sp>
       <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLST OpenSoNaR’) length (= 14) &lt; 5 or &gt; 33, or description (= ‘Web services and web applications developed and/or maintained by the Centre of Language and Speech technology at the Radboud University.’) length (= 136) &lt; 20 or &gt; 100.</explanation>
       <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-  </results>
+   </result>
+</results>
 </report>
