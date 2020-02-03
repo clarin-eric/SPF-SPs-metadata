@@ -46,7 +46,8 @@ fi
 for report in out/*results.xml
 do
 	set +e
-    if ! diff -q ${report} ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null 2>&1; then
+	xmllint --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > tmp.xml
+    if ! diff -wq ${report} tmp.xml; then
     	set -e
     	echo "Report $(basename $report) has changed"
 
@@ -64,5 +65,6 @@ do
     	set -e
     	echo "Report $(basename ${report}) is unhanged. Leaving previous version in place."
     fi
+    rm tmp.xml
 done
 cd ../.. && rm -rf $INSTALLS_PATH
