@@ -39,7 +39,7 @@ if [ ${number_of_files} -gt 1 ]; then
         xmllint --nsclean --format -) > ../../$TARGET_BRANCH/aggregated_feed_${SOURCE_BRANCH}.xml
 	ant -v -DinputFile="file:$(realpath ../../$TARGET_BRANCH/aggregated_feed_${SOURCE_BRANCH}.xml)"
 fi
-rm -rf out/*.sch out/*.xsl out/.gitignore out/aggregated_feed_${SOURCE_BRANCH}.xml
+rm -rf out/*.sch out/*.xsl out/.gitignore
 if [ ! -d "../../$TARGET_BRANCH/reports/" ]; then
     mkdir ../../$TARGET_BRANCH/reports/
 fi
@@ -53,7 +53,7 @@ do
     	${sed_cmd} -i "2i <report>" ${report}
     	${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
     	${sed_cmd} -i "\$a</report>" ${report}
-    	xmllint --output ${report} --format  ${report} > ${report}
+    	xmllint --output ${report} --format ${report}
     	
     	mv ${report} ../../$TARGET_BRANCH/reports/
     	filename_wo_ext="${report%_results.xml}"
