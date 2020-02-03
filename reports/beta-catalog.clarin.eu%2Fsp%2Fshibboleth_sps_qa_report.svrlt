@@ -106,10 +106,4 @@
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/beta-catalog.clarin.eu%252Fsp%252Fshibboleth_sps_qa_report.xml"
                         name="Contact persons"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="exists($administrative_mailto_URIs) and (every $mailto_URI in $administrative_mailto_URIs satisfies local:is_mailto_URI($mailto_URI))"
-                       location="/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://beta-catalog.clarin.eu/sp/shibboleth
-                Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).
-                Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
 </svrl:schematron-output>
