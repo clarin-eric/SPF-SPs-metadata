@@ -45,9 +45,9 @@ fi
 for report in out/*results.xml
 do
 	set +e
-    if ! diff -q report ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null 2>&1; then
+    if ! diff -q report ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null; then
     	set -e
-    	echo "Report $(basename report) has changed"
+    	echo "Report $(basename $report) has changed"
 
     	${sed_cmd} -i "2i <report>" ${report}
     	${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
