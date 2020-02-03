@@ -42,7 +42,7 @@ function loadXMLDoc() {
       generateHTML(parseRoot(this.responseXML.children[0]), this);
     }
   };
-  xmlhttp.open("GET", encodeURI("../reports/aggregated_feed_master.xml_sps_qa_report_results.xml"), true);
+  xmlhttp.open("GET", encodeURI("../reports/aggregated_feed_master_sps_qa_report_results.xml"), true);
   xmlhttp.setRequestHeader("Content-Type", "text/xml");
   xmlhttp.send();
 
