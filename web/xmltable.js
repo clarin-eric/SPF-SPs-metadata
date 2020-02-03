@@ -27,22 +27,33 @@ function parse(node) {
     return result;
 }
 
+function parseRoot (root) {
+  if (root.nodeType != 1) return null;
+  var result = parse(root.children[1]);
+  result.commit = root.children[0].textContent;
+  return result;
+}
+
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //console.log(parse(this.responseXML.children[0]));
-      generateHTML(parse(this.responseXML.children[0]), this);
+      generateHTML(parseRoot(this.responseXML.children[0]), this);
     }
   };
-  xmlhttp.open("GET", encodeURI("../reports/master_sps_qa_report_results.xml"), true);
+  xmlhttp.open("GET", encodeURI("../reports/aggregated_feed_master_sps_qa_report_results.xml"), true);
   xmlhttp.setRequestHeader("Content-Type", "text/xml");
   xmlhttp.send();
 
 }
 
 function generateHTML(xml, response) {
+  // Generate page header
   $("#lastModified").append(response.getResponseHeader("Last-Modified"));
+  $("#lastCommitLink").append(xml.commit);
+  $("#lastCommitLink").attr("href", "https://github.com/clarin-eric/SPF-SPs-metadata/commit/" + xml.commit);
+  // Generate results table
   $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-6' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
   $("#reportTable").append("<tbody id='QAtableBody'>");
   var i;
