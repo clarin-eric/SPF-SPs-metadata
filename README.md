@@ -5,10 +5,10 @@
 
 To update or add SAML metadata for your SP:
 1. Fork this repository.
-2. Make your changes to the file corresponding to your SP in *metadata/*. In case you are adding a new SP, add a new file with the metadata of your SP following the same naming convention. i.e. `[New SP File Name] = [SP entityID].replace("http(s)?://", "").replace("/", "%2F")`
+2. Make your changes to the file corresponding to your SP in `metadata/`. In case you are adding a new SP, add the metadata by creating a new file following the same naming convention: `[New SP File Name] = [SP entityID].replace("http(s)?://", "").replace("/", "%2F")`
 3. Create a pull request to the *master* branch of this repository.
 4. Wait for Travis CI to finish the XSD validation on your pull request.
-5. Make sure your pull request is XSD valid. Fix your code based on the Travis CI output information and update the pull request until XSD validation passes.
+5. Make sure your pull request is XSD valid. Fix your metadata based on the Travis CI output information and update the pull request until XSD validation passes.
 6. Wait for your pull request to be merged into the *master* branch by a CLARIN SPF operator. This will trigger the generation of a [QA report](https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html) by Travis CI.
 7. Wait for Travis CI to finish the generation of the [QA report](https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html).
 8. Fix the issues concerning your SP described in the QA report and update your pull request accordingly (alternatively you can also submit a new pull request with your QA fixes).
