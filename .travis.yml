@@ -6,7 +6,7 @@ branches:
   - master
   - production
 script:
-- sudo apt-get install -y libxml2-utils
+- sudo apt-get install -y libxml2-utils oracle-java8-unlimited-jce-policy
 - bash check-saml-metadata/check_saml_metadata.sh metadata/
 env:
   global:
