@@ -6,8 +6,8 @@ branches:
   - master
   - production
 script:
-- sudo apt-get install -y xmllint
-- bash -x check-saml-metadata/check_saml_metadata.sh metadata/
+- sudo apt-get install -y libxml2-utils
+- bash check-saml-metadata/check_saml_metadata.sh metadata/
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
