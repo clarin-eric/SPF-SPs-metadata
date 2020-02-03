@@ -26,7 +26,7 @@ rm out/SAML_metadata_QA_validator.concrete.sch out/SAML_metadata_QA_validator.xs
 if [ ! -d "../../out/" ]; then
 	mkdir ../../out/
 fi
-mv out/* ../../out/
+mv out/* ../../out/reports
 cd ../.. && rm -rf $INSTALLS_PATH
 
 
