@@ -46,11 +46,11 @@ fi
 for report in out/*results.xml
 do
 	set +e
-	xmllint --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > previous.xml
-	${sed_cmd} -i "1i <?xml version=\"1.0\" encoding=\"utf-8\"?>" previous.xml
-    if ! diff -wq ${report} previous.xml; then
+	xmllint --format --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > previous.xml
+	xmllint --format --xpath "//results" ${report} > current.xml
+    if ! diff -q current.xml previous.xml; then
     	set -e
-    	echo "Report $(basename $report) has changed"
+    	echo "Report $(basename ${report}) has changed"
 
     	${sed_cmd} -i "2i <report>" ${report}
     	${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
@@ -65,6 +65,6 @@ do
     	set -e
     	echo "Report $(basename ${report}) is unhanged. Leaving previous version in place."
     fi
-    rm previous.xml
+    rm previous.xml current.xml
 done
 cd ../.. && rm -rf $INSTALLS_PATH
