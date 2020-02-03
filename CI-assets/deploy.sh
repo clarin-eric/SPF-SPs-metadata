@@ -60,12 +60,13 @@ git commit -m "Deploy SAML QA report for: ${SHA}"
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
 
+# TODO
 # Comment pull request
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     echo "Commenting pull request"
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${TRAVIS_PULL_REQUEST}
-Automated QA assessment complete. Please check you SP at [QA report](https://clarin-eric.github.io/SPF-SPs-metadata/page/qa_reports_index.html)\"}" \
+Automated QA assessment complete. Please check you SP at [QA report](https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html)\"}" \
         "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
 fi
 exit 0
