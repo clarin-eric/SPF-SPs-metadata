@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+<FromCommit>acdaebc57e6d2eb110f5cf17d609f384596415b9</FromCommit>
+<results xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://childes.talkbank.org/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://talkbank.talkbank.org/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://childes.talkbank.org/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.clarin.vdu.lt</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.korp.csc.fi/</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>http://sp.lat.csc.fi</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://talkbank.talkbank.org/shibboleth</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
+      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://acdh.oeaw.ac.at/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘ACDH-ÖAW Services for Digital Humanities’) length (= 40) &lt; 5 or &gt; 33, or description (= ‘Various services provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the CLARIN initiative).’) length (= 171) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://arche.acdh.oeaw.ac.at/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘ARCHE - A Resource Centre for HumanitiEs’) length (= 40) &lt; 5 or &gt; 33, or description (= ‘A hosting service for research data provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW).’) length (= 138) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://childes.talkbank.org/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CHILDES - Child Language Data Exchange System’) length (= 45) &lt; 5 or &gt; 33, or description (= ‘Transcript corpora of conversational interactions involving young children.’) length (= 75) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ids-mannheim.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLARIN services’) length (= 15) &lt; 5 or &gt; 33, or description (= ‘Various services provided by the Leibniz-Institut für Deutsche Sprache (IDS) in the context of the CLARIN initiative.’) length (= 117) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.oeaw.ac.at/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘ACDH-ÖAW Services for Digital Humanities’) length (= 40) &lt; 5 or &gt; 33, or description (= ‘Various services provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the CLARIN initiative).’) length (= 171) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>http://corpora.uni-hamburg.de</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Hamburg Centre for Language Corpora’) length (= 35) &lt; 5 or &gt; 33, or description (= ‘The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository (mainly including spoken language corpora)’) length (= 128) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://delt.acdh-dev.oeaw.ac.at/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Database of English Learner Texts (DELT) (dev)’) length (= 46) &lt; 5 or &gt; 33, or description (= ‘The Database of English Learner Texts (DELT) aims to promote research on the learning and use of English.’) length (= 105) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://delt.acdh.oeaw.ac.at/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Database of English Learner Texts (DELT)’) length (= 40) &lt; 5 or &gt; 33, or description (= ‘The Database of English Learner Texts (DELT) aims to promote research on the learning and use of English.’) length (= 105) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://dhcr.clarin-dariah.eu/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘DH course registry’) length (= 18) &lt; 5 or &gt; 33, or description (= ‘Registry of DH-related courses (study programs) across Europe jointly maintained by the research infrastructures CLARIN-ERIC and DARIAH-EU’) length (= 138) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Digital Repository for the CLARIN Research Infrastructure provided by ILC-CNR’) length (= 77) &lt; 5 or &gt; 33, or description (= ‘ILC-CNR for CLARIN-IT Consortium: Digital repository and services on language research infrastructure’) length (= 101) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CELR services’) length (= 13) &lt; 5 or &gt; 33, or description (= ‘CELR services’) length (= 13) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://infra.clarin.dk/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLARIN-DK-UCPH’) length (= 14) &lt; 5 or &gt; 33, or description (= ‘This Service Provider enables access to the CLARIN center at University of Copenhagen and its services for language-based materials and tools.’) length (= 142) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘LAP: UiO Language Analysis Portal (Production)’) length (= 46) &lt; 5 or &gt; 33, or description (= ‘Ready-to-Run and State-of-the-Art Language Analysis Tools in the Cloud’) length (= 70) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Language Bank Rights’) length (= 20) &lt; 5 or &gt; 33, or description (= ‘Service for applying for and managing access rights to language resources in the Language Bank of Finland.’) length (= 106) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://shibboleth.bbaw.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘BBAW - CLARIN services’) length (= 22) &lt; 5 or &gt; 33, or description (= ‘Various services provided by the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) in the context of the CLARIN initiative.’) length (= 134) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.beta-vcr.clarin.eu</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLARIN Virtual Collection Registry (beta)’) length (= 41) &lt; 5 or &gt; 33, or description (= ‘For the Virtual Collection Registry.’) length (= 36) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.korp.csc.fi/</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Concordance search service for text corpora’) length (= 43) &lt; 5 or &gt; 33, or description (= ‘With this service you can study text corpora.’) length (= 45) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.onderzoek.zoeken.fame.frl/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLST Fame’) length (= 9) &lt; 5 or &gt; 33, or description (= ‘Web services and web applications developed and/or maintained by the Centre of Language and Speech technology at the Radboud University.’) length (= 136) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.opensonar.cls.ru.nl/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLST OpenSoNaR’) length (= 14) &lt; 5 or &gt; 33, or description (= ‘Web services and web applications developed and/or maintained by the Centre of Language and Speech technology at the Radboud University.’) length (= 136) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.vcr.clarin.eu</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘CLARIN Virtual Collection Registry’) length (= 34) &lt; 5 or &gt; 33, or description (= ‘For the Virtual Collection Registry.’) length (= 36) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://sp.www.kielipankki.fi</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Kielipankki (The Language Bank of Finland)’) length (= 42) &lt; 5 or &gt; 33, or description (= ‘Web portal of the Language Bank of Finland’) length (= 42) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>http://corpora.uni-hamburg.de</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@isRequired’. Please specify whether a SAML attribute is a must-have or like-to-have for functionality of your SP or not.</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration.</requirement>
+   </result>
+   <result>
+      <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@isRequired’. Please specify whether a SAML attribute is a must-have or like-to-have for functionality of your SP or not.</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration.</requirement>
+   </result>
+   <result>
+      <sp>https://repo.clarino.uib.no/shibboleth/sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@Name’, or their values do not start with 'urn:oid:'. You may be using the SAML 1.x NameFormat, which is incorrect for a SAML 2 attribute.</explanation>
+      <requirement>Required for technical correctness.</requirement>
+   </result>
+   <result>
+      <sp>https://shibboleth.bbaw.de/shibboleth</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://aaiproxy.de.dariah.eu/sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://authentication.clariah.nl/Saml2/proxy_saml2_backend.xml</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ids-mannheim.de/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://clarinportulan.net</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://clarinportulan.net</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://repos.ids-mannheim.de/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://sp.korp.csc.fi/</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>http://sp.lat.csc.fi</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://sp.www.kielipankki.fi</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://testauthentication.di.huc.knaw.nl/Saml2/proxy_saml2_backend.xml</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>http://www.clarin-pl.eu/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>http://corpora.uni-hamburg.de</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
+      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://childes.talkbank.org/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarin.ims.uni-stuttgart.de/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarinoai.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fedora.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://infra.clarin.dk/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://infra.clarin.dk/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://talkbank.talkbank.org/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://test.clarin-d.uni-saarland.de</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+   <result>
+      <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+</results>
+</report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+<FromCommit>acdaebc57e6d2eb110f5cf17d609f384596415b9</FromCommit>
+<results xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <result>
+      <sp>https://repo.clarino.uib.no/shibboleth/sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@Name’, or their values do not start with 'urn:oid:'. You may be using the SAML 1.x NameFormat, which is incorrect for a SAML 2 attribute.</explanation>
+      <requirement>Required for technical correctness.</requirement>
+   </result>
+</results>
+</report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+<FromCommit>acdaebc57e6d2eb110f5cf17d609f384596415b9</FromCommit>
+<results xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+   </result>
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+   </result>
+   <result>
+      <sp>https://secure.huygens.knaw.nl</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+   </result>
+</results>
+</report>
