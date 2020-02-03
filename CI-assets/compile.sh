@@ -9,7 +9,7 @@ INSTALLS_PATH=qa-tmp
 
 sed_cmd="sed"
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	sed_cmd="gsed"
+    sed_cmd="gsed"
 fi
 
 mkdir -p $INSTALLS_PATH/saxon
@@ -33,11 +33,11 @@ do
 done
 number_of_files=$(ls ${md_files} 2> /dev/null | wc -l)
 if [ ${number_of_files} -gt 1 ]; then
-	echo "Generating and testing aggregated output..."
-	((xmllint -xpath "/*[local-name()='EntitiesDescriptor' and namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata']" ../../CI-assets/feed_wrapper.xml  | \
+    echo "Generating and testing aggregated output..."
+    ((xmllint -xpath "/*[local-name()='EntitiesDescriptor' and namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata']" ../../CI-assets/feed_wrapper.xml  | \
         head -1; xmllint -xpath "/*[local-name()='EntityDescriptor' and namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata']" ../../metadata/*;tail -1 ../../CI-assets/feed_wrapper.xml) | \
         xmllint --nsclean --format -) > ../../$TARGET_BRANCH/aggregated_feed_${SOURCE_BRANCH}.xml
-	ant -v -DinputFile="file:$(realpath ../../$TARGET_BRANCH/aggregated_feed_${SOURCE_BRANCH}.xml)"
+    ant -v -DinputFile="file:$(realpath ../../$TARGET_BRANCH/aggregated_feed_${SOURCE_BRANCH}.xml)"
 fi
 rm -rf out/*.sch out/*.xsl out/.gitignore
 if [ ! -d "../../$TARGET_BRANCH/reports/" ]; then
@@ -45,25 +45,26 @@ if [ ! -d "../../$TARGET_BRANCH/reports/" ]; then
 fi
 for report in out/*results.xml
 do
-	set +e
-	xmllint --format --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > previous.xml
-	xmllint --format --xpath "//results" ${report} > current.xml
+    set +e
+    xmllint --format --xpath "//results" $(realpath ../../$TARGET_BRANCH/reports/$(basename ${report})) > previous.xml
+    xmllint --format --xpath "//results" ${report} > current.xml
     if ! diff -q current.xml previous.xml; then
-    	set -e
-    	echo "Report $(basename ${report}) has changed"
+        set -e
+        echo "Report $(basename ${report}) has changed"
 
-    	${sed_cmd} -i "2i <report>" ${report}
-    	${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
-    	${sed_cmd} -i "\$a</report>" ${report}
-    	xmllint --output tmp.xml --format ${report}
-    	
-    	mv ${report} ../../$TARGET_BRANCH/reports/
-    	filename_wo_ext="${report%_results.xml}"
-    	mv ${filename_wo_ext}.xml ../../$TARGET_BRANCH/reports/
-    	mv ${filename_wo_ext}.svrlt ../../$TARGET_BRANCH/reports/
+        ${sed_cmd} -i "2i <report>" ${report}
+        ${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
+        ${sed_cmd} -i "\$a</report>" ${report}
+        xmllint --output tmp.xml --format ${report}
+        mv tmp.xml ${report}
+        
+        filename_wo_ext="${report%_results.xml}"
+        mv ${report} ../../$TARGET_BRANCH/reports/
+        mv ${filename_wo_ext}.xml ../../$TARGET_BRANCH/reports/
+        mv ${filename_wo_ext}.svrlt ../../$TARGET_BRANCH/reports/
     else
-    	set -e
-    	echo "Report $(basename ${report}) is unhanged. Leaving previous version in place."
+        set -e
+        echo "Report $(basename ${report}) is unhanged. Leaving previous version in place."
     fi
     rm previous.xml current.xml
 done
