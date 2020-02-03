@@ -29,9 +29,10 @@ function parse(node) {
 
 function parseRoot (root) {
   if (root.nodeType != 1) return null;
-  var result = parse(root.children[1]);
-  result.commit = root.children[0].textContent;
-  return result;
+  var report = parse(root.children[2]);
+  report.date = root.children[0].textContent;
+  report.commit = root.children[1].textContent;
+  return report;
 }
 
 function loadXMLDoc() {
@@ -50,7 +51,7 @@ function loadXMLDoc() {
 
 function generateHTML(xml, response) {
   // Generate page header
-  $("#lastModified").append(response.getResponseHeader("Last-Modified"));
+  $("#lastModified").append(xml.date);
   $("#lastCommitLink").append(xml.commit);
   $("#lastCommitLink").attr("href", "https://github.com/clarin-eric/SPF-SPs-metadata/commit/" + xml.commit);
   // Generate results table
