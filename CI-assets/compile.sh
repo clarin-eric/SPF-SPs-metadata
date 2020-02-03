@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-set -x
+
 QA_VALIDATOR_VERSION=1.0.8
 SAXON_VERSION=SaxonHE9-9-1-5J
 SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.9/$SAXON_VERSION.zip
@@ -46,7 +46,7 @@ fi
 for report in out/*results.xml
 do
 	set +e
-    if ! diff -q ${report} ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null; then
+    if ! diff -q ${report} ../../$TARGET_BRANCH/reports/$(basename ${report}) > /dev/null 2>&1; then
     	set -e
     	echo "Report $(basename $report) has changed"
 
