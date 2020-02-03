@@ -53,7 +53,8 @@ do
         echo "Report $(basename ${report}) has changed"
 
         ${sed_cmd} -i "2i <report>" ${report}
-        ${sed_cmd} -i "3i <FromCommit>${SHA}</FromCommit>" ${report}
+        ${sed_cmd} -i "3i <ReportDate>$(date)</ReportDate>" ${report}
+        ${sed_cmd} -i "4i <FromCommit>${SHA}</FromCommit>" ${report}
         ${sed_cmd} -i "\$a</report>" ${report}
         xmllint --output tmp.xml --format ${report}
         mv tmp.xml ${report}
