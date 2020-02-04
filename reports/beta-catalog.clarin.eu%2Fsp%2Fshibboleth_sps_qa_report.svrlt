@@ -91,12 +91,6 @@
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/beta-catalog.clarin.eu%252Fsp%252Fshibboleth_sps_qa_report.xml"
                         name="Organizational background"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="md:Organization[md:OrganizationName/@xml:lang='en' and md:OrganizationDisplayName/@xml:lang='en' and md:OrganizationURL/@xml:lang='en']"
-                       location="/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
-      <svrl:text>https://beta-catalog.clarin.eu/sp/shibboleth
-                Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.
-                Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/beta-catalog.clarin.eu%252Fsp%252Fshibboleth_sps_qa_report.xml"
                         name="Contact persons"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Tue Feb  4 17:00:22 UTC 2020</ReportDate>
-  <FromCommit>4cb3ae3784331c8813f6aab5ddb95f6e2995d207</FromCommit>
+  <ReportDate>Tue Feb  4 19:27:12 UTC 2020</ReportDate>
+  <FromCommit>d9d8add91eb275c80444a4922f450336491bbe80</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
@@ -605,11 +605,6 @@
     </result>
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
-      <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
-      <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
       <explanation>Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.</explanation>
       <requirement>Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>

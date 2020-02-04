@@ -805,6 +805,11 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://beta-catalog.clarin.eu/Shibboleth.sso/SAML/POST" index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://beta-catalog.clarin.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
     </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">CLARIN ERIC</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CLARIN</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
+    </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>CLARIN</md:GivenName>
       <md:SurName>Sysops</md:SurName>

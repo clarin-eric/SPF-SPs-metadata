@@ -1469,12 +1469,6 @@
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
-   <svrl:failed-assert test="md:Organization[md:OrganizationName/@xml:lang='en' and md:OrganizationDisplayName/@xml:lang='en' and md:OrganizationURL/@xml:lang='en']"
-                       location="/*:EntitiesDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][8]">
-      <svrl:text>https://beta-catalog.clarin.eu/sp/shibboleth
-                Invalid or missing elements ‘md:Organization’ with children ‘md:OrganizationName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationDisplayName’ with the attribute ‘xml:lang='en'’ and ‘md:OrganizationURL’ with the attribute ‘xml:lang='en'’.
-                Completely a requirement for eduID.cz and DFN-AAI registration. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
-   </svrl:failed-assert>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
    <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
