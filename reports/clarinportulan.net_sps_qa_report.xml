@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://clarinportulan.net">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                         Name="http://macedir.org/entity-category">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">CLARIN / PORTULAN</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Infrastructure for Science and Technology of the Portuguese Language</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://clarinportulan.net/</mdui:InformationURL>
+            <mdui:Logo height="220" width="195">https://clarinportulan.net/static/metashare/images/portulan-logo.png</mdui:Logo>
+            <mdui:Keywords xml:lang="en">Portuguese Language</mdui:Keywords>
+            <mdui:PrivacyStatementURL xml:lang="en">https://clarinportulan.net/privacy_statement/</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIEFTCCAv2gAwIBAgIJAKrot5uClrm4MA0GCSqGSIb3DQEBCwUAMIGgMQswCQYDVQQGEwJQVDEPMA0GA1UECAwGTGlzYm9hMQ8wDQYDVQQHDAZMaXNib2ExGjAYBgNVBAoMEUNMQVJJTiAvIFBPUlRVTEFOMQswCQYDVQQLDAJTUDEfMB0GA1UEAwwWc3NvLmNsYXJpbnBvcnR1bGFuLm5ldDElMCMGCSqGSIb3DQEJARYWbHVpcy5nb21lc0BkaS5mYy51bC5wdDAeFw0xODAzMjcxNDI0NDJaFw0yODAzMjYxNDI0NDJaMIGgMQswCQYDVQQGEwJQVDEPMA0GA1UECAwGTGlzYm9hMQ8wDQYDVQQHDAZMaXNib2ExGjAYBgNVBAoMEUNMQVJJTiAvIFBPUlRVTEFOMQswCQYDVQQLDAJTUDEfMB0GA1UEAwwWc3NvLmNsYXJpbnBvcnR1bGFuLm5ldDElMCMGCSqGSIb3DQEJARYWbHVpcy5nb21lc0BkaS5mYy51bC5wdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAO1+zRIkybgsLtMZ6VS2eAeHQ4R6VAsaxcN0pMEwQuo3dpZt++bQhqa6zU4W5c5VOum25FC0+LDKfFfHqXQSFw0vOPCMRwc5JifICRhnycaOqv9tX9akMcQZxYctVVB7dQrlZ84G9jb0G1XV+60hD4srVORTy1rwMa/0jexaxw0RrRlETZuQosWbMbewqSI4K/9ab5CMaffBHt4qY6fFT2KWrR98LRB9Nz9gZ69kNRSeLflqN5gwm6smN/PIitzK8RJHGF0MvwdArJGz/rSYwfvMgbWN/yNqbKMBgM459WuZZl3gLniehglxbCx4nSY6Oap65j996yvMrRlmnBIaLCsCAwEAAaNQME4wHQYDVR0OBBYEFH0esipVVjlsEuX8woEDyZyfss8ZMB8GA1UdIwQYMBaAFH0esipVVjlsEuX8woEDyZyfss8ZMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAFZum06g0a1K+/f7odCzUfWS4LgSYmvLTmm8XEOiOkQBPmmbY+LSbtClzn6MQDqZsTVxEF+NzcYEVEiwG2oSWuyYB3nJdQqtKUuT19Yrc/OvOiatq7n9sD/e8246JuWw7CWF7zQSZg+48tiL7J1DYXoE1q0oJg2ywaWYsGtMx7/dPfxsBrFkhjKzBUfu6K0lSacPIJaOIKVckjlGYEUM+IDWa2ee7Eo3k8oZmoeLIfcJI0FM574GxVFbeJRIyuAkJHiNFurA7Hixxj8UAeLELLy58/edMJ2KAe4TD8ewr49tirnN7xMnqVpThvRbD4MgYJ7REMkyMAQ4Qy5wZwcizLM=</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://sp.clarinportulan.net/module.php/saml/sp/saml2-logout.php/portulan"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://sp.clarinportulan.net/module.php/saml/sp/saml2-acs.php/portulan"
+                                   index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                   Location="https://sp.clarinportulan.net/module.php/saml/sp/saml2-acs.php/portulan"
+                                   index="2"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">CLARIN / PORTULAN</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Infrastructure for Science and Technology of the Portuguese Language</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonTargetedID"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">CLARIN / PORTULAN</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CLARIN / PORTULAN</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://clarinportulan.net/</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>António</md:GivenName>
+      <md:SurName>Branco</md:SurName>
+      <md:EmailAddress>mailto:antonio.branco@di.fc.ul.pt</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Luís</md:GivenName>
+      <md:SurName>Gomes</md:SurName>
+      <md:EmailAddress>mailto:luis.gomes@di.fc.ul.pt</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Luís</md:GivenName>
+      <md:SurName>Gomes</md:SurName>
+      <md:EmailAddress>mailto:luis.gomes@di.fc.ul.pt</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>

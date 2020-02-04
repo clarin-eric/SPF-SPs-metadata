@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:EntityDescriptor xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata"
+                      xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                      xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                      xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                      xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                      xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                      xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                      xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                      xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                      xmlns:remd="http://refeds.org/metadata"
+                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      entityID="https://unity.eudat-aai.fz-juelich.de:8443/unitygw/saml-sp-metadata">
+   <urn:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+                        AuthnRequestsSigned="false"
+                        WantAssertionsSigned="true">
+      <urn:KeyDescriptor>
+         <xd:KeyInfo xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
+            <xd:X509Data>
+               <xd:X509Certificate>MIIGzTCCBbWgAwIBAgIHGO7pggeHcjANBgkqhkiG9w0BAQsFADCBgzELMAkGA1UEBhMCREUxJzAlBgNVBAoTHkZvcnNjaHVuZ3N6ZW50cnVtIEp1ZWxpY2ggR21iSDEqMCgGA1UEAxMhRlpKIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzAyMR8wHQYJKoZIhvcNAQkBFhBjYUBmei1qdWVsaWNoLmRlMB4XDTE1MDIwMjEyMjIxMFoXDTE5MDcwOTIzNTkwMFowgY4xCzAJBgNVBAYTAkRFMRwwGgYDVQQIExNOb3JkcmhlaW4tV2VzdGZhbGVuMRAwDgYDVQQHEwdKdWVsaWNoMScwJQYDVQQKEx5Gb3JzY2h1bmdzemVudHJ1bSBKdWVsaWNoIEdtYkgxJjAkBgNVBAMTHXVuaXR5LmV1ZGF0LWFhaS5mei1qdWVsaWNoLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA59cZH1x9Yv1uk13r1CG3DAR7yJ9XhU/ok82xrL7Fd+ESKozwSJLcfqQs6C5cyuuXAcPU6OtQnGyf8Ed73tsRVl+ueFINbblKkZnSXVyYTPFsXy72V6CT3Ws6Nst3h+3ss5k5Bb8St10yjkHx6ZGQKx/wiFhK5YY86+sFcnoqraREmhIDJ39eaIGRUKczRnl3124NcPSo2DdHOlkS0j59JqQJTqaXaFdHt6a66Wk3gZJA6EvPPkjMEMHTyEq9i1bg42xrVLD9enzBuJzuT4haNCswMtxZUMUQn/DPAj2cPRK1o5JeqR+sgGYWG6jkaVQ94aLcIed2+Xi8SnnB4CPB87bX5ybhBWCaCfs5CfYL3fjiNM/z6Uww9d5x+zNROlPzB5CxM+V4ZeWR1NsFBMhwPMbJOCagBKsf2GvueWCVK12obzfRNnDYGIHVjL6tU9P2OuaBuALSHmc3dlWhO8ksjBlKZGuh0Hr0Zq5waJB05siE0k9FyDjCDjFfAj19YEVljZd/X2NlFsiAw8798Ck8FVo+4XWdIlp6BGUcYxiNIrIHqmR4H81KaFxWqDZfkos01VNH816z4BOHtLphG4EcMpOsPjLrMGsToj5zzrBNei3RBwqzdnP+HsfNIBbad6VZcNpeUrcBV3k5gKIcY0bsDr5lS4eGHUBpy+H9VU56NWcCAwEAAaOCAjcwggIzME8GA1UdIARIMEYwEQYPKwYBBAGBrSGCLAEBBAMDMBEGDysGAQQBga0hgiwCAQQDATAPBg0rBgEEAYGtIYIsAQEEMA0GCysGAQQBga0hgiweMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQWBBT42p4LX1GdkdDYXUhwNDEOC4VaHzAfBgNVHSMEGDAWgBQgvXGJpckqMy8R4B/llCZWDxECJTAoBgNVHREEITAfgh11bml0eS5ldWRhdC1hYWkuZnotanVlbGljaC5kZTB7BgNVHR8EdDByMDegNaAzhjFodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Z6ai1jYS9wdWIvY3JsL2dfY2FjcmwuY3JsMDegNaAzhjFodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Z6ai1jYS9wdWIvY3JsL2dfY2FjcmwuY3JsMIHLBggrBgEFBQcBAQSBvjCBuzAzBggrBgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQMEEGCCsGAQUFBzAChjVodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Z6ai1jYS9wdWIvY2FjZXJ0L2dfY2FjZXJ0LmNydDBBBggrBgEFBQcwAoY1aHR0cDovL2NkcDIucGNhLmRmbi5kZS9memotY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwDQYJKoZIhvcNAQELBQADggEBACw9cLqR7qO8DDsK/efcakbI4fqPI9WMnfGLvw9c/zAxJE8K9O8XRhbwlwHGK1FBwkOos3RNpMOJ7nxIgzIsvmL0uuYPzzp3BUe8yUHdgKpGlw479O+nEgZ0Y1IMtWr/NOoerKY7DOrsuRHfiyf/gc1afX1cV/fkRpVvnN+zB8Sqvrx3yRi4SV8AQ6ZCUeZRSfiQIjacMZ3GOdDBUWu64azEpMv1VXREbc7N6vcVDT7s1rGa29ZiRmTQ0UqE2TAISaPtxr+CC50f/Ct78/erutbLNv4fTv6QyfzWXuGPcfnRtmJliSXdT1hDU1pWUIQEsc5G5+/vmqj5owWpeMRgPxg=</xd:X509Certificate>
+            </xd:X509Data>
+         </xd:KeyInfo>
+      </urn:KeyDescriptor>
+      <urn:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</urn:NameIDFormat>
+      <urn:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</urn:NameIDFormat>
+      <urn:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</urn:NameIDFormat>
+      <urn:AssertionConsumerService index="1"
+                                    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                    Location="https://unity.eudat-aai.fz-juelich.de:8443/unitygw/spSAMLResponseConsumer"
+                                    isDefault="true"/>
+      <urn:AssertionConsumerService index="2"
+                                    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                    Location="https://unity.eudat-aai.fz-juelich.de:8443/unitygw/spSAMLResponseConsumer"
+                                    isDefault="false"/>
+   </urn:SPSSODescriptor>
+   <urn:ContactPerson contactType="technical">
+      <urn:GivenName>Shiraz</urn:GivenName>
+      <urn:SurName>Memon</urn:SurName>
+      <urn:EmailAddress>mailto:a.memon@fz-juelich.de</urn:EmailAddress>
+   </urn:ContactPerson>
+   <urn:ContactPerson contactType="support">
+      <urn:GivenName>Shiraz</urn:GivenName>
+      <urn:SurName>Memon</urn:SurName>
+      <urn:EmailAddress>mailto:a.memon@fz-juelich.de</urn:EmailAddress>
+   </urn:ContactPerson>
+</urn:EntityDescriptor>

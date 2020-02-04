@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     ID="_d84ae41f39457179d5d9b4d053e16e33f7ef67fa"
+                     entityID="https://clarin.fz-juelich.de/shibboleth">
+   <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://clarin.fz-juelich.de/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://clarin.fz-juelich.de/Shibboleth.sso/Login"
+                                    index="1"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:KeyName>clarin.fz-juelich.de</ds:KeyName>
+            <ds:X509Data>
+               <ds:X509SubjectName>CN=clarin.fz-juelich.de,OU=JSC,O=Forschungszentrum Juelich GmbH,L=Juelich,ST=Nordrhein-Westfalen,C=DE</ds:X509SubjectName>
+               <ds:X509Certificate>MIIF7DCCBNSgAwIBAgIHF3dECdP/XDANBgkqhkiG9w0BAQUFADCBgzELMAkGA1UE BhMCREUxJzAlBgNVBAoTHkZvcnNjaHVuZ3N6ZW50cnVtIEp1ZWxpY2ggR21iSDEq MCgGA1UEAxMhRlpKIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzAyMR8wHQYJ KoZIhvcNAQkBFhBjYUBmei1qdWVsaWNoLmRlMB4XDTE0MDQyMzEzNTYwOVoXDTE3 MDQyMjEzNTYwOVowgZMxCzAJBgNVBAYTAkRFMRwwGgYDVQQIExNOb3JkcmhlaW4t V2VzdGZhbGVuMRAwDgYDVQQHEwdKdWVsaWNoMScwJQYDVQQKEx5Gb3JzY2h1bmdz emVudHJ1bSBKdWVsaWNoIEdtYkgxDDAKBgNVBAsTA0pTQzEdMBsGA1UEAxMUY2xh cmluLmZ6LWp1ZWxpY2guZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB AQCt9e9wtfsei5yAZM2nSOHfqK0/rq1qFMVUF8KYm7AeqJj0CEplsVLqcMDkW8A1 qFmZplF3sWtF6lhO28NnKNaCs6W9R4RfK/YSoxKcVdsxinZVqYhxCXB/XkqTAAuc KsY4ZflidSwDtyhrNMI7PgXb35arE32IVS5795TgSbg/LEFker4lDy7lb21ThJ03 TymGwi/Tv8BR7DQvihc02xfOtnIkwZ0UvtAeGGqiRyxxcyZwnMM6GwM46nBBxGJz qBwBupb54PVUEAADLPUpJYHs87SXC48PbsJtsaLUpt0zkes2vazXKY/qARAONtTo 2uuYiI2sfaNNE37qKdYFCycHAgMBAAGjggJRMIICTTA5BgNVHSAEMjAwMBEGDysG AQQBga0hgiwBAQQDATARBg8rBgEEAYGtIYIsAgEEAwEwCAYGZ4EMAQICMAkGA1Ud EwQCMAAwCwYDVR0PBAQDAgXgMDQGA1UdJQQtMCsGCCsGAQUFBwMCBggrBgEFBQcD AQYKKwYBBAGCNwoDAwYJYIZIAYb4QgQBMB0GA1UdDgQWBBTle+Hdh5gX9F2N0I6d pkmo8lISKjAfBgNVHSMEGDAWgBQgvXGJpckqMy8R4B/llCZWDxECJTA3BgNVHREE MDAughRjbGFyaW4uZnotanVlbGljaC5kZYEWdnNnYy1hZG1AZnotanVlbGljaC5k ZTB7BgNVHR8EdDByMDegNaAzhjFodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Z6ai1j YS9wdWIvY3JsL2dfY2FjcmwuY3JsMDegNaAzhjFodHRwOi8vY2RwMi5wY2EuZGZu LmRlL2Z6ai1jYS9wdWIvY3JsL2dfY2FjcmwuY3JsMIHLBggrBgEFBQcBAQSBvjCB uzAzBggrBgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZl ci9PQ1NQMEEGCCsGAQUFBzAChjVodHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Z6ai1j YS9wdWIvY2FjZXJ0L2dfY2FjZXJ0LmNydDBBBggrBgEFBQcwAoY1aHR0cDovL2Nk cDIucGNhLmRmbi5kZS9memotY2EvcHViL2NhY2VydC9nX2NhY2VydC5jcnQwDQYJ KoZIhvcNAQEFBQADggEBACm264szZBQTDUXI/+aZA4+mouqobOH4buqLCno7HE6U M9MQFZWnHLOxOgI9j5hQwO2WQXYnMFv4Jm2NGAfWKVf1CkzAnSh41BeNxZxMdyIs salsyfaWs8IHMUu8D9D2b040pqK7vJJfgBYQz6OA49mrIojvZH2QdeHZJ2OrRc4p 7BrdGmnvh7vHxv0CGh2u/77cLtARkZEixwmNX4pj8WiAtF3MqcsFkhZu3pgfveke pb3cchv4NAD/wXuj35pyzxv1nf9lpWjSGKP4O0YQQXepTZzTgZOUshEOA89mcv0C 6QwSuKLQPW+KesXm2dduLl5ZGKC0LAh2Zn7Ut+3mFuE= </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                    Location="https://clarin.fz-juelich.de/Shibboleth.sso/Artifact/SOAP"
+                                    index="1"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                              Location="https://clarin.fz-juelich.de/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://clarin.fz-juelich.de/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                              Location="https://clarin.fz-juelich.de/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                              Location="https://clarin.fz-juelich.de/Shibboleth.sso/SLO/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML2/POST"
+                                   index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML2/Artifact"
+                                   index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML2/ECP"
+                                   index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML/POST"
+                                   index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                                   Location="https://clarin.fz-juelich.de/Shibboleth.sso/SAML/Artifact"
+                                   index="6"/>
+   </md:SPSSODescriptor>
+</md:EntityDescriptor>

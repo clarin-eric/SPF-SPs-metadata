@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Tue Feb  4 09:44:18 UTC 2020</ReportDate>
+  <FromCommit>dcef403d5fc15ac1edb49a203976195b402ce72c</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>http://www.clarin-pl.eu/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+  </results>
+</report>

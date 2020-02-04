@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                        xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                        xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                        xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                        xmlns:local="about:SAML_metadata_QA_validator"
+                        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                        xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                        xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                        xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                        title="SAML metadata QA validator"
+                        schemaVersion=""><!--   
+		   
+		   
+		 -->
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2000/09/xmldsig#" prefix="ds"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                       prefix="idpdisc"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:profiles:SSO:request-init" prefix="init"/>
+   <svrl:ns-prefix-in-attribute-values uri="about:SAML_metadata_QA_validator" prefix="local"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:2.0:metadata" prefix="md"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:metadata:attribute" prefix="mdattr"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:metadata:rpi" prefix="mdrpi"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:metadata:ui" prefix="mdui"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:tc:SAML:2.0:assertion" prefix="saml"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="GÉANT Data Protection Code of Conduct Entity Category"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="REFEDS Research and Scholarship Entity Category"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Logo"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Metadata Extensions for Login and Discovery User Interface: URLs"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        id="mdui_text_en"
+                        name="Metadata Extensions for Login and Discovery User Interface: texts"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:failed-assert test="$result[1]"
+                       location="/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sp.www.kielipankki.fi
+                Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Kielipankki (The Language Bank of Finland)’) length (= 42) &lt; 5 or &gt; 33, or description (= ‘Web portal of the Language Bank of Finland’) length (= 42) &lt; 20 or &gt; 100.
+                Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation. </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Specification of the provided service and requested attributes"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Explicit specification of Discovery Response and Request Initiator URLs"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor/md:Extensions"/>
+   <svrl:failed-assert test="fn:count($RequestInitiator_nodes)=1 and (every $URL in RequestInitiator_elements satisfies local:is_https_URL($URL))"
+                       location="/*:EntityDescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:SPSSODescriptor[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]/*:Extensions[namespace-uri()='urn:oasis:names:tc:SAML:2.0:metadata'][1]">
+      <svrl:text>https://sp.www.kielipankki.fi
+                Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’. 
+                Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html . </svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="https endpoint URLs"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Key duplication"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="SAML 2 support"/>
+   <svrl:fired-rule context="md:EntityDescriptor/md:SPSSODescriptor"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Organizational background"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+   <svrl:active-pattern document="file:/home/travis/build/clarin-eric/SPF-SPs-metadata/qa-tmp/SAML_metadata_QA_validator-1.0.9/out/sp.www.kielipankki.fi_sps_qa_report.xml"
+                        name="Contact persons"/>
+   <svrl:fired-rule context="md:EntityDescriptor[md:SPSSODescriptor]"/>
+</svrl:schematron-output>

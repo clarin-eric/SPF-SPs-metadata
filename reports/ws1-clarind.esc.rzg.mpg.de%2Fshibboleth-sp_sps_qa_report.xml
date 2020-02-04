@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                  xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                  xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                  xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                  xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                  xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                  xmlns:remd="http://refeds.org/metadata"
+                  xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                  xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                  xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  entityID="https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp">
+   <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <Extensions>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/Login"
+                                    index="1"/>
+      </Extensions>
+      <KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:KeyName>ws1-clarind</ds:KeyName>
+            <ds:X509Data>
+               <ds:X509SubjectName>CN=ws1-clarind</ds:X509SubjectName>
+               <ds:X509Certificate>MIIC6DCCAdCgAwIBAgIJAIQBEJWRCyv5MA0GCSqGSIb3DQEBBQUAMBYxFDASBgNV BAMTC3dzMS1jbGFyaW5kMB4XDTEyMDYwNTEzMTkzMFoXDTIyMDYwMzEzMTkzMFow FjEUMBIGA1UEAxMLd3MxLWNsYXJpbmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw ggEKAoIBAQD0+BSmMwdqlwHg1h30Vxl0bVXOAvkTjpb2qudzt9/Rz6DAGb9qGESp gxQrhyxMnBwhFcfchRbS3x2DU7pGLitdbtrjOBjbwXFnCHVrkNTYHYpWA2DhoNFX Yom2dIYi6e2qlgMU4tQfo+s7NXjIpL6Q7MuR1YP41L8ITG70JX6PcQrIcjNe9a8G rukt1BSNui7UlZE9lhCpz/2M+kgeLX8FwCJrQ3PvWWjbLb2Og5N+pGp6kt8lgZH/ HYd84rx5RNIDqWkRZrOoS+11jXbivDyIRsmBi5BFJBLfmYOta6GbzJVtZ+KTwsA8 62T1pmZxhI/jzi+hm6wXv+JXIS/SdE7vAgMBAAGjOTA3MBYGA1UdEQQPMA2CC3dz MS1jbGFyaW5kMB0GA1UdDgQWBBT+XDYqCyQzH6MRFhh7Ctwzd+c0gjANBgkqhkiG 9w0BAQUFAAOCAQEAytXEDlty4uq/C2HunTLAzqNlCIfOvNl6uvBQyEoQouFBWWfY M3ttTv9N7ixCOF2kvGY367TTKEc2TsS12ky7hD5GCKxqN3iNbfnmmGYx/GAtep7Z q85880oMZw88kN1RJdrumWFnh+x2ytQijdmuv4opby+OrMn8kRQkEr14c+rJh+wL 0lpEoW9yz/xO+sVP3ea+7LMVVXaVs+TWCAu5Uu1ZZLi1xLm1tuTYhSgxZZo+aNow wmUbZBvZiCDIa+kfL1un7V9rLgEwEGPPUbCyiSLRfcSnTXQmod9HFXZiDWj/4CHf P0ugbmDddsQ1bC4PL5pKNFlOcwP3DHRshbyx4Q== </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </KeyDescriptor>
+      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                 Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/Artifact/SOAP"
+                                 index="0"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                           Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SLO/SOAP"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                           Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SLO/Redirect"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                           Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SLO/POST"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                           Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SLO/Artifact"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/POST"
+                                index="0"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                index="1"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/Artifact"
+                                index="2"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML2/ECP"
+                                index="3"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/POST"
+                                index="4"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                                Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact"
+                                index="5"/>
+   </SPSSODescriptor>
+</EntityDescriptor>
