@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-set -x
+
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 COMMIT_AUTHOR_EMAIL="clarin_spf_qa_bot@clarin.eu"
