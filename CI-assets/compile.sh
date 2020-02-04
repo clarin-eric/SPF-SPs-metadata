@@ -1,11 +1,12 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-
+set -x
 QA_VALIDATOR_VERSION=1.0.9
 SAXON_VERSION=SaxonHE9-9-1-5J
 SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.9/$SAXON_VERSION.zip
 SCHEMATRON_VERSION=1.0.1-e16ecc4-CLARIN
 INSTALLS_PATH=qa-tmp
+CHANGED_SPS=()
 
 sed_cmd="sed"
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -50,7 +51,8 @@ do
     xmllint --format --xpath "//results" ${report} > current.xml
     if ! diff -q current.xml previous.xml; then
         set -e
-        echo "Report $(basename ${report}) has changed"
+        REPORT_NAME=$(basename ${report})
+        echo "Report ${REPORT_NAME} has changed"
 
         ${sed_cmd} -i "2i <report>" ${report}
         ${sed_cmd} -i "3i <ReportDate>$(date)</ReportDate>" ${report}
@@ -63,6 +65,7 @@ do
         mv ${report} ../../$TARGET_BRANCH/reports/
         mv ${filename_wo_ext}.xml ../../$TARGET_BRANCH/reports/
         mv ${filename_wo_ext}.svrlt ../../$TARGET_BRANCH/reports/
+        CHANGED_SPS+=( ${REPORT_NAME} )
     else
         set -e
         echo "Report $(basename ${report}) is unhanged. Leaving previous version in place."

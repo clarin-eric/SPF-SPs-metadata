@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-
+set -x
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 COMMIT_AUTHOR_EMAIL="clarin_bot@clarin.eu"
@@ -10,8 +10,8 @@ function doCompile {
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
-if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping QA report build."
+if [ "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
+    echo "Not ${SOURCE_BRANCH}. Skipping QA report build."
     exit 0
 fi
 
@@ -63,10 +63,22 @@ git push $SSH_REPO $TARGET_BRANCH
 # TODO
 # Comment pull request
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-    echo "Commenting pull request"
+    echo "Commenting pull request..."
+    CHANGED_SPS_HTML="<ul>"
+    for report in ${CHANGED_SPS[@]}
+    do
+        CHANGED_SPS_HTML+="<li><a href=\"https://clarin-eric.github.io/SPF-SPs-metadata/web/${report}\">${report%_sps_qa_report_results.xml}</a></li>"
+    done
+    CHANGED_SPS_HTML="</ul>"
+    
+    
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
-        -d "{\"body\": \"https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${TRAVIS_PULL_REQUEST}
-Automated QA assessment complete. Please check you SP at [QA report](https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html)\"}" \
+        -d "{\"body\": \"\
+        <p>Automated QA assessment complete.</p>\
+        <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a></p>\
+        <p>The following SP reports chnaged with this pull request:</p>\
+        ${CHANGED_SPS} \
+        \"}" \
         "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
 fi
 exit 0
