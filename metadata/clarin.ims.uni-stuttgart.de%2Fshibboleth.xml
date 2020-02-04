@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                  xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                  xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                  xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                  xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                  xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                  xmlns:remd="http://refeds.org/metadata"
+                  xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                  xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                  xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  ID="_2b11c64ae972d1db978cc09e6cdea4ac3ea2fb30"
+                  entityID="https://clarin.ims.uni-stuttgart.de/shibboleth">
+   <Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+   </Extensions>
+   <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <Extensions>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/Login"
+                                    index="1"/>
+      </Extensions>
+      <KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:KeyName>bengalengeier.ims.uni-stuttgart.de</ds:KeyName>
+            <ds:KeyName>clarin03.ims.uni-stuttgart.de</ds:KeyName>
+            <ds:X509Data>
+               <ds:X509SubjectName>CN=bengalengeier.ims.uni-stuttgart.de,OU=IMS,O=Universitaet Stuttgart,L=Stuttgart,ST=Baden-Wuerttemberg,C=DE</ds:X509SubjectName>
+               <ds:X509Certificate>MIIGKzCCBROgAwIBAgIHFUqpDWRWkTANBgkqhkiG9w0BAQUFADCBlDELMAkGA1UE BhMCREUxEjAQBgNVBAcTCVN0dXR0Z2FydDEfMB0GA1UEChMWVW5pdmVyc2l0YWV0 IFN0dXR0Z2FydDEoMCYGA1UEAxMfVW5pdmVyc2l0YWV0IFN0dXR0Z2FydCBDQSAt IEcwMTEmMCQGCSqGSIb3DQEJARYXY2EtZzAxQHVuaS1zdHV0dGdhcnQuZGUwHhcN MTMwMjI1MDkxNDM4WhcNMTgwMjI0MDkxNDM4WjCBmjELMAkGA1UEBhMCREUxGzAZ BgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzESMBAGA1UEBxMJU3R1dHRnYXJ0MR8w HQYDVQQKExZVbml2ZXJzaXRhZXQgU3R1dHRnYXJ0MQwwCgYDVQQLEwNJTVMxKzAp BgNVBAMTImJlbmdhbGVuZ2VpZXIuaW1zLnVuaS1zdHV0dGdhcnQuZGUwggEiMA0G CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2W6U6uegBkyQ8Lu0Bkn4+F9txNQ0N eAOGTXRZNJc7n4mxvIVSTRn55zFYhg1qy+Hc7nqClSB6vYTw8xltO3ZkSftRUllX CrRVk5MQ/oB4N5Otl3tt1G6qeJscFsoVl3xlBUrKGmVdEFL3J5Y3eGwR6/yogpBi H1Hle3YAS935F0czr5y379C1UwLN2Dn5epK7RaQDE7xCyX4zwEFHj+Y1ggHhtrgK Dgf/cunTyqIxpgRv3tQ7/Up2tZPXq777TgI+f72c0hNcuG+lcCApNeQjHldRyMJi prJpXeu68slHc0KJHgNrGJAUazeAhehigeOe0Ms6tl+zVzv7KQts7v7xAgMBAAGj ggJ4MIICdDA5BgNVHSAEMjAwMBEGDysGAQQBga0hgiwBAQQDADARBg8rBgEEAYGt IYIsAgEEAwAwCAYGZ4EMAQICMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1Ud JQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUuroRXWRr8uvD4TP0 C7EO/55NrUEwHwYDVR0jBBgwFoAUva0nWiw3zw1EH3Iaqrc3mREuAgQwUgYDVR0R BEswSYIiYmVuZ2FsZW5nZWllci5pbXMudW5pLXN0dXR0Z2FydC5kZYIdY2xhcmlu MDMuaW1zLnVuaS1zdHV0dGdhcnQuZGWHBI06oAwwgY0GA1UdHwSBhTCBgjA/oD2g O4Y5aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktc3R1dHRnYXJ0LWNhL3B1Yi9j cmwvY2FjcmwuY3JsMD+gPaA7hjlodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1z dHV0dGdhcnQtY2EvcHViL2NybC9jYWNybC5jcmwwgdsGCCsGAQUFBwEBBIHOMIHL MDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVy L09DU1AwSQYIKwYBBQUHMAKGPWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLXN0 dXR0Z2FydC1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSQYIKwYBBQUHMAKGPWh0 dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLXN0dXR0Z2FydC1jYS9wdWIvY2FjZXJ0 L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBADVHuRrUEUX8Lk3tHfdZgB9y BiRzX8NIzmZ4LaxOeNf5qcpzBk+UjDYg+tbU2t5gZnTebMbaH/bP0S7WSTxtmRd8 BrGnVM99Ld6YOxZ5V6OKjyJoEjuVlx11G5AMGhgB28zTXeEFVOfiYRIYmIWnQMeU 50qfd0/ldT0gDQxAuO6+Rni0Dyhc1PD4nkIE4YiD7rWTw+uLCkHnT/WEwBsn8b88 LbBdrNdY/7YEFxpZZKQ7AHK8drcn7tbEuva6kzuj9cv3urwdSDU8ksegfri3qncZ 7YtqXrWITKBgUN4HTh4AIidRQy+2ChaleLgcJl1GW52jjqEiBcPsuMJk55s8bGs= </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+         <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+         <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+         <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+         <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+         <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+         <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </KeyDescriptor>
+      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                 Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/Artifact/SOAP"
+                                 index="1"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                           Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SLO/SOAP"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                           Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SLO/Redirect"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                           Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SLO/POST"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                           Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SLO/Artifact"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML2/POST"
+                                index="1"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                index="2"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML2/Artifact"
+                                index="3"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML2/ECP"
+                                index="4"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML/POST"
+                                index="5"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                                Location="https://clarin03.ims.uni-stuttgart.de/Shibboleth.sso/SAML/Artifact"
+                                index="6"/>
+   </SPSSODescriptor>
+</EntityDescriptor>

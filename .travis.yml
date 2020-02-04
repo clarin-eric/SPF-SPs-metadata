@@ -1,7 +1,21 @@
-sudo: false
+os: 
+  - linux
+language: minimal
+branches:
+  only:
+  - master
+  - production
 script:
-- sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
+- sudo apt-get install -y libxml2-utils
+- bash check-saml-metadata/check_saml_metadata.sh metadata/
+env:
+  global:
+  - ENCRYPTION_LABEL: f641f006de37
+  - COMMIT_AUTHOR_EMAIL: "spf-qa-bot@clarin.eu"
+after_success:
+- sudo apt-get install -y ant
+- bash CI-assets/deploy.sh
 notifications:
   email:
     on_success: change
-on_failure: always
+    on_failure: always

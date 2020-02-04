@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+    xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+    xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:pyff="http://pyff.io/NS"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ser="http://eidas.europa.eu/metadata/servicelist"
+    xmlns:eidas="http://eidas.europa.eu/saml-extensions"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+    xmlns:remd="http://refeds.org/metadata" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"
+    xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata" Name="http://www.clarin.eu/spf"
+    ID="_20200129T172616Z" validUntil="2020-02-08T17:26:16Z" cacheDuration="PT5H">
+
+</md:EntitiesDescriptor>
