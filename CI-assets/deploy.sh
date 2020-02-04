@@ -74,8 +74,9 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\
+        <img src=https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${TRAVIS_PULL_REQUEST}></img> \
         <p>Automated QA assessment complete.</p>\
-        <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a></p>\
+        <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
         <p>The following SP reports chnaged with this pull request:</p>\
         ${CHANGED_SPS} \
         \"}" \
