@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>QA report - CLARIN Service Provider Federation SAML</title>
+        <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="pb-2 mt-1 mb-2 text-center">
+            <img src="clarin_logo.png"></img>
+            <h2>Service Provider Federation</h2>
+        </div>
+        <h4>Current SAML Quality Assurance report for Service Provider:</h4>
+        <h5><code id="entityID"></code></h5>
+        <br>
+        <label>Last updated on:</label><code id="lastModified"><span> </span></code><span> from commit: </span><a id="lastCommitLink"></a>
+        <br>
+        <div class="table-responsive-sm">
+            <table id="reportTable" class="table table-bordered table-sm"></table>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="lib/jquery-3.4.1-slim/jquery-3.4.1.slim.min.js"></script>
+        <script src="lib/popper-1.16.0/popper.min.js"></script>
+        <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+        <script src="xmltable.js"></script>
+    </div>
+    </body>
+</html>

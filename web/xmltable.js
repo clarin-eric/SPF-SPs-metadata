@@ -39,11 +39,17 @@ function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      //console.log(parse(this.responseXML.children[0]));
       generateHTML(parseRoot(this.responseXML.children[0]), this);
     }
   };
-  xmlhttp.open("GET", encodeURI("../reports/aggregated_feed_master_sps_qa_report_results.xml"), true);
+  // Use URL query string to specify which xml report to load
+  var reportURL = "../reports/aggregated_feed_master_sps_qa_report_results.xml";
+  if ( location.search === "" ) {
+    xmlhttp.open("GET", encodeURI(reportURL), true);
+  } else {
+    reportURL = "../reports/" + location.search.substring(1);
+    xmlhttp.open("GET", encodeURI(reportURL), true);
+  }
   xmlhttp.setRequestHeader("Content-Type", "text/xml");
   xmlhttp.send();
 
@@ -54,8 +60,14 @@ function generateHTML(xml, response) {
   $("#lastModified").append(xml.date);
   $("#lastCommitLink").append(xml.commit);
   $("#lastCommitLink").attr("href", "https://github.com/clarin-eric/SPF-SPs-metadata/commit/" + xml.commit);
+  // Fill in the page global information according to the html template being used
+  if (location.pathname.endsWith("master_qa_report.html")) {
+    $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-6' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
+  } else if (location.pathname.endsWith("sp_qa_report.html")) {
+    $("#entityID").append(xml.children[0].children[0].textContent);
+    $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-8' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
+  }
   // Generate results table
-  $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-6' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
   $("#reportTable").append("<tbody id='QAtableBody'>");
   var i;
   x = xml.children.sort(compare);
@@ -65,11 +77,21 @@ function generateHTML(xml, response) {
     if (requirement.indexOf("Completely a requirement") !== -1) {
         colorClass = "table-danger";
     }
-    enityID = x[i].children[0].textContent;
-    $("#QAtableBody").append("<tr class='" + colorClass + " d-flex'><th class='col-2 text-break' scope='row'><a href='" + enityID +"'>" +
-      enityID + "</a></th><td class='col-6 text-break'>" +
-      x[i].children[1].textContent +
-      "</td><td class='col-4 text-break'>" + requirement + "</td></tr>");
+    // Fill in the table according to the html template in use
+    if (location.pathname.endsWith("master_qa_report.html")) {
+      entityID = x[i].children[0].textContent;
+      // href for individual reports of each SP
+      standalone_reportURI = encodeURIComponent(entityID.replace(/https?:\/\//i, "") + "_sps_qa_report_results.xml");
+      $("#QAtableBody").append("<tr class='" + colorClass + " d-flex'><th class='col-2 text-break' scope='row'><a href='sp_qa_report.html?" +
+        standalone_reportURI + "'>" +
+        entityID + "</a></th><td class='col-6 text-break'>" +
+        x[i].children[1].textContent +
+        "</td><td class='col-4 text-break'>" + requirement + "</td></tr>");
+    } else if (location.pathname.endsWith("sp_qa_report.html")) {
+      $("#QAtableBody").append("<tr class='" + colorClass + " d-flex'><td class='col-8 text-break'>" +
+        x[i].children[1].textContent +
+        "</td><td class='col-4 text-break'>" + requirement + "</td></tr>");
+    }
   }
 }
 loadXMLDoc();
