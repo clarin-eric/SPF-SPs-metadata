@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://clarin.phonetik.uni-muenchen.de">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+      <md:Extensions>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Login"
+                                    index="1"/>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="de">BAS Service Provider</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="en">BAS Service Provider</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">BAS Service Provider</mdui:DisplayName>
+            <mdui:Description xml:lang="de">Bayerisches Archiv für Sprachsignale Service Provider (Zugriff beschränkt auf Mitglieder akademischer Einrichtungen)</mdui:Description>
+            <mdui:Description xml:lang="en">Bavarian Archive for Speech Signals Service Provider (access to resources restricted to academia).</mdui:Description>
+            <mdui:Description xml:lang="fi">"Bavarian Archive for Speech Signals (BAS)":n palveluntarjoaja (vain akateemiseen käyttöön).</mdui:Description>
+            <mdui:Keywords xml:lang="en">Bavarian Archive for Speech Signals Service Provider</mdui:Keywords>
+            <mdui:Logo height="150" width="356">https://www.phonetik.uni-muenchen.de/forschung/bay_arch_sprsig/bas_logo_german.jpg</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="en">https://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
+            <ds:X509Data>
+               <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=Institut fuer Phonetik und Sprachverarbeitung,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+               <ds:X509Certificate>MIIJ/jCCCOagAwIBAgIMICDzpbK/zJRVseazMA0GCSqGSIb3DQEBCwUAMIGNMQsw
+CQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVz
+IERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4t
+UEtJMSUwIwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTE4
+MTEzMDE3NDA0MFoXDTIwMTEyOTE3NDA0MFowgZ0xCzAJBgNVBAYTAkRFMQ8wDQYD
+VQQIDAZCYXllcm4xETAPBgNVBAcMCE11ZW5jaGVuMTEwLwYDVQQKDChMdWR3aWct
+TWF4aW1pbGlhbnMtVW5pdmVyc2l0YWV0IE11ZW5jaGVuMQ0wCwYDVQQLDARWSS40
+MSgwJgYDVQQDDB9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4PkJx1LYdbmqQQwSw9ujOvfBBX8g
+F4flYJDG4j5Lciu+xJC+cu+1CEZhQ7RgnTLuXiyLVmfQRaralyOh4CEMmyn9a3IF
+mvqysRLU7CItX9KQ87CQ4oqxaUyeFUzg4vxb9cjukCsQ+H06LhHSf/tghn+lMBtS
+uQukQ38ZIEqJIvi0nPDPuBKnhdRPGM5PTGauOsCHnZtbAw7eFNnA7n9A4/y8cfZj
+vASu/QtAa9Yk+Vhc5gqlBzrVwLvjaU4JJmpw2291RmWYX8+pFSLhYHZaoUfW1fKA
+9IwPGIGbQeeVQU0G3IkHiAnBY+N78a46lo1H3tdWDcqc80wyRvAgpwMpoQIDAQAB
+o4IGSjCCBkYwWQYDVR0gBFIwUDAIBgZngQwBAgIwDQYLKwYBBAGBrSGCLB4wDwYN
+KwYBBAGBrSGCLAEBBDARBg8rBgEEAYGtIYIsAQEEAwgwEQYPKwYBBAGBrSGCLAIB
+BAMIMAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUF
+BwMCBggrBgEFBQcDATAdBgNVHQ4EFgQUlbErS+pqWoRZme1BqiSAaBaxuQowHwYD
+VR0jBBgwFoAUazqYi/nyU4na4K2yMh4JH+iqO3QwKgYDVR0RBCMwIYIfY2xhcmlu
+LnBob25ldGlrLnVuaS1tdWVuY2hlbi5kZTCBjQYDVR0fBIGFMIGCMD+gPaA7hjlo
+dHRwOi8vY2RwMS5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NybC9j
+YWNybC5jcmwwP6A9oDuGOWh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZGZuLWNhLWds
+b2JhbC1nMi9wdWIvY3JsL2NhY3JsLmNybDCB2wYIKwYBBQUHAQEEgc4wgcswMwYI
+KwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NT
+UDBJBggrBgEFBQcwAoY9aHR0cDovL2NkcDEucGNhLmRmbi5kZS9kZm4tY2EtZ2xv
+YmFsLWcyL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDBJBggrBgEFBQcwAoY9aHR0cDov
+L2NkcDIucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1Yi9jYWNlcnQvY2Fj
+ZXJ0LmNydDCCA9MGCisGAQQB1nkCBAIEggPDBIIDvwO9AHYAb1N2rDHwMRnYmQCk
+URX/dxUcEdkCwQApBo2yCJo32RMAAAFnZbVhFAAABAMARzBFAiEAiBMOKXcfrNLg
+bMEhwW0bsQc2ZBDl4n2KYZYrqJkafeQCIAl0wZDBkpsHWZnPxCkpLuVclTokycP8
+sBdn6BKIjbdrAHYAVYHUwhaQNgFK6gubVzxT8MDkOHhwJQgXL6OqHQcT0wwAAAFn
+ZbViGQAABAMARzBFAiAlKjxwFOT8BEogNNY3ZPElnX178bvd4EgfipbK3oXPLQIh
+AKnYzT88u8ccZ/PMKA4MVtKP8F88+kzoP7mMN7Sd4WxdAHUAqucLfzy41WbIbC8W
+l5yfRF9pqw60U1WJsvd6AwEE880AAAFnZbVhZwAABAMARjBEAiBWOk/8W9+SuH0O
+5iup4auM3DcMbd752KSw8Jwt04hZRQIgCZ1ChpBccwA+fygPRm8Pu6CGZLwzC0Nk
+8PcK6Pz1/okAdQCkuQmQtBhYFIe7E6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAWdl
+tWEqAAAEAwBGMEQCIHNtpGm/RU534xVRGEFXLyPHlk/eMDrJZJnLBUPYBd+QAiBU
+u08AVgZ2jUrilXfOcgA44oAxd5Qn/Uj4zTLjrKcbyQB1ALvZ37wfinG1k5Qjl6qS
+e0c4V5UKq1LoGpCWZDaOHtGFAAABZ2W1YWAAAAQDAEYwRAIgOYCQ+JGa9tZaRDK9
+gwxhJN9hh7WXU/ct/ngCsoqu+NACICEX+jAG+uTYVuoqDj0ZYfLMoJ2pbmfphfEr
+GU3igzCdAHYA7ku9t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFnZbVh
+YwAABAMARzBFAiBJybdxbrSNmnNRPQevUQbXOtt2yfON3j2ce3RrUbg52wIhAP8V
+mBs3Snu5tWknfWSlmqX4+jv4fdWKK6cY+mhpU3rsAHYAXqdz+d9WwOe1Nkh90Eng
+MnqRmgyEoRIShBh1loFxRVgAAAFnZbVnUwAABAMARzBFAiEAxMVYrJ3w4yx9Z0ZZ
+xqx7LDb3vRXJ0myo9F+HPxzA0VICIA0rXoTTaZqDEVJr71E0nt2QTK9avNt8+ESO
+WTEPkKr4AHYAsh4FzIuizYogTodm+Su5iiUgZ2va+nDnsklTLe+LkF4AAAFnZbVj
+zQAABAMARzBFAiEAqXe/4Q6cLeKvBXhlcUM8KJtAnf7dri5ZT9v2ob2t0zMCIHV8
+e2Gk27GMy9GG2R8YxsbNbezblerk+VoF+fVI0hl1MA0GCSqGSIb3DQEBCwUAA4IB
+AQAmYOY6kkhmEjLLHgGuHJiYAJgFtxh9EIuuKTYDPkCMkIIZqdidz8Wgu56nklzU
+2R2Q03e4L4M+niXtaRM7Odwteuz3xJo7KhA6SVOzKSSyU/HfRHxj30jJhf+ZjxPh
+2Lt3Z/DYzOO9jtcltupvWm1cqhCbA/cQpcm+0/tYLqJ77KYRJJGCVqCPN/eLwGXL
+LKzhINSdPTPSBecdaNzXYAN957IDPzMGa+tU3mbOi+Ct18TDvryy00ZV8U0l+HDh
+GGpi2wetD/hCeRAkT0Tl9qx8iq/nJkqlRFlG8YynHVEsMpq14jO5hDdFJnnL8uIL
+rw0WrW2zJLOsFTziL7eQfXNm</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                    Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Artifact/SOAP"
+                                    index="0"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                              Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                              Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                              Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SLO/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST"
+                                   index="0"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/Artifact"
+                                   index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML2/ECP"
+                                   index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/POST"
+                                   index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                                   Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/SAML/Artifact"
+                                   index="5"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">Bavarian Archive for Speech Signals Service Provider</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Bavarian Archive for Speech Signals Service Provider that allows the user to access various resources through the BASRepository that are restricted to academic use.</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="entitlement"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">BAS</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Bavarian Archive for Speech Signals</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en"> http://www.en.phonetik.uni-muenchen.de/research/bav_arch_spsig/index.html </md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Klaus</md:GivenName>
+      <md:SurName>Jaensch</md:SurName>
+      <md:EmailAddress>mailto:admin@phonetik.uni-muenchen.de</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>Klaus</md:GivenName>
+      <md:SurName>Jaensch</md:SurName>
+      <md:EmailAddress>mailto:admin@phonetik.uni-muenchen.de</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Thomas</md:GivenName>
+      <md:SurName>Kisler</md:SurName>
+      <md:EmailAddress>mailto:kisler@phonetik.uni-muenchen.de</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
