@@ -65,10 +65,13 @@ fi
 # Comment pull request
 if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     echo "Commenting pull request..."
-    CHANGED_SPS_HTML="<ul>"
+    CHANGED_SPS_HTML="<p>The following SP reports changed with this pull request:</p><ul>"
     for report in ${CHANGED_SPS[@]}
     do
-        CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
+    	# do not generate entry for aggregated report (it is always present in curl message body. See bellow)
+        if [ "${report}" != "aggregated_feed_master_sps_qa_report_results.xml" ]; then
+            CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
+        fi
     done
     CHANGED_SPS_HTML+="</ul>"
     
@@ -78,7 +81,6 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
 <img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${SHA}></img> \
 <p>Automated QA assessment complete.</p>\
 <p>Please check your SP in the <a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html>master QA report</a> or in its standalone QA report.</p>\
-<p>The following SP reports changed with this pull request:</p>\
 ${CHANGED_SPS_HTML} \
 \"}" \
         "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${RELEVANT_PR}/comments"
