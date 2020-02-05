@@ -11,7 +11,6 @@ script:
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
-  - COMMIT_AUTHOR_EMAIL: "spf-qa-bot@clarin.eu"
 after_success:
 - sudo apt-get install -y ant
 - bash CI-assets/deploy.sh

@@ -15,21 +15,6 @@
                      ID="_514d535d539d2a3f29a31c35f43058feedd90d89"
                      entityID="https://beta-catalog.clarin.eu/sp/shibboleth">
    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-      <mdui:UIInfo>
-         <mdui:DisplayName xml:lang="en">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
-         <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
-         <mdui:DisplayName xml:lang="de">(beta) CLARIN CMDI Metadaten (beta)</mdui:DisplayName>
-         <mdui:Description xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
-         <mdui:DisplayName xml:lang="fi">(beta) CLARIN CMDI metadatan (beta)</mdui:DisplayName>
-         <mdui:Description xml:lang="fi">Component Registry, Virtual Language Observatory.</mdui:Description>
-         <mdui:DisplayName xml:lang="nl">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
-         <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
-         <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
-         <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
-         <mdui:Keywords xml:lang="en">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
-         <mdui:Keywords xml:lang="nl">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
-         <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
-      </mdui:UIInfo>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
@@ -49,6 +34,21 @@
    </md:Extensions>
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
+            <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
+            <mdui:DisplayName xml:lang="de">(beta) CLARIN CMDI Metadaten (beta)</mdui:DisplayName>
+            <mdui:Description xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
+            <mdui:DisplayName xml:lang="fi">(beta) CLARIN CMDI metadatan (beta)</mdui:DisplayName>
+            <mdui:Description xml:lang="fi">Component Registry, Virtual Language Observatory.</mdui:Description>
+            <mdui:DisplayName xml:lang="nl">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
+            <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+            <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
+            <mdui:Keywords xml:lang="en">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
+            <mdui:Keywords xml:lang="nl">CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords>
+            <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                 Location="https://beta-catalog.clarin.eu/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
@@ -122,6 +122,11 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
                                    Location="https://beta-catalog.clarin.eu/Shibboleth.sso/SAML/Artifact"
                                    index="6"/>
    </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">CLARIN ERIC</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CLARIN</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
+   </md:Organization>
    <md:ContactPerson contactType="technical">
       <md:GivenName>CLARIN</md:GivenName>
       <md:SurName>Sysops</md:SurName>
