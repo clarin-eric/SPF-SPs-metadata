@@ -62,7 +62,9 @@ else
 fi
 # TODO
 # Comment pull request
-if [ ! -z "${RELEVANT_PR}" ]; then
+PR_TARGET_BRANCH=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
+ jq .items[].pull_request.html_url |grep ${TRAVIS_REPO_SLUG})
+if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     echo "Commenting pull request..."
     CHANGED_SPS_HTML="<ul>"
     for report in ${CHANGED_SPS[@]}
