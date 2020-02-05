@@ -96,7 +96,7 @@ function generateHTML(xml, response) {
 loadXMLDoc();
 
 $(document).ready(function(){
-  $(this).val('');
+  $("#searchInput").val('');
   $("#searchInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#QAtableBody tr").filter(function() {
