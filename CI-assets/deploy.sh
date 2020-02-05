@@ -19,7 +19,7 @@ fi
 REPO=$(git config remote.origin.url)
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=$(git rev-parse --verify HEAD)
-RELEVANT_PR=$(curl "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
+RELEVANT_PR=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
  jq .items[].number |head -1)
 
 # Clone the existing qa-output for this repo into out/
@@ -41,27 +41,25 @@ git config user.email "$COMMIT_AUTHOR_EMAIL"
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
 git add -A .
 if git diff $TARGET_BRANCH --quiet; then
-    echo "No changes to the output on this push; exiting."
-    exit 0
+    echo "No changes to the output on this push. Leaving upstream \"$TARGET_BRANCH\" branch untouched."
+else
+    # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
+    ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
+    ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
+    ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
+    ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
+
+    openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../CI-assets/deploy_key.enc -out ../CI-assets/deploy_key -d
+    chmod 600 ../CI-assets/deploy_key
+    eval `ssh-agent -s`
+    ssh-add ../CI-assets/deploy_key
+
+    # Commit the "changes", i.e. the new version.
+    git commit -m "Deploy SAML QA report for: ${SHA}"
+
+    # Now that we're all set up, we can push.
+    git push $SSH_REPO $TARGET_BRANCH
 fi
-
-# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
-ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../CI-assets/deploy_key.enc -out ../CI-assets/deploy_key -d
-chmod 600 ../CI-assets/deploy_key
-eval `ssh-agent -s`
-ssh-add ../CI-assets/deploy_key
-
-# Commit the "changes", i.e. the new version.
-git commit -m "Deploy SAML QA report for: ${SHA}"
-
-# Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
-
 # TODO
 # Comment pull request
 if [ ! -z "${RELEVANT_PR}" ]; then
@@ -76,11 +74,12 @@ if [ ! -z "${RELEVANT_PR}" ]; then
     
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\
-        <img src=https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${RELEVANT_PR}></img> \
-        <p>Automated QA assessment complete.</p>\
-        <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
-        <p>The following SP reports changed with this pull request:</p>\
-        ${CHANGED_SPS} \
+<img src=https://img.shields.io/github/status/contexts/pulls/${TRAVIS_REPO_SLUG}/${RELEVANT_PR}></img> \
+<img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${RELEVANT_PR}></img> \
+<p>Automated QA assessment complete.</p>\
+<p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
+<p>The following SP reports changed with this pull request:</p>\
+${CHANGED_SPS_HTML} \
         \"}" \
         "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${RELEVANT_PR}/comments"
 fi
