@@ -19,6 +19,8 @@ fi
 REPO=$(git config remote.origin.url)
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=$(git rev-parse --verify HEAD)
+RELEVANT_PR=$(curl 'https://api.github.com/search/issues?q=${SHA}' 2> /dev/null | \
+ jq .items[].number)
 
 # Clone the existing qa-output for this repo into out/
 # Create a new empty branch if qa-output doesn't exist yet (should only happen on first deploy)
@@ -62,7 +64,7 @@ git push $SSH_REPO $TARGET_BRANCH
 
 # TODO
 # Comment pull request
-if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+if [ -z "${RELEVANT_PR}" ]; then
     echo "Commenting pull request..."
     CHANGED_SPS_HTML="<ul>"
     for report in ${CHANGED_SPS[@]}
@@ -74,12 +76,12 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\
-        <img src=https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${TRAVIS_PULL_REQUEST}></img> \
+        <img src=https://img.shields.io/github/status/s/pulls/clarin-eric/SPF-SPs-metadata/${RELEVANT_PR}></img> \
         <p>Automated QA assessment complete.</p>\
         <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
-        <p>The following SP reports chnaged with this pull request:</p>\
+        <p>The following SP reports changed with this pull request:</p>\
         ${CHANGED_SPS} \
         \"}" \
-        "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments"
+        "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${RELEVANT_PR}/comments"
 fi
 exit 0
