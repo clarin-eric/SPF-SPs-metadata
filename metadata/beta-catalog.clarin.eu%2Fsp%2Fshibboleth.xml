@@ -35,13 +35,13 @@
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <md:Extensions>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="en">CLARIN Beta CMDI metadata (beta)</mdui:DisplayName>
             <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
-            <mdui:DisplayName xml:lang="de">(beta) CLARIN CMDI Metadaten (beta)</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">CLARIN Beta CMDI Metadaten (beta)</mdui:DisplayName>
             <mdui:Description xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
-            <mdui:DisplayName xml:lang="fi">(beta) CLARIN CMDI metadatan (beta)</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">CLARIN Beta CMDI metadatan (beta)</mdui:DisplayName>
             <mdui:Description xml:lang="fi">Component Registry, Virtual Language Observatory.</mdui:Description>
-            <mdui:DisplayName xml:lang="nl">(beta) CLARIN CMDI metadata (beta)</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="nl">CLARIN Beta CMDI metadata (beta)</mdui:DisplayName>
             <mdui:Description xml:lang="nl">Voor de Component Registry, Virtual Language Observatory.</mdui:Description>
             <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
             <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
