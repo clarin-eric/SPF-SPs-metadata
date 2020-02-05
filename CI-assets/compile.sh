@@ -63,8 +63,6 @@ do
         
         filename_wo_ext="${report%_results.xml}"
         mv ${report} ../../$TARGET_BRANCH/reports/
-        mv ${filename_wo_ext}.xml ../../$TARGET_BRANCH/reports/
-        mv ${filename_wo_ext}.svrlt ../../$TARGET_BRANCH/reports/
         CHANGED_SPS+=( ${REPORT_NAME} )
     else
         set -e
