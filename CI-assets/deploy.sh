@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-set -x
+
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 COMMIT_AUTHOR_EMAIL="clarin_spf_qa_bot@clarin.eu"
@@ -60,10 +60,10 @@ else
     # Now that we're all set up, we can push.
     git push $SSH_REPO $TARGET_BRANCH
 fi
-# TODO
+
 # Comment pull request
 PR_TARGET_BRANCH=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
- jq .items[].pull_request.html_url |grep ${TRAVIS_REPO_SLUG})
+ jq .items[].pull_request.html_url | head -1 | grep ${TRAVIS_REPO_SLUG})
 if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     echo "Commenting pull request..."
     CHANGED_SPS_HTML="<ul>"
@@ -72,7 +72,6 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
         CHANGED_SPS_HTML+="<li><a href=\"https://clarin-eric.github.io/SPF-SPs-metadata/web/${report}\">${report%_sps_qa_report_results.xml}</a></li>"
     done
     CHANGED_SPS_HTML="</ul>"
-    
     
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\
