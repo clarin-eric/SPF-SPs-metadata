@@ -19,10 +19,9 @@ fi
 REPO=$(git config remote.origin.url)
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=$(git rev-parse --verify HEAD)
-RELEVANT_PR=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
- jq .items[].number |head -1)
-PR_TARGET_BRANCH=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null | \
- jq .items[].pull_request.html_url | head -1 | grep ${TRAVIS_REPO_SLUG})
+COMMIT_API_INFO=$(curl --max-time 900 --connect-timeout 240 "https://api.github.com/search/issues?q=${SHA}" 2> /dev/null)
+RELEVANT_PR=$(echo ${COMMIT_API_INFO} | jq .items[].number | head -1)
+PR_TARGET_BRANCH=$(echo ${COMMIT_API_INFO} | jq .items[].pull_request.html_url | head -1 | grep ${TRAVIS_REPO_SLUG})
 
 # Clone the existing qa-output for this repo into out/
 # Create a new empty branch if qa-output doesn't exist yet (should only happen on first deploy)
