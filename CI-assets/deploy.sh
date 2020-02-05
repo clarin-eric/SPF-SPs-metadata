@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
-
+set -x
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 COMMIT_AUTHOR_EMAIL="clarin_spf_qa_bot@clarin.eu"
@@ -81,7 +81,7 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
 <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
 <p>The following SP reports changed with this pull request:</p>\
 ${CHANGED_SPS_HTML} \
-        \"}" \
+\"}" \
         "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${RELEVANT_PR}/comments"
 fi
 exit 0
