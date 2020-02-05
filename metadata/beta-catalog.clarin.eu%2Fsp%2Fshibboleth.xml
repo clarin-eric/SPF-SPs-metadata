@@ -153,4 +153,9 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:SurName>Sysops</md:SurName>
       <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
    </md:ContactPerson>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysops</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+    </md:ContactPerson>
 </md:EntityDescriptor>
