@@ -41,27 +41,25 @@ git config user.email "$COMMIT_AUTHOR_EMAIL"
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
 git add -A .
 if git diff $TARGET_BRANCH --quiet; then
-    echo "No changes to the output on this push; exiting."
-    exit 0
+    echo "No changes to the output on this push. Leaving upstream \"$TARGET_BRANCH\" branch untouched."
+else
+    # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
+    ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
+    ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
+    ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
+    ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
+
+    openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../CI-assets/deploy_key.enc -out ../CI-assets/deploy_key -d
+    chmod 600 ../CI-assets/deploy_key
+    eval `ssh-agent -s`
+    ssh-add ../CI-assets/deploy_key
+
+    # Commit the "changes", i.e. the new version.
+    git commit -m "Deploy SAML QA report for: ${SHA}"
+
+    # Now that we're all set up, we can push.
+    git push $SSH_REPO $TARGET_BRANCH
 fi
-
-# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
-ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../CI-assets/deploy_key.enc -out ../CI-assets/deploy_key -d
-chmod 600 ../CI-assets/deploy_key
-eval `ssh-agent -s`
-ssh-add ../CI-assets/deploy_key
-
-# Commit the "changes", i.e. the new version.
-git commit -m "Deploy SAML QA report for: ${SHA}"
-
-# Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
-
 # TODO
 # Comment pull request
 if [ ! -z "${RELEVANT_PR}" ]; then
