@@ -68,7 +68,7 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     CHANGED_SPS_HTML="<ul>"
     for report in ${CHANGED_SPS[@]}
     do
-        CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report%_sps_qa_report_results.xml}>${report}</a></li>"
+        CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
     done
     CHANGED_SPS_HTML+="</ul>"
     
