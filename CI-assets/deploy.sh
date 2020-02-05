@@ -68,7 +68,7 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     CHANGED_SPS_HTML="<ul>"
     for report in ${CHANGED_SPS[@]}
     do
-        CHANGED_SPS_HTML+="<li><a href=\"https://clarin-eric.github.io/SPF-SPs-metadata/web/${report}\">${report%_sps_qa_report_results.xml}</a></li>"
+        CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report%_sps_qa_report_results.xml}>${report}</a></li>"
     done
     CHANGED_SPS_HTML+="</ul>"
     
@@ -77,7 +77,7 @@ if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
 <img src=https://img.shields.io/github/status/contexts/pulls/${TRAVIS_REPO_SLUG}/${RELEVANT_PR}></img> \
 <img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${SHA}></img> \
 <p>Automated QA assessment complete.</p>\
-<p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
+<p>Please check your SP in the <a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html>master QA report</a> or in its standalone QA report.</p>\
 <p>The following SP reports changed with this pull request:</p>\
 ${CHANGED_SPS_HTML} \
 \"}" \
