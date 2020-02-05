@@ -52,7 +52,6 @@ function loadXMLDoc() {
   }
   xmlhttp.setRequestHeader("Content-Type", "text/xml");
   xmlhttp.send();
-
 }
 
 function generateHTML(xml, response) {

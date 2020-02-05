@@ -10,14 +10,16 @@
     </head>
     <body>
       <div class="container-fluid">
-        <div class="pb-2 mt-1 mb-2 text-center">
-            <img src="clarin_logo.png"></img>
-            <h2>Service Provider Federation</h2>
+        <div class="mt-1">
+            <img class="d-inline" src="clarin_logo.png" style="max-width:120px;max-height:48px;"></img>
+            <div class="d-inline col"><h2 class="align-middle d-inline">Service Provider Federation</h2></div>
         </div>
+        <br>
         <h4>Current SAML Quality Assurance report:</h4>
         <label>Last updated on:</label><code id="lastModified"><span> </span></code><span> from commit: </span><a id="lastCommitLink"></a>
         <input class="form-control" id="searchInput" type="text" placeholder="Search table...">
         <br>
+        <small>Click the service provider's entityID for a standalone report with scoped last update and commit info.</small>
         <div class="table-responsive-sm">
             <table id="reportTable" class="table table-bordered table-sm"></table>
         </div>
