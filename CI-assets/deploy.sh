@@ -75,7 +75,7 @@ if [ ! -z "${RELEVANT_PR}" ]; then
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\
 <img src=https://img.shields.io/github/status/contexts/pulls/${TRAVIS_REPO_SLUG}/${RELEVANT_PR}></img> \
-<img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${RELEVANT_PR}></img> \
+<img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${SHA}></img> \
 <p>Automated QA assessment complete.</p>\
 <p>Please check your SP in the <a href='https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html'>master QA report</a> or in its standalone QA report.</p>\
 <p>The following SP reports changed with this pull request:</p>\
