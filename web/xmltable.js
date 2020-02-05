@@ -61,7 +61,7 @@ function generateHTML(xml, response) {
   $("#lastCommitLink").attr("href", "https://github.com/clarin-eric/SPF-SPs-metadata/commit/" + xml.commit);
   // Fill in the page global information according to the html template being used
   if (location.pathname.endsWith("master_qa_report.html")) {
-    $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-6' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
+    $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-5' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th><th class='col-1 text-center' scope='col'>Last modified<br>Relevant commit</th></tr></thead>");
   } else if (location.pathname.endsWith("sp_qa_report.html")) {
     $("#entityID").append(xml.children[0].children[0].textContent);
     $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-8' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
@@ -80,12 +80,15 @@ function generateHTML(xml, response) {
     if (location.pathname.endsWith("master_qa_report.html")) {
       entityID = x[i].children[0].textContent;
       // href for individual reports of each SP
-      standalone_reportURI = encodeURIComponent(entityID.replace(/https?:\/\//i, "") + "_sps_qa_report_results.xml");
+      bareEntityID = entityID.replace(/https?:\/\//i, "");
+      standalone_reportPath = encodeURIComponent(bareEntityID + "_sps_qa_report_results.xml");
       $("#QAtableBody").append("<tr class='" + colorClass + " d-flex'><th class='col-2 text-break' scope='row'><a href='sp_qa_report.html?" +
-        standalone_reportURI + "'>" +
-        entityID + "</a></th><td class='col-6 text-break'>" +
+        standalone_reportPath + "'>" +
+        entityID + "</a></th><td class='col-5 text-break'>" +
         x[i].children[1].textContent +
-        "</td><td class='col-4 text-break'>" + requirement + "</td></tr>");
+        "</td><td class='col-4 text-break'>" + requirement +
+        "</td><td id='cell"+ i +"_lastm' class='col-1 text-break text-center align-middle'></td>" + "</tr>");
+        getLastModified(standalone_reportPath, i);
     } else if (location.pathname.endsWith("sp_qa_report.html")) {
       $("#QAtableBody").append("<tr class='" + colorClass + " d-flex'><td class='col-8 text-break'>" +
         x[i].children[1].textContent +
@@ -93,6 +96,25 @@ function generateHTML(xml, response) {
     }
   }
 }
+
+function getLastModified(reportPath, i) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      lastmDateValue = this.responseXML.children[0].children[0].textContent;
+      lastmCommitValue = this.responseXML.children[0].children[1].textContent;
+      lastmDateHTML = "<span>" + new Date(lastmDateValue).toUTCString().substring(4, 25) + "</span>";
+      lastmCommitHTL = "<a href=\"https://github.com/clarin-eric/SPF-SPs-metadata/commit/" + lastmCommitValue + "\">" + lastmCommitValue.substring(0, 7) + "</a>";
+
+      cellid = "cell" + i + "_lastm";
+      $("#" + cellid + "").append(lastmDateHTML + "<br>" + lastmCommitHTL);
+    }
+  };
+  xmlhttp.open("GET", encodeURI("../reports/" + reportPath), true);
+  xmlhttp.setRequestHeader("Content-Type", "text/xml");
+  xmlhttp.send();
+}
+
 loadXMLDoc();
 
 $(document).ready(function(){
