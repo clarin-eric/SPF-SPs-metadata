@@ -827,11 +827,6 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:SurName>Sysops</md:SurName>
       <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
     </md:ContactPerson>
-    <md:ContactPerson contactType="administrative">
-      <md:GivenName>CLARIN</md:GivenName>
-      <md:SurName>Sysops</md:SurName>
-      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
-    </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor ID="_e73581dabbb136967b5a4b0c3a507491f7804e04" entityID="https://childes.talkbank.org/shibboleth">
     <md:Extensions>
