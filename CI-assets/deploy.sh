@@ -64,7 +64,7 @@ git push $SSH_REPO $TARGET_BRANCH
 
 # TODO
 # Comment pull request
-if [ -z "${RELEVANT_PR}" ]; then
+if [ ! -z "${RELEVANT_PR}" ]; then
     echo "Commenting pull request..."
     CHANGED_SPS_HTML="<ul>"
     for report in ${CHANGED_SPS[@]}
