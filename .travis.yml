@@ -11,9 +11,6 @@ script:
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
-after_success:
-- sudo apt-get install -y ant
-- bash CI-assets/deploy.sh
 notifications:
   email:
     on_success: change
