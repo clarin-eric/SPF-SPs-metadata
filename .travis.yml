@@ -1,6 +1,6 @@
 os: 
   - linux
-language: minimal
+language: shell
 branches:
   only:
   - master
@@ -15,14 +15,14 @@ after_success:
 - sudo apt-get install -y ant
 - bash CI-assets/deploy.sh
 deploy:
-  api_key:
+  token:
     secure: "$GITHUB_TOKEN"
   file: "gh-pages/aggregated_feed_master.xml"
   on:
     tags: true
   overwrite: true
   provider: releases
-  skip_cleanup: true
+  cleanup: false
 notifications:
   email:
     on_success: change
