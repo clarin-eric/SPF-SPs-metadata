@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Wed Feb  5 20:51:49 UTC 2020</ReportDate>
-  <FromCommit>0cf6ee89a7bcbcab5aeab85281f86bb79e33393a</FromCommit>
+  <ReportDate>Fri Feb  7 15:23:14 UTC 2020</ReportDate>
+  <FromCommit>995254bfc3ade5753fcd0e66b6aa4309b341868f</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
-      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
-      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
       <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
       <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
@@ -75,11 +70,6 @@
     </result>
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
-      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
-      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://beta-catalog.clarin.eu/sp/shibboleth</sp>
       <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
       <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
