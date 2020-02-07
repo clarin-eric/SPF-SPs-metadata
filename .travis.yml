@@ -9,7 +9,6 @@ addons:
 branches:
   only:
   - master
-  - production
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
