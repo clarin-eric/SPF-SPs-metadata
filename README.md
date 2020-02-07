@@ -22,6 +22,6 @@ Please ascertain that you comply with ​the [SAML metadata guidelines](https://
 
 If you wish that the registration/modification of the SAML metadata about your SP with identity federations is coordinated extra carefully (say, you perform a key rollover), then please create a new ​[issue](https://github.com/clarin-eric/SPF-SPs-metadata/issues/new) describing the task. Alternatively you can also head over to https://trac.clarin.eu/newticket and create a ticket for the 'AAI' Trac component (requires a CLARIN 'developer' account).
 
-Finally your metadata will be merged into the *production* branch and picked up by an hourly cron job which automatically checks out the latest version and publishes it at ​https://infra.clarin.eu/aai/md_about_spf_sps.xml (staging feed) and https://infra.clarin.eu/aai/prod_md_about_spf_sps.xml (production feed). 
+Finally your metadata will be released and picked up by an hourly cron job which automatically downloads the latest available release from this repository and publishes it at ​https://infra.clarin.eu/aai/md_about_spf_sps.xml (staging feed) and https://infra.clarin.eu/aai/prod_md_about_spf_sps.xml (production feed). 
 
 Note: For an SP to be published in the production feed it must be defined first as a production SP [in our configuration](https://github.com/clarin-eric/pyFF_config/blob/master/job_b.fd). This can only be done by CLARIN SPF operators.
