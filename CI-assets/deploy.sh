@@ -65,15 +65,17 @@ fi
 # Comment pull request
 if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
     echo "Commenting pull request..."
-    CHANGED_SPS_HTML="<p>The following SPs changed their QA assessment with this pull request:</p><ul>Standalone QA reports:"
-    for report in ${CHANGED_SPS[@]}
-    do
-    	# do not generate entry for aggregated report (it is always present in curl message body. See bellow)
-        if [ "${report}" != "aggregated_feed_master_sps_qa_report_results.xml" ]; then
-            CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
-        fi
-    done
-    CHANGED_SPS_HTML+="</ul>"
+    if [ ${#CHANGED_SPS[@]} -gt 0 ]; then
+        CHANGED_SPS_HTML="<p>The following SPs changed their QA assessment with this pull request:</p><ul>Standalone QA reports:"
+        for report in ${CHANGED_SPS[@]}
+        do
+        	# do not generate entry for aggregated report (it is always present in curl message body. See bellow)
+            if [ "${report}" != "aggregated_feed_master_sps_qa_report_results.xml" ]; then
+                CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
+            fi
+        done
+        CHANGED_SPS_HTML+="</ul>"
+    fi
     
     curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
         -d "{\"body\": \"\

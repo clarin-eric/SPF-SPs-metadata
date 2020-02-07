@@ -1,18 +1,20 @@
 os: 
   - linux
-language: minimal
+language: shell
+addons:
+  apt:
+    packages:
+      - libxml2-utils
+      - ant
 branches:
   only:
   - master
-  - production
-script:
-- sudo apt-get install -y libxml2-utils
-- bash check-saml-metadata/check_saml_metadata.sh metadata/
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
+script:
+- bash check-saml-metadata/check_saml_metadata.sh metadata/
 after_success:
-- sudo apt-get install -y ant
 - bash CI-assets/deploy.sh
 notifications:
   email:
