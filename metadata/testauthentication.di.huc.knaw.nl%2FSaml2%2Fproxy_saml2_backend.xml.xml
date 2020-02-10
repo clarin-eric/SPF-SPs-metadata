@@ -27,7 +27,9 @@
                        WantAssertionsSigned="true"
                        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
-         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                 Location="https://testauthentication.di.huc.knaw.nl/Saml2/disco?workaround=true"/>
+          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
                                     Location="https://testauthentication.di.huc.knaw.nl/Saml2/disco?workaround=true"
                                     index="1"/>
          <mdui:UIInfo>
