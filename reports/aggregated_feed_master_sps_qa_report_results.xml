@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Fri Feb  7 15:23:14 UTC 2020</ReportDate>
-  <FromCommit>995254bfc3ade5753fcd0e66b6aa4309b341868f</FromCommit>
+  <ReportDate>Mon Feb 10 16:22:53 UTC 2020</ReportDate>
+  <FromCommit>73f64f28264c07c0fe526d8d861e4862b5d9193f</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
@@ -449,11 +449,6 @@
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
     </result>
     <result>
-      <sp>https://authentication.clariah.nl/Saml2/proxy_saml2_backend.xml</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
       <sp>https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
@@ -545,11 +540,6 @@
     </result>
     <result>
       <sp>https://sp.www.kielipankki.fi</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
-      <sp>https://testauthentication.di.huc.knaw.nl/Saml2/proxy_saml2_backend.xml</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
     </result>
