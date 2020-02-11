@@ -1,6 +1,6 @@
 [![Travis Status](https://travis-ci.org/clarin-eric/SPF-SPs-metadata.svg?branch=master)](https://travis-ci.org/clarin-eric/SPF-SPs-metadata)
 [![Latest Release](https://img.shields.io/github/v/release/clarin-eric/SPF-SPs-metadata)](https://github.com/clarin-eric/SPF-SPs-metadata/releases/latest)
-[![Commits Since Latest Release](https://img.shields.io/github/commits-since/clarin-eric/SPF-SPs-metadata/latest)(https://github.com/clarin-eric/SPF-SPs-metadata/commits/master)
+[![Commits Since Latest Release](https://img.shields.io/github/commits-since/clarin-eric/SPF-SPs-metadata/latest)](https://github.com/clarin-eric/SPF-SPs-metadata/commits/master)
 # Metadata sources for service providers inside the CLARIN Service Provider Federation
 
 ## Notes for service provider operators
