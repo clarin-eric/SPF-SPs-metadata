@@ -5,6 +5,8 @@
 
 ## Notes for service provider operators
 
+:warning: **The structure of this repository has changed on 10/02/2020, please make sure to update your forks before creating new pull requests. See the [repository system changelog](https://github.com/clarin-eric/SPF-SPs-metadata/wiki/Repository-system-changelog) for a detailed description of the changes.**
+
 To update or add SAML metadata for your SP:
 1. Fork this repository.
 2. Make your changes in the file corresponding to your SP inside the `metadata/` directory. In case you are adding a new SP, add the metadata by creating a new file following the same naming convention: `[New SP File Name] = [SP entityID].replace("http(s)?://", "").replace("/", "%2F")`
