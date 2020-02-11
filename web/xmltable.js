@@ -63,8 +63,13 @@ function generateHTML(xml, response) {
   if (location.pathname.endsWith("master_qa_report.html")) {
     $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-2' scope='col'>entityID</th><th class='col-5' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th><th class='col-1 text-center' scope='col'>Last modified<br>Relevant commit</th></tr></thead>");
   } else if (location.pathname.endsWith("sp_qa_report.html")) {
-    $("#entityID").append(xml.children[0].children[0].textContent);
     $("#reportTable").append("<thead class='thead-dark'><tr class='d-flex'><th class='col-8' scope='col'>Issue</th><th class='col-4' scope='col'>Requirement explanation</th></tr></thead>");
+    if (typeof xml.children[0] != "undefined") {
+      $("#entityID").append(xml.children[0].children[0].textContent);
+    } else {
+      $("#reportTable").append("<tbody id='QAtableBody'>");
+      $("#QAtableBody").append("<tr class='table-success d-flex'><td class='col-12 text-break'>There are no outstanding issues for this Service Provider.</td></tr>");
+    }
   }
   // Generate results table
   $("#reportTable").append("<tbody id='QAtableBody'>");
