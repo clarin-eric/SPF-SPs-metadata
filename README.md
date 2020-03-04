@@ -28,4 +28,4 @@ If you wish that the registration/modification of the SAML metadata about your S
 
 Finally your metadata will be released and picked up by an hourly cron job which automatically downloads the latest available release from this repository and publishes it at ​https://infra.clarin.eu/aai/md_about_spf_sps.xml (staging feed) and https://infra.clarin.eu/aai/prod_md_about_spf_sps.xml (production feed). 
 
-Note: For an SP to be published in the production feed it must be defined first as a production SP [in our configuration](https://github.com/clarin-eric/pyFF_config/blob/master/job_b.fd). This can only be done by CLARIN SPF operators.
+Note: For an SP to be published in the production feed it must be defined first with production status [in the CLARIN CentreRegistry](https://centres.clarin.eu/spf). This can only be done by CLARIN SPF operators.
