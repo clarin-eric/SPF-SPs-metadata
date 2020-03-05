@@ -18,6 +18,7 @@
                       NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
       </saml:Attribute>
    </md:Extensions>
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
