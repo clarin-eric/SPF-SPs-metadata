@@ -41,11 +41,11 @@
             <mdui:Description xml:lang="fi">Hampurin Kielivarakeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon. (Arkisto sisältää ennimäkseen puhutun kielen korpuksia.)</mdui:Description>
             <mdui:InformationURL xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
             <mdui:InformationURL xml:lang="en">https://corpora.uni-hamburg.de</mdui:InformationURL>
-            <mdui:Logo height="68" width="453">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo.png</mdui:Logo>
-            <mdui:Logo height="23" width="153">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-mittel.png</mdui:Logo>
-            <mdui:Logo height="15" width="35">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
-            <mdui:PrivacyStatementURL xml:lang="de">https://corpora.uni-hamburg.de/drupal/de/korpusanfragen-lizenzen</mdui:PrivacyStatementURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/corpus-enquiries-licenses</mdui:PrivacyStatementURL>
+            <mdui:Logo height="68" width="453">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo.png</mdui:Logo>
+            <mdui:Logo height="23" width="153">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo-mittel.png</mdui:Logo>
+            <mdui:Logo height="15" width="35">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="de">https://corpora.uni-hamburg.de/hzsk/de/datenschutz</mdui:PrivacyStatementURL>
+            <mdui:PrivacyStatementURL xml:lang="en">hhttps://corpora.uni-hamburg.de/hzsk/en/privacy-policy</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                 Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login"/>
