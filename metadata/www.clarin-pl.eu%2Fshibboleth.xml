@@ -43,15 +43,6 @@
       </md:Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
-            <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
-            <ds:X509Data>
-               <ds:X509SubjectName>CN=https://www.clarin-pl.eu/dspace</ds:X509SubjectName>
-               <ds:X509Certificate>MIIDWTCCAkGgAwIBAgIJAI4ikEO5CpmIMA0GCSqGSIb3DQEBBQUAMCoxKDAmBgNV BAMTH2h0dHBzOi8vd3d3LmNsYXJpbi1wbC5ldS9kc3BhY2UwHhcNMTcwMTEzMDkx MzA3WhcNMjAwMTEzMDkxMzA3WjAqMSgwJgYDVQQDEx9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA p1U2m2csfaB8Ic48iqq2PMXSkglyk6L+Wm0vf2wRDzNda3BfGBCiutJ41XGa4zQU 1H1ohFxgEQGg/O1rCKi1oQd4hvp+AkWnCGyrtjs2mMP31T3xOwZoLh7afR3DFf3v eUoFXl+d2oH3uUzYWjPBxlx6vLPc1QkKmaDYTzsjvKB38IoCVNeb0pLl+OuBOJBr 7McM5V34ewsvRdkbtYKp5IGhhRHwfrUL6T3q3N5rpy7WF59nM8CzkYMTeZZ1ewHw qysxTcbEG9T34UaOhcGrz7HHr8m9pt9MApEXepXi1EYyyBvLqzvuhw9lQYj3MGiH 7b6javsrGo9nRZpBD+XX+QIDAQABo4GBMH8wXgYDVR0RBFcwVYIfaHR0cHM6Ly93 d3cuY2xhcmluLXBsLmV1L2RzcGFjZYYyaHR0cHM6Ly9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlL3NoaWJib2xldGgwHQYDVR0OBBYEFEe6vSMjVKHRveVE wZVI5dqUW4mEMA0GCSqGSIb3DQEBBQUAA4IBAQCDiaiSRu6OXg2tBIfAXplqyApX coGLsIb1XHTinZPQItsK/+JYXggO2AWhEFi2PIMDl+RkUR6PS9zBWPcNHuNIzKVg Fh9rkvwoH8I9Gs2HbElZngdQJrfe3sos8xpruCHFa8jcrK9vWkktrTlXzmWBrerk fy+FISTJ+BkP7zmSN9z49+uEGuCot2iiudoQIqoOyyd9ziNZO2glsqSrQtQYljZI 3kRL0Meb8+yHTRkgTkWWRr9/pmTW6P20EQyNl9uZc9q8BB54itO3QWpU90KWcjB1 NTW+IX6eAxr/peOpk3HIz/osH+VeiwaBLlYUFLHOTYNQRCkwQMs3o0NevJJf</ds:X509Certificate>
-            </ds:X509Data>
-         </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor>
-         <ds:KeyInfo>
             <ds:KeyName>Standby</ds:KeyName>
             <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
             <ds:X509Data>
