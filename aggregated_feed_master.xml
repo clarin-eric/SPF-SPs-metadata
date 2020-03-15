@@ -10,6 +10,7 @@
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </Extensions>
@@ -388,6 +389,9 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -476,6 +480,15 @@ rI8v6OTvibpLrg==
     </md:ContactPerson>
   </md:EntityDescriptor>
   <EntityDescriptor ID="_a423ad5163a8068fb6e3a6e815666f70" entityID="https://asvsp.informatik.uni-leipzig.de/">
+    <md:Extensions>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
     <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://asvsp.informatik.uni-leipzig.de/Shibboleth.sso/Login"/>
@@ -622,6 +635,7 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -862,7 +876,9 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
       <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
       <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
       </saml:Attribute>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -1101,6 +1117,9 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -1605,6 +1624,9 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -1829,6 +1851,9 @@ rw0WrW2zJLOsFTziL7eQfXNm</ds:X509Certificate>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -1842,11 +1867,11 @@ rw0WrW2zJLOsFTziL7eQfXNm</ds:X509Certificate>
           <mdui:Description xml:lang="fi">Hampurin Kielivarakeskus (HZSK) tarjoaa p&#xE4;&#xE4;sy&#xE4; HZSK-arkistoon. (Arkisto sis&#xE4;lt&#xE4;&#xE4; ennim&#xE4;kseen puhutun kielen korpuksia.)</mdui:Description>
           <mdui:InformationURL xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
           <mdui:InformationURL xml:lang="en">https://corpora.uni-hamburg.de</mdui:InformationURL>
-          <mdui:Logo height="68" width="453">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo.png</mdui:Logo>
-          <mdui:Logo height="23" width="153">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-mittel.png</mdui:Logo>
-          <mdui:Logo height="15" width="35">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
-          <mdui:PrivacyStatementURL xml:lang="de">https://corpora.uni-hamburg.de/drupal/de/korpusanfragen-lizenzen</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/corpus-enquiries-licenses</mdui:PrivacyStatementURL>
+          <mdui:Logo height="68" width="453">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo.png</mdui:Logo>
+          <mdui:Logo height="23" width="153">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo-mittel.png</mdui:Logo>
+          <mdui:Logo height="15" width="35">https://corpora.uni-hamburg.de/hzsk/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="de">https://corpora.uni-hamburg.de/hzsk/de/datenschutz</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">hhttps://corpora.uni-hamburg.de/hzsk/en/privacy-policy</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://virt-fedora.multilingua.uni-hamburg.de/Shibboleth.sso/Login" index="1"/>
@@ -2475,6 +2500,7 @@ vMsMaOnszi5e8qaf5cbVOu23fQ==
       <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
         <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
       </saml:Attribute>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
@@ -2708,6 +2734,9 @@ mTw=
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -2933,6 +2962,13 @@ mTw=
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor entityID="https://lap.clarino.uio.no/simplesaml/module.php/saml/sp/metadata.php/default-sp">
+    <md:Extensions>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+      </saml:Attribute>
+    </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
         <mdui:UIInfo>
@@ -3198,6 +3234,9 @@ Uh6tNDNY0A3PNpCBGOgwW8FKeNCD6Wpovm8ZTD5DbZ9x5DU=</ds:X509Certificate>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -3305,6 +3344,9 @@ Uh6tNDNY0A3PNpCBGOgwW8FKeNCD6Wpovm8ZTD5DbZ9x5DU=</ds:X509Certificate>
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </Extensions>
@@ -3514,6 +3556,9 @@ rI8v6OTvibpLrg==
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4225,6 +4270,9 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAssertionsSigned="true">
@@ -4298,6 +4346,9 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </Extensions>
@@ -4600,6 +4651,9 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -4720,6 +4774,8 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -4838,6 +4894,8 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -4945,6 +5003,8 @@ ajxN++AjIHvz0SxDyCbue9Ub8H4+YdK6URY9QtQGeaYTJGm/3xWFWpuyZQ==</ds:X509Certificate
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -5048,6 +5108,9 @@ lK5q6uLz0WDULxfQbmxpnJ35E8TbsH6Vw/2FQeaYYL9YRH05Xuz1+jFYtCBKaU8Q
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -5475,6 +5538,9 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -5705,6 +5771,9 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -5928,6 +5997,8 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
       <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
       <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
         <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
       </saml:Attribute>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -6160,44 +6231,49 @@ rI8v6OTvibpLrg==
       <md:KeyDescriptor>
         <ds:KeyInfo>
           <ds:X509Data>
-            <ds:X509Certificate>MIIGzDCCBbSgAwIBAgIQAmVze43DQ8vlzY0mx7fB0jANBgkqhkiG9w0BAQsFADBk
+            <ds:X509Certificate>MIIHyzCCBrOgAwIBAgIQCq4K4p+vu/JXJk/smQf2XDANBgkqhkiG9w0BAQsFADBk
 MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
 QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
-Q0EgMzAeFw0xODAzMTkwMDAwMDBaFw0yMDAzMjMxMjAwMDBaMH4xCzAJBgNVBAYT
+Q0EgMzAeFw0yMDAzMTMwMDAwMDBaFw0yMjAzMTgxMjAwMDBaMH4xCzAJBgNVBAYT
 Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
 bzEjMCEGA1UECxMaVGVrc3RsYWJvcmF0b3JpZXQsIElMTiwgSEYxHDAaBgNVBAMT
-E3d3dy50ZWtzdGxhYi51aW8ubm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
-AoIBAQC/dyDlAiyNQVcQh0KHXcWyDtAdppZNwDnMBOSSwxYqYSqICe1JWDDAy8L8
-AW/080Vx2crhkmPGP5vvEt6jYF3RO2KxZ8DOuHVoNFLmIUWYykah1ZWpG8T2F9JF
-9URv6dO38yjqCa16TmWT48hFmc6hfaj28txqOYE7A5xEThYZ1omUhmdxGcXch+PA
-xBtjY0Izz1Bmt66pxu23rn46kslWlq17BMjkDQXVZvEx5kkk4G+1P5OQ8ZU2frod
-WVSqvH0pQzuVB8ja45f6QUzp0MRSIOu7mv1ouKFIqsHit16K1f+MKm3Oo0BQIqlP
-g8UcMcaWh3Gi7jKjY3fhE53P56R1AgMBAAGjggNeMIIDWjAfBgNVHSMEGDAWgBRn
-/YggFCeYxwnSJRm76VERY3VQYjAdBgNVHQ4EFgQUE9VaTY3fn5gbrwBHRYkZe189
-xBAwLwYDVR0RBCgwJoITd3d3LnRla3N0bGFiLnVpby5ub4IPdGVrc3RsYWIudWlv
-Lm5vMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
-AwIwawYDVR0fBGQwYjAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL1RF
-UkVOQVNTTENBMy5jcmwwL6AtoCuGKWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9U
-RVJFTkFTU0xDQTMuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYB
-BQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMG4G
-CCsGAQUFBwEBBGIwYDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQu
-Y29tMDgGCCsGAQUFBzAChixodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vVEVS
-RU5BU1NMQ0EzLmNydDAMBgNVHRMBAf8EAjAAMIIBfQYKKwYBBAHWeQIEAgSCAW0E
-ggFpAWcAdgCkuQmQtBhYFIe7E6LMZ3AKPDWYBPkb37jjd80OyA3cEAAAAWI9VF9Q
-AAAEAwBHMEUCIQCqlpj26Hn4nBjmAfp37uEHm2JFsD0Crzw1oqr7Gr4ErwIgcCej
-8N75vBeUZsQMQx2yEmjddhv30fFnHID4MPTltRoAdQBvU3asMfAxGdiZAKRRFf93
-FRwR2QLBACkGjbIImjfZEwAAAWI9VGCbAAAEAwBGMEQCIAuo2Y2YIV5tj2hnkvrH
-FMpwu48pfe4nPJXsOfwB2O8LAiBuPhcWYomW8lxyvgrd5ftfHeoJqb+eOB7i/hMr
-oLM3wAB2ALvZ37wfinG1k5Qjl6qSe0c4V5UKq1LoGpCWZDaOHtGFAAABYj1UYD8A
-AAQDAEcwRQIgY6dDgxThUy7ZLadHqa5YrpwYKmEqNaQfL7w1WfSR8l0CIQC5cIu/
-S+Mo67Ote0LezoQUUQyq4LKbRQEBPAiT5pelPDANBgkqhkiG9w0BAQsFAAOCAQEA
-SWThplbRdcpm4PA5QvmdJwO9F8dVwp2UZ1KWNOpgnDUnqS3PNiAC+w6Ktcz9dTYm
-NC6GtwUmw80/vULSiZ+TUeLHOVYFv9Oq4Sbtb0uR1P7/DbfBjk/f+iWW8roWysQ9
-+g9GFmeBaUCO3UXXMfSwESlD6cFXHXUsddMicvc+mf0P8VBueQzyHLkmIGL0m8cy
-CvU7ONh5+1y+VCix4Ap7AggOLDux2/lHCRLDDT0a9RCQmIJDGn3N6S49pgnJwgQB
-nJeWkn/3uAAM6cBEB22B6byXZ3CPKWJHoVM9Vk5y0GpKY/ikgnYhy5xV4ivrN804
-CEzwUKPMjrzjV+Q3q+Cn5Q==
-                        </ds:X509Certificate>
+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
+              </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
       </md:KeyDescriptor>
@@ -6576,6 +6652,9 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
@@ -6657,6 +6736,9 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -6790,15 +6872,6 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
       </md:Extensions>
       <md:KeyDescriptor>
         <ds:KeyInfo>
-          <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=https://www.clarin-pl.eu/dspace</ds:X509SubjectName>
-            <ds:X509Certificate>MIIDWTCCAkGgAwIBAgIJAI4ikEO5CpmIMA0GCSqGSIb3DQEBBQUAMCoxKDAmBgNV BAMTH2h0dHBzOi8vd3d3LmNsYXJpbi1wbC5ldS9kc3BhY2UwHhcNMTcwMTEzMDkx MzA3WhcNMjAwMTEzMDkxMzA3WjAqMSgwJgYDVQQDEx9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA p1U2m2csfaB8Ic48iqq2PMXSkglyk6L+Wm0vf2wRDzNda3BfGBCiutJ41XGa4zQU 1H1ohFxgEQGg/O1rCKi1oQd4hvp+AkWnCGyrtjs2mMP31T3xOwZoLh7afR3DFf3v eUoFXl+d2oH3uUzYWjPBxlx6vLPc1QkKmaDYTzsjvKB38IoCVNeb0pLl+OuBOJBr 7McM5V34ewsvRdkbtYKp5IGhhRHwfrUL6T3q3N5rpy7WF59nM8CzkYMTeZZ1ewHw qysxTcbEG9T34UaOhcGrz7HHr8m9pt9MApEXepXi1EYyyBvLqzvuhw9lQYj3MGiH 7b6javsrGo9nRZpBD+XX+QIDAQABo4GBMH8wXgYDVR0RBFcwVYIfaHR0cHM6Ly93 d3cuY2xhcmluLXBsLmV1L2RzcGFjZYYyaHR0cHM6Ly9odHRwczovL3d3dy5jbGFy aW4tcGwuZXUvZHNwYWNlL3NoaWJib2xldGgwHQYDVR0OBBYEFEe6vSMjVKHRveVE wZVI5dqUW4mEMA0GCSqGSIb3DQEBBQUAA4IBAQCDiaiSRu6OXg2tBIfAXplqyApX coGLsIb1XHTinZPQItsK/+JYXggO2AWhEFi2PIMDl+RkUR6PS9zBWPcNHuNIzKVg Fh9rkvwoH8I9Gs2HbElZngdQJrfe3sos8xpruCHFa8jcrK9vWkktrTlXzmWBrerk fy+FISTJ+BkP7zmSN9z49+uEGuCot2iiudoQIqoOyyd9ziNZO2glsqSrQtQYljZI 3kRL0Meb8+yHTRkgTkWWRr9/pmTW6P20EQyNl9uZc9q8BB54itO3QWpU90KWcjB1 NTW+IX6eAxr/peOpk3HIz/osH+VeiwaBLlYUFLHOTYNQRCkwQMs3o0NevJJf</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor>
-        <ds:KeyInfo>
           <ds:KeyName>Standby</ds:KeyName>
           <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
           <ds:X509Data>
@@ -6884,6 +6957,9 @@ NPP0cKnXF0jLn+6Hcg==</ds:X509Certificate>
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -6996,6 +7072,9 @@ NPP0cKnXF0jLn+6Hcg==</ds:X509Certificate>
         </saml:Attribute>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
