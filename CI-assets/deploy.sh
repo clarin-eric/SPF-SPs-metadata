@@ -63,7 +63,7 @@ else
 fi
 
 # Comment pull request
-if [ ! -z "${RELEVANT_PR}" -a ! -z "PR_TARGET_BRANCH" ]; then
+if [ ! -z "${RELEVANT_PR}" -a ! -z "${PR_TARGET_BRANCH}" -a "${TRAVIS_EVENT_TYPE}" != "cron" ]; then
     echo "Commenting pull request..."
     if [ ${#CHANGED_SPS[@]} -gt 0 ]; then
         CHANGED_SPS_HTML="<p>The following SPs changed their QA assessment with this pull request:</p><ul>Standalone QA reports:"
