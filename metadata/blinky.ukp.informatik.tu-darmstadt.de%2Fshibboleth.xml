@@ -1,13 +1,33 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_53f80c6aa4871451ef53127cab2fe3089e005f82" entityID="https://blinky.ukp.informatik.tu-darmstadt.de/shibboleth">
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_53f80c6aa4871451ef53127cab2fe3089e005f82"
+                     entityID="https://blinky.ukp.informatik.tu-darmstadt.de/shibboleth">
     <md:Extensions>
-        <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-            <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-            </saml:Attribute>
-            <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-            </saml:Attribute>
-        </mdattr:EntityAttributes>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
@@ -29,13 +49,13 @@
         <md:Extensions>
             <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
                 <mdui:DisplayName xml:lang="en">INCEpTION - Community Server</mdui:DisplayName>
-                <mdui:Description xml:lang="en">INCEpTION provides a semantic annotation platform offering intelligent annotation assistance and knowledge management.</mdui:Description>
+                <mdui:Description xml:lang="en">A semantic annotation platform offering intelligent annotation assistance and knowledge management.</mdui:Description>
                 <mdui:DisplayName xml:lang="de">INCEpTION - Community Server</mdui:DisplayName>
-                <mdui:Description xml:lang="de">INCEpTION ist eine semantische Annotationsplattform mit intelligenter Annotationshilfe und Wissensmanagement.</mdui:Description>
+                <mdui:Description xml:lang="de">Eine semantische Annotationsplattform mit intelligenter Annotationshilfe und Wissensmanagement.</mdui:Description>
                 <mdui:InformationURL xml:lang="en">https://inception-project.github.io/</mdui:InformationURL>
                 <mdui:Logo height="239" width="239">https://inception-project.github.io//assets/img/logo.png</mdui:Logo>
                 <mdui:Keywords xml:lang="en">INCEpTION annotation</mdui:Keywords>
-                <mdui:PrivacyStatementURL xml:lang="de">https://www.tu-darmstadt.de/datenschutzerklaerung.en.jsp</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://blinky.ukp.informatik.tu-darmstadt.de/privacy/privacy_statement.html</mdui:PrivacyStatementURL>
             </mdui:UIInfo>
         <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login"/>
       <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login" index="1"/>
