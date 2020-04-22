@@ -1,16 +1,19 @@
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_53f80c6aa4871451ef53127cab2fe3089e005f82" entityID="https://blinky.ukp.informatik.tu-darmstadt.de/shibboleth">
     <md:Extensions>
-        <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
-            <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-            </saml:Attribute>
-            <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-            </saml:Attribute>
-            <saml:Attribute Name="http://macedir.org/entity-category"
-                            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-        </mdattr:EntityAttributes>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
