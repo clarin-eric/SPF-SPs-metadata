@@ -12,7 +12,7 @@
                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_53f80c6aa4871451ef53127cab2fe3089e005f82"
-                     entityID="https://blinky.ukp.informatik.tu-darmstadt.de/shibboleth">
+                     entityID="https://sp.ukp.informatik.tu-darmstadt.de/shibboleth">
     <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
@@ -55,39 +55,39 @@
                 <mdui:InformationURL xml:lang="en">https://inception-project.github.io/</mdui:InformationURL>
                 <mdui:Logo height="239" width="239">https://inception-project.github.io//assets/img/logo.png</mdui:Logo>
                 <mdui:Keywords xml:lang="en">INCEpTION annotation</mdui:Keywords>
-                <mdui:PrivacyStatementURL xml:lang="en">https://blinky.ukp.informatik.tu-darmstadt.de/privacy/privacy_statement.html</mdui:PrivacyStatementURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://sp.ukp.informatik.tu-darmstadt.de/privacy/privacy_statement.html</mdui:PrivacyStatementURL>
             </mdui:UIInfo>
-        <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login"/>
-      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login" index="1"/>
+        <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Login" index="1"/>
     </md:Extensions>
         <md:KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:KeyName>blinky.ukp.informatik.tu-darmstadt.de</ds:KeyName>
+        <ds:KeyName>sp.ukp.informatik.tu-darmstadt.de</ds:KeyName>
         <ds:X509Data>
-          <ds:X509SubjectName>CN=blinky.ukp.informatik.tu-darmstadt.de</ds:X509SubjectName>
-          <ds:X509Certificate>MIIENjCCAp6gAwIBAgIJALNDP9+fsdmHMA0GCSqGSIb3DQEBCwUAMDAxLjAsBgNV
-BAMTJWJsaW5reS51a3AuaW5mb3JtYXRpay50dS1kYXJtc3RhZHQuZGUwHhcNMjAw
-NDE0MTQ0ODIwWhcNMzAwNDEyMTQ0ODIwWjAwMS4wLAYDVQQDEyVibGlua3kudWtw
-LmluZm9ybWF0aWsudHUtZGFybXN0YWR0LmRlMIIBojANBgkqhkiG9w0BAQEFAAOC
-AY8AMIIBigKCAYEA3iZIzhaazsVzfjvz8Vnj7eeZ+sIUBiLzaGxUnh7SLi56TTWk
-JVXLUYphblRZqnR86faJUNS74YETkuF7cAyGSpG59YZNSxawt874tY4/mB25tLoc
-9fXbiB24zc1n8cpcka1guoNdNzBrl4/Barsa40kSH/Bo7BBrQH34CoQEDO+NXo3N
-YjtDq+gXyM96l5P+P/lp5Dys2MD+3+ga+9ed/cyApBRb/8Ov6sa3xvgSC+AXS9wW
-WcWFFx77du0Dys10ORfy8AgxEPu5Dg7/kSomdOun/TmAuLCPOhSgclXvb8URn0/N
-TR96FA45z42PIc4+DousmbPsqJlpAMYN+LcG85yj+bygXZJSp5WOMzsPJT6IB8DN
-aIfzgaIjk6e60jQROkg0BtuPgNHwE3U8FRxjpzS+JW7zurxoR8LVsTZtlUhtys2r
-g07HUUlCyFBT0YRU5B+8g3yxZfr3FwNmbfa2khTLqzYMuEGKxA3vv8UMAc4TZRci
-g0hUvykntv2xllHPAgMBAAGjUzBRMDAGA1UdEQQpMCeCJWJsaW5reS51a3AuaW5m
-b3JtYXRpay50dS1kYXJtc3RhZHQuZGUwHQYDVR0OBBYEFCU9HhGpdncM7QzGH+d6
-SwJnX3BQMA0GCSqGSIb3DQEBCwUAA4IBgQDENHMR8T4a7S7eCdO9fOCNFOl1cAwV
-nJuCOM/PY1XwpjLw8lA7X8wwOVbBAmNP8/jr6NuMznsgZPG2CLQEsqi/U4hQubhn
-pgmJJtZcONvLug6w4MkjcE46Xojw0NxPHDzMo6ddDW6csHqgzulyU4P9PaZuK2SL
-zg6Mtn561CZ2jOJfUnKtBHe9Jtkj2lGclLSP3JehnI0KK+hSDx6lO+ss7SITz/OE
-FmCB+vtYop+QLcQTZYVKLTDYa6jdjCayBbmI4CdLEikI4T10C+J9qh/8C1lfmai7
-ao+DYp6VaYoMKG3tdCRcCLk4kqM5vwvMWBXYXsQEnJXu+KBMRPN1GDthWuhd3qH6
-9CusHBl/IPTtRlrPZ4qtOb/7KYT5X4cFqJO/yzI2hPrflVF/mMeM6Tkx7q7ldIa2
-Vdztrqg4ccSSul5VwRjwpSlkzfMLCpeEctkLalUWb956mmqIw/Y6yKZnUPYDYohc
-7xd9n1wuPXUfMzhtrb6WWOFHUnaRsfbAfHc=
+          <ds:X509SubjectName>CN=sp.ukp.informatik.tu-darmstadt.de</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEKjCCApKgAwIBAgIJAN8spGrtAZIaMA0GCSqGSIb3DQEBCwUAMCwxKjAoBgNV
+BAMTIXNwLnVrcC5pbmZvcm1hdGlrLnR1LWRhcm1zdGFkdC5kZTAeFw0yMDA1MjYw
+ODM3MDlaFw0zMDA1MjQwODM3MDlaMCwxKjAoBgNVBAMTIXNwLnVrcC5pbmZvcm1h
+dGlrLnR1LWRhcm1zdGFkdC5kZTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoC
+ggGBANrArt2hxKqw7qBFtPcV5aeyJJ+JFLBkAjW1QVrAgzd5w9NaAKmkHYF1J4DI
+pvtrBqlFb61fY5z7R9qgGCZ37kFL4J+0l4tH/X96+3wFMOlN1doJ8NHHpKxIe8Kp
+52x4CUZJYIVShtdIQa62+iNdh52xTnPEPt+/iVJ6nOJgiJ+y1bbe0UjuziOEXb5o
+RwSmtvdmcKkb4fy0skfKSq/YQLl8rMwUvWZOAuAsrwAz5qU7w8w32jcns+Z/2N6d
+tU5ixYIMd0wDrX7MRzILis4QbJeXVIB+giTpSrw+c75KYjAqWD4Oiv8HVJDJhq02
+qaP8dfNOCbr6/digaXnCvK1EMogd0GxtZyIx11qAykcTcULm3eXJOTSGUV6NwUtZ
+pxwndTC/pVlt8phtv5KHxkORCIMIwxqUBZI/n76dTIFw3y8XiJYo/K8guPHLA+95
+6uu1cIaFcD+GFl40wym+Z+UJFVxFZIayYLffkyYuELNnwH1vvcCqVnr176Zvx6tQ
+92f38wIDAQABo08wTTAsBgNVHREEJTAjgiFzcC51a3AuaW5mb3JtYXRpay50dS1k
+YXJtc3RhZHQuZGUwHQYDVR0OBBYEFK5oY/E5oeyx1knXu5y422d54MqFMA0GCSqG
+SIb3DQEBCwUAA4IBgQAWx8qbmjcJEn2b763M1SdgSG66zBeHxNh2cKuwT4Vumc89
+sxBRdTKiv5x3M8rHYQhNHypm1NXUD4bcsxCXd2V+0+uclnKur5Dny//N9kda0+eu
+QuV22TjZTkFDAicq2c0BowMhMXclZ/knELrAcRor56dAXkICbCvoB6W4iVy2wv3c
+aTVsKv23OkXGkRy1WYj2Dq4h9Gpg//iORWiSJa4aztYRBcizPMd0VO3N8ExFfY6s
+IpxVDmXP1gUHeItQyM54uXeEKB1rhm+nxosjE5zCtVLNZMk58BW51itsu9xSFGWc
+HC04Tmehtu3V0Tl3HfN+mFlrDJk5vZmtIxOETZE5nhIDcrtLfCNK6uwr0MYuk6aF
+JOM536OX2phY0uAQ8AeKpRj69sk3pVFmATR7NjmctG5xVjaAgfPkkPFkr+8mGm1z
+b8eNceLGZcokji+oFAtS/ylUdlVs6EClsE8p4wbDwMjCscW4LZVxVjjk63Ni6L7N
+hbgoAkKNoGInonEEw2Y=
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
@@ -101,12 +101,12 @@ Vdztrqg4ccSSul5VwRjwpSlkzfMLCpeEctkLalUWb956mmqIw/Y6yKZnUPYDYohc
       <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
       <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
     </md:KeyDescriptor>
-        <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/SOAP"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/Redirect"/>
+        <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/SOAP"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/Redirect"/>
         
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/POST"/>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/Artifact"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/POST"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SLO/Artifact"/>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://resource_a.clarin.eu/Shibboleth.sso/SAML2/POST" index="1"/>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://resource_a.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
         
@@ -120,10 +120,10 @@ Vdztrqg4ccSSul5VwRjwpSlkzfMLCpeEctkLalUWb956mmqIw/Y6yKZnUPYDYohc
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://test-sp.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="10"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://test-sp.clarin.eu/Shibboleth.sso/SAML2/Artifact" index="11"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://test-sp.clarin.eu/Shibboleth.sso/SAML2/ECP" index="12"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/POST" index="13"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="14"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/Artifact" index="15"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://blinky.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/ECP" index="16"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/POST" index="13"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="14"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/Artifact" index="15"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.ukp.informatik.tu-darmstadt.de/Shibboleth.sso/SAML2/ECP" index="16"/>
     <md:AttributeConsumingService index="1">
             <md:ServiceName xml:lang="en">INCEpTION - Community Server</md:ServiceName>
             <md:ServiceDescription xml:lang="en">INCEpTION provides a semantic annotation platform offering intelligent annotation assistance and knowledge management.</md:ServiceDescription>
