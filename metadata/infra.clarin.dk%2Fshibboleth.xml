@@ -60,9 +60,9 @@
             <mdui:PrivacyStatementURL xml:lang="en">https://info.clarin.dk/en/the-clarin-dk-infrastructure/overview/privacypolicy/</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://infra.clarin.dk/Shibboleth.sso/Login"/>
+                                Location="https://clarin.dk/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://infra.clarin.dk/Shibboleth.sso/Login"
+                                    Location="https://clarin.dk/Shibboleth.sso/Login"
                                     index="1"/>
       </md:Extensions>
       <md:KeyDescriptor>
@@ -80,33 +80,33 @@
          <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                    Location="https://infra.clarin.dk/Shibboleth.sso/Artifact/SOAP"
+                                    Location="https://clarin.dk/Shibboleth.sso/Artifact/SOAP"
                                     index="1"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://infra.clarin.dk/Shibboleth.sso/SLO/SOAP"/>
+                              Location="https://clarin.dk/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Redirect"/>
+                              Location="https://clarin.dk/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://infra.clarin.dk/Shibboleth.sso/SLO/POST"/>
+                              Location="https://clarin.dk/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                              Location="https://infra.clarin.dk/Shibboleth.sso/SLO/Artifact"/>
+                              Location="https://clarin.dk/Shibboleth.sso/SLO/Artifact"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML2/POST"
                                    index="1"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign"
                                    index="2"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/Artifact"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML2/Artifact"
                                    index="3"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML2/ECP"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML2/ECP"
                                    index="4"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML/POST"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML/POST"
                                    index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                                   Location="https://infra.clarin.dk/Shibboleth.sso/SAML/Artifact"
+                                   Location="https://clarin.dk/Shibboleth.sso/SAML/Artifact"
                                    index="6"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">CLARIN-DK-UCPH</md:ServiceName>
