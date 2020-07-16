@@ -50,7 +50,7 @@
             <mdui:DisplayName xml:lang="fi">CLARIN-DK-UCPH</mdui:DisplayName>
             <mdui:Description xml:lang="da">Denne serviceudbyder giver adgang til CLARIN centret på Københavns Universitet og dets services for sprogbaserede materialer og værktøjer.</mdui:Description>
             <mdui:Description xml:lang="de">Dieser Service Provider ermöglicht den Zugriff auf das CLARIN Zentrum an der Universität Kopenhagen und seine Dienstleistungen für sprachbasierte Materialien und Werkzeuge.</mdui:Description>
-            <mdui:Description xml:lang="en">This Service Provider enables access to the CLARIN center at University of Copenhagen and its services for language-based materials and tools.</mdui:Description>
+            <mdui:Description xml:lang="en">This Service Provider enables access to the CLARIN center at University of Copenhagen.</mdui:Description>
             <mdui:Description xml:lang="fi">Tämä palveluntarjoaja mahdollistaa pääsyn Kööpenhaminan yliopiston CLARIN keskukseen ja käyttää keskuksen palveluja, kielivaroja ja työkaluja.</mdui:Description>
             <mdui:Keywords xml:lang="en">CLARIN Copenhagen Humanities research language archive tools</mdui:Keywords>
             <mdui:Keywords xml:lang="da">CLARIN København Humaniora forskning sprog arkiv applikationer</mdui:Keywords>
