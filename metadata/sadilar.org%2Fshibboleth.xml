@@ -125,6 +125,10 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
+	<md:ArtifactResolutionService 
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+            Location="https://repo.sadilar.org/Shibboleth.sso/Artifact/SOAP"
+            index="1"/> 
         <md:AssertionConsumerService
 	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
 	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST" 
