@@ -129,6 +129,18 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
 	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
             Location="https://repo.sadilar.org/Shibboleth.sso/Artifact/SOAP"
             index="1"/> 
+	<md:SingleLogoutService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+            Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/SOAP"/>
+        <md:SingleLogoutService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="https://repo.sadilar.org/Shibboleth.sso/SLO/Redirect"/>
+        <md:SingleLogoutService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://repo.sadilar.org/Shibboleth.sso/SLO/POST"/>
+        <md:SingleLogoutService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+            Location="https://repo.sadilar.org/Shibboleth.sso/SLO/Artifact"/>  
         <md:AssertionConsumerService
 	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
 	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST" 
