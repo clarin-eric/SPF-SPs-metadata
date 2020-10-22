@@ -125,9 +125,22 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST" index="1"/>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/ECP" index="3"/>
+        <md:AssertionConsumerService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST" 
+	    index="1"/>
+        <md:AssertionConsumerService 
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" 
+	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/POST-SimpleSign" 
+	    index="2"/>
+        <md:AssertionConsumerService
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/Artifact"
+	    index="3"/>	
+        <md:AssertionConsumerService 
+	    Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+	    Location="https://repo.sadilar.org/Shibboleth.sso/SAML2/ECP"
+	    index="4"/>
         <md:AttributeConsumingService index="0">
             <!-- the ServiceName and ServiceDescription must match the mdui versions above -->
             <md:ServiceName xml:lang="en">SADiLaR Language Resource Repository</md:ServiceName>
