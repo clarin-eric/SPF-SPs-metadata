@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Thu Oct 22 12:58:01 UTC 2020</ReportDate>
+  <FromCommit>4319b83f9fb4af90fc80ed02668b7cd0e14080af</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>https://repo.sadilar.org/shibboleth</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@isRequired’. Please specify whether a SAML attribute is a must-have or like-to-have for functionality of your SP or not.</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration.</requirement>
+    </result>
+    <result>
+      <sp>https://repo.sadilar.org/shibboleth</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://repo.sadilar.org/shibboleth</sp>
+      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+  </results>
+</report>
