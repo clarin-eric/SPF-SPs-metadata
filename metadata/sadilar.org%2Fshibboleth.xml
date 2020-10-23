@@ -206,7 +206,7 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
 	        FriendlyName="schacHomeOrganizationType"
 		Name="urn:oid:1.3.6.1.4.1.25178.1.2.10"
 		NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-	        isRequire="false"/>
+	        isRequired="false"/>
         </md:AttributeConsumingService>
     </md:SPSSODescriptor>
     <!--
