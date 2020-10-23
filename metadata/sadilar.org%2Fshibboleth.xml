@@ -221,18 +221,18 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
     </md:Organization>
     <md:ContactPerson contactType="technical">
         <md:GivenName>Martin</md:GivenName>
-		<md:SurName>Hennelly</md:SurName>
+	<md:SurName>Hennelly</md:SurName>
         <md:EmailAddress>mailto:martin.hennelly@nwu.ac.za</md:EmailAddress>
-	</md:ContactPerson>
+    </md:ContactPerson>
     <md:ContactPerson contactType="support">
-        <md:GivenName>Help desk</md:GivenName>
-		<md:SurName></md:SurName>
+        <md:GivenName>SADiLaR</md:GivenName>
+	<md:SurName>Helpdesk</md:SurName>
         <md:EmailAddress>mailto:info@sadilar.org</md:EmailAddress><!-- role not person -->
     </md:ContactPerson>
-	<md:ContactPerson contactType="administrative">
-        <md:GivenName>Help desk</md:GivenName>
-		<md:SurName></md:SurName>
+    <md:ContactPerson contactType="administrative">
+        <md:GivenName>SADiLaR</md:GivenName>
+	<md:SurName>Helpdesk</md:SurName>
         <md:EmailAddress>mailto:info@sadilar.org</md:EmailAddress><!-- role not person -->
-        </md:ContactPerson>
+    </md:ContactPerson>
 </md:EntityDescriptor>
 
