@@ -1,1 +1,38 @@
-
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIErTCCAxWgAwIBAgIUdZUxPK7aYDqOFdDM5f8CP3O9EXwwDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCR1IxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEfMB0GCSqGSIb3DQEJARYQZ2FsYW5pc2RAaWxzcC5ncjAeFw0yMDA5MTUwOTEzMjVaFw0zMDA5MTUwOTEzMjVaMGYxCzAJBgNVBAYTAkdSMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxHzAdBgkqhkiG9w0BCQEWEGdhbGFuaXNkQGlsc3AuZ3IwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQC1rD02OQct7O1G30m30PITN40VjvAtxywjk2AylWT0kGjBLa/mRTmQStv5jDEPSZzZ7xdAin429y/a5ZCmJ1z0aYkcxCW9JBU7LctvvidzWMs27P92r+t5qIkwiKgzwOWZm33MAXR6zEpxeaAY50DbOfKigcRRXGOc+ufPOtZTEJ6UxfRNyPtuPOz0ucLG2z6NIz2nlyjJsr8oYdVd6WRvbZNuDV3t/M9F/LsIIF6zlKkdxCMRgcKkNurhMNXowS6wM2RdhA3RPxfD8F2eAzJl1d7b91kkFAHOrC8shnvwoEvSvbeWEzxy/FRazB37rKX/Ix8XBAlnCV3GUJRhnYHNvmt9OpyV/ar2kH4Tzk519S28OsBX4Rw52YhfrEkm8JXwB9ExCexPzQKF6TN4gZNOfvkfHumcSnnDVQ10Vn6/Kx3GGBk4lJTQv+pwgyV/VF3HQlARA1AA+glLXOGc7mRDLHYLeCSh7oLCG7p3gW0VbmEQ9hAiFfWLpCWUZlspVN8CAwEAAaNTMFEwHQYDVR0OBBYEFO/6sK8VFLdR3YzwHsVtvzOPuq61MB8GA1UdIwQYMBaAFO/6sK8VFLdR3YzwHsVtvzOPuq61MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggGBABSKzjIpZLKLA+RBkGuIZAUR3Ul4he4kXAT9vP98by/ngU5ZIlxWmi5yvXBB2Cch9S0n9qkIKXesrbAZLVprgpxBXxd65lawHFhooJQ+XxQs2ernx7WfJQXtewLKkXHUB79LcRIMoPPhBPc62PsdAg8cqzmutnETYdrADYsPF9iZvraNLs0yu8cfqqEUrlKWX4WAectfofZa9vHiElGaJV0vwSMlj4MWkT6jdqAHnxzzHda4IMDhoPuc2/d/zho51suCWPz5z03QbDkCG84SnaMXsF/3d6p/9FbX4FtAbPOzbIsiRhlIMi7ZwE0F7E8GckQv0jirO4AqXqslHRYjBZDBU/jq/HWogyADKLKiY21Sjm4FMrNQzIgV98i2ET1yQr9WRBsbiFABFF6nfi6UOcVlijxHZjFbkkiUmgDmaarF+Atcb6qurDHl71FKQEQJ96mMenQMBp1rhcGi5Kn39L7rG6VyiiCzgyKmrrzcfcykzwtf7ztCSP9mkBv49gk/IQ==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIErTCCAxWgAwIBAgIUdZUxPK7aYDqOFdDM5f8CP3O9EXwwDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCR1IxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEfMB0GCSqGSIb3DQEJARYQZ2FsYW5pc2RAaWxzcC5ncjAeFw0yMDA5MTUwOTEzMjVaFw0zMDA5MTUwOTEzMjVaMGYxCzAJBgNVBAYTAkdSMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxHzAdBgkqhkiG9w0BCQEWEGdhbGFuaXNkQGlsc3AuZ3IwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQC1rD02OQct7O1G30m30PITN40VjvAtxywjk2AylWT0kGjBLa/mRTmQStv5jDEPSZzZ7xdAin429y/a5ZCmJ1z0aYkcxCW9JBU7LctvvidzWMs27P92r+t5qIkwiKgzwOWZm33MAXR6zEpxeaAY50DbOfKigcRRXGOc+ufPOtZTEJ6UxfRNyPtuPOz0ucLG2z6NIz2nlyjJsr8oYdVd6WRvbZNuDV3t/M9F/LsIIF6zlKkdxCMRgcKkNurhMNXowS6wM2RdhA3RPxfD8F2eAzJl1d7b91kkFAHOrC8shnvwoEvSvbeWEzxy/FRazB37rKX/Ix8XBAlnCV3GUJRhnYHNvmt9OpyV/ar2kH4Tzk519S28OsBX4Rw52YhfrEkm8JXwB9ExCexPzQKF6TN4gZNOfvkfHumcSnnDVQ10Vn6/Kx3GGBk4lJTQv+pwgyV/VF3HQlARA1AA+glLXOGc7mRDLHYLeCSh7oLCG7p3gW0VbmEQ9hAiFfWLpCWUZlspVN8CAwEAAaNTMFEwHQYDVR0OBBYEFO/6sK8VFLdR3YzwHsVtvzOPuq61MB8GA1UdIwQYMBaAFO/6sK8VFLdR3YzwHsVtvzOPuq61MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggGBABSKzjIpZLKLA+RBkGuIZAUR3Ul4he4kXAT9vP98by/ngU5ZIlxWmi5yvXBB2Cch9S0n9qkIKXesrbAZLVprgpxBXxd65lawHFhooJQ+XxQs2ernx7WfJQXtewLKkXHUB79LcRIMoPPhBPc62PsdAg8cqzmutnETYdrADYsPF9iZvraNLs0yu8cfqqEUrlKWX4WAectfofZa9vHiElGaJV0vwSMlj4MWkT6jdqAHnxzzHda4IMDhoPuc2/d/zho51suCWPz5z03QbDkCG84SnaMXsF/3d6p/9FbX4FtAbPOzbIsiRhlIMi7ZwE0F7E8GckQv0jirO4AqXqslHRYjBZDBU/jq/HWogyADKLKiY21Sjm4FMrNQzIgV98i2ET1yQr9WRBsbiFABFF6nfi6UOcVlijxHZjFbkkiUmgDmaarF+Atcb6qurDHl71FKQEQJ96mMenQMBp1rhcGi5Kn39L7rG6VyiiCzgyKmrrzcfcykzwtf7ztCSP9mkBv49gk/IQ==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/saml2-logout.php/default-sp"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/saml2-acs.php/default-sp" index="0"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/saml1-acs.php/default-sp" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/saml2-acs.php/default-sp" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/saml1-acs.php/default-sp/artifact" index="3"/>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en">Dev2 Clarin EL</md:OrganizationName>
+    <md:OrganizationName xml:lang="el">Dev2 CLARIN EL</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en">Dev2 Clarin EL</md:OrganizationDisplayName>
+    <md:OrganizationDisplayName xml:lang="el">Dev2 CLARIN EL</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en">https://inventory2.dev-clarin.ilsp.gr/</md:OrganizationURL>
+    <md:OrganizationURL xml:lang="el">https://inventory2.dev-clarin.ilsp.gr/</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="support">
+    <md:Company>ILSP/R.C. Athena</md:Company>
+    <md:GivenName>Dimitris</md:GivenName>
+    <md:SurName>Galanis</md:SurName>
+    <md:EmailAddress>mailto:galanisd@athenarc.gr</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
