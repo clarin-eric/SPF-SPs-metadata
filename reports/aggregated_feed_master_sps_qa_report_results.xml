@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Nov  5 15:51:00 UTC 2020</ReportDate>
-  <FromCommit>611e47a633a5888dfd5b2791c1222b36d446d738</FromCommit>
+  <ReportDate>Thu Nov  5 19:25:30 UTC 2020</ReportDate>
+  <FromCommit>d3b1d995a88b4c155d83d2ecdbc152beaa5da099</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://childes.talkbank.org/shibboleth</sp>
@@ -35,11 +35,6 @@
     </result>
     <result>
       <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
-      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
-      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
       <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
       <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
@@ -95,11 +90,6 @@
     </result>
     <result>
       <sp>https://fsd-cloud22.fz-juelich.de/shibboleth</sp>
-      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
-      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
       <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
       <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>

@@ -2835,6 +2835,15 @@ mTw=
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor entityID="http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp">
+    <md:Extensions>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue xsi:type="xs:string">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue xsi:type="xs:string">http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue xsi:type="xs:string">http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
       <md:Extensions>
         <mdui:UIInfo>

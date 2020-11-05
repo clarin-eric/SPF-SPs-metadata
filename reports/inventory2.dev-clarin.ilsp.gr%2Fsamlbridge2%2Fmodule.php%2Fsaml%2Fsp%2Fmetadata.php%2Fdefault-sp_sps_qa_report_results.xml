@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Thu Nov  5 19:25:30 UTC 2020</ReportDate>
+  <FromCommit>d3b1d995a88b4c155d83d2ecdbc152beaa5da099</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
+      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+    </result>
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:SingleLogoutService/@Location’ or any or their values are not valid https URLs.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AssertionConsumerService/@Location’ or any or their values are not valid https URLs.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. Required for technical correctness.</requirement>
+    </result>
+    <result>
+      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+  </results>
+</report>
