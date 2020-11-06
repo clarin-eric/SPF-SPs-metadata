@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Nov  5 19:25:30 UTC 2020</ReportDate>
-  <FromCommit>d3b1d995a88b4c155d83d2ecdbc152beaa5da099</FromCommit>
+  <ReportDate>Fri Nov  6 10:19:45 UTC 2020</ReportDate>
+  <FromCommit>94a742ad657ae609007c52a8f3ab7b1d79cc4012</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <result>
-      <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
-      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
-      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
     <result>
       <sp>http://inventory2.dev-clarin.ilsp.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
