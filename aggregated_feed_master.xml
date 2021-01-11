@@ -3017,9 +3017,9 @@ mTw=
       <md:OrganizationURL xml:lang="en">https://rrzk.uni-koeln.de</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
-      <md:GivenName>Jochen</md:GivenName>
-      <md:SurName>Graf</md:SurName>
-      <md:EmailAddress>mailto:jochen.graf@uni-koeln.de</md:EmailAddress>
+      <md:GivenName>Robert</md:GivenName>
+      <md:SurName>Kummer</md:SurName>
+      <md:EmailAddress>mailto:kummer@uni-koeln.de</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
       <md:GivenName>Diensteentwicklung</md:GivenName>
