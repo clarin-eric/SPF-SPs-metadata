@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://tekstlab.uio.no/glossa2/saml/metadata">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor AuthnRequestsSigned="false"
+                       WantAssertionsSigned="true"
+                       protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">Glossa corpus -hakujärjestelmä</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</mdui:Description>
+            <mdui:Description xml:lang="de">Glossa ist ein Werkzeug für Forscher, die linguistisch kommentierte Corpora suchen wollen</mdui:Description>
+            <mdui:Description xml:lang="fi">Glossa on työkalu tutkijoille, jotka haluavat etsiä kielellisesti merkityt korpukset</mdui:Description>
+            <mdui:Logo height="83" width="300">https://repo.clarino.uib.no/xmlui/themes/CLARINO/images/lindat/clarino-logo.png</mdui:Logo>
+            <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://tekstlab.uio.no/glossa2/saml/login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://tekstlab.uio.no/glossa2/saml/login"
+                                    index="1"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIHyzCCBrOgAwIBAgIQCq4K4p+vu/JXJk/smQf2XDANBgkqhkiG9w0BAQsFADBk
+MQswCQYDVQQGEwJOTDEWMBQGA1UECBMNTm9vcmQtSG9sbGFuZDESMBAGA1UEBxMJ
+QW1zdGVyZGFtMQ8wDQYDVQQKEwZURVJFTkExGDAWBgNVBAMTD1RFUkVOQSBTU0wg
+Q0EgMzAeFw0yMDAzMTMwMDAwMDBaFw0yMjAzMTgxMjAwMDBaMH4xCzAJBgNVBAYT
+Ak5PMQ0wCwYDVQQHEwRPc2xvMR0wGwYDVQQKExRVbml2ZXJzaXRldGV0IGkgT3Ns
+bzEjMCEGA1UECxMaVGVrc3RsYWJvcmF0b3JpZXQsIElMTiwgSEYxHDAaBgNVBAMT
+E3d3dy50ZWtzdGxhYi51aW8ubm8wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
+AoICAQDOkDgVD8qJAGGZxZyo42+Sq+PJIFzq8fxXa9bld7efuG7J0Geg5ubBmwo3
+WFbLSZvH8VoiguL5MwLKb38Ia7Dk8OUM47AF8GK6Yi8m6FvXkrNieH1Xgef1V5DH
+LkgJNJYLuVDP72DQT4psTpvBddK0zrYoLL0dNAwY+Albr7D/P++4DsM8U5xbalSW
+NzpS3W8+CbDb4MmsWomAWuGPmXjqTx9wkjjtuf9H8vW/5Mk51qf8yYgBKF/0R/Lf
+EWbs6QKyM1L0Mku5TtDVQEnFB6UlmU0LVc2gZ1mIgQsnqpMGLAlVMdF3UeCQlfce
+Plfz5pyl4qSaZwom6t1dIPBt2L8Nvha3yXi6krVAFs4dzPKSDyYmplGXhR1KG1Uu
+2NzMZEMErc2pcUxHoxCiZxNFlX8m9M8fvW0XKMdWmnziaBYMfAMY/FFj6vyeb2Rq
+sHqeLCV2aorJX/ovNs05VqANFxsg03m2wimhTvLCRp4YGnbhYz8qiD+koAjGthID
+f0G1+/YEDa+royB+cDicdxlvTU9zUDW+vqJfDs3q+235jC2bT+NEDTkCNkAqhd2o
+m9B7n48Nutn+ajFgXaWNaQU61mhimxOrSQXVQBrHdk0ocO0N6yqr6VU0STXM6S6m
+1qvToiIOMtz/BdJnFElMlpdsA4lE+MQAwWWnGNeBsd4o1p0Q3wIDAQABo4IDXTCC
+A1kwHwYDVR0jBBgwFoAUZ/2IIBQnmMcJ0iUZu+lREWN1UGIwHQYDVR0OBBYEFKJu
+UjVhMmev/kiUqScFRR/JRt7pMC8GA1UdEQQoMCaCD3Rla3N0bGFiLnVpby5ub4IT
+d3d3LnRla3N0bGFiLnVpby5ubzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYI
+KwYBBQUHAwEGCCsGAQUFBwMCMGsGA1UdHwRkMGIwL6AtoCuGKWh0dHA6Ly9jcmwz
+LmRpZ2ljZXJ0LmNvbS9URVJFTkFTU0xDQTMuY3JsMC+gLaArhilodHRwOi8vY3Js
+NC5kaWdpY2VydC5jb20vVEVSRU5BU1NMQ0EzLmNybDBMBgNVHSAERTBDMDcGCWCG
+SAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20v
+Q1BTMAgGBmeBDAECAjBuBggrBgEFBQcBAQRiMGAwJAYIKwYBBQUHMAGGGGh0dHA6
+Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA4BggrBgEFBQcwAoYsaHR0cDovL2NhY2VydHMu
+ZGlnaWNlcnQuY29tL1RFUkVOQVNTTENBMy5jcnQwDAYDVR0TAQH/BAIwADCCAXwG
+CisGAQQB1nkCBAIEggFsBIIBaAFmAHUAu9nfvB+KcbWTlCOXqpJ7RzhXlQqrUuga
+kJZkNo4e0YUAAAFw0tJ6PAAABAMARjBEAiByCNOUArXo9LQ0i0Z2pT8EPos2c1T2
+dnmdu/WrMeMYjQIgeM8rSWPt2W4rFW8qdF1F6c57bhxX0aX4NkrhInzND20AdgAi
+RUUHWVUkVpY/oS/x922G4CMmY63AS39dxoNcbuIPAgAAAXDS0npsAAAEAwBHMEUC
+IG0kycCCNlgcCbVfjMCo0wFSceSBcMdFiKbpBwd+88DXAiEA2mRqIpKWpebN33UY
+0sWYrdYHJ7/P2UIw4CaEzOIJExIAdQBRo7D1/QF5nFZtuDd4jwykeswbJ8v3nohC
+mg3+1IsF5QAAAXDS0nqEAAAEAwBGMEQCIHmrPV8TRobKPY4zK5i0ToY6b9xKXcWz
+qJw26tsMA8jsAiBdkvRnr1nx3l/0ivEbZjHY6/sO/7RnMy8PcDRRCqXrETANBgkq
+hkiG9w0BAQsFAAOCAQEACSaoO+L5g5TD7OJyyDQHbBcR3B+b+v7JSyvgqlTBFYEK
+KPRgVMzuHyCVXi0ur7O3/SJr99VjBq+yY5XmH8FXa9VRN8tERsTdpJ5frW3/RHjC
+tGSpdD4mUVcI9zAFpPEBFJXL/BW8AGMEtPC0EF1Kl5a8CFP4i2rQr6j2FhA5hHmt
+7vL78DrSGcxBr7PgLtfC8x2JtYGPu5ysXIU27knoP6r77Rk3kx8T+enTzdYIw0kc
+iokbmbzKB+rJezdlnhJoeCglEXXDYg4ZnQA7IrMwHlV46V1zmdZOncbS/dmzQ798
+QGnydAWt2eGg/vAhzwJqR8uZSXwwL8o/0NS8E6iAwQ==
+              </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://tekstlab.uio.no/glossa2/saml/logout"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://tekstlab.uio.no/glossa2/saml/auth"
+                                   index="1"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">Glossa, the corpus search and results handling system at the University of Oslo</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="edupersontargetedid"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="edupersonprincipalname"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="displayname"
+                                Name="urn:oid:2.16.840.1.113730.3.1.241"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">University of Oslo</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">University of Oslo</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.uio.no/</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Anders</md:GivenName>
+      <md:SurName>Nøklestad</md:SurName>
+      <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Anders</md:GivenName>
+      <md:SurName>Nøklestad</md:SurName>
+      <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>Kristin</md:GivenName>
+      <md:SurName>Hagen</md:SurName>
+      <md:EmailAddress>mailto:kristin.hagen@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>

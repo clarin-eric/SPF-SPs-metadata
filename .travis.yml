@@ -1,17 +1,22 @@
+os: 
+  - linux
+language: shell
+addons:
+  apt:
+    packages:
+      - libxml2-utils
+      - ant
 branches:
   only:
   - master
-  - production
-sudo: false
-script:
-- sh -x check-saml-metadata/check_saml_metadata.sh clarin-sp-metadata.xml
 env:
   global:
   - ENCRYPTION_LABEL: f641f006de37
-  - COMMIT_AUTHOR_EMAIL: "spf-qa-bot@clarin.eu"
+script:
+- bash check-saml-metadata/check_saml_metadata.sh metadata/
 after_success:
 - bash CI-assets/deploy.sh
 notifications:
   email:
     on_success: change
-on_failure: always
+    on_failure: always
