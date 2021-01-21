@@ -138,6 +138,11 @@ cT/j226+6nzrndKP9QJbhu9jUUIsLcx8M/3gGTaf8Z7Fi0EPnebkVg==
     <md:OrganizationURL xml:lang="en">http://www.ilc.cnr.it/en</md:OrganizationURL>
     <md:OrganizationURL xml:lang="it">http://www.ilc.cnr.it</md:OrganizationURL>
   </md:Organization>
+  <md:ContactPerson contactType="administrative">
+     <md:GivenName>Riccardo</md:GivenName>
+     <md:SurName>Del Gratta</md:SurName>
+     <md:EmailAddress>mailto:riccardo.delgratta@ilc.cnr.it</md:EmailAddress>
+  </md:ContactPerson>
   <md:ContactPerson contactType="technical">
     <md:GivenName>Alessandro</md:GivenName>
     <md:SurName>Enea</md:SurName>
