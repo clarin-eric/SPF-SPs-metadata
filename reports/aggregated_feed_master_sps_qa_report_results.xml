@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Jan 21 12:11:48 UTC 2021</ReportDate>
-  <FromCommit>9822a92c4be192e832bead0a36bd0490eca0157f</FromCommit>
+  <ReportDate>Thu Jan 21 14:23:07 UTC 2021</ReportDate>
+  <FromCommit>ec46b0232f42a0a7627c05bc01ed5a3004daa49f</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://childes.talkbank.org/shibboleth</sp>
@@ -661,11 +661,6 @@
     <result>
       <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
       <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata</sp>
-      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
       <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
     <result>
