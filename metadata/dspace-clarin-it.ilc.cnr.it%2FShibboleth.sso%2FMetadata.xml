@@ -27,9 +27,9 @@
   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
     <Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
       <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-         <mdui:DisplayName xml:lang="en">Digital Repository for the CLARIN Research Infrastructure provided by ILC-CNR</mdui:DisplayName>
+         <mdui:DisplayName xml:lang="en">ILC4CLARIN Centre Repository</mdui:DisplayName>
          <mdui:DisplayName xml:lang="it">Repository Digitale per la Infrastruttura di Ricerca CLARIN erogato da ILC-CNR</mdui:DisplayName>
-         <mdui:Description xml:lang="en">ILC-CNR for CLARIN-IT Consortium: Digital repository and services on language research infrastructure</mdui:Description>
+         <mdui:Description xml:lang="en">ILC-CNR for CLARIN-IT Consortium: Digital repository & services on language research infrastructure</mdui:Description>
          <mdui:Description xml:lang="it">ILC-CNR per il consorzio CLARIN-IT: repository e servizi di risorse linguistiche</mdui:Description>
          <mdui:InformationURL xml:lang="en">https://dspace-clarin-it.ilc.cnr.it/repository/xmlui/page/about</mdui:InformationURL>
          <mdui:InformationURL xml:lang="it">https://dspace-clarin-it.ilc.cnr.it/repository/xmlui/page/about</mdui:InformationURL>
@@ -153,5 +153,9 @@ cT/j226+6nzrndKP9QJbhu9jUUIsLcx8M/3gGTaf8Z7Fi0EPnebkVg==
     <md:SurName>Del Gratta</md:SurName>
     <md:EmailAddress>mailto:dspace-clarin-it-ilc-help@ilc.cnr.it</md:EmailAddress>
   </md:ContactPerson>
-
+  <md:ContactPerson contactType="administrative">
+      <md:GivenName>Riccardo</md:GivenName>
+      <md:SurName>Del Gratta</md:SurName>
+      <md:EmailAddress>mailto:dspace-clarin-it-ilc-help@ilc.cnr.it</md:EmailAddress>
+   </md:ContactPerson>
 </md:EntityDescriptor>
