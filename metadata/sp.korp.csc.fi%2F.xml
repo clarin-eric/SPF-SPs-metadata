@@ -37,7 +37,8 @@
             <mdui:Description xml:lang="fi">Tällä työkalulla voit tutkia tekstikorpuksia.</mdui:Description>
             <mdui:Description xml:lang="en">With this service you can study text corpora.</mdui:Description>
             <mdui:Logo height="66" width="168">https://korp.csc.fi/img/korplogo.png</mdui:Logo>
-            <mdui:InformationURL xml:lang="en">http://spraakbanken.gu.se/swe/korp-info</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://www.kielipankki.fi/support/korp/</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="fi">https://www.kielipankki.fi/tuki/korp/</mdui:InformationURL> 
             <mdui:PrivacyStatementURL xml:lang="en">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
             <mdui:PrivacyStatementURL xml:lang="sv">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
             <mdui:PrivacyStatementURL xml:lang="fi">https://korp.csc.fi/privacy-policy.html</mdui:PrivacyStatementURL>
