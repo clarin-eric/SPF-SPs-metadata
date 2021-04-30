@@ -3931,9 +3931,9 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
       <md:EmailAddress>mailto:info@clarin.dk</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="technical">
-      <md:GivenName>Mitchell</md:GivenName>
-      <md:SurName>Seaton</md:SurName>
-      <md:EmailAddress>mailto:seaton@hum.ku.dk</md:EmailAddress>
+      <md:GivenName>Simon</md:GivenName>
+      <md:SurName>Gray</md:SurName>
+      <md:EmailAddress>mailto:simongray@hum.ku.dk</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor ID="_aae9214966fec92838e49783b86d8d2387be51ae" entityID="https://repository.clarin.is/shibboleth">
