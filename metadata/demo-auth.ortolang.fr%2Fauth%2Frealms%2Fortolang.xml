@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://demo-auth.ortolang.fr/auth/realms/ortolang">
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:KeyName>s4tX6epRcSun_w-_DPHLbemSqSWUzQZ2Z_RVPFa4VC4</ds:KeyName>
+                <ds:X509Data>
+                  <ds:X509Certificate>MIICnzCCAYcCBgFRxPn3xzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhvcnRvbGFuZzAeFw0xNTEyMjExNDM2MzRaFw0yNTEyMjExNDM4MTRaMBMxETAPBgNVBAMMCG9ydG9sYW5nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj3hDFa3b77uDgalDKwLrvAlVSUxLwwL5pgl2d/0UDiaiRUjtqdrbhCQNEPA+ijDh2LzBDdC7FhabY3/gIj5hqI6zkWVWQoG98ONdn52jKCpQO5qjK1wcFnUqz4bfESxbc5vESfQ+MPzkqLC7gm8p5QrjJQgxXbyEEQxBCI0jWb+tUHsQAis3IzoNAsuXr5a9qm9wF+mP/VzB3WGCbJOP+7WwwngN3iN4Ykq96nqR1A/3c/CrtygeVtalYxEFzK9g1qk+q6/q5vyF1PSaThmbW4kgXktvXICDgFEr2/tC+JXQt6pH65tqjc2Inqw/N6QwOdjkmF8BHjFPyxudRMRPZwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQABq2zafrSRBzyTpPEoYwPPxzobYfIavIoLbKhpJq+7dHWJMvU2PhJlmE3HnBi05wr2Xhf3LNQJ1N2Si3wHUAGK4tSxw+wXQOLvCuo/5mjRG0CTzyj0rrWZR0/5Ogn0+f1wheUOtC6U0X2woWfdsbgronX3CqGh2B73m5SbyD4Ul8EoxMlpnNmh9hd54HH2YNvKS2JrMhPaHSibVJyHuQND3CxlhpobozWzcng4J4QvMGxgrEBUDdYg8jY86lS4JZUUiuVoVTlV0yKSkbsUSgb/ZeBP+bUARUAnrAHptCxQRW0FVHxkCFj7wmPdQsIe2eNO8lvEQbABKsvG8xGQTboO</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/clarin/endpoint"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/clarin/endpoint" isDefault="true" index="1"/>
+    </md:SPSSODescriptor>
+    <md:Organization>
+        <md:OrganizationName xml:lang="en">ORTOLANG</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="en">ORTOLANG</md:OrganizationDisplayName>
+        <md:OrganizationURL xml:lang="en">https://www.ortolang.fr/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="administrative">
+        <md:GivenName>Etienne</md:GivenName>
+        <md:SurName>Petitjean</md:SurName>
+        <md:EmailAddress>mailto:etienne.petitjean@atilf.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+        <md:GivenName>Cyril</md:GivenName>
+        <md:SurName>Pestel</md:SurName>
+        <md:EmailAddress>mailto:cyril.pestel@atilf.fr</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+        <md:GivenName>Cyril</md:GivenName>
+        <md:SurName>Pestel</md:SurName>
+        <md:EmailAddress>mailto:cyril.pestel@atilf.fr</md:EmailAddress>
+    </md:ContactPerson>
+</md:EntityDescriptor>
