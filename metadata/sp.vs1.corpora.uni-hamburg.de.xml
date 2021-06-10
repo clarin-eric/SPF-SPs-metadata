@@ -150,14 +150,14 @@
       <md:OrganizationURL xml:lang="en">http://corpora.uni-hamburg.de</md:OrganizationURL>
    </md:Organization>
    <md:ContactPerson contactType="technical">
-      <md:GivenName>Tommi</md:GivenName>
-      <md:SurName>Pirinen</md:SurName>
-      <md:EmailAddress>mailto:tommi.antero.pirinen@uni-hamburg.de</md:EmailAddress>
+      <md:GivenName>Juliane</md:GivenName>
+      <md:SurName>Schopf</md:SurName>
+      <md:EmailAddress>mailto:juliane.schopf@uni-hamburg.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="administrative">
-      <md:GivenName>Hanna</md:GivenName>
-      <md:SurName>Hedeland</md:SurName>
-      <md:EmailAddress>mailto:hanna.hedeland@uni-hamburg.de</md:EmailAddress>
+      <md:GivenName>Juliane</md:GivenName>
+      <md:SurName>Schopf</md:SurName>
+      <md:EmailAddress>mailto:juliane.schopf@uni-hamburg.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>HZSK</md:GivenName>
