@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Wed May 26 11:24:51 UTC 2021</ReportDate>
-  <FromCommit>5dad61c40027e1336d46649e05da694a8bc56b04</FromCommit>
+  <ReportDate>Thu Jun 17 13:10:19 UTC 2021</ReportDate>
+  <FromCommit>defd13b8f86398338ee2909ad41e00fc14cc99b4</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://childes.talkbank.org/shibboleth</sp>
@@ -387,11 +387,6 @@
       <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
       <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
       <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://aaiproxy.de.dariah.eu/sp</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
     </result>
     <result>
       <sp>https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata</sp>

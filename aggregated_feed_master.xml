@@ -1,117 +1,42 @@
 <?xml version="1.0"?>
 <md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:pyff="http://pyff.io/NS" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" xmlns:eidas="http://eidas.europa.eu/saml-extensions" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:remd="http://refeds.org/metadata" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:urn="urn:oasis:names:tc:SAML:2.0:metadata" Name="http://www.clarin.eu/spf" ID="_20200129T172616Z" validUntil="2020-02-08T17:26:16Z" cacheDuration="PT5H">
-  <EntityDescriptor entityID="https://aaiproxy.de.dariah.eu/sp">
-    <Extensions>
-      <mdrpi:RegistrationInfo registrationAuthority="https://www.aai.dfn.de" registrationInstant="2018-06-13T11:33:07Z">
-        <mdrpi:RegistrationPolicy xml:lang="en">https://www.aai.dfn.de/en/join/</mdrpi:RegistrationPolicy>
-        <mdrpi:RegistrationPolicy xml:lang="de">https://www.aai.dfn.de/teilnahme/</mdrpi:RegistrationPolicy>
-      </mdrpi:RegistrationInfo>
-      <mdattr:EntityAttributes>
-        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-        </saml:Attribute>
-      </mdattr:EntityAttributes>
-    </Extensions>
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <Extensions>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/Login" index="1"/>
-        <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="de">DARIAH AAI</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">DARIAH AAI</mdui:DisplayName>
-          <mdui:Description xml:lang="de">Proxy f&#xFC;r Dienste in der DARIAH AAI</mdui:Description>
-          <mdui:Description xml:lang="en">DARIAH AAI Services Proxy</mdui:Description>
-          <mdui:Logo height="154" width="160">https://idp.de.dariah.eu/images/DARIAH_flower.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="de">https://www.dariah.eu/</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="en">https://www.dariah.eu/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="de">https://de.dariah.eu/dariah-coc</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://de.dariah.eu/en/dariah-coc</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
-      </Extensions>
-      <KeyDescriptor>
+  <md:EntityDescriptor entityID="https://aaiproxy.de.dariah.eu/idp">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">dariah.eu</shibmd:Scope>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
         <ds:KeyInfo>
-          <ds:KeyName>aaiproxy.de.dariah.eu</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=aaiproxy.de.dariah.eu</ds:X509SubjectName>
-            <ds:X509Certificate>MIIEJTCCAo2gAwIBAgIJAKAsaU9Sk32mMA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNV
-BAMTFWFhaXByb3h5LmRlLmRhcmlhaC5ldTAeFw0xNzExMDgxNDU1NDVaFw0yMDEx
-MDcxNDU1NDVaMCAxHjAcBgNVBAMTFWFhaXByb3h5LmRlLmRhcmlhaC5ldTCCAaIw
-DQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAMSkM3a5aj988qjLd5jDGWm/AQGk
-6oaVu/YJILX4X8n1h892bJ0J3m1kjEH8Uh5sxMpWU9fRO7dQAzgiQuIleHsR6Qt8
-ptl8pGOSzHU/eYEG0Jj4FBUSzR6j/zFD34rFwbPVE1rdvRZKpHyWVgdTpCNGmauQ
-68U3cGm4cAukBvipy36beV/dyVJii8ZJXr8Y1Ys/9i+5mEBrKE0zA9R2y59CSlh2
-XuOJp8H/lgQ8/Jrf7Mj8ZDnoPvW8rQjPT+HqLaRbDLf5kF/EASFExwP2Cl5qmm98
-D06jxPbeMb+WHCrTv+iiKdtqWnGod2c5Aczn/7x99fl4v1/z7xwCTs+eJH+fu0Pk
-2PhXqrRw3fbIH/ry6axwyt9wlpwDwpoaINgVNaOt9gHwv2iu4SbJtROSelRad/AQ
-1CmtUo+CqwhfmuNI7AdCanTIOS2E86YFfTlMAF6kHkSxio6bFKxMh1sB4bEz0oET
-m47s8GvVS0Jz0t3MeKeoyJqqOJKfQgjHR/+22wIDAQABo2IwYDA/BgNVHREEODA2
-ghVhYWlwcm94eS5kZS5kYXJpYWguZXWGHWh0dHBzOi8vYWFpcHJveHkuZGUuZGFy
-aWFoLmV1MB0GA1UdDgQWBBQBnyMiDmOakgOwtTHgMXMZPfPnTjANBgkqhkiG9w0B
-AQsFAAOCAYEAJyMcX2v4cA7QJXtqXeVBwehV3t9gLvx9AWPy1wGe/Qqrn3diQxnC
-HYP9GmG7DQ1DMlyuDiW4g0rAZspMWpVM/fLtInbUaH+wjLE430Qm8zSTZGQnD2/V
-yf1vpAyWae0+tO3/YgN/pd++LQHoBVTeBf/ethMZj5pMG+neu/WqwoDWW2RD7goJ
-wFUTy2YE55pC7WmZubL3vN9oYYVfSRV2DDQ9hVzeURozRxpSm7qj92wKJmYuILqc
-QB/p8CrkHNqVcwmmh9t6LLEWRLoy/i4VetqzCSYJoCyRd59GqfmEaxWvkyPpwn5x
-zVdSIQWLay4+epgjVfVBWFo6VzTPCFUWiCcYL8HKsfU0u4D0YcTrWQoIAHSdQXxy
-DBcbi1F2qS+mdub9JKi0imInrXN8UrvGEH4ZfewgRBm/RHls/OclkHeoEvUTnFtI
-oQh1tEj0q/Ty+apsFNo9ArGprOV6QF7tNU22PoOa6G1Z1mdwDT2L4waI58WJFHlq
-5PjkNbmb0O8F
-</ds:X509Certificate>
+            <ds:X509Certificate>MIIJEjCCB/qgAwIBAgIMJC9F1xHpWz34qfHWMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4tUEtJMSUwIwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTIxMDEyNjA3NDQwOVoXDTIyMDIyNzA3NDQwOVowgZoxCzAJBgNVBAYTAkRFMRYwFAYDVQQIDA1OSUVERVJTQUNIU0VOMRMwEQYDVQQHDApHT0VUVElOR0VOMT4wPAYDVQQKDDVHZXNlbGxzY2hhZnQgZnVlciB3aXNzZW5zY2hhZnRsaWNoZSBEYXRlbnZlcmFyYmVpdHVuZzEeMBwGA1UEAwwVYWFpcHJveHkuZGUuZGFyaWFoLmV1MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA56gSqwg9WIjraY0RsicK79gc2z1rEfwYcuqvwrpTdvgES60E6Cs990yBoai5l2GyThiHM1z7jCCvNSSYROqomuSkNJB6/gDlm2IqzTkrbJIBQ4hiVUUHZBdYEwcRL3Zfr1bMbPf+FLcds9HxhmOexEcvPtuk3wtbOomYyN9qRkp3pvkt/gLyHoX129Bn7hesFLdEL8tJjRTs52wGCkm3qmbIWrguGb5W+YxXqZhd2ZQEh89DRku1+FjrcPXahkRUjI6kef1ZmVn0rIn/wvztxY3mJIqbHRFRgi0CArY6Sp/z5Havmim50W+gLY1Llp/aXzBzKh6UcIdH4bAwwzzmrDi67OasO4Wx0lOM2Gswy3K1vn2cbCKbSOgoSjA3lLwBIQ4DEw/GNJCnRQwGRLI81ITPg+pz90aHi0A2pUPdDLvKwrnndvwqsDEJplI6J7p4qhSd+KpW2/XxgftHaZT1zLzWkTw3KFwgfRfkXQwcGBGTXHtZcMpp5NG46B18Y9J93o/tWLHKWznTHAomdIUAAV7kbt6As6JmkPd0GdoG4FsH53SgIKpn5+D//0nOkx/50BSagfXaIQXYhZ/2k9p0o9wCg1KErxyaMIVz/U//HeLKEVZKIwspxq8QLE/AuWH+wjUrvRwP6MbmDTStt3T4YHwID21ND3ijKJ5+h1cy+2UCAwEAAaOCBGEwggRdMFcGA1UdIARQME4wCAYGZ4EMAQICMA0GCysGAQQBga0hgiweMA8GDSsGAQQBga0hgiwBAQQwEAYOKwYBBAGBrSGCLAEBBAgwEAYOKwYBBAGBrSGCLAIBBAgwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBQbjavPfJhF+jt+OvB5ZGXFNQdWzDAfBgNVHSMEGDAWgBRrOpiL+fJTidrgrbIyHgkf6Ko7dDAgBgNVHREEGTAXghVhYWlwcm94eS5kZS5kYXJpYWguZXUwgY0GA1UdHwSBhTCBgjA/oD2gO4Y5aHR0cDovL2NkcDEucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2FjcmwuY3JsMD+gPaA7hjlodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9iYWwtZzIvcHViL2NybC9jYWNybC5jcmwwgdsGCCsGAQUFBwEBBIHOMIHLMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSQYIKwYBBQUHMAKGPWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSQYIKwYBBQUHMAKGPWh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwggH2BgorBgEEAdZ5AgQCBIIB5gSCAeIB4AB1AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABdz2maoMAAAQDAEYwRAIgN5fr77RKrh3ZTPzde5GUP0VfNUMijHdm569gdR0xJM0CIEqi3mjkOZjyVx3BhElpAOr/Ipg20Bm2V2tOfxPOOnPlAHYAKXm+8J45OSHwVnOfY6V35b5XfZxgCvj5TV0mXCVdx4QAAAF3PaZu3gAABAMARzBFAiEA1UuEyuTPjETuKrY7uHoKccj6oTzEOdBBQsLO7cAXh0ICIBfqrngh6GQY9bEdDqEEU8D+y130Fhyyl75sLbbC4dN+AHcAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAF3PaZrWQAABAMASDBGAiEAxXIt5Iptr2jrbMvvrrCGe52tNWgvym60lAiYtbtHrKICIQC/NdrW2rERtDgIJ7F/RZEd6KpZE9XCtgQLFZru9mK89AB2AFWB1MIWkDYBSuoLm1c8U/DA5Dh4cCUIFy+jqh0HE9MMAAABdz2mbGkAAAQDAEcwRQIgLm/QVu7o1y9JEUsg1FRzi9FoFRBTDbmSg5Wd9SK+6HECIQDE1OBl44MU+ZuwGGC2IX75n/v3gAEqAJc6DYJSSX3NjzANBgkqhkiG9w0BAQsFAAOCAQEAT1Ztdx3xrvW2CHWlC5sjAYgbmo8KxFgMgm0qX6qyVsno1jC8Wti3eKGzwd0HcKxstYqnwfMOeC2fba8sM71i+vIflw+6jxdnTtrqlS02G//ylTd8jfrwdqgU2JV4iMkeGE9wncc7xw/I40Iy0lsT41SIIemg/db7SeZeQ75J6AUgKtU5fRL2OtYhQ6X8bt5HNA+LW98/0D1Q+8kZoc5Q0Hzavxq+XZ5RJnmKq+9JpjFJal+GUUTImV8nzOVhNdw8ftSfRlDc8b5cp4MYYnHsI81Fa5WCQ3dbSsoNJ/Lxu+m/dGObG29puYWrAeQlGLyHMojVXRfXNpGbEObmWHe9RQ==</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
-      </KeyDescriptor>
-      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/Artifact/SOAP" index="1"/>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/POST" index="1"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://aaiproxy.de.dariah.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
-      <AttributeConsumingService index="1">
-        <ServiceName xml:lang="de">DARIAH AAI</ServiceName>
-        <ServiceName xml:lang="en">DARIAH AAI</ServiceName>
-        <ServiceDescription xml:lang="de">Proxy f&#xFC;r Dienste in der DARIAH AAI</ServiceDescription>
-        <ServiceDescription xml:lang="en">DARIAH AAI Services Proxy</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="eduPersonUniqueId" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.13" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="eduPersonOrcid" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.16" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-        <RequestedAttribute FriendlyName="o" Name="urn:oid:2.5.4.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-      </AttributeConsumingService>
-    </SPSSODescriptor>
-    <Organization>
-      <OrganizationName xml:lang="de">e112</OrganizationName>
-      <OrganizationName xml:lang="en">e112</OrganizationName>
-      <OrganizationDisplayName xml:lang="de">Gesellschaft f&#xFC;r wissenschaftliche Datenverarbeitung mbH</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">Gesellschaft f&#xFC;r wissenschaftliche Datenverarbeitung mbH</OrganizationDisplayName>
-      <OrganizationURL xml:lang="de">http://www.gwdg.de</OrganizationURL>
-      <OrganizationURL xml:lang="en">http://www.gwdg.de</OrganizationURL>
-    </Organization>
-    <ContactPerson contactType="technical">
-      <GivenName>Dariah</GivenName>
-      <SurName>Support</SurName>
-      <EmailAddress>mailto:register@dariah.eu</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>Dariah</GivenName>
-      <SurName>Support</SurName>
-      <EmailAddress>mailto:register@dariah.eu</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
-      <GivenName>DARIAH Incident Response Team</GivenName>
-      <EmailAddress>mailto:register@dariah.eu</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="administrative">
-      <GivenName>Mark</GivenName>
-      <SurName>Kaulertz</SurName>
-      <EmailAddress>mailto:mark.kaulertz@gwdg.de</EmailAddress>
-    </ContactPerson>
-  </EntityDescriptor>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>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</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://aaiproxy.de.dariah.eu/simplesaml/saml2/idp/SingleLogoutService.php"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://aaiproxy.de.dariah.eu/simplesaml/saml2/idp/SSOService.php"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aaiproxy.de.dariah.eu/simplesaml/saml2/idp/SSOService.php"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="de">DARIAH</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">DARIAH</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="de">DARIAH</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">DARIAH</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://de.dariah.eu/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>DARIAH</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>register@dariah.eu</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
   <md:EntityDescriptor entityID="https://acdh.oeaw.ac.at/shibboleth">
     <md:Extensions>
       <mdattr:EntityAttributes>
