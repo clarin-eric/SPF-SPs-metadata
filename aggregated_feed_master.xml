@@ -4594,8 +4594,8 @@ giHvX8oc3tgn5VjXRz7LKskunlTdSnuUTwO2CKaQnbXfU3NGcmF3SjZxL2IP</ds:X509Certificate
           <mdui:Keywords xml:lang="nl">CLARIN Virtual+Collection+Registry VCR</mdui:Keywords>
           <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
-        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/Login"/>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/Login" index="1"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://beta-collections.clarin.eu/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://beta-collections.clarin.eu/Shibboleth.sso/Login" index="1"/>
       </md:Extensions>
       <md:KeyDescriptor>
         <ds:KeyInfo>
@@ -4604,15 +4604,15 @@ giHvX8oc3tgn5VjXRz7LKskunlTdSnuUTwO2CKaQnbXfU3NGcmF3SjZxL2IP</ds:X509Certificate
           </ds:X509Data>
         </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SLO/POST"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SAML2/POST" index="1"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://beta-vcr.clarin.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://beta-collections.clarin.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">CLARIN Virtual Collection Registry (beta)</md:ServiceName>
         <md:ServiceDescription xml:lang="en">For the Virtual Collection Registry.</md:ServiceDescription>
