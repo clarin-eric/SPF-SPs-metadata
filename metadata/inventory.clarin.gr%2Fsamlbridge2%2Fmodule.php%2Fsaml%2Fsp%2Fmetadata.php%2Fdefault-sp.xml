@@ -13,7 +13,7 @@
     <md:Extensions>
       <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
         <mdui:DisplayName xml:lang="en">CLARIN:EL</mdui:DisplayName>
-        <mdui:Description xml:lang="en">CLARIN:EL</mdui:Description>
+        <mdui:Description xml:lang="en">CLARIN:EL is the National Infrastructure for Language Resources and Technologies in Greece</mdui:Description>
         <mdui:PrivacyStatementURL xml:lang="en">https://inventory.clarin.gr/site_media/Privacy_Policy.pdf</mdui:PrivacyStatementURL>
         <mdui:Logo width="500" height="214">https://www.clarin.gr/sites/default/files/logo_clarinel.png</mdui:Logo>
       </mdui:UIInfo>
@@ -47,7 +47,6 @@
       <md:RequestedAttribute Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="sn" isRequired="true"/>
       <md:RequestedAttribute Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="givenName" isRequired="true"/>
       <md:RequestedAttribute Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="commonName" isRequired="true"/>
-      <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="schacHomeOrganization"/>
     </md:AttributeConsumingService>
   </md:SPSSODescriptor>
   <md:Organization>
