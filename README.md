@@ -1,4 +1,4 @@
-[![Travis Status](https://travis-ci.org/clarin-eric/SPF-SPs-metadata.svg?branch=master)](https://travis-ci.org/clarin-eric/SPF-SPs-metadata)
+[![Travis Status](https://travis-ci.com/clarin-eric/SPF-SPs-metadata.svg?branch=master)](https://travis-ci.com/clarin-eric/SPF-SPs-metadata)
 [![Latest Release](https://img.shields.io/github/v/release/clarin-eric/SPF-SPs-metadata)](https://github.com/clarin-eric/SPF-SPs-metadata/releases/latest)
 [![Commits Since Latest Release](https://img.shields.io/github/commits-since/clarin-eric/SPF-SPs-metadata/latest)](https://github.com/clarin-eric/SPF-SPs-metadata/commits/master)
 # Metadata sources for service providers inside the CLARIN Service Provider Federation
@@ -9,7 +9,7 @@
 
 To update or add SAML metadata for your SP:
 1. Fork this repository.
-2. Make your changes in the file corresponding to your SP inside the `metadata/` directory. In case you are adding a new SP, add the metadata by creating a new file following the same naming convention: `[New SP File Name] = [SP entityID].replace("http(s)?://", "").replace("/", "%2F")`
+2. Make your changes in the file corresponding to your SP inside the `metadata/` directory. In case you are adding a new SP, add the metadata by creating a new file following the same naming convention: `[New SP File Name] = [SP entityID].replace("http(s)?://", "").replace("/", "%2F") + ".xml"`
 3. Create a pull request to the *master* branch of this repository.
 4. Wait for Travis CI to finish the XSD validation on your pull request.
 5. Make sure your pull request is XSD valid. Fix your metadata based on the Travis CI output information and update the pull request until XSD validation passes.
