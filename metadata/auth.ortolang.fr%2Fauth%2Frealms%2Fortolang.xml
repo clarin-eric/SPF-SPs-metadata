@@ -37,6 +37,7 @@
         <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ortolang.fr/auth/realms/ortolang/broker/fed-shib-saml-edugain-clarin/endpoint"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ortolang.fr/auth/realms/ortolang/broker/fed-shib-saml-edugain-clarin/endpoint" isDefault="true" index="1"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ortolang.fr/auth/realms/ortolang/broker/clarin/endpoint" index="2"/>
         <md:AttributeConsumingService index="1">
             <md:ServiceName xml:lang="en">ORTOLANG</md:ServiceName>
             <md:ServiceName xml:lang="fr">ORTOLANG</md:ServiceName>
