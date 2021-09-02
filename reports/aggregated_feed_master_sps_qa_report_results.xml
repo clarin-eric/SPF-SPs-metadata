@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Mon Jul 26 12:43:27 UTC 2021</ReportDate>
-  <FromCommit>f4c78cd9cf0f2d5f3e17a54ce484ea383594ab3a</FromCommit>
+  <ReportDate>Thu Sep  2 15:42:15 UTC 2021</ReportDate>
+  <FromCommit>81316da94910fef456824a99777848349439eb63</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -382,11 +382,6 @@
       <sp>https://repo.clarino.uib.no/shibboleth/sp</sp>
       <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@Name’, or their values do not start with 'urn:oid:'. You may be using the SAML 1.x NameFormat, which is incorrect for a SAML 2 attribute.</explanation>
       <requirement>Required for technical correctness.</requirement>
-    </result>
-    <result>
-      <sp>https://shibboleth.bbaw.de/shibboleth</sp>
-      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
-      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
     <result>
       <sp>https://test.clarin-d.uni-saarland.de</sp>
