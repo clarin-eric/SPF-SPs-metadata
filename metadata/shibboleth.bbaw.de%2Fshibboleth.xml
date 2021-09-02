@@ -143,6 +143,16 @@ Bxvbnvd3J7xN33VTbXrBytne</ds:X509Certificate>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
                                    Location="https://shibboleth.bbaw.de/Shibboleth.sso/SAML/Artifact"
                                    index="6"/>
+     <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">BBAW - CLARIN services</md:ServiceName>
+         <md:ServiceName xml:lang="de">BBAW - CLARIN-Dienste</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Various services provided by the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) in the context of the CLARIN initiative.</md:ServiceDescription>
+         <md:ServiceDescription xml:lang="de">Verschiedene Dienste der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) im Rahmen der CLARIN-Initiative.</md:ServiceDescription>
+         <md:RequestedAttribute isRequired="false"
+                                FriendlyName="eduPersonTargetedID"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+      </md:AttributeConsumingService>
    </md:SPSSODescriptor>
    <Organization>
       <OrganizationName xml:lang="de">Berlin-Brandenburgische Akademie der Wissenschaften</OrganizationName>
