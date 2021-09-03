@@ -14,6 +14,7 @@
       <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
         <mdui:DisplayName xml:lang="en">CLARIN:EL</mdui:DisplayName>
         <mdui:Description xml:lang="en">CLARIN:EL is the National Infrastructure for Language Resources and Technologies in Greece</mdui:Description>
+        <mdui:InformationURL xml:lang="en">https://www.clarin.gr/en</mdui:InformationURL>
         <mdui:PrivacyStatementURL xml:lang="en">https://www.clarin.gr/el/content/privacy-policy</mdui:PrivacyStatementURL>
         <mdui:Logo width="500" height="214">https://www.clarin.gr/sites/default/files/logo_clarinel.png</mdui:Logo>
       </mdui:UIInfo>
