@@ -31,7 +31,7 @@
       </mdattr:EntityAttributes>
    </Extensions>
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-      <md:Extensions>
+      <Extensions>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                 Location="https://shibboleth.bbaw.de/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
@@ -49,7 +49,7 @@
             <mdui:InformationURL xml:lang="en">http://www.bbaw.de</mdui:InformationURL>
             <mdui:PrivacyStatementURL xml:lang="en">http://shibboleth.bbaw.de/privacy.html</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
-      </md:Extensions>
+      </Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
             <ds:KeyName>Active</ds:KeyName>
