@@ -15,7 +15,7 @@ fi
 
 mkdir -p $INSTALLS_PATH/saxon
 cd $INSTALLS_PATH/saxon
-wget $SAXON_URL
+wget --no-check-certificate $SAXON_URL
 unzip -o $SAXON_VERSION.zip
 rm $SAXON_VERSION.zip
 cd ..
