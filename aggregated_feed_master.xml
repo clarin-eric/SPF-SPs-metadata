@@ -1677,6 +1677,48 @@ Vnj6yaHNpUPCovSNVyxlU55MErDUyyn5LezXK/TBdTw7qDI=</ds:X509Certificate>
           <ds:KeyName>Active</ds:KeyName>
           <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
           <ds:X509Data>
+            <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de</ds:X509SubjectName>
+            <ds:X509Certificate>MIIEJDCCAoygAwIBAgIJAPCkCkgE8RJfMA0GCSqGSIb3DQEBCwUAMCoxKDAmBgNV
+BAMTH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGUwHhcNMjExMTA5MTAx
+ODQzWhcNMzExMjI3MTAxODQzWjAqMSgwJgYDVQQDEx9jbGFyaW4ucGhvbmV0aWsu
+dW5pLW11ZW5jaGVuLmRlMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA
+w5LnbN9Kpz1nCtfczChX2KI54paXZc/F8+F2MFyP/hrTZKOdqUG9hXXH2qNAlU42
+Qu2V0k4yWMO4lpr4+5s5dBTEJQ6+UvkHysMDNjdU6tQRDB9EHrFV26xXK4fHRuZd
+vBPS8sgfvDH+ZpU22tsEwCDwF10kQmGT7MDAGT1DWg/c54NYzKJfRIT3PS84NOaM
++wslCgMrmUZtLCKvpxAgZ3BtAGnEtaVmTuo5THZYWpv8y47WCI2cfSp9YUJWT8DK
+J8jKourvxFpdo6dbYQi3w3iZdlmMq2skzhOZdv8ZmqymGJ2oYpGe0TPLYwoeEYFf
+UPDetn60dnE5tJvMZT7gUSZ1J1wmGBVZ+3pRBx+HCDz0CgviYJb9dqvIWJcM6NHU
+/kQ6BI6OUlIJSgnX3l+f73Z7VM5CmiSWXEFIXx4VFSrKs43J0wFQBY0oQP1klwVE
+xXKDQZ1JPQ4SDS1ZiLfIZzVgimKsab11YbGzyCbUPjr27ZAnEYvrmVyzhyB4T6Tz
+AgMBAAGjTTBLMCoGA1UdEQQjMCGCH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNo
+ZW4uZGUwHQYDVR0OBBYEFGBO4R/Zoa47ju/K/Z4POrI7PJt/MA0GCSqGSIb3DQEB
+CwUAA4IBgQCemcE1ITc1KffSDlQzpBAeoTWc0PSEaNF5OKZ2H2zwfCJQfwkHvX+d
+KLGlBzRSO1bRiwhGg5V9DnyuQv8gr12Fl1MQnIk23raM6JNPpW9QXN0g6dxHJZhJ
+nTbIXL0zubTScAdXAR0Jk8+6NdYh8EeujvuqU2HDhLm9SP2qSdD09CY3DtT4d82G
+ETrbYHz0eGGGvAlzrNv3XC8Wp2EROG8XRKt0uyAUgIGhYf1sNqPMafTICSJgNTR8
+wPUFYANl5LO91FpGlSt2u1zIz1z3EKDNHzPspFkK1dDON5bXjsxb1Kjf3U+7xPQs
+M1gJAgB8NwiK4D4YgHonMZ3AGVblGhFFqO/pVOrSXd543MA8xBehq974ggpz+CM4
++SHjK4ZFlPKeZETzhXoY1hzz5H0VkIyEUe4Yx/JwRRvUh3I9veTQl6J72oqABAiA
+jtjyFUe1ztL/90oSyi+cGwweAeA5b+TmFddOwq0KNQx/L9s+ADlMOILbrMCG6RGQ
+Or80iLpo3tQ=
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:KeyName>Standby</ds:KeyName>
+          <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
+          <ds:X509Data>
             <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
             <ds:X509Certificate>MIIIIDCCBwigAwIBAgIMI8CQwHOK7ax2pdZVMA0GCSqGSIb3DQEBCwUAMIGNMQsw
 CQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVz
@@ -1722,48 +1764,6 @@ ggEBAIytU6JwG6msQ9ZRWnfMLMHjXg2DlolOCp2PML1UVxCRlgUQ+1m8/3RYmlMx
 +8VL2BqtFIXr4UeXL8CPmdIPBUuH8cf1rXvORT6oQvSE47IgBkLTVAZcv2+RE9K0
 UlfUADcdHUy13ze6/p5BSKWGu9oTe1Ta11g+V+/fliaLOeGPpiNf1wbZhjfedKWv
 hf7ijeobyNPH42iOUR1WFFrsc6A=
-</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor>
-        <ds:KeyInfo>
-          <ds:KeyName>Standby</ds:KeyName>
-          <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de</ds:X509SubjectName>
-            <ds:X509Certificate>MIIEJDCCAoygAwIBAgIJAPCkCkgE8RJfMA0GCSqGSIb3DQEBCwUAMCoxKDAmBgNV
-BAMTH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGUwHhcNMjExMTA5MTAx
-ODQzWhcNMzExMjI3MTAxODQzWjAqMSgwJgYDVQQDEx9jbGFyaW4ucGhvbmV0aWsu
-dW5pLW11ZW5jaGVuLmRlMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA
-w5LnbN9Kpz1nCtfczChX2KI54paXZc/F8+F2MFyP/hrTZKOdqUG9hXXH2qNAlU42
-Qu2V0k4yWMO4lpr4+5s5dBTEJQ6+UvkHysMDNjdU6tQRDB9EHrFV26xXK4fHRuZd
-vBPS8sgfvDH+ZpU22tsEwCDwF10kQmGT7MDAGT1DWg/c54NYzKJfRIT3PS84NOaM
-+wslCgMrmUZtLCKvpxAgZ3BtAGnEtaVmTuo5THZYWpv8y47WCI2cfSp9YUJWT8DK
-J8jKourvxFpdo6dbYQi3w3iZdlmMq2skzhOZdv8ZmqymGJ2oYpGe0TPLYwoeEYFf
-UPDetn60dnE5tJvMZT7gUSZ1J1wmGBVZ+3pRBx+HCDz0CgviYJb9dqvIWJcM6NHU
-/kQ6BI6OUlIJSgnX3l+f73Z7VM5CmiSWXEFIXx4VFSrKs43J0wFQBY0oQP1klwVE
-xXKDQZ1JPQ4SDS1ZiLfIZzVgimKsab11YbGzyCbUPjr27ZAnEYvrmVyzhyB4T6Tz
-AgMBAAGjTTBLMCoGA1UdEQQjMCGCH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNo
-ZW4uZGUwHQYDVR0OBBYEFGBO4R/Zoa47ju/K/Z4POrI7PJt/MA0GCSqGSIb3DQEB
-CwUAA4IBgQCemcE1ITc1KffSDlQzpBAeoTWc0PSEaNF5OKZ2H2zwfCJQfwkHvX+d
-KLGlBzRSO1bRiwhGg5V9DnyuQv8gr12Fl1MQnIk23raM6JNPpW9QXN0g6dxHJZhJ
-nTbIXL0zubTScAdXAR0Jk8+6NdYh8EeujvuqU2HDhLm9SP2qSdD09CY3DtT4d82G
-ETrbYHz0eGGGvAlzrNv3XC8Wp2EROG8XRKt0uyAUgIGhYf1sNqPMafTICSJgNTR8
-wPUFYANl5LO91FpGlSt2u1zIz1z3EKDNHzPspFkK1dDON5bXjsxb1Kjf3U+7xPQs
-M1gJAgB8NwiK4D4YgHonMZ3AGVblGhFFqO/pVOrSXd543MA8xBehq974ggpz+CM4
-+SHjK4ZFlPKeZETzhXoY1hzz5H0VkIyEUe4Yx/JwRRvUh3I9veTQl6J72oqABAiA
-jtjyFUe1ztL/90oSyi+cGwweAeA5b+TmFddOwq0KNQx/L9s+ADlMOILbrMCG6RGQ
-Or80iLpo3tQ=
 </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
