@@ -154,8 +154,8 @@ Or80iLpo3tQ=
       <md:EmailAddress>mailto:admin@phonetik.uni-muenchen.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
-      <md:GivenName>Raphael</md:GivenName>
-      <md:SurName>Winkelmann</md:SurName>
+      <md:GivenName>Florian</md:GivenName>
+      <md:SurName>Schiel</md:SurName>
       <md:EmailAddress>mailto:bas@bas.uni-muenchen.de</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
