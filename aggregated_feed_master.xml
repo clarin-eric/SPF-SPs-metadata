@@ -2440,8 +2440,6 @@ rI8v6OTvibpLrg==
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -2486,12 +2484,11 @@ rI8v6OTvibpLrg==
         <ds:KeyInfo>
           <ds:KeyName>dspace-clarin-it.ilc.cnr.it</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,street=Piazzale Aldo Moro\, 7,L=Roma,postalCode=00185,C=IT</ds:X509SubjectName>
-            <ds:X509Certificate>MIIHpDCCBYygAwIBAgIQNiKw49U6coLEq5btNwYz1TANBgkqhkiG9w0BAQwFADBE
+            <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Lazio,C=IT</ds:X509SubjectName>
+            <ds:X509Certificate>MIIH7TCCBdWgAwIBAgIQOrQp9u+xWg3bVNnq0v1djjANBgkqhkiG9w0BAQwFADBE
 MQswCQYDVQQGEwJOTDEZMBcGA1UEChMQR0VBTlQgVmVyZW5pZ2luZzEaMBgGA1UE
-AxMRR0VBTlQgT1YgUlNBIENBIDQwHhcNMjEwMTIwMDAwMDAwWhcNMjIwMTIwMjM1
-OTU5WjCBnzELMAkGA1UEBhMCSVQxDjAMBgNVBBETBTAwMTg1MQ0wCwYDVQQHEwRS
-b21hMR4wHAYDVQQJExVQaWF6emFsZSBBbGRvIE1vcm8sIDcxKzApBgNVBAoTIkNv
+AxMRR0VBTlQgT1YgUlNBIENBIDQwHhcNMjExMjIyMDAwMDAwWhcNMjIxMjIyMjM1
+OTU5WjBwMQswCQYDVQQGEwJJVDEOMAwGA1UECBMFTGF6aW8xKzApBgNVBAoTIkNv
 bnNpZ2xpbyBOYXppb25hbGUgZGVsbGUgUmljZXJjaGUxJDAiBgNVBAMTG2RzcGFj
 ZS1jbGFyaW4taXQuaWxjLmNuci5pdDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCC
 AYoCggGBALJLrj7Etr1Bteg3jZ1AzXrP0p2AgIAqJkNsd5jfwD2kco2AJI1Yi2MJ
@@ -2502,7 +2499,7 @@ Yioyhfy14lzPp+nCPh9k6OCZsD5poSEgB5YwaLGOL/UsnsUNm/GKV1T9KbARFBIX
 l7CdWuIZTWMns9sjFrohgNaMa4MYcVVUABvN+NvEWYQ8WutjAVM6IvjBuk8Tq1GA
 Dv2dpHMyWpF2IWrJRdt9roHlrekZNPxYeCpAxnmaJBA8P/gKPGW+6xsx2kHCfqVG
 jgeqr1wpR+k+45unk3RcJu8r/ObrA5ypFr/mPMu4MFvfoumYaALHaZ6JvovHwMaV
-6YWceQSlswIDAQABo4ICtDCCArAwHwYDVR0jBBgwFoAUbx01SRBsMvpZoJ68iugf
+6YWceQSlswIDAQABo4IDLTCCAykwHwYDVR0jBBgwFoAUbx01SRBsMvpZoJ68iugf
 lb5xegwwHQYDVR0OBBYEFPLgln0Ih2l/9AEMhnf23vWt+AwnMA4GA1UdDwEB/wQE
 AwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD
 AjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJPMCUwIwYIKwYBBQUHAgEWF2h0dHBz
@@ -2510,24 +2507,27 @@ Oi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjA/BgNVHR8EODA2MDSgMqAwhi5o
 dHRwOi8vR0VBTlQuY3JsLnNlY3RpZ28uY29tL0dFQU5UT1ZSU0FDQTQuY3JsMHUG
 CCsGAQUFBwEBBGkwZzA6BggrBgEFBQcwAoYuaHR0cDovL0dFQU5ULmNydC5zZWN0
 aWdvLmNvbS9HRUFOVE9WUlNBQ0E0LmNydDApBggrBgEFBQcwAYYdaHR0cDovL0dF
-QU5ULm9jc3Auc2VjdGlnby5jb20wggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwBG
-pVXrdfqRIDC1oolp9PN9ESxBdL79SbiFq/L8cP5tRwAAAXchltaSAAAEAwBIMEYC
-IQDmPjovhT5vqmn6lhQ4V5rgbnQsmlzKIa/c0cFlmgMsugIhAI/yN+XW+uFbocDo
-pnLseuwJFpZtVdGVAerceWEaqp6bAHUA36Veq2iCTx9sre64X04+WurNohKkal6O
-OxLAIERcKnMAAAF3IZbWugAABAMARjBEAiAHv2rJmZRRAbXTIc5rnIbKPMVdvJJN
-vh8h8fpZ7gurJQIgVU21X/CQMVQIb7X6sj/b8SVBZQPujZG+xtJzS3hwVMUwJgYD
-VR0RBB8wHYIbZHNwYWNlLWNsYXJpbi1pdC5pbGMuY25yLml0MA0GCSqGSIb3DQEB
-DAUAA4ICAQBcpZl1NfZFbTHwGO1qZzIIWCnGNmKsyYXXGS5PltQOSfdRLCAwu4Gb
-8rl5j5b/V0DZpSP8RBXhi6sdh8x4QLXLescqoUhDohZIQbMx4KVdOZ2uAQoIJsbt
-ohUg8v37zcv0i5kSk/0TUS4T0VWGr6tlI2Ut/CY6sbhNyO+sXw6BWyndc6rn3j+V
-WLO73pnDhXHjpwv4XRo+L5skLcTERUzKJkR1Zcr+xw8Edu66KcHaun0V8Xl6wfzA
-KBeYkmP/Q3TZ/KRFtwATnWi4oZpNHyx51Zu7/Ufzi/Angzbe5m6NgAXDKjww/iUN
-0fKf3v8HodTI4mCFRe5qJ0Y2MD8W6snvFPZBm+MznqCZVQWnHFcKWPnM3lIrSHBd
-oLBwVfFBOhcJqGlcsotjlPMfejOzeNVQWh6sgESu4xF6vVHmxzc2O4nhU0XUJ9jM
-IRQPvXHUBuDMmRXLTmVinyKn8CrYfGF2KlULKDYORutRNFm3D/KfI4te9Xn/hqav
-8VUaq4QgA/tXXtiOYAHc9fc3up+9mrkTf6Rm+N/ikYVc8j7lwcNSCgEB/Qjgg8tq
-hKLgEukXE4aQvhVN5wEcutBAXcAVR58OPlxQH6krJXVdsXHxOb9HZaCmHiAzSn+B
-cT/j226+6nzrndKP9QJbhu9jUUIsLcx8M/3gGTaf8Z7Fi0EPnebkVg==
+QU5ULm9jc3Auc2VjdGlnby5jb20wggF9BgorBgEEAdZ5AgQCBIIBbQSCAWkBZwB1
+AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABfd+KGmUAAAQDAEYw
+RAIgO6Usl7aghZSo60pHaxtWSdwLI5cpRYt9OzzXUDaX9x8CIBcThERo9nh3dcbC
+UvTDIqYg5XdMP6QSk80Hpd0mkj6IAHcAQcjKsd8iRkoQxqE6CUKHXk4xixsD6+tL
+x2jwkGKWBvYAAAF934oaLQAABAMASDBGAiEAh7uWwN6F8wM6HcFDDC7a9TxT9AaO
+z22Jcv49jE35BXECIQDOuvJbXVaLhRDbbrHs6qHtiin4w0gRV+3W1sdID85DYQB1
+ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABfd+KGgAAAAQDAEYw
+RAIgZ2/a/f8WSD1QXqiN6OHGeGrLLzTUghim0qFP9Qg6/5wCIBNJaMfsEa3iHP5Q
++QdeWlS3e2X2EUGwyxrgZXwm4wbkMCYGA1UdEQQfMB2CG2RzcGFjZS1jbGFyaW4t
+aXQuaWxjLmNuci5pdDANBgkqhkiG9w0BAQwFAAOCAgEAYnFuGww3QOOSUymsZw27
+T9VqUTg+/XWwzvtjm1QCzFJcW0DhBzsGluPBWN5NUXekNBoGgFwthovFqduOHd3W
+btBdAFa8Ua7W/KLtO0bcXRPmbVIu5RgwcQYEuO0F4Fprz8rRuXS7gqdBef88OROO
+1l49bT8DUr+AD0cliRit/G9UiJPV+5rFLGjW0rIWEYZC3RjsTwoL0Amawn75SYtB
+zKL60e4uu4sCEo6E7fEyON0ANivC9BLemAHD4m2VNNDabM+jtKqwKUdG0Q+Ofg4V
+VleeburRDTjD4OCBIZqtDVDb5hdKmPE3XVqHBpt7yFkg1oGEc7CGUtSu5g51tnsw
+MGTTQ9jff8Y/lBJEgrY2bGTTfsyXtNKYiH7oOhwKfk666Z2flfG9biWF9FnrkmUq
+2OoVVXwwxuwLMPKuHlZznRtyb3qG/pEpzXq0Ndrx3XCfmakhRd8xJlmZHmzNXGOK
+BLLuxDG3wgIv+09qg0KQ8+GXKfBirpyuIHYqY+4s12RKkZ32qlvr/X9SodHkBm8U
+PMBXuS8L+S7ZRqHu1xiTkOsTpDLKA3kJrXMmSiXMRc56N9JgoypX3fDapv5N5MWO
+X+HEYvnZ9y3zsXsSo2wtC96yr97CXWF8JqJ7QxDJDXBwf3iS2RlV324loG0Eg06k
+rr9Lmm3DMg3XI9uYITKVh98=
 </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
