@@ -1,9 +1,9 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2022-06-15T14:55:54Z" cacheDuration="PT604800S" entityID="dev-www.clarin.eu" ID="pfxe3bd4539-9ec9-5ace-d5e3-88ad5e52e0e5"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2022-06-18T09:10:13Z" cacheDuration="PT604800S" entityID="dev-www.clarin.eu" ID="pfx714df86a-46c9-7fde-b350-8417451da735"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
   <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
     <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-  <ds:Reference URI="#pfxe3bd4539-9ec9-5ace-d5e3-88ad5e52e0e5"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>fQMJR65k5Tuz02w0aKSBAD9M2uTb+zW+kxdcErRYxHQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>eiiiTmggr1h+lEHfXCHhG7ck3JydxrnwhGLZ2Bd8j25SFHVhcT03UahhFKGISlvkXxjn0tx9H+cVSOPXYdZvOKmP9g7wqO6BZul23R5aRwZOUsjazdAN9xo573VukqYiOAT3ikG74Gnqi7PiRvAkFY580hYAIkIGhfs2SM36AzncIUwnM24aVFpisCvN/h6mZsngsoDuGfJeXpbUekn/kJpbxd5bZ3WYk7cmGfrCF/gS+agEg2cs5+uxeO+Xkhm3EGGuaPSangRkO4Gr/OrqSdZzWA2+LrQr81NCGGNpz9AA97BDPsxfh4xs6Z9BWxTbSKJWu1Un3+bS3xDlM/HVTg==</ds:SignatureValue>
+  <ds:Reference URI="#pfx714df86a-46c9-7fde-b350-8417451da735"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>G2M8zIv0PlcH4s1dyyaD1U6UO6N2e5/f65z/M4fCPxo=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>TvaUzSL1jQuTGDkOwUQB5QHLLfCN52rrxvNVFg018ApfYko5ltN75hlOwOxA9FU6tlzshGI+bNBIebLENGOREAFTQYVe9kZj+gPBKtDgoFV6gG3CMsFWpYENUgObQqgX+31ng+jd00pobOinKVFeXBiAJpskaLkrSSoSsRgxdM3yq19Fl5THrgd4ClGM+lTfThjmIPAG7FAqdZM7HPJF3kiPveAnMBGXEX/HUpmFdRqd9AKiRz31p+5dq1Z/YtsYqSRxbq3vO4qXjf0sIhEHNheuye+D+KI2qXdjKeRXw9ap/Xgi2a9Na8h1fzojRjrx48W1IuJP0sDzO2yZFTvsfQ==</ds:SignatureValue>
 <ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIEJTCCAw2gAwIBAgIUUXMr5xoWr9KB2QPY6wQXNkMoucQwDQYJKoZIhvcNAQELBQAwgaExCzAJBgNVBAYTAk5MMRMwEQYDVQQIDApHZWxkZXJsYW5kMREwDwYDVQQHDAhOaWptZWdlbjEUMBIGA1UECgwLQ0xBUklOIEVSSUMxFzAVBgNVBAsMDkFBSSBvcGVyYXRpb25zMRowGAYDVQQDDBFkZXYtd3d3LmNsYXJpbi5ldTEfMB0GCSqGSIb3DQEJARYQc3lzb3BzQGNsYXJpbi5ldTAeFw0yMjA2MTUxNDQ4MTlaFw0zMjA2MTQxNDQ4MTlaMIGhMQswCQYDVQQGEwJOTDETMBEGA1UECAwKR2VsZGVybGFuZDERMA8GA1UEBwwITmlqbWVnZW4xFDASBgNVBAoMC0NMQVJJTiBFUklDMRcwFQYDVQQLDA5BQUkgb3BlcmF0aW9uczEaMBgGA1UEAwwRZGV2LXd3dy5jbGFyaW4uZXUxHzAdBgkqhkiG9w0BCQEWEHN5c29wc0BjbGFyaW4uZXUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBksOwpq//fKUp+C9L2GpHYdxzylgWuA170MFufM6Askdf9RJKBijAu+nqsHm2P0teYTE7+YZcfy6Z/qN6n9HH65cILha8Pm023D7cNL5jddHN9RO66ix2KgZuTPRsE0R9ueEdJch0ZddJrb9gV68V6Fv8NsjymNnwcAWKpO7CHmfHU5MnpFqdDOgw7jQ8iOksJVpHL27iEJ510RytKgF+SRoeeWBY4ZVR/9jQ8A/Jq+HyDXRRjRjPq0eRV71UGBWR3gCrlx0BHD8kfaneif3abCHlCltI0aMh8q1xMzd09xVeKnLfHzGZufHHs13hbcgpBPPSdNT0HLX+5iAVW+0nAgMBAAGjUzBRMB0GA1UdDgQWBBSJ8Dh/DyNf7gBw1qxNRsdMjADHBjAfBgNVHSMEGDAWgBSJ8Dh/DyNf7gBw1qxNRsdMjADHBjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQC4ZvbVCfveG5ytVymwLO0H5xRgGzgubSjK4ZvsoL0wPopN/azD4TaK5ua3K8Lp33zrbEtudlX2FqRTobavTmFXyKQRGJP6KtlWQ3b6QMyJ5gVuky72Gjxbp9PaNV3xRQJcs2dVgnizj+18B/qsBN0p2ApLM7yw7a8KA/biOMpKhsDOniyMkNYLfgHNRvRJ7GGSLFFqBJtrV5TG9yP3ixyLfSlTwPYozJoynfHRz7bHEUPxSnrYxqXX2pwKDtH7ZW822DPcOZqhZZ08TtFFJ2lCjadMlHq0wf5UmnPKJRjbdyNGbWSKUhQ2koCGvKxZo+0OuqjlfDjT/9TNplwhOXmG</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
-  <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+  <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
     <md:KeyDescriptor use="signing">
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:X509Data>
@@ -11,8 +11,21 @@
         </ds:X509Data>
       </ds:KeyInfo>
     </md:KeyDescriptor>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dev-www.clarin.eu/saml/sls"/>
-    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev-www.clarin.eu/saml/acs" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev-www.clarin.eu/saml/consume"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev-www.clarin.eu/saml/consume" index="0" isDefault="true"/>
   </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en-US">CLARIN ERIC</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en-US">CLARIN ERIC</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en-US">https://www.clarin.eu</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>System Operations</md:GivenName>
+    <md:EmailAddress>sysops@clarin.eu</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>SPF support</md:GivenName>
+    <md:EmailAddress>spf@clarin.eu</md:EmailAddress>
+  </md:ContactPerson>
 </md:EntityDescriptor>
