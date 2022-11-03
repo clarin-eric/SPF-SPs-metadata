@@ -3,7 +3,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 QA_VALIDATOR_VERSION=1.0.9
 SAXON_VERSION=SaxonHE9-9-1-5J
-SAXON_URL=https://netcologne.dl.sourceforge.net/project/saxon/Saxon-HE/9.9/$SAXON_VERSION.zip
+SAXON_URL=https://downloads.sourceforge.net/project/saxon/Saxon-HE/9.9/$SAXON_VERSION.zip
 SCHEMATRON_VERSION=1.0.1-e16ecc4-CLARIN
 INSTALLS_PATH=qa-tmp
 CHANGED_SPS=()
@@ -15,7 +15,7 @@ fi
 
 mkdir -p $INSTALLS_PATH/saxon
 cd $INSTALLS_PATH/saxon
-wget $SAXON_URL
+wget --no-check-certificate $SAXON_URL
 unzip -o $SAXON_VERSION.zip
 rm $SAXON_VERSION.zip
 cd ..
