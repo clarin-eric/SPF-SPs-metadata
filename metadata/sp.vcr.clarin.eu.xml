@@ -129,6 +129,5 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
    <md:ContactPerson contactType="technical">
       <md:GivenName>CLARIN</md:GivenName>
       <md:SurName>Sysop</md:SurName>
-      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
