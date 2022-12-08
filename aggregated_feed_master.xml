@@ -2475,6 +2475,12 @@ rI8v6OTvibpLrg==
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -6136,7 +6142,6 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
     <md:ContactPerson contactType="technical">
       <md:GivenName>CLARIN</md:GivenName>
       <md:SurName>Sysop</md:SurName>
-      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor ID="_8599a4043cf9ca62c366fd77cc7c7b296a6ae9d3" entityID="http://sp.vs1.corpora.uni-hamburg.de">
