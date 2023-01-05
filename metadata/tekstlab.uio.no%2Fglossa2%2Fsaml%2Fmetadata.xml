@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://tekstlab.uio.no/glossa2/saml/metadata">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor AuthnRequestsSigned="false"
+                       WantAssertionsSigned="true"
+                       protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">The Glossa corpus search system</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">Das Glossa-Korpus-Suchsystem</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">Glossa corpus -hakujärjestelmä</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</mdui:Description>
+            <mdui:Description xml:lang="de">Glossa ist ein Werkzeug für Forscher, die linguistisch kommentierte Corpora suchen wollen</mdui:Description>
+            <mdui:Description xml:lang="fi">Glossa on työkalu tutkijoille, jotka haluavat etsiä kielellisesti merkityt korpukset</mdui:Description>
+            <mdui:Logo height="83" width="300">https://repo.clarino.uib.no/xmlui/themes/CLARINO/images/lindat/clarino-logo.png</mdui:Logo>
+            <mdui:InformationURL xml:lang="en">http://www.hf.uio.no/iln/english/about/organization/text-laboratory/news-events/2013/glossa/index.html</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">http://www.tekstlab.uio.no/clarino/privacy-policy.html</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://tekstlab.uio.no/glossa2/saml/login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://tekstlab.uio.no/glossa2/saml/login"
+                                    index="1"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIID/zCCAmegAwIBAgIUN2aPzI61PzGB/qtNXn9ZlgjBan0wDQYJKoZIhvcNAQEL
+BQAwGjEYMBYGA1UEAxMPdGVrc3RsYWIudWlvLm5vMB4XDTIyMDMwMTEyMzkzNloX
+DTI3MDMyNTEyMzkzNlowGjEYMBYGA1UEAxMPdGVrc3RsYWIudWlvLm5vMIIBojAN
+BgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAuwLtLYuH4VqY4Bcw5C4MERrEoprA
+wRT6j+Kc/L5ur1lAKHHRXmTF1fd1FtaBq2RNBgPy5OBf1i7gHVPsf4LCzafAcdPU
+vQzwCD+LqPbvFBocng//7xTpIOlQ2tkFoLBQv02OAjWZe1oJYp+o3SeiKfXBciIu
+NPzdkgCoZnttHN73aUt3PMKdVv9T/jPBvVHga4vGjv77jTTV/P+MaFaRCK788l2t
+MX1NpN5atlTUpPmzlBGZVTEEgQK9PNGESho4HwIA3ikIkTfYQ9FsgP+H3tnSYMj1
+6KRrqsy3L02oOLV/HODCh6P787WQ0LZTW6XsiOGyy1+6RF4cRtv0k+4f48V+Q6dt
+jmg8Dn9P00jU1M4e2+MkYk+BGHBfPpPRYv5Eh5xjoNtKqiKcWWg0KO6zybBQhqu5
+9sjvuEXVIvsfdd7hz+r0ZqNrAvBSHQA0dckBgRStx4r0JcEbzvmLbQ4nx2a/0KcA
+meB5C92f3n1WJX1SRUXB31Czfp/lVHBGQMaFAgMBAAGjPTA7MBoGA1UdEQQTMBGC
+D3Rla3N0bGFiLnVpby5ubzAdBgNVHQ4EFgQU2Ve7mvFEvcg6nUiE7C4xk3CPQNEw
+DQYJKoZIhvcNAQELBQADggGBAJDL8geNJcMbnh9O3V0QLhumrY0eeH0HHYy+2gGr
+esSoJsu82pFzTepZ92EjcLMsBE+Kn7rrkevy8OS4gTXq5lqK++iIaFhIq7hyok4O
+4ch8L2NKSwwc2L/M5vbyb6Z49RftAOMuI89imMu6Ah8R03D9Cj8WeX7QN08JwrE9
+/CUtYH3XHKPb4pyZBhNhCAZDIHC1oWuxzgrVSEpcSBu4zcXOakkBS8IWJboyDhF9
+Cm1OupqQjZv4lOCgTyD9Bw8rZeRQK6evmIGAzzVWRYCpQwy6WeqsJqfvsmBi4+Id
+KqgJ8pGthM49v5weFFo5Yv/yv7Ny579u/QBQWxdtZjLxoEwZXV4OS8RAISZTYW7u
+Yuf6C4J9kgMI6Bg4yPw3pV8XpkjK5IchvtdFxs4z992iTepx8Vk17gZ3QKXsKyd5
+L+H3EzjANf70aCLjlSubdtPaTlpd+97NcAZWnOnEEGGhkF8a23edE+9HBoLTX9Q/
+BOrnH5xWGXYhKg9/e+cv5nMTpw==
+              </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://tekstlab.uio.no/glossa2/saml/logout"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://tekstlab.uio.no/glossa2/saml/auth"
+                                   index="1"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">Glossa, the corpus search and results handling system at the University of Oslo</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Glossa is a tool for researchers who want to search linguistically annotated corpora</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="edupersontargetedid"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="edupersonprincipalname"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="displayname"
+                                Name="urn:oid:2.16.840.1.113730.3.1.241"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">University of Oslo</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">University of Oslo</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.uio.no/</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Anders</md:GivenName>
+      <md:SurName>Nøklestad</md:SurName>
+      <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Anders</md:GivenName>
+      <md:SurName>Nøklestad</md:SurName>
+      <md:EmailAddress>mailto:anders.noklestad@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>Kristin</md:GivenName>
+      <md:SurName>Hagen</md:SurName>
+      <md:EmailAddress>mailto:kristin.hagen@iln.uio.no</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
