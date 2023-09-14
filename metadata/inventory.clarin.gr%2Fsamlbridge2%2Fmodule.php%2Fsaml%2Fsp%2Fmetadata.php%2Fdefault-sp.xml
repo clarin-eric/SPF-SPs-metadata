@@ -3,9 +3,9 @@
   <md:Extensions>
     <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
       <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-        <saml:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-        <saml:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-        <saml:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
       </saml:Attribute>
     </mdattr:EntityAttributes>
   </md:Extensions>
@@ -14,6 +14,7 @@
       <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
         <mdui:DisplayName xml:lang="en">CLARIN:EL</mdui:DisplayName>
         <mdui:Description xml:lang="en">CLARIN:EL is the National Infrastructure for Language Resources and Technologies in Greece</mdui:Description>
+        <mdui:InformationURL xml:lang="en">https://www.clarin.gr/en</mdui:InformationURL>
         <mdui:PrivacyStatementURL xml:lang="en">https://www.clarin.gr/el/content/privacy-policy</mdui:PrivacyStatementURL>
         <mdui:Logo width="500" height="214">https://www.clarin.gr/sites/default/files/logo_clarinel.png</mdui:Logo>
       </mdui:UIInfo>

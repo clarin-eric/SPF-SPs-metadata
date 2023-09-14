@@ -48,56 +48,35 @@
             <mdui:PrivacyStatementURL xml:lang="en">https://www.phonetik.uni-muenchen.de/forschung/Bas/BasPolicyAAIPrivacy_eng.pdf</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
       </md:Extensions>
-   <md:KeyDescriptor>
+     <md:KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>Active</ds:KeyName>
         <ds:KeyName>clarin.phonetik.uni-muenchen.de</ds:KeyName>
         <ds:X509Data>
-          <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
-          <ds:X509Certificate>MIIIIDCCBwigAwIBAgIMI8CQwHOK7ax2pdZVMA0GCSqGSIb3DQEBCwUAMIGNMQsw
-CQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVz
-IERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMRAwDgYDVQQLDAdERk4t
-UEtJMSUwIwYDVQQDDBxERk4tVmVyZWluIEdsb2JhbCBJc3N1aW5nIENBMB4XDTIw
-MTEwMzA4MjIwOVoXDTIxMTIwNTA4MjIwOVowgZ0xCzAJBgNVBAYTAkRFMQ8wDQYD
-VQQIDAZCYXllcm4xETAPBgNVBAcMCE11ZW5jaGVuMTEwLwYDVQQKDChMdWR3aWct
-TWF4aW1pbGlhbnMtVW5pdmVyc2l0YWV0IE11ZW5jaGVuMQ0wCwYDVQQLDARWSS40
-MSgwJgYDVQQDDB9jbGFyaW4ucGhvbmV0aWsudW5pLW11ZW5jaGVuLmRlMIIBIjAN
-BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3RQUPd8h7/9bOHFKaT0FxZYgbplX
-H0GXlc+Rc9KldeRjUOAQzRuM36nbKaLaMpy5+pj2QJeGFXzAhqhAaBHxNW5eQGtu
-9m1buOkSXLUs2Cq11bLYN6BcIjNEL6GXsqieWY9dUdwU7YrjFyEYehHbSwb2dk4r
-UFjhZgo4fCEwk99t6zUH0rQOxxL+czhQ9uPMoqjsaeywi6mZBo9mbNF+GREcVqnw
-dnWad0nX8SPxmxWeKFVzt77KluLVvbDNmKpKicjuF/EMIJDdcJUpMdzi+tfAi4YK
-iu0nF7dFY4TZq8f/9zzJ8INIxRb1e0SWkJbp+HgNNCv6PPrNWmonQ0rkoQIDAQAB
-o4IEbDCCBGgwVwYDVR0gBFAwTjAIBgZngQwBAgIwDQYLKwYBBAGBrSGCLB4wDwYN
-KwYBBAGBrSGCLAEBBDAQBg4rBgEEAYGtIYIsAQEECDAQBg4rBgEEAYGtIYIsAgEE
-CDAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcD
-AgYIKwYBBQUHAwEwHQYDVR0OBBYEFB8Q9DwpOhTKdSbt/Ol7arwprSCZMB8GA1Ud
-IwQYMBaAFGs6mIv58lOJ2uCtsjIeCR/oqjt0MCoGA1UdEQQjMCGCH2NsYXJpbi5w
-aG9uZXRpay51bmktbXVlbmNoZW4uZGUwgY0GA1UdHwSBhTCBgjA/oD2gO4Y5aHR0
-cDovL2NkcDEucGNhLmRmbi5kZS9kZm4tY2EtZ2xvYmFsLWcyL3B1Yi9jcmwvY2Fj
-cmwuY3JsMD+gPaA7hjlodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2Rmbi1jYS1nbG9i
-YWwtZzIvcHViL2NybC9jYWNybC5jcmwwgdsGCCsGAQUFBwEBBIHOMIHLMDMGCCsG
-AQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1Aw
-SQYIKwYBBQUHMAKGPWh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2Jh
-bC1nMi9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSQYIKwYBBQUHMAKGPWh0dHA6Ly9j
-ZHAyLnBjYS5kZm4uZGUvZGZuLWNhLWdsb2JhbC1nMi9wdWIvY2FjZXJ0L2NhY2Vy
-dC5jcnQwggH3BgorBgEEAdZ5AgQCBIIB5wSCAeMB4QB3APZclC/RdzAiFFQYCDCU
-Vo7jTRMZM7/fDC8gC8xO8WTjAAABdY0zAq4AAAQDAEgwRgIhAIaN8nxfI8Xc41ot
-vJPx9wB+wKWscSXPuhCIL4HtomsPAiEAt0RA81Mh74p5EbZaPdHLooTPN4dqy1iR
-Nn78m9EIWosAdwB9PvL4j/+IVWgkwsDKnlKJeSvFDngJfy5ql2iZfiLw1wAAAXWN
-MwV0AAAEAwBIMEYCIQD6r/Z3IjcRBmuLC/P9mI7bnOPkE8DhGxVPLFLeYxJkGAIh
-AJPPabqp5TukXyZcevMtBwSz0LOP1mA2SObrf3I2q7dnAHYARJRlLrDuzq/EQAfY
-qP4owNrmgr7YyzG1P9MzlrW2gagAAAF1jTMBGAAABAMARzBFAiBcRcxRzZFjLaEZ
-oYaG4piX2w+703/pRm4H5tOqtCmIJgIhANjqYa6RiiG+E+zhIA8uhuyzWbGhHnt7
-TxuhH+QJf2lpAHUAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAF1
-jTMCqAAABAMARjBEAiB5Fukz5PktpqStWfx21cHZZkKoEZsUwecHXol1ljmWNwIg
-QtLkuoFXvobndj21nxm/QXHX2S5CXepRUp7TdwB0C3UwDQYJKoZIhvcNAQELBQAD
-ggEBAIytU6JwG6msQ9ZRWnfMLMHjXg2DlolOCp2PML1UVxCRlgUQ+1m8/3RYmlMx
-4U4unniNuDv8aOy/pNagCy4eskZDW08fQI4cE4KMBjf97MixhMKMlJjcPjc7u8FG
-7V5RXoVJAHc2DOtxB6yZcUzVkYl2e2G4GYkbZog7ETUaa9Lcs7VcmGhZW1ue957n
-+8VL2BqtFIXr4UeXL8CPmdIPBUuH8cf1rXvORT6oQvSE47IgBkLTVAZcv2+RE9K0
-UlfUADcdHUy13ze6/p5BSKWGu9oTe1Ta11g+V+/fliaLOeGPpiNf1wbZhjfedKWv
-hf7ijeobyNPH42iOUR1WFFrsc6A=
+          <ds:X509SubjectName>CN=clarin.phonetik.uni-muenchen.de</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEJDCCAoygAwIBAgIJAPCkCkgE8RJfMA0GCSqGSIb3DQEBCwUAMCoxKDAmBgNV
+BAMTH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNoZW4uZGUwHhcNMjExMTA5MTAx
+ODQzWhcNMzExMjI3MTAxODQzWjAqMSgwJgYDVQQDEx9jbGFyaW4ucGhvbmV0aWsu
+dW5pLW11ZW5jaGVuLmRlMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA
+w5LnbN9Kpz1nCtfczChX2KI54paXZc/F8+F2MFyP/hrTZKOdqUG9hXXH2qNAlU42
+Qu2V0k4yWMO4lpr4+5s5dBTEJQ6+UvkHysMDNjdU6tQRDB9EHrFV26xXK4fHRuZd
+vBPS8sgfvDH+ZpU22tsEwCDwF10kQmGT7MDAGT1DWg/c54NYzKJfRIT3PS84NOaM
++wslCgMrmUZtLCKvpxAgZ3BtAGnEtaVmTuo5THZYWpv8y47WCI2cfSp9YUJWT8DK
+J8jKourvxFpdo6dbYQi3w3iZdlmMq2skzhOZdv8ZmqymGJ2oYpGe0TPLYwoeEYFf
+UPDetn60dnE5tJvMZT7gUSZ1J1wmGBVZ+3pRBx+HCDz0CgviYJb9dqvIWJcM6NHU
+/kQ6BI6OUlIJSgnX3l+f73Z7VM5CmiSWXEFIXx4VFSrKs43J0wFQBY0oQP1klwVE
+xXKDQZ1JPQ4SDS1ZiLfIZzVgimKsab11YbGzyCbUPjr27ZAnEYvrmVyzhyB4T6Tz
+AgMBAAGjTTBLMCoGA1UdEQQjMCGCH2NsYXJpbi5waG9uZXRpay51bmktbXVlbmNo
+ZW4uZGUwHQYDVR0OBBYEFGBO4R/Zoa47ju/K/Z4POrI7PJt/MA0GCSqGSIb3DQEB
+CwUAA4IBgQCemcE1ITc1KffSDlQzpBAeoTWc0PSEaNF5OKZ2H2zwfCJQfwkHvX+d
+KLGlBzRSO1bRiwhGg5V9DnyuQv8gr12Fl1MQnIk23raM6JNPpW9QXN0g6dxHJZhJ
+nTbIXL0zubTScAdXAR0Jk8+6NdYh8EeujvuqU2HDhLm9SP2qSdD09CY3DtT4d82G
+ETrbYHz0eGGGvAlzrNv3XC8Wp2EROG8XRKt0uyAUgIGhYf1sNqPMafTICSJgNTR8
+wPUFYANl5LO91FpGlSt2u1zIz1z3EKDNHzPspFkK1dDON5bXjsxb1Kjf3U+7xPQs
+M1gJAgB8NwiK4D4YgHonMZ3AGVblGhFFqO/pVOrSXd543MA8xBehq974ggpz+CM4
++SHjK4ZFlPKeZETzhXoY1hzz5H0VkIyEUe4Yx/JwRRvUh3I9veTQl6J72oqABAiA
+jtjyFUe1ztL/90oSyi+cGwweAeA5b+TmFddOwq0KNQx/L9s+ADlMOILbrMCG6RGQ
+Or80iLpo3tQ=
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
@@ -110,7 +89,8 @@ hf7ijeobyNPH42iOUR1WFFrsc6A=
       <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
       <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
       <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-    </md:KeyDescriptor>    
+    </md:KeyDescriptor>
+   
     <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                                     Location="https://clarin.phonetik.uni-muenchen.de/Shibboleth.sso/Artifact/SOAP"
                                     index="0"/>
@@ -174,8 +154,8 @@ hf7ijeobyNPH42iOUR1WFFrsc6A=
       <md:EmailAddress>mailto:admin@phonetik.uni-muenchen.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
-      <md:GivenName>Raphael</md:GivenName>
-      <md:SurName>Winkelmann</md:SurName>
+      <md:GivenName>Florian</md:GivenName>
+      <md:SurName>Schiel</md:SurName>
       <md:EmailAddress>mailto:bas@bas.uni-muenchen.de</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
