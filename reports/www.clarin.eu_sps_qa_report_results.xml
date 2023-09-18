@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Mon Sep 18 10:00:02 UTC 2023</ReportDate>
+  <FromCommit>ec35db8ba3833477c021c05e21d4f9df3b37623b</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>www.clarin.eu</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+    <result>
+      <sp>www.clarin.eu</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+    </result>
+  </results>
+</report>

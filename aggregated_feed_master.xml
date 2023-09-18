@@ -622,10 +622,9 @@ OYSIi1eUuz0X3foVRGo1iOJPjflIptl/+F4sGG52Um1Fb29CMjSltECiZoNq0Jq2
           <mdui:Description xml:lang="fr">Plate-forme d'outils et de ressources linguistiques pour un traitement optimis&#xE9; de la langue fran&#xE7;aise</mdui:Description>
           <mdui:Description xml:lang="de">Plattform f&#xFC;r sprachliche Werkzeuge und Ressourcen zur optimierten Verarbeitung der franz&#xF6;sischen Sprache</mdui:Description>
           <mdui:Description xml:lang="fi">Kielellisten ty&#xF6;kalujen ja resurssien foorumi ranskan kielen optimoidulle k&#xE4;sittelylle</mdui:Description>
-          <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/information/presentation?lang=en</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/information/presentation</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://ortolangdoc.atilf.fr/en/privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fr">https://ortolangdoc.atilf.fr/accueil/politique-de-confidentialite/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/en/home/about/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/fr/accueil/ortolang/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://www.ortolang.fr/en/privacypolicy/</mdui:PrivacyStatementURL>
           <mdui:Logo width="16" height="16">https://www.ortolang.fr/assets/icons/favicon-16x16.png</mdui:Logo>
           <mdui:Logo width="60" height="60">https://www.ortolang.fr/assets/icons/apple-touch-icon-60x60.png</mdui:Logo>
         </mdui:UIInfo>
@@ -2298,10 +2297,9 @@ rI8v6OTvibpLrg==
           <mdui:Description xml:lang="fr">Plate-forme d'outils et de ressources linguistiques pour un traitement optimis&#xE9; de la langue fran&#xE7;aise</mdui:Description>
           <mdui:Description xml:lang="de">Plattform f&#xFC;r sprachliche Werkzeuge und Ressourcen zur optimierten Verarbeitung der franz&#xF6;sischen Sprache</mdui:Description>
           <mdui:Description xml:lang="fi">Kielellisten ty&#xF6;kalujen ja resurssien foorumi ranskan kielen optimoidulle k&#xE4;sittelylle</mdui:Description>
-          <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/information/presentation?lang=en</mdui:InformationURL>
-          <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/information/presentation</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://ortolangdoc.atilf.fr/en/privacypolicy</mdui:PrivacyStatementURL>
-          <mdui:PrivacyStatementURL xml:lang="fr">https://ortolangdoc.atilf.fr/accueil/politique-de-confidentialite/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/en/home/about/</mdui:InformationURL>
+          <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/fr/accueil/ortolang/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://www.ortolang.fr/en/privacypolicy/</mdui:PrivacyStatementURL>
           <mdui:Logo width="16" height="16">https://www.ortolang.fr/assets/icons/favicon-16x16.png</mdui:Logo>
           <mdui:Logo width="60" height="60">https://www.ortolang.fr/assets/icons/apple-touch-icon-60x60.png</mdui:Logo>
         </mdui:UIInfo>
@@ -3145,9 +3143,9 @@ mTw=
     <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml:AttributeValue xsi:type="xs:string">http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-          <saml:AttributeValue xsi:type="xs:string">http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-          <saml:AttributeValue xsi:type="xs:string">http://clarin.eu/category/clarin-member</saml:AttributeValue>
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     </md:Extensions>
@@ -7468,6 +7466,90 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://ws1-clarind.esc.rzg.mpg.de/Shibboleth.sso/SAML/Artifact" index="5"/>
     </SPSSODescriptor>
   </EntityDescriptor>
+  <md:EntityDescriptor entityID="www.clarin.eu">
+    <md:Extensions>
+      <mdattr:EntityAttributes>
+        <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
+          <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">CLARIN ERIC website</mdui:DisplayName>
+          <mdui:Description xml:lang="en">For https://www.clarin.eu</mdui:Description>
+          <mdui:DisplayName xml:lang="de">CLARIN ERIC website</mdui:DisplayName>
+          <mdui:Description xml:lang="de">F&#xFC;r https://www.clarin.eu</mdui:Description>
+          <mdui:DisplayName xml:lang="nl">CLARIN ERIC website</mdui:DisplayName>
+          <mdui:Description xml:lang="nl">Voor https://www.clarin.eu</mdui:Description>
+          <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+          <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
+          <mdui:Keywords xml:lang="en">CLARIN www website</mdui:Keywords>
+          <mdui:Keywords xml:lang="nl">CLARIN www website</mdui:Keywords>
+          <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIEBTCCAu2gAwIBAgIUXdTKOvVDk0fwX8RbRsCY3T05hUcwDQYJKoZIhvcNAQEL
+BQAwgZExCzAJBgNVBAYTAk5MMRAwDgYDVQQIDAdVdHJlY2h0MRAwDgYDVQQHDAdV
+dHJlY2h0MRQwEgYDVQQKDAtDTEFSSU4gRVJJQzEPMA0GA1UECwwGc3lzb3BzMRYw
+FAYDVQQDDA13d3cuY2xhcmluLmV1MR8wHQYJKoZIhvcNAQkBFhBzeXNvcHNAY2xh
+cmluLmV1MB4XDTIzMDcxNDEwMTEwNFoXDTMzMDcxMzEwMTEwNFowgZExCzAJBgNV
+BAYTAk5MMRAwDgYDVQQIDAdVdHJlY2h0MRAwDgYDVQQHDAdVdHJlY2h0MRQwEgYD
+VQQKDAtDTEFSSU4gRVJJQzEPMA0GA1UECwwGc3lzb3BzMRYwFAYDVQQDDA13d3cu
+Y2xhcmluLmV1MR8wHQYJKoZIhvcNAQkBFhBzeXNvcHNAY2xhcmluLmV1MIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoMh7LsUc+Wl1FE5/9p4f4zgX587y
+Id3ERLcfsKF/GZLfv6XLvCWcBGHKq+ILM4k1o08xDWAxMVqrcqdfxvA3jS8O5Dsb
+wN75fqodAtqb6VVfbQuux49BzxrTzTjSXT0E7VL7XaSxgt7Y+00GZv0/6CoFmPAq
+W5Y06QxcxqNhl6P+nZQliPGhYMQXQYChXfHGQifw35c9M0oO/Trx7aVUA09gD/kN
+PsnFCMDWDSSglOu5DunUc8bfrhs7SRKjGeYr3ResQxdQJhEgZ9EYoggqht12QsyZ
+jgb2xdqYFdrl34+vUqlGGt8urTbo7QIlDgcQjD6cogQ5EFDEhR16ugd77wIDAQAB
+o1MwUTAdBgNVHQ4EFgQUhIUwC3NpVhvWUkJ84RuFipjKj2UwHwYDVR0jBBgwFoAU
+hIUwC3NpVhvWUkJ84RuFipjKj2UwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0B
+AQsFAAOCAQEAdoiU+iFt5LvpmlMgLjQKpKPaq/uBEe5fTYN2Bb6uiPeroG5MQEtf
+aJFt3W73Dj9j5UlRZhQ7kgBMNc08Ybvvp8WztUFOcN1Z7xX6OGcURGmY1XtETrtn
+wKiz9m8e5sztg7Sxl92YmRFVMdFVpOWBIsQbZMY/2ONUi3A55cXf7qslS/MCjdBw
+n2vTVkT8BM0gyPvfdFnJc2zMQu/UCi9aGiJiNQrPGlxjek3Jagb3t62hfeenq/9V
+V5RJGP4O3Dic24U/mObl9WgROfG4bMGcb97tuIShFbD31ybIQePCvmAIp9nMNvIO
+pm3Iv9eZvIlDY9rwID/RK3rqO8kxyVnmAA==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.clarin.eu/saml/sls"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.clarin.eu/saml/acs" index="1"/>
+      <md:AttributeConsumingService index="1">
+        <md:ServiceName xml:lang="en">CLARIN ERIC website</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">For https://www.clarin.eu</md:ServiceDescription>
+        <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+      </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">CLARIN ERIC</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CLARIN</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="administrative">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
   <md:EntityDescriptor ID="_2d4990d19e4519095ee99737af161554557b69df" entityID="http://www.clarin-pl.eu/shibboleth">
     <md:Extensions>
       <mdattr:EntityAttributes>
