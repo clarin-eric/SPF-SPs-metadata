@@ -98,7 +98,7 @@
                 <mdui:Keywords
                     xml:lang="nl">CLARIN coanzse materiaal+A A B</mdui:Keywords>
                 <mdui:PrivacyStatementURL
-                    xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+                    xml:lang="en">Change-this</mdui:PrivacyStatementURL>
             </mdui:UIInfo>
             <init:RequestInitiator
                 xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
