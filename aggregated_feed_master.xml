@@ -2010,7 +2010,7 @@ Or80iLpo3tQ=
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://clarintest.informatik.uni-leipzig.de/Shibboleth.sso/SAML/Artifact" index="6"/>
     </SPSSODescriptor>
   </EntityDescriptor>
-  <md:EntityDescriptor ID="_138cfa3369070d4d44bda0e9346e9358ffe96dcf" entityID="https://test-sp.clarin.eu/shibboleth">
+  <md:EntityDescriptor ID="_138cfa3369070d4d44bda0e9346e9358ffe96dcf" entityID="https://coanzse.org/shibboleth">
     <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
