@@ -2052,7 +2052,7 @@ Or80iLpo3tQ=
           <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
           <mdui:Keywords xml:lang="en">CLARIN coanzse resource+A A B</mdui:Keywords>
           <mdui:Keywords xml:lang="nl">CLARIN coanzse materiaal+A A B</mdui:Keywords>
-          <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://coanzse.org/privacy_statement.xhtml</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://coanzse.org/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://coanzse.org/Shibboleth.sso/Login" index="1"/>
