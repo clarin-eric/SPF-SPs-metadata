@@ -1,7 +1,7 @@
 <md:EntityDescriptor
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
     ID="_138cfa3369070d4d44bda0e9346e9358ffe96dcf"
-    entityID="https://test-sp.clarin.eu/shibboleth">
+    entityID="https://coanzse.org/shibboleth">
     <md:Extensions>
         <mdattr:EntityAttributes
             xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
