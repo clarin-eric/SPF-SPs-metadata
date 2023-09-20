@@ -995,7 +995,7 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:EmailAddress>mailto:macw@cmu.edu</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
-  <md:EntityDescriptor ID="_5d15d5a81bc952da1d34986ebc7713c0d5c9ea91" entityID="https://clarin.eurac.edu/Shibboleth.sso/Metadata">
+  <md:EntityDescriptor ID="_7d612f09e55d2e7c347cefbe4fbe3119e33c32fb" entityID="https://clarin.eurac.edu/Shibboleth.sso/Metadata">
     <md:Extensions>
       <mdattr:EntityAttributes>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
@@ -1051,27 +1051,27 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
           <ds:X509Data>
             <ds:X509SubjectName>CN=abff9e7e2995</ds:X509SubjectName>
             <ds:X509Certificate>MIID6zCCAlOgAwIBAgIJAKqy8J7qTyA4MA0GCSqGSIb3DQEBCwUAMBcxFTATBgNV
-                            BAMTDGFiZmY5ZTdlMjk5NTAeFw0xNzA5MDExNDU1NTlaFw0yNzA4MzAxNDU1NTla
-                            MBcxFTATBgNVBAMTDGFiZmY5ZTdlMjk5NTCCAaIwDQYJKoZIhvcNAQEBBQADggGP
-                            ADCCAYoCggGBAKsA2XGiRYDdtJkpF2WTAZ1gMxcJMnhVDcAZR9F7lHA2xGZlUMUC
-                            FeBeHKfwJYutpfbw+T8627AYRma0F39midZfGywg4FG94UGKyl1YI5tm0OH+H7dg
-                            cbt5DYz2BuXT+uHBzhV3T3M6Ef09g3umbCGwemiyqhURO5X4/c4Z31GFFKqtRaXP
-                            NwiknPZMOizlMzusGcqwihQpXwraIsWQS32sAL7Z35CbePnoPxwUmGzxNLt9yK4K
-                            GL3IR5xtzKyrf5VJI6zOAcG1x0QgRLTjDYIKh5oavzSfVXixyXQSYkW/TI0Q5r2N
-                            icxH027ZYv3aUfa0oHq8vAoWAfkCR6Eohtb1PVIBt1MId5RU3Qveh3PDe6C4EgZ7
-                            tDSEe7m7qUeslDZkysqqkSpSJNBF6KOYsiDPfY+pfhKhQ4zFj9BTgh+WnxWkorlE
-                            FnLWvxp/XYo5IYJhuiuJyhsuFRma1q184gm9+NtMAtu1hgTA98yCHFN1wiCzDu7l
-                            N6OXX+6y677iqwIDAQABozowODAXBgNVHREEEDAOggxhYmZmOWU3ZTI5OTUwHQYD
-                            VR0OBBYEFOMHOZSqpqDFXkI8BRSNkUJtUfRrMA0GCSqGSIb3DQEBCwUAA4IBgQA8
-                            9ANSkDXWCABx0NZs4drAE1ABeVynKmLWKTKh/3YovshBPBoNH5bb3fam6+0VHGi0
-                            +U/BupcKq0hmkX73b+CcMWEmeAspfCWoeWT6nKX5BFob4pWggVrUcXBSAcat+v84
-                            0j2VsBHRezBiBHbIyQTivxn+Ur2c8Sl9FlKTrqe836aiu1OG9/M2YlpGONFXgisA
-                            Mb6uzHI6KDgw0QOLvJoG1eoEHK382zSaOR90kgScI6WOXtecww/wNmWdclRwN6gw
-                            i3Tn//ZLLdqPfJf6Qh8gulqKNumjOkcZTazacXrw++1s/ebrJFyeRZVLg4gUE35Q
-                            //m/unUJNNSyBuiTOThmgXha4/eNWD47/OHfHQasLuOW93gFAKeYiHuE5/GWzwbp
-                            bM245YJf9Drjj/WpF2cSIGCifDN9t/pyH7RxFYx1YS2TH+bz7YwkH4mTmXrsUMM1
-                            Art79RcMeQMbFvlDp0hsumR8zKb8cB0OBFr2PdKd7WIG48iKoOQvcJzcGRKQqnY=
-                        </ds:X509Certificate>
+BAMTDGFiZmY5ZTdlMjk5NTAeFw0xNzA5MDExNDU1NTlaFw0yNzA4MzAxNDU1NTla
+MBcxFTATBgNVBAMTDGFiZmY5ZTdlMjk5NTCCAaIwDQYJKoZIhvcNAQEBBQADggGP
+ADCCAYoCggGBAKsA2XGiRYDdtJkpF2WTAZ1gMxcJMnhVDcAZR9F7lHA2xGZlUMUC
+FeBeHKfwJYutpfbw+T8627AYRma0F39midZfGywg4FG94UGKyl1YI5tm0OH+H7dg
+cbt5DYz2BuXT+uHBzhV3T3M6Ef09g3umbCGwemiyqhURO5X4/c4Z31GFFKqtRaXP
+NwiknPZMOizlMzusGcqwihQpXwraIsWQS32sAL7Z35CbePnoPxwUmGzxNLt9yK4K
+GL3IR5xtzKyrf5VJI6zOAcG1x0QgRLTjDYIKh5oavzSfVXixyXQSYkW/TI0Q5r2N
+icxH027ZYv3aUfa0oHq8vAoWAfkCR6Eohtb1PVIBt1MId5RU3Qveh3PDe6C4EgZ7
+tDSEe7m7qUeslDZkysqqkSpSJNBF6KOYsiDPfY+pfhKhQ4zFj9BTgh+WnxWkorlE
+FnLWvxp/XYo5IYJhuiuJyhsuFRma1q184gm9+NtMAtu1hgTA98yCHFN1wiCzDu7l
+N6OXX+6y677iqwIDAQABozowODAXBgNVHREEEDAOggxhYmZmOWU3ZTI5OTUwHQYD
+VR0OBBYEFOMHOZSqpqDFXkI8BRSNkUJtUfRrMA0GCSqGSIb3DQEBCwUAA4IBgQA8
+9ANSkDXWCABx0NZs4drAE1ABeVynKmLWKTKh/3YovshBPBoNH5bb3fam6+0VHGi0
++U/BupcKq0hmkX73b+CcMWEmeAspfCWoeWT6nKX5BFob4pWggVrUcXBSAcat+v84
+0j2VsBHRezBiBHbIyQTivxn+Ur2c8Sl9FlKTrqe836aiu1OG9/M2YlpGONFXgisA
+Mb6uzHI6KDgw0QOLvJoG1eoEHK382zSaOR90kgScI6WOXtecww/wNmWdclRwN6gw
+i3Tn//ZLLdqPfJf6Qh8gulqKNumjOkcZTazacXrw++1s/ebrJFyeRZVLg4gUE35Q
+//m/unUJNNSyBuiTOThmgXha4/eNWD47/OHfHQasLuOW93gFAKeYiHuE5/GWzwbp
+bM245YJf9Drjj/WpF2cSIGCifDN9t/pyH7RxFYx1YS2TH+bz7YwkH4mTmXrsUMM1
+Art79RcMeQMbFvlDp0hsumR8zKb8cB0OBFr2PdKd7WIG48iKoOQvcJzcGRKQqnY=
+</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
@@ -1085,6 +1085,11 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.eurac.edu/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.eurac.edu/Shibboleth.sso/Artifact/SOAP" index="2"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/Artifact"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin.eurac.edu/Shibboleth.sso/SLO/POST"/>
@@ -1095,6 +1100,10 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML2/ECP" index="4"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML/POST" index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML/Artifact" index="6"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML2/POST" index="7"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML2/POST-SimpleSign" index="8"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML2/Artifact" index="9"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://clarin.eurac.edu/Shibboleth.sso/SAML2/ECP" index="10"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">Digital Repository for the CLARIN Research Infrastructure provided by Eurac Research</md:ServiceName>
         <md:ServiceName xml:lang="de">Digitales Repository f&#xFC;r die CLARIN-Forschungs-Infrastruktur bereitgestellt durch Eurac Research</md:ServiceName>
