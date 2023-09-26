@@ -2037,7 +2037,7 @@ Or80iLpo3tQ=
           <mdui:InformationURL xml:lang="en">https://coanzse.org</mdui:InformationURL>
           <mdui:Logo height="220" width="195">https://coanzse.org/corpus-frontend-3.1.0/test/static/img/output-onlinepngtools.png</mdui:Logo>
           <mdui:Keywords xml:lang="en">Corpus of Australian and New Zealand Spoken English+English+Audio+YouTube Transcripts</mdui:Keywords>
-          <mdui:PrivacyStatementURL xml:lang="en">https://coanzse.org/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://coanzse.org/landing/privacy_statement.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://coanzse.org/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://coanzse.org/Shibboleth.sso/Login" index="1"/>
