@@ -31,7 +31,7 @@
             <mdui:DisplayName xml:lang="nl">Centre for Language and Speech Technology webservices en webapplicaties</mdui:DisplayName>
             <mdui:Description xml:lang="nl">Webservices en webapplicaties ontwikkeld en/of onderhouden door het Centre of Language and Speech technology, van de Radboud Universiteit</mdui:Description>
             <mdui:Logo height="44" width="249">https://applejack.science.ru.nl/clst.png</mdui:Logo>
-            <mdui:InformationURL xml:lang="en">https://webservices-lst.science.ru.nl/portal/</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://webservices.cls.ru.nl/</mdui:InformationURL>
             <mdui:Keywords xml:lang="en">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Language+Technology RU Radboud+University Text+mining Computational+linguistics Corpora</mdui:Keywords>
             <mdui:Keywords xml:lang="nl">CLST Centre+for+Language+and+Speech+Technology NLP Natural+Language+Processing Taaltechnologie RU Radboud+Universiteit Text+mining Computationele+taalkunde Corpora</mdui:Keywords>
             <mdui:PrivacyStatementURL xml:lang="en">https://applejack.science.ru.nl/privacy.html</mdui:PrivacyStatementURL>
@@ -44,31 +44,34 @@
       </md:Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
-            <ds:KeyName>opensonar.cls.ru.nl</ds:KeyName>
+            <ds:KeyName>onderzoek.zoeken.fame.frl</ds:KeyName>
             <ds:X509Data>
-               <ds:X509SubjectName>CN=opensonar.cls.ru.nl</ds:X509SubjectName>
-               <ds:X509Certificate>MIIEKzCCApOgAwIBAgIJALlaaJ0gE1O6MA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNV
-                    BAMTE29wZW5zb25hci5jbHMucnUubmwwHhcNMTgxMTA4MDkzODE3WhcNMjMxMTA3
-                    MDkzODE3WjAeMRwwGgYDVQQDExNvcGVuc29uYXIuY2xzLnJ1Lm5sMIIBojANBgkq
-                    hkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA/F3CuGTdarM3NCVIIv5p6V5xb8+Bv5WZ
-                    cX1wmEF8rdNqpa4VVSUC0nIslXbwMhVDDPcCfYCTVYH9PPGn/eaE7ljG8jrm8FjO
-                    qOGRUdfNpZMfOXf88KIPBAY9GGBEXYQZY8eK3h8KZZR4dIXsC2in/j8r01uGwG2k
-                    es44YIk30n/kpXeInERDJkoj6IPZuYENkxVLdsCSQfc5v2AuSHFOzpM53pIHE+lb
-                    8RRgKCZVgSx6Om5zjDxD9qoWkUUiUFfOxWsqXbmwLaL8JBiELb2YFr/8pES8WX9p
-                    QQIcCufczY9HVZtW0H4D3XetqDybPNC8AYD7YyfCRFURehq0nbMOdKNLRYloUQr3
-                    xp/XJuUGBPfYh/3Br9jQMIUbRTxd1PsqIVbWoPIQvPnOaBeu96xwYHJPEX/RMVoV
-                    RpmdcDlyphsIGoTkngusa4nnBlVGhj5CfAivP3km3i3pN2/Wllkv7QaIW2shBKwO
-                    kkhcT2wRdAQWLTkoP0R0THYW+0fxDS1BAgMBAAGjbDBqMEkGA1UdEQRCMECCE29w
-                    ZW5zb25hci5jbHMucnUubmyGKWh0dHBzOi8vc3Aub3BlbnNvbmFyLmNscy5ydS5u
-                    bC9zaGliYm9sZXRoMB0GA1UdDgQWBBQt1xh+/scfPMT6aQNA7fGRoUkxgzANBgkq
-                    hkiG9w0BAQsFAAOCAYEAln/gaOmUIrUTQpZ3QocbnMAruL5ZrwPxVniAgB3ZvKZ7
-                    f4D2NqEwhcDDx/jb6QdZA3EwGOGBcrAlj4dKmTwCYSdr9wpzgvpSTYrj5Wl9q16X
-                    eSecyJFtH/kF8u70I3AoVJt1u5m3cbgTcXfsEqih7iDRR1BABpA9T072o2LNf08B
-                    ZrlnG9/Ir2tdlj40saou27Dz/655adEz/xP84ByyXRE8IA+8kC2wEuYiHzvVT9TL
-                    h+DW3SRdSJBAEe1ODFXn9BrmR7lw5JxSPzPsRh+5aABhXI1e/6N8dia7IMtCARd0
-                    AjMNnZQuPmNAdf9jybX/k6W3foZV5hLHVUMKArWsdu5lEPScCR8wZlLd6e7DSOSv
-                    TtR8CIdMYeA4xbUaTcc+nSk5rQlj0UbgkjJd0WH1EOHFtPzuG6ljmFz85gogfAR8
-                    5EiEMbvA0+i0N83koYTj5FzdgmVXbgmWz0sY8HQx28NwmUG3AG5HXiKYs5mfSNJi MlMNB3WBNoO/vRMFpUxi
+               <ds:X509SubjectName>CN=onderzoek.zoeken.fame.frl</ds:X509SubjectName>
+               <ds:X509Certificate>
+MIIETjCCAragAwIBAgIUHRfiGKs3xc3ZNSlAW9o7K5GdCqEwDQYJKoZIhvcNAQEL
+BQAwJDEiMCAGA1UEAxMZb25kZXJ6b2VrLnpvZWtlbi5mYW1lLmZybDAeFw0yMzEx
+MTAxMzQyMjFaFw0zMzA4MDkxMzQyMjFaMCQxIjAgBgNVBAMTGW9uZGVyem9lay56
+b2VrZW4uZmFtZS5mcmwwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQCt
+//vBJn0IJiHXQVWsnJR0Jt356SuYVTLCx7d0jqyWF5IsleqM1Sab2VDG2r96CI4t
+1GZqDFcZ4PA/hUoAPOfwT89o+LSGd3Ic7oNirRdFJI2KsSGXyawrZ8ODalzikwMT
+SWaOyDuNahRAUOxRc9d0IpHJnI79toZnQiLmXoJUdbHtKmCQnlNwx2Wxq6riWQH1
+F4De/2eocG0/d2C7BBscaJCet57J9t9EWdLK05ODKk40W6UgVqDHT+KdCUaRBS3c
+/xuxa1C+/Hw6IWvGSfaHvtEExAM/euHThGllliC/9qC1J0iwKnT+yMh5V6P5AjSE
+zfH+OEi8KKFOP/QuHY9r80MLHyIbc9Fja7ephkFF44TmVXPPI7FU3H4GkUxGvv6D
+jiu8RXUyiIqCaxF6JAaX3FoyBobot/fY5OXphXvwEuCjVM+pMbCLoUtf92RxvBqJ
+M+UHIaTd9PQ+Sf1O8LdzoZic/4OOEq9kFhXYqb7sKbz66bcPUQu+VpIujS3/qJ8C
+AwEAAaN4MHYwVQYDVR0RBE4wTIIZb25kZXJ6b2VrLnpvZWtlbi5mYW1lLmZybIYv
+aHR0cHM6Ly9zcC5vbmRlcnpvZWsuem9la2VuLmZhbWUuZnJsL3NoaWJib2xldGgw
+HQYDVR0OBBYEFL/BdrBpj5LVQQKEZDONzm2U7hI6MA0GCSqGSIb3DQEBCwUAA4IB
+gQB/4yeNp6Rpp3aDbY4J0guFJf09ASUf0mwef6lZNRZyYST3m0tGRUhbtM8Qkbxv
+Aw8rI+9rzNeQNelfScIVpBsRCjzgk5cyc65RqpFBICSVgkjKHrEQJ7pMqvCQGXiF
+vLBCkAExTCDWM1N89O9sviQfBtbhy6oY2nw5ogpo1OqpolDuNFOc/S1ARR7gOxM1
+6CmYoKI/l6oEe3n88Zt9BON1/3H9HXnXt0fPdBOgD7vDMbyBJIIz0itv8lkMekdI
+qdZSqPpBsSdJpFThOTQPvu8XwmU6LQxDrWDmaidkhuf79GieeXDIvXTwgtrCjOkV
+09QBj76WRX+rH3u6Ud+bagCESti2A2hGOD83T5T1LJahaF+Pu1pDGqyF0gjkLk8N
+rTE1lB4a3mbKTebaRdlSkYQmOBIwSUr5/AWuhkh732UM2cLdlsoDX7p/IsJpSFo4
+rGd0bH+esjzZTB2M+3sT9ZdYqLpd7CVVQNliXbwlCbBaaPAE3TDv8iVmgGUctXj8
+P1E=
                         </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
