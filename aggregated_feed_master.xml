@@ -7036,14 +7036,14 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
     <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
         <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="cs">Repozit&#xE1;&#x159; a slu&#x17E;by LINDAT/CLARIN</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="de">LINDAT / CLARIN Dienste</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">LINDAT/CLARIN services</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="fi">LINDAT / CLARIN palvelut</mdui:DisplayName>
-          <mdui:Description xml:lang="cs">Repozit&#xE1;&#x159; a slu&#x17E;by projektu LINDAT/CLARIN zam&#x11B;&#x159;en&#xE9; na podporu v&#xFD;zkumu jazyka</mdui:Description>
-          <mdui:Description xml:lang="de">LINDAT / CLARIN Digitales Langzeitarchiv und Dienste f&#xFC;r die Sprachforschungsinfrastruktur</mdui:Description>
-          <mdui:Description xml:lang="en">LINDAT/CLARIN digital repository and services focused on language research infrastructure</mdui:Description>
-          <mdui:Description xml:lang="fi">LINDAT / CLARIN digitaalinen arkisto ja palvelut kielelliseen tutkimusinfrastruktuurin</mdui:Description>
+          <mdui:DisplayName xml:lang="cs">Repozit&#xE1;&#x159; a slu&#x17E;by LINDAT/CLARIAH-CZ</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="de">LINDAT / CLARIAH-CZ Dienste</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">LINDAT/CLARIAH-CZ services</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="fi">LINDAT / CLARIAH-CZ palvelut</mdui:DisplayName>
+          <mdui:Description xml:lang="cs">Repozit&#xE1;&#x159; a slu&#x17E;by projektu LINDAT/CLARIAH-CZ zam&#x11B;&#x159;en&#xE9; na podporu v&#xFD;zkumu jazyka</mdui:Description>
+          <mdui:Description xml:lang="de">LINDAT / CLARIAH-CZ Digitales Langzeitarchiv und Dienste f&#xFC;r die Sprachforschungsinfrastruktur</mdui:Description>
+          <mdui:Description xml:lang="en">LINDAT/CLARIAH-CZ digital repository and services focused on language research infrastructure</mdui:Description>
+          <mdui:Description xml:lang="fi">LINDAT / CLARIAH-CZ digitaalinen arkisto ja palvelut kielelliseen tutkimusinfrastruktuurin</mdui:Description>
           <mdui:DisplayName xml:lang="da">CLARIN-DK-UCPH</mdui:DisplayName>
           <mdui:InformationURL xml:lang="en">http://ufal.mff.cuni.cz/</mdui:InformationURL>
           <mdui:InformationURL xml:lang="cs">http://ufal.mff.cuni.cz/</mdui:InformationURL>
@@ -7057,34 +7057,36 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
         <ds:KeyInfo>
           <ds:KeyName>Active</ds:KeyName>
           <ds:KeyName>https://ufal-point.mff.cuni.cz/shibboleth/eduid/sp</ds:KeyName>
+          <ds:KeyName>lindat.cz</ds:KeyName>
           <ds:KeyName>lindat.mff.cuni.cz</ds:KeyName>
           <ds:KeyName>ufal-point.mff.cuni.cz</ds:KeyName>
           <ds:X509Data>
             <ds:X509SubjectName>CN=lindat.mff.cuni.cz</ds:X509SubjectName>
-            <ds:X509Certificate>MIIESzCCArOgAwIBAgIJAPqOpJeFAuJpMA0GCSqGSIb3DQEBCwUAMB0xGzAZBgNV
-                                    BAMTEmxpbmRhdC5tZmYuY3VuaS5jejAeFw0xODEyMTAxMjUxMTVaFw0yMzEyMDkx
-                                    MjUxMTVaMB0xGzAZBgNVBAMTEmxpbmRhdC5tZmYuY3VuaS5jejCCAaIwDQYJKoZI
-                                    hvcNAQEBBQADggGPADCCAYoCggGBANDUSi9JHuSus1Fje567Vadc50Q+tD02xhiP
-                                    R69ro1u3ZZ8/8z0FplneD+4DHoOwiCLstJj8S1Im/5lI5kCtfYYNFoEcPD6s2S8x
-                                    /wZKuB/51vkSSia/2DuAzqL307yLQw/5Up5wNdwED19tfD/1sriEHgO1CZL+our2
-                                    hmHgJFDFE/dZF5SouqUIwso1kzyCJbPqn6XM/q23+dhvpViibNfSJgitly4XF4aS
-                                    kt3yqMSZH1BhWUzu/z2/cqZfcJmC6xa80qM229vLkIdDCg4r4DkJxIDiyz/1USi5
-                                    V8/KKMVClHPHi70vnyxNx4V1z9Eg2hGEYc8MAXk5/U9DVPB1/cTCaxt/8RS9Q3vS
-                                    wMquErjfIgUPrD+Z6h1PLgz/7UGsmaJcAg4XJ09gIjDrnt4O6T73iid7zcEklWK4
-                                    t3+WN/WBQeX8n4DQJJnRMAO/9H7B4MdZyoGnvnlwDRkE0qv0L6mQjQ9MPESUS3sm
-                                    7034OPVCxaWvjqghj2GNeSPQNo0gGQIDAQABo4GNMIGKMGkGA1UdEQRiMGCCEmxp
-                                    bmRhdC5tZmYuY3VuaS5jeoIWdWZhbC1wb2ludC5tZmYuY3VuaS5jeoYyaHR0cHM6
-                                    Ly91ZmFsLXBvaW50Lm1mZi5jdW5pLmN6L3NoaWJib2xldGgvZWR1aWQvc3AwHQYD
-                                    VR0OBBYEFK0GtVtarb+v+pv+y+v1raIz7PG4MA0GCSqGSIb3DQEBCwUAA4IBgQA0
-                                    QpOyWdWcHJ+FAhPV64i+PeBW/Mz+mxe+56D9aK8cwK8N77WflgsM9aeJ2cx5KF44
-                                    frbj4tb3exDJcoB86x23gTk/5s0zAOWctMWzGI+LjnDqGzT91YnADvNrkx9k1EcK
-                                    tTLqoz2xGsidmYEY2xkOlGjSmEk3Is0dqbGcVpNWs6u7MuIFgajQOPsAjQBJjdco
-                                    WnzI3RXNEHfmvjfOVA/rhkqcYRvIX2CX2wr+eCVtOT+4jnuibZOS41n6831vvmaT
-                                    EGUFKm1RxkRIi4u0msdQNcBLKCJUqiM083sIKnY7I8ag0J7+RGGGOlL0b6dlqIwm
-                                    H86RWvDzvHfOSamdZK1Jj35m2UyjVE/u8HAKTyXUOAAupHESugXyXuE+gCuXl1KE
-                                    MNjdZgOvNFCwIIdDEvKqG0Lm/zHM8WLL644ZqSOtLhoetIT6dirneYVDXwyHxuSR
-                                    ec5pEXVA/ZkBYo9ut66MQyj8V1VTRLZnvQY0Bye6UuJFGEJDvVqhSvX9nZ3z2CM=
-                                    </ds:X509Certificate>
+            <ds:X509Certificate>MIIEVjCCAr6gAwIBAgIJAOdH/SNVQUWDMA0GCSqGSIb3DQEBCwUAMB0xGzAZBgNV
+BAMTEmxpbmRhdC5tZmYuY3VuaS5jejAeFw0yMzExMTMwOTE3MzFaFw0zMzExMTAw
+OTE3MzFaMB0xGzAZBgNVBAMTEmxpbmRhdC5tZmYuY3VuaS5jejCCAaIwDQYJKoZI
+hvcNAQEBBQADggGPADCCAYoCggGBANDUSi9JHuSus1Fje567Vadc50Q+tD02xhiP
+R69ro1u3ZZ8/8z0FplneD+4DHoOwiCLstJj8S1Im/5lI5kCtfYYNFoEcPD6s2S8x
+/wZKuB/51vkSSia/2DuAzqL307yLQw/5Up5wNdwED19tfD/1sriEHgO1CZL+our2
+hmHgJFDFE/dZF5SouqUIwso1kzyCJbPqn6XM/q23+dhvpViibNfSJgitly4XF4aS
+kt3yqMSZH1BhWUzu/z2/cqZfcJmC6xa80qM229vLkIdDCg4r4DkJxIDiyz/1USi5
+V8/KKMVClHPHi70vnyxNx4V1z9Eg2hGEYc8MAXk5/U9DVPB1/cTCaxt/8RS9Q3vS
+wMquErjfIgUPrD+Z6h1PLgz/7UGsmaJcAg4XJ09gIjDrnt4O6T73iid7zcEklWK4
+t3+WN/WBQeX8n4DQJJnRMAO/9H7B4MdZyoGnvnlwDRkE0qv0L6mQjQ9MPESUS3sm
+7034OPVCxaWvjqghj2GNeSPQNo0gGQIDAQABo4GYMIGVMHQGA1UdEQRtMGuCEmxp
+bmRhdC5tZmYuY3VuaS5jeoIWdWZhbC1wb2ludC5tZmYuY3VuaS5jeoIJbGluZGF0
+LmN6hjJodHRwczovL3VmYWwtcG9pbnQubWZmLmN1bmkuY3ovc2hpYmJvbGV0aC9l
+ZHVpZC9zcDAdBgNVHQ4EFgQUrQa1W1qtv6/6m/7L6/WtojPs8bgwDQYJKoZIhvcN
+AQELBQADggGBACmshL1ILgksu7Oix6VXA/WbjXVKm2E20uVbArt3BueKRePv51P7
+zyo1ZTPTlKk0o9Q34QLw4/ZGmZMKqSF9HSHjSbvayEyw/axgA9wRLyzih7nVIuro
+yS9wKqLkVGjXWB0hIXC+Hyp9aQQQ5yatM1QZz5kD2nx9kGVIlt2xVnRFefNSUdG/
+ebOnCJKnI+VAcZOTgU7MkzH1VfSzuS0pVVZuB9cPZDlgujkR6T162fj637iOdOc4
+o3dx8l69kbCyf9EHlUP/LDtM2BJQ52DdN86VAa6p92GxAkARK1ttjsoZkfcuvpV5
+Tdy3yI2ZwtyE93kMAI9GEvDK2Ll/VBpjlgvTjC7fJ98jG1ahcT3Dp1Pf0qHHUaI7
+RNFRQjbHfkZDod65LYCWWU/mdoz15T+xMS+yviRTyZ8rvwO72nXCDledce93KG36
+V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
+9pmpDLZxBd51uw==
+</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
@@ -7114,8 +7116,8 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://lindat.mff.cuni.cz/Shibboleth.sso/SAML/POST" index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://lindat.mff.cuni.cz/Shibboleth.sso/SAML/Artifact" index="6"/>
       <md:AttributeConsumingService index="1">
-        <md:ServiceName xml:lang="en">LINDAT/CLARIN digital repository and services</md:ServiceName>
-        <md:ServiceDescription xml:lang="en">Repository and services of LINDAT/CLARIN project at Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</md:ServiceDescription>
+        <md:ServiceName xml:lang="en">LINDAT/CLARIAH-CZ digital repository and services</md:ServiceName>
+        <md:ServiceDescription xml:lang="en">Repository and services of LINDAT/CLARIAH-CZ project at Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague</md:ServiceDescription>
         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
         <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
