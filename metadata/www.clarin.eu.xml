@@ -72,6 +72,8 @@ pm3Iv9eZvIlDY9rwID/RK3rqO8kxyVnmAA==</ds:X509Certificate>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
                               Location="https://www.clarin.eu/saml/acs" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+                              Location="https://3w.clarin-dev.eu/saml/acs" index="2"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">CLARIN ERIC website</md:ServiceName>
          <md:ServiceDescription xml:lang="en">For https://www.clarin.eu</md:ServiceDescription>
