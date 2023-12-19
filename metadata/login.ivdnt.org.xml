@@ -1,0 +1,44 @@
+<md:EntityDescriptor
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://login.ivdnt.org/realms/shibboleth">
+    <md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:KeyName>MKDbkGbku5mYphQQI5QQkOGcM10yuC_nKMpVFB3ewqY</ds:KeyName>
+                <ds:X509Data>
+                    <ds:X509Certificate>MIICrzCCAZcCBgGLzV3SRzANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBzaGliYm9sZXRoLXJlYWxtMB4XDTIzMTExNDEwMjQxOVoXDTMzMTExNDEwMjU1OVowGzEZMBcGA1UEAwwQc2hpYmJvbGV0aC1yZWFsbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMuyldNicpmdwr9xUH/RU/goFWVg0nZOwIQ56r+aIiG3jpErok+Ds/q1yKVWzNAboYkLhYn3Pg1Ed2XA49TBHg9t90eUt3wEWs3bys2DVBFmEfVJAfn//EltjXtdp26Eb0OAh53jM9t8APQZdDIjiIBp8diAHbXE31s3aO4Tuv5flpEOb37RonDiW+tkHX17IaKD12JSSaDf98cdEGD7mwsEzRyvIMIooA9nQUrb6JSduvOubA8C0eETCmk3SHyuxaLomm0IyPw+H6a/raSx543CtklPWW8fnjhctoWOhX+rN1Aw5yA/VCrE1MjjDtgdLvHcmmKTvAJLLh/SV4WIJGUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAobH4QKrGlvxjbsPVmyeC80xgR+gfRTHPGHgbzqklOcaIC5PabLSAgf4Q2Az1AXvEaTd6yEoyccjmyQGKubEloZHvwT1B0HagmKXdQl8bJ9/PRo7C8KNRgAApajIKIjkLzD3Pfe0yEyKsnNsGHXmMXWWTanT719N1RziZN6L0DdXrVAT+j6ZuySP5+xZ55cPCHBbJpWAE+zak6PYyKridTavlQt09bSY1bXyt9Nm2nbWzslqjUEQ9kPzI0EUvBY8y0zdd+lyNGqV3rxFmPU8aWlENpAdlSGAsb/33XyqS3bt5w5W5fgfpHCfxjQdlhM0enTagVedhOlSYgC1v7r7kQw==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:KeyName>fSbT-GoEAMz1PiaKxaSq9rX6ZKNPLzQtIveRuH13qZE</ds:KeyName>
+                <ds:X509Data>
+                    <ds:X509Certificate>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</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml/resolve" index="0"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://login.ivdnt.org/realms/shibboleth/protocol/saml"/>
+    </md:IDPSSODescriptor>
+    <script
+        xmlns=""/>
+        <md:ContactPerson contactType="technical">
+            <md:GivenName>Systeem</md:GivenName>
+            <md:SurName>Beheer</md:SurName>
+            <md:EmailAddress>systeembeheer@ivdnt.org</md:EmailAddress>
+        </md:ContactPerson>
+    </md:EntityDescriptor>
