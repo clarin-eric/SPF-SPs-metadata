@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://login.ivdnt.org/realms/shibboleth">
+   <Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </Extensions>
+<dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+<dsig:SignedInfo>
+<dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<dsig:Reference URI="#ID_175ebbc9-9163-4e42-9594-fcb3b0aff2a5">
+<dsig:Transforms>
+<dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</dsig:Transforms>
+<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<dsig:DigestValue>YltVndK+nxWv67KsfpIeCyVWMTsTk+TyY288k5CginU=</dsig:DigestValue>
+</dsig:Reference>
+</dsig:SignedInfo>
+<dsig:SignatureValue>Hz59NFCLajPA/ojMaUzdw42Rc79d1hv31u5J/Bg9Oo8kq3Kr/02Sx0nJT2Gnk1VH9AqLpAjI8Ne/Am8w7XUtTtiT/gjHJmMA5AAtzWPU8wIHeZnsE0GFoZTRmV/LYjyiMkMsVB2ndUGpVclwFpGPLdIkW4OwtZWd7tZzUm2Vz4486uzgyvMVgdUKAfA3IxORjo4MQkD/fGig9IBQE3bcOlVwKuu4qv+rYTxZSmFLB8rmZTAd7b32bF7lBMenr/WYVCQkl/n9U5NpaJ6VrC9iV2ggw8PASAO61tZBDNOPdqT4SOcgQF1Y+CQZbwRe1gi2mdALpcB2PdHIoI+CpbDvhw==</dsig:SignatureValue>
+<dsig:KeyInfo>
+<dsig:X509Data>
+<dsig:X509Certificate>MIICrzCCAZcCBgGLzV3SRzANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBzaGliYm9sZXRoLXJlYWxtMB4XDTIzMTExNDEwMjQxOVoXDTMzMTExNDEwMjU1OVowGzEZMBcGA1UEAwwQc2hpYmJvbGV0aC1yZWFsbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMuyldNicpmdwr9xUH/RU/goFWVg0nZOwIQ56r+aIiG3jpErok+Ds/q1yKVWzNAboYkLhYn3Pg1Ed2XA49TBHg9t90eUt3wEWs3bys2DVBFmEfVJAfn//EltjXtdp26Eb0OAh53jM9t8APQZdDIjiIBp8diAHbXE31s3aO4Tuv5flpEOb37RonDiW+tkHX17IaKD12JSSaDf98cdEGD7mwsEzRyvIMIooA9nQUrb6JSduvOubA8C0eETCmk3SHyuxaLomm0IyPw+H6a/raSx543CtklPWW8fnjhctoWOhX+rN1Aw5yA/VCrE1MjjDtgdLvHcmmKTvAJLLh/SV4WIJGUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAobH4QKrGlvxjbsPVmyeC80xgR+gfRTHPGHgbzqklOcaIC5PabLSAgf4Q2Az1AXvEaTd6yEoyccjmyQGKubEloZHvwT1B0HagmKXdQl8bJ9/PRo7C8KNRgAApajIKIjkLzD3Pfe0yEyKsnNsGHXmMXWWTanT719N1RziZN6L0DdXrVAT+j6ZuySP5+xZ55cPCHBbJpWAE+zak6PYyKridTavlQt09bSY1bXyt9Nm2nbWzslqjUEQ9kPzI0EUvBY8y0zdd+lyNGqV3rxFmPU8aWlENpAdlSGAsb/33XyqS3bt5w5W5fgfpHCfxjQdlhM0enTagVedhOlSYgC1v7r7kQw==</dsig:X509Certificate>
+</dsig:X509Data>
+</dsig:KeyInfo>
+</dsig:Signature>
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint" index="1" isDefault="true"/>
+</md:SPSSODescriptor>
+   <Organization>
+     <OrganizationName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationName>
+     <OrganizationDisplayName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationDisplayName>
+     <OrganizationURL xml:lang="en">https://login.ivdnt.org</OrganizationURL>
+   </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>Systeem</GivenName>
+    <SurName>Beheer</SurName>
+    <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
+  </ContactPerson>
+</md:EntityDescriptor>
