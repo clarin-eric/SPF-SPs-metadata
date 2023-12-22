@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://login.ivdnt.org/realms/shibboleth">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+         </saml:Attribute>
+         <saml:Attribute Name="http://macedir.org/entity-category"
+                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint" index="1" isDefault="true"/>
+</md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="nl">Instituut voor de Nederlandse Taal (INT)</md:OrganizationName>
+      <md:OrganizationName xml:lang="en">Dutch Language Institute</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="nl">Instituut voor de Nederlandse Taal (INT)</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Dutch Language Institute</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="nl">https://ivdnt.org</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://ivdnt.org/english-pages</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Systeem</md:GivenName>
+      <md:SurName>Beheer</md:SurName>
+      <md:EmailAddress>mailto:systeembeheer@ivdnt.org</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
