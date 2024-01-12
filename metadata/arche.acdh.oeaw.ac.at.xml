@@ -61,9 +61,9 @@
       <md:KeyDescriptor>
          <ds:KeyInfo>
             <ds:X509Data>
-               <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAI3rKBVKUcUJMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
-BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0xNDAxMjAxNDU3MThaFw0yNDAx
-MTgxNDU3MThaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
+               <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAMjluQowjzfUMA0GCSqGSIb3DQEBDQUAMCAxHjAcBgNV
+BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0yNDAxMDkxMTEwNDVaFw0zNDAy
+MjUxMTEwNDVaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
 DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMJ8B6WyydvbvIHJ1Cb34h8838G5
 JItPpmJC+D/K+6MI3YiydVKKlhaGh/GqcWcz0Qw30W7WYilUZ5IkzZA12QY1CF1g
 cJPNUmYibzP3sAZ9KrvaCEMxlseoldh0yc+8Q8eplQH9id4u5G+J8SvTBejt261y
@@ -71,13 +71,13 @@ ATb6pIANsRQkOLMvxtq7/NrEnAmZQOM5obsshHxLlXlJ0qixakaYXWKCIuUUOEFY
 FT13vhWrUC4BWW0OGimoR1cBnyEJtS9kRNWQ85+03VVVvLk9AssoHWxOJVJ7HE1m
 5/xgMrmpOv1vbqDKDljrY19zheNOoFr3RdaSCb1Eh8lWCNigUgOwK8Mm7VECAwEA
 AaNDMEEwIAYDVR0RBBkwF4IVY2xhcmluLmFyei5vZWF3LmFjLmF0MB0GA1UdDgQW
-BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQUFAAOCAQEAhdcxQ+7/
-1WYPCTVz2HOk8J3eM3ZJylGdTnfgNDDGkBo0CGmyiulX8m+nimBKh7UNMkRkU8cH
-NUldSGR70wi0iQlx7t868V5pmkqxnaDu4+lo1QU59s5c7MRJXZ6OcbKB57O/d5l+
-+kX3/YW9WAQkmwcyVWDbcmk4DZK5kqqTk+u3fS48cLqai5YVcj8pDDoUx6/ZkwDv
-Yqvva2v4+vhzX9SW3QyiChOgFo9sP/UD1U8JAZG0sds5ugwjwiXPPB41hwHdbdEj
-QZRW2NR0HHMFp0FZeSziXOeaap21wc/W1Nk7wpRI7jYdzLRJHmzhvWz95p0WSnt+
-rI8v6OTvibpLrg==
+BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQ0FAAOCAQEAtXSPBe1J
+Fdb0tcfbyRwgkyT97eY2kFUBPBdgbjdPOlHS89GzJsI9hv6Egy9+Z/2AZ9eFxLmb
+zKbOp9fq5HV1Q4zaQ18MPM/JpfJzx1C6MaDAEOuxRTII9tpgP16E9Pq3rCN/w470
+6+CRY1IEzoq33ZxAaGjc+Rb7o8wanaP+Sqq2f4HTjqWki5lEXaUPI7DlaVddpaRs
+J5Fyc2Ww1UpYxtfp4edMq5SIrsUnim7s0iNiuB6ffcXvb+dT3yFMsimd7Er5kLNh
+5dObOhQRXKVc648sxNSKo0pqmGKt4SOhCXdJG/Mkzf/wyPqE0cOt5Mf4p4EYzXch
+F5EbZqtrrf1m4Q==
 </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
@@ -172,7 +172,7 @@ rI8v6OTvibpLrg==
    <md:ContactPerson contactType="support">
       <md:GivenName>ACDH</md:GivenName>
       <md:SurName>Office</md:SurName>
-      <md:EmailAddress>mailto:acdh-tech@oeaw.ac.at</md:EmailAddress>
+      <md:EmailAddress>mailto:acdh-ch-tech@oeaw.ac.at</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>Akademie-Rechenzentrum</md:GivenName>
