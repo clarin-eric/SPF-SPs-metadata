@@ -17,6 +17,26 @@
       </mdattr:EntityAttributes>
    </md:Extensions>
 <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">INT login - CLARIN services</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">INT einloggen - CLARIN Dienste</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">INT sisäänkirjautuminen - CLARIN palvelut</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="nl">INT login - CLARIN diensten</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Institute for Dutch Language (INT) projects attached to the CLARIN infrastructure.</mdui:Description>
+            <mdui:Description xml:lang="de">Institut für Niederländische Sprache (INT) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
+            <mdui:Description xml:lang="fi">Institute for Dutch Language (INT) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
+            <mdui:Description xml:lang="nl">Instituut voor de Nederlandse taal (INT) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
+            <mdui:InformationURL xml:lang="nl">https://ivdnt.org/onderzoek-projecten/clarin</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INT.pdf</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"
+                                    index="1"/>
+      </md:Extensions>
 <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint"/>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint" index="1" isDefault="true"/>
@@ -33,5 +53,15 @@
       <md:GivenName>Systeem</md:GivenName>
       <md:SurName>Beheer</md:SurName>
       <md:EmailAddress>mailto:systeembeheer@ivdnt.org</md:EmailAddress>
+   </md:ContactPerson>
+      <md:ContactPerson contactType="administrative">
+      <md:GivenName>Service</md:GivenName>
+      <md:SurName>Desk</md:SurName>
+      <md:EmailAddress>mailto:servicedesk@ivdnt.org</md:EmailAddress>
+   </md:ContactPerson>
+      <md:ContactPerson contactType="support">
+      <md:GivenName>Service</md:GivenName>
+      <md:SurName>Desk</md:SurName>
+      <md:EmailAddress>mailto:servicedesk@ivdnt.org</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
