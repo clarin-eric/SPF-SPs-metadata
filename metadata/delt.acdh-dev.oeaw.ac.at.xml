@@ -13,7 +13,7 @@
                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     entityID="https://dhcr.clarin-dariah.eu/shibboleth">
+                     entityID="https://delt.acdh-dev.oeaw.ac.at/shibboleth">
    <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
@@ -43,27 +43,27 @@
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/Login"/>
+                                Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/Login"
-                                    index="5"/>
+                                    Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/Login"
+                                    index="6"/>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">DH course registry</mdui:DisplayName>
-            <mdui:DisplayName xml:lang="de">DH course registry</mdui:DisplayName>
-            <mdui:Description xml:lang="en">Registry of DH-related courses (study programs) across Europe jointly maintained by the research infrastructures CLARIN-ERIC and DARIAH-EU</mdui:Description>
-            <mdui:Description xml:lang="de">Registry von DH-relevanten Studienprogrammen und Kursen in Europa gemeinsam verwaltet von den Forschungsinfrastrukturen CLARIN-ERIC und DARIAH-EU</mdui:Description>
-            <mdui:InformationURL xml:lang="en">http://acdh.oeaw.ac.at/</mdui:InformationURL>
-            <mdui:InformationURL xml:lang="de">http://acdh.oeaw.ac.at/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy</mdui:PrivacyStatementURL>
+            <mdui:DisplayName xml:lang="en">Database of English Learner Texts (DELT) (dev)</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">Dankbank für Texte von Leuten die Englisch lernen (DELT) (dev)</mdui:DisplayName>
+            <mdui:Description xml:lang="en">The Database of English Learner Texts (DELT) aims to promote research on the learning and use of English.</mdui:Description>
+            <mdui:Description xml:lang="de">Die Datenbank DELT stellt Materialien für Studien über den Fremdsprachenerwerb (Englisch) zur Verfügung.</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://delt.acdh-dev.oeaw.ac.at/about/</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="de">https://delt.acdh-dev.oeaw.ac.at/about/</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://delt.acdh-dev.oeaw.ac.at/terms-of-use/</mdui:PrivacyStatementURL>
             <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/acdh_repo/icons/acdh_logo120h.png</mdui:Logo>
          </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
             <ds:X509Data>
-               <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAI3rKBVKUcUJMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
-BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0xNDAxMjAxNDU3MThaFw0yNDAx
-MTgxNDU3MThaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
+               <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAMjluQowjzfUMA0GCSqGSIb3DQEBDQUAMCAxHjAcBgNV
+BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0yNDAxMDkxMTEwNDVaFw0zNDAy
+MjUxMTEwNDVaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
 DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMJ8B6WyydvbvIHJ1Cb34h8838G5
 JItPpmJC+D/K+6MI3YiydVKKlhaGh/GqcWcz0Qw30W7WYilUZ5IkzZA12QY1CF1g
 cJPNUmYibzP3sAZ9KrvaCEMxlseoldh0yc+8Q8eplQH9id4u5G+J8SvTBejt261y
@@ -71,13 +71,13 @@ ATb6pIANsRQkOLMvxtq7/NrEnAmZQOM5obsshHxLlXlJ0qixakaYXWKCIuUUOEFY
 FT13vhWrUC4BWW0OGimoR1cBnyEJtS9kRNWQ85+03VVVvLk9AssoHWxOJVJ7HE1m
 5/xgMrmpOv1vbqDKDljrY19zheNOoFr3RdaSCb1Eh8lWCNigUgOwK8Mm7VECAwEA
 AaNDMEEwIAYDVR0RBBkwF4IVY2xhcmluLmFyei5vZWF3LmFjLmF0MB0GA1UdDgQW
-BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQUFAAOCAQEAhdcxQ+7/
-1WYPCTVz2HOk8J3eM3ZJylGdTnfgNDDGkBo0CGmyiulX8m+nimBKh7UNMkRkU8cH
-NUldSGR70wi0iQlx7t868V5pmkqxnaDu4+lo1QU59s5c7MRJXZ6OcbKB57O/d5l+
-+kX3/YW9WAQkmwcyVWDbcmk4DZK5kqqTk+u3fS48cLqai5YVcj8pDDoUx6/ZkwDv
-Yqvva2v4+vhzX9SW3QyiChOgFo9sP/UD1U8JAZG0sds5ugwjwiXPPB41hwHdbdEj
-QZRW2NR0HHMFp0FZeSziXOeaap21wc/W1Nk7wpRI7jYdzLRJHmzhvWz95p0WSnt+
-rI8v6OTvibpLrg==
+BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQ0FAAOCAQEAtXSPBe1J
+Fdb0tcfbyRwgkyT97eY2kFUBPBdgbjdPOlHS89GzJsI9hv6Egy9+Z/2AZ9eFxLmb
+zKbOp9fq5HV1Q4zaQ18MPM/JpfJzx1C6MaDAEOuxRTII9tpgP16E9Pq3rCN/w470
+6+CRY1IEzoq33ZxAaGjc+Rb7o8wanaP+Sqq2f4HTjqWki5lEXaUPI7DlaVddpaRs
+J5Fyc2Ww1UpYxtfp4edMq5SIrsUnim7s0iNiuB6ffcXvb+dT3yFMsimd7Er5kLNh
+5dObOhQRXKVc648sxNSKo0pqmGKt4SOhCXdJG/Mkzf/wyPqE0cOt5Mf4p4EYzXch
+F5EbZqtrrf1m4Q==
 </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
@@ -92,26 +92,26 @@ rI8v6OTvibpLrg==
          <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                    Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/Artifact/SOAP"
+                                    Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/Artifact/SOAP"
                                     index="1"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/SLO/SOAP"/>
+                              Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/SLO/Redirect"/>
+                              Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/SLO/POST"/>
+                              Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                              Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/SLO/Artifact"/>
+                              Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/SLO/Artifact"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://dhcr.clarin-dariah.eu/Shibboleth.sso/SAML2/POST"
-                                   index="5"/>
+                                   Location="https://delt.acdh-dev.oeaw.ac.at/Shibboleth.sso/SAML2/POST"
+                                   index="6"/>
       <md:AttributeConsumingService index="1">
-         <md:ServiceName xml:lang="en">DH course registry</md:ServiceName>
-         <md:ServiceName xml:lang="de">DH course registry</md:ServiceName>
-         <md:ServiceDescription xml:lang="en">Registry of DH-related courses (study programs) across Europe jointly maintained by the research infrastructures CLARIN-ERIC and DARIAH-EU</md:ServiceDescription>
-         <md:ServiceDescription xml:lang="de">Registry von DH-relevanten Studienprogrammen und Kursen in Europa gemeinsam verwaltet von den Forschungsinfrastrukturen CLARIN-ERIC und DARIAH-EU</md:ServiceDescription>
+         <md:ServiceName xml:lang="en">Database of English Learner Texts (DELT) (dev)</md:ServiceName>
+         <md:ServiceName xml:lang="de">Dankbank für Texte von Leuten die Englisch lernen (DELT) (dev)</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">The Database of English Learner Texts (DELT) aims to promote research on the learning and use of English.</md:ServiceDescription>
+         <md:ServiceDescription xml:lang="de">Die Datenbank DELT stellt Materialien für Studien über den Fremdsprachenerwerb (Englisch) zur Verfügung.</md:ServiceDescription>
          <md:RequestedAttribute isRequired="true"
                                 FriendlyName="eduPersonPrincipalName"
                                 Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
@@ -172,7 +172,7 @@ rI8v6OTvibpLrg==
    <md:ContactPerson contactType="support">
       <md:GivenName>ACDH</md:GivenName>
       <md:SurName>Office</md:SurName>
-      <md:EmailAddress>mailto:acdh-tech@oeaw.ac.at</md:EmailAddress>
+      <md:EmailAddress>mailto:acdh-ch-tech@oeaw.ac.at</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>Akademie-Rechenzentrum</md:GivenName>
