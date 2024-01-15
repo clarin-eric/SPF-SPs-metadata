@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://login.ivdnt.org/realms/shibboleth">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://login.ivdnt.org/realms/shibboleth">
    <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
