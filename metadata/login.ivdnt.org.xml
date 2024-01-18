@@ -42,6 +42,7 @@
             <mdui:Description xml:lang="nl">Instituut voor de Nederlandse taal (INT) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
             <mdui:InformationURL xml:lang="nl">https://ivdnt.org/onderzoek-projecten/clarin</mdui:InformationURL>
             <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl</mdui:InformationURL>
+            <mdui:Logo height="9" width="16">https://portal.clarin.inl.nl/img/logo-clarin.png</mdui:Logo>
             <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INT.pdf</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
@@ -53,6 +54,18 @@
 <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint"/>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
 <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint" index="1" isDefault="true"/>
+         <md:ServiceName xml:lang="en">Login</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Login service</md:ServiceDescription>
+         <!-- SAML1 -->
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                                Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+                                NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+                                isRequired="true"/>
+         <!-- SAML2 -->
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
 </md:SPSSODescriptor>
    <md:Organization>
       <md:OrganizationName xml:lang="nl">Instituut voor de Nederlandse Taal (INT)</md:OrganizationName>
