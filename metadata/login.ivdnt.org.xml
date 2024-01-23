@@ -45,11 +45,6 @@
             <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INT.pdf</mdui:PrivacyStatementURL>
             <mdui:Logo width="165" height="80">https://portal.clarin.inl.nl/img/logo-clarin.png</mdui:Logo>
          </mdui:UIInfo>
-         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"/>
-         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"
-                                    index="1"/>
       </md:Extensions>
 <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.ivdnt.org/realms/shibboleth/broker/saml/endpoint"/>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
