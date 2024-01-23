@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Mon Jan 15 14:57:04 UTC 2024</ReportDate>
-  <FromCommit>554096ca14988df45ff6208f618b574e6613f93e</FromCommit>
+  <ReportDate>Tue Jan 23 14:59:11 UTC 2024</ReportDate>
+  <FromCommit>49acbf6efe2e7907d53cdbf8ade5e65266c5f6d2</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -185,11 +185,6 @@
     </result>
     <result>
       <sp>https://lbr.csc.fi/shibboleth</sp>
-      <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
-      <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://login.ivdnt.org/realms/shibboleth</sp>
       <explanation>Missing element(s) ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo/mdui:Logo’ or any of their values is not a valid URL with https scheme.</explanation>
       <requirement>Completely a requirement for eduID.cz registration. Completely a requirement for SURFconext registration. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
@@ -404,11 +399,6 @@
       <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration.</requirement>
     </result>
     <result>
-      <sp>https://login.ivdnt.org/realms/shibboleth</sp>
-      <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
-      <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
       <sp>https://repo.clarino.uib.no/shibboleth/sp</sp>
       <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@Name’, or their values do not start with 'urn:oid:'. You may be using the SAML 1.x NameFormat, which is incorrect for a SAML 2 attribute.</explanation>
       <requirement>Required for technical correctness.</requirement>
@@ -510,6 +500,16 @@
     </result>
     <result>
       <sp>https://lbr.csc.fi/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+    </result>
+    <result>
+      <sp>https://login.ivdnt.org/realms/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+    <result>
+      <sp>https://login.ivdnt.org/realms/shibboleth</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
     </result>
