@@ -94,23 +94,23 @@
       </md:AttributeConsumingService>
    </SPSSODescriptor>
    <Organization>
-      <OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationName>
-      <OrganizationDisplayName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationDisplayName>
+      <OrganizationName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationName>
+      <OrganizationDisplayName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationDisplayName>
       <OrganizationURL xml:lang="en">https://portal.clarin.inl.nl</OrganizationURL>
    </Organization>
    <ContactPerson contactType="administrative">
-      <GivenName>Jan Theo</GivenName>
-      <SurName>Bakker</SurName>
-      <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
+      <GivenName>Karin</GivenName>
+      <SurName>Weerlee</SurName>
+      <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="support">
-      <GivenName>Jan Theo</GivenName>
-      <SurName>Bakker</SurName>
-      <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
+      <GivenName>Karin</GivenName>
+      <SurName>Weerlee</SurName>
+      <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="technical">
       <GivenName>Marco</GivenName>
       <SurName>van der Laan</SurName>
-      <EmailAddress>mailto:systeembeheer@inl.nl</EmailAddress>
+      <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
    </ContactPerson>
 </EntityDescriptor>
