@@ -4,6 +4,7 @@
    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
       <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
          <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
             <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
          </saml:Attribute>
       </mdattr:EntityAttributes><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -99,9 +100,9 @@
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://www.meertens.knaw.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</md:ServiceName>
-         <md:RequestedAttribute Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute Name="urn:mace:dir:attribute-def:uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="schacHomeOrganization" Name="urn:mace:terena.org:attribute-def:schacHomeOrganization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="uid" Name="urn:mace:dir:attribute-def:uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
       </md:AttributeConsumingService>
    </md:SPSSODescriptor>
 
@@ -110,19 +111,19 @@
       <md:OrganizationName xml:lang="en">Meertens Institute</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="nl">Meertens Instituut</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="en">Meertens Institute</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="nl">http://www.meertens.knaw.nl/cms/nl</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="en">http://www.meertens.knaw.nl/cms/en</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="nl">https://meertens.knaw.nl/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://meertens.knaw.nl/en/</md:OrganizationURL>
    </md:Organization><md:ContactPerson contactType="support">
    <md:GivenName>KNAW</md:GivenName>
    <md:SurName>Support</md:SurName>
-   <md:EmailAddress>servicedesk@knaw.nl</md:EmailAddress>
+   <md:EmailAddress>mailto:servicedesk@knaw.nl</md:EmailAddress>
 </md:ContactPerson><md:ContactPerson contactType="technical">
    <md:GivenName>Concern</md:GivenName>
    <md:SurName>Infrastructure</md:SurName>
-   <md:EmailAddress>concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
+   <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
 </md:ContactPerson><md:ContactPerson contactType="administrative">
    <md:GivenName>Concern</md:GivenName>
    <md:SurName>Infrastructure</md:SurName>
-   <md:EmailAddress>concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
+   <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
 </md:ContactPerson>
 </md:EntityDescriptor>
