@@ -1,0 +1,93 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5b1dfb6f756a87c288c79b9c57a75eabe351ec36" entityID="https://local.swissubase.ch/shibboleth">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+       <mdui:UIInfo
+                xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                <mdui:DisplayName
+                    xml:lang="en">SWISSUBASE - test sp</mdui:DisplayName>
+                <mdui:Description
+                    xml:lang="en">Service provider for SWISSUBASE app on test environment</mdui:Description>        
+        </mdui:UIInfo>
+	  <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://local.swissubase.ch/Shibboleth.sso/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>local.swissubase.ch</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=local.swissubase.ch</ds:X509SubjectName>
+          <ds:X509Certificate>MIIECzCCAnOgAwIBAgIUOVnxmWQ2WG7incr1MRDIJbfsEaYwDQYJKoZIhvcNAQEL
+BQAwHjEcMBoGA1UEAxMTbG9jYWwuc3dpc3N1YmFzZS5jaDAeFw0yMzA5MTIxMDE2
+MzFaFw0zMzEwMjkxMDE2MzFaMB4xHDAaBgNVBAMTE2xvY2FsLnN3aXNzdWJhc2Uu
+Y2gwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDZczf15FIz0OIUPh7x
+XRYP5QHOSwQKcSndDS2boHol7lRUfi5RVdq/AkRkxa7hb8bm8Klhw23M0SBg3h5g
+3N9SsdkfQzCWoGxtdUkz5YpAZQ+lCzEcVuVuQ3s14vwe0vTwHw3DKOz3YOXFAUyn
+x+VVBwKQ2N75TMtR5kEA85pJXbXRPt0hCpLfbGV+OZyq6s3LsYQcVZ0U3ARrvUh7
+EtDowb1eFSd2piJiHlYTVw8C0kN6xCQgKl1G4REsmhg2SfneMAvH19qqLfsjmV5P
+mNJQq7ThwMD7YSnmbU/vzq8G9YwEZ/baubkhSmsDJDVyOXOSkwl1j9fnfbu+gere
+8ZGrgb6DyjYbIL5+DchvcyS+KHBCT7KWyBKwtMi0bi3dGd+Sxyose/3FPCOtiuBL
+AOuyGTG2jUbE8drEPVzJlxhtBJraupE9EpT8D92AkjHBHVMlGk7nmp1+tLYMjXkn
+YJ1wMOMFkjj+SxwzcT8wrP16x2R/p0sQx5YCCr+pFLQ9vbECAwEAAaNBMD8wHgYD
+VR0RBBcwFYITbG9jYWwuc3dpc3N1YmFzZS5jaDAdBgNVHQ4EFgQU5zBLojL2Gehg
+ef9zqr4/Kchu608wDQYJKoZIhvcNAQELBQADggGBAG9vmLtSUinjEsz54/Y4cRrF
+11O+vYJq0+do31PTOwzgOydEtXbk8UBfrwRpWr2tF+bEe3bxBGO/eaNMSRBt0Bnw
+Pa8jrNnXB3hVg4bJxHe1sBtpaSdWfTdz+fh+JD9Q0haOrn36SN8nbFIqnewHdKjw
+ViHoExVuiY2oVWI3ghb5dkZWISym7km9T5I8TCXNDk+2goaPKNv8AkW2sgVv/TQL
+fBn0m7+rmJ0Ud2Z1DJQV6uMSqS/hNwLXn4gGjyWic/sfnQIGWBHueTRntogQyuim
+HW1EQAyP4HpAaKEk0KIqeYSyX9gECTZ6L7Olqudp9373a2GsEnwOxts7ORINf0gg
+/G+xlm5P6gSU3KrxpXk5vna2t5YWUYwtWz8+DX4vjNd1MkbP0rQd5J2mtMOum3FV
+3km/BfqVEivrbNgojgRAlenzsdj3KLmwqnnZEAtF5veH5/rkG3fvgsef3PXsn03v
+hPunySfyArC7k5O5eJlsFUEo44r5bRbtAC2SvNGHkw==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://local.swissubase.ch/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+  
+    <md:Organization>
+        <md:OrganizationName
+            xml:lang="en">FORS</md:OrganizationName>
+        <md:OrganizationDisplayName
+            xml:lang="en">FORS</md:OrganizationDisplayName>
+        <md:OrganizationURL
+            xml:lang="en">https://forscenter.ch/?lang=fr</md:OrganizationURL>
+    </md:Organization>
+<md:ContactPerson contactType="technical">
+      <md:GivenName>Valentin</md:GivenName>
+      <md:SurName>Carpov</md:SurName>
+      <md:EmailAddress>mailto:valentin.carpov@fors.unil.ch</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
