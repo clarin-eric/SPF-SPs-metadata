@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Thu Jul 18 15:28:20 UTC 2024</ReportDate>
+  <FromCommit>b5849bf45877acf422e9ce14dd315b90f59ae9e0</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://www.geant.net/uri/dataprotection-code-of-conduct/v1'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>There is no node ‘md:Extensions/mdattr:EntityAttributes/saml:Attribute[@Name='http://macedir.org/entity-category' and @NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/saml:AttributeValue/text()’, or no such node has the value 'http://refeds.org/category/research-and-scholarship'.</explanation>
+      <requirement>Completely a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing attribute(s) ‘md:SPSSODescriptor/md:AttributeConsumingService/md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']/@isRequired’. Please specify whether a SAML attribute is a must-have or like-to-have for functionality of your SP or not.</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration.</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Duplicate keys ‘//ds:X509Certificate’ found. Counted only 1 distinct keys among 2 keys.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Invalid or missing administrative contact(s) under ‘md:ContactPerson[@contactType='administrative']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://sp-dev.ilc4clarin.ilc.cnr.it/module.php/saml/sp/metadata.php/default-sp</sp>
+      <explanation>Invalid or missing support contact(s) under ‘md:ContactPerson[@contactType='support']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
+      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+  </results>
+</report>
