@@ -67,13 +67,13 @@
     <md:GivenName>Michele</md:GivenName>
     <md:SurName>Mallia</md:SurName>
     <md:EmailAddress>mailto:michele.mallia@cnr.it</md:EmailAddress>
-    <md:TelephoneNumber>xxxxxxxxxx</md:TelephoneNumber>
+    <md:TelephoneNumber>(+39)3392804180</md:TelephoneNumber>
   </md:ContactPerson>
   <md:ContactPerson contactType="administrative">
     <md:Company>Consiglio Nazionale delle Ricerche</md:Company>
-    <md:GivenName>xxxx</md:GivenName>
-    <md:SurName>xxxx</md:SurName>
-    <md:EmailAddress>mailto:xxx.xxx@cnr.it</md:EmailAddress>
-    <md:TelephoneNumber>xxxxxxxxxx</md:TelephoneNumber>
+    <md:GivenName>Michele</md:GivenName>
+    <md:SurName>Mallia</md:SurName>
+    <md:EmailAddress>mailto:michele.mallia@cnr.it</md:EmailAddress>
+    <md:TelephoneNumber>(+39)3392804180</md:TelephoneNumber>
   </md:ContactPerson>
 </md:EntityDescriptor>
