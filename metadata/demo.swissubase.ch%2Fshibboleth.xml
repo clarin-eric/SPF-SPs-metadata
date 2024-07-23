@@ -2,7 +2,7 @@
 					 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" 
 					 xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
 					 xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-					 ID="_5b1dfb6f756a87c288c79b9c57a75eabe351ec36" 
+					 ID="_0527a4b9-6cf1-4fbd-b42b-0f031c399629" 
 					 entityID="https://demo.swissubase.ch/shibboleth">
 	<md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
 		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
