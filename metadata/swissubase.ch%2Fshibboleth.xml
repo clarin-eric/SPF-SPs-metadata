@@ -1,4 +1,9 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" ID="_49afc604-5760-4598-87d8-0a1a389d22cd" entityID="https://local.swissubase.ch/shibboleth">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" 
+					 xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" 
+					 xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+					 xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+					 ID="_946a5c9e-5bbb-4c8f-87c3-9a9297258609" 
+					 entityID="https://swissubase.ch/shibboleth">
 	<md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
 		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
 		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -26,46 +31,47 @@
 	</md:Extensions>
 	<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 		<md:Extensions>
-			<idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://local.swissubase.ch/Shibboleth.sso/Login" index="1"/>
+			 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://swissubase.ch/Shibboleth.sso/Login"
+                                    index="1"/>
 			<mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-				<mdui:DisplayName xml:lang="en">SWISSUBASE - local SP</mdui:DisplayName>
-				<mdui:DisplayName xml:lang="fr">SWISSUBASE - local SP</mdui:DisplayName>
-				<mdui:DisplayName xml:lang="de">SWISSUBASE - local SP</mdui:DisplayName>
-				<mdui:Description xml:lang="en">Service provider for SWISSUBASE application on local environment</mdui:Description>
-				<mdui:Description xml:lang="fr">Fournisseur de services pour l'application SWISSUBASE en environnement local</mdui:Description>
-				<mdui:Description xml:lang="de">Dienstanbieter für die SWISSUBASE-App in der lokalen Umgebung</mdui:Description>
+				<mdui:DisplayName xml:lang="en">SWISSUBASE SP</mdui:DisplayName>
+				<mdui:DisplayName xml:lang="fr">SWISSUBASE SP</mdui:DisplayName>
+				<mdui:DisplayName xml:lang="de">SWISSUBASE SP</mdui:DisplayName>
+				<mdui:Description xml:lang="en">Service provider for SWISSUBASE application</mdui:Description>
+				<mdui:Description xml:lang="fr">Fournisseur de services pour l'application SWISSUBASE</mdui:Description>
+				<mdui:Description xml:lang="de">Dienstleister für die SWISSUBASE-Anwendung</mdui:Description>
 				<mdui:Logo height="32" width="32">https://www.swissubase.ch/favicon-32x32.png</mdui:Logo>
 			</mdui:UIInfo>
-			<init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://local.swissubase.ch/Shibboleth.sso/Login"/>
+			<init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://swissubase.ch/Shibboleth.sso/Login"/>
 		</md:Extensions>
 		<md:KeyDescriptor>
 			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-				<ds:KeyName>local.swissubase.ch</ds:KeyName>
+				<ds:KeyName>www.swissubase.ch</ds:KeyName>
 				<ds:X509Data>
-					<ds:X509SubjectName>CN=local.swissubase.ch</ds:X509SubjectName>
-					<ds:X509Certificate>MIIECzCCAnOgAwIBAgIUOVnxmWQ2WG7incr1MRDIJbfsEaYwDQYJKoZIhvcNAQEL
-BQAwHjEcMBoGA1UEAxMTbG9jYWwuc3dpc3N1YmFzZS5jaDAeFw0yMzA5MTIxMDE2
-MzFaFw0zMzEwMjkxMDE2MzFaMB4xHDAaBgNVBAMTE2xvY2FsLnN3aXNzdWJhc2Uu
-Y2gwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDZczf15FIz0OIUPh7x
-XRYP5QHOSwQKcSndDS2boHol7lRUfi5RVdq/AkRkxa7hb8bm8Klhw23M0SBg3h5g
-3N9SsdkfQzCWoGxtdUkz5YpAZQ+lCzEcVuVuQ3s14vwe0vTwHw3DKOz3YOXFAUyn
-x+VVBwKQ2N75TMtR5kEA85pJXbXRPt0hCpLfbGV+OZyq6s3LsYQcVZ0U3ARrvUh7
-EtDowb1eFSd2piJiHlYTVw8C0kN6xCQgKl1G4REsmhg2SfneMAvH19qqLfsjmV5P
-mNJQq7ThwMD7YSnmbU/vzq8G9YwEZ/baubkhSmsDJDVyOXOSkwl1j9fnfbu+gere
-8ZGrgb6DyjYbIL5+DchvcyS+KHBCT7KWyBKwtMi0bi3dGd+Sxyose/3FPCOtiuBL
-AOuyGTG2jUbE8drEPVzJlxhtBJraupE9EpT8D92AkjHBHVMlGk7nmp1+tLYMjXkn
-YJ1wMOMFkjj+SxwzcT8wrP16x2R/p0sQx5YCCr+pFLQ9vbECAwEAAaNBMD8wHgYD
-VR0RBBcwFYITbG9jYWwuc3dpc3N1YmFzZS5jaDAdBgNVHQ4EFgQU5zBLojL2Gehg
-ef9zqr4/Kchu608wDQYJKoZIhvcNAQELBQADggGBAG9vmLtSUinjEsz54/Y4cRrF
-11O+vYJq0+do31PTOwzgOydEtXbk8UBfrwRpWr2tF+bEe3bxBGO/eaNMSRBt0Bnw
-Pa8jrNnXB3hVg4bJxHe1sBtpaSdWfTdz+fh+JD9Q0haOrn36SN8nbFIqnewHdKjw
-ViHoExVuiY2oVWI3ghb5dkZWISym7km9T5I8TCXNDk+2goaPKNv8AkW2sgVv/TQL
-fBn0m7+rmJ0Ud2Z1DJQV6uMSqS/hNwLXn4gGjyWic/sfnQIGWBHueTRntogQyuim
-HW1EQAyP4HpAaKEk0KIqeYSyX9gECTZ6L7Olqudp9373a2GsEnwOxts7ORINf0gg
-/G+xlm5P6gSU3KrxpXk5vna2t5YWUYwtWz8+DX4vjNd1MkbP0rQd5J2mtMOum3FV
-3km/BfqVEivrbNgojgRAlenzsdj3KLmwqnnZEAtF5veH5/rkG3fvgsef3PXsn03v
-hPunySfyArC7k5O5eJlsFUEo44r5bRbtAC2SvNGHkw==
-</ds:X509Certificate>
+					<ds:X509SubjectName>CN=www.swissubase.ch</ds:X509SubjectName>
+					<ds:X509Certificate>MIIEBTCCAm2gAwIBAgIUZHDhWKOvBBOmutnIBBl5ouBkn84wDQYJKoZIhvcNAQEL
+BQAwHDEaMBgGA1UEAxMRd3d3LnN3aXNzdWJhc2UuY2gwHhcNMjMxMjEzMTAyNTI3
+WhcNMzQwMTI5MTAyNTI3WjAcMRowGAYDVQQDExF3d3cuc3dpc3N1YmFzZS5jaDCC
+AaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAM+lsivW80R3pjGsyyItqit8
+sEDfY2msNprr9jdoMhbZ32TQpeMUFP8PkMEEVuUhxSY8hXtzxp5yHjMteXsYgwmR
+ths4XcjlmQVURgl+r8fAlk72/kNimnoKCustSHpGNA3k53kq78484XLL49FanQ2R
+XGEK61glMDbto8PdmemO9Y+1W+4JgvZBwHh7tD37y4qRWM91r57rzO1p5Xa6COxe
+xo5YALJqUabySZFWxDS1U28PygIvttRxnYuc8ZR7HS5JeW0M1DhuvYkOphtLvYJL
+LoaVA2C1tmGQz+QJQqafuOOCbuT5/xTtXg7ZwCV/b5IbLJ0WxLfpaj77Xc9B1LzR
++qyCZ0/N2vWXBrSpi2kcIkB2QZieIkJpPgl3sNby+wqsP/3/GXSiYCEv0OhcnKUE
+ncUNrvXSR4qOXeeUyxxsCACCIYRHshGo8/jK52IadWcVPgb6bfJAgMQe/CkqnjSq
+cj8Z2XyqOIKc3oP+lIeND80+VMRDqQNOdrRZgtoDrwIDAQABoz8wPTAcBgNVHREE
+FTATghF3d3cuc3dpc3N1YmFzZS5jaDAdBgNVHQ4EFgQUAGBDjtH18ZaG8KbSyPI0
+t5E7ldcwDQYJKoZIhvcNAQELBQADggGBAIHd0ammWBSmCRsqi05k/PidLmjk40ng
+oQSDtIbPCqf3/p7oroKPmv5WRAelLNz4+LITARo+fg3SK2IDg9xEbdif+DL3VfJg
+Rd2gAFqsFXQkxMSLiqNpbnouB3Et/j3VG/ZDybPP1FgQa/CiJwzw9cQXHc37UHbQ
+AK209K2pBebieQ2Ec3A4pkLR//3c5KFOaFmFsvTcSYyB/XAxarEUSHR7YUQ5cwG+
+0prylepf5IRKyg+NfyJ+p/SCTjJLjRkf9JDDDWJdZhByjQCaKKEijmm1lW2SClP+
+rrkiFUT6oM5u2H/LCEfnG5SJpMSBN8gufr4ZgvD5qbBhLwcO+PJWXqWCwFhd62Hs
+fBhIV9lA1m+gPlwONNy6UDz3gMu413W4KCjz3bGTtDvtaIsv8rTCS+FFvc8QmCz8
+bZ0somAc1Q2KT0Wl6Uwc9Z7GLpn92IwvRKO/UVE0w5HEm1Kk20qoHzNaXHxxr8jB
+QJy8grGSDIhwQBd3Ngwx2duT8BtNySIlHA==</ds:X509Certificate>
 				</ds:X509Data>
 			</ds:KeyInfo>
 			<md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
@@ -78,11 +84,11 @@ hPunySfyArC7k5O5eJlsFUEo44r5bRbtAC2SvNGHkw==
 			<md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
 			<md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
 		</md:KeyDescriptor>
-		<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://local.swissubase.ch/Shibboleth.sso/Artifact/SOAP" index="1"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/POST" index="1"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/Artifact" index="3"/>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://local.swissubase.ch/Shibboleth.sso/SAML2/ECP" index="4"/>
+		<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://swissubase.ch/Shibboleth.sso/Artifact/SOAP" index="1"/>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://swissubase.ch/Shibboleth.sso/SAML2/POST" index="1"/>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://swissubase.ch/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://swissubase.ch/Shibboleth.sso/SAML2/Artifact" index="3"/>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://swissubase.ch/Shibboleth.sso/SAML2/ECP" index="4"/>
 		<md:AttributeConsumingService index="1">
 			<md:ServiceName xml:lang="en">SWISSUBASE</md:ServiceName>
 			<md:ServiceName xml:lang="fr">SWISSUBASE</md:ServiceName>
