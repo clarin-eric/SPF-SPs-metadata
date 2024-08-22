@@ -2036,6 +2036,8 @@ dQK3ESrADg==
           <mdui:Description xml:lang="fr">Prestataire de services pour l'application SWISSUBASE en environnement de d&#xE9;monstration</mdui:Description>
           <mdui:Description xml:lang="de">Dienstleister f&#xFC;r die SWISSUBASE-Anwendung in der Demo-Umgebung</mdui:Description>
           <mdui:Logo height="32" width="32">https://www.swissubase.ch/favicon-32x32.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-policy/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://info.swissubase.ch</mdui:InformationURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://demo.swissubase.ch/Shibboleth.sso/Login"/>
       </md:Extensions>
@@ -6402,6 +6404,8 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
           <mdui:Description xml:lang="fr">Fournisseur de services pour l'application SWISSUBASE</mdui:Description>
           <mdui:Description xml:lang="de">Dienstleister f&#xFC;r die SWISSUBASE-Anwendung</mdui:Description>
           <mdui:Logo height="32" width="32">https://www.swissubase.ch/favicon-32x32.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-policy/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://info.swissubase.ch</mdui:InformationURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://swissubase.ch/Shibboleth.sso/Login"/>
       </md:Extensions>
@@ -6775,6 +6779,8 @@ PDN6+IaHW0ymQH+2iRXEQ9cDlpd1SITYpKLOcI4vLe+RFYjE8wT5
           <mdui:Description xml:lang="fr">Fournisseur de services pour l'application SWISSUBASE en environnement de test</mdui:Description>
           <mdui:Description xml:lang="de">Dienstleister f&#xFC;r die SWISSUBASE-Anwendung in der Testumgebung</mdui:Description>
           <mdui:Logo height="32" width="32">https://www.swissubase.ch/favicon-32x32.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-policy/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://info.swissubase.ch</mdui:InformationURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://tst.swissubase.ch/Shibboleth.sso/Login"/>
       </md:Extensions>
