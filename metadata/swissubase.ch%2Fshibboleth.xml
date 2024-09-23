@@ -42,7 +42,7 @@
 				<mdui:Description xml:lang="fr">Fournisseur de services pour l'application SWISSUBASE</mdui:Description>
 				<mdui:Description xml:lang="de">Dienstleister für die SWISSUBASE-Anwendung</mdui:Description>
 				<mdui:Logo height="32" width="32">https://www.swissubase.ch/favicon-32x32.png</mdui:Logo>
-				<mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-policy/</mdui:PrivacyStatementURL>
+				<mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-notice/</mdui:PrivacyStatementURL>
 				<mdui:InformationURL xml:lang="en">https://info.swissubase.ch</mdui:InformationURL>
 			</mdui:UIInfo>
 			<init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://swissubase.ch/Shibboleth.sso/Login"/>
