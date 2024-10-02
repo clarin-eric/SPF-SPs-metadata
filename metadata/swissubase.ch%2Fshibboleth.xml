@@ -3,7 +3,7 @@
 					 xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
 					 xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
 					 ID="_946a5c9e-5bbb-4c8f-87c3-9a9297258609" 
-					 entityID="https://swissubase.ch/shibboleth">
+					 entityID="https://www.swissubase.ch/shibboleth">
 	<md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
 		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
 		<alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
