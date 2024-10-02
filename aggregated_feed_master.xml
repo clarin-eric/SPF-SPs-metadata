@@ -6407,7 +6407,7 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
           <mdui:PrivacyStatementURL xml:lang="en">https://info.swissubase.ch/privacy-notice/</mdui:PrivacyStatementURL>
           <mdui:InformationURL xml:lang="en">https://info.swissubase.ch</mdui:InformationURL>
         </mdui:UIInfo>
-        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://swissubase.ch/Shibboleth.sso/Login"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.swissubase.ch/Shibboleth.sso/Login"/>
       </md:Extensions>
       <md:KeyDescriptor>
         <ds:KeyInfo>
@@ -6448,11 +6448,11 @@ QJy8grGSDIhwQBd3Ngwx2duT8BtNySIlHA==</ds:X509Certificate>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
-      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://swissubase.ch/Shibboleth.sso/Artifact/SOAP" index="1"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://swissubase.ch/Shibboleth.sso/SAML2/POST" index="1"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://swissubase.ch/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://swissubase.ch/Shibboleth.sso/SAML2/Artifact" index="3"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://swissubase.ch/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.swissubase.ch/Shibboleth.sso/Artifact/SOAP" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.swissubase.ch/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.swissubase.ch/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.swissubase.ch/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.swissubase.ch/Shibboleth.sso/SAML2/ECP" index="4"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">SWISSUBASE</md:ServiceName>
         <md:ServiceName xml:lang="fr">SWISSUBASE</md:ServiceName>
