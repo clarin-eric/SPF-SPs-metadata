@@ -134,8 +134,8 @@
       <md:OrganizationName xml:lang="de">SfS, Universität Tübingen</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="en">SfS, University of Tübingen</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="de">SfS, Universität Tübingen</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://www.sfs.uni-tuebingen.de/en/</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="de">http://www.sfs.uni-tuebingen.de/de/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://uni-tuebingen.de/en/133894</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">https://uni-tuebingen.de/de/133894</md:OrganizationURL>
    </md:Organization>
    <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
