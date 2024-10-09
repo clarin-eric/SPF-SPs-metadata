@@ -4710,8 +4710,60 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
         <ds:KeyInfo>
           <ds:KeyName>secure.huygens.knaw.nl</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=secure.huygens.knaw.nl,C=NL,ST=ZH,L=Den Haag,O=KNAW,OU=Huygens ING,emailAddress=sso@huygens.knaw.nl</ds:X509SubjectName>
-            <ds:X509Certificate>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 </ds:X509Certificate>
+            <ds:X509SubjectName>CN=secure.huygens.knaw.nl</ds:X509SubjectName>
+            <ds:X509Certificate>MIIJ3jCCBcYCCQDvRqo3eC8lYzANBgkqhkiG9w0BAQsFADCBsDELMAkGA1UEBhMC
+                  TkwxFjAUBgNVBAgMDU5vb3JkLUhvbGxhbmQxEjAQBgNVBAcMCUFtc3RlcmRhbTEN
+                  MAsGA1UECgwES05BVzEPMA0GA1UECwwGSHVDLURJMR8wHQYDVQQDDBZzZWN1cmUu
+                  aHV5Z2Vucy5rbmF3Lm5sMTQwMgYJKoZIhvcNAQkBFiVjb25jZXJuLWluZnJhc3Ry
+                  dWN0dXJlQGRpLmh1Yy5rbmF3Lm5sMB4XDTI0MTAwMTEzMjgzMVoXDTI3MTAwNjEz
+                  MjgzMVowgbAxCzAJBgNVBAYTAk5MMRYwFAYDVQQIDA1Ob29yZC1Ib2xsYW5kMRIw
+                  EAYDVQQHDAlBbXN0ZXJkYW0xDTALBgNVBAoMBEtOQVcxDzANBgNVBAsMBkh1Qy1E
+                  STEfMB0GA1UEAwwWc2VjdXJlLmh1eWdlbnMua25hdy5ubDE0MDIGCSqGSIb3DQEJ
+                  ARYlY29uY2Vybi1pbmZyYXN0cnVjdHVyZUBkaS5odWMua25hdy5ubDCCBCIwDQYJ
+                  KoZIhvcNAQEBBQADggQPADCCBAoCggQBANt4U4l1xm+kudNFFOs93865TPj7f6wr
+                  pjztqYRNwmBz2okG2MQHBvRcAxNrBjqDFxi4DHvwg7knyN4R/t812uosfr5bbznM
+                  mTFNPQCzP2NjKSCFbtBWUkISlrgr52UmTFC+DdyJT6dQsjEbZCkzhLLz0tIeQLAt
+                  1HiLi6dh7cBtMcHMxhdkZcuy7Pc3IBwHJPSixvoTNvJb1hy9a89tr7aGJkKzHqZQ
+                  9esMbTtNB5tMb+7jOMNp3I7hE0pAYoDeZopR+kZTrYyj8jNRBmMKz5c+5qf+Wlm3
+                  dJG2pmdPLOjpYK4Fc617PdFCCWk6SvusWCm0p9mAD/rMwoj/s5YR7LZCgiFJnpdX
+                  htBqcPR/npqOhL9ktRpsAVcl7urE8OYwqvw6jcYsnw6hhGnK2bATePg8qtNJC2c2
+                  TG0j98LOaNRhsYZlt48zFV2VOoTr9y0AymddeV1L1VN4lzLEwtupSFGQWWKg2a4V
+                  9AQe2zYUtaFh4Ji2RSVLKzuZVaFKQJxT7qM/BN/If6lZpS42gtUF5L862y0IHo6S
+                  XViGwbWi/vrGbxTt2hwV1EIJFNcQAy6vLGXu5vXXg50QJ+mlsJDITxrUgHowWVnV
+                  AYTHWpU0LAgNj5A9ESvV4jgUM0ONhYZ7ok4GYZuybi/K48RxxbV49uw1YPLM0ELH
+                  KAlyLnNVvGVETXFa2ZYhjc4k7PHRgosnEIDR2yI+uKotxNVvpFap6O3VdteMaLY2
+                  hgU3Uo5Wich10mKbRBgbdDPE7CY12pXfmbvC88uwKVF7eY5Jt6sF79zusnJdpjDc
+                  D0Cdqw5/QbwOIZ2m2a7ukE44G2tqIQNvPj4q+0ii9fnEw/y0bfKchoJSfgS8O7CA
+                  HSeAcBTNjmpxTY3bVr3a3oYdtdgbnzDNkq/g4BRmQZ5U/lcq5HPqekWPjOleXViE
+                  5paHUPJEI6PnFu/QO0jdmG73ByMQNv/YF5dYd3NeqLTdNFg1ALVvyKhcHs+hPM/g
+                  eBeEUf4pHFsMJrcwqTeIoAzq6HCYxyQupVSWDup+i5AgmgHqBvPxVBXVbp+UCBCs
+                  zoHmSMEKqUkAWN4Vm4bwuAgAXF0n0zfkzLJ6tpPDdrXxgKaxbMqVzzkCl1LxGzwO
+                  gd4BzVJi1AIcuqEZ95MnnL1eAXbZm7HdoRPTyXmXoqB99lSmZco/CwbZLG9KdHYZ
+                  4Qdr/qtdcbzWRKymjCJGmUApNH5s799kNF6ebcvzV1xCl6ZZe8CKRJujADzLNRMu
+                  aii7Cojlhi44bLF11hzYotyZBz8YlYaGOlFTedCAVyKwE8m0j/YX+EN7CDqRxm5O
+                  sn8tWPOEHPNiMxtC+5njMESmsy3qfPhX6u9PSsN7O98vFqjCxgrBN8ECAwEAATAN
+                  BgkqhkiG9w0BAQsFAAOCBAEAqBLmuB5On6fd8nMXQI3NRQ1GqE9r8/lknzrcxRmb
+                  VtGCPocWLXDtz4HnH2vNVYSOdJJQ9eiMwbW+/ZV7h+ogm5jTjCF8Or9qL7YEgrAZ
+                  f+rstb2V2JzR69ZvW5V9d/ZrReSr9KD7O/ddI575nbiKYheK8S4hQIcjY4tzYzFQ
+                  ieUYsE2Um6/wX6WK8quvigIUrLqwG/XtMDOArfN1WMSiq/9nziZv2OQU2DLSmRXw
+                  ehYj2SbMcPuYtJYxJf2SnGdj21Lj+AGMBbQqEn7OXq+VNlIcDTWkPXX02sMziHER
+                  EaCCxvEy6uMSMeoPt6IQItfDn1uZ9xOa7ustqGhoxhkqAfs1r71hgFAFq0Drem5y
+                  S2LFnCs/Z7PnmbQ4Q2ribTuALawuWFYhF1Qs/l1mX7neAD3JOkyo/o7nu61b/LPI
+                  ir/6rk44H6QKumz1LPPEqZqM8UJL2gkY1cMDmrnxiS0+frbkY7oz1q7csidC9LZr
+                  i0pUhfCPqKxG0YPioGM1QPAWqSUKIb8HLxiN++AluqW6FNTidLUzPVpyJWD0uGuE
+                  7tzTIesfKh0+fu8QkDxI1bz14KqsmSb7s3rG/1gwatSXqE9u97QGKQ9Ugfg5OWrx
+                  16ByMDBhAJD8I6pMNqrM8nFeTGLqV8KY2o12zlX3BwEDdobvpOzP9mUmfoiKGdlk
+                  y6XD1eTq7dN5J7H0CFtyxz0xXcuaEOpQmKam/0bpni2X7Y4Yg16UIbANCEP2u//G
+                  70HhzGkz+hnW+FkApKP7KLU4CTclIh5w99Odu0J5patQm2zLRySd0ihFAZWcRQf6
+                  uDbtmIMBKKdaE9yMWpNxlrDFntTfbgLT/z4UArYolHgPRqEFMsKSeXttTZBkkqZO
+                  n9rJhECiPsyabTr+CvOg2JfZ1lve09fZmwY4US/EmLEaaOmtSqlerf/eBIFFA8PM
+                  AGsX+1IOy7vKJtE0Ne+iTNct0m8bxVMNJs5b5vl+RhceD4TUl5RR4VbMHdCy571D
+                  F+10Pcmc5nKt++zG5ahMdSV7QXmcu2OH1DgWybEKDZS8gZpiO8EWLlDHIqIxZF1X
+                  qExbu/J/qXdTCfawv2UYrgt6PsPrQsgRytnyeWLXEHQ4VdKUSTYJiHNSH6Dk7yft
+                  Ns0yJMT15dAGprBePGAUsnfEGgA6hMa3KikQHIBXuOvz1bBxgSwOlDkcLrJnd9Au
+                  ElmRbB/xv0CFnpKAeSTXj1trOGxLMhDMW9/H50N9+oHm5CraN/TyGQyLbx5RVWXA
+                  PiNE+vle5NETsxBRlvxmQ5yyIpj1QwZ97Y7jRoDJh9kyXAp1ucOvaAgyjJHbhdy4
+                  9mbs67xAKkfipvGq++r8g671/whMsMcFYqeZ1GnSdI6m5g==</ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
       </md:KeyDescriptor>
@@ -4741,12 +4793,12 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
     <md:ContactPerson contactType="technical">
       <md:GivenName>Support</md:GivenName>
       <md:SurName>Huygens ING (KNAW)</md:SurName>
-      <md:EmailAddress>mailto:sso@huygens.knaw.nl</md:EmailAddress>
+      <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
       <md:GivenName>Support</md:GivenName>
       <md:SurName>Huygens ING (KNAW)</md:SurName>
-      <md:EmailAddress>mailto:sso@huygens.knaw.nl</md:EmailAddress>
+      <md:EmailAddress>mailto:concern-infrastructure@di.huc.knaw.nl</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor ID="_3d1ecacb2c185bc44e49178b381130e6bb0d052d" entityID="https://shibboleth.bbaw.de/shibboleth">
@@ -6984,8 +7036,8 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
       <md:OrganizationName xml:lang="de">SfS, Universit&#xE4;t T&#xFC;bingen</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="en">SfS, University of T&#xFC;bingen</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="de">SfS, Universit&#xE4;t T&#xFC;bingen</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://www.sfs.uni-tuebingen.de/en/</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="de">http://www.sfs.uni-tuebingen.de/de/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://uni-tuebingen.de/en/133894</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">https://uni-tuebingen.de/de/133894</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
@@ -7162,8 +7214,8 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
       <md:OrganizationName xml:lang="de">SfS, Universit&#xE4;t T&#xFC;bingen</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="en">SfS, University of T&#xFC;bingen</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="de">SfS, Universit&#xE4;t T&#xFC;bingen</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://www.sfs.uni-tuebingen.de/en/</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="de">http://www.sfs.uni-tuebingen.de/de/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://uni-tuebingen.de/en/133894</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">https://uni-tuebingen.de/de/133894</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
