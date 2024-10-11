@@ -54,8 +54,8 @@
             <mdui:Description xml:lang="de">Hosting Dienst für Forschungsdaten des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW).</mdui:Description>
             <mdui:InformationURL xml:lang="en">http://acdh.oeaw.ac.at/</mdui:InformationURL>
             <mdui:InformationURL xml:lang="de">http://acdh.oeaw.ac.at/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy</mdui:PrivacyStatementURL>
-            <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/acdh_repo/icons/acdh_logo120h.png</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy-policy</mdui:PrivacyStatementURL>
+            <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/contrib/arche-theme-bs/images/logos/arche_transparent_header.png</mdui:Logo>
          </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
