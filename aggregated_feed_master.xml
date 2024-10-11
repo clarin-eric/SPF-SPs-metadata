@@ -65,8 +65,8 @@
           <mdui:Description xml:lang="de">Verschiedene Dienste des &#xF6;sterreichischen Zentrums f&#xFC;r Digitale Geisteswissenschaften der &#xD6;sterreichischen Akademie der Wissenschaften (ACDH-&#xD6;AW) (prim&#xE4;r im Rahmen der CLARIN-Initiative).</mdui:Description>
           <mdui:InformationURL xml:lang="en">https://www.oeaw.ac.at/acdh/tools/</mdui:InformationURL>
           <mdui:InformationURL xml:lang="de">https://www.oeaw.ac.at/acdh/tools/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy</mdui:PrivacyStatementURL>
-          <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/acdh_repo/icons/acdh_logo120h.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy-policy</mdui:PrivacyStatementURL>
+          <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/contrib/arche-theme-bs/images/logos/arche_transparent_header.png</mdui:Logo>
         </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
@@ -204,8 +204,8 @@ qlzByeJz468j8MMfalTTBXJbT8HQei4f+Q5A+/MPV9DydfOVvTNRXbKp/KwDYmrA
           <mdui:Description xml:lang="de">Hosting Dienst f&#xFC;r Forschungsdaten des &#xF6;sterreichischen Zentrums f&#xFC;r Digitale Geisteswissenschaften der &#xD6;sterreichischen Akademie der Wissenschaften (ACDH-&#xD6;AW).</mdui:Description>
           <mdui:InformationURL xml:lang="en">http://acdh.oeaw.ac.at/</mdui:InformationURL>
           <mdui:InformationURL xml:lang="de">http://acdh.oeaw.ac.at/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy</mdui:PrivacyStatementURL>
-          <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/acdh_repo/icons/acdh_logo120h.png</mdui:Logo>
+          <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy-policy</mdui:PrivacyStatementURL>
+          <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/contrib/arche-theme-bs/images/logos/arche_transparent_header.png</mdui:Logo>
         </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
