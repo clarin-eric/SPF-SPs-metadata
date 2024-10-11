@@ -39,13 +39,11 @@
             <mdui:Description xml:lang="de">Das Hamburger Zentrum für Sprachkorpora bietet einen Zugang zum HZSK Repository</mdui:Description>
             <mdui:Description xml:lang="en">The Hamburg Centre for Language Corpora (HZSK) provides access to the HZSK Repository</mdui:Description>
             <mdui:Description xml:lang="fi">Hampurin korpuskeskus (HZSK) tarjoaa pääsyä HZSK-arkistoon</mdui:Description>
-            <mdui:InformationURL xml:lang="de">https://corpora.uni-hamburg.de</mdui:InformationURL>
-            <mdui:InformationURL xml:lang="en">https://corpora.uni-hamburg.de</mdui:InformationURL>
-            <mdui:Logo height="68" width="453">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo.png</mdui:Logo>
-            <mdui:Logo height="23" width="153">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-mittel.png</mdui:Logo>
-            <mdui:Logo height="15" width="35">https://corpora.uni-hamburg.de/drupal/sites/default/files/hzsk-logo-klein.png</mdui:Logo>
-            <mdui:PrivacyStatementURL xml:lang="de">https://corpora.uni-hamburg.de/drupal/de/datenschutz</mdui:PrivacyStatementURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://corpora.uni-hamburg.de/drupal/en/privacy-policy</mdui:PrivacyStatementURL>
+            <mdui:InformationURL xml:lang="de">https://www.slm.uni-hamburg.de/hzsk.html</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://www.slm.uni-hamburg.de/hzsk.html</mdui:InformationURL>
+            <mdui:Logo height="211" width="375">https://assets.rrz.uni-hamburg.de/instance_assets/fakgw/20882824/hzsk-teaser-549f29048d93eac745ce96f3f1ad6879c2695b67.png</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="de">https://www.slm.uni-hamburg.de/datenschutz.html</mdui:PrivacyStatementURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://www.slm.uni-hamburg.de/en/datenschutz.html</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                 Location="https://corpora.uni-hamburg.de/Shibboleth.sso/Login"/>
@@ -146,18 +144,18 @@
       <md:OrganizationName xml:lang="en">Hamburg Centre for Language Corpora (HZSK)</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="de">Hamburger Zentrum für Sprachkorpora (HZSK)</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="en">Hamburg Centre for Language Corpora (HZSK)</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="de">http://corpora.uni-hamburg.de</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="en">http://corpora.uni-hamburg.de</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">https://www.slm.uni-hamburg.de/hzsk.html</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://www.slm.uni-hamburg.de/hzsk.html</md:OrganizationURL>
    </md:Organization>
    <md:ContactPerson contactType="technical">
-      <md:GivenName>Juliane</md:GivenName>
-      <md:SurName>Schopf</md:SurName>
-      <md:EmailAddress>mailto:juliane.schopf@uni-hamburg.de</md:EmailAddress>
+      <md:GivenName>Marcel</md:GivenName>
+      <md:SurName>Fladrich</md:SurName>
+      <md:EmailAddress>mailto:corpora@uni-hamburg.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="administrative">
-      <md:GivenName>Juliane</md:GivenName>
-      <md:SurName>Schopf</md:SurName>
-      <md:EmailAddress>mailto:juliane.schopf@uni-hamburg.de</md:EmailAddress>
+      <md:GivenName>Kristin</md:GivenName>
+      <md:SurName>Bührig</md:SurName>
+      <md:EmailAddress>mailto:corpora@uni-hamburg.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>HZSK</md:GivenName>
