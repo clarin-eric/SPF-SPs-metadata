@@ -960,13 +960,13 @@ gZaJdSIft/9WMYuxQUTKHJohjxcqwTZMFhGBaZ/1
       <md:Extensions>
         <mdui:UIInfo>
           <mdui:DisplayName xml:lang="en">HiTZ / CLARIAH-ES Repository</mdui:DisplayName>
-          <mdui:Description xml:lang="en">Various services provided by HiTZ Center (University of the Basque Country, UPV/EHU) in the context of the CLARIAH-ES initiative.</mdui:Description>
+          <mdui:Description xml:lang="en">Various services provided by the HiTZ Center (UPV/EHU) in the context of CLARIAH-ES.</mdui:Description>
           <mdui:DisplayName xml:lang="eu">HiTZ / CLARIAH-ES</mdui:DisplayName>
-          <mdui:Description xml:lang="eu">HiTZ Zentroak (Euskal Herriko Unibertsitatea, UPV/EHU), CLARIAH-ES ekimenaren esparruan eskaintzen dituen hainbat zerbitzu.</mdui:Description>
+          <mdui:Description xml:lang="eu">HiTZ Zentroak (UPV/EHU), CLARIAH-ES esparruan eskaintzen dituen hainbat zerbitzu.</mdui:Description>
           <mdui:DisplayName xml:lang="es">HiTZ / CLARIAH-ES</mdui:DisplayName>
-          <mdui:Description xml:lang="es">Diversos servicios prestados por el Centro HiTZ (Universidad del Pa&#xED;s Vasco, UPV/EHU) en el contexto de la iniciativa CLARIAH-ES.</mdui:Description>
+          <mdui:Description xml:lang="es">Diversos servicios prestados por el Centro HiTZ (UPV/EHU) en el contexto de CLARIAH-ES.</mdui:Description>
           <mdui:DisplayName xml:lang="fr">HiTZ / CLARIAH-ES</mdui:DisplayName>
-          <mdui:Description xml:lang="fr">Divers services fournis par le Centre HiTZ (Universit&#xE9; du Pays Basque, UPV/EHU) dans le cadre de l'initiative CLARIAH-ES.</mdui:Description>
+          <mdui:Description xml:lang="fr">Divers services fournis par le Centre HiTZ (UPV/EHU) dans le cadre de CLARIAH-ES.</mdui:Description>
           <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
           <mdui:Logo height="220" width="195">https://clariah.hitz.eus/assets/images/logoa.png</mdui:Logo>
           <mdui:Keywords xml:lang="en">HiTZ CLARIAH-ES Repository Services</mdui:Keywords>
