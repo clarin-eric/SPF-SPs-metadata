@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Tue Jul 30 14:02:57 UTC 2024</ReportDate>
-  <FromCommit>6bc14809534ede171de1da37f0ca9a241ec4ae7d</FromCommit>
+  <ReportDate>Mon Nov 11 11:04:29 UTC 2024</ReportDate>
+  <FromCommit>1b8556badcdca1c1bc10a163aa4ca859193f376d</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -201,6 +201,11 @@
     <result>
       <sp>https://asvsp.informatik.uni-leipzig.de/</sp>
       <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘0’) length (= 0) &lt; 5 or &gt; 33, or description (= ‘’) length (= ) &lt; 20 or &gt; 100.</explanation>
+      <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>https://clariah.hitz.eus/shibboleth</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘HiTZ / CLARIAH-ES Repository’) length (= 28) &lt; 5 or &gt; 33, or description (= ‘Various services provided by HiTZ Center (University of the Basque Country, UPV/EHU) in the context of the CLARIAH-ES initiative.’) length (= 129) &lt; 20 or &gt; 100.</explanation>
       <requirement>Partially a requirement for DFN-AAI registration. Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
     <result>
