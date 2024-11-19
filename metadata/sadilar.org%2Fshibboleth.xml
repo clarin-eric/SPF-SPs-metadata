@@ -13,7 +13,7 @@ Then added namespace as requested by CLARIN
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-	entityID="https://repo.sadilar.org/shibboleth">
+	entityID="https://repo.sadilar.org/Shibboleth.sso/Metadata">
     <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
         <mdattr:EntityAttributes>
             <saml:Attribute Name="http://macedir.org/entity-category"
@@ -216,12 +216,13 @@ ab5T7Kvyt1YSGYAyVPdb4UJpJFwPtD5ePixiN5egQr1c6gymZ41zdFibkVM=
     -->
     <md:Organization>
         <md:OrganizationName xml:lang="en">South African Centre for Digital Language Resources</md:OrganizationName><!-- Legal Name -->
+	<md:OrganizationName xml:lang="af">Suid-Afrikaanse sentrum vir digitale taalhulpbronne</md:OrganizationName><!-- Legal Name -->
         <md:OrganizationDisplayName xml:lang="en">SADiLaR</md:OrganizationDisplayName>
         <md:OrganizationURL xml:lang="en">https://www.sadilar.org/</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
-        <md:GivenName>Martin</md:GivenName>
-	<md:SurName>Hennelly</md:SurName>
+        <md:GivenName>Friedel</md:GivenName>
+	<md:SurName>Wolff</md:SurName>
         <md:EmailAddress>mailto:support@sadilar.org</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">

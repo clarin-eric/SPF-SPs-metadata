@@ -20,10 +20,9 @@
                 <mdui:Description xml:lang="fr">Plate-forme d'outils et de ressources linguistiques pour un traitement optimisé de la langue française</mdui:Description>
                 <mdui:Description xml:lang="de">Plattform für sprachliche Werkzeuge und Ressourcen zur optimierten Verarbeitung der französischen Sprache</mdui:Description>
                 <mdui:Description xml:lang="fi">Kielellisten työkalujen ja resurssien foorumi ranskan kielen optimoidulle käsittelylle</mdui:Description>
-                <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/information/presentation?lang=en</mdui:InformationURL>
-                <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/information/presentation</mdui:InformationURL>
-                <mdui:PrivacyStatementURL xml:lang="en">https://ortolangdoc.atilf.fr/en/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="fr">https://ortolangdoc.atilf.fr/accueil/politique-de-confidentialite/</mdui:PrivacyStatementURL>
+                <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/en/home/about/</mdui:InformationURL>
+                <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/fr/accueil/ortolang/</mdui:InformationURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://www.ortolang.fr/en/privacypolicy/</mdui:PrivacyStatementURL>
                 <mdui:Logo width="16" height="16">https://www.ortolang.fr/assets/icons/favicon-16x16.png</mdui:Logo>
                 <mdui:Logo width="60" height="60">https://www.ortolang.fr/assets/icons/apple-touch-icon-60x60.png</mdui:Logo>
             </mdui:UIInfo>

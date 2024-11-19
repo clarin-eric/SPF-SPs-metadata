@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor
-   xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
@@ -12,89 +11,51 @@
    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   entityID="https://sp.mpi.nl">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="https://sp.mpi.nl">
    <md:Extensions>
       <mdattr:EntityAttributes>
-         <saml:Attribute
-            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-            Name="http://macedir.org/entity-category">
+         <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="http://macedir.org/entity-category">
             <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
          </saml:Attribute>
-         <saml:Attribute
-            Name="http://macedir.org/entity-category"
-            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
          </saml:Attribute>
-         <saml:Attribute
-            Name="http://macedir.org/entity-category"
-            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
          </saml:Attribute>
       </mdattr:EntityAttributes>
    </md:Extensions>
-   <md:SPSSODescriptor
-      protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <md:Extensions>
          <mdui:UIInfo>
-            <mdui:DisplayName
-               xml:lang="en">MPI for Psycholinguistics</mdui:DisplayName>
-            <mdui:DisplayName
-               xml:lang="nl">MPI voor Psycholinguïstiek</mdui:DisplayName>
-            <mdui:DisplayName
-               xml:lang="de">MPI für Psycholinguistik</mdui:DisplayName>
-            <mdui:DisplayName
-               xml:lang="fi">MPI Psykolingvistiikan</mdui:DisplayName>
-            <mdui:Description
-               xml:lang="en">Service Provider for Data and Services hosted at the Max Planck
+            <mdui:DisplayName xml:lang="en">MPI for Psycholinguistics</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="nl">MPI voor Psycholinguïstiek</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">MPI für Psycholinguistik</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="fi">MPI Psykolingvistiikan</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Service Provider for Data and Services hosted at the Max Planck
                Institute for Psycholinguistics</mdui:Description>
-            <mdui:Description
-               xml:lang="nl">Service Provider voor Data en Diensten gehost bij het Max Planck
+            <mdui:Description xml:lang="nl">Service Provider voor Data en Diensten gehost bij het Max Planck
                Instituut voor Psycholinguïstiek</mdui:Description>
-            <mdui:Description
-               xml:lang="de">Service Provider für Daten und Dienstleistungen am Max-Planck-Institut
+            <mdui:Description xml:lang="de">Service Provider für Daten und Dienstleistungen am Max-Planck-Institut
                für Psycholinguistik</mdui:Description>
-            <mdui:Description
-               xml:lang="fi">Palveluntarjoaja tietoja ja palveluista, jotka isännöi Max Planck
+            <mdui:Description xml:lang="fi">Palveluntarjoaja tietoja ja palveluista, jotka isännöi Max Planck
                Instituutti Psykolingvistiikan</mdui:Description>
-            <mdui:Keywords
-               xml:lang="en">Max+Planck+Institute Psycholinguistics Language Research Data
+            <mdui:Keywords xml:lang="en">Max+Planck+Institute Psycholinguistics Language Research Data
                Services</mdui:Keywords>
-            <mdui:Keywords
-               xml:lang="nl">Max+Planck+Instituut Psycholinguïstiek Taal Onderzoeksdata
+            <mdui:Keywords xml:lang="nl">Max+Planck+Instituut Psycholinguïstiek Taal Onderzoeksdata
                Diensten</mdui:Keywords>
-            <mdui:Keywords
-               xml:lang="de">Max-Planck-Institut Psycholinguistik Sprache Forschungsdaten
+            <mdui:Keywords xml:lang="de">Max-Planck-Institut Psycholinguistik Sprache Forschungsdaten
                Dienstleistungen</mdui:Keywords>
-            <mdui:Keywords
-               xml:lang="fi">Max+Planck+Instituutti Psykolingvistiikan Kieli Tutkimustiedot
+            <mdui:Keywords xml:lang="fi">Max+Planck+Instituutti Psykolingvistiikan Kieli Tutkimustiedot
                Palvelut</mdui:Keywords>
-            <mdui:Logo
-               height="495"
-               width="500">https://sp.mpi.nl/gif/mpg-logo-500.png</mdui:Logo>
-            <mdui:Logo
-               height="89"
-               width="90">https://sp.mpi.nl/gif/mpg-logo-90.png</mdui:Logo>
-            <mdui:InformationURL
-               xml:lang="en">http://www.mpi.nl</mdui:InformationURL>
-            <mdui:PrivacyStatementURL
-               xml:lang="en">https://sp.mpi.nl/privacy/privacy_statement.html</mdui:PrivacyStatementURL>
+            <mdui:Logo height="495" width="500">https://sp.mpi.nl/gif/mpg-logo-500.png</mdui:Logo>
+            <mdui:Logo height="89" width="90">https://sp.mpi.nl/gif/mpg-logo-90.png</mdui:Logo>
+            <mdui:InformationURL xml:lang="en">http://www.mpi.nl</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://sp.mpi.nl/privacy/privacy_statement.html</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
-         <init:RequestInitiator
-            Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-            Location="https://sp.mpi.nl/Shibboleth.sso/Login"/>
-         <idpdisc:DiscoveryResponse
-            index="1"
-            Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-            Location="https://sp.mpi.nl/Shibboleth.sso/Login"/>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.mpi.nl/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse index="1" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.mpi.nl/Shibboleth.sso/Login"/>
       </md:Extensions>
-      <md:KeyDescriptor>
-         <ds:KeyInfo>
-            <ds:X509Data>
-               <ds:X509Certificate>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</ds:X509Certificate>
-            </ds:X509Data>
-         </ds:KeyInfo>
-      </md:KeyDescriptor>
       <md:KeyDescriptor>
          <ds:KeyInfo>
             <ds:X509Data>
@@ -141,126 +102,97 @@
             </ds:X509Data>
          </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
-      <md:SingleLogoutService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
-      <md:SingleLogoutService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SLO/POST"/>
-      <md:SingleLogoutService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
-      <md:ManageNameIDService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-         Location="https://sp.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
-      <md:ManageNameIDService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-         Location="https://sp.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
-      <md:ManageNameIDService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-         Location="https://sp.mpi.nl/Shibboleth.sso/NIM/POST"/>
-      <md:ManageNameIDService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-         Location="https://sp.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/POST"
-         index="1"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
-         index="2"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/Artifact"
-         index="3"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/ECP"
-         index="4"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML/POST"
-         index="5"/>
-      <md:AssertionConsumerService
-         Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-         Location="https://sp.mpi.nl/Shibboleth.sso/SAML/Artifact"
-         index="6"/>
-      <md:AttributeConsumingService
-         index="1">
-         <md:ServiceName
-            xml:lang="en">Max Planck Institute for Psycholinguistics Data and
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIGIzCCBAugAwIBAgIUbvZmxtxpkZZ267J1O1hbEJnq+O4wDQYJKoZIhvcNAQEL
+                  BQAwgaAxCzAJBgNVBAYTAk5MMRMwEQYDVQQIDApHZWxkZXJsYW5kMREwDwYDVQQH
+                  DAhOaWptZWdlbjEgMB4GA1UECgwXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQxMzAx
+                  BgNVBAsMKk1heCBQbGFuY2sgSW5zdGl0dXRlIGZvciBQc3ljaG9saW5ndWlzdGlj
+                  czESMBAGA1UEAwwJc3AubXBpLm5sMB4XDTI0MDEwNTA5MjY1NVoXDTI5MDEwMjA5
+                  MjY1NVowgaAxCzAJBgNVBAYTAk5MMRMwEQYDVQQIDApHZWxkZXJsYW5kMREwDwYD
+                  VQQHDAhOaWptZWdlbjEgMB4GA1UECgwXTWF4LVBsYW5jay1HZXNlbGxzY2hhZnQx
+                  MzAxBgNVBAsMKk1heCBQbGFuY2sgSW5zdGl0dXRlIGZvciBQc3ljaG9saW5ndWlz
+                  dGljczESMBAGA1UEAwwJc3AubXBpLm5sMIICIjANBgkqhkiG9w0BAQEFAAOCAg8A
+                  MIICCgKCAgEAuHzZw1JNqqfca9gPTDLiV8INJdxNXhulmyqo/bmV6gtc3CVLyrv6
+                  1eGI76A0tHJ69kLhy0+TdBrkiYZ02UrbWBQjhigES2PQsSLS/hFcTfpiVSXJnLky
+                  yaV9UHpx3Dd+nQYuc2zBrqdv/OiH+P0pP8xLaHCc0EnHrRzZTVs/0kppu3pKgmZH
+                  EVAMQ1GVZ1NInepE7QmfFC7AA5Nu3xnt68I31kGXjFQeF2fxVfIrQ3uff3cGDt+U
+                  BOAzpjQjKSFLYcmDLOlpiqe4cbOLMhvA9S5oO6EetO1dRUgdEvIqn+I9DBHw/c4x
+                  PKfNX964xqVJ8k3hHYwKDYQy23u3qP6t7FBz7+YCmMRbmKJf0R4t7spRK6P5Hajd
+                  iiCMGZHhEHaiFxSqTKgHZwJPzmTaFiNGwg6zCH6mIZa9vlhFC0TLpecrBcybSPju
+                  yNHz8XtWmBcTb2L5Vg2nEU6ifmnQJKQG95XnWEvIKYn2ywc+4caTmZ2oY+M9KE+E
+                  jB6v6BFiTWInUmjlweclFF1FvXR+o9RP/T6H/RVN3kBFqFagvMbL6znDHNo447qf
+                  5gnvCyGH1lLjE6AnJarUcPh5Psj4p0rdQHXeP1Qpi6+/8fa3ZQn4iC1y3XEuCIl8
+                  UiPB4/zX8lRw2abkrLTXmgJ6hwhoPElIppKZMo0GZGdv8Fdqpkbvl/UCAwEAAaNT
+                  MFEwHQYDVR0OBBYEFDva/xd2Z6ti/deny5tpkJC6OhpLMB8GA1UdIwQYMBaAFDva
+                  /xd2Z6ti/deny5tpkJC6OhpLMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL
+                  BQADggIBAB3EnaAiNLCVdkJBRCO53g+XAZ1ic3oQtMIf+d0zsrkTC255muFQgVcO
+                  unWa4kQx6VhboT03+MEIuIEMg+RtWVKOckH9mL0Fz7zzcpTFH0wwRMHz5BN5cdk3
+                  KKbxDq7I0EYrLwE9ckERsD50Y5y30l145Oe++NaokpHEVdxo0UVfq1uw/AWF7MB/
+                  dW4IpYeu1OdU7TFtCSVrBgS4pcBw5dG0WJegWPMIPF3M//nGrZjHmOYn3CfcR5MO
+                  K19+Vil//dBrBbSpiyYWijVaJXYTTnUC1UMtX0RI4oEAaDb0+ZcTlemUiGh0bM0X
+                  0y6Vj8KmIJ3QpBWvLPCan+n2ZAXrAPXplFOZBHyxTDJCjlqaIVvIo+8hIba40IC7
+                  a9LAMvq8j8cIW63CfKmVzeMr1dLuTNRCcRxZ9N7clSpmsXPjFFb7XfyGT4dtSFDj
+                  DcUkrBkWIpjiRdEy025Zpfqc71kRc9/9ODCLGunyNVwhRPw6CXa9HePb4Z2YaE75
+                  55UIg/7HNAHarlXu0YHosPTfEV3BupLIK4kT5w7ak3Z0pHvsApSPJj8twuGWlKsV
+                  14voB4yfcL+PWVJXtSqtSQ5Vn45IgERPczGGOLdIGOcqdh54XK0jagdB6fYUg8J+
+                  x5IIHC2XA0Y7E2Vd+1TVvq/XoOWkJ3A3tTUoT+4pUUNql/NcNYFB</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.mpi.nl/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.mpi.nl/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.mpi.nl/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.mpi.nl/Shibboleth.sso/SLO/Artifact"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.mpi.nl/Shibboleth.sso/NIM/SOAP"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.mpi.nl/Shibboleth.sso/NIM/Redirect"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.mpi.nl/Shibboleth.sso/NIM/POST"/>
+      <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.mpi.nl/Shibboleth.sso/NIM/Artifact"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/POST" index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/Artifact" index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.mpi.nl/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://sp.mpi.nl/Shibboleth.sso/SAML/POST" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://sp.mpi.nl/Shibboleth.sso/SAML/Artifact" index="6"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">Max Planck Institute for Psycholinguistics Data and
             Services</md:ServiceName>
-         <md:ServiceDescription
-            xml:lang="en">Research Data and Services hosted at the Max Planck Institute for
+         <md:ServiceDescription xml:lang="en">Research Data and Services hosted at the Max Planck Institute for
             Psycholinguistics</md:ServiceDescription>
          <!-- SAML1 -->
-         <RequestedAttribute
-            FriendlyName="eduPersonPrincipalName"
-            Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
-            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-            isRequired="true"/>
-         <RequestedAttribute
-            FriendlyName="mail"
-            Name="urn:mace:dir:attribute-def:mail"
-            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
-            isRequired="false"/>
+         <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+         <RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
          <!-- SAML2 -->
-         <RequestedAttribute
-            FriendlyName="eduPersonPrincipalName"
-            Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
-            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-            isRequired="true"/>
-         <RequestedAttribute
-            FriendlyName="mail"
-            Name="urn:oid:0.9.2342.19200300.100.1.3"
-            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
-            isRequired="false"/>
+         <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+         <RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
       </md:AttributeConsumingService>
    </md:SPSSODescriptor>
    <md:Organization>
-      <md:OrganizationName
-         xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationName>
-      <md:OrganizationName
-         xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek</md:OrganizationName>
-      <md:OrganizationName
-         xml:lang="de">Max-Planck-Institut für Psycholinguistik</md:OrganizationName>
-      <md:OrganizationName
-         xml:lang="fi">Max Planck Instituutti Psykolingvistiikan</md:OrganizationName>
-      <md:OrganizationDisplayName
-         xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
-      <md:OrganizationDisplayName
-         xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek</md:OrganizationDisplayName>
-      <md:OrganizationDisplayName
-         xml:lang="de">Max-Planck-Institut für Psycholinguistik</md:OrganizationDisplayName>
-      <md:OrganizationDisplayName
-         xml:lang="fi">Max Planck Instituutti Psykolingvistiikan</md:OrganizationDisplayName>
-      <md:OrganizationURL
-         xml:lang="en">http://www.mpi.nl/</md:OrganizationURL>
-      <md:OrganizationURL
-         xml:lang="nl">http://www.mpi.nl/nederlands</md:OrganizationURL>
-      <md:OrganizationURL
-         xml:lang="de">http://www.mpi.nl/deutsch</md:OrganizationURL>
-      <md:OrganizationURL
-         xml:lang="fi">http://www.mpi.nl/</md:OrganizationURL>
+      <md:OrganizationName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationName>
+      <md:OrganizationName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek</md:OrganizationName>
+      <md:OrganizationName xml:lang="de">Max-Planck-Institut für Psycholinguistik</md:OrganizationName>
+      <md:OrganizationName xml:lang="fi">Max Planck Instituutti Psykolingvistiikan</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Max Planck Institute for Psycholinguistics</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="nl">Max Planck Instituut voor Psycholinguïstiek</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="de">Max-Planck-Institut für Psycholinguistik</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="fi">Max Planck Instituutti Psykolingvistiikan</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.mpi.nl/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="nl">http://www.mpi.nl/nederlands</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">http://www.mpi.nl/deutsch</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="fi">http://www.mpi.nl/</md:OrganizationURL>
    </md:Organization>
-   <md:ContactPerson
-      contactType="support">
+   <md:ContactPerson contactType="support">
       <md:GivenName>Tobias</md:GivenName>
       <md:SurName>van Valkenhoef</md:SurName>
       <md:EmailAddress>mailto:shibboleth@mpi.nl</md:EmailAddress>
    </md:ContactPerson>
-   <md:ContactPerson
-      contactType="administrative">
+   <md:ContactPerson contactType="administrative">
       <md:GivenName>Tobias</md:GivenName>
       <md:SurName>van Valkenhoef</md:SurName>
       <md:EmailAddress>mailto:shibboleth@mpi.nl</md:EmailAddress>
    </md:ContactPerson>
-   <md:ContactPerson
-      contactType="technical">
+   <md:ContactPerson contactType="technical">
       <md:GivenName>Tobias</md:GivenName>
       <md:SurName>van Valkenhoef</md:SurName>
       <md:EmailAddress>mailto:shibboleth@mpi.nl</md:EmailAddress>
