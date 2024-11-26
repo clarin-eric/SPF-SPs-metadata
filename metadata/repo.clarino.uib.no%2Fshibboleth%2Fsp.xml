@@ -239,7 +239,7 @@
       <md:SurName>Gjesdal</md:SurName>
       <md:EmailAddress>mailto:oyvind.gjesdal@uib.no</md:EmailAddress>
    </md:ContactPerson>
-   <md:ContactPerson contactType="technical">
+   <md:ContactPerson contactType="support">
       <md:GivenName>Tone Merete</md:GivenName>
       <md:SurName>Bruvik</md:SurName>
       <md:EmailAddress>mailto:tone.merete.bruvik@uib.no</md:EmailAddress>
