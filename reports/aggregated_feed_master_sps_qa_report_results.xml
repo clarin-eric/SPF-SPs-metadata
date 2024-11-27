@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Tue Nov 26 15:52:15 UTC 2024</ReportDate>
-  <FromCommit>013acdcc7454815c8d9b3c7715ed00673b9c8604</FromCommit>
+  <ReportDate>Wed Nov 27 12:25:07 UTC 2024</ReportDate>
+  <FromCommit>9effe39bfff864436d9e453800369663e6ff9fa1</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -755,11 +755,6 @@
     </result>
     <result>
       <sp>https://infra.clarin.dk/shibboleth</sp>
-      <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
-      <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
-    </result>
-    <result>
-      <sp>https://repo.clarino.uib.no/shibboleth/sp</sp>
       <explanation>Invalid or missing technical contact(s) under ‘md:ContactPerson[@contactType='technical']’. Please specify ‘md:GivenName’ and ‘md:SurName’ of the officially responsible person and provide a mailto URI (‘mailto:Contact.Person@organization.org’).</explanation>
       <requirement>Completely a requirement for DFN-AAI and Haka/Kalmar Union registration. Partially a requirement for the REFEDS Research and Scholarship Entity Category (4.3.4). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
     </result>
