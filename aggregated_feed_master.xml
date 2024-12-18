@@ -7562,8 +7562,8 @@ pm3Iv9eZvIlDY9rwID/RK3rqO8kxyVnmAA==</ds:X509Certificate>
           <mdui:Description xml:lang="pl">Repozytorium CLARIN-PL - Polska cz&#x119;&#x15B;&#x107; infrastruktury naukowej CLARIN ERIC</mdui:Description>
           <mdui:Description xml:lang="de">CLARIN-PL Die Digitale Langzeitarchiv - Die polnische Sektion des CLARIN ERIC</mdui:Description>
           <mdui:Logo height="32" width="32">https://clarin-pl.eu/dspace/themes/ClarinPlHomeTheme/images/favicon.ico</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">http://clarin-pl.eu/en/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">http://clarin-pl.eu/en/privacy-policy/</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://clarin-pl.eu/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://clarin-pl.eu/about-privacy</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
@@ -7664,8 +7664,8 @@ NPP0cKnXF0jLn+6Hcg==</ds:X509Certificate>
       <md:OrganizationDisplayName xml:lang="en">CLARIN-PL, Wroclaw University of Science and Technology</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="de">CLARIN-PL, Universit&#xE4;t f&#xFC;r Wissenschaft und Technologie Wroclaw</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="pl">CLARIN-PL, Politechnika Wroc&#x142;awska</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://clarin-pl.eu/en/</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="pl">http://clarin-pl.eu/pl/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">https://clarin-pl.eu</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="pl">https://clarin-pl.eu</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="technical">
       <md:GivenName>Tomasz</md:GivenName>
