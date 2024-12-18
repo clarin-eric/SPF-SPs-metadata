@@ -103,6 +103,54 @@
          <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
          <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
+      <md:KeyDescriptor>
+	 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:KeyName>CLARIN.si</ds:KeyName>
+            <ds:X509Data>
+	       <ds:X509SubjectName>CN=CLARIN.si,O=IJS,L=Ljubljana,C=SI</ds:X509SubjectName>
+	       <ds:X509Certificate>MIIFVzCCAz+gAwIBAgIEATTYIzANBgkqhkiG9w0BAQsFADBDMQswCQYDVQQGEwJT
+STESMBAGA1UEBwwJTGp1YmxqYW5hMQwwCgYDVQQKDANJSlMxEjAQBgNVBAMMCUNM
+QVJJTi5zaTAeFw0yNDA0MTkwNjM0NTRaFw0yNjA0MDkwNjM0NTRaMEMxCzAJBgNV
+BAYTAlNJMRIwEAYDVQQHDAlManVibGphbmExDDAKBgNVBAoMA0lKUzESMBAGA1UE
+AwwJQ0xBUklOLnNpMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArOjb
+AES3Onv55CXRnWeZyjqlZyFnlZuVcprhRIFB19OgaF1+MxqI5yHJcG+GKId8YDxT
+fnGOo2+p6DGAfs3czxOqXRlPJUFj08IrOYHDYFb3lOTST58K4ekWUEmoSeV2HvZC
+ifpzENqaXR1a7XhXbk3bTorenu2RVmvMzxm0OoCmXqpJkGBphwKk13Pn4Fu6FvBe
+RcKnnme/xyY67flRa0hxwCy3D7FTC4rKevKnO2C3cJX0F9us8dbZiZhVfpaKbAFs
+buMaou1QL3WQTH92zCQKeyulf7qRaA8cpNjBrb7zo2hO40T8sXaItDf0ZI+ySnjC
+cLNo5DzFjgG1Qy7uc88wukrYGf81trl8ORK9wjcVsCRrc1dmYRk4HvcKuC9cNAtH
+8yo5y+VVat3qB2RAQNtUZ+XxqDcgrR2lxkAA2bzQ4NXFFAkE6GRwSptq2QTLVRcC
+UQob0Kpdpxcno5INTToC2aEr0Y8zCMmIRvRJJk8RUyiY0A7i2cIPJUskXFvfvdG4
+4Mux5aqdan0z/YWCgkX8K0/Qad0vWoE2XiYX9b72zeeNfMpxPUFe6oXYzwHNGJ3a
+xkX2opqspL/7j2t8fMCV82ouxDlPQVWQSmP8RcWcpqYOBjXM+7OhjT1CR6VHeLQb
+7eZ34Q0AmZkb3o1+piIm6zMfQDPv/u5aBbR7E0MCAwEAAaNTMFEwHQYDVR0OBBYE
+FIoohq0z0Ow7kChC8UolqnPyujemMB8GA1UdIwQYMBaAFIoohq0z0Ow7kChC8Uol
+qnPyujemMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAEpbfsE9
+pPlNT3RxBQVbPqp+qUYoFNrIfdv9/oVDaXjC+5UD+6+jWR7VeX5QBWPtlSL6VHi5
+tm+0s/S1CKVHOEL06IeRq75vOWWL1l0tSN3n7qH/qs76EHkXj9bdQf/PNaiOPkMA
+q6GgjO7C/zcK/DYf1XcS6A6R9tPBAR0Nkqxc9MfW/HooTenbF4PKt+FSfOyOZ3x7
+ErrvexfzrNVvdipmuk2mhJ1At5UttTgVQk9M6NWt5I2XnYwqqj/xHb/DS7IbenNk
+s/Oz/qRks8Jk9ZqHjTvsRrN/gB5wd4S7hYTV5i1WzPRJQHzA1c42o+G3jVRR7/9b
+/EJb1Xkxcqj61nsyfS1qE/fT6c5IhqqeTrpt9jLeV7BHGJXURC1PQp/yfXzrVB3P
+VU2KDRPDPsEMlzWtxKjHlXPIGZhWzadvj9Piu3ZgFzzrWYoJSHpK1vsnHdDg81iT
+ZdNbNFsfLsuQOoe2bhULHSop4h6ONPNXASLaogH+IaAY3V8AzJM3Vykyh1z2l6Uj
+jxRdqsEOQF5RkXNTyg5qrTaQXb+utAROsuZWFf+/fUZ29lvNPCkKPGWptRu0Lp/d
+H6hKeIRE916I3WhjF2AHsmMmaFloGLXdPCc3lu8SQDp/ArcG1CdYKQwwYnXABbBs
+Kni55lI+Z0yAx7qLpH3ouqmBBia93it84t4U
+	    </ds:X509Certificate>
+         </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                                     Location="https://www.clarin.si/Shibboleth.sso/Artifact/SOAP"
                                     index="1"/>
@@ -196,12 +244,13 @@
    <md:Organization>
       <md:OrganizationName xml:lang="en">Jožef Stefan Institute, Ljubljana, Slovenia</md:OrganizationName>
       <md:OrganizationName xml:lang="sl">Institut »Jožef Stefan«, Ljubljana, Slovenija</md:OrganizationName>
-      <md:OrganizationName xml:lang="en">Jozef Stefan Institut, Ljubljana, Slovenija</md:OrganizationName>
+      <md:OrganizationName xml:lang="de">Jozef Stefan Institut, Ljubljana, Slovenija</md:OrganizationName>
       <md:OrganizationDisplayName xml:lang="en">Jožef Stefan Institute</md:OrganizationDisplayName>
       <md:OrganizationDisplayName xml:lang="sl">Institut »Jožef Stefan«</md:OrganizationDisplayName>
-      <md:OrganizationDisplayName xml:lang="en">Jozef Stefan Institut</md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="de">Jozef Stefan Institut</md:OrganizationDisplayName>
       <md:OrganizationURL xml:lang="en">http://www.ijs.si/</md:OrganizationURL>
       <md:OrganizationURL xml:lang="sl">http://www.ijs.si/</md:OrganizationURL>
+      <md:OrganizationURL xml:lang="de">http://www.ijs.si/</md:OrganizationURL>
    </md:Organization>
    <md:ContactPerson contactType="technical">
       <md:GivenName>Jan Jona</md:GivenName>
@@ -214,7 +263,7 @@
       <md:EmailAddress>mailto:repo-help@clarin.si</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="administrative">
-      <md:GivenName>Tomaž Jona</md:GivenName>
+      <md:GivenName>Tomaž</md:GivenName>
       <md:SurName>Erjavec</md:SurName>
       <md:EmailAddress>mailto:repo-admin@clarin.si</md:EmailAddress>
    </md:ContactPerson>
