@@ -7190,8 +7190,8 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
           <mdui:Description xml:lang="de">WebAnno ist ein webbasiertes Allzweck-Werkzeug f&#xFC;r linguistische Anmerkungen.</mdui:Description>
           <mdui:Description xml:lang="fi">WebAnno on yleisk&#xE4;ytt&#xF6;inen web-pohjainen kielellinen k&#xE4;sinkirjoitusty&#xF6;kalun.</mdui:Description>
           <mdui:Logo height="128" width="128">https://webanno.github.io/webanno/assets/img/logo.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">http://webanno.sfs.uni-tuebingen.de/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/WebLicht_Privacy_Policy_Document</mdui:PrivacyStatementURL>
+          <mdui:InformationURL xml:lang="en">https://webanno.sfs.uni-tuebingen.de/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/WebLicht_Privacy_Policy_Document.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
       </md:Extensions>
@@ -7237,17 +7237,17 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
     <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="administrative">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <md:EntityDescriptor entityID="https://weblicht2.sfs.uni-tuebingen.de">
@@ -7363,9 +7363,9 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
           <mdui:Description xml:lang="en">WebLicht is a service orchestration and execution environment for automatic linguistic annotation.</mdui:Description>
           <mdui:Description xml:lang="de">WebLicht ist eine Service-orientierte Architektur (SOA) zur Erstellung annotierter Textcorpora.</mdui:Description>
           <mdui:Description xml:lang="fi">WebLicht on palvelu orkestrointi ja toteutus ymp&#xE4;rist&#xF6;n automaattiseen kielellisen huomautusta.</mdui:Description>
-          <mdui:Logo height="50" width="190">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/weblicht_button2.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/WebLicht_Privacy_Policy_Document</mdui:PrivacyStatementURL>
+          <mdui:Logo height="50" width="190">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/images/weblicht_button2.png</mdui:Logo>
+          <mdui:InformationURL xml:lang="en">https://weblicht.sfs.uni-tuebingen.de/</mdui:InformationURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/WebLicht_Privacy_Policy_Document.html</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://weblicht.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
       </md:Extensions>
@@ -7415,17 +7415,17 @@ V9E68Q9n3Dbujk3Xx2+5NTRA8uKlgVmXM81ZVT/mGzOmc67GBJIaMuuaxZ9+MlaX
     <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="administrative">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
     </md:ContactPerson>
   </md:EntityDescriptor>
   <EntityDescriptor entityID="https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp">
