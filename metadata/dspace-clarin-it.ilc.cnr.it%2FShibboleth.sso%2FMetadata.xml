@@ -5,12 +5,12 @@
         <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
-	<saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-         </saml:Attribute>
+        </saml:Attribute>
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -55,9 +55,9 @@
         <ds:KeyName>dspace-clarin-it.ilc.cnr.it</ds:KeyName>
         <ds:X509Data>
           <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Roma,C=IT</ds:X509SubjectName>
-          <ds:X509Certificate>MIIH7DCCBdSgAwIBAgIQO59XJk4sVM1GBL4GpqZNFzANBgkqhkiG9w0BAQwFADBE
+          <ds:X509Certificate>MIIH7TCCBdWgAwIBAgIQKCWTjn0NOu+kJyZHAm7KGzANBgkqhkiG9w0BAQwFADBE
 MQswCQYDVQQGEwJOTDEZMBcGA1UEChMQR0VBTlQgVmVyZW5pZ2luZzEaMBgGA1UE
-AxMRR0VBTlQgT1YgUlNBIENBIDQwHhcNMjMxMDI1MDAwMDAwWhcNMjQxMDI0MjM1
+AxMRR0VBTlQgT1YgUlNBIENBIDQwHhcNMjQwOTI1MDAwMDAwWhcNMjUwOTI1MjM1
 OTU5WjBvMQswCQYDVQQGEwJJVDENMAsGA1UECBMEUm9tYTErMCkGA1UEChMiQ29u
 c2lnbGlvIE5hemlvbmFsZSBkZWxsZSBSaWNlcmNoZTEkMCIGA1UEAxMbZHNwYWNl
 LWNsYXJpbi1pdC5pbGMuY25yLml0MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIB
@@ -69,7 +69,7 @@ KjKF/LXiXM+n6cI+H2To4JmwPmmhISAHljBosY4v9SyexQ2b8YpXVP0psBEUEheX
 sJ1a4hlNYyez2yMWuiGA1oxrgxhxVVQAG83428RZhDxa62MBUzoi+MG6TxOrUYAO
 /Z2kczJakXYhaslF232ugeWt6Rk0/Fh4KkDGeZokEDw/+Ao8Zb7rGzHaQcJ+pUaO
 B6qvXClH6T7jm6eTdFwm7yv85usDnKkWv+Y8y7gwW9+i6ZhoAsdpnom+i8fAxpXp
-hZx5BKWzAgMBAAGjggMtMIIDKTAfBgNVHSMEGDAWgBRvHTVJEGwy+lmgnryK6B+V
+hZx5BKWzAgMBAAGjggMuMIIDKjAfBgNVHSMEGDAWgBRvHTVJEGwy+lmgnryK6B+V
 vnF6DDAdBgNVHQ4EFgQU8uCWfQiHaX/0AQyGd/be9a34DCcwDgYDVR0PAQH/BAQD
 AgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC
 MEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAk8wJTAjBggrBgEFBQcCARYXaHR0cHM6
@@ -77,27 +77,27 @@ Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQICMD8GA1UdHwQ4MDYwNKAyoDCGLmh0
 dHA6Ly9HRUFOVC5jcmwuc2VjdGlnby5jb20vR0VBTlRPVlJTQUNBNC5jcmwwdQYI
 KwYBBQUHAQEEaTBnMDoGCCsGAQUFBzAChi5odHRwOi8vR0VBTlQuY3J0LnNlY3Rp
 Z28uY29tL0dFQU5UT1ZSU0FDQTQuY3J0MCkGCCsGAQUFBzABhh1odHRwOi8vR0VB
-TlQub2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHUA
-dv+IPwq2+5VRwmHM9Ye6NLSkzbsp3GhCCp/mZ0xaOnQAAAGLZDIJkgAABAMARjBE
-AiBPW93TjD2zWtqWpdf3l+pptjhig8CSZAN6z5smhAdSsAIgP0rBjZ0RIUUbGsWo
-UtDMTQXN9UtzBBIXU/pSps8ZQ74AdwDatr9rP7W2Ip+bwrtca+hwkXFsu1GEhTS9
-pD0wSNf7qwAAAYtkMgnnAAAEAwBIMEYCIQDnQTqs7CK+tU4ARd9S8p1rpgUbem4A
-UqPe5hHRi+bU/gIhAIabstW5ImL6yK5G2LOMUp0KJGmxzgJAKjPegKGBcdKhAHUA
-7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLZDIJvAAABAMARjBE
-AiAnU9wEXEcuYFd1LnSaX5ePf7PxyYidn+zRsN4mzViTggIgUEQt7+tnK1RL8Hka
-tBv8ioL6nWlbplxApxjDtBCI7g4wJgYDVR0RBB8wHYIbZHNwYWNlLWNsYXJpbi1p
-dC5pbGMuY25yLml0MA0GCSqGSIb3DQEBDAUAA4ICAQAahALT58BUaL7O9OOM7Kor
-ZxATArLTo9IrqQcoAGCKMQyBC48X7a9tu9dLZb6bpjYeBzp/yhPoxra0DOvSvpMd
-x05M0yTGiFSGMyewiLjQq17BA7x/X4sBKgSXOm/Utvd7OhpfsyPWK6D8RjspLCHR
-p4fnSN+jbPqhcE+l7xFxAd6/6vGDVPZ+0U7Cm6EWYe2hPuknFLxTkhtMdqQ2mIGj
-Zx8/DEM7JW1ruQHm2/UqUBq5erHmqwfXuAgihWBX9qcdVlC1l//Dp4Xr+oleNIAw
-q/+FqW7++LI6XOoOjf+fmw2p5VMn5Wt3rQ7sCP5SYVNInxtJW0Kpt3DV9+BZoCtu
-3WVWleF4VFG5y+Q07HN1DmDsJpYtfzugNRhsqGrTVbPt/HOhf4dgf9EWSnGjAgKS
-LXvfWa9+HuuX/DfLFPrg5dHfE9GQzKqjSm8CqrZlaDj7u0i2RQiT2tqxJUQSQ5zl
-oJYbDTLC4g1fdbMwXS+BG4FkwSxc6DNXjNdhsUC+Sc5VjbGRAJ5NFqPMMZKHB/G0
-YofmNoATtVnfb05WNBI7paMx/itX6fDyCK4FR6cgtEmKBEO9swxVGV9NGtJioDYa
-2vX1z8gYACDTPOSK86eA4vKt6uCDcNOhgbzqQt5jNjCDb/umVmir4BTnlD562Fzh
-6uMmAUOFe7BYYch2cK3NEA==
+TlQub2NzcC5zZWN0aWdvLmNvbTCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUA
+3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGSJoij7wAABAMARjBE
+AiAjDDPya+uY4dMkMwu5AhxQELroSZbQR1+T+HMMwd5ckQIgLGgdgpO8L+i3bBrm
+RtccNVtHRUL39/q6lXhVtC6Y80UAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2Xjbap
+flTA/kwNsAAAAZImiKOtAAAEAwBHMEUCIQDNppAzGfnj3Xp+euhbbWtVTKO4+tcP
+67nmp+psR2iX4QIgB3MABOumU06PaTNiaHmx1mUGsjBEXE0GeEB/gk+1XpQAdwAS
+8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZImiKODAAAEAwBIMEYC
+IQCpHtuk0gn8sdXuYDsAcy4GmHztdruyz71Blll77gGIbwIhAIVVLeqW1sg2abY2
+QeS1nDwTzWHslkSpMoRYfEtj4HTRMCYGA1UdEQQfMB2CG2RzcGFjZS1jbGFyaW4t
+aXQuaWxjLmNuci5pdDANBgkqhkiG9w0BAQwFAAOCAgEASOFp8qjUcqnHsnBJv9x2
+FjoPukJYaawNEuL08CjUB4TW1i8PMqOy/z5L4uKs8eybGLn3zRxpLncs3yFx5Vkf
+mmrBbR5FaIDP/CBgnT+VwpahbXhZS5wkWr6k9mrM/vdtDszliXs1cRW2TotEmK6J
+tgOnHAgxD8NqOjZc9GXBbOggsmr3d5IuUsjsIMSSqza6dSqj82MHA8bAjjF1Rdcm
+kxNzEjhftAfRjzRiuQ1GBjMpN0SqzO4D8lp47+7pTeC59YeDxJamY7LWea9vJ0wr
+qXvbMtR16D76+mlM98UhfljAI2PSKbmVCaOBki1e7sJ48UPIw1iQFVn2PRWqPvEo
+eb2+oXsI5u+0cFycTpSPsjkye4gRkECXkDn6JpVb07lVJ1kh8mkwBYeuXZLysNZl
+EVt0lPhTiX8PYaZlfU2jCSmx2+V5nluuufvGktB/cq7MaeyJ2AASFYwjP+fX6mCK
+zJGSJIP5OLk08as0M2e2BfeNXFL3+BSljhQ7jVW9NE0iHygSqHSHlyeMmCBWkyoB
+1UzBrf1vO9DdLZtrLKrRUlP8VguAGWSy5W4ex4w6jnBtwgwoA0wRl2s5vYF2exBc
+KWIEx3LPtfnnNnq27zKfZUZzbjF+++2OzzPs+YN1KoCvt+evfbxxXBLjIjlSlgS5
+SSZlqSsF9XP02MJgMUzb/uk=
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
