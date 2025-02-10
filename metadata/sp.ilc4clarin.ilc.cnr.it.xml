@@ -22,14 +22,7 @@
         <mdui:Logo width="16" height="16">https://sp.ilc4clarin.ilc.cnr.it/img/ilc4clarin_16x16.png</mdui:Logo>
       </mdui:UIInfo>
     </md:Extensions>
-    <md:KeyDescriptor use="signing">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:X509Data>
-          <ds:X509Certificate>MIIFwzCCA6ugAwIBAgIUTkPwJ+FhlSkJ5M0pHjNwxQGydqIwDQYJKoZIhvcNAQELBQAwcTELMAkGA1UEBhMCSVQxDTALBgNVBAgMBFBpc2ExDTALBgNVBAcMBFBpc2ExEDAOBgNVBAoMB0lMQy1DTlIxDzANBgNVBAsMBkNMQVJJTjEhMB8GA1UEAwwYc3AuaWxjNGNsYXJpbi5pbGMuY25yLml0MB4XDTI1MDIwNzE1MTM1NFoXDTI4MDIwNzE1MTM1NFowcTELMAkGA1UEBhMCSVQxDTALBgNVBAgMBFBpc2ExDTALBgNVBAcMBFBpc2ExEDAOBgNVBAoMB0lMQy1DTlIxDzANBgNVBAsMBkNMQVJJTjEhMB8GA1UEAwwYc3AuaWxjNGNsYXJpbi5pbGMuY25yLml0MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA8yxg4JhE+tir1aXKEVrOHbKoJElNr8IOAmyz+HLatICFEjCgg9omNkQRG/XK5FRJ47umyVel2FpC6FptFh+qSDyfNJTrd3T+ma52+wJAUW9yz6OmEMOvLlITelUeivV35Cg1Zv4SdUIgO5iWguzAh5BteWF8y2/QdyRm4YfO5Mu1uPgCjku9JTD1odKq9KIMOekFzxxl6pI9b1QnFLBvdDQNi51mj4q5CuaFOKi5pQtEs3l61nN5pp7WsGRCkqjLUhGzPZ0BTV0hMbbO1WYpObeRODCqU7NUdz41rVztrLNAhiVrn69VRK+HMBPr2RB2s9ZAg+w5ymrX+TpxFYDCIcki4FP0WjryE/aDenYpfmxBi2K81WXn05/nOwS3CjyRAJl5sa11+zsr9iMnW+wTqQ1hUbMvbpmXkQTTWIxb7xcf8+jF8GJs+wlW1BiNfIyxBJk4MvyL4r88S5ebidRfLeyMEitVSA8ygG3mQSPpfZd4ZCqJ7bcgC4ifzdgjqKZSMX+6pHTDEj9eNJiPEHolxu8fs6hLBev8DFCNDsJqOsyT+etg9+sF+L0/hBCLHvoY7trDiu/QtnTfC0Thrh1+uNuIMoYx7HyjR86pdwXafr8AjCpGzIZT/xFNoFXiidUSxPUI+JnpSzn4uDL5T+IhLXeDcBLYXJwNtkiZ2vixSNECAwEAAaNTMFEwHQYDVR0OBBYEFAbgbJNZzKbKr6Ymuq+pT3XVBC38MB8GA1UdIwQYMBaAFAbgbJNZzKbKr6Ymuq+pT3XVBC38MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAJyXAVtHU7oH0FU25l5c8a/Lc4hy6QVHK5M8iA96GUE/83DcuKSsYRJeu/J31n4/10yvJD5tpk+/3Fewr3VdZYUgth+N8HXURZYttcZBoR1xWH/LlC3UTpXgrrMtg0dhzQia6Ow+NAlqB2XDY59QMjWv+/4au37QaVmnnpr31osbuYcBTl9AOtP//Qk1t7ChGaQrzNxGJ1nqH3NiIGwLLxsyXkpqKlzDI+cg47XDp3kQGFBNsrsXgWLWjC2QN8b9I2N3SwIYQqUB+9fyU+05pcaZ2M9yvL++uOQPBWQx3cgh/3TmK8Qkn1nROysTTnPCE2vVSJDhPVYS1qp6SZvBLj9jlRMpWKkG3hCiVdVTsjbW0ugt2ULuc3/bA4FxN0jpUIJLbwplmqjcJsqO1rGv+FDrudq6sr42cGybKAGFfU5laI30RSf8iKB/4KOCpUyPRjkSzz6aAtLGArTfQWqyg8pNG8hTQmyU4gSh7sOQA2uKNmz6JZ/bkHx5McMW4wi5TvTUnfvoDS/sKlKHgpIOfGfccUDU+JMHjrhD4JL3nyIU3khsBGvEVLoDHLKUJ9XxQXHCNsnryDB3KcNvSbrSf8Sx9mF1S/pMgST09fMXf0ojo5QtsY37CncNrl3IJPB+PUpkR/4eg3HyYLmLzBrwzp2BEZnv+EVP/s7xosLa4m0b</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:KeyDescriptor use="encryption">
+    <md:KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:X509Data>
           <ds:X509Certificate>MIIFwzCCA6ugAwIBAgIUTkPwJ+FhlSkJ5M0pHjNwxQGydqIwDQYJKoZIhvcNAQELBQAwcTELMAkGA1UEBhMCSVQxDTALBgNVBAgMBFBpc2ExDTALBgNVBAcMBFBpc2ExEDAOBgNVBAoMB0lMQy1DTlIxDzANBgNVBAsMBkNMQVJJTjEhMB8GA1UEAwwYc3AuaWxjNGNsYXJpbi5pbGMuY25yLml0MB4XDTI1MDIwNzE1MTM1NFoXDTI4MDIwNzE1MTM1NFowcTELMAkGA1UEBhMCSVQxDTALBgNVBAgMBFBpc2ExDTALBgNVBAcMBFBpc2ExEDAOBgNVBAoMB0lMQy1DTlIxDzANBgNVBAsMBkNMQVJJTjEhMB8GA1UEAwwYc3AuaWxjNGNsYXJpbi5pbGMuY25yLml0MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA8yxg4JhE+tir1aXKEVrOHbKoJElNr8IOAmyz+HLatICFEjCgg9omNkQRG/XK5FRJ47umyVel2FpC6FptFh+qSDyfNJTrd3T+ma52+wJAUW9yz6OmEMOvLlITelUeivV35Cg1Zv4SdUIgO5iWguzAh5BteWF8y2/QdyRm4YfO5Mu1uPgCjku9JTD1odKq9KIMOekFzxxl6pI9b1QnFLBvdDQNi51mj4q5CuaFOKi5pQtEs3l61nN5pp7WsGRCkqjLUhGzPZ0BTV0hMbbO1WYpObeRODCqU7NUdz41rVztrLNAhiVrn69VRK+HMBPr2RB2s9ZAg+w5ymrX+TpxFYDCIcki4FP0WjryE/aDenYpfmxBi2K81WXn05/nOwS3CjyRAJl5sa11+zsr9iMnW+wTqQ1hUbMvbpmXkQTTWIxb7xcf8+jF8GJs+wlW1BiNfIyxBJk4MvyL4r88S5ebidRfLeyMEitVSA8ygG3mQSPpfZd4ZCqJ7bcgC4ifzdgjqKZSMX+6pHTDEj9eNJiPEHolxu8fs6hLBev8DFCNDsJqOsyT+etg9+sF+L0/hBCLHvoY7trDiu/QtnTfC0Thrh1+uNuIMoYx7HyjR86pdwXafr8AjCpGzIZT/xFNoFXiidUSxPUI+JnpSzn4uDL5T+IhLXeDcBLYXJwNtkiZ2vixSNECAwEAAaNTMFEwHQYDVR0OBBYEFAbgbJNZzKbKr6Ymuq+pT3XVBC38MB8GA1UdIwQYMBaAFAbgbJNZzKbKr6Ymuq+pT3XVBC38MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAJyXAVtHU7oH0FU25l5c8a/Lc4hy6QVHK5M8iA96GUE/83DcuKSsYRJeu/J31n4/10yvJD5tpk+/3Fewr3VdZYUgth+N8HXURZYttcZBoR1xWH/LlC3UTpXgrrMtg0dhzQia6Ow+NAlqB2XDY59QMjWv+/4au37QaVmnnpr31osbuYcBTl9AOtP//Qk1t7ChGaQrzNxGJ1nqH3NiIGwLLxsyXkpqKlzDI+cg47XDp3kQGFBNsrsXgWLWjC2QN8b9I2N3SwIYQqUB+9fyU+05pcaZ2M9yvL++uOQPBWQx3cgh/3TmK8Qkn1nROysTTnPCE2vVSJDhPVYS1qp6SZvBLj9jlRMpWKkG3hCiVdVTsjbW0ugt2ULuc3/bA4FxN0jpUIJLbwplmqjcJsqO1rGv+FDrudq6sr42cGybKAGFfU5laI30RSf8iKB/4KOCpUyPRjkSzz6aAtLGArTfQWqyg8pNG8hTQmyU4gSh7sOQA2uKNmz6JZ/bkHx5McMW4wi5TvTUnfvoDS/sKlKHgpIOfGfccUDU+JMHjrhD4JL3nyIU3khsBGvEVLoDHLKUJ9XxQXHCNsnryDB3KcNvSbrSf8Sx9mF1S/pMgST09fMXf0ojo5QtsY37CncNrl3IJPB+PUpkR/4eg3HyYLmLzBrwzp2BEZnv+EVP/s7xosLa4m0b</ds:X509Certificate>
@@ -59,6 +52,20 @@
     <md:OrganizationURL xml:lang="it">http://www.ilc.cnr.it</md:OrganizationURL>
     <md:OrganizationURL xml:lang="en">http://www.ilc.cnr.it/en</md:OrganizationURL>
   </md:Organization>
+  <md:ContactPerson contactType="administrative">
+    <md:Company>Consiglio Nazionale delle Ricerche</md:Company>
+    <md:GivenName>Michele</md:GivenName>
+    <md:SurName>Mallia</md:SurName>
+    <md:EmailAddress>mailto:michele.mallia@cnr.it</md:EmailAddress>
+    <md:TelephoneNumber>(+39)3392804180</md:TelephoneNumber>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="technical">
+    <md:Company>Consiglio Nazionale delle Ricerche</md:Company>
+    <md:GivenName>Michele</md:GivenName>
+    <md:SurName>Mallia</md:SurName>
+    <md:EmailAddress>mailto:michele.mallia@cnr.it</md:EmailAddress>
+    <md:TelephoneNumber>(+39)3392804180</md:TelephoneNumber>
+  </md:ContactPerson>
   <md:ContactPerson contactType="support">
     <md:Company>Consiglio Nazionale delle Ricerche</md:Company>
     <md:GivenName>Michele</md:GivenName>
