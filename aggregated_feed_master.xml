@@ -5565,6 +5565,9 @@ Kni55lI+Z0yAx7qLpH3ouqmBBia93it84t4U
           <saml:AttributeValue xsi:type="xs:string">http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
+      <mdrpi:RegistrationInfo registrationAuthority="urn:mace:sp.ilc4clarin.ilc.cnr.it" registrationInstant="2025-02-10T14:01:00Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://sp.ilc4clarin.ilc.cnr.it/privacy.html</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
@@ -5573,6 +5576,7 @@ Kni55lI+Z0yAx7qLpH3ouqmBBia93it84t4U
           <mdui:DisplayName xml:lang="it">Service Provider per l'infrastruttura di Ricerca CLARIN erogato da ILC-CNR</mdui:DisplayName>
           <mdui:Description xml:lang="en">ILC-CNR for the CLARIN-IT consortium: service provider for federated authentication</mdui:Description>
           <mdui:Description xml:lang="it">ILC-CNR per il consorzio CLARIN-IT: service provider per l'autenticazione federata</mdui:Description>
+          <mdui:InformationURL xml:lang="en">https://sp.ilc4clarin.ilc.cnr.it/privacy.html</mdui:InformationURL>
           <mdui:PrivacyStatementURL xml:lang="en">https://sp.ilc4clarin.ilc.cnr.it/privacy.html</mdui:PrivacyStatementURL>
           <mdui:PrivacyStatementURL xml:lang="it">https://sp.ilc4clarin.ilc.cnr.it/privacy.html</mdui:PrivacyStatementURL>
           <mdui:Logo width="80" height="53">https://sp.ilc4clarin.ilc.cnr.it/img/ilc4clarin_80x53.png</mdui:Logo>
