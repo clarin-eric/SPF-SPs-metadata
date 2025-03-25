@@ -7,7 +7,7 @@
 
 :warning: **The structure of this repository has changed on 10/02/2020, please make sure to update your forks before creating new pull requests. See the [repository system changelog](https://github.com/clarin-eric/SPF-SPs-metadata/wiki/Repository-system-changelog) for a detailed description of the changes.**
 
-ℹ️  Here is [a video exemplifying the process](https://b2drop.eudat.eu/s/AeiEEeT6dE4kCy2) of updating the metadata of your SP without leaving the GitHub interface or resorting to use the `git` command.
+ℹ️  Here is [a video exemplifying the process](https://b2drop.eudat.eu/s/HmTqbrz3pFaBdHC) of updating the metadata of your SP without leaving the GitHub interface or resorting to use the `git` command.
 
 To update or add SAML metadata for your SP:
 1. Fork this repository.
