@@ -12,7 +12,7 @@
     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    entityID="https://dataverse.ivdnt.org/">
+    entityID="https://dspace.taalmaterialen.ivdnt.org/">
     <Extensions>
         <mdattr:EntityAttributes>
             <saml:Attribute Name="http://macedir.org/entity-category"
@@ -56,68 +56,27 @@
         <KeyDescriptor>
             <ds:KeyInfo>
                 <ds:X509Data>
-                     <ds:X509Certificate>
-                        MIIHazCCBlOgAwIBAgIQBs27rSioqkPnB7a29PB8tTANBgkqhkiG9w0BAQsFADCB
-                        jzELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
-                        A1UEBxMHU2FsZm9yZDEYMBYGA1UEChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQD
-                        Ey5TZWN0aWdvIFJTQSBEb21haW4gVmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENB
-                        MB4XDTI1MDMxMDAwMDAwMFoXDTI2MDQxMDIzNTk1OVowKjEoMCYGA1UEAxMfZHNw
-                        YWNlLnRhYWxtYXRlcmlhbGVuLml2ZG50Lm9yZzCCAiIwDQYJKoZIhvcNAQEBBQAD
-                        ggIPADCCAgoCggIBALjaOYYqCLoq/RrEWuSMxg9vkOJ+GP8ntTRddYgnAJ00DGtH
-                        7bXUy+fT1d96VnWFzTSU4+5ArsSLtvvB6T+1upGktBhkfrhKIQcqwXrBbBLImRVR
-                        Cr+YMhsngnbVgkWgIlR/1kWMZnLK+ulEmcby12BbGxYxcmg6KFikq5i+kOe3gBSR
-                        uHYthizUAB9Yjt70HLEKGE+DO9tzUrbrihW2ccauMBfKrpfdqk7TRd5x0olSr6P1
-                        vYcKvqF2szDSUpQ8cegomfnwzvaI2DB2iEjFwa85nN7QgrxufLcKtrIahAKGTSZ8
-                        oBeCk315EuqUFmPm98N1VQylMwHkZNzqHLOfSS5IN5lL50elsR6h2TKEr/0JiX/G
-                        p/lnywV1XH8to/kF7mUZjfnCTvhxhgT7ssgZSlkI9SGU4LLhAuZ7VxtwFtMiQ8dc
-                        O1VNoybljOezy24evYhDRYWcF5XrS4sZF7jY458K5Pwe+0WJpAHtMIO/lKL7LKWO
-                        X64h3BvCDa8OTq7DfHRjb+ZLVqo/E3KjshBRceK8LAq/LfIA6kihRWLg5J0OLscP
-                        BUCDVfLdnFJnH+n7l7m6dd6qah4gjTqF2SWXpR/UAJrWtEUrpfGGxwiiHJwZx+fR
-                        UCnGPzKfY7qJpfBgGFj7aEIj8G6kzatbfk4HCjkZnqF3y7gYxytvLXhXuVxJAgMB
-                        AAGjggMlMIIDITAfBgNVHSMEGDAWgBSNjF7EVK2K4Xfpm/mbBeG4AY1h4TAdBgNV
-                        HQ4EFgQUPbepQmMCGYUbqFdE6ap+sT5nuXUwDgYDVR0PAQH/BAQDAgWgMAwGA1Ud
-                        EwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARC
-                        MEAwNAYLKwYBBAGyMQECAgcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdv
-                        LmNvbS9DUFMwCAYGZ4EMAQIBMIGEBggrBgEFBQcBAQR4MHYwTwYIKwYBBQUHMAKG
-                        Q2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vU2VjdGlnb1JTQURvbWFpblZhbGlkYXRp
-                        b25TZWN1cmVTZXJ2ZXJDQS5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNl
-                        Y3RpZ28uY29tME8GA1UdEQRIMEaCH2RzcGFjZS50YWFsbWF0ZXJpYWxlbi5pdmRu
-                        dC5vcmeCI3d3dy5kc3BhY2UudGFhbG1hdGVyaWFsZW4uaXZkbnQub3JnMIIBfQYK
-                        KwYBBAHWeQIEAgSCAW0EggFpAWcAdgCWl2S/VViXrfdDh2g3CEJ36fA61fak8zZu
-                        RqQ/D8qpxgAAAZWAT/RDAAAEAwBHMEUCIQDmiR0lv9UV0SAKdSE9Gewc3ikDgvx2
-                        IHEp47aL2OtppAIgby+xTf+uG2N++geg/d8ryk7VeQDATpT9CQ/OuMEM9V4AdgAZ
-                        htTHKKpv/roDb3gqTQGRqs4tcjEPrs5dcEEtJUzH1AAAAZWAT/QiAAAEAwBHMEUC
-                        IQDdlWojUSQtKnczSuI1buhFG2b2YprEm0pLUXoue8iNpgIgVq6bI34zaUP8O7zw
-                        qMfSbuXeME4bJ3SmQlPkGLaFx60AdQDLOPcViXyEoURfW8Hd+8lu8ppZzUcKaQWF
-                        sMsUwxRY5wAAAZWAT/RGAAAEAwBGMEQCIDWGKBvAJdYmOu7dDHIF6secRRm6A76M
-                        iJhBhjImwlv+AiBq4UeGaG4iAccYNGgVXZizUfYebRII+qfoiJSZYh6DAzANBgkq
-                        hkiG9w0BAQsFAAOCAQEAUT8V2l98ND1Zh4uLyal1bSGickzVV9uT6dZ29jyhlz9C
-                        2QkHw/En62TJ2eD5952ePr4ezFc/umhmyBgQZmEyBDXWgkSBOnnRcpOcjG1S476c
-                        DC1S4kQwsGUTTgSU0nqrHbI1zOtOoetOSVwLV+sTRtBFdbezybfotO9bm34gmmg9
-                        bqQR0Mih2vl/2YDMSHPRghX7Uos9etQtBa1UQ1QekX/Uik4JYE/fHinarvVd5CXI
-                        IJptrrQXwI6Q9kXsuxumgr8HbC5gTN4l/PD+33bz1i53kalZkkZJk2yKnwA1aI8Q
-                        Pcd+bS0wth5Jfgvjn2p2YLMg7LutvHH40CeqduRENA==
-                     </ds:X509Certificate>
+                        <ds:X509Certificate>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</ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
         </KeyDescriptor>
         <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML2/POST"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/POST"
             index="1"/>
         <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML2/POST-SimpleSign"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/POST-SimpleSign"
             index="2"/>
         <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML2/Artifact"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/Artifact"
             index="3"/>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML2/ECP"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/ECP"
             index="4"/>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML/POST"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML/POST"
             index="5"/>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-            Location="https://dataverse.ivdnt.org/Shibboleth.sso/SAML/Artifact"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML/Artifact"
             index="6"/>
         <md:AttributeConsumingService index="1">
             <md:ServiceName xml:lang="en">Data repository</md:ServiceName>
