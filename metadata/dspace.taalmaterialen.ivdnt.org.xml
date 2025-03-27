@@ -12,7 +12,7 @@
     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    entityID="https://dspace.taalmaterialen.ivdnt.org/">
+    entityID="https://dspace.taalmaterialen.ivdnt.org">
     <Extensions>
         <mdattr:EntityAttributes>
             <saml:Attribute Name="http://macedir.org/entity-category"
