@@ -4285,9 +4285,9 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repository.clarin.hr/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repository.clarin.hr/Shibboleth.sso/Login" index="1"/>
         <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="en">HR-CLARIN repository and services</mdui:DisplayName>
+          <mdui:DisplayName xml:lang="en">HR-CLARIN repository</mdui:DisplayName>
           <mdui:DisplayName xml:lang="hr">Repozitorij i servisi istra&#x17E;iva&#x10D;ke infrastrukture HR-CLARIN</mdui:DisplayName>
-          <mdui:Description xml:lang="en">Repository and services of HR-CLARIN research infrastructure at the Institute of Linguistics, Faculty of Humanities and Social Sciences, University of Zagreb.</mdui:Description>
+          <mdui:Description xml:lang="en">Repository and services of HR-CLARIN research infrastructure.</mdui:Description>
           <mdui:Description xml:lang="hr">Repozitorij i servisi istra&#x17E;iva&#x10D;ke infrastrukture HR-CLARIN pri Zavodu za lingvistiku Filozofskog fakulteta Sveu&#x10D;ili&#x161;ta u Zagrebu</mdui:Description>
           <mdui:InformationURL xml:lang="en">https://www.clarin.hr/en/about/</mdui:InformationURL>
           <mdui:InformationURL xml:lang="hr">https://www.clarin.hr/hr/o-nama/</mdui:InformationURL>
@@ -4298,43 +4298,7 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
           <mdui:PrivacyStatementURL xml:lang="hr">https://www.clarin.hr/hr/pravila-privatnosti/</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
       </md:Extensions>
-      <md:KeyDescriptor use="signing">
-        <ds:KeyInfo>
-          <ds:KeyName>repository.clarin.hr</ds:KeyName>
-          <ds:X509Data>
-            <ds:X509SubjectName>CN=repository.clarin.hr</ds:X509SubjectName>
-            <ds:X509Certificate>MIIE9jCCA96gAwIBAgISA2HAnDh2wUTfHs75QoGpub3WMA0GCSqGSIb3DQEBCwUA
-MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
-EwNSMTAwHhcNMjQxMTA1MDM0ODUyWhcNMjUwMjAzMDM0ODUxWjAfMR0wGwYDVQQD
-ExRyZXBvc2l0b3J5LmNsYXJpbi5ocjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
-AQoCggEBAI5/XERH4VrcOa1tOTAB8ePAqPASNcvk4RIB8aNnxxsRnUWipQRLPShX
-2HLH5YkQiONO8ABOy+UpU4adyKAuge+tHAmDOlrKR6/k4MMLSoRznHZds933TGiT
-zPH0NW7FLi43MPtKeUDlISEL29F10f1aDJO42zSY4ktTIjzJpwl3Vh0ucaDGABTH
-/ANOgpH1vfs984VgEPhxslA7/tDax9aLBv4o13FNKJkvd6C4acpGnlokzyRd6Sac
-mpN9TvFVz7szjyWxvzkiYHXW6YYGsEWHOp46wopOHshyPGBPmCsBcEGKSpUOGMT1
-PPknMb7gWmguoXiAcSim/QlQgOl/dE0CAwEAAaOCAhYwggISMA4GA1UdDwEB/wQE
-AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
-ADAdBgNVHQ4EFgQUvYe8T3137ZVKqCxW5V9XSBKUN80wHwYDVR0jBBgwFoAUu7zD
-R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo
-dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku
-bGVuY3Iub3JnLzAfBgNVHREEGDAWghRyZXBvc2l0b3J5LmNsYXJpbi5ocjATBgNV
-HSAEDDAKMAgGBmeBDAECATCCAQIGCisGAQQB1nkCBAIEgfMEgfAA7gB1AKLjCuRF
-772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABkvqmGU8AAAQDAEYwRAIgWSKL
-/XuErVO/6rsiCK5dKuwC79z30wa2USDR+EnmolsCIFhs+gqrNDnLMRwd7q05VRw3
-bKvTap4BIedtb3Gb9CpzAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmKctZyxLBNpW1v
-VAQAAAGS+qYayQAABAMARjBEAiAzKw4crYgtGRG1moEUKs4mceHKs08ZTvYUTKvY
-M98sCgIgRPfp4EN++wahf0hT8MWxdFuwTTHXYClFMMiA4F9avKwwDQYJKoZIhvcN
-AQELBQADggEBAEg8JGb+HH/7unpclrX6W7JASnM60yqoMlC6wmoEZhEwDNbDVq7U
-O5jO2GotiyOinT3OgP5t8Mok9yeTURjbAFDoFe2t5gAglz1n6vI7K0VdeG3A5Lmz
-VNKG8zNR+hq7y+GL4XfZwZCH058gON82EKVhlJxLbrmqE/kHnlogp/gEcQUPfrtc
-LCfvexucXV44M+JPnTfPM/8cNfMp6Xulle1QbRa6R3j6mKT8wbpRmeTv2qJPEhBQ
-GmYzCq3OIPQBol+cykQvyq/HfwVRlWFi4TiVjMK0fQwcKsAHlFQmeKEwtIYcIvsk
-vFPFlk8W+YI7pc5QB1aPmD/wBzA3r9KTdHE=
-</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor use="encryption">
+      <md:KeyDescriptor>
         <ds:KeyInfo>
           <ds:KeyName>repository.clarin.hr</ds:KeyName>
           <ds:X509Data>
