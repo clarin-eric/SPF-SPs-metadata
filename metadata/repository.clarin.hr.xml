@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_30ae04b3d4a235d3e68041a3589703a2f0562a8b" entityID="https://repository.clarin.hr/Shibboleth.sso/Metadata">
-
+<md:EntityDescriptor ID="_30ae04b3d4a235d3e68041a3589703a2f0562a8b" entityID="https://repository.clarin.hr/Shibboleth.sso/Metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
   <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
     <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -19,89 +18,52 @@
     <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
     <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
     <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
-         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-         </saml:Attribute>
-      </mdattr:EntityAttributes>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-   </md:Extensions>
-
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
     <md:Extensions>
-      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repository.clarin.hr/Shibboleth.sso/Login"/>
-      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repository.clarin.hr/Shibboleth.sso/Login" index="1"/>
-    <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
-            <mdui:DisplayName xml:lang="en">HR-CLARIN repository and services</mdui:DisplayName>
-            <mdui:DisplayName xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN</mdui:DisplayName>
-            <mdui:Description xml:lang="en">Repository and services of HR-CLARIN research infrastructure at the Institute of Linguistics, Faculty of Humanities and Social Sciences, University of Zagreb.</mdui:Description>
-            <mdui:Description xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN pri Zavodu za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</mdui:Description>
-            <mdui:InformationURL xml:lang="en">https://www.clarin.hr/en/about/</mdui:InformationURL>
-	    <mdui:InformationURL xml:lang="hr">https://www.clarin.hr/hr/o-nama/</mdui:InformationURL>
-            <mdui:Logo height="229" width="770">https://www.clarin.hr/static/images/clarin-logo-large.png</mdui:Logo>
-            <mdui:Keywords xml:lang="en">CLARIN-ERIC;HR-CLARIN;HR-CLARIN repository</mdui:Keywords>
-            <mdui:Keywords xml:lang="hr">CLARIN-ERIC;HR-CLARIN;HR-CLARIN repozitorij</mdui:Keywords>
-            <mdui:PrivacyStatementURL xml:lang="en">https://www.clarin.hr/en/privacy-policy/</mdui:PrivacyStatementURL>
-            <mdui:PrivacyStatementURL xml:lang="hr">https://www.clarin.hr/hr/pravila-privatnosti/</mdui:PrivacyStatementURL>
-         </mdui:UIInfo>
-         </md:Extensions>
-    <md:KeyDescriptor use="signing">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:KeyName>repository.clarin.hr</ds:KeyName>
-        <ds:X509Data>
-          <ds:X509SubjectName>CN=repository.clarin.hr</ds:X509SubjectName>
-          <ds:X509Certificate>MIIE9jCCA96gAwIBAgISA2HAnDh2wUTfHs75QoGpub3WMA0GCSqGSIb3DQEBCwUA
-MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
-EwNSMTAwHhcNMjQxMTA1MDM0ODUyWhcNMjUwMjAzMDM0ODUxWjAfMR0wGwYDVQQD
-ExRyZXBvc2l0b3J5LmNsYXJpbi5ocjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
-AQoCggEBAI5/XERH4VrcOa1tOTAB8ePAqPASNcvk4RIB8aNnxxsRnUWipQRLPShX
-2HLH5YkQiONO8ABOy+UpU4adyKAuge+tHAmDOlrKR6/k4MMLSoRznHZds933TGiT
-zPH0NW7FLi43MPtKeUDlISEL29F10f1aDJO42zSY4ktTIjzJpwl3Vh0ucaDGABTH
-/ANOgpH1vfs984VgEPhxslA7/tDax9aLBv4o13FNKJkvd6C4acpGnlokzyRd6Sac
-mpN9TvFVz7szjyWxvzkiYHXW6YYGsEWHOp46wopOHshyPGBPmCsBcEGKSpUOGMT1
-PPknMb7gWmguoXiAcSim/QlQgOl/dE0CAwEAAaOCAhYwggISMA4GA1UdDwEB/wQE
-AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
-ADAdBgNVHQ4EFgQUvYe8T3137ZVKqCxW5V9XSBKUN80wHwYDVR0jBBgwFoAUu7zD
-R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo
-dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku
-bGVuY3Iub3JnLzAfBgNVHREEGDAWghRyZXBvc2l0b3J5LmNsYXJpbi5ocjATBgNV
-HSAEDDAKMAgGBmeBDAECATCCAQIGCisGAQQB1nkCBAIEgfMEgfAA7gB1AKLjCuRF
-772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABkvqmGU8AAAQDAEYwRAIgWSKL
-/XuErVO/6rsiCK5dKuwC79z30wa2USDR+EnmolsCIFhs+gqrNDnLMRwd7q05VRw3
-bKvTap4BIedtb3Gb9CpzAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmKctZyxLBNpW1v
-VAQAAAGS+qYayQAABAMARjBEAiAzKw4crYgtGRG1moEUKs4mceHKs08ZTvYUTKvY
-M98sCgIgRPfp4EN++wahf0hT8MWxdFuwTTHXYClFMMiA4F9avKwwDQYJKoZIhvcN
-AQELBQADggEBAEg8JGb+HH/7unpclrX6W7JASnM60yqoMlC6wmoEZhEwDNbDVq7U
-O5jO2GotiyOinT3OgP5t8Mok9yeTURjbAFDoFe2t5gAglz1n6vI7K0VdeG3A5Lmz
-VNKG8zNR+hq7y+GL4XfZwZCH058gON82EKVhlJxLbrmqE/kHnlogp/gEcQUPfrtc
-LCfvexucXV44M+JPnTfPM/8cNfMp6Xulle1QbRa6R3j6mKT8wbpRmeTv2qJPEhBQ
-GmYzCq3OIPQBol+cykQvyq/HfwVRlWFi4TiVjMK0fQwcKsAHlFQmeKEwtIYcIvsk
-vFPFlk8W+YI7pc5QB1aPmD/wBzA3r9KTdHE=
-</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </md:KeyDescriptor>
-    <md:KeyDescriptor use="encryption">
+      <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repository.clarin.hr/Shibboleth.sso/Login" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"/>
+      <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repository.clarin.hr/Shibboleth.sso/Login" index="1" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"/>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+        <mdui:DisplayName xml:lang="en">HR-CLARIN repository</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN</mdui:DisplayName>
+        <mdui:Description xml:lang="en">Repository and services of HR-CLARIN research infrastructure.</mdui:Description>
+        <mdui:Description xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN pri Zavodu za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</mdui:Description>
+        <mdui:InformationURL xml:lang="en">https://www.clarin.hr/en/about/</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="hr">https://www.clarin.hr/hr/o-nama/</mdui:InformationURL>
+        <mdui:Logo height="229" width="770">https://www.clarin.hr/static/images/clarin-logo-large.png</mdui:Logo>
+        <mdui:Keywords xml:lang="en">CLARIN-ERIC;HR-CLARIN;HR-CLARIN repository</mdui:Keywords>
+        <mdui:Keywords xml:lang="hr">CLARIN-ERIC;HR-CLARIN;HR-CLARIN repozitorij</mdui:Keywords>
+        <mdui:PrivacyStatementURL xml:lang="en">https://www.clarin.hr/en/privacy-policy/</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="hr">https://www.clarin.hr/hr/pravila-privatnosti/</mdui:PrivacyStatementURL>
+      </mdui:UIInfo>
+    </md:Extensions>
+    <md:KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>repository.clarin.hr</ds:KeyName>
         <ds:X509Data>
@@ -155,48 +117,47 @@ vFPFlk8W+YI7pc5QB1aPmD/wBzA3r9KTdHE=
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repository.clarin.hr/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repository.clarin.hr/Shibboleth.sso/SAML2/Artifact" index="3"/>
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repository.clarin.hr/Shibboleth.sso/SAML2/ECP" index="4"/>
-  <md:AttributeConsumingService index="1">
-         <md:ServiceName xml:lang="en">HR-CLARIN repository and services</md:ServiceName>
-         <md:ServiceName xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN</md:ServiceName>
-         <md:ServiceDescription xml:lang="en">Repository and services of HR-CLARIN research infrastructure at the Institute of Linguistics, Faculty of Humanities and Social Sciences, University of Zagreb.</md:ServiceDescription>
-         <md:ServiceDescription xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN pri Zavodu za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu.</md:ServiceDescription>
-         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="cn" Name="urn:mace:dir:attribute-def:cn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-         <md:RequestedAttribute FriendlyName="givenName" Name="urn:mace:dir:attribute-def:givenName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-         <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-         <md:RequestedAttribute FriendlyName="surname" Name="urn:mace:dir:attribute-def:sn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-         <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-         <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
-         <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
-      </md:AttributeConsumingService>
-   </md:SPSSODescriptor>
-
-<md:Organization>
-      <md:OrganizationName xml:lang="en">Institute of linguistics, University of Zagreb, Faculty of Humanities and Social Sciences</md:OrganizationName>
-      <md:OrganizationName xml:lang="hr">Zavod za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</md:OrganizationName>
-      <md:OrganizationDisplayName xml:lang="en">Institute of linguistics, University of Zagreb, Faculty of Humanities and Social Sciences</md:OrganizationDisplayName>
-      <md:OrganizationDisplayName xml:lang="hr">Zavod za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">https://zzl.ffzg.unizg.hr/</md:OrganizationURL>
-      <md:OrganizationURL xml:lang="hr">https://zzl.ffzg.unizg.hr/</md:OrganizationURL>
-   </md:Organization>
-   <md:ContactPerson contactType="administrative">
-      <md:GivenName>Daša</md:GivenName>
-      <md:SurName>Farkaš</md:SurName>
-      <md:EmailAddress>mailto:dfarkas@ffzg.unizg.hr</md:EmailAddress>
-   </md:ContactPerson>
-   <md:ContactPerson contactType="support">
-      <md:GivenName>Daša</md:GivenName>
-      <md:SurName>Farkaš</md:SurName>
-      <md:EmailAddress>mailto:helpdesk@clarin.hr</md:EmailAddress>
-   </md:ContactPerson>
-   <md:ContactPerson contactType="technical">
-      <md:GivenName>Vanja</md:GivenName>
-      <md:SurName>Štefanec</md:SurName>
-      <md:EmailAddress>mailto:repository@clarin.hr</md:EmailAddress>
-   </md:ContactPerson>
+    <md:AttributeConsumingService index="1">
+      <md:ServiceName xml:lang="en">HR-CLARIN repository and services</md:ServiceName>
+      <md:ServiceName xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN</md:ServiceName>
+      <md:ServiceDescription xml:lang="en">Repository and services of HR-CLARIN research infrastructure at the Institute of Linguistics, Faculty of Humanities and Social Sciences, University of Zagreb.</md:ServiceDescription>
+      <md:ServiceDescription xml:lang="hr">Repozitorij i servisi istraživačke infrastrukture HR-CLARIN pri Zavodu za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu.</md:ServiceDescription>
+      <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:mace:dir:attribute-def:eduPersonPrincipalName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="mail" Name="urn:mace:dir:attribute-def:mail" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="cn" Name="urn:mace:dir:attribute-def:cn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="eduPersonTargetedID" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
+      <md:RequestedAttribute FriendlyName="givenName" Name="urn:mace:dir:attribute-def:givenName" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+      <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+      <md:RequestedAttribute FriendlyName="surname" Name="urn:mace:dir:attribute-def:sn" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+      <md:RequestedAttribute FriendlyName="surname" Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+      <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation" NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri" isRequired="false"/>
+      <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+    </md:AttributeConsumingService>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en">Institute of linguistics, University of Zagreb, Faculty of Humanities and Social Sciences</md:OrganizationName>
+    <md:OrganizationName xml:lang="hr">Zavod za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en">Institute of linguistics, University of Zagreb, Faculty of Humanities and Social Sciences</md:OrganizationDisplayName>
+    <md:OrganizationDisplayName xml:lang="hr">Zavod za lingvistiku Filozofskog fakulteta Sveučilišta u Zagrebu</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en">https://zzl.ffzg.unizg.hr/</md:OrganizationURL>
+    <md:OrganizationURL xml:lang="hr">https://zzl.ffzg.unizg.hr/</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="administrative">
+    <md:GivenName>Daša</md:GivenName>
+    <md:SurName>Farkaš</md:SurName>
+    <md:EmailAddress>mailto:dfarkas@ffzg.unizg.hr</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>Daša</md:GivenName>
+    <md:SurName>Farkaš</md:SurName>
+    <md:EmailAddress>mailto:helpdesk@clarin.hr</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Vanja</md:GivenName>
+    <md:SurName>Štefanec</md:SurName>
+    <md:EmailAddress>mailto:repository@clarin.hr</md:EmailAddress>
+  </md:ContactPerson>
 </md:EntityDescriptor>
