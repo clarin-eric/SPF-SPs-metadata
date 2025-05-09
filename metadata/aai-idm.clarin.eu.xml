@@ -46,13 +46,9 @@
             </ds:X509Data>
          </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" 
-                              Location="https://www.clarin.eu/saml/sls"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
-                              Location="https://www.clarin.eu/saml/acs" index="1"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
-                              Location="https://3w.clarin-dev.eu/saml/acs" index="2"/>
+                              Location="https://idm.clarin-dev.eu/unitygw/spSAMLResponseConsumer" index="1"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">CLARIN ERIC AAI proxy</md:ServiceName>
          <md:ServiceDescription xml:lang="en">For seamless login within the CLARIN realm</md:ServiceDescription>
