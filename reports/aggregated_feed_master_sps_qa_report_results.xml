@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Wed Apr 23 13:40:44 UTC 2025</ReportDate>
-  <FromCommit>0a4cc9b5b1b95b95dc884864bf8dc49e94ffdf18</FromCommit>
+  <ReportDate>Tue May 13 08:46:48 UTC 2025</ReportDate>
+  <FromCommit>adfc255bbbeb49f6dbb5d33a225cb758d9037df7</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -382,6 +382,16 @@
       <sp>https://ws1-clarind.esc.rzg.mpg.de/shibboleth-sp</sp>
       <explanation>Invalid or missing ‘md:SPSSODescriptor/md:AttributeConsumingService’, or missing children ‘md:ServiceName’ and/or ‘md:RequestedAttribute[@NameFormat='urn:oasis:names:tc:SAML:2.0:attrname-format:uri']’.</explanation>
       <requirement>Partially a requirement for the GÉANT Data Protection Code of Conduct Entity Category. Completely a requirement for the REFEDS Research and Scholarship Entity Category (4.3.5). Completely a guideline for the CLARIN Service Provider Federation.</requirement>
+    </result>
+    <result>
+      <sp>http://aai-idm.clarin-dev.eu</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+    <result>
+      <sp>http://aai-idm.clarin-dev.eu</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
     </result>
     <result>
       <sp>https://auth.ortolang.fr/auth/realms/ortolang</sp>
