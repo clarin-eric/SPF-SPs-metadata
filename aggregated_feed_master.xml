@@ -2512,6 +2512,12 @@ pxkh1C0dZWrzsnF8r2Z+pQ6FLYdquQtg2A==</ds:X509Certificate>
         <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
       <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -2555,7 +2561,7 @@ pxkh1C0dZWrzsnF8r2Z+pQ6FLYdquQtg2A==</ds:X509Certificate>
         <ds:KeyInfo>
           <ds:KeyName>dspace-clarin-it.ilc.cnr.it</ds:KeyName>
           <ds:X509Data>
-            <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,L=Roma,C=IT</ds:X509SubjectName>
+            <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Roma,C=IT</ds:X509SubjectName>
             <ds:X509Certificate>MIIH1zCCBj+gAwIBAgIQFbZNI7JgQsIvRGohQQBU+jANBgkqhkiG9w0BAQsFADBg
 MQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJl
 c2VhcmNoIEluc3RpdHV0aW9ucyBDQTEYMBYGA1UEAwwPR0VBTlQgVExTIFJTQSAx
