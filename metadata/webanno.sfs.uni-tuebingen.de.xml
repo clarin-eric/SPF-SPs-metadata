@@ -42,8 +42,8 @@
             <mdui:Description xml:lang="de">WebAnno ist ein webbasiertes Allzweck-Werkzeug für linguistische Anmerkungen.</mdui:Description>
             <mdui:Description xml:lang="fi">WebAnno on yleiskäyttöinen web-pohjainen kielellinen käsinkirjoitustyökalun.</mdui:Description>
             <mdui:Logo height="128" width="128">https://webanno.github.io/webanno/assets/img/logo.png</mdui:Logo>
-            <mdui:InformationURL xml:lang="en">http://webanno.sfs.uni-tuebingen.de/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/WebLicht_Privacy_Policy_Document</mdui:PrivacyStatementURL>
+            <mdui:InformationURL xml:lang="en">https://webanno.sfs.uni-tuebingen.de/</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/WebLicht_Privacy_Policy_Document.html</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                                 Location="https://webanno.sfs.uni-tuebingen.de/Shibboleth.sso/Login"/>
@@ -124,16 +124,16 @@
    <md:ContactPerson contactType="technical">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="administrative">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>Marie</md:GivenName>
       <md:SurName>Hinrichs</md:SurName>
-      <md:EmailAddress>mailto:wladmin@sfs.uni-tuebingen.de</md:EmailAddress>
+      <md:EmailAddress>mailto:weblicht@semsprach.uni-tuebingen.de</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
