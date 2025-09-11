@@ -1,8 +1,15 @@
+
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5d15d5a81bc952da1d34986ebc7713c0d5c9ea60" entityID="https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata">
   <Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
       <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
         <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
         </saml:Attribute>
       </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -47,7 +54,7 @@
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>dspace-clarin-it.ilc.cnr.it</ds:KeyName>
         <ds:X509Data>
-          <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,L=Roma,C=IT</ds:X509SubjectName>
+          <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Roma,C=IT</ds:X509SubjectName>
           <ds:X509Certificate>MIIH1zCCBj+gAwIBAgIQFbZNI7JgQsIvRGohQQBU+jANBgkqhkiG9w0BAQsFADBg
 MQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJl
 c2VhcmNoIEluc3RpdHV0aW9ucyBDQTEYMBYGA1UEAwwPR0VBTlQgVExTIFJTQSAx
