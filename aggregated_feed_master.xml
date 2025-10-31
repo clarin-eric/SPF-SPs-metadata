@@ -1197,7 +1197,7 @@ e0JWRqlokBOaIj4Q2WeSXFE=</ds:X509Certificate>
           <mdui:Keywords xml:lang="es">CLARIAH-IATEXT Repositorio Servicios</mdui:Keywords>
           <mdui:Keywords xml:lang="fr">CLARIAH-IATEXT D&#xE9;p&#xF4;t Services</mdui:Keywords>
           <!-- For production: https://clariah.iatext.ulpgc.es -->
-          <mdui:PrivacyStatementURL xml:lang="en">https://clariah.iatext.ulpgc.es/info/privacy</mdui:PrivacyStatementURL>
+          <mdui:PrivacyStatementURL xml:lang="en">https://clariah.iatext.ulpgc.es/static/legal-framework#privacy</mdui:PrivacyStatementURL>
         </mdui:UIInfo>
         <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login -->
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login"/>
@@ -1216,29 +1216,28 @@ e0JWRqlokBOaIj4Q2WeSXFE=</ds:X509Certificate>
         <ds:KeyInfo>
           <ds:X509Data>
             <ds:X509Certificate>
-                        MIIESTCCAzGgAwIBAgIUQLWLwKmjl9t6ZtiUvX9JoT2aGBIwDQYJKoZIhvcNAQEL
-                        BQAwgbMxCzAJBgNVBAYTAkVTMRMwEQYDVQQIDApMYXMgUGFsbWFzMSMwIQYDVQQH
-                        DBpMYXMgUGFsbWFzIGRlIEdyYW4gQ2FuYXJpYTEPMA0GA1UECgwGSUFURVhUMRAw
-                        DgYDVQQLDAdzZWN0aW9uMSAwHgYDVQQDDBdjbGFyaWFoLmlhdGV4dC51bHBnYy5l
-                        czElMCMGCSqGSIb3DQEJARYWZGF2aWQucGFycmVub0B1bHBnYy5lczAeFw0yNTEw
-                        MDkwNzQ4NTZaFw0yNTExMDgwNzQ4NTZaMIGzMQswCQYDVQQGEwJFUzETMBEGA1UE
-                        CAwKTGFzIFBhbG1hczEjMCEGA1UEBwwaTGFzIFBhbG1hcyBkZSBHcmFuIENhbmFy
-                        aWExDzANBgNVBAoMBklBVEVYVDEQMA4GA1UECwwHc2VjdGlvbjEgMB4GA1UEAwwX
-                        Y2xhcmlhaC5pYXRleHQudWxwZ2MuZXMxJTAjBgkqhkiG9w0BCQEWFmRhdmlkLnBh
-                        cnJlbm9AdWxwZ2MuZXMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCf
-                        MARDYYvm9Xd8f/ZF1CvPlnXNRTUg7Arht2D6RYL2JVl02h6H5RkUkT7h2Dk8u9/J
-                        dl23NP28Mt3DAs4wEKPrdAmO+DPRFn4pzboCVWTGlihWJcsIEDmGJ0TQe9ehDVvp
-                        szHeOBeLagnwV/BMNT/DwPM1VKAPaKuNsoduL+4OKRx+9ZmFT6BiJxd3+otb2QN3
-                        OWvTxz/YNM6l7TLYz0bZ828mHq5iuOUMpRLPtQPhWxFgBZ6PGeaZhOFRW/DUzNwh
-                        odFsykFpKcOfP3nM1RWqR1jnSwUSE+L/40hRszNXlUKPT+H+2jwyy9MkykKcmAGu
-                        Yd4pVo6fJWB1ac0DpvezAgMBAAGjUzBRMB0GA1UdDgQWBBRXZi+FciAZBus3hhf9
-                        k87P3S5XRTAfBgNVHSMEGDAWgBRXZi+FciAZBus3hhf9k87P3S5XRTAPBgNVHRMB
-                        Af8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBmhDN0M1YHilQhbDd6hUNHoF6k
-                        T2UhLjBFBis3zcmGz8d+jd5clRWE2jeVcgiLEDfYaDu0FE34/saSPpxRIzdmkEKL
-                        MRhLzggTia7ZH7Bstd5NGxiU9k4MidcmL9tsd0C9nQ2979eAMik75sNWwXFrsb1A
-                        mrBzQuzyC6drnUjqpZtmwPSt3yOTaRaOF01i1xkYgHR9KGOlwHvpGCicm/Qg/3u0
-                        DDzjBfZymVsh7DCUnerdOSU/fWO1aa01kvysNVSoA8gn7bWOmS5vtABlYZ4SKUyi
-                        F3+dEJ9aUz8eG+gjsWJ5HRR+DJBX/2SC7J9w4zAso0OI6clPQ8uwcRQvVaBG
+                        MIIEFzCCAv+gAwIBAgIUAngEcmziJT6onHN4Q51I5DwVEhowDQYJKoZIhvcNAQEL
+                        BQAwgZoxCzAJBgNVBAYTAkVTMRMwEQYDVQQIDApMYXMgUGFsbWFzMSMwIQYDVQQH
+                        DBpMYXMgUGFsbWFzIGRlIEdyYW4gQ2FuYXJpYTEPMA0GA1UECgwGSUFURVhUMSAw
+                        HgYDVQQDDBdjbGFyaWFoLmlhdGV4dC51bHBnYy5lczEeMBwGCSqGSIb3DQEJARYP
+                        aWF0ZXh0QHVscGdjLmVzMB4XDTI1MTAzMTEwNDEwNFoXDTMwMTAzMTEwNDEwNFow
+                        gZoxCzAJBgNVBAYTAkVTMRMwEQYDVQQIDApMYXMgUGFsbWFzMSMwIQYDVQQHDBpM
+                        YXMgUGFsbWFzIGRlIEdyYW4gQ2FuYXJpYTEPMA0GA1UECgwGSUFURVhUMSAwHgYD
+                        VQQDDBdjbGFyaWFoLmlhdGV4dC51bHBnYy5lczEeMBwGCSqGSIb3DQEJARYPaWF0
+                        ZXh0QHVscGdjLmVzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsCg4
+                        AVTzz299Us4+IdJxIfu1tPTRAF+YfkktZiVxUJM7jIMbWAaCFGpKGjYFDQlysJrK
+                        jmoNFrZTYZeh4dDln2nIOjyeR7VJ1KY2u2ifZ+4uO9N5UtOLivRG3C4tTlinBpk3
+                        FFtk3g5kq++EWya3WXkiTGTtPOfz/Hyd/6I7pFxr7Z12vuJ18cf8h94sllpKXiM2
+                        QcH2Mpkh+8ExEBFS0/m2G/9SY99HHnTIN8q00Z8i1jxmePCjSa4gs0PoVPHYWmom
+                        Ke2LFITJR8pzzmPgJRAZmF/oEaHNfVzPRTPnjBSsWFh/aoROQgUUzp1E5t4EmVJW
+                        tn1Mnai1ccvNnMfFWQIDAQABo1MwUTAdBgNVHQ4EFgQUpTnBuSLcsDXagnoOGX9A
+                        sF2OmSAwHwYDVR0jBBgwFoAUpTnBuSLcsDXagnoOGX9AsF2OmSAwDwYDVR0TAQH/
+                        BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAQ/n9E9Bf9EYctD57f8n5JatYavlZ
+                        GM114y3KDKHlE2U5016JMw1hG7BYPjYfLu75UwbfRInssGE/jxrMF/AAVd95zaIn
+                        o82jpoHTZZnsUkQPFyNZ4Rw+cIk12CIyM8B4/AlU2Rjxjrxt5FpLjXPa6R2ZGO7M
+                        Us/yjZjxCj2oJz7sX5irNiB0q5o4xZBfVROjXIaei5swJadFw6xn/BBHh2e3NRgS
+                        cX7pCR/ZnuUicdMw3Bagg9M2V6bcI1NZKJztkIUX5NFK2VJuJDY+ZM2UXPcY2yR2
+                        gRe4umZ0BkHZgKZMrHjAFleO/lHwum4mA5M/ixJqk41ZcsqflKRxtc3dbg==
                     </ds:X509Certificate>
           </ds:X509Data>
         </ds:KeyInfo>
