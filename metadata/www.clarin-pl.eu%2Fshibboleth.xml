@@ -43,35 +43,8 @@
          </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
-         <ds:KeyInfo>
-            <ds:KeyName>Active</ds:KeyName>
-            <ds:KeyName>https://www.clarin-pl.eu/dspace</ds:KeyName>
-            <ds:X509Data>
-               <ds:X509SubjectName>CN=https://www.clarin-pl.eu/dspace</ds:X509SubjectName>
-               <ds:X509Certificate>MIIDOTCCAiGgAwIBAgIJAJ6K9nUqzyBnMA0GCSqGSIb3DQEBBQUAMCYxJDAiBgNV
-BAMTG2h0dHBzOi8vY2xhcmluLXBsLmV1L2RzcGFjZTAeFw0yMDAxMDkxMjAwMzNa
-Fw0yMzAxMDgxMjAwMzNaMCYxJDAiBgNVBAMTG2h0dHBzOi8vY2xhcmluLXBsLmV1
-L2RzcGFjZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALfUhNPbFkRX
-DqjX8fjhiiBG+PwDZ877Kk/69gpePe+EBCjL2puQcJQpCXakW5AF17W6TziF+dQf
-pHbarvxD1KFwpINfKEnWqwYREXZnIfsKvQL64asI03vnofIJXLlB0K07CYHiQEaD
-HMVwLYxKHmpmBSrXVV0mEnOU2qf2fuOHQbZRIfDJ0JrV9mP4it+0KioYDt0iHPym
-GAGsoNSXzsc312gFnaK9fT1OhRy68CDiVT/YVCfhxe3QkBVr8VaCnUdMzc2+Q0Go
-xsnYkXOBHQgNPhsANUzvYbV7uPZGU5mAG41S3M9gIvtgl5MuTSgeTHxlb+0FmcP0
-4hvktyjAq0ECAwEAAaNqMGgwRwYDVR0RBEAwPoIbaHR0cHM6Ly9jbGFyaW4tcGwu
-ZXUvZHNwYWNlhh9odHRwczovL2NsYXJpbi1wbC5ldS9zaGliYm9sZXRoMB0GA1Ud
-DgQWBBSHFL54um/PxehaKYP75HvjKQwA1jANBgkqhkiG9w0BAQUFAAOCAQEAYQ5u
-CW4v2rV71Ww4CeIjL0lk9WzJJ+X66rr0qdPWA69zFJBp560Rhcds5bGgjNrFW8Wp
-lk1/vSXT8183IBzPh98nMc9bJfNE9iJFzMi8P0C0zL0fETdjoYvJhPh5DcIM38f7
-MU4PT8JXOr94b+r5nTPzAaeCMF0CAI4ArMbufAP/J7zJoEMTX+kb/r1oHG6IHhGc
-PATZmZ7RY7n3VGiG3Rn/FNS8I37KtLtOnkFujP4/pF8bS4EFd5907ZUH6CY9Ss8x
-92tbm/rOY4QaBr9cIJ796WTbZe/9eXtpIW6xrBsiOr8fEoXxCqBXOZMYVpyZCBZL
-NPP0cKnXF0jLn+6Hcg==</ds:X509Certificate>
-            </ds:X509Data>
-         </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor>
          <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-           <ds:KeyName>Standby</ds:KeyName>
+           <ds:KeyName>Active</ds:KeyName>
            <ds:KeyName>https://clarin-pl.eu/dspace</ds:KeyName>
            <ds:KeyName>https://clarin-pl.eu/shibboleth</ds:KeyName>
            <ds:X509Data>
