@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+#############################
+# IMPORTANT !! 
+#############################
+-->
+
+<!-- Production: change entityID with http://clariah.iatext.ulpgc.es/shibboleth -->
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+    xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+    xmlns:remd="http://refeds.org/metadata"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    entityID="https://clariah.iatext.ulpgc.es/shibboleth">
+    <md:Extensions>
+        <mdattr:EntityAttributes>
+            <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                Name="http://macedir.org/entity-category">
+                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            </saml:Attribute>
+        </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <!--
+        #############################
+        # IMPORTANT !! 
+        #############################
+        -->
+
+        <md:Extensions>
+            <mdui:UIInfo>
+                <mdui:DisplayName xml:lang="en">CLARIAH-IATEXT Repository</mdui:DisplayName>
+                <mdui:Description xml:lang="en">Various services provided by the IATEXT Centre B in the context of the CLARIAH-ES initiative.</mdui:Description>
+                <mdui:DisplayName xml:lang="es">CLARIAH-IATEXT</mdui:DisplayName>
+                <mdui:Description xml:lang="es">Diversos servicios prestados por el Centro B del IATEXT en el contexto de la iniciativa CLARIAH-ES.</mdui:Description>
+                <mdui:DisplayName xml:lang="fr">CLARIAH-IATEXT</mdui:DisplayName>
+                <mdui:Description xml:lang="fr">Divers services fournis par le Centre B de l'IATEXT dans le cadre de l'initiative CLARIAH-ES.</mdui:Description>
+                <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+                <!-- For production: https://clariah.iatext.ulpgc.es/assets/images/logo.png -->
+                <!-- Note: create IATEXT logo as it does not exist yet -->
+                <mdui:Logo height="220" width="195">https://clariah.iatext.ulpgc.es/assets/images/logo.png</mdui:Logo>
+                <mdui:Keywords xml:lang="en">CLARIAH-IATEXT Repository Services</mdui:Keywords>
+                <mdui:Keywords xml:lang="es">CLARIAH-IATEXT Repositorio Servicios</mdui:Keywords>
+                <mdui:Keywords xml:lang="fr">CLARIAH-IATEXT Dépôt Services</mdui:Keywords>
+
+                <!-- For production: https://clariah.iatext.ulpgc.es -->
+                <mdui:PrivacyStatementURL xml:lang="en">https://clariah.iatext.ulpgc.es/static/legal-framework#privacy</mdui:PrivacyStatementURL>
+            </mdui:UIInfo>
+
+            <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login -->
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login" />
+
+            <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login -->
+            <idpdisc:DiscoveryResponse
+                Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/Login"
+                index="1" />
+        </md:Extensions>
+
+        <!--
+        #############################
+        # IMPORTANT !! 
+        #############################
+        -->
+
+        <!-- 
+        Note: Generate key and certificate inside the server
+        -->
+        
+        <md:KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+                        MIIEFzCCAv+gAwIBAgIUAngEcmziJT6onHN4Q51I5DwVEhowDQYJKoZIhvcNAQEL
+                        BQAwgZoxCzAJBgNVBAYTAkVTMRMwEQYDVQQIDApMYXMgUGFsbWFzMSMwIQYDVQQH
+                        DBpMYXMgUGFsbWFzIGRlIEdyYW4gQ2FuYXJpYTEPMA0GA1UECgwGSUFURVhUMSAw
+                        HgYDVQQDDBdjbGFyaWFoLmlhdGV4dC51bHBnYy5lczEeMBwGCSqGSIb3DQEJARYP
+                        aWF0ZXh0QHVscGdjLmVzMB4XDTI1MTAzMTEwNDEwNFoXDTMwMTAzMTEwNDEwNFow
+                        gZoxCzAJBgNVBAYTAkVTMRMwEQYDVQQIDApMYXMgUGFsbWFzMSMwIQYDVQQHDBpM
+                        YXMgUGFsbWFzIGRlIEdyYW4gQ2FuYXJpYTEPMA0GA1UECgwGSUFURVhUMSAwHgYD
+                        VQQDDBdjbGFyaWFoLmlhdGV4dC51bHBnYy5lczEeMBwGCSqGSIb3DQEJARYPaWF0
+                        ZXh0QHVscGdjLmVzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsCg4
+                        AVTzz299Us4+IdJxIfu1tPTRAF+YfkktZiVxUJM7jIMbWAaCFGpKGjYFDQlysJrK
+                        jmoNFrZTYZeh4dDln2nIOjyeR7VJ1KY2u2ifZ+4uO9N5UtOLivRG3C4tTlinBpk3
+                        FFtk3g5kq++EWya3WXkiTGTtPOfz/Hyd/6I7pFxr7Z12vuJ18cf8h94sllpKXiM2
+                        QcH2Mpkh+8ExEBFS0/m2G/9SY99HHnTIN8q00Z8i1jxmePCjSa4gs0PoVPHYWmom
+                        Ke2LFITJR8pzzmPgJRAZmF/oEaHNfVzPRTPnjBSsWFh/aoROQgUUzp1E5t4EmVJW
+                        tn1Mnai1ccvNnMfFWQIDAQABo1MwUTAdBgNVHQ4EFgQUpTnBuSLcsDXagnoOGX9A
+                        sF2OmSAwHwYDVR0jBBgwFoAUpTnBuSLcsDXagnoOGX9AsF2OmSAwDwYDVR0TAQH/
+                        BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAQ/n9E9Bf9EYctD57f8n5JatYavlZ
+                        GM114y3KDKHlE2U5016JMw1hG7BYPjYfLu75UwbfRInssGE/jxrMF/AAVd95zaIn
+                        o82jpoHTZZnsUkQPFyNZ4Rw+cIk12CIyM8B4/AlU2Rjxjrxt5FpLjXPa6R2ZGO7M
+                        Us/yjZjxCj2oJz7sX5irNiB0q5o4xZBfVROjXIaei5swJadFw6xn/BBHh2e3NRgS
+                        cX7pCR/ZnuUicdMw3Bagg9M2V6bcI1NZKJztkIUX5NFK2VJuJDY+ZM2UXPcY2yR2
+                        gRe4umZ0BkHZgKZMrHjAFleO/lHwum4mA5M/ixJqk41ZcsqflKRxtc3dbg==
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+
+        <!--
+        #############################
+        # IMPORTANT !! 
+        #############################
+        -->
+
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/SOAP -->
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/SOAP" />
+        
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/Redirect -->
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/Redirect" />
+        
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/POST -->
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/POST" />
+        
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/Artifact -->
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SLO/Artifact" />
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/POST -->
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/POST"
+            index="1" />
+
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/POST-SimpleSign -->
+        <md:AssertionConsumerService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/POST-SimpleSign"
+            index="2" />
+
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/Artifact -->
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/Artifact"
+            index="3" />
+
+        <!-- For production: https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/ECP -->
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+            Location="https://clariah.iatext.ulpgc.es/Shibboleth.sso/SAML2/ECP"
+            index="4" />
+        
+        <md:AttributeConsumingService index="1">
+            <md:ServiceName xml:lang="en">CLARIAH-IATEXT Repository</md:ServiceName>
+            <md:ServiceDescription xml:lang="en">Various services provided by the IATEXT Centre B in the context of the CLARIAH-ES initiative.</md:ServiceDescription>
+            <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="true" />
+            <md:RequestedAttribute FriendlyName="eduPersonTargetedID"
+                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="true" />
+            <md:RequestedAttribute FriendlyName="mail"
+                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="true" />
+        </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+        <md:OrganizationName xml:lang="en">Research Institute of Text Analysis and Applications (IATEXT) of University of Las Palmas de Gran Canaria</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="en">Centre B</md:OrganizationDisplayName>
+        <md:OrganizationURL xml:lang="en">https://iatext.ulpgc.es</md:OrganizationURL>
+    </md:Organization>
+
+    <!--
+    #############################
+    # IMPORTANT !! 
+    #############################
+    -->
+
+    <md:ContactPerson contactType="administrative">
+        <md:GivenName>Mar</md:GivenName>
+        <md:SurName>Hernández</md:SurName>
+        <md:EmailAddress>mailto:iatext@ulpgc.es</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="support">
+        <md:GivenName>David</md:GivenName>
+        <md:SurName>Parreño</md:SurName>
+        <md:EmailAddress>mailto:david.parreno@ulpgc.es</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+        <md:GivenName>David</md:GivenName>
+        <md:SurName>Parreño</md:SurName>
+        <md:EmailAddress>mailto:david.parreno@ulpgc.es</md:EmailAddress>
+    </md:ContactPerson>
+    
+</md:EntityDescriptor>

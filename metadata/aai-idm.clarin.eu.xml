@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="http://aai-idm.clarin-dev.eu">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                         Name="http://macedir.org/entity-category">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">CLARIN ERIC AAI proxy</mdui:DisplayName>
+            <mdui:Description xml:lang="en">AAI proxy for the CLARIN realm</mdui:Description>
+            <mdui:DisplayName xml:lang="de">CLARIN ERIC AAI proxy</mdui:DisplayName>
+            <mdui:Description xml:lang="de">AAI-Proxy für den CLARIN Bereich</mdui:Description>
+            <mdui:DisplayName xml:lang="nl">CLARIN ERIC AAI proxy</mdui:DisplayName>
+            <mdui:Description xml:lang="nl">AAI-proxy voor het CLARIN domein</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+            <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
+            <mdui:Keywords xml:lang="en">CLARIN AAI proxy</mdui:Keywords>
+            <mdui:Keywords xml:lang="nl">CLARIN AAI proxy</mdui:Keywords>
+            <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>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
+EtRfUc2I/A==</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+                              Location="https://idm.clarin-dev.eu/unitygw/spSAMLResponseConsumer" index="1"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">CLARIN ERIC AAI proxy</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">For seamless login within the CLARIN realm</md:ServiceDescription>
+         <!-- SAML1 -->
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+            Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonTargetedID"
+            Name="urn:mace:dir:attribute-def:eduPersonTargetedID"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="mail"
+            Name="urn:mace:dir:attribute-def:mail"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="cn"
+            Name="urn:mace:dir:attribute-def:cn"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="preferredLanguage"
+            Name="urn:mace:dir:attribute-def:preferredLanguage"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="organization"
+            Name="urn:mace:terena.org:attribute-def:schacHomeOrganization"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="organizationType"
+            Name="urn:mace:terena.org:attribute-def:schacHomeOrganizationType"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="affiliation"
+            Name="urn:mace:dir:attribute-def:eduPersonAffiliation"
+            NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
+            isRequired="true"/>
+         <!-- SAML2 -->
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+            Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonTargetedID"
+            Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="mail"
+            Name="urn:oid:0.9.2342.19200300.100.1.3"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="cn"
+            Name="urn:oid:2.5.4.3"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="preferredLanguage"
+            Name="urn:oid:2.16.840.1.113730.3.1.39"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="organization"
+            Name="urn:oid:1.3.6.1.4.1.25178.1.2.9"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="organizationType"
+            Name="urn:oid:1.3.6.1.4.1.25178.1.2.10"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="affiliation"
+            Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+            NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+            isRequired="true"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">CLARIN ERIC</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">CLARIN</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.clarin.eu/</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>CLARIN</md:GivenName>
+      <md:SurName>Sysop</md:SurName>
+      <md:EmailAddress>mailto:sysops@clarin.eu</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>

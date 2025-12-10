@@ -30,7 +30,13 @@
       <md:Extensions>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.kielipankki.fi/Shibboleth.sso/Login" index="1"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://kielipankki.fi/Shibboleth.sso/Login" index="2"/>
-         <mdui:UIInfo>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/SAML2/Redirect/SSO" index="3"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/SAML2/Redirect/SSO" index="4"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/oidc/authorize" index="5"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/userprofile" index="6"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/oidc/authorize" index="7"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/userprofile" index="8"/>
+	 <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">Kielipankki (The Language Bank of Finland)</mdui:DisplayName>
             <mdui:DisplayName xml:lang="fi">Kielipankki</mdui:DisplayName>
             <mdui:Description xml:lang="fi">Kielipankin portaali</mdui:Description>
@@ -87,6 +93,8 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.kielipankki.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aai-qa.kielipankki.fi/idp/profile/Authn/SAML2/POST/SSO" index="2" isDefault="false"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aai.kielipankki.fi/idp/profile/Authn/SAML2/POST/SSO" index="3" isDefault="false"/>
       <md:AttributeConsumingService index="1" isDefault="true">
          <md:ServiceName xml:lang="fi">Kielipankki</md:ServiceName>
          <md:ServiceName xml:lang="en">Kielipankki (The Language Bank of Finland)</md:ServiceName>

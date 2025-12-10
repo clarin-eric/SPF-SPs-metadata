@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                     xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                     xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                     xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+                     xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                     xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                     xmlns:remd="http://refeds.org/metadata"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     entityID="https://zerbitzuak.hitz.eus/shibboleth">
+   <md:Extensions>
+      <mdattr:EntityAttributes>
+         <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                         Name="http://macedir.org/entity-category">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+         </saml:Attribute>
+      </mdattr:EntityAttributes>
+   </md:Extensions>
+   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">HiTZ / CLARIAH-ES Services</mdui:DisplayName>
+           <mdui:Description xml:lang="en">Various services provided by the HiTZ Center (UPV/EHU) in the context of CLARIAH-ES.</mdui:Description>
+           <mdui:DisplayName xml:lang="eu">HiTZ / CLARIAH-ES Zerbitzuak</mdui:DisplayName>
+           <mdui:Description xml:lang="eu">HiTZ Zentroak (UPV/EHU), CLARIAH-ES esparruan eskaintzen dituen hainbat zerbitzu.</mdui:Description>
+           <mdui:DisplayName xml:lang="es">HiTZ / CLARIAH-ES Servicios</mdui:DisplayName>
+           <mdui:Description xml:lang="es">Diversos servicios prestados por el Centro HiTZ (UPV/EHU) en el contexto de CLARIAH-ES.</mdui:Description>
+           <mdui:DisplayName xml:lang="fr">HiTZ / CLARIAH-ES Services</mdui:DisplayName>
+           <mdui:Description xml:lang="fr">Divers services fournis par le Centre HiTZ (UPV/EHU) dans le cadre de CLARIAH-ES.</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+            <mdui:Logo height="220" width="195">https://clariah.hitz.eus/assets/images/logoa.png</mdui:Logo>
+            <mdui:Keywords xml:lang="en">HiTZ CLARIAH-ES Services</mdui:Keywords>
+            <mdui:Keywords xml:lang="eu">HiTZ CLARIAH-ES Zerbitzuak</mdui:Keywords>
+            <mdui:Keywords xml:lang="es">HiTZ CLARIAH-ES Servicios</mdui:Keywords>
+            <mdui:Keywords xml:lang="fr">HiTZ CLARIAH-ES Services</mdui:Keywords>
+            <mdui:PrivacyStatementURL xml:lang="en">https://clariah.hitz.eus/info/privacy</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/Login"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/Login"
+                                    index="1"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>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</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                              Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SLO/SOAP"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                              Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                              Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SLO/POST"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                              Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SLO/Artifact"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SAML2/POST"
+                                   index="1"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                   Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   index="2"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                   Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SAML2/Artifact"
+                                   index="3"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                   Location="https://zerbitzuak.hitz.eus/Shibboleth.sso/SAML2/ECP"
+                                   index="4"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">HiTZ / CLARIAH-ES Services</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">Various services provided by HiTZ Center (University of the Basque Country, UPV/EHU) in the context of the CLARIAH-ES initiative.</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonTargetedID"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="givenName" 
+                                Name="urn:oid:2.5.4.42"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="surname" 
+                                Name="urn:oid:2.5.4.4" 
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="eduPersonScopedAffiliation" 
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" 
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">HiTZ Center, University of the Basque Country UPV/EHU</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">HiTZ center</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.hitz.eus</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>German</md:GivenName>
+      <md:SurName>Rigau Claramunt</md:SurName>
+      <md:EmailAddress>mailto:german.rigau@ehu.eus</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>Xabier</md:GivenName>
+      <md:SurName>Goenaga Goitia</md:SurName>
+      <md:EmailAddress>mailto:xabier.goenaga@ehu.eus</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>Xabier</md:GivenName>
+      <md:SurName>Goenaga Goitia</md:SurName>
+      <md:EmailAddress>mailto:xabier.goenaga@ehu.eus</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
