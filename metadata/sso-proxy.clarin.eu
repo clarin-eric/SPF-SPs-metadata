@@ -26,7 +26,7 @@
    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">CLARIN ERIC Single sign-on proxy</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="en">CLARIN ERIC Single sign-on</mdui:DisplayName>
             <mdui:Description xml:lang="en">Single sign-on proxy for the CLARIN realm</mdui:Description>
             <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
             <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
