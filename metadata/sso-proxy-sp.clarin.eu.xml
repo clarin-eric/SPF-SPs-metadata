@@ -12,7 +12,7 @@
                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     entityID="https://sso-proxy.clarin.eu">
+                     entityID="https://sso-proxy-sp.clarin.eu">
    <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
