@@ -75,7 +75,7 @@ B+I2mcH4EWHB5HRA0WLudWUqJa1uOTftZhrWHqQEVLUZSTJOnxZniI9SJg==</ds:X509Certificate
       </md:KeyDescriptor>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
-                              Location="https://idm.clarin-dev.eu/unitygw/spSAMLResponseConsumer" index="1"/>
+                              Location="https://idm.clarin.eu/unitygw/spSAMLResponseConsumer" index="1"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">CLARIN ERIC Single sign-on proxy</md:ServiceName>
          <md:ServiceDescription xml:lang="en">For seamless authentication within the CLARIN realm</md:ServiceDescription>
