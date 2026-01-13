@@ -28,7 +28,7 @@
          <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">CLARIN ERIC Single sign-on</mdui:DisplayName>
             <mdui:Description xml:lang="en">Single sign-on proxy for the CLARIN realm</mdui:Description>
-            <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://www.clarin.eu/content/clarin-sigle-sign-proxy</mdui:InformationURL>
             <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
             <mdui:Keywords xml:lang="en">CLARIN AAI proxy single sign-on</mdui:Keywords>
             <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
