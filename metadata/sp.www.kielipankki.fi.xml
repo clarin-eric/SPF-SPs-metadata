@@ -15,41 +15,40 @@
                      entityID="https://sp.www.kielipankki.fi">
    <md:Extensions>
       <mdrpi:RegistrationInfo registrationAuthority="http://www.csc.fi/haka">
-         <mdrpi:RegistrationPolicy xml:lang="en">http://www.csc.fi/english/institutions/haka/instructions/join/eduGAINRegistrationStatement/</mdrpi:RegistrationPolicy>
+         <mdrpi:RegistrationPolicy xml:lang="en">https://wiki.eduuni.fi/display/CSCHAKA/Joining+and+registrations</mdrpi:RegistrationPolicy>
       </mdrpi:RegistrationInfo>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
                          NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute Name="http://macedir.org/entity-category"
-                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute Name="http://macedir.org/entity-category"
-                         NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
          </saml:Attribute>
       </mdattr:EntityAttributes>
    </md:Extensions>
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
-         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://www.kielipankki.fi/Shibboleth.sso/Login"
-                                    index="1"/>
-         <mdui:UIInfo>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://www.kielipankki.fi/Shibboleth.sso/Login" index="1"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://kielipankki.fi/Shibboleth.sso/Login" index="2"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/SAML2/Redirect/SSO" index="3"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/SAML2/Redirect/SSO" index="4"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/oidc/authorize" index="5"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai.kielipankki.fi/idp/profile/userprofile" index="6"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/oidc/authorize" index="7"/>
+	 <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://aai-qa.kielipankki.fi/idp/profile/userprofile" index="8"/>
+	 <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">Kielipankki (The Language Bank of Finland)</mdui:DisplayName>
             <mdui:DisplayName xml:lang="fi">Kielipankki</mdui:DisplayName>
             <mdui:Description xml:lang="fi">Kielipankin portaali</mdui:Description>
             <mdui:Description xml:lang="en">Web portal of the Language Bank of Finland</mdui:Description>
-            <mdui:Logo height="58" width="300">https://www.kielipankki.fi/wp-content/uploads/KIELIPANKKI_logotxt_SU_EN.png</mdui:Logo>
-            <mdui:Keywords xml:lang="fi">Kielipankki, portaali, keskustelufoorumi</mdui:Keywords>
-            <mdui:Keywords xml:lang="en">Language Bank, Portal, discussion forum</mdui:Keywords>
-            <mdui:InformationURL xml:lang="en">https://www.kielipankki.fi/language-bank/</mdui:InformationURL>
+            <mdui:Logo height="243" width="600">https://www.kielipankki.fi/wp-content/uploads/KIELIPANKKI_logo_RGB_600.png</mdui:Logo>
+            <mdui:Keywords xml:lang="fi">Kielipankki, portaali</mdui:Keywords>
+            <mdui:Keywords xml:lang="en">Language Bank, Portal</mdui:Keywords>
             <mdui:InformationURL xml:lang="fi">https://www.kielipankki.fi/</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://www.kielipankki.fi/language-bank/</mdui:InformationURL>
             <mdui:InformationURL xml:lang="sv">https://www.kielipankki.fi/sprakbanken/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://www.kielipankki.fi/privacy-policy/</mdui:PrivacyStatementURL>
             <mdui:PrivacyStatementURL xml:lang="fi">https://www.kielipankki.fi/tietosuojaseloste/</mdui:PrivacyStatementURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://www.kielipankki.fi/data-protection-statement/</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
@@ -90,14 +89,12 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://www.kielipankki.fi/Shibboleth.sso/SLO/Redirect"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.kielipankki.fi/Shibboleth.sso/SLO/Redirect"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://www.kielipankki.fi/Shibboleth.sso/SAML2/POST"
-                                   index="1"
-                                   isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.kielipankki.fi/Shibboleth.sso/SAML2/POST" index="1" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aai-qa.kielipankki.fi/idp/profile/Authn/SAML2/POST/SSO" index="2" isDefault="false"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://aai.kielipankki.fi/idp/profile/Authn/SAML2/POST/SSO" index="3" isDefault="false"/>
       <md:AttributeConsumingService index="1" isDefault="true">
          <md:ServiceName xml:lang="fi">Kielipankki</md:ServiceName>
          <md:ServiceName xml:lang="en">Kielipankki (The Language Bank of Finland)</md:ServiceName>
@@ -111,9 +108,17 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
                                 Name="urn:oid:2.16.840.1.113730.3.1.241"
                                 NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                                 isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="eduPersonAssurance"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.11"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
          <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
                                 Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                                 NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+	 <md:RequestedAttribute FriendlyName="eduPersonAffiliation"
+				Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                                 isRequired="true"/>
          <md:RequestedAttribute FriendlyName="givenName"
                                 Name="urn:oid:2.5.4.42"
@@ -148,11 +153,11 @@ EJz+MNHOsjE66B4=</ds:X509Certificate>
    <md:ContactPerson contactType="technical">
       <md:GivenName>Martin</md:GivenName>
       <md:SurName>Matthiesen</md:SurName>
-      <md:EmailAddress>mailto:ling-admin@listat.csc.fi</md:EmailAddress>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
-      <md:GivenName>Tero</md:GivenName>
-      <md:SurName>Aalto</md:SurName>
-      <md:EmailAddress>mailto:ling-admin@listat.csc.fi</md:EmailAddress>
+      <md:GivenName>Martin</md:GivenName>
+      <md:SurName>Matthiesen</md:SurName>
+      <md:EmailAddress>mailto:kielipankki@csc.fi</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>

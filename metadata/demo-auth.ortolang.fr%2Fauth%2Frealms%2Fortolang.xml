@@ -20,10 +20,9 @@
                 <mdui:Description xml:lang="fr">Plate-forme d'outils et de ressources linguistiques pour un traitement optimisé de la langue française</mdui:Description>
                 <mdui:Description xml:lang="de">Plattform für sprachliche Werkzeuge und Ressourcen zur optimierten Verarbeitung der französischen Sprache</mdui:Description>
                 <mdui:Description xml:lang="fi">Kielellisten työkalujen ja resurssien foorumi ranskan kielen optimoidulle käsittelylle</mdui:Description>
-                <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/information/presentation?lang=en</mdui:InformationURL>
-                <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/information/presentation</mdui:InformationURL>
-                <mdui:PrivacyStatementURL xml:lang="en">https://ortolangdoc.atilf.fr/en/privacypolicy</mdui:PrivacyStatementURL>
-                <mdui:PrivacyStatementURL xml:lang="fr">https://ortolangdoc.atilf.fr/accueil/politique-de-confidentialite/</mdui:PrivacyStatementURL>
+                <mdui:InformationURL xml:lang="en">https://www.ortolang.fr/en/home/about/</mdui:InformationURL>
+                <mdui:InformationURL xml:lang="fr">https://www.ortolang.fr/fr/accueil/ortolang/</mdui:InformationURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://www.ortolang.fr/en/privacypolicy/</mdui:PrivacyStatementURL>
                 <mdui:Logo width="16" height="16">https://www.ortolang.fr/assets/icons/favicon-16x16.png</mdui:Logo>
                 <mdui:Logo width="60" height="60">https://www.ortolang.fr/assets/icons/apple-touch-icon-60x60.png</mdui:Logo>
             </mdui:UIInfo>
@@ -32,7 +31,7 @@
             <ds:KeyInfo>
                 <ds:KeyName>s4tX6epRcSun_w-_DPHLbemSqSWUzQZ2Z_RVPFa4VC4</ds:KeyName>
                 <ds:X509Data>
-                    <ds:X509Certificate>MIICnzCCAYcCBgFRxPn3xzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhvcnRvbGFuZzAeFw0xNTEyMjExNDM2MzRaFw0yNTEyMjExNDM4MTRaMBMxETAPBgNVBAMMCG9ydG9sYW5nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj3hDFa3b77uDgalDKwLrvAlVSUxLwwL5pgl2d/0UDiaiRUjtqdrbhCQNEPA+ijDh2LzBDdC7FhabY3/gIj5hqI6zkWVWQoG98ONdn52jKCpQO5qjK1wcFnUqz4bfESxbc5vESfQ+MPzkqLC7gm8p5QrjJQgxXbyEEQxBCI0jWb+tUHsQAis3IzoNAsuXr5a9qm9wF+mP/VzB3WGCbJOP+7WwwngN3iN4Ykq96nqR1A/3c/CrtygeVtalYxEFzK9g1qk+q6/q5vyF1PSaThmbW4kgXktvXICDgFEr2/tC+JXQt6pH65tqjc2Inqw/N6QwOdjkmF8BHjFPyxudRMRPZwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQABq2zafrSRBzyTpPEoYwPPxzobYfIavIoLbKhpJq+7dHWJMvU2PhJlmE3HnBi05wr2Xhf3LNQJ1N2Si3wHUAGK4tSxw+wXQOLvCuo/5mjRG0CTzyj0rrWZR0/5Ogn0+f1wheUOtC6U0X2woWfdsbgronX3CqGh2B73m5SbyD4Ul8EoxMlpnNmh9hd54HH2YNvKS2JrMhPaHSibVJyHuQND3CxlhpobozWzcng4J4QvMGxgrEBUDdYg8jY86lS4JZUUiuVoVTlV0yKSkbsUSgb/ZeBP+bUARUAnrAHptCxQRW0FVHxkCFj7wmPdQsIe2eNO8lvEQbABKsvG8xGQTboO</ds:X509Certificate>
+                    <ds:X509Certificate>MIIEnzCCAocCBgGbMfJOOjANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhvcnRvbGFuZzAeFw0yNTEyMTgxNDUwMjFaFw0zNTEyMTgxNDUyMDFaMBMxETAPBgNVBAMMCG9ydG9sYW5nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAyq15qJAAqfsp0dVCkqD+CCGXpY/4MK65GYLjGQMgW0ymR8mv421KbIHnkoOjAl8B9V+Pqj5GAPOhmmrVmZf4t5jjAHkiMdfKPjjEGv55XE7DOHfHFrB1mGR6JD/3PlxMUcivUIzVL2nOzOzdvA1ZzeiWxUQ/QJangpnsbHfHRIl5yMoKE4m9SI/iV860HVCt4jJyIaRWvPClqd9sQWMV9ifN5IV+vG/DG9m7EE2Gm1h3hYWW24rVScxfWqB2DO3NZiuWbBeGlyPXJnXeesHBCFVyiR8U0wvZ8APZ+EP7+EZbYnt0UvPVLC785VvoxGw6el5MPhnOjHSlc8b/+tRGPZf33s+TBPtd9iylwLXppKn2KDKaCyPqcuLKhws9vzfrPmoVjTPWyK4+VhGvyWDI3CaFRVdkAxCtibXscCZs99fBHMX0o5MajVXjjxn/WhDo5apBHk87NHeakt4weyI4J510dvTk/pSTifIeGWUA2koLPKlCl2lQsshfGpCLqUkczrOvDy1M475aHI1JAmIDl1eTM3oEgnqVVyCoTT/d4dGR5mJXKY6sRY0AxkKHWENW2eebsQqvOrOsb8z/xlcbYIwOFjvXW6o5uaMR5sgGKeol8h2uRCKtIswqHxxqXbjfIkpG4hfU6yZjxNywCETnMLE9RjCGUhe058zx/n7TCLkCAwEAATANBgkqhkiG9w0BAQsFAAOCAgEABlwgrGa2iNM5Dk2iwpODGk4SnJys060gM/yAs26zj9k7eSLjzBdukDDKFrmKy8ewJu29X8jYt1KNiEjwVUz251L4HdgPr+etT2Qrp8+AZGA7PwdOYd78x8b4Ax6gBo8DQHcGnaGzUO8GXBcepznYZSi27JCOkda9RjyVtpyr9jmFxoKClj1L6qpJUqWxCF5k8yAEmvPTQoJBBPWnYozhSZ/l9BtgZM/b2quPcVMCEhoiAXcVO6JuUuGnLPfTST8pPsN62A7zfjF5iOKuZzAamH0yPBmXxG3de0uWfUYgu8/xlJrrdryfBZ3w8cXfZb9dD5HM1uT6BYYbF8typj+0GRcisA40WKGKgaqthS93B30wMovkHBzz+mYKUI3QlTavnxciWmmtWB+Lmog5bT8YKfASfal3Cc0JiABbeCG9p5Mj4sCNlM4vg/Gk0VG8QA3UQTc2wiUAq+OwW3trGrhfH3+BlhwKFkZ8ygX9sGD5jIh/O68fd9k+BVG3rau1GaNx8bR00jP7rWL+v6nGKpXUCzBsJzXHfkc60TPrGKfhHWP7UhV2/TRSoutM237uvZo69Ki1FO5Is+7/p35PSKH1ATl7HYfY2GMKw+zXUIkKaAfyY6vEBwi3nJTBeUUKxaJpwH+5L5MytRbW7frFt4hm4HYy8qpWqoozlQnjuq0UzMs=</ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>

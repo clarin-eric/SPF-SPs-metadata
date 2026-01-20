@@ -1,17 +1,16 @@
 
-
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5d15d5a81bc952da1d34986ebc7713c0d5c9ea60" entityID="https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata">
   <Extensions xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
       <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
         <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
         </saml:Attribute>
-	<saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
             <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-         </saml:Attribute>
-         <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
-         </saml:Attribute>
+        </saml:Attribute>
+        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                    <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+        </saml:Attribute>
       </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
@@ -55,50 +54,49 @@
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>dspace-clarin-it.ilc.cnr.it</ds:KeyName>
         <ds:X509Data>
-          <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Lazio,C=IT</ds:X509SubjectName>
-          <ds:X509Certificate>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
-eXBfSDqosHgjqbV3F2VJaV2E
+          <ds:X509SubjectName>CN=dspace-clarin-it.ilc.cnr.it,O=Consiglio Nazionale delle Ricerche,ST=Roma,C=IT</ds:X509SubjectName>
+          <ds:X509Certificate>MIIH1zCCBj+gAwIBAgIQFbZNI7JgQsIvRGohQQBU+jANBgkqhkiG9w0BAQsFADBg
+MQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJl
+c2VhcmNoIEluc3RpdHV0aW9ucyBDQTEYMBYGA1UEAwwPR0VBTlQgVExTIFJTQSAx
+MB4XDTI1MDkwOTA5MjQ0N1oXDTI2MDkwOTA5MjQ0N1owbzELMAkGA1UEBhMCSVQx
+DTALBgNVBAcMBFJvbWExKzApBgNVBAoMIkNvbnNpZ2xpbyBOYXppb25hbGUgZGVs
+bGUgUmljZXJjaGUxJDAiBgNVBAMMG2RzcGFjZS1jbGFyaW4taXQuaWxjLmNuci5p
+dDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANJxCiYGV1Fckyz2t1kM
+ktSLQFvKIIVxAKwls0vpU0yBFfZZNrHV9KKpsksptrfKIn76mA6rq94X1c/s07yz
+oGEzGbwBb3dG7yP5tMDgFGnkZnZ9T1F48xNEFCXI1qxtItWK0fo1feh0aPZx6Uil
+C7jxJ2LMVIQrui32lvRLVJleHcA8rD0nk/eI70mmXGM/TU1k5LHJW8AlDxF1uXcL
+Sp5rcHaC7z4QkY4IOjw3mbdWzxJAiNb2ra3KcOkdRqtD+Z62ZaKvYkpKt96RNJpg
+JVPsFjb2oK/aBWnmo7J/icT0T8ghK7zBQK/NOsyIvv/YtdCQ6I/+ybty3bYaUMgb
+B46pp1inZyDqGlPaMjL+4f1pKMtYWlTJXXVn+AVNk7yOketrTcQ2CNmeCTBK3w8l
+dCohcSK2KmgnUpq/gPUE0mLGCgnhSstIZqnc4msuDjIp9VivJ5JznK0BiINqH8ch
+wKVFEyyi6o/fcZhSdimTG1tmzkvO+d8odf2rEFzXViKskuQNwtblvtumo05sVP+s
+RRW6wZ2nNIZWRnyLadw1URx51vOY7F3xg9Hhi3QCWYMB9OTzQN1FNczxuz8GoJLs
+qOED9x+Yd60KzyHSVMCFgy8BAjWi2DtxvuGnB0okf/rQdhSaRBarVfoTHzUbSMkU
+cdAHKcqELdos6dtrIXpb28oZAgMBAAGjggL8MIIC+DAfBgNVHSMEGDAWgBSGAXI/
+jKlw4jEGUxbOAV9becg8OzBvBggrBgEFBQcBAQRjMGEwOAYIKwYBBQUHMAKGLGh0
+dHA6Ly9jcnQuaGFyaWNhLmdyL0hBUklDQS1HRUFOVC1UTFMtUjEuY2VyMCUGCCsG
+AQUFBzABhhlodHRwOi8vb2NzcC10bHMuaGFyaWNhLmdyMCYGA1UdEQQfMB2CG2Rz
+cGFjZS1jbGFyaW4taXQuaWxjLmNuci5pdDAtBgNVHSAEJjAkMAgGBmeBDAECAjAI
+BgYEAI96AQcwDgYMKwYBBAGBzxEBAQECMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr
+BgEFBQcDATA9BgNVHR8ENjA0MDKgMKAuhixodHRwOi8vY3JsLmhhcmljYS5nci9I
+QVJJQ0EtR0VBTlQtVExTLVIxLmNybDAdBgNVHQ4EFgQUVJ+3nJmcWKHCeB9ZpZac
+FFCq/wkwDgYDVR0PAQH/BAQDAgWgMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgA
+dwCUscGKsNBXxHvgrAQOHyy8jcN1cnvJUfIKUmEmhjunPAAAAZkt0/F0AAAEAwBI
+MEYCIQDlquXJvwKWI2RLWRDufYJp1GtX+XxLnttMqglt+IH0/gIhAOIvgrz52Dq7
+05bGyPPJvqBpEUVwn2Ati+mckEMr3IwjAHYAlE5Dh/rswe+B8xkkJqgYZQHH0184
+AgE/cmd9VTcuGdgAAAGZLdPxWQAABAMARzBFAiEA2rrmwsLuUodXlEZqOIlTyaWf
+Ld6wevbHacaiir72atsCIAGiwMRpDh/y4JmBt57zBs0xe0WZBWs4+uZJI9IlWh1K
+AHUA1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXcAAAGZLdPxXQAABAMA
+RjBEAiBHj95ql2pGCNUZKRItzCssIyF0MqhRYLDWo24Yb5dp0gIgeIZTWCnvbYFw
+PmTg6l4JOINxxykqwRW47moSuKhnRn4wDQYJKoZIhvcNAQELBQADggGBACrccRlx
+sUKHRHSFXCaavimS8XT29yle8fqoPmcRmflcBeOL+2Y31NfYJDCIcUhEZBjVNQr7
+HNDU8ZpvKQ4+mj2OxJm1+mQdsPKXE3d0GUpjvWCA/Bo4t54xVbLgCNKpubEjzhyI
+g2e2fb69EymToNNQntokAVXYCiPQlTjc1YpaI88Ox5jSsFywGSJutdYMJFEjIU0S
+C7EHVadagR4oiJ34A9C0IQ4dH6OBFw3HfuYLYsqgNVSGzf5S51fX0VjeQI3efQ+O
+WaBuIc50/K5KRJ1SQXOaJGRGbdGIxHdq/RN2H1W/60GobyXLlfSKvIJEudlnrHZz
+8+7zpr8bY3Q6GLdfA3wEhWWXr8+Feo7BwAUZpi03cGTjZw4v20KqGFZ2tww8HnMu
+qm1FuBtWITA85IKYbYQ1fiR5MsknYOoMYSWq5eV7vtRwIQiqEaLHX5VEpXMbJcGQ
+xGF9GOWTBytMoFiUH80VV8PeMxU6SJUtFFjgvR65JP3cErWonzBLMfpRIQ==
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
