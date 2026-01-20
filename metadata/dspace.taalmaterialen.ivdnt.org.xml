@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+    xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+    xmlns:remd="http://refeds.org/metadata"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    entityID="https://dspace.taalmaterialen.ivdnt.org">
+    <Extensions>
+        <mdattr:EntityAttributes>
+            <saml:Attribute Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+            </saml:Attribute>
+            <saml:Attribute Name="http://macedir.org/entity-category"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            </saml:Attribute>
+        </mdattr:EntityAttributes>
+    </Extensions>
+    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+        <Extensions>
+            <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/Login"
+                index="1"/>
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/Login"/>
+            <mdui:UIInfo>
+                <mdui:DisplayName xml:lang="en">INT repository - CLARIN services</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="de">INT repository - CLARIN Dienste</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="fi">INT arkisto - CLARIN palvelut</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="nl">INT distributie - CLARIN diensten</mdui:DisplayName>
+                <mdui:Description xml:lang="en">Institute for Dutch Language (INT) projects attached to the CLARIN infrastructure.</mdui:Description>
+                <mdui:Description xml:lang="de">Institut für Niederländische Sprache (INT) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
+                <mdui:Description xml:lang="fi">Institute for Dutch Language (INT) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
+                <mdui:Description xml:lang="nl">Instituut voor de Nederlandse taal (INT) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
+                <mdui:InformationURL xml:lang="nl">https://ivdnt.org/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
+                <mdui:InformationURL xml:lang="en">https://ivdnt.org/onderzoek-projecten/clarin#clarin</mdui:InformationURL>
+                <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.ivdnt.org/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+                <mdui:Logo height="281" width="500">https://portal.clarin.ivdnt.org/images/logo_portal.jpg</mdui:Logo>
+                <mdui:Logo height="9" width="16">https://portal.clarin.ivdnt.org/images/logo_portal_verysmall.jpg</mdui:Logo>
+                <mdui:Logo height="85" width="80">https://portal.clarin.ivdnt.org/images/logo_portal_small.jpg</mdui:Logo>
+            </mdui:UIInfo>
+        </Extensions>
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                        <ds:X509Certificate>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</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/POST"
+            index="1"/>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/POST-SimpleSign"
+            index="2"/>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/Artifact"
+            index="3"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML2/ECP"
+            index="4"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML/POST"
+            index="5"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+            Location="https://dspace.taalmaterialen.ivdnt.org/Shibboleth.sso/SAML/Artifact"
+            index="6"/>
+        <md:AttributeConsumingService index="1">
+            <md:ServiceName xml:lang="en">Data repository</md:ServiceName>
+            <md:ServiceDescription xml:lang="en">Data repository for INT Clarin products</md:ServiceDescription>
+            <!-- SAML2 -->
+            <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="true"/>
+            <md:RequestedAttribute FriendlyName="sn"
+                Name="urn:oid:2.5.4.4"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="false"/>
+            <md:RequestedAttribute FriendlyName="mail"
+                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="false"/>
+            <md:RequestedAttribute FriendlyName="givenName"
+                Name="urn:oid:2.5.4.42"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                isRequired="false"/>
+        </md:AttributeConsumingService>
+    </SPSSODescriptor>
+    <Organization>
+        <OrganizationName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationName>
+        <OrganizationDisplayName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationDisplayName>
+        <OrganizationURL xml:lang="en">https://ivdnt.org</OrganizationURL>
+    </Organization>
+    <ContactPerson contactType="administrative">
+        <GivenName>Karin</GivenName>
+        <SurName>Weerlee</SurName>
+        <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
+    </ContactPerson>
+    <ContactPerson contactType="support">
+        <GivenName>Karin</GivenName>
+        <SurName>Weerlee</SurName>
+        <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
+    </ContactPerson>
+    <ContactPerson contactType="technical">
+        <GivenName>Marco</GivenName>
+        <SurName>van der Laan</SurName>
+        <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
+    </ContactPerson>
+</EntityDescriptor>

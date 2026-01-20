@@ -13,7 +13,7 @@
                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     entityID="https://clarin.oeaw.ac.at/shibboleth">
+                     entityID="https://arche.acdh.oeaw.ac.at/shibboleth">
    <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
@@ -43,41 +43,46 @@
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://clarin.oeaw.ac.at/Shibboleth.sso/Login"/>
+                                Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://clarin.oeaw.ac.at/Shibboleth.sso/Login"
-                                    index="1"/>
+                                    Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/Login"
+                                    index="6"/>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">ACDH-ÖAW Services for Digital Humanities</mdui:DisplayName>
-            <mdui:DisplayName xml:lang="de">ACDH-ÖAW Dienste für Digitale Geisteswissenschaften</mdui:DisplayName>
-            <mdui:Description xml:lang="en">Various services provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the CLARIN initiative).</mdui:Description>
-            <mdui:Description xml:lang="de">Verschiedene Dienste des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW) (primär im Rahmen der CLARIN-Initiative).</mdui:Description>
+            <mdui:DisplayName xml:lang="en">ARCHE - A Resource Centre for HumanitiEs</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="de">ARCHE - A Resource Centre for HumanitiEs</mdui:DisplayName>
+            <mdui:Description xml:lang="en">A hosting service for research data provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW).</mdui:Description>
+            <mdui:Description xml:lang="de">Hosting Dienst für Forschungsdaten des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW).</mdui:Description>
             <mdui:InformationURL xml:lang="en">http://acdh.oeaw.ac.at/</mdui:InformationURL>
             <mdui:InformationURL xml:lang="de">http://acdh.oeaw.ac.at/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy</mdui:PrivacyStatementURL>
-            <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/acdh_repo/icons/acdh_logo120h.png</mdui:Logo>
+            <mdui:PrivacyStatementURL xml:lang="en">https://arche.acdh.oeaw.ac.at/browser/privacy-policy</mdui:PrivacyStatementURL>
+            <mdui:Logo width="93" height="107">https://arche.acdh.oeaw.ac.at/browser/themes/contrib/arche-theme-bs/images/logos/arche_transparent_header.png</mdui:Logo>
          </mdui:UIInfo>
       </md:Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
             <ds:X509Data>
-               <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJAI3rKBVKUcUJMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
-BAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDAeFw0xNDAxMjAxNDU3MThaFw0yNDAx
-MTgxNDU3MThaMCAxHjAcBgNVBAMTFWNsYXJpbi5hcnoub2Vhdy5hYy5hdDCCASIw
-DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMJ8B6WyydvbvIHJ1Cb34h8838G5
-JItPpmJC+D/K+6MI3YiydVKKlhaGh/GqcWcz0Qw30W7WYilUZ5IkzZA12QY1CF1g
-cJPNUmYibzP3sAZ9KrvaCEMxlseoldh0yc+8Q8eplQH9id4u5G+J8SvTBejt261y
-ATb6pIANsRQkOLMvxtq7/NrEnAmZQOM5obsshHxLlXlJ0qixakaYXWKCIuUUOEFY
-FT13vhWrUC4BWW0OGimoR1cBnyEJtS9kRNWQ85+03VVVvLk9AssoHWxOJVJ7HE1m
-5/xgMrmpOv1vbqDKDljrY19zheNOoFr3RdaSCb1Eh8lWCNigUgOwK8Mm7VECAwEA
-AaNDMEEwIAYDVR0RBBkwF4IVY2xhcmluLmFyei5vZWF3LmFjLmF0MB0GA1UdDgQW
-BBQ6IH3aND4GFYEEgrR0IKf/d4QEcDANBgkqhkiG9w0BAQUFAAOCAQEAhdcxQ+7/
-1WYPCTVz2HOk8J3eM3ZJylGdTnfgNDDGkBo0CGmyiulX8m+nimBKh7UNMkRkU8cH
-NUldSGR70wi0iQlx7t868V5pmkqxnaDu4+lo1QU59s5c7MRJXZ6OcbKB57O/d5l+
-+kX3/YW9WAQkmwcyVWDbcmk4DZK5kqqTk+u3fS48cLqai5YVcj8pDDoUx6/ZkwDv
-Yqvva2v4+vhzX9SW3QyiChOgFo9sP/UD1U8JAZG0sds5ugwjwiXPPB41hwHdbdEj
-QZRW2NR0HHMFp0FZeSziXOeaap21wc/W1Nk7wpRI7jYdzLRJHmzhvWz95p0WSnt+
-rI8v6OTvibpLrg==
+               <ds:X509Certificate>MIID9DCCAlygAwIBAgIJAP7/qjVZtRXHMA0GCSqGSIb3DQEBDQUAMBoxGDAWBgNV
+BAMTD2FjZGgub2Vhdy5hYy5hdDAeFw0yNDA0MTQyMTIwMjVaFw0zNDA2MDEyMTIw
+MjVaMBoxGDAWBgNVBAMTD2FjZGgub2Vhdy5hYy5hdDCCAaIwDQYJKoZIhvcNAQEB
+BQADggGPADCCAYoCggGBALwuOoLc+OxGfeAIh4Y3SX68XAQGSCH5MyArjpA5YHZk
+riJivCrQbXJDbhduL2o5NRYtI3dsO/bjMeuULaRWDW7BSx2SRlmqzeJOR0oLAPhP
+lpPzUbYdzMEJYkObE6ejD8R6oQSh6WjPUEBqvYnDiP+nBXZ5djIfjVFa/qVPuISV
+crksXaIQcQMhlqiZ1hCHOHMUbMyJfIhRG5ZSs/Q15+UXXvCROcmnD4i8KfA8GJ5v
+HuhS69f/D7vy4I33Uy+KSm9MrCRGdmia89P/2xlhLPTBcgA2OQJvhEYh3a8B9iFt
+siK1d3GsbzL4lsjAFmxhIGX/TtPBn+ApB593ZbC1kcnkDMXMIhOi7TkQODHUV67p
+mhIjUlRjgGmCH8E58ayj1oIimV3//C5aZ+mr35lEhxngVqGxfrgQdUFszioi2VB5
+AnzDO/tzHVh2Z29ycZ0ws5aXkXV9kOjyPj3w8IgUT1in82Qs0L6xSnxfVF/X2ruQ
+JUOfc1ObvCnIQZa5EtKPQwIDAQABoz0wOzAaBgNVHREEEzARgg9hY2RoLm9lYXcu
+YWMuYXQwHQYDVR0OBBYEFDISxHb1t2WtMI3/46trh40MXgpXMA0GCSqGSIb3DQEB
+DQUAA4IBgQBgDWdT8YYfyt0/RX8ut9+G1dTjS55fwNIO7GNmeBlChzp1wmeJ6uMT
+RBWa0IaH7hfCYS/FfOxVYPvJL+HUo6f2EQfSVomRpP4IjDVtjGP0roYqHXeJ84cH
+gqZon1e7nX3tKncZrzbBOdlibl1lxEo+Y3DYw52ng4R1GaQvqJmpTtai74OsjUtw
+kpHfJzdjYHlBFB2evzwnI3k0+DuJ8qBhZNtbimgMVjn5Eua7JkMyY+k8QctxP/TJ
+DQaQdiOq9nosMgThZZqJ71neVb9ORToA2ky3gVrIUxC3PXVUk/x+4BmibLVJne+V
+Ua8ZeSC7zkLj0u0i6t0MHQahUvwHTghLxLcO1kPu993QrlJJif8kVfQnozlCptFO
+Zpg/ylrc5hU1eyfpSrVNV+0uT9ZUWK/7xpYCI84JnBmLpnJIbF94B/WRbWMbFmF5
+qlzByeJz468j8MMfalTTBXJbT8HQei4f+Q5A+/MPV9DydfOVvTNRXbKp/KwDYmrA
+/uPGPlvmCmg=
 </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
@@ -92,26 +97,26 @@ rI8v6OTvibpLrg==
          <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                    Location="https://clarin.oeaw.ac.at/Shibboleth.sso/Artifact/SOAP"
+                                    Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/Artifact/SOAP"
                                     index="1"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://clarin.oeaw.ac.at/Shibboleth.sso/SLO/SOAP"/>
+                              Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://clarin.oeaw.ac.at/Shibboleth.sso/SLO/Redirect"/>
+                              Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://clarin.oeaw.ac.at/Shibboleth.sso/SLO/POST"/>
+                              Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                              Location="https://clarin.oeaw.ac.at/Shibboleth.sso/SLO/Artifact"/>
+                              Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/SLO/Artifact"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://clarin.oeaw.ac.at/Shibboleth.sso/SAML2/POST"
-                                   index="1"/>
+                                   Location="https://arche.acdh.oeaw.ac.at/Shibboleth.sso/SAML2/POST"
+                                   index="6"/>
       <md:AttributeConsumingService index="1">
-         <md:ServiceName xml:lang="en">ACDH-ÖAW Services for Digital Humanities</md:ServiceName>
-         <md:ServiceName xml:lang="de">ACDH-ÖAW Dienste für Digitale Geisteswissenschaften</md:ServiceName>
-         <md:ServiceDescription xml:lang="en">Various services provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW) (primarily in the context of the CLARIN initiative).</md:ServiceDescription>
-         <md:ServiceDescription xml:lang="de">Verschiedene Dienste des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW) (primär im Rahmen der CLARIN-Initiative).</md:ServiceDescription>
+         <md:ServiceName xml:lang="en">ARCHE - A Resource Centre for HumanitiEs</md:ServiceName>
+         <md:ServiceName xml:lang="de">ARCHE - A Resource Centre for HumanitiEs</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">A hosting service for research data provided by the Austrian Centre for Digital Humanities of the Austrian Academy of Sciences (ACDH-ÖAW).</md:ServiceDescription>
+         <md:ServiceDescription xml:lang="de">Hosting Dienst für Forschungsdaten des österreichischen Zentrums für Digitale Geisteswissenschaften der Österreichischen Akademie der Wissenschaften (ACDH-ÖAW).</md:ServiceDescription>
          <md:RequestedAttribute isRequired="true"
                                 FriendlyName="eduPersonPrincipalName"
                                 Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
@@ -172,7 +177,7 @@ rI8v6OTvibpLrg==
    <md:ContactPerson contactType="support">
       <md:GivenName>ACDH</md:GivenName>
       <md:SurName>Office</md:SurName>
-      <md:EmailAddress>mailto:acdh-tech@oeaw.ac.at</md:EmailAddress>
+      <md:EmailAddress>mailto:acdh-ch-tech@oeaw.ac.at</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>Akademie-Rechenzentrum</md:GivenName>

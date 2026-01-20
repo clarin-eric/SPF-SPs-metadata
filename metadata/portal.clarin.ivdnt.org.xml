@@ -12,7 +12,7 @@
                   xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                   xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  entityID="https://portal.clarin.inl.nl/">
+                  entityID="https://portal.clarin.ivdnt.org/">
    <Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
@@ -32,10 +32,10 @@
    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"
+                                    Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/Login"
                                     index="1"/>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/Login"/>
+                                Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/Login"/>
          <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">INT portal - CLARIN services</mdui:DisplayName>
             <mdui:DisplayName xml:lang="de">INT Portal - CLARIN Dienste</mdui:DisplayName>
@@ -43,40 +43,75 @@
             <mdui:DisplayName xml:lang="nl">INT portaal - CLARIN diensten</mdui:DisplayName>
             <mdui:Description xml:lang="en">Institute for Dutch Language (INT) projects attached to the CLARIN infrastructure.</mdui:Description>
             <mdui:Description xml:lang="de">Institut für Niederländische Sprache (INT) Projekte im Rahmen der CLARIN-Infrastruktur.</mdui:Description>
-            <mdui:Description xml:lang="fi">Institute for Dutch Language (INT) -hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
+            <mdui:Description xml:lang="fi">Institute for Dutch Language (INT) hankkeita kiinnitetty CLARIN infrastruktuurin.</mdui:Description>
             <mdui:Description xml:lang="nl">Instituut voor de Nederlandse taal (INT) diensten en projecten verbonden aan het CLARIN project</mdui:Description>
-            <mdui:InformationURL xml:lang="nl">http://www.inl.nl/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
-            <mdui:InformationURL xml:lang="en">http://portal.clarin.inl.nl/</mdui:InformationURL>
-            <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.inl.nl/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
-            <mdui:Logo height="281" width="500">https://portal.clarin.inl.nl/images/logo_portal.jpg</mdui:Logo>
-            <mdui:Logo height="9" width="16">https://portal.clarin.inl.nl/images/logo_portal_verysmall.jpg</mdui:Logo>
-            <mdui:Logo height="85" width="80">https://portal.clarin.inl.nl/images/logo_portal_small.jpg</mdui:Logo>
+            <mdui:InformationURL xml:lang="nl">https://ivdnt.org/onderzoek-a-onderwijs/projecten/clarin</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://portal.clarin.ivdnt.org/</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://portal.clarin.ivdnt.org/doc/Data_Protection_Code_of_Conduct_INL.pdf</mdui:PrivacyStatementURL>
+            <mdui:Logo height="281" width="500">https://portal.clarin.ivdnt.org/images/logo_portal.jpg</mdui:Logo>
+            <mdui:Logo height="9" width="16">https://portal.clarin.ivdnt.org/images/logo_portal_verysmall.jpg</mdui:Logo>
+            <mdui:Logo height="85" width="80">https://portal.clarin.ivdnt.org/images/logo_portal_small.jpg</mdui:Logo>
          </mdui:UIInfo>
       </Extensions>
 	<KeyDescriptor>
 	  <ds:KeyInfo>
             <ds:X509Data>
-               <ds:X509Certificate>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</ds:X509Certificate>
+               <ds:X509Certificate>
+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
+7Q==
+	       </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
       </KeyDescriptor>
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/POST"
+                                Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML2/POST"
                                 index="1"/>
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML2/POST-SimpleSign"
                                 index="2"/>
       <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/Artifact"
+                                Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML2/Artifact"
                                 index="3"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                   Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML2/ECP"
+                                   Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML2/ECP"
                                    index="4"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                                   Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/POST"
+                                   Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML/POST"
                                    index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                                   Location="https://portal.clarin.inl.nl/Shibboleth.sso/SAML/Artifact"
+                                   Location="https://portal.clarin.ivdnt.org/Shibboleth.sso/SAML/Artifact"
                                    index="6"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">Autosearch</md:ServiceName>
@@ -94,23 +129,23 @@
       </md:AttributeConsumingService>
    </SPSSODescriptor>
    <Organization>
-      <OrganizationName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationName>
-      <OrganizationDisplayName xml:lang="en">Instituut voor Nederlandse Lexicologie (INL)</OrganizationDisplayName>
-      <OrganizationURL xml:lang="en">https://portal.clarin.inl.nl</OrganizationURL>
+      <OrganizationName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationName>
+      <OrganizationDisplayName xml:lang="en">Instituut voor de Nederlandse Taal (INT)</OrganizationDisplayName>
+      <OrganizationURL xml:lang="en">https://portal.clarin.ivdnt.org</OrganizationURL>
    </Organization>
    <ContactPerson contactType="administrative">
-      <GivenName>Jan Theo</GivenName>
-      <SurName>Bakker</SurName>
-      <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
+      <GivenName>Karin</GivenName>
+      <SurName>Weerlee</SurName>
+      <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="support">
-      <GivenName>Jan Theo</GivenName>
-      <SurName>Bakker</SurName>
-      <EmailAddress>mailto:servicedesk@inl.nl</EmailAddress>
+      <GivenName>Karin</GivenName>
+      <SurName>Weerlee</SurName>
+      <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="technical">
       <GivenName>Marco</GivenName>
       <SurName>van der Laan</SurName>
-      <EmailAddress>mailto:systeembeheer@inl.nl</EmailAddress>
+      <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
    </ContactPerson>
 </EntityDescriptor>

@@ -13,7 +13,7 @@
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                      ID="_02b0ed8aeb8ef925605e1afc23ef1146bfe9a02d"
-                     entityID="https://sp.ota.ox.ac.uk/shibboleth">
+                     entityID="https://llds.ling-phil.ox.ac.uk/shibboleth">
    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
       <mdattr:EntityAttributes>
          <saml:Attribute Name="http://macedir.org/entity-category"
@@ -29,119 +29,96 @@
             <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
          </saml:Attribute>
       </mdattr:EntityAttributes>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-      <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-      <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
    </md:Extensions>
    <md:SPSSODescriptor AuthnRequestsSigned="1"
                        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
       <Extensions>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">University of Oxford Text Archive</mdui:DisplayName>
-            <mdui:Description xml:lang="en">University of Oxford Text Archive</mdui:Description>
-            <mdui:PrivacyStatementURL xml:lang="en">https://ota.bodleian.ox.ac.uk/privacypolicy.html</mdui:PrivacyStatementURL>
-            <mdui:Logo height="117" width="102">https://www.bodleian.ox.ac.uk/__data/assets/image/0005/117176/logo.jpg</mdui:Logo>
-            <mdui:InformationURL xml:lang="en">https://ota.bodleian.ox.ac.uk/repository/xmlui/page/about</mdui:InformationURL>
+            <mdui:DisplayName xml:lang="en">Oxford Text Archive</mdui:DisplayName>
+            <mdui:Description xml:lang="en">Oxford Text Archive</mdui:Description>
+            <mdui:PrivacyStatementURL xml:lang="en">https://llds.ling-phil.ox.ac.uk/llds/xmlui/page/privacy</mdui:PrivacyStatementURL>
+            <mdui:Logo height="117" width="102">https://llds.ling-phil.ox.ac.uk/images/OTA-logo_112.png</mdui:Logo>
+            <mdui:InformationURL xml:lang="en">https://llds.ling-phil.ox.ac.uk/llds/xmlui/page/about</mdui:InformationURL>
             <mdui:Keywords xml:lang="en">CLARIN+organization language+resources corpus literature historical+texts</mdui:Keywords>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/Login"/>
+                                Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/Login"
+                                    Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/Login"
                                     index="1"/>
       </Extensions>
       <md:KeyDescriptor>
          <ds:KeyInfo>
-            <ds:KeyName>ota-prd</ds:KeyName>
+            <ds:KeyName>llds</ds:KeyName>
             <ds:X509Data>
-               <ds:X509SubjectName>CN=ota-prd</ds:X509SubjectName>
-               <ds:X509Certificate>MIID3DCCAkSgAwIBAgIJAPDenc3UwnemMA0GCSqGSIb3DQEBCwUAMBIxEDAOBgNV
-BAMTB290YS1wcmQwHhcNMTgwNjEyMTMxOTAwWhcNMjgwNjA5MTMxOTAwWjASMRAw
-DgYDVQQDEwdvdGEtcHJkMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA
-8LhwqiC2CbyLarJkCyjSFmr+4LYb+rs4ioW2nxyemlGCxnphOL4ODaVJPqdKEs7b
-1MIUmqKhTNTK7Gtgyji9oCrt/cmtgpjWMZ3jrXuO5oPNgaw1BQKeTQb6DFOg0pND
-OmOvv59+72wJHLq5pOw2o/wz/FtiC0pyKa70C6YUp2xNViHOG3Hmf3KkP/O7e4Oa
-9ynZz6oRHbvyanaHbhy1HA728hWhRNqv1g6SzyX72CZceU4/MTkTY0YEA4PM2ekr
-rkKqFdQ3HpsQ5p58aY6qOgG/nm3GrkhBnJBTGeR2JRD2DvRqOpK26K7JNcHWQJh+
-n41BjvUl0SQckltpCBh7NkejIcZvW7P2w6aE1+F/LuCv80/SQB9uxRhg7USWouFw
-EWsgzSvRYgVfmFVjT66FlS5YPALBR1KYdqzvnLfDTpGpV/SnYbtDZjwA7D+91SSe
-p8D4qTPOOoXV0tzQeZvxtn3SH+aO30RdAVJdAFl+39d9UNMR4n34vrT4q++FhDrz
-AgMBAAGjNTAzMBIGA1UdEQQLMAmCB290YS1wcmQwHQYDVR0OBBYEFLGy0eMO/YUg
-a0ctq4yXagUWJ6/iMA0GCSqGSIb3DQEBCwUAA4IBgQBEdviS6aNmTN7yjGFNLavH
-HlLanEk+MPgq7N/VGVo9aujyuzELcqqidzjH/bwcF4kbkZrwSE7USvawMK84cl0W
-FuIsecIY/D/oFaNpRqC8M/ilYX+PciAVpzT+36mgY1iiE3o2Vxtk7wzLutL+0lPm
-uGgwHsTaiMMsJMi3kdp7FnN7vGC/EaiPXr0Getikbq8O28JkbwP9A1StSw6fLm5N
-UuIvx6ZNWkZoInlTM9Z5/cwaaaQcjykzB14y1shNaNmWmkq+WzIp6ym2E+B/Fe0X
-q00IHcv+FuoVOyv2WHzlbdVJ5I1f39yFnL03Iu4tS3uIw1OeHcjcVxAzNjtuNEHo
-VTLLVJj7xq0VOH9MlBipCpuKFDjdYkAB4YFoIep28XP5bCOHlj2xO6Jh7maFWsWz
-IOl/y1AGtKUVQd5Zs1L3ZwL/9/sCuM4Lw8XsrWKem0g+roq0LAz4X5p0u/rdwDz3
-eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
-      </ds:X509Certificate>
+               <ds:X509SubjectName>CN=llds</ds:X509SubjectName>
+               <ds:X509Certificate>MIIEQzCCAqugAwIBAgIUAKaBnHiuYRcRmIgKKv4dhT1zsmEwDQYJKoZIhvcNAQEL
+BQAwIjEgMB4GA1UEAxMXbGxkcy5saW5nLXBoaWwub3guYWMudWswHhcNMjExMjAx
+MDk0NjEzWhcNMzExMTI5MDk0NjEzWjAiMSAwHgYDVQQDExdsbGRzLmxpbmctcGhp
+bC5veC5hYy51azCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBALrOaGJp
+KAWigpr7QeRUvYu6ZEDa3TKZUTrHW9B2MmwJr3WyndafvNGutYW6sVvY5GZP47Dr
+zjlkh21dRDc2Jvh6cZXWKi+f6cYKN0OWf/qDGgNPOWxT+nuX6E/oPrIaGe3eRNjb
+4Qv74UPzrv2kjGDGoTXcrC/Cyhrn8UvanTIyOo3ii1hq3amAJcHZ+GitGUk3ZLik
+JnZfDP7MKeD3iSyF4mWiK2B0ByKEe76rmXZLwUjnn35jm2MYFzQDzDxugxqfq7YM
+diJImmLmyaHROwCfbpkErEnIOQPu7cRHi1f6jzzWXqwnT0C5PVxYFhy409Jv3ToW
+97TSylEyqABD2Gx77ShF4nqvVE6pH0YHOsSlJD5WDbR4j8DAo0Qb/xXkItuvoTzT
+utjxZbOa5OMcAvs+scPIITGThqYRZjlfv6aFCBoO0UEfjYQJYsCdU6MTNYvQfuqp
+y+YYdBfyPjQjJ/9FxizX3qVshwGDd7A6YDq7QDwsbJLmwWWOrfIj4pwlzwIDAQAB
+o3EwbzBOBgNVHREERzBFghdsbGRzLmxpbmctcGhpbC5veC5hYy51a4YqaHR0cHM6
+Ly9sbGRzLmxpbmctcGhpbC5veC5hYy51ay9zaGliYm9sZXRoMB0GA1UdDgQWBBQ3
+pn5FviN9tyfTR1xFWsV9fQ1A8TANBgkqhkiG9w0BAQsFAAOCAYEADQUo4se9OKmm
+vkGFYRjZR93y+tzGPDy9g9ITvQF+q7Uhn/x0bdtM3Ze1++Rc8YNfRd/kBc7SmyrT
+UippvP+9CnZ5xQjq2+H9uR+tc/TqRGcqfJCPh7K9B+fcNM2HrOVRuKosvBYSLgxW
+3B5PEQFAAwElOmInCyxR2y1MQ0rchRFNJQzDKr11jowjyXe3+EIPnJfHBmToPRku
+yVbYzhUI4VNNRqH7r2FTO2L7hxa+W/71Yu30Im2cn1FPBQQJ3KYCyNiYrNz0EwMz
+aIJiufn389Pyss1StRdz2zc8yU2woQ5+BhvWiJslHlcbB4Vrc9Dk2FfrGIWz/2HS
+ql8kuRGSPqjz720g/iXznQtiVbFmTgZwPTpcelsvg96rnqATgskKplccgr+zZtO7
+hyM0AXVDeg657O2vFaf3FCI/6qrsstiv7yCY3jkHbve7ElStQp9iCjv9JHItCj3t
+DJ6+cU73okr4VUB/Ot/V6EzabBS2txf+t5O0MM0gs3b5v1VqMvnH
+               </ds:X509Certificate>
             </ds:X509Data>
          </ds:KeyInfo>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-         <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
       </md:KeyDescriptor>
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                                    Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/Artifact/SOAP"
+                                    Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/Artifact/SOAP"
                                     index="1"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SLO/SOAP"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SLO/Redirect"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SLO/POST"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SLO/Artifact"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SLO/Artifact"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/NIM/SOAP"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/NIM/SOAP"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/NIM/Redirect"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/NIM/Redirect"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/NIM/POST"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/NIM/POST"/>
       <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                              Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/NIM/Artifact"/>
+                              Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/NIM/Artifact"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML2/POST"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML2/POST"
                                    index="1"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign"
                                    index="2"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML2/Artifact"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML2/Artifact"
                                    index="3"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML2/ECP"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML2/ECP"
                                    index="4"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML/POST"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML/POST"
                                    index="5"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
-                                   Location="https://ota.bodleian.ox.ac.uk/Shibboleth.sso/SAML/Artifact"
+                                   Location="https://llds.ling-phil.ox.ac.uk/Shibboleth.sso/SAML/Artifact"
                                    index="6"/>
       <md:AttributeConsumingService index="1">
          <md:ServiceName xml:lang="en">Oxford Text Archive</md:ServiceName>
-         <md:ServiceDescription xml:lang="en">The University of Oxford Text Archive develops, collects, catalogues, preserves and makes available to others electronic literary and linguistic resources for use in Higher Education, in research, teaching and learning. The Oxford Text Archive is part of the CLARIN European Research Infrastructure, developing shared services with repositories across Europe and beyond.</md:ServiceDescription>
+         <md:ServiceDescription xml:lang="en">The Oxford Text Archive develops, collects, catalogues, preserves and makes available to others electronic literary and linguistic resources for use in Higher Education, in research, teaching and learning. The Oxford Text Archive is part of the Literary and Linguistic Data Service, and the CLARIN European Research Infrastructure, developing shared services with repositories across Europe and beyond.</md:ServiceDescription>
          <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
                                 Name="urn:mace:dir:attribute-def:eduPersonPrincipalName"
                                 NameFormat="urn:mace:shibboleth:1.0:attributeNamespace:uri"
@@ -181,23 +158,23 @@ eVrOP9E7A0W/vUn+2wAHhbHhlBtaXLpO0U3tLgTW5jo=
       </md:AttributeConsumingService>
    </md:SPSSODescriptor>
    <md:Organization>
-      <md:OrganizationName xml:lang="en">Oxford Text Archive, Bodleian Libraries, University of Oxford</md:OrganizationName>
-      <md:OrganizationDisplayName xml:lang="en">Oxford Text Archive, Bodleian Libraries, University of Oxford</md:OrganizationDisplayName>
-      <md:OrganizationURL xml:lang="en">http://www.bodleian.ox.ac.uk/</md:OrganizationURL>
+      <md:OrganizationName xml:lang="en">Oxford Text Archive, Faculty of Linguistics, Philology and Phonetics, University of Oxford</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Oxford Text Archive, Faculty of Linguistics, Philology and Phonetics, University of Oxford</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">http://www.ling-phil.ox.ac.uk/</md:OrganizationURL>
    </md:Organization>
    <md:ContactPerson contactType="administrative">
       <md:GivenName>Martin</md:GivenName>
       <md:SurName>Wynne</md:SurName>
-      <md:EmailAddress>mailto:martin.wynne@bodleian.ox.ac.uk</md:EmailAddress>
+      <md:EmailAddress>mailto:martin.wynne@ling-phil.ox.ac.uk</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="support">
       <md:GivenName>Mark</md:GivenName>
       <md:SurName>Rogerson</md:SurName>
-      <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
+      <md:EmailAddress>mailto:it-support@ling-phil.ox.ac.uk</md:EmailAddress>
    </md:ContactPerson>
    <md:ContactPerson contactType="technical">
       <md:GivenName>Mark</md:GivenName>
       <md:SurName>Rogerson</md:SurName>
-      <md:EmailAddress>mailto:mark.rogerson@bodleian.ox.ac.uk</md:EmailAddress>
+      <md:EmailAddress>mailto:john.pybus@oerc.ox.ac.uk</md:EmailAddress>
    </md:ContactPerson>
 </md:EntityDescriptor>
