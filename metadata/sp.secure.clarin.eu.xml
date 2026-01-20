@@ -12,7 +12,7 @@
                      xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
                      xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     entityID="https://sp.secure-proxy.clarin.eu">
+                     entityID="https://sp.secure.clarin.eu">
    <md:Extensions>
       <mdattr:EntityAttributes>
          <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
@@ -26,17 +26,17 @@
    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
          <mdui:UIInfo>
-            <mdui:DisplayName xml:lang="en">CLARIN Proxy secure sp test</mdui:DisplayName>
-            <mdui:Description xml:lang="en">For testing login sessions to the CLARIN sso proxy</mdui:Description>
+            <mdui:DisplayName xml:lang="en">CLARIN secure sp test</mdui:DisplayName>
+            <mdui:Description xml:lang="en">For testing login sessions to the CLARIN sso</mdui:Description>
             <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
             <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
-            <mdui:Keywords xml:lang="en">CLARIN Proxy secure sp test</mdui:Keywords>
+            <mdui:Keywords xml:lang="en">CLARIN secure sp test</mdui:Keywords>
             <mdui:PrivacyStatementURL xml:lang="en">https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL>
          </mdui:UIInfo>
          <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
-                                Location="https://secure-proxy.clarin.eu/Shibboleth.sso/Login"/>
+                                Location="https://secure.clarin.eu/Shibboleth.sso/Login"/>
          <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-                                    Location="https://secure-proxy.clarin.eu/Shibboleth.sso/Login"
+                                    Location="https://secure.clarin.eu/Shibboleth.sso/Login"
                                     index="1"/>
       </md:Extensions>
       <md:KeyDescriptor>
@@ -67,29 +67,29 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
          </ds:KeyInfo>
       </md:KeyDescriptor>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-                              Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
+                              Location="https://secure.clarin.eu/Shibboleth.sso/SLO/SOAP"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                              Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
+                              Location="https://secure.clarin.eu/Shibboleth.sso/SLO/Redirect"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                              Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SLO/POST"/>
+                              Location="https://secure.clarin.eu/Shibboleth.sso/SLO/POST"/>
       <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
                               Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SLO/Artifact"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-                                   Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SAML2/POST"
+                                   Location="https://secure.clarin.eu/Shibboleth.sso/SAML2/POST"
                                    index="1"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
-                                   Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                   Location="https://secure.clarin.eu/Shibboleth.sso/SAML2/POST-SimpleSign"
                                    index="2"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-                                   Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SAML2/Artifact"
+                                   Location="https://secure.clarin.eu/Shibboleth.sso/SAML2/Artifact"
                                    index="3"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
-                                   Location="https://secure-proxy.clarin.eu/Shibboleth.sso/SAML2/ECP"
+                                   Location="https://secure.clarin.eu/Shibboleth.sso/SAML2/ECP"
                                    index="4"/>
       <md:AttributeConsumingService index="1">
-         <md:ServiceName xml:lang="en">CLARIN Proxy secure test sp</md:ServiceName>
-         <md:ServiceDescription xml:lang="en">For testing login sessions to the CLARIN sso proxy</md:ServiceDescription>
+         <md:ServiceName xml:lang="en">CLARIN secure test sp</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">For testing login sessions to the CLARIN sso</md:ServiceDescription>
          <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
                                 Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
                                 NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
