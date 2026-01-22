@@ -27,7 +27,7 @@
       <md:Extensions>
          <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">CLARIN Proxy secure sp test</mdui:DisplayName>
-            <mdui:Description xml:lang="en">For testing login sessions to the CLARIN sso proxy</mdui:Description>
+            <mdui:Description xml:lang="en">A Service Provider to verify and debug SAML authentications via the SSO proxy</mdui:Description>
             <mdui:InformationURL xml:lang="en">https://www.clarin.eu/applications</mdui:InformationURL>
             <mdui:Logo height="220" width="195">https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo>
             <mdui:Keywords xml:lang="en">CLARIN Proxy secure sp test</mdui:Keywords>
