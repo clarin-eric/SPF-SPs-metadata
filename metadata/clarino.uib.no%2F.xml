@@ -51,29 +51,6 @@
             <mdui:InformationURL xml:lang="en">http://clarino.uib.no/iness/page?page-id=refeds_info</mdui:InformationURL>
          </mdui:UIInfo>
       </md:Extensions>
-      <md:KeyDescriptor><!-- old certificate kept for rollover-->
-         <ds:KeyInfo>
-            <ds:X509Data>
-               <ds:X509Certificate>MIIDBTCCAe2gAwIBAgIJAMIPQt0aWk61MA0GCSqGSIb3DQEBCwUAMBkxFzAVBgNV
-	      BAMMDmNsYXJpbm8udWliLm5vMB4XDTE2MDQyOTEwNTYzNFoXDTIxMDQyODEwNTYz
-	      NFowGTEXMBUGA1UEAwwOY2xhcmluby51aWIubm8wggEiMA0GCSqGSIb3DQEBAQUA
-	      A4IBDwAwggEKAoIBAQDQaV8AuM08Rjr+ENWQ6jzDnYTU3T4zxK5KubpCT/vTqGB4
-	      7ybNZTNdfSinA4fUVtzMSDhz5aNqFqB9n/2IPV6JjkhZwolR3BVrHhA6Eg4d8j6V
-	      Mr7NIF9ZLK47uE5jX2vxNh2y98up843m50J+uUlJ1ucCxouFv/6D+TNWGp85d96u
-	      vYsvIgLtgxoD7gnajcJhPjhzuANZfv1fuVHAWG6M2vBWidvXVhgQEZXyEbeZ8n+U
-	      +o9XiNx22RR+TADcNKFU6yrrSMPVoSw0m5lTFV2Xt0MiC7GmW8G1YMc1gcchx0KS
-	      EcBVM50vRcIflDhSt6/jzq0TQugrcS1HvjCLceEvAgMBAAGjUDBOMB0GA1UdDgQW
-	      BBR/rbOCQqrTPMsZN7JT7PmrUqk2ezAfBgNVHSMEGDAWgBR/rbOCQqrTPMsZN7JT
-	      7PmrUqk2ezAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCG040tFSoX
-	      q5+CEliWXh8XmmTt6shmOSCqfmy5jt+nExyMSecFAtQL/f+8i3MszjWGmfE7JsMi
-	      c8+U7sybyM/Ws8lmkXfW84TzqLWO1ODNu6Jz1718qQyM2XgLkPbG1aTWRw+XBycg
-	      yGXBViPopYQbTRAAY+XzccV4N2V+lBD7Z0/JU3d0hruf0lTZlmqyQ3wbMnvw1E2r
-	      aAMs/8dp5p0Lz2AZEDNvWj88dmVdnWAt5FbH+oMO6XpzTgBZaU1HhgPXXDNQPbxb
-	      eP2rq6Afo70UIhDccaQ9Jex+K2V3mqbyaWF/jDfdPLcO5TE9dT4G+ka8Yq8j0n+D
-	      tnB2XWDk7tce</ds:X509Certificate>
-            </ds:X509Data>
-         </ds:KeyInfo>
-      </md:KeyDescriptor>
       <md:KeyDescriptor><!-- new certificate-->
          <ds:KeyInfo>
             <ds:X509Data>
