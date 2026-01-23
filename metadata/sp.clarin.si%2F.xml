@@ -85,6 +85,7 @@
                                     Location="https://www.clarin.si/Shibboleth.sso/Login"
                                     index="1"/>
       </Extensions>
+      <md:KeyDescriptor>
 	 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
             <ds:KeyName>CLARIN.si</ds:KeyName>
             <ds:X509Data>
