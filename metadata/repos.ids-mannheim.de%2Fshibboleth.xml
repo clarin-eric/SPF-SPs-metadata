@@ -17,29 +17,28 @@
       <mdattr:EntityAttributes>
          <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
                          Name="http://macedir.org/entity-category">
-           <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
-           <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
-           <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+            <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
          </saml:Attribute>
-         <saml:Attribute Name="urn:oasis:names:tc:SAML:profiles:subject-id:req" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-           <saml:AttributeValue>subject-id</saml:AttributeValue>
-        </saml:Attribute>
       </mdattr:EntityAttributes>
    </Extensions>
-   <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+   <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
       <Extensions>
-        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login"/>
-        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login" index="1"/>
-        <mdui:UIInfo>
-          <mdui:DisplayName xml:lang="de">Forschungsprimärdatenrepository</mdui:DisplayName>
-          <mdui:DisplayName xml:lang="en">Research Data Respository</mdui:DisplayName>
-          <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Leibniz-Institut für Deutsche Sprache (IDS)</mdui:Description>
-          <mdui:Description xml:lang="en">Repository of language resources provided by the Leibniz-Institute for the German Language (IDS).</mdui:Description>
-          <mdui:InformationURL xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
-          <mdui:Logo height="76" width="240">https://repos.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
-          <mdui:InformationURL xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
-          <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
-        </mdui:UIInfo>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://repos.ids-mannheim.de/Shibboleth.sso/Login"
+                                    index="1"/>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="de">Forschungsprimärdatenrepository</mdui:DisplayName>
+            <mdui:DisplayName xml:lang="en">Research Data Respository</mdui:DisplayName>
+            <mdui:Description xml:lang="de">Das Forschungsprimärdatenrepository des Leibniz-Institut für Deutsche Sprache (IDS)</mdui:Description>
+            <mdui:Description xml:lang="en">Repository of language resources provided by the Leibniz-Institute for the German Language (IDS).</mdui:Description>
+            <mdui:Logo height="16" width="16">https://repos.ids-mannheim.de/logos/ids-logo-small.png</mdui:Logo>
+            <mdui:Logo height="63" width="318">https://repos.ids-mannheim.de/logos/ids-logo-large.png</mdui:Logo>
+            <mdui:InformationURL xml:lang="de">https://repos.ids-mannheim.de</mdui:InformationURL>
+            <mdui:InformationURL xml:lang="en">https://repos.ids-mannheim.de</mdui:InformationURL>
+            <mdui:PrivacyStatementURL xml:lang="en">https://repos.ids-mannheim.de/privacy.html</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
       </Extensions>
       <KeyDescriptor>
          <ds:KeyInfo>
@@ -100,52 +99,83 @@
             </ds:X509Data>
          </ds:KeyInfo>
       </KeyDescriptor>
-      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repos.ids-mannheim.de/Shibboleth.sso/Artifact/SOAP" index="1"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/Artifact"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/POST"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/Redirect"/>
-      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/SOAP"/>
-      <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/POST" index="1"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/Artifact" index="3"/>
-      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                 Location="https://repos.ids-mannheim.de/Shibboleth.sso/Artifact/SOAP"
+                                 index="1"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                           Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/SOAP"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                           Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/Redirect"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                           Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/POST"/>
+      <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                           Location="https://repos.ids-mannheim.de/Shibboleth.sso/SLO/Artifact"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/POST"
+                                index="1"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/POST-SimpleSign"
+                                index="2"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/Artifact"
+                                index="3"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML2/ECP"
+                                index="4"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML/POST"
+                                index="5"/>
+      <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+                                Location="https://repos.ids-mannheim.de/Shibboleth.sso/SAML/Artifact"
+                                index="6"/>
       <AttributeConsumingService index="1">
-        <ServiceName xml:lang="de">Forschungsprimärdatenrepository</ServiceName>
-        <ServiceName xml:lang="en">Research Data Respository</ServiceName>
-        <ServiceDescription xml:lang="de">Das Forschungsprimärdatenrepository des Leibniz-Institut für Deutsche Sprache (IDS)</ServiceDescription>
-        <ServiceDescription xml:lang="en">Repository of language resources provided by the Leibniz-Institute for the German Language (IDS).</ServiceDescription>
-        <RequestedAttribute FriendlyName="eduPersonPrincipalName" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="true"/>
-        <RequestedAttribute FriendlyName="displayName" Name="urn:oid:2.16.840.1.113730.3.1.241" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" isRequired="false"/>
+         <ServiceName xml:lang="de">Forschungsprimärdatenrepository</ServiceName>
+         <ServiceName xml:lang="en">Research Data Respository</ServiceName>
+         <ServiceDescription xml:lang="de">Das Forschungsprimärdatenrepository des
+                    Leibniz-Institut für Deutsche Sprache (IDS)</ServiceDescription>
+         <ServiceDescription xml:lang="en">Repository of language resources provided by the
+                    Leibniz-Institute for the German Language (IDS).</ServiceDescription>
+         <RequestedAttribute isRequired="true"
+                             FriendlyName="eduPersonPrincipalName"
+                             Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+         <RequestedAttribute isRequired="true"
+                             FriendlyName="mail"
+                             Name="urn:oid:0.9.2342.19200300.100.1.3"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
+         <RequestedAttribute isRequired="false"
+                             FriendlyName="displayName"
+                             Name="urn:oid:2.16.840.1.113730.3.1.241"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"/>
       </AttributeConsumingService>
    </SPSSODescriptor>
    <Organization>
-      <OrganizationName xml:lang="de">e217</OrganizationName>
-      <OrganizationName xml:lang="en">e217</OrganizationName>
-      <OrganizationDisplayName xml:lang="de">Leibniz-Institut für Deutsche Sprache (IDS)</OrganizationDisplayName>
-      <OrganizationDisplayName xml:lang="en">Leibniz-Institut für Deutsche Sprache (IDS)</OrganizationDisplayName>
+      <OrganizationName xml:lang="de">Leibniz-Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</OrganizationName>
+      <OrganizationName xml:lang="en">Leibniz-Institute for the German Language (IDS) - Repository</OrganizationName>
+      <OrganizationDisplayName xml:lang="de">Leibniz-Institut für Deutsche Sprache (IDS) - Forschungsprimärdatenrepository</OrganizationDisplayName>
+      <OrganizationDisplayName xml:lang="en">Leibniz-Institute for the German Language - Repository</OrganizationDisplayName>
       <OrganizationURL xml:lang="de">http://www.ids-mannheim.de</OrganizationURL>
       <OrganizationURL xml:lang="en">http://www.ids-mannheim.de</OrganizationURL>
    </Organization>
    <ContactPerson contactType="administrative">
+      <GivenName>Andreas</GivenName>
+      <SurName>Witt</SurName>
+      <EmailAddress>mailto:witt@ids-mannheim.de</EmailAddress>
+   </ContactPerson>
+   <ContactPerson contactType="technical">
+      <GivenName>Oliver</GivenName>
+      <SurName>Schonefeld</SurName>
+      <EmailAddress>mailto:schonefeld@ids-mannheim.de</EmailAddress>
+   </ContactPerson>
+   <ContactPerson contactType="support">
       <GivenName>AAI</GivenName>
-      <SurName>Support</SurName>
+      <SurName>Team</SurName>
       <EmailAddress>mailto:aai@ids-mannheim.de</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+   </ContactPerson>
+   <ContactPerson contactType="other"
+                  remd:contactType="http://refeds.org/metadata/contactType/security">
       <GivenName>Security</GivenName>
       <SurName>Team</SurName>
       <EmailAddress>mailto:security@ids-mannheim.de</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="support">
-      <GivenName>AAI</GivenName>
-      <SurName>Support</SurName>
-      <EmailAddress>mailto:aai@ids-mannheim.de</EmailAddress>
-    </ContactPerson>
-    <ContactPerson contactType="technical">
-      <GivenName>AAI</GivenName>
-      <SurName>Support</SurName>
-      <EmailAddress>mailto:aai@ids-mannheim.de</EmailAddress>
-    </ContactPerson>
+   </ContactPerson>
 </EntityDescriptor>
