@@ -1,0 +1,45 @@
+name: Check certificates in PR
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  build:
+    name: "Check key size and expiration date"
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # required for git diff against upstream
+
+      - name: Determine modified XML files
+        id: changes
+        run: |
+          git fetch --all --prune
+
+          # Determine upstream branch
+          UPSTREAM="${{ github.event.pull_request.base.ref }}"
+          echo "Upstream branch: $UPSTREAM"
+
+          # List modified XML files
+          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
+
+          echo "Modified XML files:"
+          cat modified_files.txt
+
+          # Export as output for next step
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          cat modified_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Check certificate key size and expiration date
+        run: |
+          while IFS= read -r file; do
+            echo "Checking: $file"
+            CI-assests/check_certificates.sh -f "$file"
+          done < <(printf "%s\n" "${{ steps.changes.outputs.files }}")
