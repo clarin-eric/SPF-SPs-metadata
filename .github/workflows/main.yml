@@ -61,6 +61,11 @@ jobs:
     if: needs.detect_changes.outputs.has_changes == 'true'
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
       - name: Install Java (JDK)
         run: |
           sudo apt-get update
@@ -85,7 +90,7 @@ jobs:
   check_certs:
     name: "Check key size and expiration date"
     runs-on: ubuntu-24.04
-    needs: detect_changes
+    needs: validate_files
     if: needs.detect_changes.outputs.has_changes == 'true'
 
     steps:
