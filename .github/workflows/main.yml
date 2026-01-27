@@ -37,16 +37,27 @@ jobs:
           echo "Modified XML files:"
           cat modified_files.txt
 
-          # Export as output
+          # Check if empty
+          if [[ ! -s modified_files.txt ]]; then
+            echo "No modified XML files found."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+
+          # Export file list
           echo "files<<EOF" >> $GITHUB_OUTPUT
           cat modified_files.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
+
       - name: Check certificate key size and expiration date
+        if: steps.changes.outputs.has_changes == 'true'
         run: |
           while IFS= read -r file; do
-            [[ -z "$file" ]] && continue
             echo "Checking: $file"
             CI-assests/check_certificates.sh -f "$file"
           done < <(printf "%s\n" "${{ steps.changes.outputs.files }}")
+
 
