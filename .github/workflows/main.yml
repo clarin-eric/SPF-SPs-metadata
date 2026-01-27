@@ -85,12 +85,12 @@ jobs:
               --inFile "$file"
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
-
-
   check_certs:
     name: "Check key size and expiration date"
     runs-on: ubuntu-24.04
-    needs: validate_files
+    needs:
+      - detect_changes
+      - validate_files
     if: needs.detect_changes.outputs.has_changes == 'true'
 
     steps:
