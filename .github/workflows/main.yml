@@ -8,9 +8,85 @@ env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
-  build:
+
+  detect_changes:
+    name: "Detect modified XML files"
+    runs-on: ubuntu-24.04
+
+    outputs:
+      has_changes: ${{ steps.collect.outputs.has_changes }}
+      files: ${{ steps.collect.outputs.files }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect modified XML files
+        id: collect
+        run: |
+          git fetch --all --prune
+
+          # Determine upstream branch
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            UPSTREAM="${{ github.event.pull_request.base.ref }}"
+            echo "Detected PR event. Upstream branch: $UPSTREAM"
+          else
+            UPSTREAM="${{ github.event.repository.default_branch }}"
+            echo "Manual run detected. Using default branch: $UPSTREAM"
+          fi
+
+          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
+
+          echo "Modified XML files:"
+          cat modified_files.txt
+
+          if [[ ! -s modified_files.txt ]]; then
+            echo "No modified XML files found."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "files=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          cat modified_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+  validate_files:
+    name: "Validate metadata file XML"
+    runs-on: ubuntu-24.04
+    needs: detect_changes
+    if: needs.detect_changes.outputs.has_changes == 'true'
+
+    steps:
+      - name: Install Java (JDK)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk
+          echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
+
+      - name: Validate XML files
+        run: |
+          echo "Using JAVA_HOME=$JAVA_HOME"
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            echo "Validating: $file"
+            check-saml-metadata/xmlsectool/xmlsectool.sh \
+              --validateSchema \
+              --schemaDirectory check-saml-metadata/saml-schema \
+              --logConfig check-saml-metadata/logger.xml \
+              --inFile "$file"
+          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
+
+
+
+  check_certs:
     name: "Check key size and expiration date"
     runs-on: ubuntu-24.04
+    needs: detect_changes
+    if: needs.detect_changes.outputs.has_changes == 'true'
 
     steps:
       - uses: actions/checkout@v4
@@ -20,47 +96,10 @@ jobs:
       - name: Install xmllint
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
 
-      - name: Determine modified XML files
-        id: changes
-        run: |
-          git fetch --all --prune
-
-          # Detect upstream branch depending on event type
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            UPSTREAM="${{ github.event.pull_request.base.ref }}"
-            echo "Detected PR event. Upstream branch: $UPSTREAM"
-          else
-            UPSTREAM="${{ github.event.repository.default_branch }}"
-            echo "Manual run detected. Using default branch: $UPSTREAM"
-          fi
-
-          # List modified XML files
-          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
-
-          echo "Modified XML files:"
-          cat modified_files.txt
-
-          # Check if empty
-          if [[ ! -s modified_files.txt ]]; then
-            echo "No modified XML files found."
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          echo "has_changes=true" >> $GITHUB_OUTPUT
-
-          # Export file list
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          cat modified_files.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-
       - name: Check certificate key size and expiration date
-        if: steps.changes.outputs.has_changes == 'true'
         run: |
           while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
             echo "Checking: $file"
             CI-assets/check_certificates.sh -f "$file"
-          done < <(printf "%s\n" "${{ steps.changes.outputs.files }}")
-
-
+          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
