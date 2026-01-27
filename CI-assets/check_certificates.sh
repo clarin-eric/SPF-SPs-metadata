@@ -118,6 +118,7 @@ verify_key_size() {
 
     if (( KEY_BITS < REQUIRED_BITS )); then
         echo -e "\t❌ Key size too small: ${KEY_BITS} bits (minimum is ${REQUIRED_BITS})"
+        return 1
     else
         echo -e "\t🔐 Key size OK: ${KEY_BITS} bits"
     fi
@@ -149,6 +150,7 @@ verify_expire_date() {
 
     if (( EXPIRY_EPOCH < NOW_EPOCH )); then
         echo -e "\t❌ Certificate has already expired."
+        return 1
     elif (( EXPIRY_EPOCH < WARNING_EPOCH )); then
         echo -e "\t⚠️ Certificate will expire within ${DAYS} days."
     else
@@ -165,19 +167,31 @@ check_file() {
 
     if [[ -z "$RAW_CERT" ]]; then
         echo "No certificate found in $md_file"
-        return
+        return 1
     fi
 
     printf -v CERT -- '-----BEGIN CERTIFICATE-----\n%s\n-----END CERTIFICATE-----\n' "$RAW_CERT"
 
     verify_key_size "$CERT" "$md_file"
+    rc1=$?
+
     verify_expire_date "$CERT" "$md_file"
+    rc2=$?
+
+    if (( rc1 != 0 || rc2 != 0 )); then
+        return 1
+    fi
+
+
 }
 
 check_all_files_in_dir() {
     shopt -s nullglob
+    rc=0
     for md_file in "$1"/*; do
-        check_file "$md_file"
+        if ! check_file "$md_file"; then
+            rc=1
+        fi
     done
     shopt -u nullglob
 }
@@ -185,11 +199,18 @@ check_all_files_in_dir() {
 #
 # Execute
 #
+ec=0
 if [[ $CHECK_FILE -eq 1 ]]; then
-    check_file "$FILENAME"
+    if ! check_file "$FILENAME"; then
+        ec=1
+    fi
 elif [[ $CHECK_DIR -eq 1 ]]; then
-    check_all_files_in_dir "$DIRNAME"
+    if ! check_all_files_in_dir "$DIRNAME"; then
+        ec=1
+    fi
 else
     show_help
 fi
+
+exit "${ec}"
 
