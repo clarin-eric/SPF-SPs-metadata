@@ -23,7 +23,7 @@
          </saml:Attribute>
       </mdattr:EntityAttributes>
    </md:Extensions>
-   <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+   <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:Extensions>
          <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">CLARIN ERIC Single sign-on</mdui:DisplayName>
