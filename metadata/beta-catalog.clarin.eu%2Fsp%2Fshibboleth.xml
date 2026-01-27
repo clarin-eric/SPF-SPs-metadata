@@ -44,7 +44,7 @@
       <md:Extensions>
          <mdui:UIInfo>
             <mdui:DisplayName xml:lang="en">CLARIN Beta CMDI metadata (beta)</mdui:DisplayName>
-            <mdui:Description xml:lang="en">For the Component Registry, Virtual Language Observatory.</mdui:Description>
+            <mdui:Description xml:lang="en">Development SP for the Component Registry, Virtual Language Observatory.</mdui:Description>
             <mdui:DisplayName xml:lang="de">CLARIN Beta CMDI Metadaten (beta)</mdui:DisplayName>
             <mdui:Description xml:lang="de">Für die Component Registry, das Virtual Language Observatory.</mdui:Description>
             <mdui:DisplayName xml:lang="fi">CLARIN Beta CMDI metadatan (beta)</mdui:DisplayName>
