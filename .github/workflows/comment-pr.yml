@@ -18,11 +18,12 @@ jobs:
 
     steps:
       - name: Download test results
-        uses: dawidd6/action-download-artifact@v6
+        uses: dawidd6/action-download-artifact@v7
         with:
           workflow: check-pr.yml
           path: ./test-results
           allow_forks: true
+          merge-multiple: true
           workflow_conclusion: success
 
       - name: Read results
