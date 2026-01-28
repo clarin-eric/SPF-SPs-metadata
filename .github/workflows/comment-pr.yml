@@ -19,10 +19,18 @@ jobs:
     steps:
       - name: Download test results
         if: ${{ github.event.workflow_run.event == 'pull_request' }}
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: test-results
           run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Download test results
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: main.yml  # The workflow file name
+          name: test-results         # The artifact name
+          path: ./test-results  # Local directory to save artifact
+          workflow_conclusion: success  # Only download if the triggering workflow succeeded
 
       - name: Read results
         id: read
