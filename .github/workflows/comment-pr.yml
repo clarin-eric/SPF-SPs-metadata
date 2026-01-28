@@ -23,7 +23,6 @@ jobs:
           workflow: check-pr.yml
           path: ./test-results
           allow_forks: true
-          merge-multiple: true
           workflow_conclusion: success
 
       - name: Read results
