@@ -64,8 +64,18 @@ jobs:
         with:
           script: |
             const prNumber = ${{ steps.find_pr.outputs.pr_number }};
+            const results = process.env.RESULT;
 
-            const body = process.env.RESULT;
+            const extra = `
+Please check the results above and **fix all entries marked with ❌**.  
+Entries with ⚠️ severity should also be fixed, though those can be acceptable on a case‑by‑case basis.
+
+To submit your fixes, either commit them to this pull request or open a new one.
+
+If there are no issues, your PR will be merged by an operator without further actions from your side.
+`;
+
+            const body = `${results}\n\n${extra}`;
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
