@@ -23,7 +23,6 @@ jobs:
           workflow: check-pr.yml
           path: ./test-results
           allow_forks: true
-          merge-multiple: true
           workflow_conclusion: success
 
       - name: Read results
@@ -69,6 +68,7 @@ jobs:
             const results = process.env.RESULT;
 
             const extra = [
+              "<br>"
               "Please check the results above and **fix all entries marked with ❌**.",
               "Entries with ⚠️ severity should also be fixed, though those can be acceptable on a case-by-case basis.",
               "",
