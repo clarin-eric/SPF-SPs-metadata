@@ -174,7 +174,9 @@ jobs:
             echo "Absolute path: $abs_path"
             ant -v -DinputFile="file:$abs_path"
           done
+          ls -Fla
 
+          mv out ../../
 
       - uses: actions/upload-artifact@v4
         with:
