@@ -61,25 +61,28 @@ jobs:
 
       - name: Post PR comment
         uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ steps.find_pr.outputs.pr_number }}
         with:
           script: |
-            const prNumber = "${{ steps.find_pr.outputs.pr_number }}";
+            const prNumber = process.env.PR_NUMBER;
             const results = process.env.RESULT;
 
-            const extra = `
-Please check the results above and **fix all entries marked with ❌**.  
-Entries with ⚠️ severity should also be fixed, though those can be acceptable on a case‑by‑case basis.
-
-To submit your fixes, either commit them to this pull request or open a new one.
-
-If there are no issues, your PR will be merged by an operator without further actions from your side.
-`;
+            const extra = [
+              "Please check the results above and **fix all entries marked with ❌**.",
+              "Entries with ⚠️ severity should also be fixed, though those can be acceptable on a case-by-case basis.",
+              "",
+              "To submit your fixes, either commit them to this pull request or open a new one.",
+              "",
+              "If there are no issues, your PR will be merged by an operator without further actions from your side."
+            ].join("\n");
 
             const body = `${results}\n\n${extra}`;
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: prNumber,
+              issue_number: Number(prNumber),
               body
             });
+
