@@ -32,6 +32,7 @@ jobs:
           {
             echo "RESULT<<EOF"
             cat test-results/cert_check_results.txt
+            cat test-results/qa_results.txt
             echo "EOF"
           } >> $GITHUB_ENV
 

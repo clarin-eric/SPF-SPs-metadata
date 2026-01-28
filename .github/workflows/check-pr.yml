@@ -176,7 +176,7 @@ jobs:
       - name: Create QA summary table
         run: |
           {
-            echo "### Metadata Validation Summary"
+            echo "### Metadata Quality Assessment Summary"
             echo ""
             echo "| File | Failed requirement | Explanation |"
             echo "|------|--------------------|-------------|"
@@ -198,7 +198,7 @@ jobs:
               requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
               explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
-                echo "| $sp | $requirement | $explanation |"
+                echo "| \`$sp\` | $requirement | $explanation |"
               done
             done
           } | tee qa_results.txt >> $GITHUB_STEP_SUMMARY
