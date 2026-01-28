@@ -60,10 +60,6 @@ jobs:
         with:
           script: |
             const prNumber = ${{ steps.find_pr.outputs.pr_number }};
-            if (!pr) {
-              console.log("No PR associated with this workflow_run. Skipping comment.");
-              return;
-            }
 
             const body = process.env.RESULT;
 
