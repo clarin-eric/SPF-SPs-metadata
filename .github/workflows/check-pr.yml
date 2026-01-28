@@ -166,10 +166,15 @@ jobs:
           cd "SAML_metadata_QA_validator-${QA_VALIDATOR_VERSION}"
 
           echo "Running validator on changed files..."
-          for file in ${{ needs.detect_changes.outputs.files }}; do
+          FILES="${{ needs.detect_changes.outputs.files }}"
+
+          for file in $FILES; do
             echo "Validating: $file"
-            ant -v -DinputFile="file:$(realpath "$file")"
+            abs_path="$(realpath "../../$file")"
+            echo "Absolute path: $abs_path"
+            ant -v -DinputFile="file:$abs_path"
           done
+
 
       - uses: actions/upload-artifact@v4
         with:
