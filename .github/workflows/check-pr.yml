@@ -1,4 +1,4 @@
-name: Check certificates
+name: Check Pull Request contents
 
 on:
   pull_request:
@@ -83,8 +83,8 @@ jobs:
               --inFile "$file"
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
-  check_certs:
-    name: Check key size and expiration date
+  check_metadata:
+    name: Check certificate key size, expiration date and assess overall metadata quality
     runs-on: ubuntu-24.04
     needs:
       - detect_changes
@@ -176,7 +176,7 @@ jobs:
       - name: Create QA summary table
         run: |
           {
-            echo "### Metadata Quality Assessment Summary"
+            echo "### Metadata Quality Assurance Summary"
             echo ""
             echo "| File | Failed requirement | Explanation |"
             echo "|------|--------------------|-------------|"
