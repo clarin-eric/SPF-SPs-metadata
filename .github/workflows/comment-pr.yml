@@ -20,7 +20,7 @@ jobs:
       - name: Download test results
         uses: dawidd6/action-download-artifact@v6
         with:
-          workflow: main.yml
+          workflow: check-pr.yml
           name: test-results 
           path: ./test-results
           allow_forks: true
@@ -31,7 +31,7 @@ jobs:
         run: |
           {
             echo "RESULT<<EOF"
-            cat test-results/results.txt
+            cat test-results/cert_check_results.txt
             echo "EOF"
           } >> $GITHUB_ENV
 

@@ -103,7 +103,7 @@ jobs:
 
       - name: Check certificate key size and expiration date
         run: |
-          echo "" > results.txt
+          echo "" > cert_check_results.txt
           while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Checking: $file"
@@ -116,10 +116,10 @@ jobs:
               | sed ':a;N;$!ba;s/\n/<br>/g')
 
 
-            echo "$file | $result" >> results.txt
+            echo "$file | $result" >> cert_check_results.txt
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
-      - name: Add summary table
+      - name: Create summary table
         run: |
           {
             echo "### Certificate & XML Validation Summary"
@@ -130,11 +130,11 @@ jobs:
               [[ -z "$file" ]] && continue
               filename="${file##*/}"
               echo "| $filename | $result |"
-            done < results.txt
-          } | tee -a $GITHUB_STEP_SUMMARY > results.txt
+            done < cert_check_results.txt
+          } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
       - uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: results.txt
+          path: cert_check_results.txt
 
