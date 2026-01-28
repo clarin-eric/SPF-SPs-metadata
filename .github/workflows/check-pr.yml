@@ -176,7 +176,7 @@ jobs:
       - name: Create QA summary table
         run: |
           {
-            echo "### Metadata Validation Summary"
+            echo "### Metadata Quality Assessment Summary"
             echo ""
             echo "| File | Failed requirement | Explanation |"
             echo "|------|--------------------|-------------|"
