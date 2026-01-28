@@ -1,4 +1,4 @@
-name: PR Comment
+name: Comment Pull Request
 
 on:
   workflow_run:
@@ -21,9 +21,9 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           workflow: check-pr.yml
-          name: test-results 
           path: ./test-results
           allow_forks: true
+          merge-multiple: true
           workflow_conclusion: success
 
       - name: Read results
@@ -31,8 +31,8 @@ jobs:
         run: |
           {
             echo "RESULT<<EOF"
-            cat test-results/cert_check_results.txt
-            cat test-results/qa_results.txt
+            cat test-results/cert_check-results/cert_check_results.txt
+            cat test-results/qa-results/qa_results.txt
             echo "EOF"
           } >> $GITHUB_ENV
 
