@@ -128,9 +128,10 @@ jobs:
             echo "|------|--------|"
             while IFS='|' read -r file result; do
               [[ -z "$file" ]] && continue
-              echo "| $file | $result |"
+              filename="${file##*/}"
+              echo "| $filename | $result |"
             done < results.txt
-          } >> $GITHUB_STEP_SUMMARY
+          } | tee -a $GITHUB_STEP_SUMMARY > results.txt
 
       - uses: actions/upload-artifact@v4
         with:
