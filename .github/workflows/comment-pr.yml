@@ -69,7 +69,7 @@ jobs:
 
             const extra = [
               "<br>",
-              "Please check the results above and **fix all entries marked with ❌**.",
+              "Please check the results above and <strong>fix all entries marked with ❌</strong>.",
               "Entries with ⚠️ severity should also be fixed, though those can be acceptable on a case-by-case basis.",
               "",
               "To submit your fixes, either commit them to this pull request or open a new one.",
@@ -85,4 +85,3 @@ jobs:
               issue_number: Number(prNumber),
               body
             });
-
