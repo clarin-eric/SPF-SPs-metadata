@@ -197,8 +197,8 @@ jobs:
           {
             echo "### Metadata Quality Assurance Summary"
             echo ""
-            echo "| File | Failed requirement | Explanation |"
-            echo "|------|--------------------|-------------|"
+            echo "| Severity | File | Failed requirement | Explanation |"
+            echo "|--------|------|--------------------|-------------|"
 
             for xml in qa-tmp/SAML_metadata_QA_validator-*/out/*.xml; do
               [[ ! -f "$xml" ]] && continue
@@ -217,7 +217,13 @@ jobs:
                 requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
                 explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
-                echo "| \`$sp\` | $requirement | $explanation |"
+                if [[ "$requirement" == Completely* ]]; then
+                  severity="❌"
+                else
+                  severity="⚠️"
+                fi
+
+                echo "| $severity | \`$sp\` | $requirement | $explanation |"
               done
             done
           } | tee qa_results.txt >> $GITHUB_STEP_SUMMARY
