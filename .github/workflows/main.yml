@@ -107,7 +107,11 @@ jobs:
           while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Checking: $file"
-            result=$(CI-assets/check_certificates.sh -f "$file")
+            raw=$(CI-assets/check_certificates.sh -f "$file" || true)
+
+            # Remove tabs, carriage returns, and newlines
+            result=$(echo "$raw" | tr -d '\t\r' | tr '\n' ' ')
+
             echo "$file | $result" >> results.txt
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
