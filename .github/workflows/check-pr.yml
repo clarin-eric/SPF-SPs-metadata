@@ -83,8 +83,8 @@ jobs:
               --inFile "$file"
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
-  check_metadata:
-    name: Check certificate key size, expiration date and assess overall metadata quality
+  check_certificate:
+    name: Check certificate key size and expiration date
     runs-on: ubuntu-24.04
     needs:
       - detect_changes
@@ -131,6 +131,26 @@ jobs:
             done < cert_check_results.txt
           } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: cert_check_results.txt
+
+  quality_assurance:
+    name: Assess overall metadata quality (Schematron QA)
+    runs-on: ubuntu-24.04
+    needs:
+      - detect_changes
+      - validate_files
+    if: needs.detect_changes.outputs.has_changes == 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: Run QA validator
         run: |
           set -e
@@ -166,12 +186,11 @@ jobs:
           echo "Running validator on changed files..."
           FILES="${{ needs.detect_changes.outputs.files }}"
 
-          for file in "$FILES"; do
+          while IFS= read -r file; do
             echo "Validating: $file"
             abs_path="$(realpath "../../$file")"
-            echo "Absolute path: $abs_path"
             ant -v -DinputFile="file:$abs_path"
-          done
+          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
       - name: Create QA summary table
         run: |
@@ -184,19 +203,19 @@ jobs:
             for xml in qa-tmp/SAML_metadata_QA_validator-*/out/*.xml; do
               [[ ! -f "$xml" ]] && continue
 
-            # Extract filename only
-            filename="$(basename "$xml")"
+              # Extract filename only
+              filename="$(basename "$xml")"
 
-            # Extract <sp> (same for all <result> entries)
-            sp=$(xmllint --xpath "string(/results/result[1]/sp)" "$xml" 2>/dev/null)
+              # Extract <sp> (same for all <result> entries)
+              sp=$(xmllint --xpath "string(/results/result[1]/sp)" "$xml" 2>/dev/null)
 
-            # Count <result> entries
-            count=$(xmllint --xpath "count(/results/result)" "$xml" 2>/dev/null)
+              # Count <result> entries
+              count=$(xmllint --xpath "count(/results/result)" "$xml" 2>/dev/null)
 
-            # Loop through each <result>
-            for i in $(seq 1 "$count"); do
-              requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
-              explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
+              # Loop through each <result>
+              for i in $(seq 1 "$count"); do
+                requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
+                explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
                 echo "| \`$sp\` | $requirement | $explanation |"
               done
@@ -206,6 +225,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: |
-            cert_check_results.txt
-            qa_results.txt
+          path: qa_results.txt
