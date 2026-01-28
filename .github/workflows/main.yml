@@ -1,4 +1,4 @@
-name: Check certificates in PR
+name: Check certificates
 
 on:
   pull_request:
@@ -103,10 +103,12 @@ jobs:
 
       - name: Check certificate key size and expiration date
         run: |
+          echo "" > results.txt
           while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Checking: $file"
-            CI-assets/check_certificates.sh -f "$file"
+            result=$(CI-assets/check_certificates.sh -f "$file")
+            echo "$file | $result" >> results.txt
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
       - name: Add summary table
@@ -116,13 +118,14 @@ jobs:
             echo ""
             echo "| File | Result |"
             echo "|------|--------|"
-            while IFS= read -r file; do
+            while IFS='|' read -r file result; do
               [[ -z "$file" ]] && continue
-              echo "| $file | Checked |"
-            done < <(printf "%s\n" "results.txt")
+              echo "| $file | $result |"
+            done < results.txt
           } >> $GITHUB_STEP_SUMMARY
 
       - uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: results.txt
+
