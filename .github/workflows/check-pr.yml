@@ -119,7 +119,7 @@ jobs:
             echo "$file | $result" >> cert_check_results.txt
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
-      - name: Create summary table
+      - name: Create certificate checks summary table
         run: |
           {
             echo "### Certificate & XML Validation Summary"
@@ -133,8 +133,48 @@ jobs:
             done < cert_check_results.txt
           } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
+      - name: Run QA validator
+        run: |
+          set -e
+
+          QA_VALIDATOR_VERSION=1.0.9
+          SAXON_VERSION=SaxonHE9-9-1-5J
+          SAXON_URL="https://downloads.sourceforge.net/project/saxon/Saxon-HE/9.9/${SAXON_VERSION}.zip"
+          SCHEMATRON_VERSION=1.0.1-e16ecc4-CLARIN
+          INSTALLS_PATH=qa-tmp
+
+          mkdir -p "$INSTALLS_PATH/saxon"
+          cd "$INSTALLS_PATH/saxon"
+
+          echo "Downloading Saxon..."
+          wget --no-check-certificate "$SAXON_URL"
+          unzip -o "${SAXON_VERSION}.zip"
+          rm "${SAXON_VERSION}.zip"
+
+          cd ..
+
+          echo "Downloading Schematron..."
+          wget -O schematron.tar.gz "https://codeload.github.com/clarin-eric/schematron/tar.gz/${SCHEMATRON_VERSION}"
+          tar xvf schematron.tar.gz "schematron-${SCHEMATRON_VERSION}/trunk/schematron/code/"
+          mv "schematron-${SCHEMATRON_VERSION}/trunk/schematron/code" schematron
+          rm -rf "schematron-${SCHEMATRON_VERSION}" schematron.tar.gz
+
+          echo "Downloading QA Validator..."
+          wget -O SAML_metadata_QA_validator.tar.gz "https://codeload.github.com/clarin-eric/SAML_metadata_QA_validator/tar.gz/${QA_VALIDATOR_VERSION}"
+          tar xvf SAML_metadata_QA_validator.tar.gz
+
+          cd "SAML_metadata_QA_validator-${QA_VALIDATOR_VERSION}"
+
+          echo "Running validator on changed files..."
+          for file in ${{ needs.detect_changes.outputs.files }}; do
+            echo "Validating: $file"
+            ant -v -DinputFile="file:$(realpath "$file")"
+          done
+
       - uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: cert_check_results.txt
+          path: |
+            cert_check_results.txt
+            out/*results.xml
 
