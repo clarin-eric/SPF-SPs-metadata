@@ -23,6 +23,7 @@ jobs:
           workflow: main.yml
           name: test-results 
           path: ./test-results
+          allow_forks: true
           workflow_conclusion: success  
 
       - name: Read results
