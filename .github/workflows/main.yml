@@ -10,7 +10,7 @@ env:
 jobs:
 
   detect_changes:
-    name: "Detect modified XML files"
+    name: Detect modified XML files
     runs-on: ubuntu-24.04
 
     outputs:
@@ -109,8 +109,12 @@ jobs:
             echo "Checking: $file"
             raw=$(CI-assets/check_certificates.sh -f "$file" || true)
 
-            # Remove tabs, carriage returns, and newlines
-            result=$(echo "$raw" | tr -d '\t\r' | tr '\n' ' ')
+            # Remove first line, strip tabs/CR, convert newlines to <br>
+            result=$(echo "$raw" \
+              | sed '1d' \
+              | tr -d '\t\r' \
+              | sed ':a;N;$!ba;s/\n/<br>/g')
+
 
             echo "$file | $result" >> results.txt
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")

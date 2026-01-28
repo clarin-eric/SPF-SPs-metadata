@@ -160,7 +160,7 @@ verify_expire_date() {
 
 check_file() {
     md_file="$1"
-    echo "Checking file: $md_file"
+    echo "Checking file $md_file:"
 
     RAW_CERT=$(xmllint --xpath "string(//*[local-name()='X509Certificate'])" "$md_file" \
         | tr -d ' \t\n\r')
