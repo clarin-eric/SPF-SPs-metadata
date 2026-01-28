@@ -133,7 +133,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: test-results
+          name: cert_check-results
           path: cert_check_results.txt
 
   quality_assurance:
@@ -224,5 +224,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: test-results
+          name: qa-results
           path: qa_results.txt
