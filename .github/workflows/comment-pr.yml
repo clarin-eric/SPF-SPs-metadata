@@ -35,21 +35,24 @@ jobs:
             echo "EOF"
           } >> $GITHUB_ENV
 
-      - name: Find PR number from commit SHA
+      - name: Find PR number
         id: find_pr
         uses: actions/github-script@v7
         with:
           script: |
-            const sha = context.payload.workflow_run.head_sha;
+            const headRepoFull = context.payload.workflow_run.head_repository.full_name;
+            const [headOwner] = headRepoFull.split("/");
+            const branch = context.payload.workflow_run.head_branch;
 
-            const prs = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+            const prs = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              commit_sha: sha
+              state: "open",
+              head: `${headOwner}:${branch}`
             });
 
             if (prs.data.length === 0) {
-              core.setFailed(`No PR found for commit ${sha}`);
+              core.setFailed(`No PR found for ${headOwner}:${branch}`);
               return;
             }
 
