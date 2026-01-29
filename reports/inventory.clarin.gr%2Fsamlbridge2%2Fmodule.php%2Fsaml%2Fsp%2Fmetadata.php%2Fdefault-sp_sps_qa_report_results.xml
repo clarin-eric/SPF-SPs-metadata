@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Mon Jul 26 12:43:28 UTC 2021</ReportDate>
-  <FromCommit>f4c78cd9cf0f2d5f3e17a54ce484ea383594ab3a</FromCommit>
+  <ReportDate>Thu Jan 29 13:32:13 UTC 2026</ReportDate>
+  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://inventory.clarin.gr/samlbridge2/module.php/saml/sp/metadata.php/default-sp</sp>

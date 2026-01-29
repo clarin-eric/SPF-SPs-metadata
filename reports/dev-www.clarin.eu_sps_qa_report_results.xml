@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Fri Sep 23 13:18:58 UTC 2022</ReportDate>
-  <FromCommit>d9a30209ac37dea2653ea2be5fa838f7c55ba89e</FromCommit>
+  <ReportDate>Thu Jan 29 13:32:13 UTC 2026</ReportDate>
+  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>dev-www.clarin.eu</sp>

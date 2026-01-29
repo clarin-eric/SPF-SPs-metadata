@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Fri Jan 12 10:46:51 UTC 2024</ReportDate>
-  <FromCommit>febfb3a69756cf40c4ca9546052e5ab3b4ce5531</FromCommit>
+  <ReportDate>Thu Jan 29 13:32:13 UTC 2026</ReportDate>
+  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://acdh.oeaw.ac.at/shibboleth</sp>

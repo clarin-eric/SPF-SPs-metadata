@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Tue Nov 19 10:11:06 UTC 2024</ReportDate>
-  <FromCommit>c57690503ded7b7aefd163d1d54104001dcc48ce</FromCommit>
+  <ReportDate>Thu Jan 29 13:32:14 UTC 2026</ReportDate>
+  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://sp.alpha-contentsearch.clarin.eu</sp>
