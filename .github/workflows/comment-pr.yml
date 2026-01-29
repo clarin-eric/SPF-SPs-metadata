@@ -6,9 +6,6 @@ on:
     types:
       - completed
 
-env:
-  GITHUB_TOKEN: ${{ github.token }}
-
 jobs:
   comment:
     runs-on: ubuntu-24.04
@@ -17,24 +14,6 @@ jobs:
       actions: read
 
     steps:
-      - name: Download test results
-        uses: dawidd6/action-download-artifact@v7
-        with:
-          run_id: ${{ github.event.workflow_run.id }}
-          path: ./test-results
-          allow_forks: true
-          workflow_conclusion: success
-
-      - name: Read results
-        id: read
-        run: |
-          {
-            echo "RESULT<<EOF"
-            cat test-results/cert_check-results/cert_check_results.txt
-            cat test-results/qa-results/qa_results.txt
-            echo "EOF"
-          } >> $GITHUB_ENV
-
       - name: Find PR number
         id: find_pr
         uses: actions/github-script@v7
@@ -57,6 +36,55 @@ jobs:
             }
 
             core.setOutput("pr_number", prs.data[0].number);
+
+      - name: Get changed files
+        id: files
+        uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ steps.find_pr.outputs.pr_number }}
+        with:
+          script: |
+            const prNumber = process.env.PR_NUMBER;
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+              }
+            );
+
+            const filenames = files.map(f => f.filename);
+
+            // Check if all files are inside metadata/
+            const allInMetadata = filenames.every(f => f.startsWith("metadata/"));
+
+            core.setOutput("all_in_metadata", allInMetadata);
+            core.setOutput("changed_files", filenames.join(","));
+
+      - name: Stop if files outside metadata/
+        if: steps.files.outputs.all_in_metadata == 'false'
+        run: |
+          echo "Some files are outside metadata/. Skipping workflow."
+          exit 0
+
+      - name: Download test results
+        uses: dawidd6/action-download-artifact@v7
+        with:
+          run_id: ${{ github.event.workflow_run.id }}
+          path: ./test-results
+          allow_forks: true
+          workflow_conclusion: success
+
+      - name: Read results
+        id: read
+        run: |
+          {
+            echo "RESULT<<EOF"
+            cat test-results/cert_check-results/cert_check_results.txt
+            cat test-results/qa-results/qa_results.txt
+            echo "EOF"
+          } >> $GITHUB_ENV
 
       - name: Post PR comment
         uses: actions/github-script@v7
