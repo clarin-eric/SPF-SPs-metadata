@@ -216,7 +216,7 @@ jobs:
               count=$(xmllint --xpath "count(/results/result)" "$xml" 2>/dev/null)
 
               if [ "$count" -eq 0 ]; then
-                echo "| ✅ | | All checks passed | |"
+                continue
               else
                 # Loop through each <result>
                 for i in $(seq 1 "$count"); do
@@ -235,6 +235,10 @@ jobs:
                 done
               fi
             done
+
+            if [ $((total_errors + total_warnings)) -eq 0 ]; then
+              echo "| ✅ | | All checks passed | |"
+            fi
 
             # Summary row
             echo "| **Summary** | **$total_errors errors** | **$total_warnings warnings** | |"
