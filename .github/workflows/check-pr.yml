@@ -197,8 +197,11 @@ jobs:
           {
             echo "### Metadata Quality Assurance Summary"
             echo ""
-            echo "| Severity | File | Failed requirement | Explanation |"
+            echo "| Severity | SP entityID | Failed requirement | Explanation |"
             echo "|--------|------|--------------------|-------------|"
+
+            total_errors=0
+            total_warnings=0
 
             for xml in qa-tmp/SAML_metadata_QA_validator-*/out/*.xml; do
               [[ ! -f "$xml" ]] && continue
@@ -212,20 +215,30 @@ jobs:
               # Count <result> entries
               count=$(xmllint --xpath "count(/results/result)" "$xml" 2>/dev/null)
 
-              # Loop through each <result>
-              for i in $(seq 1 "$count"); do
-                requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
-                explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
+              if [ "$count" -eq 0 ]; then
+                echo "| ✅ | | All checks passed | |"
+              else
+                # Loop through each <result>
+                for i in $(seq 1 "$count"); do
+                  requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
+                  explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
-                if [[ "$requirement" == Completely* ]]; then
-                  severity="❌"
-                else
-                  severity="⚠️"
-                fi
+                  if [[ "$requirement" == Completely* ]]; then
+                    severity="❌"
+                    total_errors=$((total_errors + 1))
+                  else
+                    severity="⚠️"
+                    total_warnings=$((total_warnings + 1))
+                  fi
 
-                echo "| $severity | \`$sp\` | $requirement | $explanation |"
-              done
+                  echo "| $severity | \`$sp\` | $requirement | $explanation |"
+                done
+              fi
             done
+
+            # Summary row
+            echo ""
+            echo "| **Summary** | **$total_errors errors** | **$total_warnings warnings** | |"
           } | tee qa_results.txt >> $GITHUB_STEP_SUMMARY
 
       - uses: actions/upload-artifact@v4
