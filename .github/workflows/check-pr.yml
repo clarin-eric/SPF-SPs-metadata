@@ -84,7 +84,7 @@ jobs:
           done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
 
   check_certificate:
-    name: Check certificate key size and expiration date
+    name: Check key size and expiration date
     runs-on: ubuntu-24.04
     needs:
       - detect_changes
