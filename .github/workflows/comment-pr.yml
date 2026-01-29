@@ -20,7 +20,7 @@ jobs:
       - name: Download test results
         uses: dawidd6/action-download-artifact@v7
         with:
-          workflow: check-pr.yml
+          workflow: ${{ github.event.workflow_run.id }}
           path: ./test-results
           allow_forks: true
           workflow_conclusion: success
