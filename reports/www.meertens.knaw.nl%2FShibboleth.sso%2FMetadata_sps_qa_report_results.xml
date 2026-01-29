@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Thu Apr 11 18:48:03 UTC 2024</ReportDate>
+  <FromCommit>a137f6499b9b9bd1f4895bf22ee7cef99cd420dd</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>https://www.meertens.knaw.nl/Shibboleth.sso/Metadata</sp>
+      <explanation>Invalid or missing ‘mdui:Description’ and/or ‘mdui:DisplayName’ under ‘md:SPSSODescriptor/md:Extensions/mdui:UIInfo’ in language with code ‘en’, or display name (= ‘Meertens Institute’) length (= 18) &lt; 5 or &gt; 33, or description (= ‘This Service Provider regulates access to the Meertens Institute Archive</explanation>
+      <requirement>and selected services for humanities research activities in the domain of Dutch language variation</requirement>
+    </result>
+  </results>
+</report>

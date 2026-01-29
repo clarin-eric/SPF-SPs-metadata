@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Jan 29 13:32:14 UTC 2026</ReportDate>
-  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
+  <ReportDate>Tue Jul 30 14:02:57 UTC 2024</ReportDate>
+  <FromCommit>6bc14809534ede171de1da37f0ca9a241ec4ae7d</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://sp.www.kielipankki.fi</sp>

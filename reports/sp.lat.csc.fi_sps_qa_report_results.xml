@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <ReportDate>Sun Mar 15 20:25:53 UTC 2020</ReportDate>
+  <FromCommit>d960dd34463962992e7028115ae8f5fb70dcb908</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <result>
+      <sp>http://sp.lat.csc.fi</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
+    </result>
+  </results>
+</report>

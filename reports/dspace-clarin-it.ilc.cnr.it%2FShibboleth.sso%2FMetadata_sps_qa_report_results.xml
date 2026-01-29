@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Jan 29 13:32:13 UTC 2026</ReportDate>
-  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
+  <ReportDate>Thu 11 Sep 2025 01:10:54 PM UTC</ReportDate>
+  <FromCommit>d481f213f1317cb7a732dad2624e76c3bff8e6d2</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://dspace-clarin-it.ilc.cnr.it/Shibboleth.sso/Metadata</sp>

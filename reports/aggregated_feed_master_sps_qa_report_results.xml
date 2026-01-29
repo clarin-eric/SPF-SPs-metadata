@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Thu Jan 29 13:32:13 UTC 2026</ReportDate>
-  <FromCommit>ef383779c55aaaf55db76072d04135fdf36c5528</FromCommit>
+  <ReportDate>Tue 27 Jan 2026 10:04:57 AM UTC</ReportDate>
+  <FromCommit>9d79a83aa4c49ac9bfec33a311cd858a5c208671</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -519,11 +519,6 @@
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
     </result>
     <result>
-      <sp>http://www.clarin-pl.eu/shibboleth</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
       <sp>www.clarin.eu</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
@@ -532,6 +527,11 @@
       <sp>www.clarin.eu</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
+    </result>
+    <result>
+      <sp>http://www.clarin-pl.eu/shibboleth</sp>
+      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
+      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
     </result>
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
