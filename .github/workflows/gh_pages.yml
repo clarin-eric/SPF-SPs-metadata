@@ -22,10 +22,7 @@ jobs:
       - name: Collect modified metadata files
         id: collect
         run: |
-          UPSTREAM="${{ github.event.repository.default_branch }}"
-          echo "Upstream branch: $UPSTREAM"
-
-          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
+          git diff --name-only HEAD^ HEAD -- '*.xml' > modified_files.txt
 
           echo "Modified metadata files:"
           cat modified_files.txt || true
