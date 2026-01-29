@@ -237,7 +237,6 @@ jobs:
             done
 
             # Summary row
-            echo ""
             echo "| **Summary** | **$total_errors errors** | **$total_warnings warnings** | |"
           } | tee qa_results.txt >> $GITHUB_STEP_SUMMARY
 

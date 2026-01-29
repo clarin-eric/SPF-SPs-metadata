@@ -148,13 +148,18 @@ verify_expire_date() {
     THIRTY_DAYS=$(( DAYS * 24 * 3600 ))
     WARNING_EPOCH=$(( NOW_EPOCH + THIRTY_DAYS ))
 
+    # Calculate days left (rounded down)
+    DAYS_LEFT=$(( (EXPIRY_EPOCH - NOW_EPOCH) / 86400 ))
+
     if (( EXPIRY_EPOCH < NOW_EPOCH )); then
-        echo -e "\t❌ Certificate has already expired."
+        echo -e "\t❌ Certificate has already expired. Expired ${DAYS_LEFT#-} days ago."
         return 1
+
     elif (( EXPIRY_EPOCH < WARNING_EPOCH )); then
-        echo -e "\t⚠️ Certificate will expire within ${DAYS} days."
+        echo -e "\t⚠️ Certificate will expire within ${DAYS} days. Currently ${DAYS_LEFT} days left."
+
     else
-        echo -e "\t✅ Certificate is valid for more than ${DAYS} days."
+        echo -e "\t✅ Certificate is valid for more than ${DAYS} days. Currently ${DAYS_LEFT} days left."
     fi
 }
 
