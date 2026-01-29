@@ -137,7 +137,7 @@ jobs:
           path: cert_check_results.txt
 
   quality_assurance:
-    name: Assess overall metadata quality (Schematron QA)
+    name: Assess metadata quality (Schematron QA)
     runs-on: ubuntu-24.04
     needs:
       - detect_changes
