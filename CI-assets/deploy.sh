@@ -62,32 +62,4 @@ else
     git push $SSH_REPO $TARGET_BRANCH
 fi
 
-# Comment pull request
-if [ ! -z "${RELEVANT_PR}" -a ! -z "${PR_TARGET_BRANCH}" -a "${TRAVIS_EVENT_TYPE}" != "cron" ]; then
-    echo "Commenting pull request..."
-    if [ ${#CHANGED_SPS[@]} -gt 0 ]; then
-        CHANGED_SPS_HTML="<p>The following SPs changed their QA assessment with this pull request:</p><ul>Standalone QA reports:"
-        for report in ${CHANGED_SPS[@]}
-        do
-        	# do not generate entry for aggregated report (it is always present in curl message body. See bellow)
-            if [ "${report}" != "aggregated_feed_master_sps_qa_report_results.xml" ]; then
-                CHANGED_SPS_HTML+="<li><a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/sp_qa_report.html?${report}>${report%_sps_qa_report_results.xml}</a></li>"
-            fi
-        done
-        CHANGED_SPS_HTML+="</ul>"
-    fi
-    
-    curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST \
-        -d "{\"body\": \"\
-<img src=https://img.shields.io/github/status/contexts/pulls/${TRAVIS_REPO_SLUG}/${RELEVANT_PR}></img> \
-<img src=https://img.shields.io/github/commit-status/${TRAVIS_REPO_SLUG}/${SOURCE_BRANCH}/${SHA}></img> \
-<p>Automated QA assessment complete.</p>\
-<p>Please check your SP in the <a href=https://clarin-eric.github.io/SPF-SPs-metadata/web/master_qa_report.html>master QA report</a> (or in its standalone QA report) \
-and <strong>fix all entries marked in red</strong>. Any entries marked in yellow should also be fixed, though for those we apply some tolerance on a case by case basis.</p>\
-${CHANGED_SPS_HTML} \
-<p>Your SP has successfully passed our automated QA assessment when the master QA report does not include any entries for it.</p> \
-<p>To submit your SAML fixes, either commit them to this pull request or open a new one.</p> \
-\"}" \
-        "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${RELEVANT_PR}/comments"
-fi
 exit 0
