@@ -2,15 +2,14 @@ name: Check Pull Request contents
 
 on:
   pull_request:
-  workflow_dispatch:
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
 
-  detect_changes:
-    name: Detect modified XML files
+  detect_md_changes:
+    name: Detect modified metadata files
     runs-on: ubuntu-24.04
 
     outputs:
@@ -22,25 +21,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Collect modified XML files
+      - name: Collect modified metadata files
         id: collect
         run: |
-          # Determine upstream branch
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            UPSTREAM="${{ github.event.pull_request.base.ref }}"
-            echo "Detected PR event. Upstream branch: $UPSTREAM"
-          else
-            UPSTREAM="${{ github.event.repository.default_branch }}"
-            echo "Manual run detected. Using default branch: $UPSTREAM"
-          fi
+          UPSTREAM="${{ github.event.pull_request.base.ref }}"
+          echo "Upstream branch: $UPSTREAM"
+
+          git fetch origin $UPSTREAM
 
           git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
 
-          echo "Modified XML files:"
+          echo "Modified metadata files:"
           cat modified_files.txt
 
           if [[ ! -s modified_files.txt ]]; then
-            echo "No modified XML files found."
+            echo "No modified metadata files found."
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "files=" >> $GITHUB_OUTPUT
             exit 0
@@ -55,8 +50,8 @@ jobs:
   validate_files:
     name: Validate metadata file XML
     runs-on: ubuntu-24.04
-    needs: detect_changes
-    if: needs.detect_changes.outputs.has_changes == 'true'
+    needs: detect_md_changes
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
 
     steps:
       - uses: actions/checkout@v4
@@ -81,15 +76,15 @@ jobs:
               --schemaDirectory check-saml-metadata/saml-schema \
               --logConfig check-saml-metadata/logger.xml \
               --inFile "$file"
-          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
 
   check_certificate:
     name: Check key size and expiration date
     runs-on: ubuntu-24.04
     needs:
-      - detect_changes
+      - detect_md_changes
       - validate_files
-    if: needs.detect_changes.outputs.has_changes == 'true'
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
 
     steps:
       - uses: actions/checkout@v4
@@ -115,7 +110,7 @@ jobs:
 
 
             echo "$file | $result" >> cert_check_results.txt
-          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
 
       - name: Create certificate checks summary table
         run: |
@@ -140,9 +135,9 @@ jobs:
     name: Assess metadata quality (Schematron QA)
     runs-on: ubuntu-24.04
     needs:
-      - detect_changes
+      - detect_md_changes
       - validate_files
-    if: needs.detect_changes.outputs.has_changes == 'true'
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
 
     steps:
       - uses: actions/checkout@v4
@@ -184,13 +179,13 @@ jobs:
           cd "SAML_metadata_QA_validator-${QA_VALIDATOR_VERSION}"
 
           echo "Running validator on changed files..."
-          FILES="${{ needs.detect_changes.outputs.files }}"
+          FILES="${{ needs.detect_md_changes.outputs.files }}"
 
           while IFS= read -r file; do
             echo "Validating: $file"
             abs_path="$(realpath "../../$file")"
             ant -v -DinputFile="file:$abs_path"
-          done < <(printf "%s\n" "${{ needs.detect_changes.outputs.files }}")
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
 
       - name: Create QA summary table
         run: |
