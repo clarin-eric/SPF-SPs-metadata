@@ -1,4 +1,4 @@
-name: Deploy QA Report
+name: Validate metadata and update QA Report
 
 on:
   push:
@@ -6,8 +6,76 @@ on:
       - master
 
 jobs:
+  detect_md_changes:
+    name: Detect modified metadata files
+    runs-on: ubuntu-24.04
+
+    outputs:
+      has_changes: ${{ steps.collect.outputs.has_changes }}
+      files: ${{ steps.collect.outputs.files }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect modified metadata files
+        id: collect
+        run: |
+          UPSTREAM="${{ github.event.repository.default_branch }}"
+          echo "Upstream branch: $UPSTREAM"
+
+          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
+
+          echo "Modified metadata files:"
+          cat modified_files.txt || true
+
+          if [[ ! -s modified_files.txt ]]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "files=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          cat modified_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+  validate_files:
+    name: Validate metadata file XML
+    runs-on: ubuntu-24.04
+    needs: detect_md_changes
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install Java (JDK)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk
+          echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
+
+      - name: Validate XML files
+        run: |
+          echo "Using JAVA_HOME=$JAVA_HOME"
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            echo "Validating: $file"
+            check-saml-metadata/xmlsectool/xmlsectool.sh \
+              --validateSchema \
+              --schemaDirectory check-saml-metadata/saml-schema \
+              --logConfig check-saml-metadata/logger.xml \
+              --inFile "$file"
+          done <<< "${{ needs.detect_md_changes.outputs.files }}"
+
   deploy:
     runs-on: ubuntu-latest
+    needs: validate_files
 
     steps:
       - name: Checkout source (master)
