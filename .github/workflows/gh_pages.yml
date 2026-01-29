@@ -1,4 +1,4 @@
-name: Validate metadata and update QA Report
+name: Validate MD and update QA Report
 
 on:
   push:
