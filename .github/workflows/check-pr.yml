@@ -136,7 +136,7 @@ jobs:
               fi
 
               # when we reach this point XML is always valid
-              echo "| \`$filename\` | <div align=\"center\">✅</div> | $result | $verdict |"
+              echo "| \`$filename\` | <div align=\"center\">✅</div> | <div>$result</div> | $verdict |"
             done < cert_check_results.txt
           } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
