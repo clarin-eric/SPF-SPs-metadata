@@ -126,7 +126,9 @@ jobs:
 
               verdict="<div align=\"center\">❌</div> "
 
-              # one '🔐' followed by text without '<br>' and then '<br>✅', means a certificate has passed both checks
+              echo $result
+
+              # one '🔐' followed by text without '<br>', and then followed by '<br>✅', means a certificate has passed both checks
               if [[ $result =~ "🔐([^<]|<[^b]|<b[^r]|<br[^>])*<br>✅" ]]; then
                 verdict="<div align=\"center\">✅</div> "
               fi
