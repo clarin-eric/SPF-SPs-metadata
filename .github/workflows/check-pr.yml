@@ -114,6 +114,7 @@ jobs:
 
       - name: Create certificate checks summary table
         run: |
+          echo $result
           {
             echo "### Certificate & XML Validation Summary"
             echo ""
@@ -125,8 +126,6 @@ jobs:
               filename="${file##*/}"
 
               verdict="<div align=\"center\">❌</div> "
-
-              echo $result
 
               # one '🔐' followed by text without '<br>', and then followed by '<br>✅', means a certificate has passed both checks
               if [[ $result =~ "🔐([^<]|<[^b]|<b[^r]|<br[^>])*<br>✅" ]]; then
