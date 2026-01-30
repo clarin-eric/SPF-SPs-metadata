@@ -125,14 +125,12 @@ jobs:
               filename="${file##*/}"
 
               verdict="<div align=\"center\">❌</div> "
-              if [[ $result =~ ^🔐.+$'\r'$'\n'✅.* || $result =~ ^🔐.+$'\n'✅.* ]]; then
+              if [[ $result =~ 🔐([^<]|<[^b]|<b[^r]|<br[^>])*<br>✅ ]]; then
                 verdict="<div align=\"center\">✅</div> "
               fi
 
-              if [ "$(printf "%s" "$result" | wc -l)" -gt 2 ]; then
+              if [[ "$result" == *"<br>"*"<br>"*"<br>"* ]]; then
                 result="$(printf "%s<br><br>%s" "$result" "Note: file has more than 1 certificate, only one needs to meet requirements")"
-                result="${result//$'\r'/}"
-                result="${result//$'\n'/}"
               fi
 
               # when we reach this point XML is always valid
