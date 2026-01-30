@@ -67,9 +67,11 @@ If you need the registration or modification of your SP’s SAML metadata to be 
 
 ---
 
-Finally, your metadata will be included in the next release and picked up by an hourly cron job, which publishes it at:
-
+Once merged into master, your metadata will be picked up by an hourly cron job, which publishes it in the SPF staging feed - making it available for the CLARIN IdP:
 - **Staging feed:** https://infra.clarin.eu/aai/md_about_spf_sps.xml  
+
+Finally, once a release of master is created, the hourly cron job will publish it in the SPF production feed - making it available for all eduGAIN IdPs:
 - **Production feed:** https://infra.clarin.eu/aai/prod_md_about_spf_sps.xml  
 
-**Note:** For an SP to appear in the production feed, it must first be registered with production status in the [CLARIN Centre Registry](https://centres.clarin.eu/spf). Only CLARIN SPF operators can perform this step.
+**Note:** For an SP to appear in the production feed, it must first be included in a release and registered with production status in the [CLARIN Centre Registry](https://centres.clarin.eu/spf). Please create a ticket for this, when you 
+want to promote your SP to production.
