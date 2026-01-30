@@ -68,7 +68,7 @@ jobs:
       - name: Validate XML files
         run: |
           echo "Using JAVA_HOME=$JAVA_HOME"
-          printf "%s" "${{ needs.detect_md_changes.outputs.files }}" | while IFS= read -r file; do
+          while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Validating: $file"
             check-saml-metadata/xmlsectool/xmlsectool.sh \
@@ -76,7 +76,7 @@ jobs:
               --schemaDirectory check-saml-metadata/saml-schema \
               --logConfig check-saml-metadata/logger.xml \
               --inFile "$file"
-          done
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
 
   check_certificate:
     name: Check key size and expiration date
@@ -97,7 +97,7 @@ jobs:
       - name: Check certificate key size and expiration date
         run: |
           echo "" > cert_check_results.txt
-          printf "%s" "${{ needs.detect_md_changes.outputs.files }}" | while IFS= read -r file; do
+          while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Checking: $file"
             raw=$(CI-assets/check_certificates.sh -f "$file" || true)
@@ -110,7 +110,7 @@ jobs:
 
 
             echo "$file | $result" >> cert_check_results.txt
-          done
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
 
       - name: Create certificate checks summary table
         run: |
