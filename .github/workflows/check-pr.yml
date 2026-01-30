@@ -129,10 +129,6 @@ jobs:
                 verdict="<div align=\"center\">✅</div> "
               fi
 
-              if [ "$(printf "%s" "$result" | wc -l)" -gt 2 ]; then
-                result="$(printf "%s\n%s" "$result" "Note: file has more than 1 certificate, only one needs to meet requirements")"
-              fi
-
               # when we reach this point XML is always valid
               echo "| \`$filename\` | <div align=\"center\">✅</div> | $result | $verdict |"
             done < cert_check_results.txt
