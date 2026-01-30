@@ -125,7 +125,9 @@ jobs:
               filename="${file##*/}"
 
               verdict="<div align=\"center\">❌</div> "
-              if [[ $result =~ 🔐([^<]|<[^b]|<b[^r]|<br[^>])*<br>✅ ]]; then
+
+              # one '🔐' followed by text without '<br>' and then '<br>✅', means a certificate has passed both checks
+              if [[ $result =~ "🔐([^<]|<[^b]|<b[^r]|<br[^>])*<br>✅" ]]; then
                 verdict="<div align=\"center\">✅</div> "
               fi
 
