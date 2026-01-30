@@ -68,7 +68,7 @@ jobs:
       - name: Validate XML files
         run: |
           echo "Using JAVA_HOME=$JAVA_HOME"
-          while IFS= read -r file; do
+          printf "%s" "${{ needs.detect_md_changes.outputs.files }}" | while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Validating: $file"
             check-saml-metadata/xmlsectool/xmlsectool.sh \
@@ -76,7 +76,7 @@ jobs:
               --schemaDirectory check-saml-metadata/saml-schema \
               --logConfig check-saml-metadata/logger.xml \
               --inFile "$file"
-          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
+          done
 
   check_certificate:
     name: Check key size and expiration date
@@ -97,7 +97,7 @@ jobs:
       - name: Check certificate key size and expiration date
         run: |
           echo "" > cert_check_results.txt
-          while IFS= read -r file; do
+          printf "%s" "${{ needs.detect_md_changes.outputs.files }}" | while IFS= read -r file; do
             [[ -z "$file" ]] && continue
             echo "Checking: $file"
             raw=$(CI-assets/check_certificates.sh -f "$file" || true)
@@ -110,19 +110,34 @@ jobs:
 
 
             echo "$file | $result" >> cert_check_results.txt
-          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
+          done
 
       - name: Create certificate checks summary table
         run: |
           {
             echo "### Certificate & XML Validation Summary"
             echo ""
-            echo "| File | Result |"
-            echo "|------|--------|"
-            while IFS='|' read -r file result; do
+            echo "| File | XML valid | Certificate details | Verdict |"
+            echo "|------|---|--------|---|"
+            while IFS= read -r line; do
+              file="${line%%|*}"
+              result="${line#*|}"
+
               [[ -z "$file" ]] && continue
+
               filename="${file##*/}"
-              echo "| $filename | $result |"
+
+              verdict="<div align=\"center\">❌</div> "
+              if [[ $result =~ ^🔐.+$'\r'$'\n'✅.* || $result =~ ^🔐.+$'\n'✅.* ]]; then
+                verdict="<div align=\"center\">✅</div> "
+              fi
+
+              if [ "$(printf "%s" "$result" | wc -l)" -gt 2 ]; then
+                result="$(printf "%s\n%s" "$result" "Note: file has more than 1 certificate, only one needs to meet requirements")"
+              fi
+
+              # when we reach this point XML is always valid
+              echo "| \`$filename\` | <div align=\"center\">✅</div> | $result | $verdict |"
             done < cert_check_results.txt
           } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
@@ -192,8 +207,8 @@ jobs:
           {
             echo "### Metadata Quality Assurance Summary"
             echo ""
-            echo "| Severity | SP entityID | Failed requirement | Explanation |"
-            echo "|--------|------|--------------------|-------------|"
+            echo "| SP entityID | Failed requirement | Explanation | Verdict |"
+            echo "|------|-------------|--------------------|---|"
 
             total_errors=0
             total_warnings=0
@@ -219,20 +234,20 @@ jobs:
                   explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
                   if [[ "$requirement" == Completely* ]]; then
-                    severity="❌"
+                    verdict="<div align=\"center\">❌</div> "
                     total_errors=$((total_errors + 1))
                   else
-                    severity="⚠️"
+                    verdict="<div align=\"center\">⚠️</div> "
                     total_warnings=$((total_warnings + 1))
                   fi
 
-                  echo "| $severity | \`$sp\` | $requirement | $explanation |"
+                  echo "| \`$sp\` | $requirement | $explanation | $verdict |"
                 done
               fi
             done
 
             if [ $((total_errors + total_warnings)) -eq 0 ]; then
-              echo "| ✅ | | All checks passed | |"
+              echo "| <div align=\"center\">✅</div>  | | All checks passed | |"
             fi
 
             # Summary row
