@@ -128,9 +128,11 @@ jobs:
 
               # one '🔐' followed by text without '<br>', and then followed by '<br>✅', means a certificate has passed both checks
               if [[ $result =~ "<br>🔐" ]] && [[ $result =~ "🔐" ]] && [[ $result =~ "<br>✅" ]]; then
+
                   # Now ensure the 🔐…<br>… sequence has no extra <br> in between
                   segment="${result#*🔐}"      # cut before first 🔐
                   segment="${segment%%<br>✅*}" # cut after <br> before the matching ✅
+                  
                   # If segment contains NO <br>, then it's a valid pass
                   if [[ $segment != *"<br>"* ]]; then
                       verdict="<div align=\"center\">✅</div> "
