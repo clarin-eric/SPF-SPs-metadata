@@ -1,0 +1,245 @@
+name: Check Pull Request contents
+
+on:
+  pull_request:
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+
+  detect_md_changes:
+    name: Detect modified metadata files
+    runs-on: ubuntu-24.04
+
+    outputs:
+      has_changes: ${{ steps.collect.outputs.has_changes }}
+      files: ${{ steps.collect.outputs.files }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect modified metadata files
+        id: collect
+        run: |
+          UPSTREAM="${{ github.event.pull_request.base.ref }}"
+          echo "Upstream branch: $UPSTREAM"
+
+          git fetch origin $UPSTREAM
+
+          git diff --name-only "origin/$UPSTREAM" -- '*.xml' > modified_files.txt
+
+          echo "Modified metadata files:"
+          cat modified_files.txt
+
+          if [[ ! -s modified_files.txt ]]; then
+            echo "No modified metadata files found."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "files=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          cat modified_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+  validate_files:
+    name: Validate metadata file XML
+    runs-on: ubuntu-24.04
+    needs: detect_md_changes
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install Java (JDK)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk
+          echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
+
+      - name: Validate XML files
+        run: |
+          echo "Using JAVA_HOME=$JAVA_HOME"
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            echo "Validating: $file"
+            check-saml-metadata/xmlsectool/xmlsectool.sh \
+              --validateSchema \
+              --schemaDirectory check-saml-metadata/saml-schema \
+              --logConfig check-saml-metadata/logger.xml \
+              --inFile "$file"
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
+
+  check_certificate:
+    name: Check key size and expiration date
+    runs-on: ubuntu-24.04
+    needs:
+      - detect_md_changes
+      - validate_files
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Check certificate key size and expiration date
+        run: |
+          echo "" > cert_check_results.txt
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            echo "Checking: $file"
+            raw=$(CI-assets/check_certificates.sh -f "$file" || true)
+
+            # Remove first line, strip tabs/CR, convert newlines to <br>
+            result=$(echo "$raw" \
+              | sed '1d' \
+              | tr -d '\t\r' \
+              | sed ':a;N;$!ba;s/\n/<br>/g')
+
+
+            echo "$file | $result" >> cert_check_results.txt
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
+
+      - name: Create certificate checks summary table
+        run: |
+          {
+            echo "### Certificate & XML Validation Summary"
+            echo ""
+            echo "| File | Result |"
+            echo "|------|--------|"
+            while IFS='|' read -r file result; do
+              [[ -z "$file" ]] && continue
+              filename="${file##*/}"
+              echo "| $filename | $result |"
+            done < cert_check_results.txt
+          } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cert_check-results
+          path: cert_check_results.txt
+
+  quality_assurance:
+    name: Assess metadata quality (Schematron QA)
+    runs-on: ubuntu-24.04
+    needs:
+      - detect_md_changes
+      - validate_files
+    if: needs.detect_md_changes.outputs.has_changes == 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: Run QA validator
+        run: |
+          set -e
+
+          QA_VALIDATOR_VERSION=1.0.9
+          SAXON_VERSION=SaxonHE9-9-1-5J
+          SAXON_URL="https://downloads.sourceforge.net/project/saxon/Saxon-HE/9.9/${SAXON_VERSION}.zip"
+          SCHEMATRON_VERSION=1.0.1-e16ecc4-CLARIN
+          INSTALLS_PATH=qa-tmp
+
+          mkdir -p "$INSTALLS_PATH/saxon"
+          cd "$INSTALLS_PATH/saxon"
+
+          echo "Downloading Saxon..."
+          wget --no-check-certificate "$SAXON_URL"
+          unzip -o "${SAXON_VERSION}.zip"
+          rm "${SAXON_VERSION}.zip"
+
+          cd ..
+
+          echo "Downloading Schematron..."
+          wget -O schematron.tar.gz "https://codeload.github.com/clarin-eric/schematron/tar.gz/${SCHEMATRON_VERSION}"
+          tar xvf schematron.tar.gz "schematron-${SCHEMATRON_VERSION}/trunk/schematron/code/"
+          mv "schematron-${SCHEMATRON_VERSION}/trunk/schematron/code" schematron
+          rm -rf "schematron-${SCHEMATRON_VERSION}" schematron.tar.gz
+
+          echo "Downloading QA Validator..."
+          wget -O SAML_metadata_QA_validator.tar.gz "https://codeload.github.com/clarin-eric/SAML_metadata_QA_validator/tar.gz/${QA_VALIDATOR_VERSION}"
+          tar xvf SAML_metadata_QA_validator.tar.gz
+
+          cd "SAML_metadata_QA_validator-${QA_VALIDATOR_VERSION}"
+
+          echo "Running validator on changed files..."
+          FILES="${{ needs.detect_md_changes.outputs.files }}"
+
+          while IFS= read -r file; do
+            echo "Validating: $file"
+            abs_path="$(realpath "../../$file")"
+            ant -v -DinputFile="file:$abs_path"
+          done < <(printf "%s\n" "${{ needs.detect_md_changes.outputs.files }}")
+
+      - name: Create QA summary table
+        run: |
+          {
+            echo "### Metadata Quality Assurance Summary"
+            echo ""
+            echo "| Severity | SP entityID | Failed requirement | Explanation |"
+            echo "|--------|------|--------------------|-------------|"
+
+            total_errors=0
+            total_warnings=0
+
+            for xml in qa-tmp/SAML_metadata_QA_validator-*/out/*.xml; do
+              [[ ! -f "$xml" ]] && continue
+
+              # Extract filename only
+              filename="$(basename "$xml")"
+
+              # Extract <sp> (same for all <result> entries)
+              sp=$(xmllint --xpath "string(/results/result[1]/sp)" "$xml" 2>/dev/null)
+
+              # Count <result> entries
+              count=$(xmllint --xpath "count(/results/result)" "$xml" 2>/dev/null)
+
+              if [ "$count" -eq 0 ]; then
+                continue
+              else
+                # Loop through each <result>
+                for i in $(seq 1 "$count"); do
+                  requirement=$(xmllint --xpath "string(/results/result[$i]/requirement)" "$xml" 2>/dev/null)
+                  explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
+
+                  if [[ "$requirement" == Completely* ]]; then
+                    severity="❌"
+                    total_errors=$((total_errors + 1))
+                  else
+                    severity="⚠️"
+                    total_warnings=$((total_warnings + 1))
+                  fi
+
+                  echo "| $severity | \`$sp\` | $requirement | $explanation |"
+                done
+              fi
+            done
+
+            if [ $((total_errors + total_warnings)) -eq 0 ]; then
+              echo "| ✅ | | All checks passed | |"
+            fi
+
+            # Summary row
+            echo "| **Summary** | **$total_errors errors** | **$total_warnings warnings** | |"
+          } | tee qa_results.txt >> $GITHUB_STEP_SUMMARY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qa-results
+          path: qa_results.txt
