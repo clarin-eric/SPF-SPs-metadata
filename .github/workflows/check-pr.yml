@@ -114,7 +114,6 @@ jobs:
 
       - name: Create certificate checks summary table
         run: |
-          echo $result
           {
             echo "### Certificate & XML Validation Summary"
             echo ""
