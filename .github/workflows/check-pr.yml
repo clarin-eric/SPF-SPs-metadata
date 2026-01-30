@@ -119,10 +119,7 @@ jobs:
             echo ""
             echo "| File | XML valid | Certificate details | Verdict |"
             echo "|------|---|--------|---|"
-            while IFS= read -r line; do
-              file="${line%%|*}"
-              result="${line#*|}"
-
+            while IFS='|' read -r file result; do
               [[ -z "$file" ]] && continue
 
               filename="${file##*/}"
