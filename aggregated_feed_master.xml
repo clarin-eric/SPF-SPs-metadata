@@ -4229,6 +4229,8 @@ v2a2P5T9ThEgvJTQyTTMWhAs7tPp1TZ/lfad5Zc=</ds:X509Certificate>
         </mdui:UIInfo>
         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://repository.clarin.dk/Shibboleth.sso/Login"/>
         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://repository.clarin.dk/Shibboleth.sso/Login" index="1"/>
+        <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dspace.clarin.dk/Shibboleth.sso/Login"/>
+        <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://dspace.clarin.dk/Shibboleth.sso/Login" index="2"/>
       </md:Extensions>
       <md:KeyDescriptor>
         <ds:KeyInfo>
@@ -4280,6 +4282,10 @@ b++K2ToWg8Zs3yGyMUaPxvIzw3nt
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="3"/>
       <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://repository.clarin.dk/Shibboleth.sso/SAML2/ECP" index="4"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dspace.clarin.dk/Shibboleth.sso/SAML2/POST" index="5"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://dspace.clarin.dk/Shibboleth.sso/SAML2/POST-SimpleSign" index="6"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://dspace.clarin.dk/Shibboleth.sso/SAML2/Artifact" index="7"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://dspace.clarin.dk/Shibboleth.sso/SAML2/ECP" index="8"/>
       <md:AttributeConsumingService index="1">
         <md:ServiceName xml:lang="en">CLARIN-DK-UCPH Repository</md:ServiceName>
         <md:ServiceName xml:lang="da">CLARIN-DK-UCPH repositorie</md:ServiceName>
