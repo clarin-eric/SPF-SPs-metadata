@@ -97,8 +97,8 @@ jobs:
 
             const extra = [
               "<br>",
-              "Please check the results above and <strong>fix all entries with verdict ❌</strong>.",
-              "Entries with verdict ⚠️ should also be fixed, though those can be acceptable on a case-by-case basis.",
+              "Please check the results above and <strong>fix all entries with severity ❌</strong>.",
+              "Entries with severity ⚠️ should also be fixed, though those can be acceptable on a case-by-case basis.",
               "",
               "To submit your fixes, either commit them to this pull request or open a new one.",
               "",
