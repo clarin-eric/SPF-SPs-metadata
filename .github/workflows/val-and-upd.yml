@@ -41,7 +41,7 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
   validate_files:
-    name: Validate metadata file XML
+    name: Validate SAML metadata
     runs-on: ubuntu-24.04
     needs: detect_md_changes
     if: needs.detect_md_changes.outputs.has_changes == 'true'
@@ -72,7 +72,8 @@ jobs:
           done <<< "${{ needs.detect_md_changes.outputs.files }}"
 
   deploy:
-    runs-on: ubuntu-latest
+    name: Update metadata QA report
+    runs-on: ubuntu-24.04
     needs: validate_files
 
     steps:
