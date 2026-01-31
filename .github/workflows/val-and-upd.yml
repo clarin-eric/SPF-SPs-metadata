@@ -99,7 +99,7 @@ jobs:
           TARGET_BRANCH: gh-pages
           SOURCE_BRANCH: master
           SHA: ${{ github.sha }}
-        run: bash CI-assets/compile.sh
+        run: bash CI-assets/compile_qa_rep.sh
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
