@@ -138,7 +138,7 @@ Adapt all fields marked with `[CHANGE ME]` and remove the explanatory comments.
                 <mdui:InformationURL xml:lang="en">[CHANGE ME] https://www.clarin.eu/applications</mdui:InformationURL> <!-- Informative -->
                 <mdui:Logo height="220" width="195">[CHANGE ME] https://www.clarin.eu/sites/default/files/clarin-logo.png</mdui:Logo> <!-- Informative -->
                 <mdui:Keywords xml:lang="en">[CHANGE ME] CLARIN catalog Component+Registry Virtual+Language+Observatory VLO</mdui:Keywords> <!-- Informative -->
-                <mdui:PrivacyStatementURL xml:lang="en">[CHANGE ME] https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL> <!-- Informative wiht technical impact -->
+                <mdui:PrivacyStatementURL xml:lang="en">[CHANGE ME] https://catalog.clarin.eu/privacy_statement.xhtml</mdui:PrivacyStatementURL> <!-- Informative with technical impact -->
             </mdui:UIInfo>
             <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
                 Location="[CHANGE ME] https://catalog.clarin.eu/Shibboleth.sso/Login"/> <!-- Technical impact -->
@@ -213,24 +213,24 @@ d7ttcj/dT4m8TJc/fKvOFPzw2UvsyX5axX0umdI3pN4PRW9cDYkAwY75+p0v+zI=</ds:X509Certifi
         </md:AttributeConsumingService>
     </md:SPSSODescriptor>
     <md:Organization>
-        <md:OrganizationName xml:lang="en">[CHANGE ME] CLARIN ERIC</md:OrganizationName> <!-- Informative wiht technical impact -->
-        <md:OrganizationDisplayName xml:lang="en">[CHANGE ME] CLARIN</md:OrganizationDisplayName> <!-- Informative wiht technical impact -->
-        <md:OrganizationURL xml:lang="en">[CHANGE ME] https://www.clarin.eu/</md:OrganizationURL> <!-- Informative wiht technical impact -->
+        <md:OrganizationName xml:lang="en">[CHANGE ME] CLARIN ERIC</md:OrganizationName> <!-- Informative with technical impact -->
+        <md:OrganizationDisplayName xml:lang="en">[CHANGE ME] CLARIN</md:OrganizationDisplayName> <!-- Informative with technical impact -->
+        <md:OrganizationURL xml:lang="en">[CHANGE ME] https://www.clarin.eu/</md:OrganizationURL> <!-- Informative with technical impact -->
     </md:Organization>
     <md:ContactPerson contactType="administrative">
         <md:GivenName>[CHANGE ME] CLARIN</md:GivenName> <!-- Informative -->
         <md:SurName>[CHANGE ME] System operators</md:SurName> <!-- Informative -->
-        <md:EmailAddress>[CHANGE ME] mailto:clarin@clarin.eu</md:EmailAddress> <!-- Informative wiht technical impact -->
+        <md:EmailAddress>[CHANGE ME] mailto:clarin@clarin.eu</md:EmailAddress> <!-- Informative with technical impact -->
     </md:ContactPerson>
     <md:ContactPerson contactType="support">
         <md:GivenName>[CHANGE ME] CLARIN</md:GivenName> <!-- Informative -->
         <md:SurName>[CHANGE ME] System operators</md:SurName> <!-- Informative -->
-        <md:EmailAddress>[CHANGE ME] mailto:sysops@clarin.eu</md:EmailAddress> <!-- Informative wiht technical impact -->
+        <md:EmailAddress>[CHANGE ME] mailto:sysops@clarin.eu</md:EmailAddress> <!-- Informative with technical impact -->
     </md:ContactPerson>
     <md:ContactPerson contactType="technical">
         <md:GivenName>[CHANGE ME] CLARIN</md:GivenName> <!-- Informative -->
         <md:SurName>[CHANGE ME] System operators</md:SurName> <!-- Informative -->
-        <md:EmailAddress>[CHANGE ME] mailto:sysops@clarin.eu</md:EmailAddress> <!-- Informative wiht technical impact -->
+        <md:EmailAddress>[CHANGE ME] mailto:sysops@clarin.eu</md:EmailAddress> <!-- Informative with technical impact -->
     </md:ContactPerson>
 </md:EntityDescriptor>
 ```
