@@ -18,17 +18,17 @@ jobs:
 
       - name: Configure msmtp
         run: |
-          cat <<EOF > ~/.msmtprc
-account default
-host ${{ secrets.SMTP_HOST }}
-port ${{ secrets.SMTP_PORT }}
-auth on
-user ${{ secrets.SMTP_USER }}
-password ${{ secrets.SMTP_PASS }}
-tls on
-tls_starttls on
-logfile ~/.msmtp.log
-EOF
+          cat <<-EOF > ~/.msmtprc
+          account default
+          host "${{ secrets.SMTP_HOST }}"
+          port "${{ secrets.SMTP_PORT }}"
+          auth on
+          user "${{ secrets.SMTP_USER }}"
+          password "${{ secrets.SMTP_PASS }}"
+          tls on
+          tls_starttls on
+          logfile ~/.msmtp.log
+          EOF
           chmod 600 ~/.msmtprc
 
       - name: Run certificates monitor script
