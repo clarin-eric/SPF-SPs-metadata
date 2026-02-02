@@ -117,14 +117,14 @@ jobs:
           {
             echo "### Certificate & XML Validation Summary"
             echo ""
-            echo "| File | XML valid | Certificate details | Verdict |"
+            echo "| File | XML valid | Certificate details | Severity |"
             echo "|------|---|--------|---|"
             while IFS='|' read -r file result; do
               [[ -z "$file" ]] && continue
 
               filename="${file##*/}"
 
-              verdict="<div align=\"center\">❌</div> "
+              severity="<div align=\"center\">❌</div> "
 
               # one '🔐' followed by text without '<br>', and then followed by '<br>✅', means a certificate has passed both checks
               if [[ $result =~ "<br>🔐" ]] && [[ $result =~ "🔐" ]] && [[ $result =~ "<br>✅" ]]; then
@@ -135,7 +135,7 @@ jobs:
                   
                   # If segment contains NO <br>, then it's a valid pass
                   if [[ $segment != *"<br>"* ]]; then
-                      verdict="<div align=\"center\">✅</div> "
+                      severity="<div align=\"center\">✅</div> "
                   fi
               fi
 
@@ -144,7 +144,7 @@ jobs:
               fi
 
               # when we reach this point XML is always valid
-              echo "| \`$filename\` | <div align=\"center\">✅</div> | <div>$result</div> | $verdict |"
+              echo "| \`$filename\` | <div align=\"center\">✅</div> | <div>$result</div> | $severity |"
             done < cert_check_results.txt
           } | tee -a $GITHUB_STEP_SUMMARY > cert_check_results.txt
 
@@ -214,7 +214,7 @@ jobs:
           {
             echo "### Metadata Quality Assurance Summary"
             echo ""
-            echo "| SP entityID | Failed requirement | Explanation | Verdict |"
+            echo "| SP entityID | Failed requirement | Explanation | Severity |"
             echo "|------|-------------|--------------------|---|"
 
             total_errors=0
@@ -241,14 +241,14 @@ jobs:
                   explanation=$(xmllint --xpath "string(/results/result[$i]/explanation)" "$xml" 2>/dev/null)
 
                   if [[ "$requirement" == Completely* ]]; then
-                    verdict="<div align=\"center\">❌</div> "
+                    severity="<div align=\"center\">❌</div> "
                     total_errors=$((total_errors + 1))
                   else
-                    verdict="<div align=\"center\">⚠️</div> "
+                    severity="<div align=\"center\">⚠️</div> "
                     total_warnings=$((total_warnings + 1))
                   fi
 
-                  echo "| \`$sp\` | $requirement | $explanation | $verdict |"
+                  echo "| \`$sp\` | $requirement | $explanation | $severity |"
                 done
               fi
             done
