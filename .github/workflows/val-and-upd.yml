@@ -77,6 +77,7 @@ jobs:
     name: Update metadata QA report
     runs-on: ubuntu-24.04
     needs: validate_files
+    if: github.repository == 'clarin-eric/SPF-SPs-metadata'
 
     steps:
       - name: Checkout source (master)
