@@ -2,7 +2,7 @@ name: Monitor SP certificates
 
 on:
   schedule:
-    - cron: "40 14 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 jobs:
