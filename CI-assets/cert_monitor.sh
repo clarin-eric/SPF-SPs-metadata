@@ -86,16 +86,21 @@ If you have any further questions you can always contact us via spf@clarin.eu
 
 Regards,
 CLARIN SPF team
-- This message is automatically generated. Please do not reply directly to it -
+- This message is automatically generated. Please reply to spf@clarin.eu or just hit "Reply" on your mail client -
 "
 
-    printf "To: %s\nCc: %s\nSubject: %s\n\n%s" \
-        "$owner_email" "$CC_ADDR" "$subject" "$body" \
+    printf "From: %s\nTo: %s\nCc: %s\nReply-To: %s\nSubject: %s\nDate: %s\n\n%s" \
+        "$SMTP_FROM" \
+        "$owner_email" \
+        "$CC_ADDR" \
+        "$CC_ADDR" \
+        "$subject" \
+        "$(date -R)" \
+        "$body" \
         | msmtp "$owner_email"
 
 
     echo "Sent email to $owner_email for $(basename "$md_file")"
-
 }
 
 check_file() {
