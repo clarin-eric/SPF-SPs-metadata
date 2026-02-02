@@ -250,4 +250,3 @@ Please also follow the following guidelines:
 - Use self-signed certificates whenever possible.
 - Always use a key size of at least 3072 bits.
 - Always use a certificate expiration date of 3-5 years in the future.
-
