@@ -25,6 +25,7 @@ jobs:
           auth on
           user "${{ secrets.SMTP_USER }}"
           password "${{ secrets.SMTP_PASS }}"
+          from "${{ secrets.SMTP_USER }}"
           tls on
           tls_starttls on
           logfile ~/.msmtp.log

@@ -88,7 +88,7 @@ CLARIN SPF team
 "
 
     printf "Subject: %s\nCc: %s\n\n%s" "$subject" "$CC_ADDR" "$body" \
-        | msmtp "$owner_email"
+        | msmtp --from=default "$owner_email"
 
 
     echo "Sent email to $owner_email for $(basename "$md_file")"
