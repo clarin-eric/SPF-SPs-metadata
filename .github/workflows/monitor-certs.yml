@@ -11,13 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install xmllint
-        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
-
-      - name: Install msmtp
+      - name: Install msmtp and xmllint
         run: |
           sudo apt-get update
-          sudo apt-get install -y msmtp
+          sudo apt-get install -y msmtp libxml2-utils
 
       - name: Configure msmtp
         run: |
