@@ -27,7 +27,7 @@ jobs:
           password "${{ secrets.SMTP_PASS }}"
           from "${{ secrets.SMTP_USER }}"
           tls on
-          tls_starttls on
+          tls_starttls off
           logfile ~/.msmtp.log
           EOF
           chmod 600 ~/.msmtprc
