@@ -87,7 +87,8 @@ CLARIN SPF team
 - This message is automatically generated. Please do not reply directly to it -
 "
 
-    printf "Subject: %s\nCc: %s\n\n%s" "$subject" "$CC_ADDR" "$body" \
+    printf "To: %s\nCc: %s\nSubject: %s\n\n%s" \
+        "$owner_email" "$CC_ADDR" "$subject" "$body" \
         | msmtp "$owner_email"
 
 
