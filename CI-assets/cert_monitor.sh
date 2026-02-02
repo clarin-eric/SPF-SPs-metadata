@@ -75,9 +75,12 @@ https://help.switch.ch/aai/guides/sp/certificate-rollover/
 
 If you can accept some service disruption, then you can just replace the certificate with a new one.
 
+Details:
+----------------------------------------------------------------------------------
 $(printf "%s" "$CERT" \
         | openssl x509 -noout -text -in /dev/stdin \
         | sed '/^[[:space:]]*[0-9a-f]\{2\}:/d')
+----------------------------------------------------------------------------------
 
 If you have any further questions you can always contact us via spf@clarin.eu
 
