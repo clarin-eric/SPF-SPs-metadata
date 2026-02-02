@@ -2,12 +2,23 @@ name: Keepalive
 
 on:
   schedule:
-    - cron: "0 3 * * 0"
+    - cron: "0 3 3 * *"
   workflow_dispatch:
 
 jobs:
   keepalive:
+    name: Comment pull request
     runs-on: ubuntu-latest
     steps:
-      - name: Keep repository active
-        uses: gautamkrishnar/keepalive-workflow@v1
+      - uses: actions/checkout@v4
+
+      - name: Touch heartbeat file
+        run: date > .github/heartbeat
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .github/heartbeat
+          git commit -m "Keepalive: $(date)" || echo "No changes to commit"
+          git push
