@@ -108,23 +108,32 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          set -e
 
-          # Save the built site before switching branches
-          mkdir _site
-          cp -r gh-pages/* _site/
+          # Ensure build output exists
+          if [ ! -d "gh-pages" ]; then
+            echo "ERROR: Build output directory 'gh-pages' does not exist"
+            exit 1
+          fi
 
-          # Switch to gh-pages branch (or create orphan)
-          git fetch origin gh-pages || true
-          git switch gh-pages || git switch --orphan gh-pages
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
-          # Clean branch
-          rm -rf ./*
+          # Clone gh-pages branch into a separate directory
+          rm -rf repo-gh-pages
+          git clone --depth=1 --branch gh-pages \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            repo-gh-pages
 
-          # Restore built site
-          cp -r _site/* .
+          # Clean the branch
+          cd repo-gh-pages
+          git rm -r . || true
+          cd ..
 
+          # Copy built site into the clone
+          cp -r gh-pages/* repo-gh-pages/
+
+          cd repo-gh-pages
           git add -A
           git commit -m "Deploy SAML QA report for: ${{ github.sha }}" || true
           git push origin gh-pages
