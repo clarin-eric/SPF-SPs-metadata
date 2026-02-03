@@ -116,8 +116,8 @@ jobs:
             exit 1
           fi
 
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "clarin-bot"
+          git config --global user.email "sysops@clarin.eu"
 
           # Clone gh-pages branch into a separate directory
           rm -rf repo-gh-pages
