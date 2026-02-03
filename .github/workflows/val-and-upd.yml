@@ -104,13 +104,6 @@ jobs:
           SHA: ${{ github.sha }}
         run: bash CI-assets/compile_qa_rep.sh
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gh-pages
-          commit_message: "Deploy SAML QA report for: ${{ github.sha }}"
-
       - name: Deploy to GitHub Pages (no third‑party actions)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -118,11 +111,19 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+          # Save the built site before switching branches
+          mkdir _site
+          cp -r gh-pages/* _site/
+
+          # Switch to gh-pages branch (or create orphan)
           git fetch origin gh-pages || true
           git switch gh-pages || git switch --orphan gh-pages
 
+          # Clean branch
           rm -rf ./*
-          cp -r ../gh-pages/* .
+
+          # Restore built site
+          cp -r _site/* .
 
           git add -A
           git commit -m "Deploy SAML QA report for: ${{ github.sha }}" || true
