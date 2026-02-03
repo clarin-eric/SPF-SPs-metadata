@@ -104,9 +104,36 @@ jobs:
           SHA: ${{ github.sha }}
         run: bash CI-assets/compile_qa_rep.sh
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gh-pages
-          commit_message: "Deploy SAML QA report for: ${{ github.sha }}"
+      - name: Deploy to GitHub Pages (no third‑party actions)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          # Ensure build output exists
+          if [ ! -d "gh-pages" ]; then
+            echo "ERROR: Build output directory 'gh-pages' does not exist"
+            exit 1
+          fi
+
+          git config --global user.name "clarin-bot"
+          git config --global user.email "sysops@clarin.eu"
+
+          # Clone gh-pages branch into a separate directory
+          rm -rf repo-gh-pages
+          git clone --depth=1 --branch gh-pages \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            repo-gh-pages
+
+          # Clean the branch
+          cd repo-gh-pages
+          git rm -r . || true
+          cd ..
+
+          # Copy built site into the clone
+          cp -r gh-pages/* repo-gh-pages/
+
+          cd repo-gh-pages
+          git add -A
+          git commit -m "Deploy SAML QA report for: ${{ github.sha }}" || true
+          git push origin gh-pages
