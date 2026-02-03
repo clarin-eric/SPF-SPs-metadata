@@ -254,7 +254,7 @@ jobs:
             done
 
             if [ $((total_errors + total_warnings)) -eq 0 ]; then
-              echo "| \`$sp\` | | All checks passed | <div align=\"center\">✅</div> |"
+              echo "| \`*\` | | All checks passed | <div align=\"center\">✅</div> |"
             fi
 
             # Summary row
