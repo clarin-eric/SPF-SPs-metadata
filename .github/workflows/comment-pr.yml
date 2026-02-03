@@ -69,13 +69,25 @@ jobs:
           echo "Some files are outside metadata/. Skipping workflow."
           exit 0
 
+      - name: Ensure PR workflow succeeded
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          conclusion=$(gh run view "${{ github.event.workflow_run.id }}" \
+            -R "${{ github.repository }}" --json conclusion --jq .conclusion)
+      
+          if [ "$conclusion" != "success" ]; then
+            echo "PR workflow did not succeed (conclusion=$conclusion)"
+            exit 1
+          fi
+
       - name: Download test results
-        uses: dawidd6/action-download-artifact@v7
-        with:
-          run_id: ${{ github.event.workflow_run.id }}
-          path: ./test-results
-          allow_forks: true
-          workflow_conclusion: success
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh run download "${{ github.event.workflow_run.id }}" \
+            --dir ./test-results \
+            -R "${{ github.repository }}"
 
       - name: Read results
         id: read
