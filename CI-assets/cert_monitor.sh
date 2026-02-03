@@ -51,7 +51,7 @@ send_email_warning() {
     local md_file=$3
     local prefix=""
 
-    [[ "$DAYS_LEFT" -lt "$MAX_WARN" ]] && prefix="(Reminder!) "
+    [[ "$DAYS_LEFT" -lt "$MAX_WARN" ]] && prefix="(Reminder) "
 
     local owner_email=$(xmllint --xpath \
       '/*[local-name()="EntityDescriptor"]/*[local-name()="ContactPerson" and @contactType="technical"]/*[local-name()="EmailAddress"][1]/text()' "$md_file"\
