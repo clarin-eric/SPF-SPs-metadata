@@ -65,6 +65,12 @@ jobs:
           echo "Using JAVA_HOME=$JAVA_HOME"
           while IFS= read -r file; do
             [[ -z "$file" ]] && continue
+
+            if [[ ! -f "$file" ]]; then
+              echo "Skipping missing file: $file"
+              continue
+            fi
+
             echo "Validating: $file"
             check-saml-metadata/xmlsectool/xmlsectool.sh \
               --validateSchema \
