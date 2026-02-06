@@ -92,8 +92,8 @@ Review and resolve any issues reported in the QA output, and update the metadata
 
 *(Step 6)* When modifying fields with technical impact, please make sure you also update your SP’s configuration so it matches the metadata you deposit here.
 
-ℹ️ A short video demonstrating how to update your SP metadata directly in GitHub is available:  
-https://b2drop.eudat.eu/s/HmTqbrz3pFaBdHC
+ℹ️ Here is short video demonstrating how to add a new SP directly using only the GitHub website:  
+https://b2drop.eudat.eu/s/myZtSFi6DgEw3Rb
 
 If you need the registration or modification of your SP’s SAML metadata to be coordinated carefully (e.g., during a key rollover), please create a new [issue](https://github.com/clarin-eric/SPF-SPs-metadata/issues/new) describing the task.
 
