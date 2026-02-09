@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DAYS=30
+DAYS=45
 REQUIRED_BITS=3072
 
 CHECK_FILE=0
