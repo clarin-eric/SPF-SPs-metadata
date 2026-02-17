@@ -13,6 +13,11 @@
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
         <md:Extensions>
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/protocol/openid-connect/auth"/>
+            <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                        Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/protocol/openid-connect/auth"
+                                        index="1"/>
             <mdui:UIInfo>
                 <mdui:DisplayName xml:lang="en">ORTOLANG</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Platform of linguistic tools and resources for an optimized treatment of the French language</mdui:Description>
