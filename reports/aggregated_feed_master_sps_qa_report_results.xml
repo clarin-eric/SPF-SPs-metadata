@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Fri Jan 30 13:48:29 UTC 2026</ReportDate>
-  <FromCommit>15e1c03b678c5fd2aec8e3ee2909ab1ca31550fd</FromCommit>
+  <ReportDate>Tue Feb 17 18:04:45 UTC 2026</ReportDate>
+  <FromCommit>3b5be72c7572e0175151f05208cdfa7f2e155f3c</FromCommit>
   <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <result>
       <sp>https://aaiproxy.de.dariah.eu/sp</sp>
@@ -427,16 +427,6 @@
       <sp>https://clarintest.informatik.uni-leipzig.de/</sp>
       <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
       <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
-      <sp>https://demo-auth.ortolang.fr/auth/realms/ortolang</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
-      <sp>https://demo-auth.ortolang.fr/auth/realms/ortolang</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
     </result>
     <result>
       <sp>https://ekrksso.keeleressursid.ee/simplesaml/module.php/saml/sp/metadata.php/ekrk-sp</sp>

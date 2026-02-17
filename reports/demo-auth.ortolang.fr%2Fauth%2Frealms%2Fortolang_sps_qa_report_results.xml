@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report>
-  <ReportDate>Wed May 26 11:24:52 UTC 2021</ReportDate>
-  <FromCommit>5dad61c40027e1336d46649e05da694a8bc56b04</FromCommit>
-  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <result>
-      <sp>https://demo-auth.ortolang.fr/auth/realms/ortolang</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/init:RequestInitiator’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-request-initiation.html .</requirement>
-    </result>
-    <result>
-      <sp>https://demo-auth.ortolang.fr/auth/realms/ortolang</sp>
-      <explanation>Missing single element ‘md:SPSSODescriptor/md:Extensions/idpdisc:DiscoveryResponse’.</explanation>
-      <requirement>Completely a guideline for the CLARIN Service Provider Federation. See: http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-idp-discovery.html .</requirement>
-    </result>
-  </results>
+  <ReportDate>Tue Feb 17 18:04:45 UTC 2026</ReportDate>
+  <FromCommit>3b5be72c7572e0175151f05208cdfa7f2e155f3c</FromCommit>
+  <results xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
 </report>
