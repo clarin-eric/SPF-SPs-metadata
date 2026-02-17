@@ -13,6 +13,11 @@
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
         <md:Extensions>
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/protocol/openid-connect/auth"/>
+            <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                        Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/protocol/openid-connect/auth"
+                                        index="1"/>
             <mdui:UIInfo>
                 <mdui:DisplayName xml:lang="en">ORTOLANG</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Platform of linguistic tools and resources for an optimized treatment of the French language</mdui:Description>
@@ -35,9 +40,9 @@
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
-        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/clarin/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/fed-shib-saml/endpoint"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/clarin/endpoint" isDefault="true" index="1"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://demo-auth.ortolang.fr/auth/realms/ortolang/broker/fed-shib-saml/endpoint" isDefault="true" index="1"/>
         <md:AttributeConsumingService index="1">
             <md:ServiceName xml:lang="en">ORTOLANG</md:ServiceName>
             <md:ServiceName xml:lang="fr">ORTOLANG</md:ServiceName>
