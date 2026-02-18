@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+    xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+    xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute"
+    xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+    xmlns:remd="http://refeds.org/metadata"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    entityID="https://federation.clarin.lv/Saml2/proxy_saml2_backend.xml">
+    <md:Extensions>
+        <mdattr:EntityAttributes>
+            <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                Name="http://macedir.org/entity-category">
+                <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
+            </saml:Attribute>
+        </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <mdui:UIInfo>
+            <mdui:DisplayName xml:lang="en">CLARIN Latvia IdP</mdui:DisplayName>
+            <mdui:Description xml:lang="en">IdP proxy for CLARIN Latvia</mdui:Description>
+            <mdui:InformationURL xml:lang="en">https://www.clarin.lv/en-us/</mdui:InformationURL>
+            <mdui:Logo height="209" width="300">https://repository.clarin.lv/repository/xmlui/themes/UFAL/images/lindat/clarin-logo.png</mdui:Logo>
+            <mdui:Keywords xml:lang="en">CLARIN-LV</mdui:Keywords>
+            <mdui:PrivacyStatementURL xml:lang="en">https://repository.clarin.lv/repository/xmlui/page/privacy-policy?locale-attribute=en</mdui:PrivacyStatementURL>
+         </mdui:UIInfo>
+         <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                Location="https://federation.clarin.lv/Saml2/disco?workaround=true"/>
+         <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+                                    Location="https://federation.clarin.lv/Saml2/disco?workaround=true"
+                                    index="1"/>
+      </md:Extensions>
+      <md:KeyDescriptor>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIFKTCCA5GgAwIBAgIUTrwYBGzJw3b3n8bjj+PdSGNQHJcwDQYJKoZIhvcNAQEL
+                  BQAwgaMxCzAJBgNVBAYTAkxWMQ8wDQYDVQQIDAZMYXR2aWExDTALBgNVBAcMBFJp
+                  Z2ExHTAbBgNVBAoMFFVuaXZlcnNpdHkgb2YgTGF0dmlhMTYwNAYDVQQLDC1JbnN0
+                  aXR1dGUgb2YgTWF0aGVtYXRpY3MgYW5kIENvbXB1dGVyIFNjaWVuY2UxHTAbBgNV
+                  BAMMFGZlZGVyYXRpb24uY2xhcmluLmx2MB4XDTI2MDIxODA4MDU0N1oXDTM2MDIx
+                  NjA4MDU0N1owgaMxCzAJBgNVBAYTAkxWMQ8wDQYDVQQIDAZMYXR2aWExDTALBgNV
+                  BAcMBFJpZ2ExHTAbBgNVBAoMFFVuaXZlcnNpdHkgb2YgTGF0dmlhMTYwNAYDVQQL
+                  DC1JbnN0aXR1dGUgb2YgTWF0aGVtYXRpY3MgYW5kIENvbXB1dGVyIFNjaWVuY2Ux
+                  HTAbBgNVBAMMFGZlZGVyYXRpb24uY2xhcmluLmx2MIIBojANBgkqhkiG9w0BAQEF
+                  AAOCAY8AMIIBigKCAYEApKzDEOdwIlrqHr6BK314AgCCyai66L8CmMDr1HEessZ2
+                  oOx5du40+scHI6vv9KbX2MT+9G3PfNJtxTKeyZbEx83hhK9ecc9Dw+4g+oGbZLkD
+                  +mFvf6c17Q2AqdjqZcpu9WtWDhG24Cm7L1PqsSdPkDdQyoyoTw0fl1w7rioBP0pJ
+                  v3t5K/aT0r3lZpZq+X0/sRcLkuoWaHcB+6JLSdtxXt7F3Koc7ZpTEjlkoysMjJlh
+                  7PBIv/B5Q1XFCrqUpIgVzyopAjE8Q1UG7i+blKIxvTM5Xs20kOy8f0Z2QVhfolWT
+                  5j1XKny3Flr4xT+Jk+ihjAaMnIA1tCLVu8djzU764hWxdmBQenNR7Qvq8lZPhTqL
+                  BHTLEwO5K+OhAyEbqHXxzMLfgEueHLCikVnQ+jGX8Ot5nKU7wduCI8TumbTkKToY
+                  dWwpha+RKPeLmy3R4gDwbEo9fyh2Ohz3fahGv8MTQdzlfPZIg3aYGCDdJSykWFkw
+                  dbUIc9P+fu2d6RigxurTAgMBAAGjUzBRMB0GA1UdDgQWBBT6LgC4OGHd3uqKztnm
+                  ++kl60JPHzAfBgNVHSMEGDAWgBT6LgC4OGHd3uqKztnm++kl60JPHzAPBgNVHRMB
+                  Af8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBgQBrwFiMa83THr6YvIUwzoGBsW6e
+                  9GCr1jQCrWyJ7JXcNm+Wg3us6/1qcZo3CSpauZ4sGU90jiUiR3ND2x8Wx9qR5PPW
+                  U/z9wTPrgFE7QdrN49m8QuLHmxWD3LoRA0KKo0tKvmPEX2aB4Rb6A0r4FaDyUtGF
+                  I28nocRvf6tNA0TiZ4Pp7h4rkKljXBILAym3OSNkl1mqShuYAlV3nOfQ1n8y4xw8
+                  ctLtgvnWd/Pabn2yLWNtx6OdMkVNhK4BLpzRKCKZDYBnYHrOAAe5Hmf8En3klKzP
+                  fPjNkGyQT5eJGqNlwiaj0hFlFXsO2EsQt2Z8vUyTfXsAUpVFUdEoEja2qLtXEHgY
+                  dvdR6j1hvmnZMF5rMBtQuqymXYmtO3Fr9VQe8pwR+9XYHIdjyOQ0YcMZm188SDTG
+                  SNS0vI0Al8YR5Pn8qZg/OCBnTD749qBfBKv6ezC5TUkSMucRx6yNT4mewSThkLht
+                  2RnVJxxKapwK7Yd88S3fo6O8NZek32qw9/BjXfA=
+               </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                   Location="https://federation.clarin.lv/Saml2/acs/post"
+                                   index="1"/>
+      <md:AttributeConsumingService index="1">
+         <md:ServiceName xml:lang="en">CLARIN Latvia Identity Service</md:ServiceName>
+         <md:ServiceDescription xml:lang="en">The application that you're logging into is part of the CLARIN Latvia infrastructure and has delegated authentication to the CLARIN Latvia Identity Service</md:ServiceDescription>
+         <md:RequestedAttribute FriendlyName="eduPersonPrincipalName"
+                                Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="mail"
+                                Name="urn:oid:0.9.2342.19200300.100.1.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="true"/>
+         <md:RequestedAttribute FriendlyName="givenName"
+                                Name="urn:oid:2.5.4.42"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="surname"
+                                Name="urn:oid:2.5.4.4"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+         <md:RequestedAttribute FriendlyName="cn"
+                                Name="urn:oid:2.5.4.3"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                                isRequired="false"/>
+      </md:AttributeConsumingService>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="lv">Latvijas Universitātes Matemātikas un informātikas institūts
+            </md:OrganizationName>
+      <md:OrganizationName xml:lang="en">Institute of Mathematics and Computer Science, Univeristy of Latvia
+            </md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="lv">Latvijas Universitātes Matemātikas un informātikas institūts
+            </md:OrganizationDisplayName>
+      <md:OrganizationDisplayName xml:lang="en">Institute of Mathematics and Computer Science, Univeristy of Latvia
+            </md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="lv">http://lumii.lv/?lang=lv
+            </md:OrganizationURL>
+      <md:OrganizationURL xml:lang="en">http://lumii.lv/?lang=en
+            </md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="administrative">
+      <md:GivenName>CLARIN-LV</md:GivenName>
+      <md:SurName>Administrators</md:SurName>
+      <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="support">
+      <md:GivenName>CLARIN-LV</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+   </md:ContactPerson>
+   <md:ContactPerson contactType="technical">
+      <md:GivenName>CLARIN-LV</md:GivenName>
+      <md:SurName>Technical</md:SurName>
+      <md:EmailAddress>mailto:repository@clarin.lv</md:EmailAddress>
+   </md:ContactPerson>
+</md:EntityDescriptor>
