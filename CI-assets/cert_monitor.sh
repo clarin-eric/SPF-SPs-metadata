@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 # Emails will be sent on these days left to certificate expiration date
 DAYS2WARN=(7 15 22 30 45)
