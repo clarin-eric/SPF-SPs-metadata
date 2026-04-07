@@ -136,16 +136,21 @@ d1mTF4hWzZtMOiUHPCfGI07iPdtBjGz91DVFAJetTgw7ZSlKJlcIr1qbY1MUfMRV
    <ContactPerson contactType="administrative">
       <GivenName>Karin</GivenName>
       <SurName>Weerlee</SurName>
-      <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
+      <EmailAddress>mailto:secretariaat@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="support">
-      <GivenName>Karin</GivenName>
-      <SurName>Weerlee</SurName>
+      <GivenName>Lisa</GivenName>
+      <SurName>van der Hoven</SurName>
       <EmailAddress>mailto:servicedesk@ivdnt.org</EmailAddress>
    </ContactPerson>
    <ContactPerson contactType="technical">
       <GivenName>Marco</GivenName>
       <SurName>van der Laan</SurName>
       <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
+   </ContactPerson>
+   <ContactPerson contactType="other">
+      <GivenName>Griet</GivenName>
+      <SurName>Depoorter</SurName>
+      <EmailAddress>mailto:dpo@ivdnt.org</EmailAddress>
    </ContactPerson>
 </EntityDescriptor>
