@@ -132,6 +132,53 @@ Kni55lI+Z0yAx7qLpH3ouqmBBia93it84t4U
       <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
       <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
     </md:KeyDescriptor>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>CLARIN.si</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=CLARIN.si,O=IJS,L=Ljubljana,C=SI</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFVzCCAz+gAwIBAgIEATUmNTANBgkqhkiG9w0BAQsFADBDMQswCQYDVQQGEwJT
+STESMBAGA1UEBwwJTGp1YmxqYW5hMQwwCgYDVQQKDANJSlMxEjAQBgNVBAMMCUNM
+QVJJTi5zaTAeFw0yNjA0MDUwOTM5MDNaFw0zMTA0MDQwOTM5MDNaMEMxCzAJBgNV
+BAYTAlNJMRIwEAYDVQQHDAlManVibGphbmExDDAKBgNVBAoMA0lKUzESMBAGA1UE
+AwwJQ0xBUklOLnNpMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuHXR
+JilLrxdpbUcwzyg2+R0ZjPiZrR4FoduMd4yYyWG8gRruadZYROczY4gjz9Dhy3ah
+SELy/eioA+poPWW0Hz/vJjS5KuHSk8DBCt0z7a/XZ1JZ1G5rAt0ZGg5QpJILEzr4
+OfmVijSi3KlPPsVpjIXbC1Nm60v5wHpckQgFotORENRi2XqCF048bD69zawA7lbT
+0f5M6wuy2jukxkeAtVNZ7IBt1Z41rv3czh6xw1eopLKHj8ZKTIw1OrU7tA2B70RV
+hgYAklB/HNLhvUlaFR9Q8gqZSMw+6rS9zrcoA0wlA0w4dG/9oNaF3daFZdlkW8Jd
+VMG3SLf/YfXtqlisImgaG9TPgjxz9/WdfZz/E6AFsxroFDDw0LQiqQTnrmhlirY6
+dLN3ztmwyV0QKQK4/qAXYHYsFeC091Jy3FU8fWQCxJBpgs1WTpzZQzUqilaGomGW
+d9d9rigoiMDHzpdrHwoFGr7oSGiI4RacL8YAE71mRjmY+JuE4u764bEsX72jyZNR
+bAcSNd0DJ2e2RKjs7h1sSo7qnYKJVO78IFttqa6etbYiw5IT0X5wR7wUMR7jc1HX
+RxtgT52AoSQhksA1NeaegNo41OdDSBFHcG4YirPmS2aF4SzKOwhm5V/QSrFPTgCD
+JexgyI5YB6CEu5wzrC6s720ZDEyQKyQMWDoaIpkCAwEAAaNTMFEwHQYDVR0OBBYE
+FJNqpt0cJ/hs8CngR63RcRWX6Ys5MB8GA1UdIwQYMBaAFJNqpt0cJ/hs8CngR63R
+cRWX6Ys5MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBADLF+MOs
+MtkLJJ5XzytRzcftv1B2Fyt4KYoQ0cEmcj+yzuVscPYZ37aXkGZCbbb8qBP+/j4N
+hHjUSwY+5VfRNTKD7bwsnp6xmaaLouTfOSplMhJx1Ub6yxElZQ/mnPyw8iM/l79W
+3Y9Db1AkFgYuX+trX80sVO1QaCqGGgLE4kOKyWCXicCuu/V1HddmT0Y3C/xyrRAp
+TjANQLpLSmSoCHxBwwN3KqO0t9b+JBOSlp76chMqdBH3T0/1feMn/jENFNjIt4vy
+3KSEtrE9H+4OKWBQ4h+0ZmI9cWxWwQ/c2B1+vgJIBBXh5h3bP9av760u4Z7s9aw6
+1TDSB184frDrD3E9Lp50/j7b8Vh98PMzbMuK1KzudoaiyxUEZ86yBxT2Yie2G02w
+pQBVpPOEto22pUszc23fjesV3I+ylY92oLFvR0juEhuOCM37Kj9OAoRMB/MsjLuZ
+ktrx+aOoaJU17J44UxGwDB+Q/0uZCG4ZwD/zlmWKzY7cj3F7GoppaJ6jUMWQJ+G9
+8SNPOFGJiEqR6PsbPiWvFs+lGxhL44jUFlXlNnv4c0YP0wo0ksxQhHIwDp2MF2C+
+wjqbpXZ+a0xdTpTMlZOZwe+NlVmF2VztY43ZiqTegvepzY92VFLQtoFNa9S4KwWx
+SohV6KXJolDI8hU28E4GC4dOJBFWwaZ5YN2J
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
 
       <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
                                     Location="https://www.clarin.si/Shibboleth.sso/Artifact/SOAP"
