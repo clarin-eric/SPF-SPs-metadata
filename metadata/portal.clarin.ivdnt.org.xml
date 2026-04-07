@@ -148,7 +148,7 @@ d1mTF4hWzZtMOiUHPCfGI07iPdtBjGz91DVFAJetTgw7ZSlKJlcIr1qbY1MUfMRV
       <SurName>van der Laan</SurName>
       <EmailAddress>mailto:systeembeheer@ivdnt.org</EmailAddress>
    </ContactPerson>
-   <ContactPerson contactType="other">
+   <ContactPerson contactType="dpo">
       <GivenName>Griet</GivenName>
       <SurName>Depoorter</SurName>
       <EmailAddress>mailto:dpo@ivdnt.org</EmailAddress>
