@@ -2,18 +2,23 @@ name: Keepalive
 
 on:
   schedule:
-    - cron: "0 3 3,18 * *"
+    - cron: "0 3 9,24 * *"
   workflow_dispatch:
 
 jobs:
   keepalive:
-    name: Keep repository alive
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Ping repository to keep it active
+      - uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+
+      - name: Create empty commit on gh-pages branch
         run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"keepalive"}'
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit --allow-empty -m "keepalive"
+          git push
