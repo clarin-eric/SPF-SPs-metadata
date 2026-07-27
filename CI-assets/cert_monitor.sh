@@ -2,7 +2,7 @@
 set -x
 
 # Emails will be sent on these days left to certificate expiration date
-DAYS2WARN=(7 15 22 30 45)
+DAYS2WARN=(7 15 22 30 43 45)
 MAX_WARN=$(printf "%s\n" "${DAYS2WARN[@]}" | sort -nr | head -1)
 
 
