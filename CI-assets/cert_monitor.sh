@@ -55,8 +55,8 @@ send_email_warning() {
     [[ "$DAYS_LEFT" -lt "$MAX_WARN" ]] && prefix="(Reminder) "
 
     local owner_email=$(xmllint --xpath \
-      '/*[local-name()="EntityDescriptor"]/*[local-name()="ContactPerson" and @contactType="technical"]/*[local-name()="EmailAddress"][1]/text()' "$md_file"\
-      | sed 's/^mailto://')
+      '/*[local-name()="EntityDescriptor"]/*[local-name()="ContactPerson" and @contactType="technical"][1]/*[local-name()="EmailAddress"][1]/text()' "$md_file"\
+      | sed 's/^mailto://' | tr -d '\r' | tr '\n' ',' | sed 's/,,*/,/g' | sed 's/^,//;s/,$//')
 
     local subject="${prefix}Your CLARIN Service Provider certificate is expiring in $DAYS_LEFT days"
     local body="Dear service provider operator,
@@ -91,14 +91,14 @@ CLARIN SPF team
 "
 
     printf "From: %s\nTo: %s\nCc: %s\nReply-To: %s\nSubject: %s\nDate: %s\n\n%s" \
-        "$SMTP_FROM" \
+        "$CC_ADDR" \
         "$owner_email" \
         "$CC_ADDR" \
         "$CC_ADDR" \
         "$subject" \
         "$(date -R)" \
         "$body" \
-        | msmtp "$owner_email"
+        | msmtp -t
 
 
     echo "Sent email to $owner_email for $(basename "$md_file")"
