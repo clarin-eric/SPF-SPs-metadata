@@ -8,6 +8,8 @@ and do *NOT* provide it in real time to your partners.
         <mdattr:EntityAttributes>
             <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
                 <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+                <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                <saml:AttributeValue>http://clarin.eu/category/clarin-member</saml:AttributeValue>
             </saml:Attribute>
         </mdattr:EntityAttributes>
     <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
@@ -52,39 +54,7 @@ and do *NOT* provide it in real time to your partners.
       <idpdisc:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://clarin-repo.lt/Shibboleth.sso/Login" index="1"/>
     </md:Extensions>
 
-        <md:KeyDescriptor use="signing">
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:KeyName>clarin-repo.lt</ds:KeyName>
-        <ds:X509Data>
-          <ds:X509SubjectName>CN=clarin-repo.lt</ds:X509SubjectName>
-          <ds:X509Certificate>MIIEEzCCAnugAwIBAgIUI5dSbjPGbKOHIa/TdfaAEdGCmQEwDQYJKoZIhvcNAQEL
-BQAwGTEXMBUGA1UEAwwOY2xhcmluLXJlcG8ubHQwHhcNMjYwNTE5MjAwNDMwWhcN
-MzYwNTE4MjAwNDMwWjAZMRcwFQYDVQQDDA5jbGFyaW4tcmVwby5sdDCCAaIwDQYJ
-KoZIhvcNAQEBBQADggGPADCCAYoCggGBAKZ/uYYntWn2Rwu/aD3gZfr6ZzoIGUQG
-FO34GvvAQZN/XGV4pnZWIE9gokffv2XJzgWODf39UWTOvlADZFNtgs/fsl21vWDt
-yrUWmtMnul+mCq4QDRezE9MFKRmJcwTZKNs1+0NLkqCBf1tgzuySuReWtJ1yDGnH
-78E2IdMgUNjQQ0zABkuREGXJjPfWKHjlVE/yfG+V5yAqJBRRfW+9EbTVLDO4HB9U
-i/QFwZlYq+Lwbb87pa7C19a52Y4jk+heiMGCzuaDvdNqrwzRkqeJzM9huiQUEY5f
-JjJUNtZUzBlpAP5r2cjLi/O6K7mnIgtcu+tdh2EV7+X7vIhlyzbszkV4J/kORqNy
-xN1vDH7TdGyolMnCEeKJIZ8i7f5xt/mdCYPE/P9jJcnW1ep0JRREVKIWEKUYPT5V
-Dsw2JRYiQPpaXPqmtBcgUqs0snqB55h0P8vELNqbQNIsOoeUHADxMoLI4+10J0AN
-GqOj2sLNvbs/XJfZtKG3Q7dGZ+wYyTEUlwIDAQABo1MwUTAdBgNVHQ4EFgQUX81H
-AVShN3PPWCEmKIkTHUMrTv4wHwYDVR0jBBgwFoAUX81HAVShN3PPWCEmKIkTHUMr
-Tv4wDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAYEAFFbN3qScFP2r
-0e55Zfv78T+iBiHNYImVMcOzFOjFTjlfi4Vmewtj1pSUj6wDwCkAc7BE374+T96C
-aKFmqMpOEbZcwPCu3X0KK/fO0L/eJpm+T9ERsm9obYgPWG+J7QmUPsH2kBLFhNXR
-8XKWxBATL5v3JFq8b4VVKrim1mE6X3a1UsOAANyjOLoLhIMjwPJVadjitPrjpcaX
-2MxsuN+HvmX0H9o1y0ipchxmPtKkhzaR3YiExVXpsFVp4y5UOHI89jGRdYi18fat
-qB/7dIxCTRI9QYp7vz6pe31DvmWfeoP2EaT4wL17xwyzWu8Pxc33rBT/MUq6RsIp
-8gfh58v1M5AywkiwlkXxJd4Q+Klw4HODefYHYC2eSkn3hAdDGgufV4EBUsL0qz6B
-0u6SzGkC8QEtc+FHqWkAHanQz5s8cOLoKDWlWSYHLzkDfC/BgWkE0+jSX1ndMSBF
-REpYC5QL3d/8rTp/tKg5zW93uKQx7RyAvwQpbXdxm4pfsLQts08e
-</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </md:KeyDescriptor>
-
-    <md:KeyDescriptor use="encryption">
+        <md:KeyDescriptor>
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
         <ds:KeyName>clarin-repo.lt</ds:KeyName>
         <ds:X509Data>
@@ -124,6 +94,7 @@ REpYC5QL3d/8rTp/tKg5zW93uKQx7RyAvwQpbXdxm4pfsLQts08e
       <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
       <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
     </md:KeyDescriptor>
+
     <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin-repo.lt/Shibboleth.sso/Artifact/SOAP" index="1"/>
     <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://clarin-repo.lt/Shibboleth.sso/SLO/SOAP"/>
     <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://clarin-repo.lt/Shibboleth.sso/SLO/Redirect"/>
